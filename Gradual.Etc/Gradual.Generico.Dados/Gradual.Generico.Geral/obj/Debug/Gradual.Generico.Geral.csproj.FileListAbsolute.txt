@@ -1,0 +1,4 @@
+D:\Gradual\Source\Gradual.Etc\Gradual.Generico.Dados\Gradual.Generico.Geral\bin\Debug\Gradual.Generico.Geral.dll
+D:\Gradual\Source\Gradual.Etc\Gradual.Generico.Dados\Gradual.Generico.Geral\bin\Debug\Gradual.Generico.Geral.pdb
+D:\Gradual\Source\Gradual.Etc\Gradual.Generico.Dados\Gradual.Generico.Geral\obj\Debug\Gradual.Generico.Geral.dll
+D:\Gradual\Source\Gradual.Etc\Gradual.Generico.Dados\Gradual.Generico.Geral\obj\Debug\Gradual.Generico.Geral.pdb

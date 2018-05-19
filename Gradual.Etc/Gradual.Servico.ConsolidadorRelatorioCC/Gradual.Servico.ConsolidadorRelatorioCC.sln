@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.ConsolidadorRelatorioCC", "Gradual.Contrato.ConsolidadorRelatorioCC\Gradual.OMS.ConsolidadorRelatorioCC.csproj", "{709B0248-C6FF-4D4A-893E-602940721DCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste.ConsolidadorRelatorioCC", "Gradual.Teste.ConsolidadorRelatorioCC\Teste.ConsolidadorRelatorioCC.csproj", "{42E3F24C-B799-4DAC-82C1-53E53632B8A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.ConsolidadorRelatorioCCLib", "Gradual.OMS.ConsolidadorRelatorioCC\Gradual.OMS.ConsolidadorRelatorioCCLib.csproj", "{B4795607-E623-4754-8CCD-99A3915219B9}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gradual.Teste.ConsolidadorRelatorioCC\\Teste.ConsolidadorRelatorioCC.csproj
+		SccProjectName1 = Gradual.Teste.ConsolidadorRelatorioCC
+		SccLocalPath1 = Gradual.Teste.ConsolidadorRelatorioCC
+		SccProjectUniqueName2 = Gradual.OMS.ConsolidadorRelatorioCC\\Gradual.OMS.ConsolidadorRelatorioCCLib.csproj
+		SccProjectName2 = Gradual.OMS.ConsolidadorRelatorioCC
+		SccLocalPath2 = Gradual.OMS.ConsolidadorRelatorioCC
+		SccProjectUniqueName3 = Gradual.Contrato.ConsolidadorRelatorioCC\\Gradual.OMS.ConsolidadorRelatorioCC.csproj
+		SccProjectName3 = Gradual.Contrato.ConsolidadorRelatorioCC
+		SccLocalPath3 = Gradual.Contrato.ConsolidadorRelatorioCC
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{709B0248-C6FF-4D4A-893E-602940721DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{709B0248-C6FF-4D4A-893E-602940721DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{709B0248-C6FF-4D4A-893E-602940721DCD}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{709B0248-C6FF-4D4A-893E-602940721DCD}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{709B0248-C6FF-4D4A-893E-602940721DCD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{709B0248-C6FF-4D4A-893E-602940721DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{709B0248-C6FF-4D4A-893E-602940721DCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{709B0248-C6FF-4D4A-893E-602940721DCD}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{709B0248-C6FF-4D4A-893E-602940721DCD}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{709B0248-C6FF-4D4A-893E-602940721DCD}.Release|x86.ActiveCfg = Release|Any CPU
+		{42E3F24C-B799-4DAC-82C1-53E53632B8A3}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{42E3F24C-B799-4DAC-82C1-53E53632B8A3}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{42E3F24C-B799-4DAC-82C1-53E53632B8A3}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{42E3F24C-B799-4DAC-82C1-53E53632B8A3}.Debug|x86.ActiveCfg = Debug|x86
+		{42E3F24C-B799-4DAC-82C1-53E53632B8A3}.Debug|x86.Build.0 = Debug|x86
+		{42E3F24C-B799-4DAC-82C1-53E53632B8A3}.Release|Any CPU.ActiveCfg = Release|x86
+		{42E3F24C-B799-4DAC-82C1-53E53632B8A3}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{42E3F24C-B799-4DAC-82C1-53E53632B8A3}.Release|Mixed Platforms.Build.0 = Release|x86
+		{42E3F24C-B799-4DAC-82C1-53E53632B8A3}.Release|x86.ActiveCfg = Release|x86
+		{42E3F24C-B799-4DAC-82C1-53E53632B8A3}.Release|x86.Build.0 = Release|x86
+		{B4795607-E623-4754-8CCD-99A3915219B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4795607-E623-4754-8CCD-99A3915219B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4795607-E623-4754-8CCD-99A3915219B9}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B4795607-E623-4754-8CCD-99A3915219B9}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B4795607-E623-4754-8CCD-99A3915219B9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B4795607-E623-4754-8CCD-99A3915219B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4795607-E623-4754-8CCD-99A3915219B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4795607-E623-4754-8CCD-99A3915219B9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B4795607-E623-4754-8CCD-99A3915219B9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B4795607-E623-4754-8CCD-99A3915219B9}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

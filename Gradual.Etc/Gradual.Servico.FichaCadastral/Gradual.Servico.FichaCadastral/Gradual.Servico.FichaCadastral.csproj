@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1FD1AED3-91F8-49C0-A1FE-D87CF5753521}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.Servico.FichaCadastral</RootNamespace>
+    <AssemblyName>Gradual.Servico.FichaCadastral</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Gradual.OMS-II\Gradual.OMS.Risco.SaldoDevedor\Gradual.SaldoDevedor.References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Referencias\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Reports">
+      <HintPath>..\Referencias\Reports.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dados\ClienteBancoDbLib.cs" />
+    <Compile Include="Dados\ClienteContratoDbLib.cs" />
+    <Compile Include="Dados\ClienteControladoraDbLib.cs" />
+    <Compile Include="Dados\ClienteDbLib.cs" />
+    <Compile Include="Dados\ClienteDiretorDbLib.cs" />
+    <Compile Include="Dados\ClienteEmitente.cs" />
+    <Compile Include="Dados\ClienteEnderecoDbLib.cs" />
+    <Compile Include="Dados\ClienteNaoOperaPorContaPropriaDbLib.cs" />
+    <Compile Include="Dados\ClienteNaoResidenteDbLib.cs" />
+    <Compile Include="Dados\ClienteProcuradorRepresentanteDbLib.cs" />
+    <Compile Include="Dados\ClienteSituacaoFinanceiraPatrimonialDbLib.cs" />
+    <Compile Include="Dados\ClienteTelefoneDbLib.cs" />
+    <Compile Include="Dados\ContaCorrenteDbLib.cs" />
+    <Compile Include="Dados\ContratoDbLib.cs" />
+    <Compile Include="Dados\FichaCadastralDbLib.cs" />
+    <Compile Include="Dados\LoginDbLib.cs" />
+    <Compile Include="Dados\PessoaVinculadaDbLib.cs" />
+    <Compile Include="Dados\SinacorDbLib.cs" />
+    <Compile Include="Dados\TipoEnderecoDbLib.cs" />
+    <Compile Include="Dados\TipoTelefoneDbLib.cs" />
+    <Compile Include="Dados\TransporteDetalhesUSPersonPJ.cs" />
+    <Compile Include="DbLibBase.cs" />
+    <Compile Include="FichaCadastral_PJ.cs" />
+    <Compile Include="ServicoFichaCadastral.cs" />
+    <Compile Include="FichaCadastral_PF.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TermoAdesao_PF.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HistoricoDeFichas\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RecursosVisuais\Imagens\checbox_full.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RecursosVisuais\Imagens\checbox_none.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RecursosVisuais\Imagens\logo_gradual.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RecursosVisuais\Imagens\pixel_black.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RecursosVisuais\Imagens\pixel_blue.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Gradual.Intranet\Gradual.Intranet.Contratos\Gradual.Intranet.Contratos.csproj">
+      <Project>{429DEE5D-7FC1-40CD-A72A-918B5831F0F8}</Project>
+      <Name>Gradual.Intranet.Contratos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Gradual.OMS.Library.csproj">
+      <Project>{A5E45264-237E-471B-9260-88552A1EF7F3}</Project>
+      <Name>Gradual.OMS.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Persistencia\Gradual.OMS.Persistencia.csproj">
+      <Project>{01BFE534-741D-44B0-BDFF-7461D1AC66EC}</Project>
+      <Name>Gradual.OMS.Persistencia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Gradual.Portal\Gradual.Generico.Dados\Gradual.Generico.Dados.csproj">
+      <Project>{6B3FC247-392B-4DD0-A6BE-9E19E200D522}</Project>
+      <Name>Gradual.Generico.Dados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Servico.FichaCadastral.Lib\Gradual.Servico.FichaCadastral.Lib.csproj">
+      <Project>{07910909-ACD3-4335-84A9-E182CBE0BB30}</Project>
+      <Name>Gradual.Servico.FichaCadastral.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

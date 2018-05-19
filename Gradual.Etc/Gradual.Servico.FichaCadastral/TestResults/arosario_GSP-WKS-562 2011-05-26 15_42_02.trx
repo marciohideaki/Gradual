@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="6725a3f5-9d28-45aa-ad4e-d370224768e6" name="arosario@GSP-WKS-562 2011-05-26 15:42:02" runUser="GRADUAL\arosario" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="aa3cae84-6966-4daa-82a0-69c5bdd31573">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="arosario_GSP-WKS-562 2011-05-26 15_42_02">
+      <DeploymentItem filename="C:\Dev\Gradual\Gradual.Etc\Gradual.Servico.FichaCadastral\Referencias\Gradual.Intranet.Contratos.dll" />
+      <DeploymentItem filename="C:\Dev\Gradual\Gradual.Etc\Gradual.Servico.FichaCadastral\Gradual.Servico.FichaCadastral\bin\Debug\Gradual.Servico.FichaCadastral.dll" />
+      <DeploymentItem filename="C:\Dev\Gradual\Gradual.Etc\Gradual.Servico.FichaCadastral\Referencias\Gradual.OMS.Persistencia.dll" />
+      <DeploymentItem filename="C:\Dev\Gradual\Gradual.Etc\Gradual.Servico.FichaCadastral\Gradual.Servico.FichaCadastral.Lib\bin\Debug\Gradual.Servico.FichaCadastral.Lib.dll" />
+      <DeploymentItem filename="C:\Dev\Gradual\Gradual.Etc\Gradual.Servico.FichaCadastral\Referencias\Gradual.OMS.Library.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-05-26T15:42:02.1195651-03:00" queuing="2011-05-26T15:42:02.8851901-03:00" start="2011-05-26T15:42:02.9945651-03:00" finish="2011-05-26T15:42:59.6976901-03:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\dev\gradual\gradual.etc\gradual.servico.fichacadastral\gradual.servico.fichacadastral.teste\bin\debug\gradual.servico.fichacadastral.teste.dll" id="164293a9-3998-c584-fa21-74fe174dc2df">
+      <Execution id="cc7218c1-69ae-4e73-b50d-3e1bdafab499" />
+      <TestMethod codeBase="C:/Dev/Gradual/Gradual.Etc/Gradual.Servico.FichaCadastral/Gradual.Servico.FichaCadastral.Teste/bin/Debug/Gradual.Servico.FichaCadastral.Teste.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Gradual.Servico.FichaCadastral.Teste.UnitTest1, Gradual.Servico.FichaCadastral.Teste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="164293a9-3998-c584-fa21-74fe174dc2df" executionId="cc7218c1-69ae-4e73-b50d-3e1bdafab499" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="cc7218c1-69ae-4e73-b50d-3e1bdafab499" testId="164293a9-3998-c584-fa21-74fe174dc2df" testName="TestMethod1" computerName="GSP-WKS-562" duration="00:00:55.9521204" startTime="2011-05-26T15:42:03.0883151-03:00" endTime="2011-05-26T15:42:59.5883151-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cc7218c1-69ae-4e73-b50d-3e1bdafab499">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Gradual.Servico.FichaCadastral.Teste.UnitTest1.TestMethod1 threw exception: 
+System.Data.OracleClient.OracleException: ORA-06550: line 1, column 7:
+PLS-00201: identifier 'PRC_LISTACOMBOSINACOR' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+</Message>
+          <StackTrace>    at Gradual.Servico.FichaCadastral.Dados.SinacorDbLib.ConsultarListaSinacor(ConsultarEntidadeRequest`1 pParametros) in C:\Dev\Gradual\Gradual.Etc\Gradual.Servico.FichaCadastral\Gradual.Servico.FichaCadastral\Dados\SinacorDbLib.cs:line 49
+   at Gradual.Servico.FichaCadastral.FichaCadastral_PF.RecuperarDadosDeNacionalidade(Nullable`1 pCdNacionalidade) in C:\Dev\Gradual\Gradual.Etc\Gradual.Servico.FichaCadastral\Gradual.Servico.FichaCadastral\FichaCadastral_PF.cs:line 1292
+   at Gradual.Servico.FichaCadastral.FichaCadastral_PF.MontaFichaCadastralCliente() in C:\Dev\Gradual\Gradual.Etc\Gradual.Servico.FichaCadastral\Gradual.Servico.FichaCadastral\FichaCadastral_PF.cs:line 289
+   at Gradual.Servico.FichaCadastral.FichaCadastral_PF.CriaFichaDuc() in C:\Dev\Gradual\Gradual.Etc\Gradual.Servico.FichaCadastral\Gradual.Servico.FichaCadastral\FichaCadastral_PF.cs:line 136
+   at Gradual.Servico.FichaCadastral.FichaCadastral_PF.GeraRelatorio() in C:\Dev\Gradual\Gradual.Etc\Gradual.Servico.FichaCadastral\Gradual.Servico.FichaCadastral\FichaCadastral_PF.cs:line 175
+   at Gradual.Servico.FichaCadastral.FichaCadastral_PF.GerarFichaDuc(ReceberEntidadeRequest`1 pParametro) in C:\Dev\Gradual\Gradual.Etc\Gradual.Servico.FichaCadastral\Gradual.Servico.FichaCadastral\FichaCadastral_PF.cs:line 118
+   at Gradual.Servico.FichaCadastral.Teste.UnitTest1.TesteFichaPF() in C:\Dev\Gradual\Gradual.Etc\Gradual.Servico.FichaCadastral\Gradual.Servico.FichaCadastral.Teste\UnitTest1.cs:line 22
+   at Gradual.Servico.FichaCadastral.Teste.UnitTest1.TestMethod1() in C:\Dev\Gradual\Gradual.Etc\Gradual.Servico.FichaCadastral\Gradual.Servico.FichaCadastral.Teste\UnitTest1.cs:line 17
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

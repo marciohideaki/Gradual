@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5345eb69-b6b3-4611-ba53-5979140df2af" name="arosario@GSP-WKS-562 2011-04-19 09:57:35" runUser="GRADUAL\arosario" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ed94a41e-2f44-4849-ad99-3ebc87ee492d">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="arosario_GSP-WKS-562 2011-04-19 09_57_35">
+      <DeploymentItem filename="C:\Dev\Gradual\Gradual.Etc\Gradual.Servico.GerenteHistClienteParamValor\Gradual.Servico.GerenteHistClienteParamValor\bin\Debug\Gradual.Servico.GerenteHistClienteParamValor.dll" />
+      <DeploymentItem filename="C:\Dev\Gradual\Gradual.Etc\Gradual.Servico.GerenteHistClienteParamValor\Gradual.Servico.GerenteHistClienteParamValor.Lib\bin\Debug\Gradual.Servico.GerenteHistClienteParamValor.Lib.dll" />
+      <DeploymentItem filename="C:\Dev\Gradual\Gradual.Etc\Gradual.Etc.Referencias\Gradual.OMS.Library.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-04-19T09:57:35.9654000-03:00" queuing="2011-04-19T09:57:39.0122555-03:00" start="2011-04-19T09:57:39.1372547-03:00" finish="2011-04-19T09:58:33.1056593-03:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="GSP-WKS-562" outcome="Error" timestamp="2011-04-19T09:58:33.0587846-03:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\dev\gradual\gradual.etc\gradual.servico.gerentehistclienteparamvalor\gradual.servico.gerentehistclienteparamvalor.teste\bin\debug\gradual.servico.gerentehistclienteparamvalor.teste.dll" id="62e5547c-821e-d059-b191-d9e4c25ce910">
+      <Execution id="83479fc8-abb6-4d80-ae68-d344161342b3" />
+      <TestMethod codeBase="C:/Dev/Gradual/Gradual.Etc/Gradual.Servico.GerenteHistClienteParamValor/Gradual.Servico.GerenteHistClienteParamValor.Teste/bin/Debug/Gradual.Servico.GerenteHistClienteParamValor.Teste.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Gradual.Servico.GerenteHistClienteParamValor.Teste.UnitTest1, Gradual.Servico.GerenteHistClienteParamValor.Teste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="62e5547c-821e-d059-b191-d9e4c25ce910" executionId="83479fc8-abb6-4d80-ae68-d344161342b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="83479fc8-abb6-4d80-ae68-d344161342b3" testId="62e5547c-821e-d059-b191-d9e4c25ce910" testName="TestMethod1" computerName="GSP-WKS-562" duration="00:00:53.8590303" startTime="2011-04-19T09:57:39.2466290-03:00" endTime="2011-04-19T09:58:33.1056593-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="83479fc8-abb6-4d80-ae68-d344161342b3">
+    </UnitTestResult>
+  </Results>
+</TestRun>

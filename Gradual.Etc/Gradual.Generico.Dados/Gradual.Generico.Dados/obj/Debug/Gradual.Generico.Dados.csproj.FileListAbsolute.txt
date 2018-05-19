@@ -1,0 +1,5 @@
+D:\Gradual\Source\Gradual.Etc\Gradual.Generico.Dados\Gradual.Generico.Dados\bin\Debug\Gradual.Generico.Dados.dll
+D:\Gradual\Source\Gradual.Etc\Gradual.Generico.Dados\Gradual.Generico.Dados\bin\Debug\Gradual.Generico.Dados.pdb
+D:\Gradual\Source\Gradual.Etc\Gradual.Generico.Dados\Gradual.Generico.Dados\obj\Debug\Gradual.Generico.Dados.csprojResolveAssemblyReference.cache
+D:\Gradual\Source\Gradual.Etc\Gradual.Generico.Dados\Gradual.Generico.Dados\obj\Debug\Gradual.Generico.Dados.dll
+D:\Gradual\Source\Gradual.Etc\Gradual.Generico.Dados\Gradual.Generico.Dados\obj\Debug\Gradual.Generico.Dados.pdb

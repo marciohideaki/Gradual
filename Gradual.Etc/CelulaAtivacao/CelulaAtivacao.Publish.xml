@@ -1,0 +1,20 @@
+<publishData>
+  <publishTarget publishUrl="C:\CelulaPublisherNovo\">
+    <file relUrl="bin/CelulaAtivacao.pdb" publishTime="04/13/2009 08:48:05" />
+    <file relUrl="bin/CelulaAtivacao.dll" publishTime="04/13/2009 08:48:05" />
+    <file relUrl="CelulaAtivacao.aspx" publishTime="04/06/2009 10:54:14" />
+    <file relUrl="Web.config" publishTime="03/31/2009 11:47:13" />
+  </publishTarget>
+  <publishTarget publishUrl="C:\CelulaPublisher\">
+    <file relUrl="bin/CelulaAtivacao.pdb" publishTime="04/06/2009 11:10:05" />
+    <file relUrl="bin/CelulaAtivacao.dll" publishTime="04/06/2009 11:10:05" />
+    <file relUrl="CelulaAtivacao.aspx" publishTime="04/06/2009 10:54:14" />
+    <file relUrl="Web.config" publishTime="03/31/2009 11:47:13" />
+  </publishTarget>
+  <publishTarget publishUrl="C:\Celula\">
+    <file relUrl="bin/CelulaAtivacao.pdb" publishTime="03/31/2009 10:55:56" />
+    <file relUrl="bin/CelulaAtivacao.dll" publishTime="03/31/2009 10:55:56" />
+    <file relUrl="CelulaAtivacao.aspx" publishTime="03/31/2009 10:12:09" />
+    <file relUrl="Web.config" publishTime="03/26/2009 15:58:16" />
+  </publishTarget>
+</publishData>
