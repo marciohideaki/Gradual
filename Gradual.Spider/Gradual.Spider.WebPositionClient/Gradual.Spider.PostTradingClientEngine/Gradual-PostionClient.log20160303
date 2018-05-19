@@ -1,0 +1,258 @@
+2016-03-02 15:14:40,504 [5] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas - Erro [Erro de configuração: Valor registrado no web.config para 'IdSistemaMDS' está vazio ou nulo.] em ConfiguracoesValidadas.Iniciar()
+    >>Stack:
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas.Iniciar() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\ConfiguracoesValidadas.cs:linha 285
+2016-03-02 15:14:40,554 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-02 15:14:40,570 [5] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-02 15:14:40,571 [5] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-02 15:14:41,530 [5] ERROR Gradual.OMS.Library.Servicos.Ativador - Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca
+2016-03-02 15:14:41,555 [5] ERROR Gradual.OMS.Library.Servicos.Ativador - Erro em Ativador.Get(Gradual.OMS.Seguranca.Lib.IServicoSeguranca)
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 106
+2016-03-02 15:14:41,578 [5] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase - Erro no método InstanciarServico<T> da página base
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 277
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T]() na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 46
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase.InstanciarServico[T]() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\PaginaBase.cs:linha 254
+2016-03-02 15:15:25,414 [7] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-02 15:15:25,414 [7] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-02 15:15:25,414 [7] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-02 15:15:25,969 [7] ERROR Gradual.OMS.Library.Servicos.Ativador - Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca
+2016-03-02 15:15:25,992 [7] ERROR Gradual.OMS.Library.Servicos.Ativador - Erro em Ativador.Get(Gradual.OMS.Seguranca.Lib.IServicoSeguranca)
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 106
+2016-03-02 15:15:26,011 [7] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase - Erro no método InstanciarServico<T> da página base
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 277
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T]() na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 46
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase.InstanciarServico[T]() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\PaginaBase.cs:linha 254
+2016-03-02 15:15:49,186 [18] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-02 15:15:49,186 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-02 15:15:49,186 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-02 15:15:49,420 [18] ERROR Gradual.OMS.Library.Servicos.Ativador - Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca
+2016-03-02 15:15:49,441 [18] ERROR Gradual.OMS.Library.Servicos.Ativador - Erro em Ativador.Get(Gradual.OMS.Seguranca.Lib.IServicoSeguranca)
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 106
+2016-03-02 15:15:49,466 [18] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase - Erro no método InstanciarServico<T> da página base
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 277
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T]() na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 46
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase.InstanciarServico[T]() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\PaginaBase.cs:linha 254
+2016-03-02 15:22:33,272 [30] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-02 15:22:33,272 [30] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-02 15:22:33,272 [30] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-02 15:22:33,418 [30] ERROR Gradual.OMS.Library.Servicos.Ativador - Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca
+2016-03-02 15:22:33,439 [30] ERROR Gradual.OMS.Library.Servicos.Ativador - Erro em Ativador.Get(Gradual.OMS.Seguranca.Lib.IServicoSeguranca)
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 106
+2016-03-02 15:22:33,456 [30] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase - Erro no método InstanciarServico<T> da página base
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 277
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T]() na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 46
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase.InstanciarServico[T]() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\PaginaBase.cs:linha 254
+2016-03-02 15:23:28,344 [35] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-02 15:23:28,344 [35] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-02 15:23:28,346 [35] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-02 15:23:28,427 [35] ERROR Gradual.OMS.Library.Servicos.Ativador - Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca
+2016-03-02 15:23:28,440 [35] ERROR Gradual.OMS.Library.Servicos.Ativador - Erro em Ativador.Get(Gradual.OMS.Seguranca.Lib.IServicoSeguranca)
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 106
+2016-03-02 15:23:28,453 [35] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase - Erro no método InstanciarServico<T> da página base
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 277
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T]() na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 46
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase.InstanciarServico[T]() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\PaginaBase.cs:linha 254
+2016-03-02 15:24:05,611 [38] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-02 15:24:05,611 [38] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-02 15:24:05,611 [38] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-02 15:24:05,634 [38] ERROR Gradual.OMS.Library.Servicos.Ativador - Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca
+2016-03-02 15:24:05,644 [38] ERROR Gradual.OMS.Library.Servicos.Ativador - Erro em Ativador.Get(Gradual.OMS.Seguranca.Lib.IServicoSeguranca)
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 106
+2016-03-02 15:24:05,657 [38] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase - Erro no método InstanciarServico<T> da página base
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 277
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T]() na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 46
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase.InstanciarServico[T]() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\PaginaBase.cs:linha 254
+2016-03-02 15:24:24,116 [38] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-02 15:24:24,116 [38] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-02 15:24:24,116 [38] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-02 15:24:24,159 [38] ERROR Gradual.OMS.Library.Servicos.Ativador - Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca
+2016-03-02 15:24:24,179 [38] ERROR Gradual.OMS.Library.Servicos.Ativador - Erro em Ativador.Get(Gradual.OMS.Seguranca.Lib.IServicoSeguranca)
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 106
+2016-03-02 15:24:24,189 [38] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase - Erro no método InstanciarServico<T> da página base
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 277
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T]() na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 46
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase.InstanciarServico[T]() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\PaginaBase.cs:linha 254
+2016-03-02 15:26:20,956 [42] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-02 15:26:20,958 [42] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-02 15:26:20,958 [42] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-02 15:26:20,995 [42] ERROR Gradual.OMS.Library.Servicos.Ativador - Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca
+2016-03-02 15:26:21,006 [42] ERROR Gradual.OMS.Library.Servicos.Ativador - Erro em Ativador.Get(Gradual.OMS.Seguranca.Lib.IServicoSeguranca)
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 106
+2016-03-02 15:26:21,017 [42] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase - Erro no método InstanciarServico<T> da página base
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 277
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T]() na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 46
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase.InstanciarServico[T]() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\PaginaBase.cs:linha 254
+2016-03-02 15:27:26,588 [43] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-02 15:27:26,588 [43] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-02 15:27:26,588 [43] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-02 15:27:26,621 [43] ERROR Gradual.OMS.Library.Servicos.Ativador - Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca
+2016-03-02 15:27:26,632 [43] ERROR Gradual.OMS.Library.Servicos.Ativador - Erro em Ativador.Get(Gradual.OMS.Seguranca.Lib.IServicoSeguranca)
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 106
+2016-03-02 15:27:26,642 [43] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase - Erro no método InstanciarServico<T> da página base
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 277
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T]() na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 46
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase.InstanciarServico[T]() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\PaginaBase.cs:linha 254
+2016-03-02 15:28:18,818 [47] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-02 15:28:18,818 [47] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-02 15:28:18,818 [47] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-02 15:28:18,990 [47] ERROR Gradual.OMS.Library.Servicos.Ativador - Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca
+2016-03-02 15:28:19,012 [47] ERROR Gradual.OMS.Library.Servicos.Ativador - Erro em Ativador.Get(Gradual.OMS.Seguranca.Lib.IServicoSeguranca)
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 106
+2016-03-02 15:28:19,029 [47] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase - Erro no método InstanciarServico<T> da página base
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 277
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T]() na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 46
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase.InstanciarServico[T]() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\PaginaBase.cs:linha 254
+2016-03-02 15:29:25,778 [57] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-02 15:29:25,778 [57] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-02 15:29:25,778 [57] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-02 15:29:25,818 [57] ERROR Gradual.OMS.Library.Servicos.Ativador - Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca
+2016-03-02 15:29:25,836 [57] ERROR Gradual.OMS.Library.Servicos.Ativador - Erro em Ativador.Get(Gradual.OMS.Seguranca.Lib.IServicoSeguranca)
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 106
+2016-03-02 15:29:25,853 [57] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase - Erro no método InstanciarServico<T> da página base
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 277
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T]() na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 46
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase.InstanciarServico[T]() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\PaginaBase.cs:linha 254
+2016-03-02 15:30:41,245 [60] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-02 15:30:41,246 [60] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-02 15:30:41,246 [60] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-02 15:30:41,292 [60] ERROR Gradual.OMS.Library.Servicos.Ativador - Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca
+2016-03-02 15:30:41,307 [60] ERROR Gradual.OMS.Library.Servicos.Ativador - Erro em Ativador.Get(Gradual.OMS.Seguranca.Lib.IServicoSeguranca)
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 106
+2016-03-02 15:30:41,323 [60] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase - Erro no método InstanciarServico<T> da página base
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 277
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T]() na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 46
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase.InstanciarServico[T]() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\PaginaBase.cs:linha 254
+2016-03-02 15:32:52,641 [67] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-02 15:32:52,641 [67] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-02 15:32:52,641 [67] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-02 15:32:52,665 [67] ERROR Gradual.OMS.Library.Servicos.Ativador - Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca
+2016-03-02 15:32:52,675 [67] ERROR Gradual.OMS.Library.Servicos.Ativador - Erro em Ativador.Get(Gradual.OMS.Seguranca.Lib.IServicoSeguranca)
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 106
+2016-03-02 15:32:52,685 [67] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase - Erro no método InstanciarServico<T> da página base
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 277
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T]() na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 46
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase.InstanciarServico[T]() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\PaginaBase.cs:linha 254
+2016-03-02 15:34:40,369 [67] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-02 15:34:40,369 [67] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-02 15:34:40,369 [67] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-02 15:34:40,565 [67] ERROR Gradual.OMS.Library.Servicos.Ativador - Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca
+2016-03-02 15:34:40,577 [67] ERROR Gradual.OMS.Library.Servicos.Ativador - Erro em Ativador.Get(Gradual.OMS.Seguranca.Lib.IServicoSeguranca)
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 106
+2016-03-02 15:34:40,587 [67] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase - Erro no método InstanciarServico<T> da página base
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 277
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T]() na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 46
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase.InstanciarServico[T]() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\PaginaBase.cs:linha 254
+2016-03-02 15:37:16,788 [68] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-02 15:37:16,788 [68] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-02 15:37:16,788 [68] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-02 15:37:16,811 [68] ERROR Gradual.OMS.Library.Servicos.Ativador - Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca
+2016-03-02 15:37:16,821 [68] ERROR Gradual.OMS.Library.Servicos.Ativador - Erro em Ativador.Get(Gradual.OMS.Seguranca.Lib.IServicoSeguranca)
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 106
+2016-03-02 15:37:16,832 [68] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase - Erro no método InstanciarServico<T> da página base
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 277
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T]() na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 46
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase.InstanciarServico[T]() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\PaginaBase.cs:linha 254
+2016-03-02 15:37:53,146 [68] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-02 15:37:53,146 [68] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-02 15:37:53,146 [68] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-02 15:37:53,583 [68] ERROR Gradual.OMS.Library.Servicos.Ativador - Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca
+2016-03-02 15:37:53,594 [68] ERROR Gradual.OMS.Library.Servicos.Ativador - Erro em Ativador.Get(Gradual.OMS.Seguranca.Lib.IServicoSeguranca)
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 106
+2016-03-02 15:37:53,605 [68] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase - Erro no método InstanciarServico<T> da página base
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 277
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T]() na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 46
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase.InstanciarServico[T]() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\PaginaBase.cs:linha 254
+2016-03-02 15:38:49,864 [69] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-02 15:38:49,864 [69] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-02 15:38:49,864 [69] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-02 15:38:49,901 [69] ERROR Gradual.OMS.Library.Servicos.Ativador - Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca
+2016-03-02 15:38:49,911 [69] ERROR Gradual.OMS.Library.Servicos.Ativador - Erro em Ativador.Get(Gradual.OMS.Seguranca.Lib.IServicoSeguranca)
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 106
+2016-03-02 15:38:49,920 [69] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase - Erro no método InstanciarServico<T> da página base
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 277
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T]() na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 46
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase.InstanciarServico[T]() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\PaginaBase.cs:linha 254
+2016-03-02 15:39:33,706 [77] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-02 15:39:33,706 [77] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-02 15:39:33,706 [77] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-02 15:39:33,734 [77] ERROR Gradual.OMS.Library.Servicos.Ativador - Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca
+2016-03-02 15:39:33,746 [77] ERROR Gradual.OMS.Library.Servicos.Ativador - Erro em Ativador.Get(Gradual.OMS.Seguranca.Lib.IServicoSeguranca)
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 106
+2016-03-02 15:39:33,757 [77] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase - Erro no método InstanciarServico<T> da página base
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 277
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T]() na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 46
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase.InstanciarServico[T]() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\PaginaBase.cs:linha 254
+2016-03-02 15:44:54,945 [6] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas - Erro [Erro de configuração: Valor registrado no web.config para 'IdSistemaMDS' está vazio ou nulo.] em ConfiguracoesValidadas.Iniciar()
+    >>Stack:
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas.Iniciar() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\ConfiguracoesValidadas.cs:linha 285
+2016-03-02 15:44:54,957 [6] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-02 15:44:54,968 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-02 15:44:54,969 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-02 15:44:55,284 [6] ERROR Gradual.OMS.Library.Servicos.Ativador - Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca
+2016-03-02 15:44:55,298 [6] ERROR Gradual.OMS.Library.Servicos.Ativador - Erro em Ativador.Get(Gradual.OMS.Seguranca.Lib.IServicoSeguranca)
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 106
+2016-03-02 15:44:55,311 [6] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase - Erro no método InstanciarServico<T> da página base
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 277
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T]() na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 46
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase.InstanciarServico[T]() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\PaginaBase.cs:linha 254
+2016-03-02 15:46:44,373 [7] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-02 15:46:44,373 [7] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-02 15:46:44,373 [7] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-02 15:46:44,689 [7] ERROR Gradual.OMS.Library.Servicos.Ativador - Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca
+2016-03-02 15:46:44,701 [7] ERROR Gradual.OMS.Library.Servicos.Ativador - Erro em Ativador.Get(Gradual.OMS.Seguranca.Lib.IServicoSeguranca)
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 106
+2016-03-02 15:46:44,718 [7] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase - Erro no método InstanciarServico<T> da página base
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 277
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T]() na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 46
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase.InstanciarServico[T]() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\PaginaBase.cs:linha 254
+2016-03-02 15:47:45,850 [12] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-02 15:47:45,850 [12] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-02 15:47:45,850 [12] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-02 15:47:46,087 [12] ERROR Gradual.OMS.Library.Servicos.Ativador - Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca
+2016-03-02 15:47:46,102 [12] ERROR Gradual.OMS.Library.Servicos.Ativador - Erro em Ativador.Get(Gradual.OMS.Seguranca.Lib.IServicoSeguranca)
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 106
+2016-03-02 15:47:46,116 [12] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase - Erro no método InstanciarServico<T> da página base
+System.Exception: Não foi possível conseguir informações para a ativação do serviço Gradual.OMS.Seguranca.Lib.IServicoSeguranca.
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T](ICallbackEvento callback, Object parametros) na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 277
+   em Gradual.OMS.Library.Servicos.Ativador.Get[T]() na C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Servicos\Ativador.cs:linha 46
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.PaginaBase.InstanciarServico[T]() na c:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\PaginaBase.cs:linha 254

@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.Spider.LimiteRestricao", "Gradual.Spider.LimiteRestricao\Gradual.Spider.LimiteRestricao.csproj", "{8EEBF804-4739-4A22-9CC2-C03467297898}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.Spider.LimiteRestricao.DbLib", "GRadual.Spider.LimiteRestricao.DbLib\Gradual.Spider.LimiteRestricao.DbLib.csproj", "{BC896CC7-0ABF-4EFD-8677-256CA4851EA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.Spider.LimiteRestricao.Lib", "Gradual.Spider.LimiteRestricao.Lib\Gradual.Spider.LimiteRestricao.Lib.csproj", "{BDA75678-45C5-4C7B-B7F0-7513BE9C85D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.Spider.LimiteRestricao.Test", "Gradual.Spider.LimiteRestricao.Test\Gradual.Spider.LimiteRestricao.Test.csproj", "{37B81548-4030-4A0F-82ED-1855F87AD7FA}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = GRadual.Spider.LimiteRestricao.DbLib\\Gradual.Spider.LimiteRestricao.DbLib.csproj
+		SccProjectName1 = GRadual.Spider.LimiteRestricao.DbLib
+		SccLocalPath1 = GRadual.Spider.LimiteRestricao.DbLib
+		SccProjectUniqueName2 = Gradual.Spider.LimiteRestricao.Lib\\Gradual.Spider.LimiteRestricao.Lib.csproj
+		SccProjectName2 = Gradual.Spider.LimiteRestricao.Lib
+		SccLocalPath2 = Gradual.Spider.LimiteRestricao.Lib
+		SccProjectUniqueName3 = Gradual.Spider.LimiteRestricao\\Gradual.Spider.LimiteRestricao.csproj
+		SccProjectName3 = Gradual.Spider.LimiteRestricao
+		SccLocalPath3 = Gradual.Spider.LimiteRestricao
+		SccProjectUniqueName4 = Gradual.Spider.LimiteRestricao.Test\\Gradual.Spider.LimiteRestricao.Test.csproj
+		SccProjectName4 = Gradual.Spider.LimiteRestricao.Test
+		SccLocalPath4 = Gradual.Spider.LimiteRestricao.Test
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EEBF804-4739-4A22-9CC2-C03467297898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EEBF804-4739-4A22-9CC2-C03467297898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EEBF804-4739-4A22-9CC2-C03467297898}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8EEBF804-4739-4A22-9CC2-C03467297898}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8EEBF804-4739-4A22-9CC2-C03467297898}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8EEBF804-4739-4A22-9CC2-C03467297898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EEBF804-4739-4A22-9CC2-C03467297898}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EEBF804-4739-4A22-9CC2-C03467297898}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8EEBF804-4739-4A22-9CC2-C03467297898}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8EEBF804-4739-4A22-9CC2-C03467297898}.Release|x86.ActiveCfg = Release|Any CPU
+		{BC896CC7-0ABF-4EFD-8677-256CA4851EA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC896CC7-0ABF-4EFD-8677-256CA4851EA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC896CC7-0ABF-4EFD-8677-256CA4851EA6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{BC896CC7-0ABF-4EFD-8677-256CA4851EA6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{BC896CC7-0ABF-4EFD-8677-256CA4851EA6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BC896CC7-0ABF-4EFD-8677-256CA4851EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC896CC7-0ABF-4EFD-8677-256CA4851EA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC896CC7-0ABF-4EFD-8677-256CA4851EA6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{BC896CC7-0ABF-4EFD-8677-256CA4851EA6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{BC896CC7-0ABF-4EFD-8677-256CA4851EA6}.Release|x86.ActiveCfg = Release|Any CPU
+		{BDA75678-45C5-4C7B-B7F0-7513BE9C85D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDA75678-45C5-4C7B-B7F0-7513BE9C85D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDA75678-45C5-4C7B-B7F0-7513BE9C85D4}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{BDA75678-45C5-4C7B-B7F0-7513BE9C85D4}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{BDA75678-45C5-4C7B-B7F0-7513BE9C85D4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BDA75678-45C5-4C7B-B7F0-7513BE9C85D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDA75678-45C5-4C7B-B7F0-7513BE9C85D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDA75678-45C5-4C7B-B7F0-7513BE9C85D4}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{BDA75678-45C5-4C7B-B7F0-7513BE9C85D4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{BDA75678-45C5-4C7B-B7F0-7513BE9C85D4}.Release|x86.ActiveCfg = Release|Any CPU
+		{37B81548-4030-4A0F-82ED-1855F87AD7FA}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{37B81548-4030-4A0F-82ED-1855F87AD7FA}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{37B81548-4030-4A0F-82ED-1855F87AD7FA}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{37B81548-4030-4A0F-82ED-1855F87AD7FA}.Debug|x86.ActiveCfg = Debug|x86
+		{37B81548-4030-4A0F-82ED-1855F87AD7FA}.Debug|x86.Build.0 = Debug|x86
+		{37B81548-4030-4A0F-82ED-1855F87AD7FA}.Release|Any CPU.ActiveCfg = Release|x86
+		{37B81548-4030-4A0F-82ED-1855F87AD7FA}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{37B81548-4030-4A0F-82ED-1855F87AD7FA}.Release|Mixed Platforms.Build.0 = Release|x86
+		{37B81548-4030-4A0F-82ED-1855F87AD7FA}.Release|x86.ActiveCfg = Release|x86
+		{37B81548-4030-4A0F-82ED-1855F87AD7FA}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

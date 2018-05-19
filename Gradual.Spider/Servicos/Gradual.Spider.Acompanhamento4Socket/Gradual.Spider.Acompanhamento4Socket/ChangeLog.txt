@@ -1,0 +1,50 @@
+﻿Gradual.Spider.Acompanhamento4Socket
+====================================
+
+v.1.0.0.8
+=========
+- Alteracao da estrutura de conexão, limitando ou não o numero de registros de detalhe, a partir de uma requisicao;;
+
+v.1.0.0.7
+=========
+- Insercao de parametro para limitar o numero de registros nos details;
+- Correcao da ordenacao dos details para mensagem tipo incremental. Os detalhes não devem ser ordenados by DESC;
+
+v.1.0.0.6
+=========
+- Alteracao de atualizacao do SpiderOrder;
+- Correcao para liberacao de incremental em caso de nao existir snapshot;
+
+v.1.0.0.5
+=========
+- Retorno do Exchange e AccountDv;
+
+v.1.0.0.4
+=========
+- Correcao da geracao do objeto SpiderOrder e SpiderOrderDetail e calculo de preço medio;
+- Tratameto de rejeicao de cancelamento por callback do roteador e geracao do detail;
+- Alteracoes da rotina de streamer, inserindo Id de requisicao e adicionando thread no snapshot;
+
+v.1.0.0.3
+=========
+- Criacao de conceito de streamer para mensageria de Acompanhamento de Ordens; 
+
+v.1.0.0.2
+=========
+- Correcao de suporte a multiplos valores para cada propriedade (excecao de account);
+- Ordenacao a partir de transact time (desc);
+- Melhorias na consulta sem a chave account
+
+v.1.0.0.1
+=========
+- Correcao de carga do snapshot;
+- Calculo de Preco Medio (media simples e ponderada); 
+- Correcao da limpeza de details
+
+v.1.0.0.0
+=========
+- Montagem da estrutura de servico / client - server;
+- Montagem da memoria;
+- Desenvolvimento das mensagens de request/response e filtragem das ordens;
+- Versão pre-release;
+

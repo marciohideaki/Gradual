@@ -1,0 +1,202 @@
+﻿th.ui-th-column div
+{
+    white-space:normal !important;
+    height:auto !important;
+    padding:2px;
+}
+
+fieldset.filter-border 
+{
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 0.0em 1.4em !important;
+    margin: 0 0 0.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+    box-shadow:  0px 0px 0px 0px #000;
+    height: 170px;
+}
+
+fieldset.filter-border-small  
+{
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 0.0em 1.4em !important;
+    margin: 0 0 0.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+    box-shadow:  0px 0px 0px 0px #000;
+    height: 130px;
+}
+
+legend.filter-border 
+{
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    width: inherit;
+    border-bottom:0px;
+    color:#FFF;
+    margin-bottom:0px
+}
+
+legend.filter-border-small  
+{
+    font-size: 0.8em !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    width: inherit;
+    border-bottom:0px;
+    color:#FFF;
+    margin-bottom:0px
+}
+
+label.align-to-right 
+{
+    text-align:right;
+    float:right;
+    margin-right:25px;
+    font-size:0.8em;
+}
+
+label.align
+{
+    text-align:right;
+    float:right;
+    margin-left: 75px;
+    font-size:0.8em;
+}
+
+.PARCIALMENTEEXECUTADA,
+.EXECUTADA,
+.DISPARADA
+{
+	background-color        :#8ab592 !important;
+	border-top-color        :#666666;
+	border-bottom-color     :#666666;
+    color                   :#000000;
+}
+	
+.ABERTA,
+.ENVIADAPARAOROTEADORDEORDENS,
+.ENVIADAPARAABOLSA
+{
+	background-color        :#000000 !important;
+	border-top-color        :#666666;
+	border-bottom-color     :#666666;
+    color                   :#FFFFFF;
+}
+
+.SOLICITADA
+{
+	background-color        :#DBD19B !important;
+	background-image        :url(../Img/GradIntra_Grid_Monitoramento_TexturaCancelado.gif);
+	padding-top             :3px !important;  /* pra alinhar as texturas */
+	padding-bottom          :3px !important;  /* pra alinhar as texturas */
+	border-top-color        :#666666;
+	border-bottom-color     :#666666;
+    color                   :#000000;
+}
+	
+.CANCELADA
+{
+	background-color        :#FFEBBF !important;
+	background-image        :url(../Img/GradIntra_Grid_Monitoramento_TexturaCancelado.gif);
+	padding-top             :3px !important;  /* pra alinhar as texturas */
+	padding-bottom          :3px !important;  /* pra alinhar as texturas */
+	border-top-color        :#666666;
+	border-bottom-color     :#666666;
+    color                   :#000000;
+}
+	
+.REJEITADA  ,
+.SUBSTITUIDA,
+.SUSPENSA,
+.EXPIRADA   
+{
+	background-color        :#caa7a7 !important;
+	background-image        :url(../Img/GradIntra_Grid_Monitoramento_TexturaRejeitado.gif);
+	padding-top             :3px !important;  /* pra alinhar as texturas */
+	padding-bottom          :3px !important;  /* pra alinhar as texturas */
+	border-top-color        :#666666;
+	border-bottom-color     :#666666;
+    color                   :#000000;
+}
+	
+table.GridAcompanhamento tbody tr.ABERTA                        td,
+table.GridAcompanhamento tbody tr.ENVIADAPARAOROTEADORDEORDENS  td,
+table.GridAcompanhamento tbody tr.ENVIADAPARAABOLSA             td
+{
+	background-color        :#90cdb8 !important;
+	border-top-color        :#666666;
+	border-bottom-color     :#666666;
+    color                   :#000000;
+}
+	
+table.GridAcompanhamento tbody tr.EXECUTADA             td, 
+table.GridAcompanhamento tbody tr.PARCIALMENTEEXECUTADA td,
+table.GridAcompanhamento tbody tr.DISPARADA td
+{
+	background-color        :#8ab592 !important;
+	border-top-color        :#666666;
+	border-bottom-color     :#666666;
+    color                   :#000000;
+}
+	
+table.GridAcompanhamento tbody tr.CANCELADA   td
+{
+	background-color        :#c9c9c9 !important;
+	background-image        :url(../Img/GradIntra_Grid_Monitoramento_TexturaCancelado.gif);
+	padding-top             :3px !important;  /* pra alinhar as texturas */
+	padding-bottom          :3px !important;  /* pra alinhar as texturas */
+	border-top-color        :#666666;
+	border-bottom-color     :#666666;
+    color                   :#000000;
+}
+	
+table.GridAcompanhamento tbody tr.REJEITADA   td, 
+table.GridAcompanhamento tbody tr.SUBSTITUIDA td, 
+table.GridAcompanhamento tbody tr.SUSPENSA    td,
+table.GridAcompanhamento tbody tr.EXPIRADA    td
+{
+	background-color        :#caa7a7 !important;
+	background-image        :url(../Img/GradIntra_Grid_Monitoramento_TexturaRejeitado.gif);
+	padding-top             :3px !important;  /* pra alinhar as texturas */
+	padding-bottom          :3px !important;  /* pra alinhar as texturas */
+	border-top-color        :#666666;
+	border-bottom-color     :#666666;
+    color                   :#000000;
+}
+
+.ui-pg-input
+{
+    border: 1px solid #666666;
+    background: #333 url("../ui-darkness/images/ui-bg_inset-soft_25_000000_1x100.png") 50% bottom repeat-x;
+    color: #ffffff;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.ui-widget-content .ui-icon 
+{
+    background-image: url("../ui-darkness/images/ui-icons_222222_256x240.png");
+}
+
+.ui-icon-plus 
+{
+    background-position: -16px -128px;
+    background-position-x: -16px;
+    background-position-y: -128px;
+}
+.ui-icon 
+{
+    width: 16px;
+    height: 16px;
+    background-image: url("../ui-darkness/images/ui-icons_222222_256x240.png");
+}
+
+.ui-icon 
+{
+    display: block;
+    text-indent: -99999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}

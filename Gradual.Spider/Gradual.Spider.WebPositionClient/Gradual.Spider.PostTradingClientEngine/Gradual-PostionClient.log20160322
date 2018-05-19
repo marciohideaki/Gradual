@@ -1,0 +1,532 @@
+2016-03-22 11:37:29,666 [632] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas - Erro [Erro de configuração: Valor registrado no web.config para 'IdSistemaMDS' está vazio ou nulo.] em ConfiguracoesValidadas.Iniciar()
+    >>Stack:
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas.Iniciar() na D:\Gradual\Source\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\ConfiguracoesValidadas.cs:linha 285
+2016-03-22 11:37:29,675 [632] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-22 11:37:29,679 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-22 11:37:29,680 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-22 11:37:29,964 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no cache
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AutenticarUsuario
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: VerificarPermissao
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPermissoes
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPermissao
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarItemSeguranca
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissoes
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissao
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPermissao
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuario
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarios
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuario
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuario
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarAssinaturaEletronica
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarAssinaturaEletronica
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarSenha
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuarioGrupo
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarioGrupos
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarUsuarioGrupo
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuarioGrupo
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuarioGrupo
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPerfil
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPerfis
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPerfil
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPerfil
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPerfil
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberSessao
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarSessoes
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: EfetuarLogOut
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarPermissaoAcesso
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarAssessorCompartilhado
+2016-03-22 11:37:29,997 [632] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPermissao
+2016-03-22 11:41:58,134 [629] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas - Erro [Erro de configuração: Valor registrado no web.config para 'IdSistemaMDS' está vazio ou nulo.] em ConfiguracoesValidadas.Iniciar()
+    >>Stack:
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas.Iniciar() na D:\Gradual\Source\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\ConfiguracoesValidadas.cs:linha 285
+2016-03-22 11:41:58,141 [629] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-22 11:41:58,145 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-22 11:41:58,145 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-22 11:41:58,658 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no cache
+2016-03-22 11:41:58,687 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AutenticarUsuario
+2016-03-22 11:41:58,687 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: VerificarPermissao
+2016-03-22 11:41:58,687 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPermissoes
+2016-03-22 11:41:58,687 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPermissao
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarItemSeguranca
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissoes
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissao
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPermissao
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuario
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarios
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuario
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuario
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarAssinaturaEletronica
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarAssinaturaEletronica
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarSenha
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuarioGrupo
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarioGrupos
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarUsuarioGrupo
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuarioGrupo
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuarioGrupo
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPerfil
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPerfis
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPerfil
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPerfil
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPerfil
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberSessao
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarSessoes
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: EfetuarLogOut
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarPermissaoAcesso
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarAssessorCompartilhado
+2016-03-22 11:41:58,688 [629] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPermissao
+2016-03-22 16:20:43,328 [11] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas - Erro [Erro de configuração: Valor registrado no web.config para 'IdSistemaMDS' está vazio ou nulo.] em ConfiguracoesValidadas.Iniciar()
+    >>Stack:
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas.Iniciar() na D:\Gradual\Source\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\ConfiguracoesValidadas.cs:linha 285
+2016-03-22 16:20:43,356 [11] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-22 16:20:43,359 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-22 16:20:43,360 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-22 16:20:44,113 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no cache
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AutenticarUsuario
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: VerificarPermissao
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPermissoes
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPermissao
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarItemSeguranca
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissoes
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissao
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPermissao
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuario
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarios
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuario
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuario
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarAssinaturaEletronica
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarAssinaturaEletronica
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarSenha
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuarioGrupo
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarioGrupos
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarUsuarioGrupo
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuarioGrupo
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuarioGrupo
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPerfil
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPerfis
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPerfil
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPerfil
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPerfil
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberSessao
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarSessoes
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: EfetuarLogOut
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarPermissaoAcesso
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarAssessorCompartilhado
+2016-03-22 16:20:44,136 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPermissao
+2016-03-22 16:22:18,825 [18] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas - Erro [Erro de configuração: Valor registrado no web.config para 'IdSistemaMDS' está vazio ou nulo.] em ConfiguracoesValidadas.Iniciar()
+    >>Stack:
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas.Iniciar() na D:\Gradual\Source\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\ConfiguracoesValidadas.cs:linha 285
+2016-03-22 16:22:18,832 [18] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-22 16:22:18,836 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-22 16:22:18,837 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-22 16:22:19,023 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no cache
+2016-03-22 16:22:19,049 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AutenticarUsuario
+2016-03-22 16:22:19,049 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: VerificarPermissao
+2016-03-22 16:22:19,049 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPermissoes
+2016-03-22 16:22:19,049 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPermissao
+2016-03-22 16:22:19,049 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarItemSeguranca
+2016-03-22 16:22:19,049 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissoes
+2016-03-22 16:22:19,049 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissao
+2016-03-22 16:22:19,049 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPermissao
+2016-03-22 16:22:19,049 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuario
+2016-03-22 16:22:19,050 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarios
+2016-03-22 16:22:19,050 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuario
+2016-03-22 16:22:19,050 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuario
+2016-03-22 16:22:19,050 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarAssinaturaEletronica
+2016-03-22 16:22:19,050 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarAssinaturaEletronica
+2016-03-22 16:22:19,050 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarSenha
+2016-03-22 16:22:19,050 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuarioGrupo
+2016-03-22 16:22:19,050 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarioGrupos
+2016-03-22 16:22:19,050 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarUsuarioGrupo
+2016-03-22 16:22:19,050 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuarioGrupo
+2016-03-22 16:22:19,050 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuarioGrupo
+2016-03-22 16:22:19,050 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPerfil
+2016-03-22 16:22:19,050 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPerfis
+2016-03-22 16:22:19,050 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPerfil
+2016-03-22 16:22:19,050 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPerfil
+2016-03-22 16:22:19,050 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPerfil
+2016-03-22 16:22:19,050 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberSessao
+2016-03-22 16:22:19,050 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarSessoes
+2016-03-22 16:22:19,050 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: EfetuarLogOut
+2016-03-22 16:22:19,050 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarPermissaoAcesso
+2016-03-22 16:22:19,050 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarAssessorCompartilhado
+2016-03-22 16:22:19,050 [18] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPermissao
+2016-03-22 17:41:46,222 [114] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas - Erro [Erro de configuração: Valor registrado no web.config para 'IdSistemaMDS' está vazio ou nulo.] em ConfiguracoesValidadas.Iniciar()
+    >>Stack:
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas.Iniciar() na D:\Gradual\Source\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\ConfiguracoesValidadas.cs:linha 285
+2016-03-22 17:41:46,229 [114] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-22 17:41:46,233 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-22 17:41:46,233 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-22 17:41:46,588 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no cache
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AutenticarUsuario
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: VerificarPermissao
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPermissoes
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPermissao
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarItemSeguranca
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissoes
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissao
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPermissao
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuario
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarios
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuario
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuario
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarAssinaturaEletronica
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarAssinaturaEletronica
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarSenha
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuarioGrupo
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarioGrupos
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarUsuarioGrupo
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuarioGrupo
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuarioGrupo
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPerfil
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPerfis
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPerfil
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPerfil
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPerfil
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberSessao
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarSessoes
+2016-03-22 17:41:46,621 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: EfetuarLogOut
+2016-03-22 17:41:46,622 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarPermissaoAcesso
+2016-03-22 17:41:46,622 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarAssessorCompartilhado
+2016-03-22 17:41:46,622 [114] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPermissao
+2016-03-22 18:06:35,505 [6] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas - Erro [Erro de configuração: Valor registrado no web.config para 'IdSistemaMDS' está vazio ou nulo.] em ConfiguracoesValidadas.Iniciar()
+    >>Stack:
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas.Iniciar() na D:\Gradual\Source\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\ConfiguracoesValidadas.cs:linha 285
+2016-03-22 18:06:35,513 [6] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-22 18:06:35,527 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-22 18:06:35,528 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-22 18:06:36,009 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no cache
+2016-03-22 18:06:36,041 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AutenticarUsuario
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: VerificarPermissao
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPermissoes
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPermissao
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarItemSeguranca
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissoes
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissao
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPermissao
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuario
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarios
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuario
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuario
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarAssinaturaEletronica
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarAssinaturaEletronica
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarSenha
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuarioGrupo
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarioGrupos
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarUsuarioGrupo
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuarioGrupo
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuarioGrupo
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPerfil
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPerfis
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPerfil
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPerfil
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPerfil
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberSessao
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarSessoes
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: EfetuarLogOut
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarPermissaoAcesso
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarAssessorCompartilhado
+2016-03-22 18:06:36,042 [6] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPermissao
+2016-03-22 18:08:38,517 [14] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas - Erro [Erro de configuração: Valor registrado no web.config para 'IdSistemaMDS' está vazio ou nulo.] em ConfiguracoesValidadas.Iniciar()
+    >>Stack:
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas.Iniciar() na D:\Gradual\Source\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\ConfiguracoesValidadas.cs:linha 285
+2016-03-22 18:08:38,524 [14] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-22 18:08:38,528 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-22 18:08:38,528 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-22 18:08:39,038 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no cache
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AutenticarUsuario
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: VerificarPermissao
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPermissoes
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPermissao
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarItemSeguranca
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissoes
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissao
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPermissao
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuario
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarios
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuario
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuario
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarAssinaturaEletronica
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarAssinaturaEletronica
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarSenha
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuarioGrupo
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarioGrupos
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarUsuarioGrupo
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuarioGrupo
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuarioGrupo
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPerfil
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPerfis
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPerfil
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPerfil
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPerfil
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberSessao
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarSessoes
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: EfetuarLogOut
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarPermissaoAcesso
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarAssessorCompartilhado
+2016-03-22 18:08:39,062 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPermissao
+2016-03-22 18:09:49,821 [10] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas - Erro [Erro de configuração: Valor registrado no web.config para 'IdSistemaMDS' está vazio ou nulo.] em ConfiguracoesValidadas.Iniciar()
+    >>Stack:
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas.Iniciar() na D:\Gradual\Source\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\ConfiguracoesValidadas.cs:linha 285
+2016-03-22 18:09:49,828 [10] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-22 18:09:49,832 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-22 18:09:49,833 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-22 18:09:49,962 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no cache
+2016-03-22 18:09:49,985 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AutenticarUsuario
+2016-03-22 18:09:49,985 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: VerificarPermissao
+2016-03-22 18:09:49,985 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPermissoes
+2016-03-22 18:09:49,985 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPermissao
+2016-03-22 18:09:49,985 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarItemSeguranca
+2016-03-22 18:09:49,985 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissoes
+2016-03-22 18:09:49,985 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissao
+2016-03-22 18:09:49,985 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPermissao
+2016-03-22 18:09:49,985 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuario
+2016-03-22 18:09:49,985 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarios
+2016-03-22 18:09:49,986 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuario
+2016-03-22 18:09:49,986 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuario
+2016-03-22 18:09:49,986 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarAssinaturaEletronica
+2016-03-22 18:09:49,986 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarAssinaturaEletronica
+2016-03-22 18:09:49,986 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarSenha
+2016-03-22 18:09:49,986 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuarioGrupo
+2016-03-22 18:09:49,986 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarioGrupos
+2016-03-22 18:09:49,986 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarUsuarioGrupo
+2016-03-22 18:09:49,986 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuarioGrupo
+2016-03-22 18:09:49,986 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuarioGrupo
+2016-03-22 18:09:49,986 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPerfil
+2016-03-22 18:09:49,986 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPerfis
+2016-03-22 18:09:49,986 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPerfil
+2016-03-22 18:09:49,986 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPerfil
+2016-03-22 18:09:49,986 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPerfil
+2016-03-22 18:09:49,986 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberSessao
+2016-03-22 18:09:49,986 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarSessoes
+2016-03-22 18:09:49,986 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: EfetuarLogOut
+2016-03-22 18:09:49,986 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarPermissaoAcesso
+2016-03-22 18:09:49,986 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarAssessorCompartilhado
+2016-03-22 18:09:49,986 [10] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPermissao
+2016-03-22 18:14:08,166 [21] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas - Erro [Erro de configuração: Valor registrado no web.config para 'IdSistemaMDS' está vazio ou nulo.] em ConfiguracoesValidadas.Iniciar()
+    >>Stack:
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas.Iniciar() na D:\Gradual\Source\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\ConfiguracoesValidadas.cs:linha 285
+2016-03-22 18:14:08,173 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-22 18:14:08,176 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-22 18:14:08,177 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-22 18:14:08,473 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no cache
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AutenticarUsuario
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: VerificarPermissao
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPermissoes
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPermissao
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarItemSeguranca
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissoes
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissao
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPermissao
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuario
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarios
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuario
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuario
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarAssinaturaEletronica
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarAssinaturaEletronica
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarSenha
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuarioGrupo
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarioGrupos
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarUsuarioGrupo
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuarioGrupo
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuarioGrupo
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPerfil
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPerfis
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPerfil
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPerfil
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPerfil
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberSessao
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarSessoes
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: EfetuarLogOut
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarPermissaoAcesso
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarAssessorCompartilhado
+2016-03-22 18:14:08,493 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPermissao
+2016-03-22 18:27:48,251 [28] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas - Erro [Erro de configuração: Valor registrado no web.config para 'IdSistemaMDS' está vazio ou nulo.] em ConfiguracoesValidadas.Iniciar()
+    >>Stack:
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas.Iniciar() na D:\Gradual\Source\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\ConfiguracoesValidadas.cs:linha 285
+2016-03-22 18:27:48,258 [28] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-22 18:27:48,262 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-22 18:27:48,263 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-22 18:27:48,584 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no cache
+2016-03-22 18:27:48,606 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AutenticarUsuario
+2016-03-22 18:27:48,606 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: VerificarPermissao
+2016-03-22 18:27:48,606 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPermissoes
+2016-03-22 18:27:48,606 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPermissao
+2016-03-22 18:27:48,606 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarItemSeguranca
+2016-03-22 18:27:48,606 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissoes
+2016-03-22 18:27:48,606 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissao
+2016-03-22 18:27:48,606 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPermissao
+2016-03-22 18:27:48,606 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuario
+2016-03-22 18:27:48,606 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarios
+2016-03-22 18:27:48,606 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuario
+2016-03-22 18:27:48,606 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuario
+2016-03-22 18:27:48,606 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarAssinaturaEletronica
+2016-03-22 18:27:48,606 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarAssinaturaEletronica
+2016-03-22 18:27:48,606 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarSenha
+2016-03-22 18:27:48,606 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuarioGrupo
+2016-03-22 18:27:48,606 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarioGrupos
+2016-03-22 18:27:48,607 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarUsuarioGrupo
+2016-03-22 18:27:48,607 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuarioGrupo
+2016-03-22 18:27:48,607 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuarioGrupo
+2016-03-22 18:27:48,607 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPerfil
+2016-03-22 18:27:48,607 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPerfis
+2016-03-22 18:27:48,607 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPerfil
+2016-03-22 18:27:48,607 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPerfil
+2016-03-22 18:27:48,607 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPerfil
+2016-03-22 18:27:48,607 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberSessao
+2016-03-22 18:27:48,607 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarSessoes
+2016-03-22 18:27:48,607 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: EfetuarLogOut
+2016-03-22 18:27:48,607 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarPermissaoAcesso
+2016-03-22 18:27:48,607 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarAssessorCompartilhado
+2016-03-22 18:27:48,607 [28] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPermissao
+2016-03-22 19:42:54,025 [51] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas - Erro [Erro de configuração: Valor registrado no web.config para 'IdSistemaMDS' está vazio ou nulo.] em ConfiguracoesValidadas.Iniciar()
+    >>Stack:
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas.Iniciar() na D:\Gradual\Source\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\ConfiguracoesValidadas.cs:linha 285
+2016-03-22 19:42:54,032 [51] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-22 19:42:54,036 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-22 19:42:54,036 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-22 19:42:54,335 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no cache
+2016-03-22 19:42:54,361 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AutenticarUsuario
+2016-03-22 19:42:54,361 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: VerificarPermissao
+2016-03-22 19:42:54,361 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPermissoes
+2016-03-22 19:42:54,361 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPermissao
+2016-03-22 19:42:54,361 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarItemSeguranca
+2016-03-22 19:42:54,361 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissoes
+2016-03-22 19:42:54,361 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissao
+2016-03-22 19:42:54,361 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPermissao
+2016-03-22 19:42:54,361 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuario
+2016-03-22 19:42:54,361 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarios
+2016-03-22 19:42:54,361 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuario
+2016-03-22 19:42:54,361 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuario
+2016-03-22 19:42:54,361 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarAssinaturaEletronica
+2016-03-22 19:42:54,361 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarAssinaturaEletronica
+2016-03-22 19:42:54,361 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarSenha
+2016-03-22 19:42:54,361 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuarioGrupo
+2016-03-22 19:42:54,361 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarioGrupos
+2016-03-22 19:42:54,361 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarUsuarioGrupo
+2016-03-22 19:42:54,361 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuarioGrupo
+2016-03-22 19:42:54,361 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuarioGrupo
+2016-03-22 19:42:54,362 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPerfil
+2016-03-22 19:42:54,362 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPerfis
+2016-03-22 19:42:54,362 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPerfil
+2016-03-22 19:42:54,362 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPerfil
+2016-03-22 19:42:54,362 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPerfil
+2016-03-22 19:42:54,362 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberSessao
+2016-03-22 19:42:54,362 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarSessoes
+2016-03-22 19:42:54,362 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: EfetuarLogOut
+2016-03-22 19:42:54,362 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarPermissaoAcesso
+2016-03-22 19:42:54,362 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarAssessorCompartilhado
+2016-03-22 19:42:54,362 [51] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPermissao
+2016-03-22 21:37:32,471 [113] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas - Erro [Erro de configuração: Valor registrado no web.config para 'IdSistemaMDS' está vazio ou nulo.] em ConfiguracoesValidadas.Iniciar()
+    >>Stack:
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas.Iniciar() na D:\Gradual\Source\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\ConfiguracoesValidadas.cs:linha 285
+2016-03-22 21:37:32,479 [113] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-22 21:37:32,483 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-22 21:37:32,483 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-22 21:37:32,900 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no cache
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AutenticarUsuario
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: VerificarPermissao
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPermissoes
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPermissao
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarItemSeguranca
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissoes
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissao
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPermissao
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuario
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarios
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuario
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuario
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarAssinaturaEletronica
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarAssinaturaEletronica
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarSenha
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuarioGrupo
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarioGrupos
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarUsuarioGrupo
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuarioGrupo
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuarioGrupo
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPerfil
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPerfis
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPerfil
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPerfil
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPerfil
+2016-03-22 21:37:32,937 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberSessao
+2016-03-22 21:37:32,938 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarSessoes
+2016-03-22 21:37:32,938 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: EfetuarLogOut
+2016-03-22 21:37:32,938 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarPermissaoAcesso
+2016-03-22 21:37:32,938 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarAssessorCompartilhado
+2016-03-22 21:37:32,938 [113] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPermissao
+2016-03-22 21:43:18,668 [86] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas - Erro [Erro de configuração: Valor registrado no web.config para 'IdSistemaMDS' está vazio ou nulo.] em ConfiguracoesValidadas.Iniciar()
+    >>Stack:
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas.Iniciar() na D:\Gradual\Source\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\ConfiguracoesValidadas.cs:linha 285
+2016-03-22 21:43:18,675 [86] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-22 21:43:18,679 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-22 21:43:18,679 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-22 21:43:18,772 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no cache
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AutenticarUsuario
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: VerificarPermissao
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPermissoes
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPermissao
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarItemSeguranca
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissoes
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissao
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPermissao
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuario
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarios
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuario
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuario
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarAssinaturaEletronica
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarAssinaturaEletronica
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarSenha
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuarioGrupo
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarioGrupos
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarUsuarioGrupo
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuarioGrupo
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuarioGrupo
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPerfil
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPerfis
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPerfil
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPerfil
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPerfil
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberSessao
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarSessoes
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: EfetuarLogOut
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarPermissaoAcesso
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarAssessorCompartilhado
+2016-03-22 21:43:18,794 [86] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPermissao
+2016-03-22 21:48:07,694 [81] ERROR Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas - Erro [Erro de configuração: Valor registrado no web.config para 'IdSistemaMDS' está vazio ou nulo.] em ConfiguracoesValidadas.Iniciar()
+    >>Stack:
+   em Gradual.Spider.PostTradingClientEngine.App_Codigo.ConfiguracoesValidadas.Iniciar() na D:\Gradual\Source\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PostTradingClientEngine\App_Codigo\ConfiguracoesValidadas.cs:linha 285
+2016-03-22 21:48:07,701 [81] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2016-03-22 21:48:07,704 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2016-03-22 21:48:07,705 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2016-03-22 21:48:08,278 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no cache
+2016-03-22 21:48:08,315 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AutenticarUsuario
+2016-03-22 21:48:08,315 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: VerificarPermissao
+2016-03-22 21:48:08,315 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPermissoes
+2016-03-22 21:48:08,315 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPermissao
+2016-03-22 21:48:08,315 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarItemSeguranca
+2016-03-22 21:48:08,315 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissoes
+2016-03-22 21:48:08,315 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissao
+2016-03-22 21:48:08,315 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPermissao
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuario
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarios
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuario
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuario
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarAssinaturaEletronica
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarAssinaturaEletronica
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarSenha
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuarioGrupo
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarioGrupos
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarUsuarioGrupo
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuarioGrupo
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuarioGrupo
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPerfil
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPerfis
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPerfil
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPerfil
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPerfil
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberSessao
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarSessoes
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: EfetuarLogOut
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarPermissaoAcesso
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarAssessorCompartilhado
+2016-03-22 21:48:08,316 [81] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPermissao

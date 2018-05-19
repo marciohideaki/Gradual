@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="VendasDescobertas.aspx.cs" Inherits="Gradual.Spider.PostTradingClientEngine.Backend.VendasDescobertas" %>

@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2CB31A38-51E3-4C77-9904-A1C9BBCBDC54}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.Spider.GlobalOrderTracking</RootNamespace>
+    <AssemblyName>Gradual.Spider.GlobalOrderTracking</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.Core.Spider.OrderFixProcessing.Lib">
+      <HintPath>..\Servicos\References\Gradual.Core.Spider.OrderFixProcessing.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.CadastroCliente.Lib">
+      <HintPath>..\Gradual.Spider.References\Gradual.OMS.CadastroCliente.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.RoteadorOrdens.Lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Gradual.Spider.References\Gradual.OMS.RoteadorOrdens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Seguranca.Lib">
+      <HintPath>..\Gradual.Spider.References\Gradual.OMS.Seguranca.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Spider.Acompanhamento4Socket.Lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Servicos\References\Gradual.Spider.Acompanhamento4Socket.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Spider.SupervisorFix.Lib">
+      <HintPath>..\Servicos\References\Gradual.Spider.SupervisorFix.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Servicos\References\x64\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aplicacao.cs" />
+    <Compile Include="AssemblyHelper.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="ContextoGlobal.cs" />
+    <Compile Include="Formularios\fCancel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fCancel.Designer.cs">
+      <DependentUpon>fCancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seguranca.cs" />
+    <Compile Include="Service References\Autenticacao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.cs" />
+    <Compile Include="UsuarioPadrao.cs" />
+    <Compile Include="Constantes.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Formularios\fCores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fCores.Designer.cs">
+      <DependentUpon>fCores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\fOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fOrder.Designer.cs">
+      <DependentUpon>fOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormularioBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormularioBase.Designer.cs">
+      <DependentUpon>FormularioBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmBase.Designer.cs">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametros.cs" />
+    <Compile Include="Preferencias.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyComparer.cs" />
+    <Compile Include="SortableBindingList.cs" />
+    <Compile Include="Web References\br.com.gradualinvestimentos.wsplataforma\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Formularios\fCancel.resx">
+      <DependentUpon>fCancel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\fCores.resx">
+      <DependentUpon>fCores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\fOrder.resx">
+      <DependentUpon>fOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormularioBase.resx">
+      <DependentUpon>FormularioBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmBase.resx">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\Gradual.Core.Spider.OrderFixProcessing.Lib.Dados.SpiderOrderDetailInfo.datasource" />
+    <None Include="Properties\DataSources\Gradual.Core.Spider.OrderFixProcessing.Lib.Dados.SpiderOrderInfo.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\Autenticacao\Autenticacao.wsdl" />
+    <None Include="Service References\Autenticacao\Gradual.Spider.GlobalOrderTracking.Autenticacao.AutenticarUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Autenticacao\Gradual.Spider.GlobalOrderTracking.Autenticacao.BuscarPermissoesDoUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Autenticacao\Gradual.Spider.GlobalOrderTracking.Autenticacao.VerificarAutenticacaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Web References\br.com.gradualinvestimentos.wsplataforma\Autenticacao.wsdl" />
+    <None Include="Web References\br.com.gradualinvestimentos.wsplataforma\AutenticarUsuarioResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\br.com.gradualinvestimentos.wsplataforma\BuscarPermissoesDoUsuarioResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\br.com.gradualinvestimentos.wsplataforma\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.com.gradualinvestimentos.wsplataforma\VerificarAutenticacaoResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Gradual.GTI\Gradual.Utils\Gradual.Utils\Gradual.Utils.csproj">
+      <Project>{D92548A5-47C7-45C5-954C-5AD0C13E7A2C}</Project>
+      <Name>Gradual.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.GTI\GradualForm\GradualForm\GradualForm.csproj">
+      <Project>{3B25656A-0A6B-4B68-BF41-9D3C50387EA2}</Project>
+      <Name>GradualForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Gradual.OMS.Library.csproj">
+      <Project>{A5E45264-237E-471B-9260-88552A1EF7F3}</Project>
+      <Name>Gradual.OMS.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.GTI\Gradual.Utils\Gradual.Utils.Logger\Gradual.Utils.Logger.csproj">
+      <Project>{7AB1E12A-8DAA-4C10-842B-F2B0B7B4F04C}</Project>
+      <Name>Gradual.Utils.Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Spider.CommSocket\Gradual.Spider.CommSocket\Gradual.Spider.CommSocket.csproj">
+      <Project>{DFA2D310-CD8A-4338-BB96-EAC96BE96729}</Project>
+      <Name>Gradual.Spider.CommSocket</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Spider.Servicos\Gradual.Spider.Servicos.Configuracoes.Lib\Gradual.Spider.Servicos.Configuracoes.Lib.csproj">
+      <Project>{69EAD2DF-D5AF-4EAC-8F82-A3A23E52DDDB}</Project>
+      <Name>Gradual.Spider.Servicos.Configuracoes.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_loader.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://wsplataforma.gradualinvestimentos.com.br:8080/Gradual.WsIntegracao/Autenticacao.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.com.gradualinvestimentos.wsplataforma\</RelPath>
+      <UpdateFromURL>http://wsplataforma.gradualinvestimentos.com.br:8080/Gradual.WsIntegracao/Autenticacao.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Gradual_Spider_GlobalOrderTracking_br_com_gradualinvestimentos_wsplataforma_Autenticacao</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.com.gradualinvestimentos.wsplataforma\Autenticacao.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Autenticacao\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Autenticacao\Autenticacao.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Autenticacao\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Autenticacao\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Autenticacao\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fundo_Login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradual_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_FC_Bayern_München.svg.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

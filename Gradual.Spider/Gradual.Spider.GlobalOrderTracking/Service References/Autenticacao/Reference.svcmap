@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="da6207e6-b60d-4162-9904-4bb1c15eb209" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://wsplataforma.gradualinvestimentos.com.br:8080/Gradual.WsIntegracao/Autenticacao.asmx" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Autenticacao.disco" MetadataType="Disco" ID="e7b8b1ef-9edb-477c-992a-fd7270288a9b" SourceId="1" SourceUrl="http://wsplataforma.gradualinvestimentos.com.br:8080/Gradual.WsIntegracao/Autenticacao.asmx?disco" />
+    <MetadataFile FileName="Autenticacao.wsdl" MetadataType="Wsdl" ID="330848bd-dae2-4abe-9447-33cc56ba5285" SourceId="1" SourceUrl="http://wsplataforma.gradualinvestimentos.com.br:8080/Gradual.WsIntegracao/Autenticacao.asmx?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

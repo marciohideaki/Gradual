@@ -1,0 +1,10 @@
+﻿Gradual.Spider.AcompanhamentoOrdens
+===================================
+===================================
+
+
+v.1.0.0.0
+=========
+- Leitura do backup banco de dados;
+- Assinatura dos callbacks para recebimento dos OrderInfos;
+- Gerenciamento de filtros para recebimento da lista;

@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>http://stackoverflow.com/q/10174910/315935</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/redmond/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="http://www.ok-soft-gmbh.com/jqGrid/jquery.jqGrid-4.3.1/css/ui.jqgrid.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://www.ok-soft-gmbh.com/jqGrid/jquery.jqGrid-4.3.1/js/i18n/grid.locale-en.js"></script>
+    <script type="text/javascript">
+        $.jgrid.no_legacy_api = true;
+        $.jgrid.useJSON = true;
+    </script>
+    <script type="text/javascript" src="http://www.ok-soft-gmbh.com/jqGrid/jquery.jqGrid-4.3.1/js/jquery.jqGrid.src.js"></script>
+
+    <script type="text/javascript">
+    //<![CDATA[
+        /*global $ */
+        /*jslint browser: true */
+        $(function () {
+            'use strict';
+            var myGridData = [
+                    // main grid data
+                    {id: "m1", col1: "11", col2: "12"},
+                    {id: "m2", col1: "21", col2: "22"}
+                ],
+                mySubgrids = {
+                    m1: [
+                        // data for subgrid for the id=m1
+                        {id: "s1a", c1: "aa", c2: "ab", c3: "ac"},
+                        {id: "s1b", c1: "ba", c2: "bb", c3: "bc"},
+                        {id: "s1c", c1: "ca", c2: "cb", c3: "cc"}
+                    ],
+                    m2: [
+                        // data for subgrid for the id=m2
+                        {id: "s2a", c1: "xx", c2: "xy", c3: "xz"}
+                    ]
+                },
+                $grid = $("#list");
+
+            $grid.jqGrid({
+                datatype: 'local',
+                data: myGridData,
+                colNames: ['Column 1', 'Column 2'],
+                colModel: [
+                    { name: 'col1', width: 200 },
+                    { name: 'col2', width: 200 }
+                ],
+                gridview: true,
+                autoencode: true,
+                sortname: 'col1',
+                sortorder: 'desc',
+                height: '100%',
+                pager: '#pager',
+                caption: 'Demonstrate how to create subgrid from local data',
+                subGrid: true,
+                subGridRowExpanded: function (subgridDivId, rowId) {
+                    var subgridTableId = subgridDivId + "_t";
+                    $("#" + subgridDivId).html("<table id='" + subgridTableId + "'></table>");
+                    $("#" + subgridTableId).jqGrid({
+                        datatype: 'local',
+                        data: mySubgrids[rowId],
+                        colNames: ['Col 1', 'Col 2', 'Col 3'],
+                        colModel: [
+                            { name: 'c1', width: 100 },
+                            { name: 'c2', width: 100 },
+                            { name: 'c3', width: 100 }
+                        ],
+                        gridview: true,
+                        rownumbers: true,
+                        autoencode: true,
+                        sortname: 'col1',
+                        sortorder: 'desc',
+                        height: '100%',
+                    });
+                }
+            });
+        });
+    //]]>
+    </script>
+</head>
+<body>
+    <table id="list"><tr><td></td></tr></table>
+    <div id="pager"></div>
+</body>
+</html>

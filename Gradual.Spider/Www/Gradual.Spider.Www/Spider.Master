@@ -1,0 +1,433 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Spider.Master.cs" Inherits="Gradual.Spider.Www.Spider" %>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Localhost - <asp:ContentPlaceHolder ID="headerTitle" runat="server"></asp:ContentPlaceHolder></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/images/icons/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/images/icons/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/images/icons/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/images/icons/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/images/icons/favicon.png">
+
+    <link href="<%= this.RaizDoSite %>/Resc/Skin/Supina/supina.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/helpers/helpers-all.css">
+    <link rel="stylesheet" type="text/css" href="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/elements/elements-all.css">
+    <link rel="stylesheet" type="text/css" href="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/icons/fontawesome/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/icons/linecons/linecons.css">
+    <link rel="stylesheet" type="text/css" href="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/icons/typicons/typicons.css">
+    <link rel="stylesheet" type="text/css" href="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/icons/iconic/iconic.css">
+    <link rel="stylesheet" type="text/css" href="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/themes/supina/layout.css">
+    <link id="layout-color" rel="stylesheet" type="text/css" href="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/themes/supina/default/layout-color.css">
+    <link id="framework-color" rel="stylesheet" type="text/css" href="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/themes/supina/default/framework-color.css">
+    <link rel="stylesheet" type="text/css" href="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/themes/supina/border-radius.css">
+    <link rel="stylesheet" type="text/css" href="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/helpers/colors.css">
+    <link href="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/widgets/modal/modal.css" rel="stylesheet" />
+    <link href="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/widgets/jgrowl-notifications/jgrowl.css" rel="stylesheet" />
+    <link href="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/widgets/datepicker-ui/datepicker.css" rel="stylesheet" />
+    <link href="<%= this.RaizDoSite %>/Resc/Skin/ui.jqgrid.css" rel="stylesheet" />
+      
+
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <link href="<%= this.RaizDoSite %>/Resc/Skin/Supina/01-Principal.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="loading">
+        <img src="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/images/spinner/loader-dark.gif" alt="Loading...">
+    </div>
+    <div id="sb-site">
+      <div id="page-wrapper">
+          <!-- header -->
+           <div class="clearfix" id="page-header">
+                <div class="rm-transition" id="header-logo">
+                    <span><i class="glyph-icon icon-stethoscope"></i> &nbsp;&nbsp; Spider</span><a class="glyph-icon icon-chevron-left" href="#" id="collapse-sidebar"></a>
+                </div>
+                
+            <div id="header-right">
+                <div class="user-profile dropdown">
+                    <a class="user-ico clearfix" data-toggle="dropdown" href="#" title=""> <i class="glyph-icon icon-chevron-down"><asp:Label ID="lblNomeUsuario" runat="server" /></i></a>
+
+                    <div class="dropdown-menu pad0B float-right box-sm">
+                        <ul class="reset-ul mrg5B">
+                            <li>
+                                <a href="#">Configurar painéis<i class="glyph-icon float-right icon-caret-right"></i></a>
+                            </li>
+                        </ul>
+
+                        <div class="pad5A button-pane button-pane-alt text-center">
+                            <a class="btn display-block font-normal btn-danger" href="javascript: EfetuarLogout()"><i class="glyph-icon icon-power-off"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="top-icon-bar float-right">
+                    <div class="dropdown" id="hd-sound">
+                        <a class="glyph-icon icon-typicons-volume-high" href="#" title=""></a>
+                         
+                    </div>
+
+                    <div class="dropdown" id="hd-notificacoes">
+                        <a class="glyph-icon icon-stack-exchange" data-toggle="dropdown" href="#" title=""><span class="bs-badge badge-absolute bg-green">9</span></a>
+                         
+                        <div class="dropdown-menu float-right">
+                            <div class="popover-title display-block clearfix pad10A">
+                                Notifications
+                            </div>
+
+                            <div class="scrollable-content scrollable-nice box-md scrollable-small">
+                                <ul class="no-border notifications-box">
+                                    <%-- 
+                                    <li>
+                                        <span class="bg-danger icon-notification glyph-icon icon-bullhorn"></span> <span class="notification-text">This is an error notification</span>
+                                        <div class="notification-time">a few seconds ago </div>
+                                        <div class="acoesBotoes">
+                                            <a class="btn btn-xs btn-primary label-success aceitar" onclick="Spider.notificacoes.aceitar(this, 234)"><i class="glyph-icon icon-check"></i> Aceitar</a>
+                                            <a class="btn btn-xs btn-primary label-danger rejeitar" onclick="Spider.notificacoes.rejeitar(this, 234, event)"><i class="glyph-icon icon-clock-os"></i>&nbsp;Rejeitar</a>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="bg-warning icon-notification glyph-icon icon-users"></span> <span class="notification-text">This is a warning notification</span>
+                                        <div class="notification-time">a few seconds ago </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="bg-green icon-notification glyph-icon icon-sitemap"></span> <span class="notification-text">A success message example.</span>
+                                        <div class="notification-time">a few seconds ago </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="bg-azure icon-notification glyph-icon icon-random"></span> <span class="notification-text">This is an error notification</span>
+                                        <div class="notification-time">a few seconds ago </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="bg-warning icon-notification glyph-icon icon-ticket"></span> <span class="notification-text">This is a warning notification</span>
+                                        <div class="notification-time">a few seconds ago </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="bg-blue icon-notification glyph-icon icon-user"></span> <span class="notification-text">Alternate notification styling.</span>
+                                        <div class="notification-time">a few seconds ago </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="bg-purple icon-notification glyph-icon icon-user"></span> <span class="notification-text">This is an error notification</span>
+                                        <div class="notification-time">a few seconds ago </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="bg-warning icon-notification glyph-icon icon-user"></span> <span class="notification-text">This is a warning notification</span>
+                                        <div class="notification-time">a few seconds ago </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="bg-green icon-notification glyph-icon icon-user"></span> <span class="notification-text">A success message example.</span>
+                                        <div class="notification-time">a few seconds ago </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="bg-purple icon-notification glyph-icon icon-user"></span> <span class="notification-text">This is an error notification</span>
+                                        <div class="notification-time">a few seconds ago </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="bg-warning icon-notification glyph-icon icon-user"></span> <span class="notification-text">This is a warning notification</span>
+                                        <div class="notification-time">a few seconds ago </div>
+                                    </li>
+
+
+                                     --%>
+                                </ul>
+                            </div>
+                            <%/* 
+                            <div class="pad10A button-pane button-pane-alt text-center">
+                                <a class="btn btn-primary" href="#" title="View all notifications">View all notifications</a>
+                            </div>
+                               */ %>
+                        </div>
+                    
+                     </div>
+
+                    <div class="dropdown" id="hd-config">
+                        <a class="popover-button-header tooltip-button" data-original-title="Example menu" data-placement="left" data-toggle="dropdown" href="#" title=""> <i class="glyph-icon icon-linecons-cog"></i></a>
+                        
+                        <div class="dropdown-menu float-right">
+                            <div class="popover-title display-block clearfix pad10A">
+                                Configurações
+                            </div>
+
+                            <div class="scrollable-content scrollable-nice box-md scrollable-small">
+                                <ul class="no-border notifications-box">
+                                    <li>
+                                        <span class="bg-danger icon-notification glyph-icon icon-bullhorn"></span> <span class="notification-text">This is an error notification</span>
+                                        <div class="notification-time">a few seconds ago </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="bg-warning icon-notification glyph-icon icon-users"></span> <span class="notification-text">This is a warning notification</span>
+                                        <div class="notification-time">a few seconds ago </div>
+                                    </li>
+
+                                    <li>
+                                        <span class="bg-green icon-notification glyph-icon icon-sitemap"></span> <span class="notification-text">A success message example.</span>
+                                        <div class="notification-time">a few seconds ago </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <%/* 
+                            <div class="pad10A button-pane button-pane-alt text-center">
+                                <a class="btn btn-primary" href="#" title="View all notifications">View all notifications</a>
+                            </div>
+                               */ %>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            </div>
+        
+        <!-- sidebar -->  
+        <div id="page-sidebar" class="rm-transition">       
+          <div id="page-sidebar-wrapper">
+            <div id="sidebar-top">                
+                <div class="tab-content">                
+                    <div class="active" id="tab-example-3">
+                      <div class="info-box remove-border" id="ibovTicker">
+                        <div class="chart-icon">
+                          <div class="infobox-sparkline" >IBOV | <span class="ibovDelta">-0,55%</span></div>
+                        </div>                    
+                        <span class="stats"><i class="glyph-icon icon-chevron-down font-red ibovTendencia"></i><span class="ibovIndice">56.510</span></span>
+                        <b class="ibovHora">10:33:52</b>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <menu>
+            <div id="sidebar-menu">
+              <ul>
+				<li><a href="/" title="Dashboard"><i class="glyph-icon icon-th-large"></i><span>Dashboard</span></a></li>
+
+				<li class="divider"></li>
+				<li><a href="#" title="Presentation websites"><i class="glyph-icon icon-linecons-cog"></i><span>Trader Config</span></a>
+					<ul>
+						<li><a href="<%= this.RaizDoSite %>/TraderConfig/Operador.aspx" title="Hero area 1"><span>Operador</span></a></li>
+						<li><a href="<%= this.RaizDoSite %>/TraderConfig/Clientes.aspx" title="Hero area 2"><span>Cliente</span></a></li>
+						<li><a href="<%= this.RaizDoSite %>/TraderConfig/GerenciamentoLimites.aspx" title="Hero area 3"><span>Gerenciamento de Limites</span></a></li>
+						<li><a href="<%= this.RaizDoSite %>/TraderConfig/TraderConfig.aspx" title="Hero area 2"><span>TraderConfig</span></a></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+				<li><a href="#" title="Applications"><i class="glyph-icon icon-desktop"></i><span>Session Manager</span></a>
+					<ul>
+						<%--<li><a href="<%= this.RaizDoSite %>/SessionManager/GerenciamentoSessoes.aspx" title="Inbox alternate"><span>Gerenciamento de Sessões</span></a></li>--%>
+						<li><a href="<%= this.RaizDoSite %>/SessionManager/CadastroPlataforma.aspx" title="Inbox alternate"><span>Cadastro de Plataformas</span></a></li>
+						<li><a href="<%= this.RaizDoSite %>/SessionManager/GerenciadorPlataformas.aspx" title="Inbox alternate"><span>Gerenciador de Plataformas</span></a></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+				<li><a href="<%= this.RaizDoSite %>/Ordens/Ordens.aspx" title="Layouts"><i class="glyph-icon icon-list-alt"></i><span>Ordens</span></a>
+					<ul>
+				        <li><a href="<%= this.RaizDoSite %>/Ordens/Ordens.aspx" title="Layouts"><span>Ordens</span></a></li>
+						<li><a href="<%= this.RaizDoSite %>/Ordens/ExecutionReport.aspx" title="Page blank"><span>Execution Report</span></a></li>
+						<li><a href="<%= this.RaizDoSite %>/Ordens/DropCopy.aspx" title="Page with container"><span>DropCopy</span></a></li>
+						<li><a href="<%= this.RaizDoSite %>/Ordens/MsgFix.aspx" title="Page with single wrapper"><span>Msg Fix</span></a></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+				<li><a href="<%= this.RaizDoSite %>/Telas/Analytics.aspx" title="Extra pages"><i class="glyph-icon icon-bar-chart-o"></i><span>Analytics</span></a>
+					<ul>
+						<li><a href="<%= this.RaizDoSite %>/Analytics/OrdensSessao.aspx" title="Dashboard example 1"><span>Ordens por sessão</span></a></li>
+						<li><a href="<%= this.RaizDoSite %>/Analytics/EvolucaoOrdens.aspx" title="Dashboard example 2"><span>Evolução de Ordens</span></a></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+				<li><a href="<%= this.RaizDoSite %>/Telas/Reports.aspx" title="Widgets"><i class="glyph-icon icon-copy"></i><span>Reports</span></a>
+					<ul>
+						<li><a href="<%= this.RaizDoSite %>/Reports/Disponibilidade.aspx" title="Accordions"><span>Disponibilidade</span></a></li>
+						<li><a href="<%= this.RaizDoSite %>/Reports/Latencia.aspx" title="Bootstrap carousel"><span>Latência</span></a></li>
+					</ul>
+				</li>	  
+			  </ul>
+            </div>
+
+            </menu>
+            <div class="divider"></div>
+
+          </div>
+        </div>
+          
+        
+        <!-- content center-->  
+        <div id="page-content-wrapper" class="rm-transition">
+
+            <asp:ContentPlaceHolder ID="Main" runat="server"></asp:ContentPlaceHolder>
+
+
+            
+            <span class="alertSound">
+                <audio >
+                    <source src="<%= this.RaizDoSite %>/Resc/Sons/180821__empty-bell__beep.wav" type="audio/wav">
+                </audio>
+            </span>
+        </div>
+
+    </div>
+</div>
+    
+    <!--script-- src="//Resc/Skin/Supina/assets-minified/js-core.js"></!--script-->
+      <!--script-- src="//Resc/Skin/Supina/assets/js-core/jquery-ui-widget.js"></!--script-->
+    <!-- jQuery -->
+      <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery-core.js"></script>
+      <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery-ui.js"></script>
+      <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery-cookie.js"></script>
+      <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.json-2.2.js"></script>
+      
+    <!-- /jQuery -->
+    
+    <!-- datepicker  -->
+    <script src="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/widgets/datepicker-ui/datepicker.js"></script>
+    <!-- datepicker -->
+    
+    <!-- grid -->
+    <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/i18n/grid.locale-pt-br.js"></script>
+    <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.jqGrid.min.js"></script>
+    <!-- grid -->
+    
+    <!-- modals -->
+    <script src="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/widgets/modal/modal.js"></script>
+    <!-- modals-->
+
+    <!-- notificações -->
+    <script src="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/widgets/jgrowl-notifications/jgrowl.js"></script>
+    <script src="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/widgets/jgrowl-notifications/jgrowl-demo.js"></script>
+    <!-- notificações -->
+
+    <script src="<%= this.RaizDoSite %>/Resc/Js/Site/00-Base.js"></script>
+    <script src="<%= this.RaizDoSite %>/Resc/Js/Site/02-Ordens.js"></script>
+    <script src="<%= this.RaizDoSite %>/Resc/Js/Site/03-Operador.js"></script>
+    <script src="<%= this.RaizDoSite %>/Resc/Js/Site/04-Login.js"></script>
+    <script src="<%= this.RaizDoSite %>/Resc/Js/Site/05-Cliente.js"></script>
+    <script src="<%= this.RaizDoSite %>/Resc/Js/Site/06-Risco.js"></script>
+    <script src="<%= this.RaizDoSite %>/Resc/Js/Site/07-Plataforma.js"></script>
+
+    <script src="<%= this.RaizDoSite %>/Resc/Skin/Supina/assets-minified/demo-widgets.js"></script>
+    <script type="text/javascript">
+        var mensagens = {
+            "mensagens": [
+                {
+                    "id": 1,
+                    "texto": "Esta é a mensagem 1",
+                    "botoes": true,
+                    "hora": "12:03",
+                    "tipo": "oferta",
+                    "tipo": "danger",
+                },
+                {
+                    "id": 2,
+                    "texto": "Esta é a mensagem 2",
+                    "botoes": false,
+                    "hora": "13:03",
+                    "tipo": "executada",
+                    "tipo": "warn",
+                },
+                {
+                    "id": 3, "texto": "Esta é a mensagem 3", "botoes": true, "hora": "14:03", "tipo": "oferta",
+                    "tipo": "oferta",
+                },
+                {
+                    "id": 4, "texto": "Esta é a mensagem 4", "botoes": false, "hora": "15:03", "tipo": "aviso",
+                    "tipo": "danger",
+                },
+                {
+                    "id": 5, "texto": "Esta é a mensagem 5", "botoes": false, "hora": "16:03", "tipo": "erro",
+                    "icone": "icon-bullhorn",
+                    "tipo": "danger",
+                }
+
+            ]
+        }
+
+        var growlNotificacoes = {
+            "mensagens": [
+               {
+                   "id": 1,
+                   "texto": "Esta é a mensagem 1",
+                   "hora": "12:03"
+               },
+               {
+                   "id": 2,
+                   "texto": "Esta é a mensagem 2",
+                   "hora": "13:03"
+               }
+               ]
+        }
+
+        var ibov = {
+            "delta": -0.44,
+            "hora": "10:32:55",
+            "indice": 40000
+        }
+
+        $(window).load(function () {
+
+            // configurações do template
+            setTimeout(function () {
+                $('#loading').fadeOut(400, "linear");
+            }, 300);
+            var winH = $(window).height();
+            $("#page-sidebar-wrapper").height(winH);
+
+            // botão de som
+            $("#hd-sound > a").on('click', function () {
+                $(this).toggleClass("icon-typicons-volume-off icon-typicons-volume-high");
+            });
+
+            //update notificações   
+            //Spider.notificacoes.openGrowl(growlNotificacoes); // mostrar boxes growl
+            //Spider.notificacoes.getNotificacoes(mensagens); // carregar box de notificações
+            
+
+            //Spider.timers.Ibovespa = setInterval(function () {
+                Spider.atualizarIbovespa(ibov);
+                //ibov.delta += 0.1;
+            //}, 1000);
+
+            //Spider.timers.GrowlNotifications = setInterval(function () {
+            //    Spider.notificacoes.openGrowl("Aviso timed", 123); // mostrar boxes growl
+            //    Spider.notificacoes.getNotificacoes(mensagens); // carregar box de notificações
+            //}, 1000);
+            //setTimeout(function () {
+            //    clearInterval(Spider.timers.GrowlNotifications);
+            //}, 2000);
+
+
+            // ibovespa
+
+        });
+
+
+
+    </script>
+    
+<asp:ContentPlaceHolder ID="Scripts" runat="server"></asp:ContentPlaceHolder>
+    <script language="javascript">
+    function Page_Load_CodeBehind()
+    {
+        <asp:literal id="litJavascriptOnLoad" runat="server"></asp:literal>
+    }
+
+    $(document).ready(Page_Load);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CC64BA04-4AB4-4977-839D-5581DA2ADB58}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.Spider.ServicoSupervisor</RootNamespace>
+    <AssemblyName>Gradual.Spider.ServicoSupervisor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.Core.Spider.OrderFixProcessing.Lib">
+      <HintPath>..\..\References\Gradual.Core.Spider.OrderFixProcessing.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Library, Version=1.0.5477.20101, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\x64\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Spider.Acompanhamento4Socket.Lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\Gradual.Spider.Acompanhamento4Socket.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Spider.CommSocket, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\Gradual.Spider.CommSocket.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Spider.Communications.Lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\Gradual.Spider.Communications.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\x64\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calculator\BmfCalculator.cs" />
+    <Compile Include="Cotacao\ConstantesMDS.cs" />
+    <Compile Include="Cotacao\EstruturasMDS.cs" />
+    <Compile Include="Cotacao\Extensions.cs" />
+    <Compile Include="Cotacao\MDSPackageSocket.cs" />
+    <Compile Include="Cotacao\CotacaoManager.cs" />
+    <Compile Include="Cron\CronStyleScheduler.cs" />
+    <Compile Include="Cron\CronTasks.cs" />
+    <Compile Include="Memory\AcSpiderCache.cs" />
+    <Compile Include="Memory\ConsolidatedRiskManager.cs" />
+    <Compile Include="Memory\PositionClientManager.cs" />
+    <Compile Include="Memory\RiskCache.cs" />
+    <Compile Include="Memory\RiskClientManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicoSupervisorRisco.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.Spider.DataSync.Lib\Gradual.Spider.DataSync.Lib.csproj">
+      <Project>{331BA97A-8558-4AD7-9042-EC2BCCDC6317}</Project>
+      <Name>Gradual.Spider.DataSync.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Spider.SupervisorRisco.DB.Lib\Gradual.Spider.SupervisorRisco.DB.Lib.csproj">
+      <Project>{97532D70-DA01-4303-B003-5B51DCE0106A}</Project>
+      <Name>Gradual.Spider.SupervisorRisco.DB.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Spider.SupervisorRisco.Lib\Gradual.Spider.SupervisorRisco.Lib.csproj">
+      <Project>{CC4100FA-9FBD-4EF3-A021-1F66DAF99D78}</Project>
+      <Name>Gradual.Spider.SupervisorRisco.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Spider.SupervisorRiscoADM.Lib\Gradual.Spider.SupervisorRiscoADM.Lib.csproj">
+      <Project>{AAAD1708-2646-45AA-93D8-CB795961D389}</Project>
+      <Name>Gradual.Spider.SupervisorRiscoADM.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,12 @@
+﻿Turing.OMS.SpiderMonitor.exe
+==================================
+==================================
+
+
+
+v.1.0.0.0 (2014-09-09)
+======================
+- Estruturacao do servico de monitoramento;
+- Camada de banco de dados e rotina de atualizacao;
+
+

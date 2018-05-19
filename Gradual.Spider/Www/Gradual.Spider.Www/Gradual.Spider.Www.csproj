@@ -1,0 +1,1472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9CD492FF-AD1C-47A0-ABAA-AA6FAE7B959A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.Spider.Www</RootNamespace>
+    <AssemblyName>Gradual.Spider.Www</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <!--<UseIISExpress>true</UseIISExpress>-->
+    <!--<IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />-->
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.Core.OMS.DropCopy.Lib">
+      <HintPath>..\Gradual.Spider.References\Gradual.Core.OMS.DropCopy.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Core.OMS.LimiteBMF">
+      <HintPath>..\Gradual.Spider.References\Gradual.Core.OMS.LimiteBMF.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Core.OMS.LimiteBMF.Lib">
+      <HintPath>..\Gradual.Spider.References\Gradual.Core.OMS.LimiteBMF.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Generico.Dados">
+      <HintPath>..\Gradual.Spider.References\Gradual.Generico.Dados.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Library">
+      <HintPath>..\Gradual.Spider.References\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.RoteadorOrdens.Lib">
+      <HintPath>..\Gradual.Spider.References\Gradual.OMS.RoteadorOrdens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Seguranca">
+      <HintPath>..\Gradual.Spider.References\Gradual.OMS.Seguranca.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Seguranca.Lib">
+      <HintPath>..\Gradual.Spider.References\Gradual.OMS.Seguranca.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Gradual.Spider.References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Gradual.Spider.References\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Analytics\Analytics.aspx" />
+    <Content Include="Analytics\EvolucaoOrdens.aspx" />
+    <Content Include="Analytics\OrdensSessao.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Ordens\DropCopy.aspx" />
+    <Content Include="Ordens\ExecutionReport.aspx" />
+    <Content Include="Ordens\MsgFix.aspx" />
+    <Content Include="Ordens\Ordens.aspx" />
+    <Content Include="Reports\Disponibilidade.aspx" />
+    <Content Include="Reports\Latencia.aspx" />
+    <Content Include="Reports\Reports.aspx" />
+    <Content Include="Resc\Js\Lib\jquery.json-2.2.js" />
+    <Content Include="Resc\Js\Site\07-Plataforma.js" />
+    <Content Include="Resc\Sons\180821__empty-bell__beep.wav" />
+    <Content Include="Resc\Sons\desk_bell.mp3" />
+    <Content Include="Resc\Js\Site\00-Base.js" />
+    <Content Include="Resc\Js\Site\01-Home.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-ar.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-bg.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-bg1251.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-cat.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-cn.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-cs.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-da.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-de.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-dk.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-el.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-en.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-es.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-fa.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-fi.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-fr.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-gl.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-he.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-hr.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-hr1250.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-hu.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-id.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-is.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-it.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-ja.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-kr.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-lt.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-mne.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-nl.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-no.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-pl.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-pt-br.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-pt.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-ro.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-ru.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-sk.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-sr-latin.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-sr.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-sv.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-th.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-tr.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-tw.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-ua.js" />
+    <Content Include="Resc\Js\Lib\i18n\grid.locale-vi.js" />
+    <Content Include="Resc\Js\Lib\jquery-ui.js" />
+    <Content Include="Resc\Js\Lib\jquery.jqGrid.min.js" />
+    <Content Include="Resc\Js\Site\02-Ordens.js" />
+    <Content Include="Resc\Js\Site\03-Operador.js" />
+    <Content Include="Resc\Js\Site\04-Login.js" />
+    <Content Include="Resc\Js\Site\05-Cliente.js" />
+    <Content Include="Resc\Js\Site\06-Risco.js" />
+    <Content Include="Resc\Skin\Supina\01-Principal.css" />
+    <Content Include="Resc\Skin\Supina\01-Principal.min.css" />
+    <Content Include="Resc\Skin\Supina\assets-concat\elements\elements-all.css" />
+    <Content Include="Resc\Skin\Supina\assets-concat\frontend-elements\frontend-elements-all.css" />
+    <Content Include="Resc\Skin\Supina\assets-concat\helpers\helpers-all.css" />
+    <Content Include="Resc\Skin\Supina\assets-concat\js-core.js" />
+    <Content Include="Resc\Skin\Supina\assets-concat\snippets\snippets-all.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\applications\mailbox.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\demo-widgets.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\demo-widgets.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\demo.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\350x300_1.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\350x300_2.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\350x300_3.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\350x300_4.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\350x300_5.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\350x300_6.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\350x300_7.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\3d-bg.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\455293175_1280.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\a-l-1.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\a-l-2.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\a-l-3.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\a-l-4.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\a-l-5.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\a-l-6.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\a-l-7.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\abyss-bg-mask.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\abyss-bg.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\acorn.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\arrow-up.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\autumn-bg.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bbb-bg-mask.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bbb-bg.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bbb-clouds-close.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bbb-clouds-far.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bg-airbnb.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bg-fishes-far.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bg-fishes-mid.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bg.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bg1.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bg2.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bg21.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bg3.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bg31.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bg4.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bg41.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bg5.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bg51.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bg6a.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bg6b.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bg7a.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bg7b.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bi-colored-butterfly-source_ijc.gif" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\big-bg.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\big-cube.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\big-fish-close.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\bokeh.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\brench.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\circle.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\city\cyan_ferry.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\city\scottwills_cityscape.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\city\scottwills_cityscape2.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\city\scottwills_crossing.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\city\scottwills_firetruck.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\city\scottwills_hydrant1.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\city\scottwills_hydrant2.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\city\scottwills_nightlife.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\clownfish.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\computer.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\coral.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\cs1.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\cs2.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\cs3.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\cubes-bg.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\cubes-blur.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\d1.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\d2.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\easy.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\feature-android.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\feature-html5.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\feature-ios.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\feature-layers.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\feature-mobile.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\feature-options.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\feature-performance.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\feature-responsive.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\feature-slideshow.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\feature-vimeo.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\feature-wordpress.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\feature-youtube.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\fish-showcase-1.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\fish-showcase-2.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\fish-showcase-3.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\fullscreen\1.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\fullscreen\2.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\fullscreen\3.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\fullscreen\4.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\fullscreen\5.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\fullscreen\6.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\fullscreen\7.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\fullscreen\high.gif" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\fullscreen\huge.gif" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\fullscreen\wide.gif" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\fw-1.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\gravatar.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\guitars.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\html5-color.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\image1.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\ipad_horizontal.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\iphone-screen.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\iphone_hand.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\jellyfish-blur.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\jellyfish.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\l1.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\l2.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\l3.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\ladybug.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\layerslider-on-cellphone.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\layerslider-on-computer.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\layerslider-on-tablet.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\left.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\ls5box.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\med-fish-close.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\med-fish-mid.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\mid-cube-blur.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\mouse.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\people\testimonial1.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\people\testimonial2.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\people\testimonial3.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\people\testimonial4.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\people\testimonial5.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\people\testimonial6.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\people\testimonial7.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\people\testimonial8.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\phone.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\poly\black.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\poly\blue.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\poly\gray.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\poly\green.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\poly\orange.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\right.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\s-l-1.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\s-l-2.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\s-l-3.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\s-l-4.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\s-l-5.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\s-l-6.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\s-l-7.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\s1.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\s1.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\s2.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\s2.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\sample_sliders.txt" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\sample_transitions.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\sayhello.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\shark.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\slide-a-1.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\slide-a-2.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\slide-a-3.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\slide-a-4.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\slide-a-5.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\slide-a-6.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\slide-b-1.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\slide-b-2.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\slide-b-3.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\slide-b-4.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\slide-b-5.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\slide-b-bg.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\slide-d-5-1.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\slide-d-5-2.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\slide-d-5-3.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\slide-d-5-4.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\slide-d-5-5.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\slide-d-5-6.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\small-cube-blur.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\small-cube.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\small-fish-close.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\small-fish-far.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\small-fish-mid.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\small1.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\summer-bg.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\tablet.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\thumbnails\t_1.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\thumbnails\t_2.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\thumbnails\t_3.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\thumbnails\t_4.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\thumbnails\t_5.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\tile-1.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\tile-2.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\tile-3.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\tile-4.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\tile-5.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\tile-6.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\tile-7.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\tile-8.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\tile-9.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\tucan.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\vfeatures.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\video\big-buck-bunny.jpg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\video\big-buck-bunny.mp4" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\vimeo-color.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\youtube-color.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\elements\badges.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\elements\breadcrumb.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\elements\buttons.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\elements\content-box.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\elements\dashboard-box.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\elements\elements-all.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\elements\forms.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\elements\images.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\elements\info-box.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\elements\loading-indicators.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\elements\menus.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\elements\panel-box.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\elements\progress-bar.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\elements\response-messages.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\elements\ribbon.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\elements\social-box.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\elements\tables.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\elements\tile-box.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\elements\timeline.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\frontend-elements\cta-box.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\frontend-elements\feature-box.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\frontend-elements\footer.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\frontend-elements\frontend-elements-all.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\frontend-elements\frontend-responsive.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\frontend-elements\icon-box.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\frontend-elements\portfolio-navigation.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\frontend-elements\pricing-table.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\frontend-elements\sliders.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\frontend-elements\testimonial-box.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\frontend-elements\title-box.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\helpers\animate.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\helpers\backgrounds.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\helpers\boilerplate.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\helpers\border-radius.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\helpers\colors.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\helpers\grid.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\helpers\helpers-all.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\helpers\page-transitions.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\helpers\responsive-elements.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\helpers\responsive.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\helpers\spacing.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\helpers\typography.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\helpers\utils.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\elusive\elusive.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\elusive\elusive.svg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\fontawesome\fontawesome-webfont.svg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\fontawesome\fontawesome.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\iconic\iconic.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\iconic\iconic.svg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\linecons\linecons.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\linecons\linecons.svg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\meteocons\meteocons.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\meteocons\meteocons.svg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\spinnericon\spinnericon.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\spinnericon\spinnericon.svg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\typicons\typicons.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\typicons\typicons.svg" />
+    <Content Include="Resc\Skin\Supina\assets-minified\images\animated-overlay.gif" />
+    <Content Include="Resc\Skin\Supina\assets-minified\images\blank.gif" />
+    <Content Include="Resc\Skin\Supina\assets-minified\images\colorpicker.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\images\grabbing.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\images\icons\apple-touch-icon-114-precomposed.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\images\icons\apple-touch-icon-144-precomposed.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\images\icons\apple-touch-icon-57-precomposed.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\images\icons\apple-touch-icon-72-precomposed.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\images\icons\favicon.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\images\jcrop.gif" />
+    <Content Include="Resc\Skin\Supina\assets-minified\images\login-bg.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\images\spinner\loader-dark.gif" />
+    <Content Include="Resc\Skin\Supina\assets-minified\images\spinner\loader-light.gif" />
+    <Content Include="Resc\Skin\Supina\assets-minified\js-core.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\js-core\d3.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\js-core\greensock.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\js-core\jquery-cookie.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\js-core\jquery-core.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\js-core\jquery-ui-core.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\js-core\jquery-ui-mouse.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\js-core\jquery-ui-position.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\js-core\jquery-ui-touch-punch.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\js-core\jquery-ui-widget.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\js-core\modernizr.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\js-core\raphael.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\js-core\transition.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\snippets\chat-box.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\snippets\chat.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\snippets\files-box.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\snippets\login-box.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\snippets\notification-box.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\snippets\progress-box.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\snippets\snippets-all.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\snippets\theme-switcher.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\snippets\todo.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\snippets\user-profile.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\themes\supina\blue\framework-color.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\themes\supina\border-radius.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\themes\supina\default\framework-color.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\themes\supina\default\layout-color.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\themes\supina\frontend\color.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\themes\supina\frontend\js\frontend-init.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\themes\supina\green\framework-color.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\themes\supina\js\layout.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\themes\supina\layout.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\themes\supina\light\layout-color.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets-init.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\accordion-ui\accordion.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\accordion-ui\accordion.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\animation\animation.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\autocomplete\autocomplete.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\autocomplete\menu.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\button-ui\button.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\button\button.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\calendar\calendar-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\calendar\calendar.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\calendar\calendar.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\carousel\carousel.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\carousel\carousel.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\charts\justgage\justgage-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\charts\justgage\justgage.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\charts\justgage\justgage.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\charts\morris\morris-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\charts\morris\morris.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\charts\morris\morris.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\charts\piegage\piegage-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\charts\piegage\piegage.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\charts\piegage\piegage.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\charts\sparklines\sparklines-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\charts\sparklines\sparklines.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\charts\xcharts\xcharts-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\charts\xcharts\xcharts.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\charts\xcharts\xcharts.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\chosen\chosen.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\chosen\chosen.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\collapse\collapse.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\colorpicker\colorpicker-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\colorpicker\colorpicker.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\colorpicker\colorpicker.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\content-box\contentbox.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\datatable\datatable-bootstrap.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\datatable\datatable.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\datatable\datatable.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\datepicker-ui\datepicker-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\datepicker-ui\datepicker.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\datepicker-ui\datepicker.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\datepicker\datepicker.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\datepicker\datepicker.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\daterangepicker\daterangepicker-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\daterangepicker\daterangepicker.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\daterangepicker\daterangepicker.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\daterangepicker\moment.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\dialog\dialog-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\dialog\dialog.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\dialog\dialog.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\dropdown\dropdown.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\dropdown\dropdown.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\dropzone\dropzone.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\dropzone\dropzone.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\input-mask\inputmask.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\input-switch\inputswitch.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\input-switch\inputswitch.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\interactions-ui\draggable.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\interactions-ui\droppable.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\interactions-ui\resizable.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\interactions-ui\selectable.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\interactions-ui\sortable.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\jcrop\jcrop-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\jcrop\jcrop.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\jcrop\jcrop.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\jgrowl-notifications\jgrowl-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\jgrowl-notifications\jgrowl.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\jgrowl-notifications\jgrowl.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\knobs\knob.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\layerslider\layerslider-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\layerslider\layerslider-transitions.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\layerslider\layerslider.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\layerslider\layerslider.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\layerslider\skins\borderlessdark3d\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\layerslider\skins\borderlessdark\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\layerslider\skins\borderlesslight3d\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\layerslider\skins\borderlesslight\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\layerslider\skins\carousel\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\layerslider\skins\darkskin\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\layerslider\skins\defaultskin\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\layerslider\skins\fullwidthdark\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\layerslider\skins\fullwidth\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\layerslider\skins\glass\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\layerslider\skins\lightskin\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\layerslider\skins\minimal\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\layerslider\skins\noskin\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\layerslider\skins\v5\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\lazyload\lazyload.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\loading-bar\loadingbar-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\loading-bar\loadingbar.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\loading-bar\loadingbar.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\loading-indicator\spinner-icon\fontello.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\maps\gmaps\gmaps-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\maps\gmaps\gmaps.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\maps\vector-maps\de_merc_en.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\maps\vector-maps\mall_map.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\maps\vector-maps\vectormaps-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\maps\vector-maps\vectormaps.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\maps\vector-maps\vectormaps.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\maps\vector-maps\world_map.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\menu-ui\menu.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\mixitup\isotope.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\mixitup\mixitup.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\mixitup\portfolio-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\modal\modal.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\modal\modal.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\multi-select\multiselect.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\multi-select\multiselect.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\multi-upload\app.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\multi-upload\cors\jquery.postmessage-transport.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\multi-upload\cors\jquery.xdr-transport.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\multi-upload\fileupload.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\multi-upload\jquery.fileupload-angular.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\multi-upload\jquery.fileupload-audio.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\multi-upload\jquery.fileupload-image.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\multi-upload\jquery.fileupload-jquery-ui.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\multi-upload\jquery.fileupload-process.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\multi-upload\jquery.fileupload-ui.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\multi-upload\jquery.fileupload-validate.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\multi-upload\jquery.fileupload-video.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\multi-upload\jquery.fileupload.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\multi-upload\jquery.iframe-transport.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\multi-upload\main.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\nestable\nestable-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\nestable\nestable.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\nestable\nestable.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\nicescroll\nicescroll.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\noty-notifications\noty-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\noty-notifications\noty.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\noty-notifications\noty.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\overlay\overlay.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\owlcarousel\carousel.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\owlcarousel\owlcarousel-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\owlcarousel\owlcarousel.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\owlcarousel\owlcarousel_original.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\parsley\parsley.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\popover\popover.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\popover\popover.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\pretty-photo\images\default\default_thumb.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\pretty-photo\images\default\loader.gif" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\pretty-photo\images\default\sprite.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\pretty-photo\images\default\sprite_next.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\pretty-photo\images\default\sprite_prev.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\pretty-photo\images\default\sprite_x.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\pretty-photo\images\default\sprite_y.png" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\pretty-photo\prettyphoto.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\pretty-photo\prettyphoto.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\prism\prism.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\prism\prism.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\progressbar-ui\progressbar.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\progressbar-ui\progressbar.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\progressbar\progressbar.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\progressbar\progressbar.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\range-slider\rangeslider-core.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\range-slider\rangeslider-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\range-slider\rangeslider.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\skrollr\skrollr.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\skycons\skycons.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\slidebars\slidebars.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\slidebars\slidebars.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\slider-ui\slider-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\slider-ui\slider.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\slider-ui\slider.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\spinner\spinner.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\sticky\sticky.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\summernote-wysiwyg\summernote-wysiwyg.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\summernote-wysiwyg\summernote-wysiwyg.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\superclick\superclick.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\superfish\superfish.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\tabs-ui\tabs.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\tabs-ui\tabs.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\tabs\tabs.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\textarea\textarea.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\timepicker\timepicker.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\timepicker\timepicker.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\tooltip\tooltip.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\tooltip\tooltip.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\uniform\uniform.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\uniform\uniform.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\videobg\videobg-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\videobg\videobg.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\wizard\wizard-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\wizard\wizard.css" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\wizard\wizard.js" />
+    <Content Include="Resc\Skin\Supina\assets-minified\widgets\wow\wow.js" />
+    <Content Include="Resc\Skin\Supina\assets\applications\mailbox.css" />
+    <Content Include="Resc\Skin\Supina\assets\demo.css" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\350x300_1.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\350x300_2.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\350x300_3.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\350x300_4.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\350x300_5.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\350x300_6.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\350x300_7.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\3d-bg.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\455293175_1280.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\a-l-1.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\a-l-2.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\a-l-3.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\a-l-4.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\a-l-5.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\a-l-6.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\a-l-7.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\abyss-bg-mask.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\abyss-bg.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\acorn.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\arrow-up.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\autumn-bg.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bbb-bg-mask.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bbb-bg.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bbb-clouds-close.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bbb-clouds-far.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bg-airbnb.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bg-fishes-far.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bg-fishes-mid.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bg.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bg1.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bg2.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bg21.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bg3.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bg31.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bg4.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bg41.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bg5.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bg51.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bg6a.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bg6b.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bg7a.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bg7b.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bi-colored-butterfly-source_ijc.gif" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\big-bg.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\big-cube.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\big-fish-close.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\bokeh.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\brench.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\circle.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\city\cyan_ferry.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\city\scottwills_cityscape.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\city\scottwills_cityscape2.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\city\scottwills_crossing.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\city\scottwills_firetruck.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\city\scottwills_hydrant1.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\city\scottwills_hydrant2.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\city\scottwills_nightlife.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\clownfish.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\computer.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\coral.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\cs1.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\cs2.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\cs3.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\cubes-bg.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\cubes-blur.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\d1.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\d2.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\easy.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\feature-android.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\feature-html5.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\feature-ios.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\feature-layers.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\feature-mobile.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\feature-options.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\feature-performance.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\feature-responsive.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\feature-slideshow.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\feature-vimeo.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\feature-wordpress.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\feature-youtube.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\fish-showcase-1.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\fish-showcase-2.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\fish-showcase-3.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\fullscreen\1.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\fullscreen\2.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\fullscreen\3.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\fullscreen\4.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\fullscreen\5.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\fullscreen\6.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\fullscreen\7.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\fullscreen\high.gif" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\fullscreen\huge.gif" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\fullscreen\wide.gif" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\fw-1.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\gravatar.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\guitars.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\html5-color.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\image1.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\ipad_horizontal.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\iphone-screen.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\iphone_hand.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\jellyfish-blur.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\jellyfish.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\l1.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\l2.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\l3.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\ladybug.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\layerslider-on-cellphone.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\layerslider-on-computer.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\layerslider-on-tablet.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\left.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\ls5box.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\med-fish-close.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\med-fish-mid.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\mid-cube-blur.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\mouse.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\people\testimonial1.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\people\testimonial2.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\people\testimonial3.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\people\testimonial4.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\people\testimonial5.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\people\testimonial6.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\people\testimonial7.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\people\testimonial8.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\phone.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\poly\black.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\poly\blue.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\poly\gray.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\poly\green.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\poly\orange.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\right.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\s-l-1.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\s-l-2.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\s-l-3.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\s-l-4.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\s-l-5.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\s-l-6.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\s-l-7.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\s1.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\s1.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\s2.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\s2.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\sample_sliders.txt" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\sample_transitions.js" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\sayhello.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\shark.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\slide-a-1.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\slide-a-2.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\slide-a-3.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\slide-a-4.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\slide-a-5.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\slide-a-6.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\slide-b-1.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\slide-b-2.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\slide-b-3.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\slide-b-4.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\slide-b-5.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\slide-b-bg.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\slide-d-5-1.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\slide-d-5-2.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\slide-d-5-3.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\slide-d-5-4.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\slide-d-5-5.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\slide-d-5-6.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\small-cube-blur.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\small-cube.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\small-fish-close.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\small-fish-far.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\small-fish-mid.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\small1.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\summer-bg.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\tablet.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\thumbnails\t_1.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\thumbnails\t_2.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\thumbnails\t_3.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\thumbnails\t_4.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\thumbnails\t_5.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\tile-1.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\tile-2.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\tile-3.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\tile-4.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\tile-5.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\tile-6.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\tile-7.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\tile-8.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\tile-9.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\tucan.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\vfeatures.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\video\big-buck-bunny.jpg" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\video\big-buck-bunny.mp4" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\vimeo-color.png" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\youtube-color.png" />
+    <Content Include="Resc\Skin\Supina\assets\elements\badges.css" />
+    <Content Include="Resc\Skin\Supina\assets\elements\breadcrumb.css" />
+    <Content Include="Resc\Skin\Supina\assets\elements\buttons.css" />
+    <Content Include="Resc\Skin\Supina\assets\elements\content-box.css" />
+    <Content Include="Resc\Skin\Supina\assets\elements\dashboard-box.css" />
+    <Content Include="Resc\Skin\Supina\assets\elements\forms.css" />
+    <Content Include="Resc\Skin\Supina\assets\elements\images.css" />
+    <Content Include="Resc\Skin\Supina\assets\elements\info-box.css" />
+    <Content Include="Resc\Skin\Supina\assets\elements\loading-indicators.css" />
+    <Content Include="Resc\Skin\Supina\assets\elements\menus.css" />
+    <Content Include="Resc\Skin\Supina\assets\elements\panel-box.css" />
+    <Content Include="Resc\Skin\Supina\assets\elements\progress-bar.css" />
+    <Content Include="Resc\Skin\Supina\assets\elements\response-messages.css" />
+    <Content Include="Resc\Skin\Supina\assets\elements\ribbon.css" />
+    <Content Include="Resc\Skin\Supina\assets\elements\social-box.css" />
+    <Content Include="Resc\Skin\Supina\assets\elements\tables.css" />
+    <Content Include="Resc\Skin\Supina\assets\elements\tile-box.css" />
+    <Content Include="Resc\Skin\Supina\assets\elements\timeline.css" />
+    <Content Include="Resc\Skin\Supina\assets\frontend-elements\cta-box.css" />
+    <Content Include="Resc\Skin\Supina\assets\frontend-elements\feature-box.css" />
+    <Content Include="Resc\Skin\Supina\assets\frontend-elements\footer.css" />
+    <Content Include="Resc\Skin\Supina\assets\frontend-elements\frontend-responsive.css" />
+    <Content Include="Resc\Skin\Supina\assets\frontend-elements\icon-box.css" />
+    <Content Include="Resc\Skin\Supina\assets\frontend-elements\portfolio-navigation.css" />
+    <Content Include="Resc\Skin\Supina\assets\frontend-elements\pricing-table.css" />
+    <Content Include="Resc\Skin\Supina\assets\frontend-elements\sliders.css" />
+    <Content Include="Resc\Skin\Supina\assets\frontend-elements\testimonial-box.css" />
+    <Content Include="Resc\Skin\Supina\assets\frontend-elements\title-box.css" />
+    <Content Include="Resc\Skin\Supina\assets\helpers\animate.css" />
+    <Content Include="Resc\Skin\Supina\assets\helpers\backgrounds.css" />
+    <Content Include="Resc\Skin\Supina\assets\helpers\boilerplate.css" />
+    <Content Include="Resc\Skin\Supina\assets\helpers\border-radius.css" />
+    <Content Include="Resc\Skin\Supina\assets\helpers\colors.css" />
+    <Content Include="Resc\Skin\Supina\assets\helpers\grid.css" />
+    <Content Include="Resc\Skin\Supina\assets\helpers\page-transitions.css" />
+    <Content Include="Resc\Skin\Supina\assets\helpers\responsive-elements.css" />
+    <Content Include="Resc\Skin\Supina\assets\helpers\responsive.css" />
+    <Content Include="Resc\Skin\Supina\assets\helpers\spacing.css" />
+    <Content Include="Resc\Skin\Supina\assets\helpers\typography.css" />
+    <Content Include="Resc\Skin\Supina\assets\helpers\utils.css" />
+    <Content Include="Resc\Skin\Supina\assets\icons\elusive\elusive.css" />
+    <Content Include="Resc\Skin\Supina\assets\icons\elusive\elusive.svg" />
+    <Content Include="Resc\Skin\Supina\assets\icons\fontawesome\fontawesome-webfont.svg" />
+    <Content Include="Resc\Skin\Supina\assets\icons\fontawesome\fontawesome.css" />
+    <Content Include="Resc\Skin\Supina\assets\icons\iconic\iconic.css" />
+    <Content Include="Resc\Skin\Supina\assets\icons\iconic\iconic.svg" />
+    <Content Include="Resc\Skin\Supina\assets\icons\linecons\linecons.css" />
+    <Content Include="Resc\Skin\Supina\assets\icons\linecons\linecons.svg" />
+    <Content Include="Resc\Skin\Supina\assets\icons\meteocons\meteocons.css" />
+    <Content Include="Resc\Skin\Supina\assets\icons\meteocons\meteocons.svg" />
+    <Content Include="Resc\Skin\Supina\assets\icons\spinnericon\spinnericon.css" />
+    <Content Include="Resc\Skin\Supina\assets\icons\spinnericon\spinnericon.svg" />
+    <Content Include="Resc\Skin\Supina\assets\icons\typicons\typicons.css" />
+    <Content Include="Resc\Skin\Supina\assets\icons\typicons\typicons.svg" />
+    <Content Include="Resc\Skin\Supina\assets\images\animated-overlay.gif" />
+    <Content Include="Resc\Skin\Supina\assets\images\blank.gif" />
+    <Content Include="Resc\Skin\Supina\assets\images\colorpicker.png" />
+    <Content Include="Resc\Skin\Supina\assets\images\grabbing.png" />
+    <Content Include="Resc\Skin\Supina\assets\images\icons\apple-touch-icon-114-precomposed.png" />
+    <Content Include="Resc\Skin\Supina\assets\images\icons\apple-touch-icon-144-precomposed.png" />
+    <Content Include="Resc\Skin\Supina\assets\images\icons\apple-touch-icon-57-precomposed.png" />
+    <Content Include="Resc\Skin\Supina\assets\images\icons\apple-touch-icon-72-precomposed.png" />
+    <Content Include="Resc\Skin\Supina\assets\images\icons\favicon.png" />
+    <Content Include="Resc\Skin\Supina\assets\images\jcrop.gif" />
+    <Content Include="Resc\Skin\Supina\assets\images\login-bg.png" />
+    <Content Include="Resc\Skin\Supina\assets\images\spinner\loader-dark.gif" />
+    <Content Include="Resc\Skin\Supina\assets\images\spinner\loader-light.gif" />
+    <Content Include="Resc\Skin\Supina\assets\js-core\d3.js" />
+    <Content Include="Resc\Skin\Supina\assets\js-core\greensock.js" />
+    <Content Include="Resc\Js\Lib\jquery-cookie.js" />
+    <Content Include="Resc\Js\Lib\jquery-core.js" />
+    <Content Include="Resc\Skin\Supina\assets\js-core\jquery-ui-core.js" />
+    <Content Include="Resc\Skin\Supina\assets\js-core\jquery-ui-mouse.js" />
+    <Content Include="Resc\Skin\Supina\assets\js-core\jquery-ui-position.js" />
+    <Content Include="Resc\Skin\Supina\assets\js-core\jquery-ui-touch-punch.js" />
+    <Content Include="Resc\Skin\Supina\assets\js-core\jquery-ui-widget.js" />
+    <Content Include="Resc\Skin\Supina\assets\js-core\modernizr.js" />
+    <Content Include="Resc\Skin\Supina\assets\js-core\raphael.js" />
+    <Content Include="Resc\Skin\Supina\assets\js-core\transition.js" />
+    <Content Include="Resc\Skin\Supina\assets\snippets\chat-box.css" />
+    <Content Include="Resc\Skin\Supina\assets\snippets\chat.css" />
+    <Content Include="Resc\Skin\Supina\assets\snippets\files-box.css" />
+    <Content Include="Resc\Skin\Supina\assets\snippets\login-box.css" />
+    <Content Include="Resc\Skin\Supina\assets\snippets\notification-box.css" />
+    <Content Include="Resc\Skin\Supina\assets\snippets\progress-box.css" />
+    <Content Include="Resc\Skin\Supina\assets\snippets\theme-switcher.css" />
+    <Content Include="Resc\Skin\Supina\assets\snippets\todo.css" />
+    <Content Include="Resc\Skin\Supina\assets\snippets\user-profile.css" />
+    <Content Include="Resc\Skin\Supina\assets\themes\supina\blue\framework-color.css" />
+    <Content Include="Resc\Skin\Supina\assets\themes\supina\border-radius.css" />
+    <Content Include="Resc\Skin\Supina\assets\themes\supina\default\framework-color.css" />
+    <Content Include="Resc\Skin\Supina\assets\themes\supina\default\layout-color.css" />
+    <Content Include="Resc\Skin\Supina\assets\themes\supina\frontend\color.css" />
+    <Content Include="Resc\Skin\Supina\assets\themes\supina\frontend\js\frontend-init.js" />
+    <Content Include="Resc\Skin\Supina\assets\themes\supina\green\framework-color.css" />
+    <Content Include="Resc\Skin\Supina\assets\themes\supina\js\layout.js" />
+    <Content Include="Resc\Skin\Supina\assets\themes\supina\layout.css" />
+    <Content Include="Resc\Skin\Supina\assets\themes\supina\light\layout-color.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets-init.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\accordion-ui\accordion.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\accordion-ui\accordion.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\animation\animation.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\autocomplete\autocomplete.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\autocomplete\menu.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\button-ui\button.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\button\button.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\calendar\calendar-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\calendar\calendar.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\calendar\calendar.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\carousel\carousel.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\carousel\carousel.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\charts\justgage\justgage-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\charts\justgage\justgage.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\charts\justgage\justgage.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\charts\morris\morris-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\charts\morris\morris.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\charts\morris\morris.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\charts\piegage\piegage-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\charts\piegage\piegage.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\charts\piegage\piegage.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\charts\sparklines\sparklines-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\charts\sparklines\sparklines.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\charts\xcharts\xcharts-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\charts\xcharts\xcharts.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\charts\xcharts\xcharts.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\chosen\chosen.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\chosen\chosen.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\collapse\collapse.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\colorpicker\colorpicker-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\colorpicker\colorpicker.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\colorpicker\colorpicker.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\content-box\contentbox.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\datatable\datatable-bootstrap.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\datatable\datatable.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\datatable\datatable.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\datepicker-ui\datepicker-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\datepicker-ui\datepicker.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\datepicker-ui\datepicker.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\datepicker\datepicker.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\datepicker\datepicker.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\daterangepicker\daterangepicker-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\daterangepicker\daterangepicker.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\daterangepicker\daterangepicker.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\daterangepicker\moment.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\dialog\dialog-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\dialog\dialog.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\dialog\dialog.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\dropdown\dropdown.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\dropdown\dropdown.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\dropzone\dropzone.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\dropzone\dropzone.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\input-mask\inputmask.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\input-switch\inputswitch.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\input-switch\inputswitch.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\interactions-ui\draggable.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\interactions-ui\droppable.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\interactions-ui\resizable.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\interactions-ui\selectable.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\interactions-ui\sortable.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\jcrop\jcrop-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\jcrop\jcrop.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\jcrop\jcrop.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\jgrowl-notifications\jgrowl-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\jgrowl-notifications\jgrowl.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\jgrowl-notifications\jgrowl.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\knobs\knob.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\layerslider-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\layerslider-transitions.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\layerslider.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\layerslider.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\borderlessdark3d\loading.gif" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\borderlessdark3d\nothumb.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\borderlessdark3d\shadow.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\borderlessdark3d\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\borderlessdark3d\skin.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\borderlessdark\loading.gif" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\borderlessdark\nothumb.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\borderlessdark\shadow.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\borderlessdark\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\borderlessdark\skin.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\borderlesslight3d\loading.gif" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\borderlesslight3d\nothumb.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\borderlesslight3d\shadow.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\borderlesslight3d\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\borderlesslight3d\skin.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\borderlesslight\loading.gif" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\borderlesslight\nothumb.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\borderlesslight\shadow.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\borderlesslight\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\borderlesslight\skin.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\carousel\loading.gif" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\carousel\nothumb.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\carousel\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\carousel\skin.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\darkskin\loading.gif" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\darkskin\nothumb.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\darkskin\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\darkskin\skin.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\defaultskin\loading.gif" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\defaultskin\nothumb.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\defaultskin\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\defaultskin\skin.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\fullwidthdark\loading.gif" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\fullwidthdark\nothumb.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\fullwidthdark\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\fullwidthdark\skin.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\fullwidth\loading.gif" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\fullwidth\nothumb.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\fullwidth\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\fullwidth\skin.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\glass\loading.gif" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\glass\nothumb.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\glass\shadow.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\glass\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\glass\skin.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\lightskin\loading.gif" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\lightskin\nothumb.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\lightskin\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\lightskin\skin.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\minimal\loading.gif" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\minimal\nothumb.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\minimal\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\minimal\skin.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\noskin\loading.gif" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\noskin\nothumb.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\noskin\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\noskin\skin.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\v5\loading.gif" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\v5\nothumb.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\v5\skin.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\layerslider\skins\v5\skin.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\lazyload\lazyload.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\loading-bar\loadingbar-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\loading-bar\loadingbar.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\loading-bar\loadingbar.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\loading-indicator\loader-dark.gif" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\loading-indicator\loader-light.gif" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\loading-indicator\spinner-icon\fontello.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\loading-indicator\spinner-icon\fontello.svg" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\maps\gmaps\gmaps-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\maps\gmaps\gmaps.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\maps\vector-maps\de_merc_en.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\maps\vector-maps\mall_map.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\maps\vector-maps\vectormaps-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\maps\vector-maps\vectormaps.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\maps\vector-maps\vectormaps.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\maps\vector-maps\world_map.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\menu-ui\menu.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\mixitup\isotope.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\mixitup\mixitup.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\mixitup\portfolio-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\modal\modal.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\modal\modal.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\multi-select\multiselect.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\multi-select\multiselect.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\multi-upload\app.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\multi-upload\cors\jquery.postmessage-transport.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\multi-upload\cors\jquery.xdr-transport.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\multi-upload\fileupload.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\multi-upload\jquery.fileupload-angular.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\multi-upload\jquery.fileupload-audio.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\multi-upload\jquery.fileupload-image.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\multi-upload\jquery.fileupload-jquery-ui.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\multi-upload\jquery.fileupload-process.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\multi-upload\jquery.fileupload-ui.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\multi-upload\jquery.fileupload-validate.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\multi-upload\jquery.fileupload-video.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\multi-upload\jquery.fileupload.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\multi-upload\jquery.iframe-transport.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\multi-upload\main.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\nestable\nestable-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\nestable\nestable.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\nestable\nestable.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\nicescroll\nicescroll.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\noty-notifications\noty-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\noty-notifications\noty.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\noty-notifications\noty.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\overlay\overlay.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\owlcarousel\owlcarousel-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\owlcarousel\owlcarousel.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\owlcarousel\owlcarousel.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\parsley\parsley.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\popover\popover.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\popover\popover.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\pretty-photo\images\default\default_thumb.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\pretty-photo\images\default\loader.gif" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\pretty-photo\images\default\sprite.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\pretty-photo\images\default\sprite_next.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\pretty-photo\images\default\sprite_prev.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\pretty-photo\images\default\sprite_x.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\pretty-photo\images\default\sprite_y.png" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\pretty-photo\prettyphoto.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\pretty-photo\prettyphoto.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\prism\prism.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\prism\prism.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\progressbar-ui\progressbar.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\progressbar-ui\progressbar.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\progressbar\progressbar.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\progressbar\progressbar.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\range-slider\rangeslider-core.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\range-slider\rangeslider-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\range-slider\rangeslider.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\skrollr\skrollr.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\skycons\skycons.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\slidebars\slidebars.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\slidebars\slidebars.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\slider-ui\slider-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\slider-ui\slider.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\slider-ui\slider.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\spinner\spinner.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\sticky\sticky.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\summernote-wysiwyg\summernote-wysiwyg.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\summernote-wysiwyg\summernote-wysiwyg.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\superclick\superclick.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\superfish\superfish.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\tabs-ui\tabs.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\tabs-ui\tabs.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\tabs\tabs.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\textarea\textarea.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\timepicker\timepicker.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\timepicker\timepicker.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\tooltip\tooltip.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\tooltip\tooltip.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\uniform\uniform.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\uniform\uniform.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\videobg\videobg-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\videobg\videobg.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\wizard\wizard-demo.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\wizard\wizard.css" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\wizard\wizard.js" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\wow\wow.js" />
+    <Content Include="Resc\Skin\Supina\supina.css" />
+    <Content Include="Resc\Skin\Supina\supina.min.css" />
+    <Content Include="Resc\Skin\ui.jqgrid.css" />
+    <Content Include="SessionManager\CadastroPlataforma.aspx" />
+    <Content Include="SessionManager\GerenciadorPlataformas.aspx" />
+    <Content Include="SessionManager\GerenciamentoSessoes.aspx" />
+    <Content Include="SessionManager\SessionManagement.aspx" />
+    <Content Include="TraderConfig\Clientes.aspx" />
+    <Content Include="TraderConfig\GerenciamentoLimites.aspx" />
+    <Content Include="TraderConfig\Operador.aspx" />
+    <Content Include="TraderConfig\TraderConfig.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Analytics\Analytics.aspx.cs">
+      <DependentUpon>Analytics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analytics\Analytics.aspx.designer.cs">
+      <DependentUpon>Analytics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analytics\EvolucaoOrdens.aspx.cs">
+      <DependentUpon>EvolucaoOrdens.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analytics\EvolucaoOrdens.aspx.designer.cs">
+      <DependentUpon>EvolucaoOrdens.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analytics\OrdensSessao.aspx.cs">
+      <DependentUpon>OrdensSessao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analytics\OrdensSessao.aspx.designer.cs">
+      <DependentUpon>OrdensSessao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Codigo\ConfiguracoesValidadas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="App_Codigo\Extensions.cs" />
+    <Compile Include="App_Codigo\PaginaBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Codigo\RespostaAjax.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="App_Codigo\Transporte\Transporte_Clientes.cs" />
+    <Compile Include="App_Codigo\Transporte\Transporte_DropCopy.cs" />
+    <Compile Include="App_Codigo\Transporte\Transporte_ExecutionReport.cs" />
+    <Compile Include="App_Codigo\Transporte\Transporte_GerenciadorPlataforma.cs" />
+    <Compile Include="App_Codigo\Transporte\Transporte_MessageFix.cs" />
+    <Compile Include="App_Codigo\Transporte\Transporte_Operadores.cs" />
+    <Compile Include="App_Codigo\Transporte\Transporte_Ordens.cs" />
+    <Compile Include="App_Codigo\Transporte\Transporte_Plataforma.cs" />
+    <Compile Include="App_Codigo\Transporte\Transporte_Risco.cs" />
+    <Compile Include="App_Codigo\Transporte\Transporte_Sessao.cs" />
+    <Compile Include="App_Codigo\Usuario.cs" />
+    <Compile Include="App_Codigo\ValidarSegurancaAttribute.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SessionManager\CadastroPlataforma.aspx.cs">
+      <DependentUpon>CadastroPlataforma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SessionManager\CadastroPlataforma.aspx.designer.cs">
+      <DependentUpon>CadastroPlataforma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SessionManager\GerenciadorPlataformas.aspx.cs">
+      <DependentUpon>GerenciadorPlataformas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SessionManager\GerenciadorPlataformas.aspx.designer.cs">
+      <DependentUpon>GerenciadorPlataformas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SessionManager\SessionManagement.aspx.cs">
+      <DependentUpon>SessionManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SessionManager\SessionManagement.aspx.designer.cs">
+      <DependentUpon>SessionManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Spider.Master.cs">
+      <DependentUpon>Spider.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Spider.Master.designer.cs">
+      <DependentUpon>Spider.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Ordens\DropCopy.aspx.cs">
+      <DependentUpon>DropCopy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ordens\DropCopy.aspx.designer.cs">
+      <DependentUpon>DropCopy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ordens\ExecutionReport.aspx.cs">
+      <DependentUpon>ExecutionReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ordens\ExecutionReport.aspx.designer.cs">
+      <DependentUpon>ExecutionReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ordens\MsgFix.aspx.cs">
+      <DependentUpon>MsgFix.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ordens\MsgFix.aspx.designer.cs">
+      <DependentUpon>MsgFix.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ordens\Ordens.aspx.cs">
+      <DependentUpon>Ordens.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ordens\Ordens.aspx.designer.cs">
+      <DependentUpon>Ordens.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\Disponibilidade.aspx.cs">
+      <DependentUpon>Disponibilidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Disponibilidade.aspx.designer.cs">
+      <DependentUpon>Disponibilidade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Latencia.aspx.cs">
+      <DependentUpon>Latencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Latencia.aspx.designer.cs">
+      <DependentUpon>Latencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SessionManager\GerenciamentoSessoes.aspx.cs">
+      <DependentUpon>GerenciamentoSessoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SessionManager\GerenciamentoSessoes.aspx.designer.cs">
+      <DependentUpon>GerenciamentoSessoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TraderConfig\Clientes.aspx.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TraderConfig\Clientes.aspx.designer.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TraderConfig\GerenciamentoLimites.aspx.cs">
+      <DependentUpon>GerenciamentoLimites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TraderConfig\GerenciamentoLimites.aspx.designer.cs">
+      <DependentUpon>GerenciamentoLimites.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TraderConfig\Operador.aspx.cs">
+      <DependentUpon>Operador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TraderConfig\Operador.aspx.designer.cs">
+      <DependentUpon>Operador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TraderConfig\TraderConfig.aspx.cs">
+      <DependentUpon>TraderConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TraderConfig\TraderConfig.aspx.designer.cs">
+      <DependentUpon>TraderConfig.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Spider.Master" />
+    <Content Include="Resc\Skin\Supina\01-Principal.less" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\video\big-buck-bunny.ogv" />
+    <Content Include="Resc\Skin\Supina\assets-minified\dummy-images\video\big-buck-bunny.webm" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\elusive\elusive.eot" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\elusive\elusive.ttf" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\elusive\elusive.woff" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\fontawesome\fontawesome-webfont.eot" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\fontawesome\fontawesome-webfont.ttf" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\fontawesome\fontawesome-webfont.woff" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\fontawesome\FontAwesome.otf" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\iconic\iconic.eot" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\iconic\iconic.ttf" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\iconic\iconic.woff" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\linecons\linecons.eot" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\linecons\linecons.ttf" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\linecons\linecons.woff" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\meteocons\meteocons.eot" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\meteocons\meteocons.ttf" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\meteocons\meteocons.woff" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\spinnericon\spinnericon.eot" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\spinnericon\spinnericon.ttf" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\spinnericon\spinnericon.woff" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\typicons\typicons.eot" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\typicons\typicons.ttf" />
+    <Content Include="Resc\Skin\Supina\assets-minified\icons\typicons\typicons.woff" />
+    <Content Include="Resc\Skin\Supina\assets-minified\images\icons\icons.psd" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\video\big-buck-bunny.ogv" />
+    <Content Include="Resc\Skin\Supina\assets\dummy-images\video\big-buck-bunny.webm" />
+    <Content Include="Resc\Skin\Supina\assets\icons\elusive\elusive.eot" />
+    <Content Include="Resc\Skin\Supina\assets\icons\elusive\elusive.ttf" />
+    <Content Include="Resc\Skin\Supina\assets\icons\elusive\elusive.woff" />
+    <Content Include="Resc\Skin\Supina\assets\icons\fontawesome\fontawesome-webfont.eot" />
+    <Content Include="Resc\Skin\Supina\assets\icons\fontawesome\fontawesome-webfont.ttf" />
+    <Content Include="Resc\Skin\Supina\assets\icons\fontawesome\fontawesome-webfont.woff" />
+    <Content Include="Resc\Skin\Supina\assets\icons\fontawesome\FontAwesome.otf" />
+    <Content Include="Resc\Skin\Supina\assets\icons\iconic\iconic.eot" />
+    <Content Include="Resc\Skin\Supina\assets\icons\iconic\iconic.ttf" />
+    <Content Include="Resc\Skin\Supina\assets\icons\iconic\iconic.woff" />
+    <Content Include="Resc\Skin\Supina\assets\icons\linecons\linecons.eot" />
+    <Content Include="Resc\Skin\Supina\assets\icons\linecons\linecons.ttf" />
+    <Content Include="Resc\Skin\Supina\assets\icons\linecons\linecons.woff" />
+    <Content Include="Resc\Skin\Supina\assets\icons\meteocons\meteocons.eot" />
+    <Content Include="Resc\Skin\Supina\assets\icons\meteocons\meteocons.ttf" />
+    <Content Include="Resc\Skin\Supina\assets\icons\meteocons\meteocons.woff" />
+    <Content Include="Resc\Skin\Supina\assets\icons\spinnericon\spinnericon.eot" />
+    <Content Include="Resc\Skin\Supina\assets\icons\spinnericon\spinnericon.ttf" />
+    <Content Include="Resc\Skin\Supina\assets\icons\spinnericon\spinnericon.woff" />
+    <Content Include="Resc\Skin\Supina\assets\icons\typicons\typicons.eot" />
+    <Content Include="Resc\Skin\Supina\assets\icons\typicons\typicons.ttf" />
+    <Content Include="Resc\Skin\Supina\assets\icons\typicons\typicons.woff" />
+    <Content Include="Resc\Skin\Supina\assets\images\icons\icons.psd" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\loading-indicator\spinner-icon\fontello.eot" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\loading-indicator\spinner-icon\fontello.ttf" />
+    <Content Include="Resc\Skin\Supina\assets\widgets\loading-indicator\spinner-icon\fontello.woff" />
+    <Content Include="Resc\Skin\Supina\supina.less" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.Spider.DbLib\Gradual.Spider.DbLib.csproj">
+      <Project>{4FC80908-9AD3-4C5C-AB95-988FF912B2EA}</Project>
+      <Name>Gradual.Spider.DbLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Spider.Lib\Gradual.Spider.Lib.csproj">
+      <Project>{36E7B0B8-4157-4564-9D5A-7F2C69A57D0F}</Project>
+      <Name>Gradual.Spider.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <!--<VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>-->
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50448</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

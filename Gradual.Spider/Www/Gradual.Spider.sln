@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.Spider.Www", "Gradual.Spider.Www\Gradual.Spider.Www.csproj", "{9CD492FF-AD1C-47A0-ABAA-AA6FAE7B959A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.Spider.Lib", "Gradual.Spider.Lib\Gradual.Spider.Lib.csproj", "{36E7B0B8-4157-4564-9D5A-7F2C69A57D0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.Spider.DbLib", "Gradual.Spider.DbLib\Gradual.Spider.DbLib.csproj", "{4FC80908-9AD3-4C5C-AB95-988FF912B2EA}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gradual.Spider.Www\\Gradual.Spider.Www.csproj
+		SccProjectName1 = Gradual.Spider.Www
+		SccLocalPath1 = Gradual.Spider.Www
+		SccProjectUniqueName2 = Gradual.Spider.Lib\\Gradual.Spider.Lib.csproj
+		SccProjectName2 = Gradual.Spider.Lib
+		SccLocalPath2 = Gradual.Spider.Lib
+		SccProjectUniqueName3 = Gradual.Spider.DbLib\\Gradual.Spider.DbLib.csproj
+		SccProjectName3 = Gradual.Spider.DbLib
+		SccLocalPath3 = Gradual.Spider.DbLib
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CD492FF-AD1C-47A0-ABAA-AA6FAE7B959A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CD492FF-AD1C-47A0-ABAA-AA6FAE7B959A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CD492FF-AD1C-47A0-ABAA-AA6FAE7B959A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CD492FF-AD1C-47A0-ABAA-AA6FAE7B959A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E7B0B8-4157-4564-9D5A-7F2C69A57D0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E7B0B8-4157-4564-9D5A-7F2C69A57D0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E7B0B8-4157-4564-9D5A-7F2C69A57D0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E7B0B8-4157-4564-9D5A-7F2C69A57D0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FC80908-9AD3-4C5C-AB95-988FF912B2EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FC80908-9AD3-4C5C-AB95-988FF912B2EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FC80908-9AD3-4C5C-AB95-988FF912B2EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FC80908-9AD3-4C5C-AB95-988FF912B2EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

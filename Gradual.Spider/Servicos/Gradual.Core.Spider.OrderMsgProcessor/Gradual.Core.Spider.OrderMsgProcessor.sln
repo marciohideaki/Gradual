@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.Core.Spider.OrderMsgProcessor", "Gradual.Core.Spider.OrderMsgProcessor\Gradual.Core.Spider.OrderMsgProcessor.csproj", "{34E57992-8085-4CA8-8CD0-F3FE370C53E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.Core.Spider.OrderMsgProcessor.Lib", "Gradual.Core.Spider.OrderMsgProcessor.Lib\Gradual.Core.Spider.OrderMsgProcessor.Lib.csproj", "{5B396198-72D3-4735-B1B3-D86D4DFA2014}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gradual.Core.Spider.OrderMsgProcessor\\Gradual.Core.Spider.OrderMsgProcessor.csproj
+		SccProjectName1 = Gradual.Core.Spider.OrderMsgProcessor
+		SccLocalPath1 = Gradual.Core.Spider.OrderMsgProcessor
+		SccProjectUniqueName2 = Gradual.Core.Spider.OrderMsgProcessor.Lib\\Gradual.Core.Spider.OrderMsgProcessor.Lib.csproj
+		SccProjectName2 = Gradual.Core.Spider.OrderMsgProcessor.Lib
+		SccLocalPath2 = Gradual.Core.Spider.OrderMsgProcessor.Lib
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34E57992-8085-4CA8-8CD0-F3FE370C53E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34E57992-8085-4CA8-8CD0-F3FE370C53E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34E57992-8085-4CA8-8CD0-F3FE370C53E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34E57992-8085-4CA8-8CD0-F3FE370C53E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B396198-72D3-4735-B1B3-D86D4DFA2014}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B396198-72D3-4735-B1B3-D86D4DFA2014}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B396198-72D3-4735-B1B3-D86D4DFA2014}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B396198-72D3-4735-B1B3-D86D4DFA2014}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

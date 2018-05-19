@@ -1,0 +1,11 @@
+C:\Dev\Gradual\Gradual.Intranet\Gradual.Intranet.Oracle\bin\Release\Gradual.Intranet.Oracle.dll
+C:\Dev\Gradual\Gradual.Intranet\Gradual.Intranet.Oracle\bin\Release\Gradual.Intranet.Oracle.pdb
+C:\Dev\Gradual\Gradual.Intranet\Gradual.Intranet.Oracle\obj\Release\ResolveAssemblyReference.cache
+C:\Dev\Gradual\Gradual.Intranet\Gradual.Intranet.Oracle\obj\Release\Gradual.Intranet.Oracle.dll
+C:\Dev\Gradual\Gradual.Intranet\Gradual.Intranet.Oracle\obj\Release\Gradual.Intranet.Oracle.pdb
+C:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Intranet.Oracle\bin\Release\Gradual.Intranet.Oracle.dll
+C:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Intranet.Oracle\bin\Release\Gradual.Intranet.Oracle.pdb
+C:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Intranet.Oracle\obj\Release\Gradual.Intranet.Oracle.csprojResolveAssemblyReference.cache
+C:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Intranet.Oracle\obj\Release\Gradual.Intranet.Oracle.dll
+C:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Intranet.Oracle\obj\Release\Gradual.Intranet.Oracle.pdb
+C:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Intranet.Oracle\bin\Release\Gradual.Intranet.Oracle.dll.config

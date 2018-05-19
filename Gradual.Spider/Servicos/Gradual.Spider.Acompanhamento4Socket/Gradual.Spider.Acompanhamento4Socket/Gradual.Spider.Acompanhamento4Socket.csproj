@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{95AF7CAE-3DF0-4E36-A44D-92D0CC31187F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.Spider.Acompanhamento4Socket</RootNamespace>
+    <AssemblyName>Gradual.Spider.Acompanhamento4Socket</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>%24/Gradual.Spider/Servicos/Gradual.Spider.Acompanhamento4Socket/Gradual.Spider.Acompanhamento4Socket</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>http://gsp-srv-tfs02:8080/tfs/projetos</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.Core.Spider.OrderFixProcessing.Lib">
+      <HintPath>..\..\References\Gradual.Core.Spider.OrderFixProcessing.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Library, Version=1.0.4276.29947, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\x64\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.RoteadorOrdens.Lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\Gradual.OMS.RoteadorOrdens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Spider.CommSocket">
+      <HintPath>..\..\References\Gradual.Spider.CommSocket.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\x64\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acompanhamento4SocketSrv.cs" />
+    <Compile Include="Cache\OrderCache4Socket.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rede\A4SocketClient.cs" />
+    <Compile Include="Rede\A4SocketClientConnection.cs" />
+    <Compile Include="Rede\A4SocketSrv.cs" />
+    <Compile Include="Rede\RoteadorCallback.cs" />
+    <Compile Include="Rede\StreamerClientHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangeLog.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.Spider.Acompanhamento4Socket.Db\Gradual.Spider.Acompanhamento4Socket.Db.csproj">
+      <Project>{1D78E2F9-DA24-4F8F-825A-EA85F9D1B609}</Project>
+      <Name>Gradual.Spider.Acompanhamento4Socket.Db</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Spider.Acompanhamento4Socket.Lib\Gradual.Spider.Acompanhamento4Socket.Lib.csproj">
+      <Project>{023FC7BF-D72A-454E-949B-DF0295EFD79D}</Project>
+      <Name>Gradual.Spider.Acompanhamento4Socket.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

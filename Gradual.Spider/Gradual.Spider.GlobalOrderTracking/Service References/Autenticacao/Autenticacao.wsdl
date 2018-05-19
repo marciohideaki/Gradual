@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="AutenticarUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pRequest" type="tns:AutenticarUsuarioRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AutenticarUsuarioRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoOuEmailDoUsuario" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Senha" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AutenticarUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AutenticarUsuarioResult" type="tns:AutenticarUsuarioResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AutenticarUsuarioResponse">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:RespostaBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="CodigoDaSessao" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CodigoDeAcessoDoUsuario" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="IdLogin" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="RespostaBase">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StatusResposta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DescricaoResposta" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="VerificarAutenticacao">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pRequest" type="tns:VerificarAutenticacaoRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="VerificarAutenticacaoRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TokenSessao" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="VerificarAutenticacaoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerificarAutenticacaoResult" type="tns:VerificarAutenticacaoResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="VerificarAutenticacaoResponse">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:RespostaBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="AutenticacaoVerificada" type="s:boolean" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="BuscarPermissoesDoUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pRequest" type="tns:BuscarPermissoesDoUsuarioRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BuscarPermissoesDoUsuarioRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoDoUsuario" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoDaSessao" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BuscarPermissoesDoUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarPermissoesDoUsuarioResult" type="tns:BuscarPermissoesDoUsuarioResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BuscarPermissoesDoUsuarioResponse">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:RespostaBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Permissoes" type="tns:ArrayOfPermissaoAssociadaInfo" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfPermissaoAssociadaInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PermissaoAssociadaInfo" nillable="true" type="tns:PermissaoAssociadaInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PermissaoAssociadaInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoPermissao" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="tns:PermissaoAssociadaStatusEnum" />
+          <s:element minOccurs="0" maxOccurs="1" name="PermissaoInfo" type="tns:PermissaoInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="PermissaoAssociadaStatusEnum">
+        <s:restriction base="s:string">
+          <s:enumeration value="Permitido" />
+          <s:enumeration value="Negado" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="PermissaoInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoPermissao" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NomePermissao" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DescricaoPermissao" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AutenticarUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:AutenticarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="AutenticarUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:AutenticarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerificarAutenticacaoSoapIn">
+    <wsdl:part name="parameters" element="tns:VerificarAutenticacao" />
+  </wsdl:message>
+  <wsdl:message name="VerificarAutenticacaoSoapOut">
+    <wsdl:part name="parameters" element="tns:VerificarAutenticacaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarPermissoesDoUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarPermissoesDoUsuario" />
+  </wsdl:message>
+  <wsdl:message name="BuscarPermissoesDoUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarPermissoesDoUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AutenticacaoSoap">
+    <wsdl:operation name="AutenticarUsuario">
+      <wsdl:input message="tns:AutenticarUsuarioSoapIn" />
+      <wsdl:output message="tns:AutenticarUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificarAutenticacao">
+      <wsdl:input message="tns:VerificarAutenticacaoSoapIn" />
+      <wsdl:output message="tns:VerificarAutenticacaoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPermissoesDoUsuario">
+      <wsdl:input message="tns:BuscarPermissoesDoUsuarioSoapIn" />
+      <wsdl:output message="tns:BuscarPermissoesDoUsuarioSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AutenticacaoSoap" type="tns:AutenticacaoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AutenticarUsuario">
+      <soap:operation soapAction="http://tempuri.org/AutenticarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificarAutenticacao">
+      <soap:operation soapAction="http://tempuri.org/VerificarAutenticacao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPermissoesDoUsuario">
+      <soap:operation soapAction="http://tempuri.org/BuscarPermissoesDoUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AutenticacaoSoap12" type="tns:AutenticacaoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AutenticarUsuario">
+      <soap12:operation soapAction="http://tempuri.org/AutenticarUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificarAutenticacao">
+      <soap12:operation soapAction="http://tempuri.org/VerificarAutenticacao" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPermissoesDoUsuario">
+      <soap12:operation soapAction="http://tempuri.org/BuscarPermissoesDoUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Autenticacao">
+    <wsdl:port name="AutenticacaoSoap" binding="tns:AutenticacaoSoap">
+      <soap:address location="http://wsplataforma.gradualinvestimentos.com.br:8080/Gradual.WsIntegracao/Autenticacao.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AutenticacaoSoap12" binding="tns:AutenticacaoSoap12">
+      <soap12:address location="http://wsplataforma.gradualinvestimentos.com.br:8080/Gradual.WsIntegracao/Autenticacao.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

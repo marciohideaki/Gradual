@@ -1,0 +1,101 @@
+﻿body {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #4e443c;
+    font-size: 13px;
+}
+.tab-content > div { display:none; }
+.tab-content > div.active { display:block; }
+
+.tab-content {
+    border: 1px solid #ddd;
+    margin: 0px 0px 0px 0px;
+    padding: 12px;
+}
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-tabs>li 
+{
+    float: left;
+    margin-bottom: -1px;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.titulo { 
+    border:1px solid #000; 
+    background:#000; 
+    /*
+    margin:12px 12px 12px 12px; 
+    padding:0px 0px 0px 0px;
+    */
+    margin: 12px 12px 12px 28px;
+    padding: 5px 0px 2px 14px;
+    border-radius:4px; 
+    font-size:13px;
+    color: #fff; 
+}
+.SearchFor 
+{
+   width: 120px;
+   background-color: #f58400;
+   font-size: 0.6em;
+   
+}
+.ExecutionFrom , .ExecutionFromDate
+{
+    width: 90px;
+    background-color: #f58400;
+    font-size: 0.6em;
+}
+.ExecutionTo , .ExecutionToDate
+{
+    width: 90px;
+    background-color: #f58400;
+    font-size: 0.6em;
+}
+.FilterClass 
+{
+    width: 100%;
+    padding: 10px 5px 5px 5px;
+    margin: 10px 5px 5px 5px;
+    border:1px solid #000; 
+    border-radius:4px;
+    font-family: Calibri;
+    font-size: 13px;
+    
+}
+
+.FilterClassOperacoesIntraday {
+    
+    /*margin: 10px 5px 5px 5px;*/
+    /*width: 100%;
+    padding: 10px 5px 5px 5px;
+    border:1px solid #000; 
+    border-radius:4px;
+    font-family: Calibri;
+    font-size: 13px;*/
+}
+
+.FilterRiscoResumido .FilterClassOperacoesIntraday {
+ 
+}
+
+.lblStatusConnection {
+
+    float:right;
+    font-family: Calibri;
+    font-size: 11px;
+
+}

@@ -1,0 +1,14 @@
+C:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PositionClient.DbLib\bin\Release\Gradual.Spider.PositionClient.DbLib.dll
+C:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PositionClient.DbLib\bin\Release\Gradual.Spider.PositionClient.DbLib.pdb
+C:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PositionClient.DbLib\bin\Release\Gradual.Intranet.Oracle.dll
+C:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PositionClient.DbLib\bin\Release\Gradual.OMS.Library.dll
+C:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PositionClient.DbLib\bin\Release\Gradual.Spider.PositionClient.Lib.dll
+C:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PositionClient.DbLib\bin\Release\log4net.dll
+C:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PositionClient.DbLib\bin\Release\Gradual.Intranet.Oracle.pdb
+C:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PositionClient.DbLib\bin\Release\Gradual.Spider.PositionClient.Lib.pdb
+C:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PositionClient.DbLib\bin\Release\Gradual.OMS.Library.pdb
+C:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PositionClient.DbLib\bin\Release\log4net.pdb
+C:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PositionClient.DbLib\obj\Release\Gradual.Spider.PositionClient.DbLib.csprojResolveAssemblyReference.cache
+C:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PositionClient.DbLib\obj\Release\Gradual.Spider.PositionClient.DbLib.dll
+C:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PositionClient.DbLib\obj\Release\Gradual.Spider.PositionClient.DbLib.pdb
+C:\Dev\Gradual\Gradual.Spider\Gradual.Spider.WebPositionClient\Gradual.Spider.PositionClient.DbLib\bin\Release\Gradual.Spider.PositionClient.DbLib.dll.config

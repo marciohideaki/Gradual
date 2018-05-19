@@ -1,0 +1,102 @@
+    /* Dashboard panels */
+
+.dashboard-box
+{
+    text-align: center;
+}
+
+.dashboard-box .content-wrapper
+{
+    overflow: hidden;
+
+    margin: 0 15px 15px;
+    padding: 15px 0 0;
+}
+
+.dashboard-box canvas
+{
+    display: block !important;
+
+    margin: 0 auto;
+}
+
+.dashboard-box .header
+{
+    font-size: 14px;
+    line-height: 1.3em;
+
+    padding: 0 0 5px;
+
+    text-align: right;
+}
+
+.dashboard-box .header .glyph-icon
+{
+    display: block;
+    float: left;
+
+    width: 20px;
+}
+
+.dashboard-box .header span
+{
+    font-size: 12px;
+    font-weight: bold;
+
+    display: block;
+
+         opacity: .80;
+
+    -moz-opacity: .80;
+    filter: alpha(opacity: 80);
+}
+
+.dashboard-box .button-pane
+{
+    border-top: 0;
+    background: rgba(0,0,0,.08);
+}
+
+.dashboard-box .heading
+{
+    font-size: 15px;
+    font-weight: bold;
+
+    float: left;
+}
+
+.dashboard-box .center-div
+{
+    margin: 5px auto -15px;
+}
+
+.dashboard-heading
+{
+    font-size: 14px;
+
+    padding: 0 0 10px;
+}
+
+.dashboard-heading span
+{
+    font-size: 12px;
+
+    display: block;
+}
+
+body .button-pane.button-pane-alt
+{
+    background: transparent !important;
+}
+
+.dashboard-panel .chosen-container-single .chosen-single span
+{
+    padding-right: 40px;
+}
+
+.dashboard-panel .chosen-container
+{
+    margin-top: -3px;
+
+    text-align: left;
+}
