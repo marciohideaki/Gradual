@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.WsIntegracao.Arena", "WebAPI\Gradual.OMS.WsIntegracao.Arena.csproj", "{30CE3A7E-3FC0-4E61-830B-4988F1554912}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WebAPI_Test\\Gradual.OMS.WsIntegracao.Arena.csproj
+		SccProjectName1 = WebAPI_Test
+		SccLocalPath1 = WebAPI_Test
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30CE3A7E-3FC0-4E61-830B-4988F1554912}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30CE3A7E-3FC0-4E61-830B-4988F1554912}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30CE3A7E-3FC0-4E61-830B-4988F1554912}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30CE3A7E-3FC0-4E61-830B-4988F1554912}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

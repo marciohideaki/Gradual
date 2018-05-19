@@ -1,0 +1,12 @@
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoramento.RCO\Gradual.Monitores.Risco.Info\bin\Debug\Gradual.Monitores.Risco.Lib.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoramento.RCO\Gradual.Monitores.Risco.Info\bin\Debug\Gradual.Monitores.Risco.Lib.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoramento.RCO\Gradual.Monitores.Risco.Info\bin\Debug\Gradual.OMS.Email.Lib.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoramento.RCO\Gradual.Monitores.Risco.Info\bin\Debug\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoramento.RCO\Gradual.Monitores.Risco.Info\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoramento.RCO\Gradual.Monitores.Risco.Info\bin\Debug\Gradual.OMS.Email.Lib.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoramento.RCO\Gradual.Monitores.Risco.Info\bin\Debug\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoramento.RCO\Gradual.Monitores.Risco.Info\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoramento.RCO\Gradual.Monitores.Risco.Info\bin\Debug\log4net.xml
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoramento.RCO\Gradual.Monitores.Risco.Info\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoramento.RCO\Gradual.Monitores.Risco.Info\obj\Debug\Gradual.Monitores.Risco.Lib.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoramento.RCO\Gradual.Monitores.Risco.Info\obj\Debug\Gradual.Monitores.Risco.Lib.pdb

@@ -1,0 +1,15 @@
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.RelatoriosFinanc\Gradual.OMS.RelatoriosFinanc\bin\Debug\Gradual.OMS.RelatoriosFinanc.dll.config
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.RelatoriosFinanc\Gradual.OMS.RelatoriosFinanc\bin\Debug\Gradual.OMS.RelatoriosFinanc.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.RelatoriosFinanc\Gradual.OMS.RelatoriosFinanc\bin\Debug\Gradual.OMS.RelatoriosFinanc.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.RelatoriosFinanc\Gradual.OMS.RelatoriosFinanc\bin\Debug\Gradual.Generico.Dados.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.RelatoriosFinanc\Gradual.OMS.RelatoriosFinanc\bin\Debug\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.RelatoriosFinanc\Gradual.OMS.RelatoriosFinanc\bin\Debug\Gradual.OMS.RelatoriosFinanc.Lib.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.RelatoriosFinanc\Gradual.OMS.RelatoriosFinanc\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.RelatoriosFinanc\Gradual.OMS.RelatoriosFinanc\bin\Debug\Gradual.OMS.RelatoriosFinanc.Lib.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.RelatoriosFinanc\Gradual.OMS.RelatoriosFinanc\bin\Debug\Gradual.Generico.Dados.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.RelatoriosFinanc\Gradual.OMS.RelatoriosFinanc\bin\Debug\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.RelatoriosFinanc\Gradual.OMS.RelatoriosFinanc\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.RelatoriosFinanc\Gradual.OMS.RelatoriosFinanc\bin\Debug\log4net.xml
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.RelatoriosFinanc\Gradual.OMS.RelatoriosFinanc\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.RelatoriosFinanc\Gradual.OMS.RelatoriosFinanc\obj\Debug\Gradual.OMS.RelatoriosFinanc.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.RelatoriosFinanc\Gradual.OMS.RelatoriosFinanc\obj\Debug\Gradual.OMS.RelatoriosFinanc.pdb

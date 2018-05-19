@@ -1,0 +1,7 @@
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.MarketData\Gradual.OMS.MarketData\bin\Debug\Gradual.OMS.MarketData.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.MarketData\Gradual.OMS.MarketData\bin\Debug\Gradual.OMS.MarketData.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.MarketData\Gradual.OMS.MarketData\bin\Debug\quickfix_net.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.MarketData\Gradual.OMS.MarketData\bin\Debug\quickfix_net_messages.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.MarketData\Gradual.OMS.MarketData\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.MarketData\Gradual.OMS.MarketData\obj\Debug\Gradual.OMS.MarketData.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.MarketData\Gradual.OMS.MarketData\obj\Debug\Gradual.OMS.MarketData.pdb

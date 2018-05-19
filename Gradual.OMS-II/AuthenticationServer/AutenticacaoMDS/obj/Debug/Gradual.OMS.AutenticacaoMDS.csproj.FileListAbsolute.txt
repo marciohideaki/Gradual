@@ -1,0 +1,12 @@
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AutenticacaoMDS\bin\Debug\Gradual.OMS.AutenticacaoMDS.dll
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AutenticacaoMDS\bin\Debug\Gradual.OMS.AutenticacaoMDS.pdb
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AutenticacaoMDS\bin\Debug\AuthenticationServer.dll
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AutenticacaoMDS\bin\Debug\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AutenticacaoMDS\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AutenticacaoMDS\bin\Debug\AuthenticationServer.pdb
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AutenticacaoMDS\bin\Debug\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AutenticacaoMDS\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AutenticacaoMDS\bin\Debug\log4net.xml
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AutenticacaoMDS\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AutenticacaoMDS\obj\Debug\Gradual.OMS.AutenticacaoMDS.dll
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AutenticacaoMDS\obj\Debug\Gradual.OMS.AutenticacaoMDS.pdb

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.CadastroCliente.Lib", "Gradual.OMS.CadastroCliente.Lib\Gradual.OMS.CadastroCliente.Lib.csproj", "{50893533-3D8E-4D90-8FFA-2FCBFE9660EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.CadastroCliente", "Gradual.OMS.CadastroCliente\Gradual.OMS.CadastroCliente.csproj", "{357909C2-8890-4656-85B9-A5C8BA562E21}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gradual.OMS.CadastroCliente.Lib\\Gradual.OMS.CadastroCliente.Lib.csproj
+		SccProjectName1 = Gradual.OMS.CadastroCliente.Lib
+		SccLocalPath1 = Gradual.OMS.CadastroCliente.Lib
+		SccProjectUniqueName2 = Gradual.OMS.CadastroCliente\\Gradual.OMS.CadastroCliente.csproj
+		SccProjectName2 = Gradual.OMS.CadastroCliente
+		SccLocalPath2 = Gradual.OMS.CadastroCliente
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50893533-3D8E-4D90-8FFA-2FCBFE9660EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50893533-3D8E-4D90-8FFA-2FCBFE9660EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50893533-3D8E-4D90-8FFA-2FCBFE9660EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50893533-3D8E-4D90-8FFA-2FCBFE9660EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{357909C2-8890-4656-85B9-A5C8BA562E21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{357909C2-8890-4656-85B9-A5C8BA562E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{357909C2-8890-4656-85B9-A5C8BA562E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{357909C2-8890-4656-85B9-A5C8BA562E21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

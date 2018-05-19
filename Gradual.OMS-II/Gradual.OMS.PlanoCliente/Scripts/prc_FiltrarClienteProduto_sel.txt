@@ -1,0 +1,30 @@
+
+ALTER PROCEDURE prc_FiltrarClienteProduto_sel
+	@dt_de datetime,
+	@dt_ate datetime,
+	@id_produto int,
+	@id_cliente int
+AS
+BEGIN
+    
+	SELECT 
+		[prod].id_produto_plano,
+		[prod].id_cliente,
+		[prod].st_ativo,
+		[prod].dt_operacao,
+		[cli].ds_nome as ds_nomecliente,
+		[cli].ds_cpfcnpj
+	FROM
+		[tb_cliente_produto] as prod
+	INNER JOIN 
+		[DirectTradeCadastro].[dbo].[tb_cliente_conta] as conta on [prod].[id_cliente] = [conta].[cd_codigo]
+	INNER JOIN 
+		[DirectTradeCadastro].[dbo].[tb_cliente] as cli on [conta].[id_cliente] = [cli].[id_cliente]
+	WHERE
+		[prod].[id_cliente]       = ISNULL( @id_cliente, [prod].[id_cliente]) AND
+		[prod].[dt_operacao]      BETWEEN ISNULL (@dt_de, getdate()-1) AND ISNULL(@dt_ate, getdate()+1) AND
+		[prod].[id_produto_plano] = ISNULL (@id_produto, [prod].[id_produto_plano])
+	
+	
+END
+GO

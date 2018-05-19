@@ -1,0 +1,5 @@
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.TesouroDireto\WebApplication1\bin\WebApplication1.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.TesouroDireto\WebApplication1\bin\WebApplication1.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.TesouroDireto\WebApplication1\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.TesouroDireto\WebApplication1\obj\Debug\WebApplication1.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.TesouroDireto\WebApplication1\obj\Debug\WebApplication1.pdb

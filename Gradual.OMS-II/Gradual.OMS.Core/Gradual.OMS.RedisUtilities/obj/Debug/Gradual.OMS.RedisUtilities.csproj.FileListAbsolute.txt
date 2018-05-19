@@ -1,0 +1,1 @@
+C:\aponso\Desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.RedisUtilities\obj\Debug\Gradual.OMS.RedisUtilities.csprojResolveAssemblyReference.cache

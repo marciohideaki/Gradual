@@ -1,0 +1,16 @@
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\Gradual.OMS.CapturadorCotacaoOracle.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\Gradual.OMS.CapturadorCotacaoOracle.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\Gradual.OMS.AnaliseGrafica.Lib.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\Newtonsoft.Json.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\Gradual.Generico.Dados.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\Gradual.OMS.AnaliseGrafica.Lib.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\log4net.xml
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\Newtonsoft.Json.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\Gradual.Generico.Dados.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\obj\Debug\Gradual.OMS.CapturadorCotacaoOracle.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\obj\Debug\Gradual.OMS.CapturadorCotacaoOracle.pdb
+C:\aponso\Desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\obj\Debug\Gradual.OMS.CapturadorCotacaoOracle.csprojResolveAssemblyReference.cache

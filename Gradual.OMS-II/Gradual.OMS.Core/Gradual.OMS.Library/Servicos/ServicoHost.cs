@@ -229,7 +229,6 @@ namespace Gradual.OMS.Library.Servicos
         /// <param name="id">id da secao a ser carregada (normalmente "Default")</param>
         public void CarregarConfig(string id)
         {
-            String lNomeServico;
             try
             {
                 logger.Debug("CarregarConfig(): Carregando configuracoes para (" + id + ")");
@@ -257,7 +256,6 @@ namespace Gradual.OMS.Library.Servicos
                     {
                         if (servicoInfo.Habilitado)
                         {
-                            lNomeServico = servicoInfo.NomeInstancia;
                             logger.Info("Registrando servico: [" + servicoInfo.NomeInstancia + "]");
                             this.RegistrarServico(servicoInfo);
                         }

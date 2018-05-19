@@ -1,0 +1,13 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorANG\bin\Debug\Gradual.OMS.ServicoCapturadorANG.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorANG\bin\Debug\Gradual.OMS.ServicoCapturadorANG.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorANG\bin\Debug\Gradual.OMS.ServicoCapturadorANG.exe
+Installing service Gradual_CapturadorANG...
+Service Gradual_CapturadorANG has been successfully installed.
+Creating EventLog source Gradual_CapturadorANG in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorANG\bin\Debug\Gradual.OMS.ServicoCapturadorANG.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorANG\bin\Debug\Gradual.OMS.ServicoCapturadorANG.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorANG\bin\Debug\Gradual.OMS.ServicoCapturadorANG.exe

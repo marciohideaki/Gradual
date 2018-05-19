@@ -1,0 +1,17 @@
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CotacaoStreamer\Gradual.OMS.CotacaoStreamer\bin\Debug\Gradual.OMS.CotacaoStreamer.dll.config
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CotacaoStreamer\Gradual.OMS.CotacaoStreamer\bin\Debug\Gradual.OMS.CotacaoStreamer.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CotacaoStreamer\Gradual.OMS.CotacaoStreamer\bin\Debug\Gradual.OMS.CotacaoStreamer.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CotacaoStreamer\Gradual.OMS.CotacaoStreamer\bin\Debug\Gradual.OMS.CotacaoAdm.Lib.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CotacaoStreamer\Gradual.OMS.CotacaoStreamer\bin\Debug\Gradual.OMS.CotacaoStreamer.Lib.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CotacaoStreamer\Gradual.OMS.CotacaoStreamer\bin\Debug\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CotacaoStreamer\Gradual.OMS.CotacaoStreamer\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CotacaoStreamer\Gradual.OMS.CotacaoStreamer\bin\Debug\Newtonsoft.Json.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CotacaoStreamer\Gradual.OMS.CotacaoStreamer\bin\Debug\Gradual.OMS.CotacaoStreamer.Lib.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CotacaoStreamer\Gradual.OMS.CotacaoStreamer\bin\Debug\Gradual.OMS.CotacaoAdm.Lib.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CotacaoStreamer\Gradual.OMS.CotacaoStreamer\bin\Debug\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CotacaoStreamer\Gradual.OMS.CotacaoStreamer\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CotacaoStreamer\Gradual.OMS.CotacaoStreamer\bin\Debug\log4net.xml
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CotacaoStreamer\Gradual.OMS.CotacaoStreamer\bin\Debug\Newtonsoft.Json.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CotacaoStreamer\Gradual.OMS.CotacaoStreamer\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CotacaoStreamer\Gradual.OMS.CotacaoStreamer\obj\Debug\Gradual.OMS.CotacaoStreamer.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CotacaoStreamer\Gradual.OMS.CotacaoStreamer\obj\Debug\Gradual.OMS.CotacaoStreamer.pdb

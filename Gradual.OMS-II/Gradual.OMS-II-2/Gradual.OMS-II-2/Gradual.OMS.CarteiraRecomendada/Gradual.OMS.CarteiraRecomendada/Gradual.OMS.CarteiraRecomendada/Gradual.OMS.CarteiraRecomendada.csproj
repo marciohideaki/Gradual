@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F9558F91-1E58-4338-8902-C44BD1EF15A5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.CarteiraRecomendada</RootNamespace>
+    <AssemblyName>Gradual.OMS.CarteiraRecomendada</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.OMS.ContaCorrente.Lib">
+      <HintPath>..\..\..\Gradual.OMS.References\Gradual.OMS.ContaCorrente.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Cotacao.Lib">
+      <HintPath>..\..\..\Gradual.OMS.References\Gradual.OMS.Cotacao.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Custodia">
+      <HintPath>..\..\..\Gradual.OMS.References\Gradual.OMS.Custodia.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Custodia.Lib">
+      <HintPath>..\..\..\Gradual.OMS.References\Gradual.OMS.Custodia.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Library">
+      <HintPath>..\..\..\Gradual.OMS.References\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Seguranca.Lib">
+      <HintPath>..\..\..\Gradual.OMS.References\Gradual.OMS.Seguranca.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Gradual.OMS.References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CarteiraRecomendada.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Gradual.OMS.CarteiraRecomendada.lib\Gradual.OMS.CarteiraRecomendada.lib.csproj">
+      <Project>{6A2305DC-3AAC-423F-A991-AA8A5E2F8822}</Project>
+      <Name>Gradual.OMS.CarteiraRecomendada.lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.OMS.CarteiraRecomendadaPersistencia\Gradual.OMS.CarteiraRecomendadaPersistencia.csproj">
+      <Project>{97B87730-354E-49A6-85FC-8484E248A64A}</Project>
+      <Name>Gradual.OMS.CarteiraRecomendadaPersistencia</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

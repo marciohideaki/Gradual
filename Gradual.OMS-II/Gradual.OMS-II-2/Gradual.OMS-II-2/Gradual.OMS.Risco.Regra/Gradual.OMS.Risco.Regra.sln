@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Risco.Regra", "Gradual.OMS.Risco.Regra\Gradual.OMS.Risco.Regra.csproj", "{BC60FD67-2DF2-48B4-917B-3BFF7DD98D28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Risco.Regra.Lib", "Gradual.OMS.Risco.Regra.Lib\Gradual.OMS.Risco.Regra.Lib.csproj", "{A63D6BCE-E1DF-4454-8AB3-BC2C5EF7047B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Risco.Regra.Teste", "Gradual.OMS.Risco.Regra.Teste\Gradual.OMS.Risco.Regra.Teste.csproj", "{887A9D60-A73F-4C4B-88C1-9F2D0AE02AB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C1D7AAF8-2AAF-4B83-A5F6-C9A380A06A54}"
+	ProjectSection(SolutionItems) = preProject
+		Gradual.OMS.Risco.Regra.vsmdi = Gradual.OMS.Risco.Regra.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gradual.OMS.Risco.Regra.Lib\\Gradual.OMS.Risco.Regra.Lib.csproj
+		SccProjectName1 = Gradual.OMS.Risco.Regra.Lib
+		SccLocalPath1 = Gradual.OMS.Risco.Regra.Lib
+		SccProjectUniqueName2 = Gradual.OMS.Risco.Regra\\Gradual.OMS.Risco.Regra.csproj
+		SccProjectName2 = Gradual.OMS.Risco.Regra
+		SccLocalPath2 = Gradual.OMS.Risco.Regra
+		SccProjectUniqueName3 = Gradual.OMS.Risco.Regra.Teste\\Gradual.OMS.Risco.Regra.Teste.csproj
+		SccProjectName3 = Gradual.OMS.Risco.Regra.Teste
+		SccLocalPath3 = Gradual.OMS.Risco.Regra.Teste
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Gradual.OMS.Risco.Regra.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC60FD67-2DF2-48B4-917B-3BFF7DD98D28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC60FD67-2DF2-48B4-917B-3BFF7DD98D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC60FD67-2DF2-48B4-917B-3BFF7DD98D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC60FD67-2DF2-48B4-917B-3BFF7DD98D28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A63D6BCE-E1DF-4454-8AB3-BC2C5EF7047B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A63D6BCE-E1DF-4454-8AB3-BC2C5EF7047B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A63D6BCE-E1DF-4454-8AB3-BC2C5EF7047B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A63D6BCE-E1DF-4454-8AB3-BC2C5EF7047B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{887A9D60-A73F-4C4B-88C1-9F2D0AE02AB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{887A9D60-A73F-4C4B-88C1-9F2D0AE02AB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{887A9D60-A73F-4C4B-88C1-9F2D0AE02AB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{887A9D60-A73F-4C4B-88C1-9F2D0AE02AB7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

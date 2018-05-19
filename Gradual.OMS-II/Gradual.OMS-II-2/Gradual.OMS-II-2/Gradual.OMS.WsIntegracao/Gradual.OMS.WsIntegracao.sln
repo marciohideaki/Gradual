@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.WsIntegracao.Www", "Gradual.OMS.WsIntegracao.Www\Gradual.OMS.WsIntegracao.Www.csproj", "{1A95F1C5-E7C9-499D-88A2-343CED874D64}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gradual.OMS.WsIntegracao.Www\\Gradual.OMS.WsIntegracao.Www.csproj
+		SccProjectName1 = Gradual.OMS.WsIntegracao.Www
+		SccLocalPath1 = Gradual.OMS.WsIntegracao.Www
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A95F1C5-E7C9-499D-88A2-343CED874D64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A95F1C5-E7C9-499D-88A2-343CED874D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A95F1C5-E7C9-499D-88A2-343CED874D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A95F1C5-E7C9-499D-88A2-343CED874D64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

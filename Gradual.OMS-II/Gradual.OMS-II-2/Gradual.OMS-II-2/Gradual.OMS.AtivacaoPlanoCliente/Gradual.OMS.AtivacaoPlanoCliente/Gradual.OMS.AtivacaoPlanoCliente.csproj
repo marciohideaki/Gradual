@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D97F698F-E40D-4EF9-BCAA-BFB7B3F9223A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.AtivacaoPlanoCliente</RootNamespace>
+    <AssemblyName>Gradual.OMS.AtivacaoPlanoCliente</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.Generico.Dados">
+      <HintPath>..\..\Gradual.OMS.References\Gradual.Generico.Dados.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Generico.Geral">
+      <HintPath>..\..\Gradual.OMS.References\Gradual.Generico.Geral.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Email.Lib">
+      <HintPath>..\..\Gradual.OMS.References\Gradual.OMS.Email.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Library">
+      <HintPath>..\..\Gradual.OMS.References\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.PlanoCliente.Lib">
+      <HintPath>..\..\Gradual.OMS.References\Gradual.OMS.PlanoCliente.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\Gradual.OMS.References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DB\CobrancaDB.cs" />
+    <Compile Include="DB\PersistenciaDB.cs" />
+    <Compile Include="ServicoAtivacaoPlanoCliente.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.OMS.AtivacaoPlanoCliente.Lib\Gradual.OMS.AtivacaoPlanoCliente.Lib.csproj">
+      <Project>{F615043F-F34C-4431-AC41-5A0FA5E953F7}</Project>
+      <Name>Gradual.OMS.AtivacaoPlanoCliente.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TextosEmails\EmailNotificacaoAtivacaoPlano.txt" />
+    <Content Include="TextosEmails\NotificacaoAtivacaoPlanoIR.txt" />
+    <Content Include="TextosEmails\NotificacaoGeracaoArquivo.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

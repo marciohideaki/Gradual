@@ -1,0 +1,10 @@
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.StopStart\Gradual.Ordens.Comunicacao\bin\Debug\Gradual.OMS.Ordens.Comunicacao.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.StopStart\Gradual.Ordens.Comunicacao\bin\Debug\Gradual.OMS.Ordens.Comunicacao.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.StopStart\Gradual.Ordens.Comunicacao\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.StopStart\Gradual.Ordens.Comunicacao\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.StopStart\Gradual.Ordens.Comunicacao\bin\Debug\log4net.xml
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.StopStart\Gradual.Ordens.Comunicacao\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.StopStart\Gradual.Ordens.Comunicacao\obj\Debug\Gradual.OMS.Ordens.Comunicacao.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.StopStart\Gradual.Ordens.Comunicacao\obj\Debug\Gradual.OMS.Ordens.Comunicacao.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.StopStart\Gradual.Ordens.Comunicacao\bin\Debug\Gradual.Generico.Dados.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.StopStart\Gradual.Ordens.Comunicacao\bin\Debug\Gradual.Generico.Dados.pdb

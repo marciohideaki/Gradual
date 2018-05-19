@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.cblc.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.cblc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.cblc.com.br/">
+      <s:element name="Novo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CPF" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="DATA_NASCIMENTO" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CODIGO_INVESTIDOR" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="DIGITO_INVESTIDOR" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="EMAIL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IDENTIFICACAO_OPERACAO" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="TAXA_CUSTODIA" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="NOME_INVESTIDOR" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODIGO_DOCUMENTO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPO_DOCUMENTO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ORGAO_EMISSOR_DOCUMENTO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SEXO_INVESTIDOR" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ESTADO_CIVIL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NOME_CONJUGE" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CODIGO_CAPACIDADE" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="NOME_RESPONSAVEL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="QUALIFICACAO_RESPONSAVEL" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="CODIGO_ATIVIDADE" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="CODIGO_NACIONALIDADE" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="RUA_INVESTIDOR" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NUMERO_ENDERECO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="COMPLEMENTO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BAIRRO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CIDADE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UF" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CEP" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="PREFIXO_TELEFONE" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="NUMERO_TELEFONE" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="CODIGO_DEPENDENTE_PESSOA_FISICA" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODIGO_PAIS" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CODIGO_TIPO_INVESTIDOR_ATUAL" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="INDICADOR_PESSOA_VINCULADA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="INDICADOR_EMISSAO_NOTAS_CORRETAGEM" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODIGO_TIPO_PESSOA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="INDICADOR_CONTA_INVESTIMENTO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="INDICADOR_DEVOLUCAO_MARGEM_GARANTIA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SIGLA_ESTADO_EMISSOR" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODIGO_TIPO_DOCUMENTO_COMPROBATORIO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NUMERO_DOCUMENTO_COMPROBATORIO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ORGAO_EMISSOR_COMPROBATORIO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SIGLA_ESTADO_EMISSOR_DOCUMENTO_COMPROBATORIO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="REGISTRO_MOVIMENTO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PESSOA_POLITICAMENTE_EXPOSTA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NovoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NovoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="hdSeguranca" type="tns:hdSeguranca" />
+      <s:complexType name="hdSeguranca">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="strContratoHash" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="strContratoSenha" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="strLoginNome" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="strLoginSenha" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="Antigo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CPF" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="DATA_NASCIMENTO" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CODIGO_INVESTIDOR" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="DIGITO_INVESTIDOR" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="EMAIL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IDENTIFICACAO_OPERACAO" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="TAXA_CUSTODIA" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="NOME_INVESTIDOR" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODIGO_DOCUMENTO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPO_DOCUMENTO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ORGAO_EMISSOR_DOCUMENTO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SEXO_INVESTIDOR" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ESTADO_CIVIL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NOME_CONJUGE" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CODIGO_CAPACIDADE" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="NOME_RESPONSAVEL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="QUALIFICACAO_RESPONSAVEL" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="CODIGO_ATIVIDADE" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="CODIGO_NACIONALIDADE" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="RUA_INVESTIDOR" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NUMERO_ENDERECO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="COMPLEMENTO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BAIRRO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CIDADE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UF" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CEP" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="PREFIXO_TELEFONE" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="NUMERO_TELEFONE" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="PESSOA_POLITICAMENTE_EXPOSTA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AntigoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AntigoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HabilitarInvestidor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CPF" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="DATA_NASCIMENTO" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CODIGO_INVESTIDOR" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="DIGITO_INVESTIDOR" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="EMAIL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IDENTIFICACAO_OPERACAO" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="TAXA_CUSTODIA" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HabilitarInvestidorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HabilitarInvestidorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="NovoSoapIn">
+    <wsdl:part name="parameters" element="tns:Novo" />
+  </wsdl:message>
+  <wsdl:message name="NovoSoapOut">
+    <wsdl:part name="parameters" element="tns:NovoResponse" />
+  </wsdl:message>
+  <wsdl:message name="NovohdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:message name="AntigoSoapIn">
+    <wsdl:part name="parameters" element="tns:Antigo" />
+  </wsdl:message>
+  <wsdl:message name="AntigoSoapOut">
+    <wsdl:part name="parameters" element="tns:AntigoResponse" />
+  </wsdl:message>
+  <wsdl:message name="AntigohdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:message name="HabilitarInvestidorSoapIn">
+    <wsdl:part name="parameters" element="tns:HabilitarInvestidor" />
+  </wsdl:message>
+  <wsdl:message name="HabilitarInvestidorSoapOut">
+    <wsdl:part name="parameters" element="tns:HabilitarInvestidorResponse" />
+  </wsdl:message>
+  <wsdl:message name="HabilitarInvestidorhdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:portType name="InvestidorSoap">
+    <wsdl:operation name="IncluirInvestidor">
+      <wsdl:input name="Novo" message="tns:NovoSoapIn" />
+      <wsdl:output name="Novo" message="tns:NovoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IncluirInvestidor">
+      <wsdl:input name="Antigo" message="tns:AntigoSoapIn" />
+      <wsdl:output name="Antigo" message="tns:AntigoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HabilitarInvestidor">
+      <wsdl:input message="tns:HabilitarInvestidorSoapIn" />
+      <wsdl:output message="tns:HabilitarInvestidorSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="InvestidorSoap" type="tns:InvestidorSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IncluirInvestidor">
+      <soap:operation soapAction="http://www.cblc.com.br/Novo" style="document" />
+      <wsdl:input name="Novo">
+        <soap:body use="literal" />
+        <soap:header message="tns:NovohdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Novo">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IncluirInvestidor">
+      <soap:operation soapAction="http://www.cblc.com.br/Antigo" style="document" />
+      <wsdl:input name="Antigo">
+        <soap:body use="literal" />
+        <soap:header message="tns:AntigohdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Antigo">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HabilitarInvestidor">
+      <soap:operation soapAction="http://www.cblc.com.br/HabilitarInvestidor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:HabilitarInvestidorhdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="InvestidorSoap12" type="tns:InvestidorSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IncluirInvestidor">
+      <soap12:operation soapAction="http://www.cblc.com.br/Novo" style="document" />
+      <wsdl:input name="Novo">
+        <soap12:body use="literal" />
+        <soap12:header message="tns:NovohdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Novo">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IncluirInvestidor">
+      <soap12:operation soapAction="http://www.cblc.com.br/Antigo" style="document" />
+      <wsdl:input name="Antigo">
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AntigohdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Antigo">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HabilitarInvestidor">
+      <soap12:operation soapAction="http://www.cblc.com.br/HabilitarInvestidor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:HabilitarInvestidorhdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Investidor">
+    <wsdl:port name="InvestidorSoap" binding="tns:InvestidorSoap">
+      <soap:address location="http://125.255.60.72/investidor/investidor.asmx" />
+    </wsdl:port>
+    <wsdl:port name="InvestidorSoap12" binding="tns:InvestidorSoap12">
+      <soap12:address location="http://125.255.60.72/investidor/investidor.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

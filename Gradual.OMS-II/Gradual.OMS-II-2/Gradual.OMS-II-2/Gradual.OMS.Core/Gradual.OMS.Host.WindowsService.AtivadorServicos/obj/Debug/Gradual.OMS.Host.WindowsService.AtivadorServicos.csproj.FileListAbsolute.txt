@@ -1,0 +1,11 @@
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Host.WindowsService.AtivadorServicos\bin\Debug\Gradual.OMS.Host.WindowsService.AtivadorServicos.exe.config
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Host.WindowsService.AtivadorServicos\bin\Debug\Gradual.OMS.Host.WindowsService.AtivadorServicos.exe
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Host.WindowsService.AtivadorServicos\bin\Debug\Gradual.OMS.Host.WindowsService.AtivadorServicos.pdb
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Host.WindowsService.AtivadorServicos\bin\Debug\log4net.dll
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Host.WindowsService.AtivadorServicos\bin\Debug\log4net.pdb
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Host.WindowsService.AtivadorServicos\bin\Debug\log4net.xml
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Host.WindowsService.AtivadorServicos\obj\Debug\Gradual.OMS.Host.WindowsService.AtivadorServicos.ProjectInstaller.resources
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Host.WindowsService.AtivadorServicos\obj\Debug\Gradual.OMS.Host.WindowsService.AtivadorServicos.csproj.GenerateResource.Cache
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Host.WindowsService.AtivadorServicos\obj\Debug\Gradual.OMS.Host.WindowsService.AtivadorServicos.exe
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Host.WindowsService.AtivadorServicos\obj\Debug\Gradual.OMS.Host.WindowsService.AtivadorServicos.pdb
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Host.WindowsService.AtivadorServicos\obj\Debug\Gradual.OMS.Host.WindowsService.AtivadorServicos.csprojResolveAssemblyReference.cache

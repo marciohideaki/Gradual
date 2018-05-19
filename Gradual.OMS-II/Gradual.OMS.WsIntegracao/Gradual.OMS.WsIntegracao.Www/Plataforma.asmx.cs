@@ -363,7 +363,7 @@ namespace Gradual.OMS.WsIntegracao
 
                 lResponseAviso = Gradual.Intranet.Servicos.BancoDeDados.Persistencias.ClienteDbLib.ConsultarAvisosHomeBroker(lRequestAviso);
 
-                if (pRequest.BuscarSomenteAvisosAtivos)
+                if (pRequest.BuscarSomenteAvisosAtivos  )
                 {
                     lResponse.Avisos = new List<AvisoHomeBrokerInfo>();
 

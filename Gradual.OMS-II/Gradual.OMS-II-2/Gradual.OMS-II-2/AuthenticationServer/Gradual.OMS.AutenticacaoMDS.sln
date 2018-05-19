@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Comunicacao", "AuthenticationServer\Gradual.OMS.Comunicacao.csproj", "{19839031-9117-4180-8346-8F585DE5DF24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hoster", "Hoster\Hoster.csproj", "{2D94AFB8-F46A-48DB-928B-5EDCD4E5237F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationServerHoster", "AuthenticationServerHoster\AuthenticationServerHoster.csproj", "{19DA6BE4-198C-4002-BE40-FFC80791E843}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.AutenticacaoMDS", "AutenticacaoMDS\Gradual.OMS.AutenticacaoMDS.csproj", "{FFA52FEE-9980-4B45-9B7F-8DB6A6810EC0}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AuthenticationServer\\Gradual.OMS.Comunicacao.csproj
+		SccProjectName1 = AuthenticationServer
+		SccLocalPath1 = AuthenticationServer
+		SccProjectUniqueName2 = Hoster\\Hoster.csproj
+		SccProjectName2 = Hoster
+		SccLocalPath2 = Hoster
+		SccProjectUniqueName3 = AuthenticationServerHoster\\AuthenticationServerHoster.csproj
+		SccProjectName3 = AuthenticationServerHoster
+		SccLocalPath3 = AuthenticationServerHoster
+		SccProjectUniqueName4 = AutenticacaoMDS\\Gradual.OMS.AutenticacaoMDS.csproj
+		SccProjectName4 = AutenticacaoMDS
+		SccLocalPath4 = AutenticacaoMDS
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19839031-9117-4180-8346-8F585DE5DF24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19839031-9117-4180-8346-8F585DE5DF24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19839031-9117-4180-8346-8F585DE5DF24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19839031-9117-4180-8346-8F585DE5DF24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D94AFB8-F46A-48DB-928B-5EDCD4E5237F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D94AFB8-F46A-48DB-928B-5EDCD4E5237F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D94AFB8-F46A-48DB-928B-5EDCD4E5237F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D94AFB8-F46A-48DB-928B-5EDCD4E5237F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19DA6BE4-198C-4002-BE40-FFC80791E843}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19DA6BE4-198C-4002-BE40-FFC80791E843}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19DA6BE4-198C-4002-BE40-FFC80791E843}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19DA6BE4-198C-4002-BE40-FFC80791E843}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFA52FEE-9980-4B45-9B7F-8DB6A6810EC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFA52FEE-9980-4B45-9B7F-8DB6A6810EC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFA52FEE-9980-4B45-9B7F-8DB6A6810EC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFA52FEE-9980-4B45-9B7F-8DB6A6810EC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

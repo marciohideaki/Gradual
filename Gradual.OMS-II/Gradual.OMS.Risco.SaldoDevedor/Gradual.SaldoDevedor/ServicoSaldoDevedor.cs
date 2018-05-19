@@ -965,7 +965,7 @@ namespace Gradual.SaldoDevedor
 
                 using (StreamWriter arqtxt = new StreamWriter(@arq))
                 {
-                    arqtxt.WriteLine("00OUTROS  OUT".PadRight(250, ' '));
+                    arqtxt.WriteLine("00OUTROS  OUT");
 
                     foreach (InformacoesClienteInfo item in lista)
                     {
@@ -975,13 +975,10 @@ namespace Gradual.SaldoDevedor
                             item.CodigoCliente.ToString().PadLeft(7, '0') +
                             codigoArqTesouraria.ToString().PadLeft(4, '0') +
                             (Math.Truncate(item.JurosCalculado)).ToString("0;0").PadLeft(13, '0') +
-                            item.JurosCalculado.ToString("N2", culture).Substring((item.JurosCalculado.ToString("N2", culture)).IndexOf(",") + 1) +
-                            "OUT".PadLeft(192, ' ') + 
-                            "N".PadRight(20, ' '));
-
+                            item.JurosCalculado.ToString("N2", culture).Substring((item.JurosCalculado.ToString("N2", culture)).IndexOf(",") + 1));
                     }
 
-                    arqtxt.WriteLine("99OUTROSOUT".PadRight(250, ' '));
+                    arqtxt.WriteLine("99OUTROSOUT");
                 }
             }
             catch (Exception ex)

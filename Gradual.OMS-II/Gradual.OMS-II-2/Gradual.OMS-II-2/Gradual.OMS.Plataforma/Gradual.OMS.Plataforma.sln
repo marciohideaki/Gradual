@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Plataforma", "Gradual.OMS.Plataforma\Gradual.OMS.Plataforma.csproj", "{C3E1CA0A-F81B-4110-B5AD-6A2D30A192BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Plataforma.Lib", "Gradual.OMS.Plataforma.Lib\Gradual.OMS.Plataforma.Lib.csproj", "{25C6FAD6-1F3C-43D7-9454-74CB1BA0A7D8}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gradual.OMS.Plataforma\\Gradual.OMS.Plataforma.csproj
+		SccProjectName1 = Gradual.OMS.Plataforma
+		SccLocalPath1 = Gradual.OMS.Plataforma
+		SccProjectUniqueName2 = Gradual.OMS.Plataforma.Lib\\Gradual.OMS.Plataforma.Lib.csproj
+		SccProjectName2 = Gradual.OMS.Plataforma.Lib
+		SccLocalPath2 = Gradual.OMS.Plataforma.Lib
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3E1CA0A-F81B-4110-B5AD-6A2D30A192BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3E1CA0A-F81B-4110-B5AD-6A2D30A192BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3E1CA0A-F81B-4110-B5AD-6A2D30A192BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3E1CA0A-F81B-4110-B5AD-6A2D30A192BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25C6FAD6-1F3C-43D7-9454-74CB1BA0A7D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25C6FAD6-1F3C-43D7-9454-74CB1BA0A7D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25C6FAD6-1F3C-43D7-9454-74CB1BA0A7D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25C6FAD6-1F3C-43D7-9454-74CB1BA0A7D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

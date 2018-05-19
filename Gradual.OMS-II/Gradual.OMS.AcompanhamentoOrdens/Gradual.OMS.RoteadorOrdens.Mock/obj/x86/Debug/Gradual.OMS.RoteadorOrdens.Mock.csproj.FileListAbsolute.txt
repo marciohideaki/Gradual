@@ -1,0 +1,13 @@
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AcompanhamentoOrdens\Gradual.OMS.RoteadorOrdens.Mock\bin\x86\Debug\Gradual.OMS.RoteadorOrdens.Mock.exe.config
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AcompanhamentoOrdens\Gradual.OMS.RoteadorOrdens.Mock\bin\x86\Debug\Gradual.OMS.RoteadorOrdens.Mock.exe
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AcompanhamentoOrdens\Gradual.OMS.RoteadorOrdens.Mock\bin\x86\Debug\Gradual.OMS.RoteadorOrdens.Mock.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AcompanhamentoOrdens\Gradual.OMS.RoteadorOrdens.Mock\bin\x86\Debug\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AcompanhamentoOrdens\Gradual.OMS.RoteadorOrdens.Mock\bin\x86\Debug\Gradual.OMS.RoteadorOrdens.Lib.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AcompanhamentoOrdens\Gradual.OMS.RoteadorOrdens.Mock\bin\x86\Debug\log4net.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AcompanhamentoOrdens\Gradual.OMS.RoteadorOrdens.Mock\bin\x86\Debug\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AcompanhamentoOrdens\Gradual.OMS.RoteadorOrdens.Mock\bin\x86\Debug\Gradual.OMS.RoteadorOrdens.Lib.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AcompanhamentoOrdens\Gradual.OMS.RoteadorOrdens.Mock\bin\x86\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AcompanhamentoOrdens\Gradual.OMS.RoteadorOrdens.Mock\bin\x86\Debug\log4net.xml
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AcompanhamentoOrdens\Gradual.OMS.RoteadorOrdens.Mock\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AcompanhamentoOrdens\Gradual.OMS.RoteadorOrdens.Mock\obj\x86\Debug\Gradual.OMS.RoteadorOrdens.Mock.exe
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AcompanhamentoOrdens\Gradual.OMS.RoteadorOrdens.Mock\obj\x86\Debug\Gradual.OMS.RoteadorOrdens.Mock.pdb

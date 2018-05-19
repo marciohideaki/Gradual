@@ -1,0 +1,6 @@
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Risco.Acompanhamento\AppTesteCallBack\bin\Debug\AppTesteCallBack.exe.config
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Risco.Acompanhamento\AppTesteCallBack\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Risco.Acompanhamento\AppTesteCallBack\obj\x86\Debug\AppTesteCallBack.Form1.resources
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Risco.Acompanhamento\AppTesteCallBack\obj\x86\Debug\AppTesteCallBack.Properties.Resources.resources
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Risco.Acompanhamento\AppTesteCallBack\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Risco.Acompanhamento\AppTesteCallBack\obj\x86\Debug\GenerateResource.write.1.tlog

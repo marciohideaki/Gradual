@@ -1,0 +1,11 @@
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Persistencia\bin\Debug\Gradual.OMS.Persistencia.dll
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Persistencia\bin\Debug\Gradual.OMS.Persistencia.pdb
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Persistencia\bin\Debug\Gradual.OMS.Library.dll
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Persistencia\bin\Debug\log4net.dll
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Persistencia\bin\Debug\Gradual.OMS.Library.pdb
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Persistencia\bin\Debug\log4net.pdb
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Persistencia\bin\Debug\log4net.xml
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Persistencia\obj\Debug\Gradual.OMS.Persistencia.csprojResolveAssemblyReference.cache
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Persistencia\obj\Debug\Gradual.OMS.Persistencia.dll
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Persistencia\obj\Debug\Gradual.OMS.Persistencia.pdb
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Persistencia\bin\Debug\Gradual.OMS.Persistencia.dll.config

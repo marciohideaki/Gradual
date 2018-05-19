@@ -26,7 +26,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -37,9 +37,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Gradual.OMS.Risco.SaldoDevedor\Gradual.SaldoDevedor.References\log4net.dll</HintPath>
+    <Reference Include="Gradual.Generico.Dados">
+      <HintPath>..\..\Gradual.OMS.References\Gradual.Generico.Dados.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Library">
+      <HintPath>..\..\Gradual.OMS.References\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Persistencia">
+      <HintPath>..\..\Gradual.OMS.References\Gradual.OMS.Persistencia.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\Gradual.OMS.References\log4net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -75,28 +83,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Gradual.Portal\Gradual.Generico.Dados\Gradual.Generico.Dados.csproj">
-      <Project>{6B3FC247-392B-4DD0-A6BE-9E19E200D522}</Project>
-      <Name>Gradual.Generico.Dados</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Gradual.OMS.Core\Gradual.OMS.Library\Gradual.OMS.Library.csproj">
-      <Project>{A5E45264-237E-471B-9260-88552A1EF7F3}</Project>
-      <Name>Gradual.OMS.Library</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Gradual.OMS.Core\Gradual.OMS.Persistencia\Gradual.OMS.Persistencia.csproj">
-      <Project>{01BFE534-741D-44B0-BDFF-7461D1AC66EC}</Project>
-      <Name>Gradual.OMS.Persistencia</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Gradual.OMS.Risco.Regra.Lib\Gradual.OMS.Risco.Regra.Lib.csproj">
       <Project>{A63D6BCE-E1DF-4454-8AB3-BC2C5EF7047B}</Project>
       <Name>Gradual.OMS.Risco.Regra.Lib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
-  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

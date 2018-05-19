@@ -1,0 +1,13 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Acompanhamento4Stream\Gradual.OMS.ServicoA4S\bin\Debug\Gradual.OMS.ServicoA4S.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Acompanhamento4Stream\Gradual.OMS.ServicoA4S\bin\Debug\Gradual.OMS.ServicoA4S.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Acompanhamento4Stream\Gradual.OMS.ServicoA4S\bin\Debug\Gradual.OMS.ServicoA4S.exe
+Installing service Gradual_ServicoA4S...
+Service Gradual_ServicoA4S has been successfully installed.
+Creating EventLog source Gradual_ServicoA4S in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Acompanhamento4Stream\Gradual.OMS.ServicoA4S\bin\Debug\Gradual.OMS.ServicoA4S.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Acompanhamento4Stream\Gradual.OMS.ServicoA4S\bin\Debug\Gradual.OMS.ServicoA4S.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Acompanhamento4Stream\Gradual.OMS.ServicoA4S\bin\Debug\Gradual.OMS.ServicoA4S.exe

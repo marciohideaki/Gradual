@@ -37,21 +37,21 @@ namespace Gradual.OMS.SpreadMonitor
         /// 
         /// </summary>
         /// <param name="mensagem"></param>
-        public void TrataRequisicao(int acao, string tipo, string instrumento, string sessionID)
+        public void TrataRequisicao(int acao, string tipo, string idlogin, string sessionID)
         {
 
-            logger.Debug("SessionID[" + sessionID + "]: Requisicao acao[" + acao + "] tipo[" + tipo + "] instrumento[" + instrumento + "]");
+            logger.Debug("SessionID[" + sessionID + "]: Requisicao acao[" + acao + "] tipo[" + tipo + "] idlogin[" + idlogin + "]");
 
 
             // Cadastra o statment do Nesper, se ja nao assinou o evento
             if (acao == ConstantesMDS.ACAO_REQUISICAO_ASSINAR)
             {
-                assinarSinal(tipo, instrumento);
+                assinarSinal(tipo, idlogin);
             }
             else
             {
-                if (removerSessionID(tipo, instrumento, sessionID))
-                    cancelarSinal(tipo, instrumento);
+                if (removerSessionID(tipo, idlogin, sessionID))
+                    cancelarSinal(tipo, idlogin);
                 return;
             }
 
@@ -61,8 +61,8 @@ namespace Gradual.OMS.SpreadMonitor
                     {
                         try
                         {
-                            trataAssinatura(tipo, instrumento, sessionID);
-                            cadastrarSessionID(tipo, instrumento, sessionID);
+                            trataAssinatura(tipo, idlogin, sessionID);
+                            cadastrarSessionID(tipo, idlogin, sessionID);
                         }
                         catch (Exception ex)
                         {
@@ -104,49 +104,49 @@ namespace Gradual.OMS.SpreadMonitor
         }
 
         /// <summary>
-        /// Remove o listener do evento associado ao tipo e instrumento
+        /// Remove o listener do evento associado ao tipo e idlogin
         /// </summary>
         /// <param name="tipo"></param>
-        /// <param name="instrumento"></param>
-        protected void cancelarSinal(string tipo, string instrumento)
+        /// <param name="idlogin"></param>
+        protected void cancelarSinal(string tipo, string idlogin)
         {
             //lock (dctEPStatements)
             //{
-            //    logger.Info( "Cancelando Statement para [" + instrumento + "]");
-            //    if (!dctEPStatements.ContainsKey(instrumento))
+            //    logger.Info( "Cancelando Statement para [" + idlogin + "]");
+            //    if (!dctEPStatements.ContainsKey(idlogin))
             //    {
-            //        logger.Error("Tentativa de cancelar assinatura de sinal sem EPL [" + tipo + "][" + instrumento + "]");
+            //        logger.Error("Tentativa de cancelar assinatura de sinal sem EPL [" + tipo + "][" + idlogin + "]");
             //        return;
             //    }
 
-            //    EPStatement epl = dctEPStatements[instrumento];
+            //    EPStatement epl = dctEPStatements[idlogin];
             //    epl.RemoveAllEventHandlers();
-            //    dctEPStatements.Remove(instrumento);
+            //    dctEPStatements.Remove(idlogin);
             //}
         }
 
         /// <summary>
-        /// Cadastra um listener para o tipo de sinal e instrumento
+        /// Cadastra um listener para o tipo de sinal e idlogin
         /// </summary>
         /// <param name="tipo"></param>
-        /// <param name="instrumento"></param>
-        protected void assinarSinal(string tipo, string instrumento)
+        /// <param name="idlogin"></param>
+        protected void assinarSinal(string tipo, string idlogin)
         {
             //lock (dctEPStatements)
             //{
-            //    if (!dctEPStatements.ContainsKey(instrumento))
+            //    if (!dctEPStatements.ContainsKey(idlogin))
             //    {
-            //        EPStatement epl = createStatement(tipo, instrumento);
+            //        EPStatement epl = createStatement(tipo, idlogin);
 
             //        if (epl != null)
             //        {
-            //            dctEPStatements.Add(instrumento, epl);
+            //            dctEPStatements.Add(idlogin, epl);
             //        }
             //    }
             //}
         }
 
-        //protected abstract EPStatement createStatement(string tipo, string instrumento);
+        //protected abstract EPStatement createStatement(string tipo, string idlogin);
 
         protected void listenEvents()
         {
@@ -186,54 +186,54 @@ namespace Gradual.OMS.SpreadMonitor
 
         }
 
-        protected void cadastrarSessionID(string tipo, string instrumento, string sessionID)
+        protected void cadastrarSessionID(string tipo, string idlogin, string sessionID)
         {
             lock (dctSessions)
             {
-                if (!dctSessions.ContainsKey(instrumento))
+                if (!dctSessions.ContainsKey(idlogin))
                 {
-                    dctSessions.Add(instrumento, new List<string>());
+                    dctSessions.Add(idlogin, new List<string>());
                 }
 
-                List<string> sessoes = dctSessions[instrumento];
+                List<string> sessoes = dctSessions[idlogin];
 
                 if (!sessoes.Contains(sessionID))
                     sessoes.Add(sessionID);
 
-                dctSessions[instrumento] = sessoes;
+                dctSessions[idlogin] = sessoes;
             }
         }
 
         /// <summary>
         /// Remover SessionID do controle de assinaturas.
-        /// Se for a ultima sessao daquele tipo+instrumento, retorna true
+        /// Se for a ultima sessao daquele tipo+idlogin, retorna true
         /// </summary>
         /// <param name="tipo"></param>
-        /// <param name="instrumento"></param>
+        /// <param name="idlogin"></param>
         /// <param name="sessionID"></param>
         /// <returns></returns>
-        protected bool removerSessionID(string tipo, string instrumento, string sessionID)
+        protected bool removerSessionID(string tipo, string idlogin, string sessionID)
         {
             lock (dctSessions)
             {
-                if (dctSessions.ContainsKey(instrumento))
+                if (dctSessions.ContainsKey(idlogin))
                 {
-                    List<string> sessoes = dctSessions[instrumento];
+                    List<string> sessoes = dctSessions[idlogin];
 
                     if (sessoes.Contains(sessionID))
                     {
-                        logger.Info("Removendo sessao [" + sessionID + "] da lista de [" + instrumento + "]");
+                        logger.Info("Removendo sessao [" + sessionID + "] da lista de [" + idlogin + "]");
                         sessoes.Remove(sessionID);
                     }
 
                     if (sessoes.Count > 0)
                     {
-                        logger.Info("Ainda restam " + sessoes.Count + " assinaturas de [" + instrumento + "]");
+                        logger.Info("Ainda restam " + sessoes.Count + " assinaturas de [" + idlogin + "]");
                         return false;
                     }
 
-                    logger.Info("Removendo [" + instrumento + "] do dicionario de sessoes");
-                    dctSessions.Remove(instrumento);
+                    logger.Info("Removendo [" + idlogin + "] do dicionario de sessoes");
+                    dctSessions.Remove(idlogin);
                 }
             }
 

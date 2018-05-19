@@ -70,7 +70,7 @@ namespace Gradual.OMS.SpreadMonitor
 
             mensagem.Add(ConstantesMDS.HTTP_ALGORITMOS_VALOR, String.Format("{0:f" + casasDecimais + "}", algo.Value).Replace('.', ','));
 
-            mensagem.Add(ConstantesMDS.HTTP_ALGORITMOS_TIPO_ALGO, algo.TipoAlgorito.ToString());
+            mensagem.Add(ConstantesMDS.HTTP_ALGORITMOS_TIPO_ALGO, algo.TipoAlgoritmo.ToString());
 
             mensagem.Add(ConstantesMDS.HTTP_ALGORITMOS_SENTIDO_ALGO, algo.SentidoAlgoritmo.ToString());
 

@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A5E45264-237E-471B-9260-88552A1EF7F3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.Library</RootNamespace>
+    <AssemblyName>Gradual.OMS.Library</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Gradual.OMS.References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis">
+      <HintPath>..\packages\StackExchange.Redis.1.1.608\lib\net40\StackExchange.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bindings\AclSecuredNamedPipeBinding.cs" />
+    <Compile Include="ColecaoTipoInstancia.cs" />
+    <Compile Include="ConfigurationHandler.cs" />
+    <Compile Include="CronStyleScheduler.cs" />
+    <Compile Include="Dados\ComplementoAutenticacaoInfo.cs" />
+    <Compile Include="Dados\CondicaoInfo.cs" />
+    <Compile Include="Dados\CondicaoTipoEnum.cs" />
+    <Compile Include="Dados\CriticaInfo.cs" />
+    <Compile Include="Dados\CriticaStatusEnum.cs" />
+    <Compile Include="Dados\EchoEventArgs.cs" />
+    <Compile Include="Dados\EntidadeInfo.cs" />
+    <Compile Include="Dados\EntidadeTipoSerializacaoEnum.cs" />
+    <Compile Include="Dados\ListaInfo.cs" />
+    <Compile Include="Dados\ListaItemInfo.cs" />
+    <Compile Include="Dados\SessaoInfo.cs" />
+    <Compile Include="Db\IDbLib.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Db\SqlDbLib.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GerenciadorConfig.cs" />
+    <Compile Include="ICodigoEntidade.cs" />
+    <Compile Include="LocalizadorGrupoTipoInfo.cs" />
+    <Compile Include="LocalizadorTipoInfo.cs" />
+    <Compile Include="LocalizadorTiposConfig.cs" />
+    <Compile Include="LocalizadorTiposHelper.cs" />
+    <Compile Include="MensagemAttribute.cs" />
+    <Compile Include="MensagemRequestAttribute.cs" />
+    <Compile Include="Mensagens\MensagemBase.cs" />
+    <Compile Include="Mensagens\MensagemRequestBase.cs" />
+    <Compile Include="Mensagens\MensagemResponseBase.cs" />
+    <Compile Include="Mensagens\MensagemResponseStatusEnum.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResolutorTipos.cs" />
+    <Compile Include="ResolutorTiposConfig.cs" />
+    <Compile Include="ScheduleConfig.cs" />
+    <Compile Include="Serializador.cs" />
+    <Compile Include="Servicos\AtivadorConfig.cs" />
+    <Compile Include="Servicos\CallbackEvento.cs" />
+    <Compile Include="Servicos\ErrorServiceBehavior.cs" />
+    <Compile Include="Servicos\EventoEventArgs.cs" />
+    <Compile Include="Servicos\EventoInfo.cs" />
+    <Compile Include="Servicos\EventoInfoSerializacaoTipoEnum.cs" />
+    <Compile Include="Servicos\ICallbackEvento.cs" />
+    <Compile Include="Servicos\IServicoComCallback.cs" />
+    <Compile Include="Servicos\IServicoControlavel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Servicos\IServicoID.cs" />
+    <Compile Include="Servicos\IServicoLocalizador.cs" />
+    <Compile Include="Servicos\IServicoStarter.cs" />
+    <Compile Include="Servicos\LocalizadorClienteConfig.cs" />
+    <Compile Include="Servicos\LocalizadorConfig.cs" />
+    <Compile Include="Servicos\ReplicacaoLocalizadorClient.cs" />
+    <Compile Include="Servicos\ReplicacaoLocalizadorConfig.cs" />
+    <Compile Include="Servicos\Servico.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Servicos\ServicoAtivacaoTipo.cs" />
+    <Compile Include="Servicos\Ativador.cs" />
+    <Compile Include="Servicos\LocalizadorCliente.cs" />
+    <Compile Include="Servicos\ServicoEndPointInfo.cs" />
+    <Compile Include="Servicos\ServicoAtributo.cs" />
+    <Compile Include="Servicos\ServicoHost.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Servicos\ServicoHostColecao.cs" />
+    <Compile Include="Servicos\ServicoHostConfig.cs" />
+    <Compile Include="Servicos\ServicoInfo.cs" />
+    <Compile Include="Servicos\ServicoLocalizador.cs" />
+    <Compile Include="Servicos\ServicoStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Servicos\WCFErrorHandler.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="XmlParser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>rem copy "$(TargetPath)" "$(SolutionDir)..\..\..\bin"
+</PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+</Project>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="c:\temp\wsplataforma" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/Gradual.OMS.Seguranca.Lib.pdb" publishTime="06/13/2012 12:10:12" />
+    <file relUrl="bin/Gradual.OMS.Email.Lib.dll" publishTime="08/04/2012 12:29:48" />
+    <file relUrl="bin/log4net.xml" publishTime="02/02/2011 19:15:38" />
+    <file relUrl="Plataforma.asmx" publishTime="02/02/2011 19:15:38" />
+    <file relUrl="bin/Gradual.OMS.Persistencia.dll" publishTime="07/28/2011 10:56:42" />
+    <file relUrl="bin/Gradual.Intranet.Oracle.dll" publishTime="07/28/2011 10:56:42" />
+    <file relUrl="bin/Gradual.Intranet.Servicos.BancoDeDados.dll" publishTime="06/05/2014 11:12:17" />
+    <file relUrl="bin/log4net.dll" publishTime="02/02/2011 19:15:38" />
+    <file relUrl="Cadastro.asmx" publishTime="02/02/2011 19:15:38" />
+    <file relUrl="bin/Gradual.Intranet.Oracle.pdb" publishTime="07/28/2011 10:56:42" />
+    <file relUrl="bin/Gradual.Intranet.Servicos.BancoDeDados.pdb" publishTime="06/05/2014 11:12:17" />
+    <file relUrl="bin/Gradual.OMS.Persistencia.pdb" publishTime="07/28/2011 10:56:42" />
+    <file relUrl="bin/Gradual.Intranet.Servicos.RegrasDeNegocio.dll" publishTime="06/05/2014 11:12:17" />
+    <file relUrl="bin/Gradual.OMS.Seguranca.dll" publishTime="06/13/2012 12:10:12" />
+    <file relUrl="bin/Gradual.Site.DbLib.dll" publishTime="06/08/2013 12:43:11" />
+    <file relUrl="bin/Gradual.Generico.Dados.pdb" publishTime="02/02/2011 19:15:38" />
+    <file relUrl="bin/Newtonsoft.Json.xml" publishTime="06/08/2013 12:43:11" />
+    <file relUrl="bin/Gradual.OMS.Seguranca.Lib.dll" publishTime="06/13/2012 12:10:12" />
+    <file relUrl="bin/Gradual.OMS.Seguranca.pdb" publishTime="06/13/2012 12:10:12" />
+    <file relUrl="bin/Gradual.Generico.Geral.dll" publishTime="02/02/2011 19:15:38" />
+    <file relUrl="bin/Gradual.Site.DbLib.pdb" publishTime="06/08/2013 12:43:11" />
+    <file relUrl="bin/Gradual.Intranet.Contratos.pdb" publishTime="06/05/2014 11:12:17" />
+    <file relUrl="bin/log4net.pdb" publishTime="02/02/2011 19:15:38" />
+    <file relUrl="bin/Gradual.Intranet.Contratos.dll" publishTime="06/05/2014 11:12:17" />
+    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="06/08/2013 12:43:11" />
+    <file relUrl="bin/Gradual.Intranet.Servicos.RegrasDeNegocio.pdb" publishTime="06/05/2014 11:12:17" />
+    <file relUrl="bin/Gradual.OMS.WsIntegracao.pdb" publishTime="03/09/2015 12:55:03" />
+    <file relUrl="bin/Gradual.OMS.Risco.Regra.Lib.pdb" publishTime="06/08/2013 12:43:11" />
+    <file relUrl="bin/Newtonsoft.Json.pdb" publishTime="06/08/2013 12:43:11" />
+    <file relUrl="bin/Gradual.OMS.Library.dll" publishTime="06/13/2012 12:10:12" />
+    <file relUrl="bin/Gradual.OMS.Risco.Regra.Lib.dll" publishTime="06/08/2013 12:43:11" />
+    <file relUrl="Resc/EmailSuitability.html" publishTime="08/04/2012 12:29:48" />
+    <file relUrl="bin/Gradual.Generico.Geral.pdb" publishTime="02/02/2011 19:15:38" />
+    <file relUrl="bin/Gradual.OMS.Library.pdb" publishTime="06/13/2012 12:10:12" />
+    <file relUrl="Autenticacao.asmx" publishTime="02/02/2011 19:15:38" />
+    <file relUrl="bin/Gradual.OMS.Email.Lib.pdb" publishTime="08/04/2012 12:29:48" />
+    <file relUrl="bin/Gradual.Generico.Dados.dll" publishTime="02/02/2011 19:15:38" />
+    <file relUrl="bin/Gradual.OMS.WsIntegracao.dll" publishTime="03/09/2015 12:55:03" />
+    <file relUrl="bin/Gradual.Site.Lib.pdb" publishTime="06/08/2013 12:43:11" />
+    <file relUrl="bin/Gradual.Site.Lib.dll" publishTime="06/08/2013 12:43:11" />
+    <file relUrl="Web.config" publishTime="03/09/2015 12:55:36" />
+  </publishProfile>
+</publishData>

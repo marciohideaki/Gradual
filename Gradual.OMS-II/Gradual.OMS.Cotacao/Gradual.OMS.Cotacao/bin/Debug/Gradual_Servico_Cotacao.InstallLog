@@ -1,0 +1,34 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Cotacao\Gradual.OMS.Cotacao\bin\Debug\Gradual_Servico_Cotacao.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Cotacao\Gradual.OMS.Cotacao\bin\Debug\Gradual_Servico_Cotacao.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Cotacao\Gradual.OMS.Cotacao\bin\Debug\Gradual_Servico_Cotacao.exe
+Installing service Gradual_Cotacao...
+Service Gradual_Cotacao has been successfully installed.
+Creating EventLog source Gradual_Cotacao in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Cotacao\Gradual.OMS.Cotacao\bin\Debug\Gradual_Servico_Cotacao.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Cotacao\Gradual.OMS.Cotacao\bin\Debug\Gradual_Servico_Cotacao.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Cotacao\Gradual.OMS.Cotacao\bin\Debug\Gradual_Servico_Cotacao.exe
+Uninstalling assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Cotacao\Gradual.OMS.Cotacao\bin\Debug\Gradual_Servico_Cotacao.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Cotacao\Gradual.OMS.Cotacao\bin\Debug\Gradual_Servico_Cotacao.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Cotacao\Gradual.OMS.Cotacao\bin\Debug\Gradual_Servico_Cotacao.exe
+Removing EventLog source Gradual_Cotacao.
+Service Gradual_Cotacao is being removed from the system...
+Service Gradual_Cotacao was successfully removed from the system.
+Installing assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Cotacao\Gradual.OMS.Cotacao\bin\Debug\Gradual_Servico_Cotacao.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Cotacao\Gradual.OMS.Cotacao\bin\Debug\Gradual_Servico_Cotacao.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Cotacao\Gradual.OMS.Cotacao\bin\Debug\Gradual_Servico_Cotacao.exe
+Installing service Gradual_Cotacao...
+Service Gradual_Cotacao has been successfully installed.
+Creating EventLog source Gradual_Cotacao in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Cotacao\Gradual.OMS.Cotacao\bin\Debug\Gradual_Servico_Cotacao.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Cotacao\Gradual.OMS.Cotacao\bin\Debug\Gradual_Servico_Cotacao.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Cotacao\Gradual.OMS.Cotacao\bin\Debug\Gradual_Servico_Cotacao.exe

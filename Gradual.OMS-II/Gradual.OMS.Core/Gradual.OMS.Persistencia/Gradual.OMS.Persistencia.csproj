@@ -31,12 +31,16 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Gradual.OMS.Library, Version=1.0.3945.29854, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Gradual.OMS.References\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
     <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Gradual.OMS.References\log4net.dll</HintPath>
@@ -124,17 +128,7 @@
     <Compile Include="ServicoPersistenciaMensagensArquivo.cs" />
     <Compile Include="ServicoPersistenciaMensagensArquivoConfig.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Gradual.OMS.Library\Gradual.OMS.Library.csproj">
-      <Project>{A5E45264-237E-471B-9260-88552A1EF7F3}</Project>
-      <Name>Gradual.OMS.Library</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
-  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

@@ -1,0 +1,16 @@
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\Gradual.OMS.CapturadorCotacaoOracle.dll
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\Gradual.OMS.CapturadorCotacaoOracle.pdb
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\Gradual.OMS.AnaliseGrafica.Lib.dll
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\Gradual.OMS.Library.dll
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\log4net.dll
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\Newtonsoft.Json.dll
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\Gradual.Generico.Dados.dll
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\Gradual.OMS.AnaliseGrafica.Lib.pdb
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\Gradual.OMS.Library.pdb
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\log4net.pdb
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\log4net.xml
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\Newtonsoft.Json.pdb
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\bin\Debug\Gradual.Generico.Dados.pdb
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\obj\Debug\Gradual.OMS.CapturadorCotacaoOracle.csprojResolveAssemblyReference.cache
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\obj\Debug\Gradual.OMS.CapturadorCotacaoOracle.dll
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacaoOracle\obj\Debug\Gradual.OMS.CapturadorCotacaoOracle.pdb

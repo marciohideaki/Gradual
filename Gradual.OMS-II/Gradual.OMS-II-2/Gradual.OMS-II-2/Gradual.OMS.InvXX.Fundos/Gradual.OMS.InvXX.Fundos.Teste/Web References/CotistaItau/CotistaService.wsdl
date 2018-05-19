@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:intf="http://service.passivo.itau.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns1="http://axis.apache.org" xmlns:impl="http://service.passivo.itau.com" targetNamespace="http://service.passivo.itau.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types />
+  <wsdl:message name="bloquearDesbloquearCotistaRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoBancoGestor" type="xsd:string" />
+    <wsdl:part name="codigoBancoCliente" type="xsd:string" />
+    <wsdl:part name="codigoCotista" type="xsd:string" />
+    <wsdl:part name="codigoFundo" type="xsd:string" />
+    <wsdl:part name="subConta" type="xsd:string" />
+    <wsdl:part name="operacao" type="xsd:string" />
+    <wsdl:part name="motivo" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastrarAlterarExcluirEnderecoCotistaRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoBancoGestor" type="xsd:string" />
+    <wsdl:part name="codigoBancoCliente" type="xsd:string" />
+    <wsdl:part name="codigoCotista" type="xsd:string" />
+    <wsdl:part name="tipoEndereco" type="xsd:string" />
+    <wsdl:part name="logradouro" type="xsd:string" />
+    <wsdl:part name="numero" type="xsd:string" />
+    <wsdl:part name="complemento" type="xsd:string" />
+    <wsdl:part name="bairro" type="xsd:string" />
+    <wsdl:part name="cidade" type="xsd:string" />
+    <wsdl:part name="estado" type="xsd:string" />
+    <wsdl:part name="cep" type="xsd:string" />
+    <wsdl:part name="correspondencia" type="xsd:string" />
+    <wsdl:part name="tipoOperacao" type="xsd:string" />
+    <wsdl:part name="codigoPaisResidencia" type="xsd:string" />
+    <wsdl:part name="logradouroResidencial" type="xsd:string" />
+    <wsdl:part name="numeroResidencial" type="xsd:string" />
+    <wsdl:part name="complementoResidencial" type="xsd:string" />
+    <wsdl:part name="bairroResidencial" type="xsd:string" />
+    <wsdl:part name="cidadeResidencial" type="xsd:string" />
+    <wsdl:part name="estadoResidencial" type="xsd:string" />
+    <wsdl:part name="codigoPostalINR" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastrarAlterarExcluirEnderecoCotistaResponse">
+    <wsdl:part name="cadastrarAlterarExcluirEnderecoCotistaReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="aprovarAlteracaoCadastralCotistaRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoBancoGestor" type="xsd:string" />
+    <wsdl:part name="codigoBancoCliente" type="xsd:string" />
+    <wsdl:part name="codigoCotista" type="xsd:string" />
+    <wsdl:part name="flagAprovarRejeitar" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastrarCotistaPJCompletoRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoBancoGestor" type="xsd:string" />
+    <wsdl:part name="codigoBancoCliente" type="xsd:string" />
+    <wsdl:part name="cpfCnpjCotista" type="xsd:string" />
+    <wsdl:part name="nomeCotista" type="xsd:string" />
+    <wsdl:part name="situacaoTributariaCotista" type="xsd:string" />
+    <wsdl:part name="emissaoExtratoMensal" type="xsd:string" />
+    <wsdl:part name="indicadorPessoa" type="xsd:string" />
+    <wsdl:part name="contaOrdem" type="xsd:string" />
+    <wsdl:part name="codigoLocalidade" type="xsd:string" />
+    <wsdl:part name="tipoRemessa" type="xsd:string" />
+    <wsdl:part name="tipoDocumento" type="xsd:string" />
+    <wsdl:part name="numeroDocumento" type="xsd:string" />
+    <wsdl:part name="dataExpedicaoDocumento" type="xsd:string" />
+    <wsdl:part name="orgaoExpeditorDocumento" type="xsd:string" />
+    <wsdl:part name="estadoEmissorDocumento" type="xsd:string" />
+    <wsdl:part name="ramoAtividade" type="xsd:string" />
+    <wsdl:part name="codigoFormaConstituicaoEmp" type="xsd:string" />
+    <wsdl:part name="email" type="xsd:string" />
+    <wsdl:part name="assessor" type="xsd:string" />
+    <wsdl:part name="codigoGestorCliente" type="xsd:string" />
+    <wsdl:part name="emissaoExtratoMovimentacoes" type="xsd:string" />
+    <wsdl:part name="tipoPessoaCotista" type="xsd:string" />
+    <wsdl:part name="valorRendaEmpresa" type="xsd:string" />
+    <wsdl:part name="valorPatrimonio" type="xsd:string" />
+    <wsdl:part name="codigoCetip" type="xsd:string" />
+    <wsdl:part name="codigoDistribuidor" type="xsd:string" />
+    <wsdl:part name="avisoMovimentacoes" type="xsd:string" />
+    <wsdl:part name="renovacaoCadastral" type="xsd:string" />
+    <wsdl:part name="codigoNacionalidade" type="xsd:string" />
+    <wsdl:part name="paisResidencia" type="xsd:string" />
+    <wsdl:part name="resolucao2689" type="xsd:string" />
+    <wsdl:part name="dataConstituicaoEmpresa" type="xsd:string" />
+    <wsdl:part name="numeroDDD1" type="xsd:string" />
+    <wsdl:part name="telefone1" type="xsd:string" />
+    <wsdl:part name="ramal1" type="xsd:string" />
+    <wsdl:part name="numeroDDD2" type="xsd:string" />
+    <wsdl:part name="telefone2" type="xsd:string" />
+    <wsdl:part name="ramal2" type="xsd:string" />
+    <wsdl:part name="numeroDDD3" type="xsd:string" />
+    <wsdl:part name="telefone3" type="xsd:string" />
+    <wsdl:part name="ramal3" type="xsd:string" />
+    <wsdl:part name="numeroIdentificacaoFiscal" type="xsd:string" />
+    <wsdl:part name="dataComunicadoFormalizacaoSaida" type="xsd:string" />
+    <wsdl:part name="dataInicioResidente" type="xsd:string" />
+    <wsdl:part name="dataFimResidente" type="xsd:string" />
+    <wsdl:part name="cotistaVinculado" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="alterarNomeCpfCnpjCotistaRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoBancoGestor" type="xsd:string" />
+    <wsdl:part name="codigoBancoCliente" type="xsd:string" />
+    <wsdl:part name="codigoCotista" type="xsd:string" />
+    <wsdl:part name="nomeCotista" type="xsd:string" />
+    <wsdl:part name="cpfCnpjCotista" type="xsd:string" />
+    <wsdl:part name="indicadorTitularidade" type="xsd:string" />
+    <wsdl:part name="tipoPessoa" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="InternalException1">
+    <wsdl:part name="fault" type="xsd:anyType" />
+  </wsdl:message>
+  <wsdl:message name="cadastrarCotistaPFCompletoResponse">
+    <wsdl:part name="cadastrarCotistaPFCompletoReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="alterarCotistaPJResponse">
+    <wsdl:part name="alterarCotistaPJReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="inserirCotitularRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoBancoGestor" type="xsd:string" />
+    <wsdl:part name="codigoBancoCliente" type="xsd:string" />
+    <wsdl:part name="codigoCotista" type="xsd:string" />
+    <wsdl:part name="nomeCoTitular" type="xsd:string" />
+    <wsdl:part name="cpfCotitular" type="xsd:string" />
+    <wsdl:part name="dataNascimentoCotitular" type="xsd:string" />
+    <wsdl:part name="situacaoLegalCotitular" type="xsd:string" />
+    <wsdl:part name="sexoCotitular" type="xsd:string" />
+    <wsdl:part name="profissaoCotitular" type="xsd:string" />
+    <wsdl:part name="estadoCivilCotitular" type="xsd:string" />
+    <wsdl:part name="tipoDocumentoCotitular" type="xsd:string" />
+    <wsdl:part name="numeroDocumentoCotitular" type="xsd:string" />
+    <wsdl:part name="dataExpedicaoDocumentoCotitular" type="xsd:string" />
+    <wsdl:part name="orgaoExpedidorDocumentoCotitular" type="xsd:string" />
+    <wsdl:part name="estadoExpedidorDocumentoCotitular" type="xsd:string" />
+    <wsdl:part name="rendaCotitular" type="xsd:string" />
+    <wsdl:part name="patrimonioCotitular" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastrarCotistaPFParcialRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoBancoGestor" type="xsd:string" />
+    <wsdl:part name="codigoBancoCliente" type="xsd:string" />
+    <wsdl:part name="cpfCnpjCotista" type="xsd:string" />
+    <wsdl:part name="nomeCotista" type="xsd:string" />
+    <wsdl:part name="dataNascimentoCotista" type="xsd:string" />
+    <wsdl:part name="situacaoTributariaCotista" type="xsd:string" />
+    <wsdl:part name="situacaoLegalCotista" type="xsd:string" />
+    <wsdl:part name="emissaoExtratoMensal" type="xsd:string" />
+    <wsdl:part name="indicadorPessoa" type="xsd:string" />
+    <wsdl:part name="contaOrdem" type="xsd:string" />
+    <wsdl:part name="codigoCidadeNaturalidade" type="xsd:string" />
+    <wsdl:part name="tipoRemessa" type="xsd:string" />
+    <wsdl:part name="cotistaVinculado" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="bloquearDesbloquearCotistaResponse">
+    <wsdl:part name="bloquearDesbloquearCotistaReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="encerrarContaRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoBancoGestor" type="xsd:string" />
+    <wsdl:part name="codigoBancoCliente" type="xsd:string" />
+    <wsdl:part name="codigoCotista" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="alterarCotistaPJRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoBancoGestor" type="xsd:string" />
+    <wsdl:part name="codigoBancoCliente" type="xsd:string" />
+    <wsdl:part name="codigoCotista" type="xsd:string" />
+    <wsdl:part name="tipoDocumentoCotista" type="xsd:string" />
+    <wsdl:part name="numeroDocumentoCotista" type="xsd:string" />
+    <wsdl:part name="dataExpedicaoDocumentoCotista" type="xsd:string" />
+    <wsdl:part name="orgaoExpeditorDocumento" type="xsd:string" />
+    <wsdl:part name="estadoEmissorDocumentoCotista" type="xsd:string" />
+    <wsdl:part name="indicadorImposto" type="xsd:string" />
+    <wsdl:part name="ramoAtividade" type="xsd:string" />
+    <wsdl:part name="codigoFormaConstituicaoEmp" type="xsd:string" />
+    <wsdl:part name="numeroDDD1" type="xsd:string" />
+    <wsdl:part name="telefone1" type="xsd:string" />
+    <wsdl:part name="ramal1" type="xsd:string" />
+    <wsdl:part name="email" type="xsd:string" />
+    <wsdl:part name="assessor" type="xsd:string" />
+    <wsdl:part name="idCotistaGestor" type="xsd:string" />
+    <wsdl:part name="idExtratoMensal" type="xsd:string" />
+    <wsdl:part name="emissaoExtratoMovimentacoes" type="xsd:string" />
+    <wsdl:part name="tipoCotista" type="xsd:string" />
+    <wsdl:part name="valorRendaEmpresa" type="xsd:string" />
+    <wsdl:part name="valorPatrimonio" type="xsd:string" />
+    <wsdl:part name="codigoCetip" type="xsd:string" />
+    <wsdl:part name="codigoDistribuidor" type="xsd:string" />
+    <wsdl:part name="indicadorPEP" type="xsd:string" />
+    <wsdl:part name="avisoMovimentacoes" type="xsd:string" />
+    <wsdl:part name="renovacaoCadastral" type="xsd:string" />
+    <wsdl:part name="codigoNacionalidade" type="xsd:string" />
+    <wsdl:part name="paisResidencia" type="xsd:string" />
+    <wsdl:part name="resolucao2689" type="xsd:string" />
+    <wsdl:part name="contaOrdem" type="xsd:string" />
+    <wsdl:part name="codigoLocalidade" type="xsd:string" />
+    <wsdl:part name="dataConstituicao" type="xsd:string" />
+    <wsdl:part name="numeroDDD2" type="xsd:string" />
+    <wsdl:part name="telefone2" type="xsd:string" />
+    <wsdl:part name="ramal2" type="xsd:string" />
+    <wsdl:part name="numeroDDD3" type="xsd:string" />
+    <wsdl:part name="telefone3" type="xsd:string" />
+    <wsdl:part name="ramal3" type="xsd:string" />
+    <wsdl:part name="numeroIdentificacaoFiscal" type="xsd:string" />
+    <wsdl:part name="dataComunicadoFormalizacaoSaida" type="xsd:string" />
+    <wsdl:part name="dataInicioResidente" type="xsd:string" />
+    <wsdl:part name="dataFimResidente" type="xsd:string" />
+    <wsdl:part name="cotistaVinculado" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastrarCotistaPJParcialResponse">
+    <wsdl:part name="cadastrarCotistaPJParcialReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="encerrarContaResponse">
+    <wsdl:part name="encerrarContaReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastrarCotistaPJCompletoResponse">
+    <wsdl:part name="cadastrarCotistaPJCompletoReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="aprovarAlteracaoCadastralCotistaResponse">
+    <wsdl:part name="aprovarAlteracaoCadastralCotistaReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="InternalException" />
+  <wsdl:message name="alterarCotistaPFResponse">
+    <wsdl:part name="alterarCotistaPFReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastrarCotistaPJParcialRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoBancoGestor" type="xsd:string" />
+    <wsdl:part name="codigoBancoCliente" type="xsd:string" />
+    <wsdl:part name="cpfCnpjCotista" type="xsd:string" />
+    <wsdl:part name="nomeCotista" type="xsd:string" />
+    <wsdl:part name="situacaoTributariaCotista" type="xsd:string" />
+    <wsdl:part name="emissaoExtratoMensal" type="xsd:string" />
+    <wsdl:part name="indicadorPessoa" type="xsd:string" />
+    <wsdl:part name="contaOrdem" type="xsd:string" />
+    <wsdl:part name="codigoLocalidade" type="xsd:string" />
+    <wsdl:part name="tipoRemessa" type="xsd:string" />
+    <wsdl:part name="cotistaVinculado" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="atualizarHoldMailResponse">
+    <wsdl:part name="atualizarHoldMailReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastrarCotistaPFParcialResponse">
+    <wsdl:part name="cadastrarCotistaPFParcialReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="alterarCotistaPFRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoBancoGestor" type="xsd:string" />
+    <wsdl:part name="codigoBancoCliente" type="xsd:string" />
+    <wsdl:part name="dataNascimentoCotista" type="xsd:string" />
+    <wsdl:part name="codigoCotista" type="xsd:string" />
+    <wsdl:part name="tipoDocumentoCotista" type="xsd:string" />
+    <wsdl:part name="numeroDocumentoCotista" type="xsd:string" />
+    <wsdl:part name="dataExpedicaoDocumentoCotista" type="xsd:string" />
+    <wsdl:part name="orgaoExpeditorDocumento" type="xsd:string" />
+    <wsdl:part name="estadoEmissorDocumentoCotista" type="xsd:string" />
+    <wsdl:part name="indicadorImposto" type="xsd:string" />
+    <wsdl:part name="sexo" type="xsd:string" />
+    <wsdl:part name="codigoEstadoCivilCotista" type="xsd:string" />
+    <wsdl:part name="profissao" type="xsd:string" />
+    <wsdl:part name="numeroDDD1" type="xsd:string" />
+    <wsdl:part name="telefone1" type="xsd:string" />
+    <wsdl:part name="ramal1" type="xsd:string" />
+    <wsdl:part name="email" type="xsd:string" />
+    <wsdl:part name="assessor" type="xsd:string" />
+    <wsdl:part name="idCotistaGestor" type="xsd:string" />
+    <wsdl:part name="idExtratoMensal" type="xsd:string" />
+    <wsdl:part name="emissaoExtratoMovimentacoes" type="xsd:string" />
+    <wsdl:part name="tipoCotista" type="xsd:string" />
+    <wsdl:part name="valorRendaFamiliar" type="xsd:string" />
+    <wsdl:part name="valorPatrimonio" type="xsd:string" />
+    <wsdl:part name="codigoDistribuidor" type="xsd:string" />
+    <wsdl:part name="nomePai" type="xsd:string" />
+    <wsdl:part name="nomeMae" type="xsd:string" />
+    <wsdl:part name="indicadorPEP" type="xsd:string" />
+    <wsdl:part name="avisoMovimentacoes" type="xsd:string" />
+    <wsdl:part name="renovacaoCadastral" type="xsd:string" />
+    <wsdl:part name="codigoNacionalidade" type="xsd:string" />
+    <wsdl:part name="paisResidencia" type="xsd:string" />
+    <wsdl:part name="resolucao2689" type="xsd:string" />
+    <wsdl:part name="indicadorContaOrdem" type="xsd:string" />
+    <wsdl:part name="codigoNaturalidade" type="xsd:string" />
+    <wsdl:part name="nomeConjuge" type="xsd:string" />
+    <wsdl:part name="numeroDDD2" type="xsd:string" />
+    <wsdl:part name="telefone2" type="xsd:string" />
+    <wsdl:part name="ramal2" type="xsd:string" />
+    <wsdl:part name="numeroDDD3" type="xsd:string" />
+    <wsdl:part name="telefone3" type="xsd:string" />
+    <wsdl:part name="ramal3" type="xsd:string" />
+    <wsdl:part name="numeroIdentificacaoFiscal" type="xsd:string" />
+    <wsdl:part name="dataComunicadoFormalizacaoSaida" type="xsd:string" />
+    <wsdl:part name="dataInicioResidente" type="xsd:string" />
+    <wsdl:part name="dataFimResidente" type="xsd:string" />
+    <wsdl:part name="cotistaVinculado" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastrarCotistaPFCompletoRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoBancoGestor" type="xsd:string" />
+    <wsdl:part name="codigoBancoCliente" type="xsd:string" />
+    <wsdl:part name="cpfCnpjCotista" type="xsd:string" />
+    <wsdl:part name="nomeCotista" type="xsd:string" />
+    <wsdl:part name="dataNascimentoCotista" type="xsd:string" />
+    <wsdl:part name="situacaoTributariaCotista" type="xsd:string" />
+    <wsdl:part name="situacaoLegalCotista" type="xsd:string" />
+    <wsdl:part name="emissaoExtratoMensal" type="xsd:string" />
+    <wsdl:part name="indicadorPessoa" type="xsd:string" />
+    <wsdl:part name="contaOrdem" type="xsd:string" />
+    <wsdl:part name="codigoCidadeNaturalidade" type="xsd:string" />
+    <wsdl:part name="tipoRemessa" type="xsd:string" />
+    <wsdl:part name="tipoDocumentoCotista" type="xsd:string" />
+    <wsdl:part name="numeroDocumentoCotista" type="xsd:string" />
+    <wsdl:part name="dataExpedicaoDocumentoCotista" type="xsd:string" />
+    <wsdl:part name="orgaoExpeditorDocumento" type="xsd:string" />
+    <wsdl:part name="estadoEmissorDocumentoCotista" type="xsd:string" />
+    <wsdl:part name="sexo" type="xsd:string" />
+    <wsdl:part name="codigoEstadoCivilCotista" type="xsd:string" />
+    <wsdl:part name="profissao" type="xsd:string" />
+    <wsdl:part name="email" type="xsd:string" />
+    <wsdl:part name="assessor" type="xsd:string" />
+    <wsdl:part name="codigoGestorCliente" type="xsd:string" />
+    <wsdl:part name="emissaoExtratoMovimentacoes" type="xsd:string" />
+    <wsdl:part name="tipoPessoaCotista" type="xsd:string" />
+    <wsdl:part name="valorRendaFamiliar" type="xsd:string" />
+    <wsdl:part name="valorPatrimonio" type="xsd:string" />
+    <wsdl:part name="codigoDistribuidor" type="xsd:string" />
+    <wsdl:part name="nomePai" type="xsd:string" />
+    <wsdl:part name="nomeMae" type="xsd:string" />
+    <wsdl:part name="avisoMovimentacoes" type="xsd:string" />
+    <wsdl:part name="renovacaoCadastral" type="xsd:string" />
+    <wsdl:part name="codigoNacionalidade" type="xsd:string" />
+    <wsdl:part name="paisResidencia" type="xsd:string" />
+    <wsdl:part name="resolucao2689" type="xsd:string" />
+    <wsdl:part name="nomeConjuge" type="xsd:string" />
+    <wsdl:part name="numeroDDD1" type="xsd:string" />
+    <wsdl:part name="telefone1" type="xsd:string" />
+    <wsdl:part name="ramal1" type="xsd:string" />
+    <wsdl:part name="numeroDDD2" type="xsd:string" />
+    <wsdl:part name="telefone2" type="xsd:string" />
+    <wsdl:part name="ramal2" type="xsd:string" />
+    <wsdl:part name="numeroDDD3" type="xsd:string" />
+    <wsdl:part name="telefone3" type="xsd:string" />
+    <wsdl:part name="ramal3" type="xsd:string" />
+    <wsdl:part name="numeroIdentificacaoFiscal" type="xsd:string" />
+    <wsdl:part name="dataComunicadoFormalizacaoSaida" type="xsd:string" />
+    <wsdl:part name="dataInicioResidente" type="xsd:string" />
+    <wsdl:part name="dataFimResidente" type="xsd:string" />
+    <wsdl:part name="cotistaVinculado" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="alterarSituacaoLegalCotistaRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoBancoGestor" type="xsd:string" />
+    <wsdl:part name="codigoBancoCliente" type="xsd:string" />
+    <wsdl:part name="codigoCotista" type="xsd:string" />
+    <wsdl:part name="flagTipoSituacaoLegal" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="inserirCotitularResponse">
+    <wsdl:part name="inserirCotitularReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="atualizarHoldMailRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoBancoGestor" type="xsd:string" />
+    <wsdl:part name="codigoBancoCliente" type="xsd:string" />
+    <wsdl:part name="codigoCotista" type="xsd:string" />
+    <wsdl:part name="flagHoldMail" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="alterarSituacaoLegalCotistaResponse">
+    <wsdl:part name="alterarSituacaoLegalCotistaReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="alterarNomeCpfCnpjCotistaResponse">
+    <wsdl:part name="alterarNomeCpfCnpjCotistaReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="CotistaService">
+    <wsdl:operation name="atualizarHoldMail" parameterOrder="ebusiness senha codigoBancoGestor codigoBancoCliente codigoCotista flagHoldMail">
+      <wsdl:input name="atualizarHoldMailRequest" message="impl:atualizarHoldMailRequest" />
+      <wsdl:output name="atualizarHoldMailResponse" message="impl:atualizarHoldMailResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="encerrarConta" parameterOrder="ebusiness senha codigoBancoGestor codigoBancoCliente codigoCotista">
+      <wsdl:input name="encerrarContaRequest" message="impl:encerrarContaRequest" />
+      <wsdl:output name="encerrarContaResponse" message="impl:encerrarContaResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="bloquearDesbloquearCotista" parameterOrder="ebusiness senha codigoBancoGestor codigoBancoCliente codigoCotista codigoFundo subConta operacao motivo">
+      <wsdl:input name="bloquearDesbloquearCotistaRequest" message="impl:bloquearDesbloquearCotistaRequest" />
+      <wsdl:output name="bloquearDesbloquearCotistaResponse" message="impl:bloquearDesbloquearCotistaResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="aprovarAlteracaoCadastralCotista" parameterOrder="ebusiness senha codigoBancoGestor codigoBancoCliente codigoCotista flagAprovarRejeitar">
+      <wsdl:input name="aprovarAlteracaoCadastralCotistaRequest" message="impl:aprovarAlteracaoCadastralCotistaRequest" />
+      <wsdl:output name="aprovarAlteracaoCadastralCotistaResponse" message="impl:aprovarAlteracaoCadastralCotistaResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="alterarSituacaoLegalCotista" parameterOrder="ebusiness senha codigoBancoGestor codigoBancoCliente codigoCotista flagTipoSituacaoLegal">
+      <wsdl:input name="alterarSituacaoLegalCotistaRequest" message="impl:alterarSituacaoLegalCotistaRequest" />
+      <wsdl:output name="alterarSituacaoLegalCotistaResponse" message="impl:alterarSituacaoLegalCotistaResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="cadastrarAlterarExcluirEnderecoCotista" parameterOrder="ebusiness senha codigoBancoGestor codigoBancoCliente codigoCotista tipoEndereco logradouro numero complemento bairro cidade estado cep correspondencia tipoOperacao codigoPaisResidencia logradouroResidencial numeroResidencial complementoResidencial bairroResidencial cidadeResidencial estadoResidencial codigoPostalINR">
+      <wsdl:input name="cadastrarAlterarExcluirEnderecoCotistaRequest" message="impl:cadastrarAlterarExcluirEnderecoCotistaRequest" />
+      <wsdl:output name="cadastrarAlterarExcluirEnderecoCotistaResponse" message="impl:cadastrarAlterarExcluirEnderecoCotistaResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="cadastrarCotistaPFParcial" parameterOrder="ebusiness senha codigoBancoGestor codigoBancoCliente cpfCnpjCotista nomeCotista dataNascimentoCotista situacaoTributariaCotista situacaoLegalCotista emissaoExtratoMensal indicadorPessoa contaOrdem codigoCidadeNaturalidade tipoRemessa cotistaVinculado">
+      <wsdl:input name="cadastrarCotistaPFParcialRequest" message="impl:cadastrarCotistaPFParcialRequest" />
+      <wsdl:output name="cadastrarCotistaPFParcialResponse" message="impl:cadastrarCotistaPFParcialResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="cadastrarCotistaPFCompleto" parameterOrder="ebusiness senha codigoBancoGestor codigoBancoCliente cpfCnpjCotista nomeCotista dataNascimentoCotista situacaoTributariaCotista situacaoLegalCotista emissaoExtratoMensal indicadorPessoa contaOrdem codigoCidadeNaturalidade tipoRemessa tipoDocumentoCotista numeroDocumentoCotista dataExpedicaoDocumentoCotista orgaoExpeditorDocumento estadoEmissorDocumentoCotista sexo codigoEstadoCivilCotista profissao email assessor codigoGestorCliente emissaoExtratoMovimentacoes tipoPessoaCotista valorRendaFamiliar valorPatrimonio codigoDistribuidor nomePai nomeMae avisoMovimentacoes renovacaoCadastral codigoNacionalidade paisResidencia resolucao2689 nomeConjuge numeroDDD1 telefone1 ramal1 numeroDDD2 telefone2 ramal2 numeroDDD3 telefone3 ramal3 numeroIdentificacaoFiscal dataComunicadoFormalizacaoSaida dataInicioResidente dataFimResidente cotistaVinculado">
+      <wsdl:input name="cadastrarCotistaPFCompletoRequest" message="impl:cadastrarCotistaPFCompletoRequest" />
+      <wsdl:output name="cadastrarCotistaPFCompletoResponse" message="impl:cadastrarCotistaPFCompletoResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="cadastrarCotistaPJParcial" parameterOrder="ebusiness senha codigoBancoGestor codigoBancoCliente cpfCnpjCotista nomeCotista situacaoTributariaCotista emissaoExtratoMensal indicadorPessoa contaOrdem codigoLocalidade tipoRemessa cotistaVinculado">
+      <wsdl:input name="cadastrarCotistaPJParcialRequest" message="impl:cadastrarCotistaPJParcialRequest" />
+      <wsdl:output name="cadastrarCotistaPJParcialResponse" message="impl:cadastrarCotistaPJParcialResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="cadastrarCotistaPJCompleto" parameterOrder="ebusiness senha codigoBancoGestor codigoBancoCliente cpfCnpjCotista nomeCotista situacaoTributariaCotista emissaoExtratoMensal indicadorPessoa contaOrdem codigoLocalidade tipoRemessa tipoDocumento numeroDocumento dataExpedicaoDocumento orgaoExpeditorDocumento estadoEmissorDocumento ramoAtividade codigoFormaConstituicaoEmp email assessor codigoGestorCliente emissaoExtratoMovimentacoes tipoPessoaCotista valorRendaEmpresa valorPatrimonio codigoCetip codigoDistribuidor avisoMovimentacoes renovacaoCadastral codigoNacionalidade paisResidencia resolucao2689 dataConstituicaoEmpresa numeroDDD1 telefone1 ramal1 numeroDDD2 telefone2 ramal2 numeroDDD3 telefone3 ramal3 numeroIdentificacaoFiscal dataComunicadoFormalizacaoSaida dataInicioResidente dataFimResidente cotistaVinculado">
+      <wsdl:input name="cadastrarCotistaPJCompletoRequest" message="impl:cadastrarCotistaPJCompletoRequest" />
+      <wsdl:output name="cadastrarCotistaPJCompletoResponse" message="impl:cadastrarCotistaPJCompletoResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="alterarNomeCpfCnpjCotista" parameterOrder="ebusiness senha codigoBancoGestor codigoBancoCliente codigoCotista nomeCotista cpfCnpjCotista indicadorTitularidade tipoPessoa">
+      <wsdl:input name="alterarNomeCpfCnpjCotistaRequest" message="impl:alterarNomeCpfCnpjCotistaRequest" />
+      <wsdl:output name="alterarNomeCpfCnpjCotistaResponse" message="impl:alterarNomeCpfCnpjCotistaResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="alterarCotistaPF" parameterOrder="ebusiness senha codigoBancoGestor codigoBancoCliente dataNascimentoCotista codigoCotista tipoDocumentoCotista numeroDocumentoCotista dataExpedicaoDocumentoCotista orgaoExpeditorDocumento estadoEmissorDocumentoCotista indicadorImposto sexo codigoEstadoCivilCotista profissao numeroDDD1 telefone1 ramal1 email assessor idCotistaGestor idExtratoMensal emissaoExtratoMovimentacoes tipoCotista valorRendaFamiliar valorPatrimonio codigoDistribuidor nomePai nomeMae indicadorPEP avisoMovimentacoes renovacaoCadastral codigoNacionalidade paisResidencia resolucao2689 indicadorContaOrdem codigoNaturalidade nomeConjuge numeroDDD2 telefone2 ramal2 numeroDDD3 telefone3 ramal3 numeroIdentificacaoFiscal dataComunicadoFormalizacaoSaida dataInicioResidente dataFimResidente cotistaVinculado">
+      <wsdl:input name="alterarCotistaPFRequest" message="impl:alterarCotistaPFRequest" />
+      <wsdl:output name="alterarCotistaPFResponse" message="impl:alterarCotistaPFResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="alterarCotistaPJ" parameterOrder="ebusiness senha codigoBancoGestor codigoBancoCliente codigoCotista tipoDocumentoCotista numeroDocumentoCotista dataExpedicaoDocumentoCotista orgaoExpeditorDocumento estadoEmissorDocumentoCotista indicadorImposto ramoAtividade codigoFormaConstituicaoEmp numeroDDD1 telefone1 ramal1 email assessor idCotistaGestor idExtratoMensal emissaoExtratoMovimentacoes tipoCotista valorRendaEmpresa valorPatrimonio codigoCetip codigoDistribuidor indicadorPEP avisoMovimentacoes renovacaoCadastral codigoNacionalidade paisResidencia resolucao2689 contaOrdem codigoLocalidade dataConstituicao numeroDDD2 telefone2 ramal2 numeroDDD3 telefone3 ramal3 numeroIdentificacaoFiscal dataComunicadoFormalizacaoSaida dataInicioResidente dataFimResidente cotistaVinculado">
+      <wsdl:input name="alterarCotistaPJRequest" message="impl:alterarCotistaPJRequest" />
+      <wsdl:output name="alterarCotistaPJResponse" message="impl:alterarCotistaPJResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException" />
+    </wsdl:operation>
+    <wsdl:operation name="inserirCotitular" parameterOrder="ebusiness senha codigoBancoGestor codigoBancoCliente codigoCotista nomeCoTitular cpfCotitular dataNascimentoCotitular situacaoLegalCotitular sexoCotitular profissaoCotitular estadoCivilCotitular tipoDocumentoCotitular numeroDocumentoCotitular dataExpedicaoDocumentoCotitular orgaoExpedidorDocumentoCotitular estadoExpedidorDocumentoCotitular rendaCotitular patrimonioCotitular">
+      <wsdl:input name="inserirCotitularRequest" message="impl:inserirCotitularRequest" />
+      <wsdl:output name="inserirCotitularResponse" message="impl:inserirCotitularResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CotistaServiceSoapBinding" type="impl:CotistaService">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="atualizarHoldMail">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="atualizarHoldMailRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="atualizarHoldMailResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="encerrarConta">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="encerrarContaRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="encerrarContaResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="bloquearDesbloquearCotista">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="bloquearDesbloquearCotistaRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="bloquearDesbloquearCotistaResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="aprovarAlteracaoCadastralCotista">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="aprovarAlteracaoCadastralCotistaRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="aprovarAlteracaoCadastralCotistaResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="alterarSituacaoLegalCotista">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="alterarSituacaoLegalCotistaRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="alterarSituacaoLegalCotistaResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="cadastrarAlterarExcluirEnderecoCotista">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cadastrarAlterarExcluirEnderecoCotistaRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="cadastrarAlterarExcluirEnderecoCotistaResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="cadastrarCotistaPFParcial">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cadastrarCotistaPFParcialRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="cadastrarCotistaPFParcialResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="cadastrarCotistaPFCompleto">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cadastrarCotistaPFCompletoRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="cadastrarCotistaPFCompletoResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="cadastrarCotistaPJParcial">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cadastrarCotistaPJParcialRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="cadastrarCotistaPJParcialResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="cadastrarCotistaPJCompleto">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cadastrarCotistaPJCompletoRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="cadastrarCotistaPJCompletoResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="alterarNomeCpfCnpjCotista">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="alterarNomeCpfCnpjCotistaRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="alterarNomeCpfCnpjCotistaResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="alterarCotistaPF">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="alterarCotistaPFRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="alterarCotistaPFResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="alterarCotistaPJ">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="alterarCotistaPJRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="alterarCotistaPJResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="inserirCotitular">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="inserirCotitularRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="inserirCotitularResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CotistaServiceService">
+    <wsdl:port name="CotistaService" binding="impl:CotistaServiceSoapBinding">
+      <wsdlsoap:address location="http://www.itaucustodia.com.br/PassivoWebServices/services/CotistaService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

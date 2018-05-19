@@ -1,0 +1,17 @@
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.PoupeDirect\Gradual.OMS.PoupeDirect.Test\bin\Debug\Gradual.OMS.PoupeDirect.Test.dll.config
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.PoupeDirect\Gradual.OMS.PoupeDirect.Test\bin\Debug\Gradual.OMS.PoupeDirect.Test.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.PoupeDirect\Gradual.OMS.PoupeDirect.Test\bin\Debug\Gradual.OMS.PoupeDirect.Test.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.PoupeDirect\Gradual.OMS.PoupeDirect.Test\bin\Debug\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.PoupeDirect\Gradual.OMS.PoupeDirect.Test\bin\Debug\Gradual.OMS.PoupeDirect.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.PoupeDirect\Gradual.OMS.PoupeDirect.Test\bin\Debug\Gradual.OMS.PoupeDirect.Lib.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.PoupeDirect\Gradual.OMS.PoupeDirect.Test\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.PoupeDirect\Gradual.OMS.PoupeDirect.Test\bin\Debug\Gradual.Generico.Dados.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.PoupeDirect\Gradual.OMS.PoupeDirect.Test\bin\Debug\Gradual.OMS.PoupeDirect.Lib.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.PoupeDirect\Gradual.OMS.PoupeDirect.Test\bin\Debug\Gradual.OMS.PoupeDirect.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.PoupeDirect\Gradual.OMS.PoupeDirect.Test\bin\Debug\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.PoupeDirect\Gradual.OMS.PoupeDirect.Test\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.PoupeDirect\Gradual.OMS.PoupeDirect.Test\bin\Debug\log4net.xml
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.PoupeDirect\Gradual.OMS.PoupeDirect.Test\bin\Debug\Gradual.Generico.Dados.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.PoupeDirect\Gradual.OMS.PoupeDirect.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.PoupeDirect\Gradual.OMS.PoupeDirect.Test\obj\Debug\Gradual.OMS.PoupeDirect.Test.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.PoupeDirect\Gradual.OMS.PoupeDirect.Test\obj\Debug\Gradual.OMS.PoupeDirect.Test.pdb

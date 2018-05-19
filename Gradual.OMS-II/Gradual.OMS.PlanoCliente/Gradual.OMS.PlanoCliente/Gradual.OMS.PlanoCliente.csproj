@@ -44,9 +44,8 @@
     <Reference Include="Gradual.OMS.Library">
       <HintPath>..\..\Gradual.OMS.References\Gradual.OMS.Library.dll</HintPath>
     </Reference>
-    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Gradual.Site-II\Gradual.Site-II.Referencias\log4net.dll</HintPath>
+    <Reference Include="log4net">
+      <HintPath>..\..\Gradual.OMS.References\log4net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />

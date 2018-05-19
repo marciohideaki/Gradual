@@ -1,0 +1,21 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBovespa-802.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBovespa-802.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBovespa-802.exe
+Installing service Gradual_CANAL_BOVESPA_802...
+Service Gradual_CANAL_BOVESPA_802 has been successfully installed.
+Creating EventLog source Gradual_CANAL_BOVESPA_802 in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBovespa-802.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBovespa-802.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBovespa-802.exe
+Uninstalling assembly 'C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBovespa-802.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBovespa-802.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBovespa-802.exe
+Removing EventLog source Gradual_CANAL_BOVESPA_802.
+Service Gradual_CANAL_BOVESPA_802 is being removed from the system...
+Service Gradual_CANAL_BOVESPA_802 was successfully removed from the system.

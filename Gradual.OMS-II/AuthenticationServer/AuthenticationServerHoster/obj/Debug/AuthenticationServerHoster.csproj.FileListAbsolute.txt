@@ -1,0 +1,14 @@
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AuthenticationServerHoster\bin\Debug\AuthenticationServerHoster.exe.config
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AuthenticationServerHoster\bin\Debug\AuthenticationServerHoster.exe
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AuthenticationServerHoster\bin\Debug\AuthenticationServerHoster.pdb
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AuthenticationServerHoster\bin\Debug\AuthenticationServer.dll
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AuthenticationServerHoster\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AuthenticationServerHoster\bin\Debug\AuthenticationServer.pdb
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AuthenticationServerHoster\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AuthenticationServerHoster\bin\Debug\log4net.xml
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AuthenticationServerHoster\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AuthenticationServerHoster\obj\Debug\AuthenticationServerHoster.ASHoster.resources
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AuthenticationServerHoster\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AuthenticationServerHoster\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AuthenticationServerHoster\obj\Debug\AuthenticationServerHoster.exe
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\AuthenticationServerHoster\obj\Debug\AuthenticationServerHoster.pdb

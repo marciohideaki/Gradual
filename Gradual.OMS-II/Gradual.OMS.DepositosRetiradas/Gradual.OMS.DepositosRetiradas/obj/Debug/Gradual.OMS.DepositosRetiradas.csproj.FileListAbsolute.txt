@@ -1,0 +1,16 @@
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.DepositosRetiradas\Gradual.OMS.DepositosRetiradas\bin\Debug\Gradual.OMS.DepositosRetiradas.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.DepositosRetiradas\Gradual.OMS.DepositosRetiradas\bin\Debug\Gradual.OMS.DepositosRetiradas.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.DepositosRetiradas\Gradual.OMS.DepositosRetiradas\bin\Debug\Gradual.Generico.Dados.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.DepositosRetiradas\Gradual.OMS.DepositosRetiradas\bin\Debug\Gradual.Generico.Geral.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.DepositosRetiradas\Gradual.OMS.DepositosRetiradas\bin\Debug\Gradual.OMS.DepositosRetiradas.Lib.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.DepositosRetiradas\Gradual.OMS.DepositosRetiradas\bin\Debug\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.DepositosRetiradas\Gradual.OMS.DepositosRetiradas\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.DepositosRetiradas\Gradual.OMS.DepositosRetiradas\bin\Debug\Gradual.OMS.DepositosRetiradas.Lib.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.DepositosRetiradas\Gradual.OMS.DepositosRetiradas\bin\Debug\Gradual.Generico.Dados.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.DepositosRetiradas\Gradual.OMS.DepositosRetiradas\bin\Debug\Gradual.Generico.Geral.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.DepositosRetiradas\Gradual.OMS.DepositosRetiradas\bin\Debug\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.DepositosRetiradas\Gradual.OMS.DepositosRetiradas\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.DepositosRetiradas\Gradual.OMS.DepositosRetiradas\bin\Debug\log4net.xml
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.DepositosRetiradas\Gradual.OMS.DepositosRetiradas\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.DepositosRetiradas\Gradual.OMS.DepositosRetiradas\obj\Debug\Gradual.OMS.DepositosRetiradas.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.DepositosRetiradas\Gradual.OMS.DepositosRetiradas\obj\Debug\Gradual.OMS.DepositosRetiradas.pdb

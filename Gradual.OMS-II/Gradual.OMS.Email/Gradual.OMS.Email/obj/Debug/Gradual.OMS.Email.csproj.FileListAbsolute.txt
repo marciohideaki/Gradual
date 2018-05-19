@@ -1,0 +1,12 @@
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Email\Gradual.OMS.Email\bin\Debug\Gradual.OMS.Email.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Email\Gradual.OMS.Email\bin\Debug\Gradual.OMS.Email.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Email\Gradual.OMS.Email\bin\Debug\Gradual.OMS.Email.Lib.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Email\Gradual.OMS.Email\bin\Debug\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Email\Gradual.OMS.Email\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Email\Gradual.OMS.Email\bin\Debug\Gradual.OMS.Email.Lib.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Email\Gradual.OMS.Email\bin\Debug\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Email\Gradual.OMS.Email\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Email\Gradual.OMS.Email\bin\Debug\log4net.xml
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Email\Gradual.OMS.Email\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Email\Gradual.OMS.Email\obj\Debug\Gradual.OMS.Email.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Email\Gradual.OMS.Email\obj\Debug\Gradual.OMS.Email.pdb

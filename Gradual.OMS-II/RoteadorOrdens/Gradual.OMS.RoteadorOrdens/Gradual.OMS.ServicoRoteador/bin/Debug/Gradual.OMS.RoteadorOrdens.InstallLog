@@ -1,0 +1,42 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.RoteadorOrdens.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.RoteadorOrdens.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.RoteadorOrdens.exe
+Installing service RoteadorOrdens...
+Service RoteadorOrdens has been successfully installed.
+Creating EventLog source RoteadorOrdens in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.RoteadorOrdens.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.RoteadorOrdens.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.RoteadorOrdens.exe
+Uninstalling assembly 'C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.RoteadorOrdens.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.RoteadorOrdens.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.RoteadorOrdens.exe
+Removing EventLog source RoteadorOrdens.
+Service RoteadorOrdens is being removed from the system...
+Service RoteadorOrdens was successfully removed from the system.
+Installing assembly 'C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.RoteadorOrdens.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.RoteadorOrdens.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.RoteadorOrdens.exe
+Installing service RoteadorOrdens...
+Service RoteadorOrdens has been successfully installed.
+Creating EventLog source RoteadorOrdens in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.RoteadorOrdens.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.RoteadorOrdens.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.RoteadorOrdens.exe
+Uninstalling assembly 'C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.RoteadorOrdens.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.RoteadorOrdens.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.RoteadorOrdens.exe
+Removing EventLog source RoteadorOrdens.
+Service RoteadorOrdens is being removed from the system...
+Service RoteadorOrdens was successfully removed from the system.

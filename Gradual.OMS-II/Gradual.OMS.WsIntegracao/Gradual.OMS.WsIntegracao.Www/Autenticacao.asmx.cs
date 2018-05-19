@@ -191,6 +191,8 @@ namespace Gradual.OMS.WsIntegracao
         [WebMethod]
         public BuscarPermissoesDoUsuarioResponse BuscarPermissoesDoUsuario(BuscarPermissoesDoUsuarioRequest pRequest)
         {
+            Logger.Debug("BuscarPermissoesDoUsuario: inicio");
+
             BuscarPermissoesDoUsuarioResponse lReturn = new BuscarPermissoesDoUsuarioResponse();
 
             ServicoHostColecao.Default.CarregarConfig("Desenvolvimento");

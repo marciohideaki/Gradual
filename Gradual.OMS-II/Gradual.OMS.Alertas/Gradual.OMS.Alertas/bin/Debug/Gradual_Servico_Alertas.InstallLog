@@ -1,0 +1,13 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Alertas\Gradual.OMS.Alertas\bin\Debug\Gradual_Servico_Alertas.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Alertas\Gradual.OMS.Alertas\bin\Debug\Gradual_Servico_Alertas.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Alertas\Gradual.OMS.Alertas\bin\Debug\Gradual_Servico_Alertas.exe
+Installing service Gradual_Alertas...
+Service Gradual_Alertas has been successfully installed.
+Creating EventLog source Gradual_Alertas in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Alertas\Gradual.OMS.Alertas\bin\Debug\Gradual_Servico_Alertas.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Alertas\Gradual.OMS.Alertas\bin\Debug\Gradual_Servico_Alertas.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Alertas\Gradual.OMS.Alertas\bin\Debug\Gradual_Servico_Alertas.exe

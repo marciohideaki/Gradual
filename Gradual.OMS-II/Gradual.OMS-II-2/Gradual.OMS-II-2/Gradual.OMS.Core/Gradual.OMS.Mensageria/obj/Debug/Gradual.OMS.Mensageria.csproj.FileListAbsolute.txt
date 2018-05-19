@@ -1,0 +1,11 @@
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Mensageria\bin\Debug\Gradual.OMS.Mensageria.dll
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Mensageria\bin\Debug\Gradual.OMS.Mensageria.pdb
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Mensageria\bin\Debug\Gradual.OMS.Library.dll
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Mensageria\bin\Debug\log4net.dll
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Mensageria\bin\Debug\Gradual.OMS.Library.pdb
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Mensageria\bin\Debug\log4net.pdb
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Mensageria\bin\Debug\log4net.xml
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Mensageria\obj\Debug\Gradual.OMS.Mensageria.dll
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Mensageria\obj\Debug\Gradual.OMS.Mensageria.pdb
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Mensageria\bin\Debug\Gradual.OMS.Mensageria.dll.config
+c:\aponso\Desenv\Gradual.OMS-II-2\Gradual.OMS.Core\Gradual.OMS.Mensageria\obj\Debug\Gradual.OMS.Mensageria.csprojResolveAssemblyReference.cache

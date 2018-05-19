@@ -1,0 +1,13 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.Host.CanalBovespa.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.Host.CanalBovespa.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.Host.CanalBovespa.exe
+Installing service CanalBovespa...
+Service CanalBovespa has been successfully installed.
+Creating EventLog source CanalBovespa in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.Host.CanalBovespa.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.Host.CanalBovespa.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.Host.CanalBovespa.exe

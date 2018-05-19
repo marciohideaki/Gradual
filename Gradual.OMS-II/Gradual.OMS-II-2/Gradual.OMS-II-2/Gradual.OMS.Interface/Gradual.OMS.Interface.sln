@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Interface", "Gradual.OMS.Interface\Gradual.OMS.Interface.csproj", "{91337A6A-FD34-43C1-AAF7-E7402B80F7C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Seguranca", "..\Gradual.OMS.Seguranca\Gradual.OMS.Seguranca\Gradual.OMS.Seguranca.csproj", "{FD8E0DF0-FCA3-486A-8457-DA5938083531}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Seguranca.Lib", "..\Gradual.OMS.Seguranca\Gradual.OMS.Seguranca.Lib\Gradual.OMS.Seguranca.Lib.csproj", "{421A9509-5314-420F-80EA-10A7B4D7309B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Interface.Lib", "Gradual.OMS.Interface.Lib\Gradual.OMS.Interface.Lib.csproj", "{0A118929-378C-437C-BCE6-F9ECA2E10A7E}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccProjectUniqueName0 = Gradual.OMS.Interface\\Gradual.OMS.Interface.csproj
+		SccProjectName0 = Gradual.OMS.Interface
+		SccAuxPath0 = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = Gradual.OMS.Interface
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = ..\\Gradual.OMS.Seguranca\\Gradual.OMS.Seguranca\\Gradual.OMS.Seguranca.csproj
+		SccProjectName1 = ../Gradual.OMS.Seguranca/Gradual.OMS.Seguranca
+		SccAuxPath1 = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath1 = ..\\Gradual.OMS.Seguranca\\Gradual.OMS.Seguranca
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = ..\\Gradual.OMS.Seguranca\\Gradual.OMS.Seguranca.Lib\\Gradual.OMS.Seguranca.Lib.csproj
+		SccProjectName2 = ../Gradual.OMS.Seguranca/Gradual.OMS.Seguranca.Lib
+		SccAuxPath2 = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath2 = ..\\Gradual.OMS.Seguranca\\Gradual.OMS.Seguranca.Lib
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName3 = Gradual.OMS.Interface.Lib\\Gradual.OMS.Interface.Lib.csproj
+		SccProjectName3 = Gradual.OMS.Interface.Lib
+		SccAuxPath3 = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath3 = Gradual.OMS.Interface.Lib
+		SccProvider3 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91337A6A-FD34-43C1-AAF7-E7402B80F7C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91337A6A-FD34-43C1-AAF7-E7402B80F7C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91337A6A-FD34-43C1-AAF7-E7402B80F7C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91337A6A-FD34-43C1-AAF7-E7402B80F7C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD8E0DF0-FCA3-486A-8457-DA5938083531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD8E0DF0-FCA3-486A-8457-DA5938083531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD8E0DF0-FCA3-486A-8457-DA5938083531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD8E0DF0-FCA3-486A-8457-DA5938083531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{421A9509-5314-420F-80EA-10A7B4D7309B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{421A9509-5314-420F-80EA-10A7B4D7309B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{421A9509-5314-420F-80EA-10A7B4D7309B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{421A9509-5314-420F-80EA-10A7B4D7309B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A118929-378C-437C-BCE6-F9ECA2E10A7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A118929-378C-437C-BCE6-F9ECA2E10A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A118929-378C-437C-BCE6-F9ECA2E10A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A118929-378C-437C-BCE6-F9ECA2E10A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

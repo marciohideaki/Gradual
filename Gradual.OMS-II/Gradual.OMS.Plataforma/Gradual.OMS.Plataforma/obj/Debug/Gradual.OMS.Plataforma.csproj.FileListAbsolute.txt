@@ -1,0 +1,14 @@
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Plataforma\Gradual.OMS.Plataforma\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Plataforma\Gradual.OMS.Plataforma\bin\Debug\Gradual.OMS.Plataforma.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Plataforma\Gradual.OMS.Plataforma\bin\Debug\Gradual.OMS.Plataforma.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Plataforma\Gradual.OMS.Plataforma\bin\Debug\Gradual.Generico.Dados.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Plataforma\Gradual.OMS.Plataforma\bin\Debug\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Plataforma\Gradual.OMS.Plataforma\bin\Debug\Gradual.OMS.Plataforma.Lib.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Plataforma\Gradual.OMS.Plataforma\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Plataforma\Gradual.OMS.Plataforma\bin\Debug\Gradual.OMS.Plataforma.Lib.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Plataforma\Gradual.OMS.Plataforma\bin\Debug\Gradual.Generico.Dados.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Plataforma\Gradual.OMS.Plataforma\bin\Debug\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Plataforma\Gradual.OMS.Plataforma\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Plataforma\Gradual.OMS.Plataforma\bin\Debug\log4net.xml
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Plataforma\Gradual.OMS.Plataforma\obj\Debug\Gradual.OMS.Plataforma.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Plataforma\Gradual.OMS.Plataforma\obj\Debug\Gradual.OMS.Plataforma.pdb

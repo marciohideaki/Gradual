@@ -1,0 +1,13 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.ControleOrdens\Gradual.OMS.ContaCorrente\bin\Debug\Gradual_Servico_ContaCorrente.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.ControleOrdens\Gradual.OMS.ContaCorrente\bin\Debug\Gradual_Servico_ContaCorrente.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.ControleOrdens\Gradual.OMS.ContaCorrente\bin\Debug\Gradual_Servico_ContaCorrente.exe
+Installing service Gradual_ServicoContaCorrente...
+Service Gradual_ServicoContaCorrente has been successfully installed.
+Creating EventLog source Gradual_ServicoContaCorrente in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.ControleOrdens\Gradual.OMS.ContaCorrente\bin\Debug\Gradual_Servico_ContaCorrente.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.ControleOrdens\Gradual.OMS.ContaCorrente\bin\Debug\Gradual_Servico_ContaCorrente.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.ControleOrdens\Gradual.OMS.ContaCorrente\bin\Debug\Gradual_Servico_ContaCorrente.exe

@@ -1,0 +1,29 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorNegocios\bin\Debug\Gradual.OMS.ServicoCapturadorNegocios.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorNegocios\bin\Debug\Gradual.OMS.ServicoCapturadorNegocios.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorNegocios\bin\Debug\Gradual.OMS.ServicoCapturadorNegocios.exe
+Unable to create an instance of the Gradual.OMS.Host.WindowsService.AtivadorServicos.ProjectInstaller installer type.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+The inner exception System.IO.FileNotFoundException was thrown with the following error message: Could not load file or assembly 'log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821' or one of its dependencies. O sistema não pode encontrar o arquivo especificado..
+Rolling back assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorNegocios\bin\Debug\Gradual.OMS.ServicoCapturadorNegocios.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorNegocios\bin\Debug\Gradual.OMS.ServicoCapturadorNegocios.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorNegocios\bin\Debug\Gradual.OMS.ServicoCapturadorNegocios.exe
+Unable to create an instance of the Gradual.OMS.Host.WindowsService.AtivadorServicos.ProjectInstaller installer type.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+The inner exception System.IO.FileNotFoundException was thrown with the following error message: Could not load file or assembly 'log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821' or one of its dependencies. O sistema não pode encontrar o arquivo especificado..
+Installing assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorNegocios\bin\Debug\Gradual.OMS.ServicoCapturadorNegocios.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorNegocios\bin\Debug\Gradual.OMS.ServicoCapturadorNegocios.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorNegocios\bin\Debug\Gradual.OMS.ServicoCapturadorNegocios.exe
+Installing service Gradual_CapturadorNegocios...
+Service Gradual_CapturadorNegocios has been successfully installed.
+Creating EventLog source Gradual_CapturadorNegocios in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorNegocios\bin\Debug\Gradual.OMS.ServicoCapturadorNegocios.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorNegocios\bin\Debug\Gradual.OMS.ServicoCapturadorNegocios.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorNegocios\bin\Debug\Gradual.OMS.ServicoCapturadorNegocios.exe

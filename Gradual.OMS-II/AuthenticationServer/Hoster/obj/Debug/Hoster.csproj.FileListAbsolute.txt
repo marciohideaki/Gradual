@@ -1,0 +1,11 @@
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\Hoster\bin\Debug\Hoster.exe.config
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\Hoster\bin\Debug\Hoster.exe
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\Hoster\bin\Debug\Hoster.pdb
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\Hoster\bin\Debug\AuthenticationServer.dll
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\Hoster\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\Hoster\bin\Debug\AuthenticationServer.pdb
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\Hoster\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\Hoster\bin\Debug\log4net.xml
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\Hoster\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\Hoster\obj\Debug\Hoster.exe
+C:\aponso\desenv\Gradual.OMS-II\AuthenticationServer\Hoster\obj\Debug\Hoster.pdb

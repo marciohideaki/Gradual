@@ -138,7 +138,7 @@ namespace Gradual.OMS.SpreadMonitor
             try
             {
                 ThreadWorkerBase worker = null;
-                if (algo.TipoAlgorito == AlgoritmoEnum.DIFERENCIAL)
+                if (algo.TipoAlgoritmo == AlgoritmoEnum.DIFERENCIAL)
                 {
                     bool bAdded = false;
                     foreach (ThreadWorkerBase runningworker in poolThreadDiferencial)
@@ -160,7 +160,7 @@ namespace Gradual.OMS.SpreadMonitor
                     }
                 }
 
-                if (algo.TipoAlgorito == AlgoritmoEnum.FINANCEIRO)
+                if (algo.TipoAlgoritmo == AlgoritmoEnum.FINANCEIRO)
                 {
                     bool bAdded = false;
                     foreach (ThreadWorkerBase runningworker in poolThreadFinanceiro)
@@ -181,7 +181,7 @@ namespace Gradual.OMS.SpreadMonitor
                     }
                 }
 
-                if (algo.TipoAlgorito == AlgoritmoEnum.SPREAD)
+                if (algo.TipoAlgoritmo == AlgoritmoEnum.SPREAD)
                 {
                     bool bAdded = false;
                     foreach (ThreadWorkerBase runningworker in poolThreadSpread)

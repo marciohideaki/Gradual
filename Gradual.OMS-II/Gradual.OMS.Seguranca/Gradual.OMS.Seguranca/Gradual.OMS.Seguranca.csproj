@@ -33,7 +33,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -91,7 +91,7 @@
       <Name>Gradual.OMS.Persistencia</Name>
     </ProjectReference>
     <ProjectReference Include="..\Gradual.OMS.Seguranca.Lib\Gradual.OMS.Seguranca.Lib.csproj">
-      <Project>{421A9509-5314-420F-80EA-10A7B4D7309B}</Project>
+      <Project>{421a9509-5314-420f-80ea-10a7b4d7309b}</Project>
       <Name>Gradual.OMS.Seguranca.Lib</Name>
     </ProjectReference>
     <ProjectReference Include="..\Gradual.OMS.SegurancaADM.Lib\Gradual.OMS.SegurancaADM.Lib.csproj">
@@ -100,10 +100,6 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
-  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

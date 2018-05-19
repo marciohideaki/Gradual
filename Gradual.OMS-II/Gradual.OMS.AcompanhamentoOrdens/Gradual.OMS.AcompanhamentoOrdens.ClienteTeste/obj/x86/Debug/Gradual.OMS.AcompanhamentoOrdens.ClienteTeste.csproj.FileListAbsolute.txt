@@ -1,0 +1,6 @@
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AcompanhamentoOrdens\Gradual.OMS.AcompanhamentoOrdens.ClienteTeste\bin\Debug\Gradual.OMS.AcompanhamentoOrdens.ClienteTeste.exe.config
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AcompanhamentoOrdens\Gradual.OMS.AcompanhamentoOrdens.ClienteTeste\bin\Debug\Gradual.OMS.AcompanhamentoOrdens.ClienteTeste.exe
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AcompanhamentoOrdens\Gradual.OMS.AcompanhamentoOrdens.ClienteTeste\bin\Debug\Gradual.OMS.AcompanhamentoOrdens.ClienteTeste.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AcompanhamentoOrdens\Gradual.OMS.AcompanhamentoOrdens.ClienteTeste\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AcompanhamentoOrdens\Gradual.OMS.AcompanhamentoOrdens.ClienteTeste\obj\x86\Debug\Gradual.OMS.AcompanhamentoOrdens.ClienteTeste.exe
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AcompanhamentoOrdens\Gradual.OMS.AcompanhamentoOrdens.ClienteTeste\obj\x86\Debug\Gradual.OMS.AcompanhamentoOrdens.ClienteTeste.pdb

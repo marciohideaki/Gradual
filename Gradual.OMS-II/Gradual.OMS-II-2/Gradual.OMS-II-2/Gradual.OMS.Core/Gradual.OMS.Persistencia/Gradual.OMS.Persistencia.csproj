@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{01BFE534-741D-44B0-BDFF-7461D1AC66EC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.Persistencia</RootNamespace>
+    <AssemblyName>Gradual.OMS.Persistencia</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Gradual.Site-II\Gradual.Site-II.Referencias\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dados\ObjetoSerializado.cs" />
+    <Compile Include="Dados\PersistenciaInfo.cs" />
+    <Compile Include="IPersistencia.cs" />
+    <Compile Include="IPersistenciaArquivoHook.cs" />
+    <Compile Include="IServicoPersistencia.cs" />
+    <Compile Include="IServicoPersistenciaMensagens.cs" />
+    <Compile Include="Mensagens\AtualizarMetadadosRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mensagens\AtualizarMetadadosResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mensagens\ConsultarObjetosRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mensagens\ConsultarObjetosResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mensagens\ListarMensagensRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mensagens\ListarMensagensResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mensagens\ListarTiposRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mensagens\ListarTiposResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mensagens\ReceberMensagemRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mensagens\ReceberMensagemResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mensagens\ReceberObjetoMensagemRequest.cs" />
+    <Compile Include="Mensagens\ReceberObjetoRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mensagens\ReceberObjetoResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mensagens\RemoverObjetoRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mensagens\RemoverObjetoResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mensagens\SalvarMensagemRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mensagens\SalvarMensagemResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mensagens\SalvarObjetoRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mensagens\SalvarObjetoResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PersistenciaArquivo.cs" />
+    <Compile Include="PersistenciaArquivoConfig.cs" />
+    <Compile Include="PersistenciaArquivoEventoEventArgs.cs" />
+    <Compile Include="PersistenciaArquivoHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicoPersistencia.cs" />
+    <Compile Include="ServicoPersistenciaConfig.cs" />
+    <Compile Include="ServicoPersistenciaItemHelper.cs" />
+    <Compile Include="ServicoPersistenciaMensagens.cs" />
+    <Compile Include="ServicoPersistenciaMensagensArquivo.cs" />
+    <Compile Include="ServicoPersistenciaMensagensArquivoConfig.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.OMS.Library\Gradual.OMS.Library.csproj">
+      <Project>{A5E45264-237E-471B-9260-88552A1EF7F3}</Project>
+      <Name>Gradual.OMS.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

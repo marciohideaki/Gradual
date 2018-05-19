@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Cotacao", "Gradual.OMS.Cotacao\Gradual.OMS.Cotacao.csproj", "{02D1E26E-567E-4AD8-97B1-95B34FADB681}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Cotacao.Lib", "Gradual.OMS.Cotacao.Lib\Gradual.OMS.Cotacao.Lib.csproj", "{E73EA4D5-2B36-44D8-B9F2-A90F3385DE8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.CotacaoAdm.Lib", "Gradual.OMS.CotacaoAdm.Lib\Gradual.OMS.CotacaoAdm.Lib.csproj", "{4638D723-45D9-468B-9A43-C5EC118566C7}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gradual.OMS.Cotacao\\Gradual.OMS.Cotacao.csproj
+		SccProjectName1 = Gradual.OMS.Cotacao
+		SccLocalPath1 = Gradual.OMS.Cotacao
+		SccProjectUniqueName2 = Gradual.OMS.Cotacao.Lib\\Gradual.OMS.Cotacao.Lib.csproj
+		SccProjectName2 = Gradual.OMS.Cotacao.Lib
+		SccLocalPath2 = Gradual.OMS.Cotacao.Lib
+		SccProjectUniqueName3 = Gradual.OMS.CotacaoAdm.Lib\\Gradual.OMS.CotacaoAdm.Lib.csproj
+		SccProjectName3 = Gradual.OMS.CotacaoAdm.Lib
+		SccLocalPath3 = Gradual.OMS.CotacaoAdm.Lib
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02D1E26E-567E-4AD8-97B1-95B34FADB681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02D1E26E-567E-4AD8-97B1-95B34FADB681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02D1E26E-567E-4AD8-97B1-95B34FADB681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02D1E26E-567E-4AD8-97B1-95B34FADB681}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E73EA4D5-2B36-44D8-B9F2-A90F3385DE8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E73EA4D5-2B36-44D8-B9F2-A90F3385DE8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E73EA4D5-2B36-44D8-B9F2-A90F3385DE8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E73EA4D5-2B36-44D8-B9F2-A90F3385DE8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4638D723-45D9-468B-9A43-C5EC118566C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4638D723-45D9-468B-9A43-C5EC118566C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4638D723-45D9-468B-9A43-C5EC118566C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4638D723-45D9-468B-9A43-C5EC118566C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

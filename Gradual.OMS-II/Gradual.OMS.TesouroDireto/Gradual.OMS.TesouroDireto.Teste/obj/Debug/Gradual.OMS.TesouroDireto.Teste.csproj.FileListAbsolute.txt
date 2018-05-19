@@ -1,0 +1,15 @@
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.TesouroDireto\Gradual.OMS.TesouroDireto.Teste\bin\Debug\Gradual.OMS.TesouroDireto.Teste.dll.config
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.TesouroDireto\Gradual.OMS.TesouroDireto.Teste\bin\Debug\Gradual.OMS.TesouroDireto.Teste.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.TesouroDireto\Gradual.OMS.TesouroDireto.Teste\bin\Debug\Gradual.OMS.TesouroDireto.Teste.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.TesouroDireto\Gradual.OMS.TesouroDireto.Teste\bin\Debug\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.TesouroDireto\Gradual.OMS.TesouroDireto.Teste\bin\Debug\Gradual.OMS.TesouroDireto.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.TesouroDireto\Gradual.OMS.TesouroDireto.Teste\bin\Debug\Gradual.OMS.TesouroDireto.Lib.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.TesouroDireto\Gradual.OMS.TesouroDireto.Teste\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.TesouroDireto\Gradual.OMS.TesouroDireto.Teste\bin\Debug\Gradual.OMS.TesouroDireto.Lib.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.TesouroDireto\Gradual.OMS.TesouroDireto.Teste\bin\Debug\Gradual.OMS.TesouroDireto.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.TesouroDireto\Gradual.OMS.TesouroDireto.Teste\bin\Debug\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.TesouroDireto\Gradual.OMS.TesouroDireto.Teste\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.TesouroDireto\Gradual.OMS.TesouroDireto.Teste\bin\Debug\log4net.xml
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.TesouroDireto\Gradual.OMS.TesouroDireto.Teste\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.TesouroDireto\Gradual.OMS.TesouroDireto.Teste\obj\Debug\Gradual.OMS.TesouroDireto.Teste.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.TesouroDireto\Gradual.OMS.TesouroDireto.Teste\obj\Debug\Gradual.OMS.TesouroDireto.Teste.pdb

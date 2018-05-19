@@ -1,0 +1,34 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBMF-TRGRA03.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBMF-TRGRA03.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBMF-TRGRA03.exe
+Installing service RoteadorOrdens1...
+Creating EventLog source RoteadorOrdens1 in log Application...
+Rolling back assembly 'C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBMF-TRGRA03.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBMF-TRGRA03.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBMF-TRGRA03.exe
+Restoring event log to previous state for source RoteadorOrdens1.
+Installing assembly 'C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBMF-TRGRA03.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBMF-TRGRA03.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBMF-TRGRA03.exe
+Installing service Gradual_canal_bmf...
+Service Gradual_canal_bmf has been successfully installed.
+Creating EventLog source Gradual_canal_bmf in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBMF-TRGRA03.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBMF-TRGRA03.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBMF-TRGRA03.exe
+Uninstalling assembly 'C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBMF-TRGRA03.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBMF-TRGRA03.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.CanalBMF-TRGRA03.exe
+Removing EventLog source Gradual_canal_bmf.
+Service Gradual_canal_bmf is being removed from the system...
+Service Gradual_canal_bmf was successfully removed from the system.

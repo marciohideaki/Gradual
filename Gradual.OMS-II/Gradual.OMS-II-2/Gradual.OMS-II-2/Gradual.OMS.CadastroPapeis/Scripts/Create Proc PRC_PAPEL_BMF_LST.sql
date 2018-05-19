@@ -1,0 +1,19 @@
+create or replace PROCEDURE PRC_PAPEL_BMF_LST 
+(
+  Retorno OUT GLOBALPKG.Retorno
+)
+AS
+BEGIN
+OPEN Retorno FOR
+  SELECT 
+    CD_COMMOD,
+    CD_MERCAD, 
+    CD_SERIE, 
+    CD_CODNEG, 
+    DT_VENC, 
+    DT_LIQUIDA, 
+    PR_EXERC, 
+    FT_VALOR 
+  FROM 
+    TMFSERIE;
+END PRC_PAPEL_BMF_LST;

@@ -1,0 +1,6 @@
+C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\QuickFixLogRotator\bin\Debug\QuickFixLogRotator.exe
+C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\QuickFixLogRotator\bin\Debug\QuickFixLogRotator.pdb
+C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\QuickFixLogRotator\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\QuickFixLogRotator\obj\x86\Debug\QuickFixLogRotator.exe
+C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\QuickFixLogRotator\obj\x86\Debug\QuickFixLogRotator.pdb
+C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\QuickFixLogRotator\bin\Debug\QuickFixLogRotator.exe.config

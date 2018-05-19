@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="f59700cd-3944-4a61-9942-7b471531139b" name="apiza@GSP-WKS-405 2011-06-16 17:41:44" runUser="GRADUAL\apiza" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="7c129050-0f0e-4241-9457-53c041643024">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="apiza_GSP-WKS-405 2011-06-16 17_41_44">
+      <DeploymentItem filename="C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Risco\Gradual.OMS.CadastroPapeis\bin\Debug\Gradual.OMS.CadastroPapeis.dll" />
+      <DeploymentItem filename="C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Risco\Gradual.OMS.Risco.Persistencia.Lib\bin\Debug\Gradual.OMS.Risco.Persistencia.Lib.dll" />
+      <DeploymentItem filename="C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.References\log4net.dll" />
+      <DeploymentItem filename="C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Risco\Gradual.OMS.ContaCorrente\bin\Debug\Gradual.OMS.ContaCorrente.dll" />
+      <DeploymentItem filename="C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Risco\Gradual.OMS.Custodia\bin\Debug\Gradual.OMS.Custodia.dll" />
+      <DeploymentItem filename="C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Risco\Gradual.OMS.Ordens.Persistencia.Lib\bin\Debug\Gradual.OMS.Ordens.Persistencia.Lib.dll" />
+      <DeploymentItem filename="C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Risco\Gradual.OMS.ContaCorrente.Lib\bin\Debug\Gradual.OMS.ContaCorrente.Lib.dll" />
+      <DeploymentItem filename="C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Risco\Gradual.OMS.Risco\bin\Debug\Gradual.OMS.Risco.dll" />
+      <DeploymentItem filename="C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Risco\Gradual.OMS.Ordens\bin\Debug\Gradual.OMS.Ordens.dll" />
+      <DeploymentItem filename="C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Risco\Gradual.OMS.Ordens.Lib\bin\Debug\Gradual.OMS.Ordens.Lib.dll" />
+      <DeploymentItem filename="C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.References\Gradual.OMS.RoteadorOrdens.Lib.dll" />
+      <DeploymentItem filename="C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Risco\Gradual.OMS.Risco.Lib\bin\Debug\Gradual.OMS.Risco.Lib.dll" />
+      <DeploymentItem filename="C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Risco\Gradual.OMS.CadastroPapeis.Lib\bin\Debug\Gradual.OMS.CadastroPapeis.Lib.dll" />
+      <DeploymentItem filename="C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Risco\Gradual.OMS.Custodia.Lib\bin\Debug\Gradual.OMS.Custodia.Lib.dll" />
+      <DeploymentItem filename="C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.References\Gradual.OMS.Library.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-06-16T17:41:44.4286590-03:00" queuing="2011-06-16T17:41:52.0070750-03:00" start="2011-06-16T17:41:52.4133406-03:00" finish="2011-06-16T17:41:53.3039998-03:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="1" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="GSP-WKS-405" outcome="Error" timestamp="2011-06-16T17:41:53.2727486-03:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\aponso\desenv\gradual.oms-ii\gradual.oms.risco\homebrokertest\bin\debug\homebrokertest.dll" id="c5a13181-0ca9-eefd-6399-91b38aca3706">
+      <Execution id="dddee9fc-ed9b-42dd-a410-b8e0a2e653e4" />
+      <TestMethod codeBase="C:/aponso/desenv/Gradual.OMS-II/Gradual.OMS.Risco/HomeBrokerTest/bin/Debug/HomeBrokerTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="HomeBrokerTest.UnitTest1, HomeBrokerTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="c5a13181-0ca9-eefd-6399-91b38aca3706" executionId="dddee9fc-ed9b-42dd-a410-b8e0a2e653e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="dddee9fc-ed9b-42dd-a410-b8e0a2e653e4" testId="c5a13181-0ca9-eefd-6399-91b38aca3706" testName="TestMethod1" computerName="GSP-WKS-405" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dddee9fc-ed9b-42dd-a410-b8e0a2e653e4">
+    </UnitTestResult>
+  </Results>
+</TestRun>

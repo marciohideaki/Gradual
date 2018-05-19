@@ -1,0 +1,16 @@
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.ServicoAnaliseGrafica\bin\Debug\Gradual.OMS.ServicoAnaliseGrafica.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.ServicoAnaliseGrafica\bin\Debug\Gradual.OMS.ServicoAnaliseGrafica.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.ServicoAnaliseGrafica\obj\Debug\Gradual.OMS.ServicoAnaliseGrafica.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.ServicoAnaliseGrafica\obj\Debug\Gradual.OMS.ServicoAnaliseGrafica.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.ServicoAnaliseGrafica\bin\Debug\Gradual.OMS.AnaliseGrafica.Lib.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.ServicoAnaliseGrafica\bin\Debug\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.ServicoAnaliseGrafica\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.ServicoAnaliseGrafica\bin\Debug\Gradual.OMS.AnaliseGrafica.Lib.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.ServicoAnaliseGrafica\bin\Debug\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.ServicoAnaliseGrafica\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.ServicoAnaliseGrafica\bin\Debug\log4net.xml
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.ServicoAnaliseGrafica\bin\Debug\Newtonsoft.Json.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.ServicoAnaliseGrafica\bin\Debug\Newtonsoft.Json.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.ServicoAnaliseGrafica\bin\Debug\Gradual.Generico.Dados.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.ServicoAnaliseGrafica\bin\Debug\Gradual.Generico.Dados.pdb
+C:\aponso\Desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.ServicoAnaliseGrafica\obj\Debug\Gradual.OMS.ServicoAnaliseGrafica.csprojResolveAssemblyReference.cache

@@ -1,0 +1,8 @@
+﻿Uninstalling assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\bin\Debug\Gradual.OMS.Host.WindowsService.AtivadorServicos.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\bin\Debug\Gradual.OMS.Host.WindowsService.AtivadorServicos.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\bin\Debug\Gradual.OMS.Host.WindowsService.AtivadorServicos.exe
+Removing EventLog source LocalizadorOficial.
+Service LocalizadorOficial is being removed from the system...
+Service LocalizadorOficial was successfully removed from the system.

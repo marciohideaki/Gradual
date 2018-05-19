@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9867A39C-A921-4442-A270-BD12DD188907}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.CotacaoStreamer</RootNamespace>
+    <AssemblyName>Gradual.OMS.CotacaoStreamer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.OMS.CotacaoAdm.Lib">
+      <HintPath>..\..\Gradual.OMS.References\Gradual.OMS.CotacaoAdm.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Library">
+      <HintPath>..\..\Gradual.OMS.References\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\Gradual.OMS.References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Gradual.OMS.References\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConstantesMDS.cs" />
+    <Compile Include="Dados\AcompanhamentoLeilaoInfo.cs" />
+    <Compile Include="Dados\ComparadorDecrescenteCorretoras.cs" />
+    <Compile Include="Dados\CorretoraInfo.cs" />
+    <Compile Include="Dados\InstrumentosPorCorretoraInfo.cs" />
+    <Compile Include="Dados\ResumoCorretorasInfo.cs" />
+    <Compile Include="Dados\CorretorasInfo.cs" />
+    <Compile Include="Dados\DadosRequisicaoInfo.cs" />
+    <Compile Include="Dados\LeilaoInfo.cs" />
+    <Compile Include="MemoriaAcompanhamentoLeilao.cs" />
+    <Compile Include="Dados\CabecalhoInfo.cs" />
+    <Compile Include="Dados\ComparadorDecrescente.cs" />
+    <Compile Include="Dados\DestaqueInfo.cs" />
+    <Compile Include="Dados\InstrumentoInfo.cs" />
+    <Compile Include="Dados\JsonDateTimeConverter.cs" />
+    <Compile Include="DCotacoes.cs" />
+    <Compile Include="MDSPackageSocket.cs" />
+    <Compile Include="MemoriaNegociosDestaque.cs" />
+    <Compile Include="Dados\NegocioInfo.cs" />
+    <Compile Include="Dados\NegociosDestaqueInfo.cs" />
+    <Compile Include="Dados\RankingInfo.cs" />
+    <Compile Include="MemoriaResumoCorretoras.cs" />
+    <Compile Include="QueueManager.cs" />
+    <Compile Include="ServicoCotacao.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SocketPackage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.OMS.CotacaoStreamer.lib\Gradual.OMS.CotacaoStreamer.Lib.csproj">
+      <Project>{0AAF5240-50EE-426F-8444-EFBCC09DAE69}</Project>
+      <Name>Gradual.OMS.CotacaoStreamer.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

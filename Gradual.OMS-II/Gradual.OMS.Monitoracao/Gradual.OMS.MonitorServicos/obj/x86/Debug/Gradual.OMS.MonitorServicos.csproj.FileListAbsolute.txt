@@ -1,0 +1,13 @@
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoracao\Gradual.OMS.MonitorServicos\bin\Debug\Gradual.OMS.MonitorServicos.exe.config
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoracao\Gradual.OMS.MonitorServicos\bin\Debug\Gradual.OMS.MonitorServicos.exe
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoracao\Gradual.OMS.MonitorServicos\bin\Debug\Gradual.OMS.MonitorServicos.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoracao\Gradual.OMS.MonitorServicos\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoracao\Gradual.OMS.MonitorServicos\obj\x86\Debug\Gradual.OMS.MonitorServicos.Form1.resources
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoracao\Gradual.OMS.MonitorServicos\obj\x86\Debug\Gradual.OMS.MonitorServicos.Properties.Resources.resources
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoracao\Gradual.OMS.MonitorServicos\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoracao\Gradual.OMS.MonitorServicos\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoracao\Gradual.OMS.MonitorServicos\obj\x86\Debug\Gradual.OMS.MonitorServicos.exe
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoracao\Gradual.OMS.MonitorServicos\obj\x86\Debug\Gradual.OMS.MonitorServicos.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoracao\Gradual.OMS.MonitorServicos\obj\x86\Debug\Gradual.OMS.MonitorServicos.frmMonitorServicos.resources
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoracao\Gradual.OMS.MonitorServicos\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Monitoracao\Gradual.OMS.MonitorServicos\obj\x86\Debug\GenerateResource.write.1.tlog

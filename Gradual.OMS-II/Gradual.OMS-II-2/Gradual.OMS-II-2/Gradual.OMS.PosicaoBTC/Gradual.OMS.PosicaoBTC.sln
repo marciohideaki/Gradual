@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.PosicaoBTC.Lib", "Gradual.OMS.PosicaoBTC.Lib\Gradual.OMS.PosicaoBTC.Lib.csproj", "{F8EF0565-6AB9-4E90-BF25-C8C1200F6957}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.PosicaoBTC", "Gradual.OMS.PosicaoBTC\Gradual.OMS.PosicaoBTC.csproj", "{608AAF5B-73B9-488C-9920-C04666824104}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gradual.OMS.PosicaoBTC.Lib\\Gradual.OMS.PosicaoBTC.Lib.csproj
+		SccProjectName1 = Gradual.OMS.PosicaoBTC.Lib
+		SccLocalPath1 = Gradual.OMS.PosicaoBTC.Lib
+		SccProjectUniqueName2 = Gradual.OMS.PosicaoBTC\\Gradual.OMS.PosicaoBTC.csproj
+		SccProjectName2 = Gradual.OMS.PosicaoBTC
+		SccLocalPath2 = Gradual.OMS.PosicaoBTC
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8EF0565-6AB9-4E90-BF25-C8C1200F6957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8EF0565-6AB9-4E90-BF25-C8C1200F6957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8EF0565-6AB9-4E90-BF25-C8C1200F6957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8EF0565-6AB9-4E90-BF25-C8C1200F6957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{608AAF5B-73B9-488C-9920-C04666824104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{608AAF5B-73B9-488C-9920-C04666824104}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{608AAF5B-73B9-488C-9920-C04666824104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{608AAF5B-73B9-488C-9920-C04666824104}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

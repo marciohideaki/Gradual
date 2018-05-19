@@ -1,0 +1,14 @@
+C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Release\Gradual.OMS.ServicoRoteador.dll
+C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Release\Gradual.OMS.ServicoRoteador.pdb
+C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Release\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Release\Gradual.OMS.RoteadorOrdens.Lib.dll
+C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Release\log4net.dll
+C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Release\quickfix_net.dll
+C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Release\quickfix_net_messages.dll
+C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Release\Gradual.OMS.RoteadorOrdens.Lib.pdb
+C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Release\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Release\log4net.pdb
+C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Release\log4net.xml
+C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\obj\Release\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\obj\Release\Gradual.OMS.ServicoRoteador.dll
+C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\obj\Release\Gradual.OMS.ServicoRoteador.pdb

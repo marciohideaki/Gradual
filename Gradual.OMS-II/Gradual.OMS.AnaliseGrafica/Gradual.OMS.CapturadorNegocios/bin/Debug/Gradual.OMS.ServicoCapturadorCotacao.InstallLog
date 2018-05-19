@@ -1,0 +1,21 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorNegocios\bin\Debug\Gradual.OMS.ServicoCapturadorCotacao.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorNegocios\bin\Debug\Gradual.OMS.ServicoCapturadorCotacao.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorNegocios\bin\Debug\Gradual.OMS.ServicoCapturadorCotacao.exe
+Installing service Gradual_CapturadorCotacao...
+Service Gradual_CapturadorCotacao has been successfully installed.
+Creating EventLog source Gradual_CapturadorCotacao in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorNegocios\bin\Debug\Gradual.OMS.ServicoCapturadorCotacao.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorNegocios\bin\Debug\Gradual.OMS.ServicoCapturadorCotacao.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorNegocios\bin\Debug\Gradual.OMS.ServicoCapturadorCotacao.exe
+Uninstalling assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorNegocios\bin\Debug\Gradual.OMS.ServicoCapturadorCotacao.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorNegocios\bin\Debug\Gradual.OMS.ServicoCapturadorCotacao.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorNegocios\bin\Debug\Gradual.OMS.ServicoCapturadorCotacao.exe
+Removing EventLog source Gradual_CapturadorCotacao.
+Service Gradual_CapturadorCotacao is being removed from the system...
+Service Gradual_CapturadorCotacao was successfully removed from the system.

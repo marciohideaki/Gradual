@@ -1,0 +1,16 @@
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CadastroCliente\Gradual.OMS.CadastroCliente\bin\Debug\Gradual.OMS.CadastroCliente.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CadastroCliente\Gradual.OMS.CadastroCliente\bin\Debug\Gradual.OMS.CadastroCliente.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CadastroCliente\Gradual.OMS.CadastroCliente\bin\Debug\Gradual.Generico.Dados.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CadastroCliente\Gradual.OMS.CadastroCliente\bin\Debug\Gradual.OMS.CadastroCliente.Lib.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CadastroCliente\Gradual.OMS.CadastroCliente\bin\Debug\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CadastroCliente\Gradual.OMS.CadastroCliente\bin\Debug\Gradual.OMS.Persistencia.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CadastroCliente\Gradual.OMS.CadastroCliente\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CadastroCliente\Gradual.OMS.CadastroCliente\bin\Debug\Gradual.OMS.CadastroCliente.Lib.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CadastroCliente\Gradual.OMS.CadastroCliente\bin\Debug\Gradual.Generico.Dados.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CadastroCliente\Gradual.OMS.CadastroCliente\bin\Debug\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CadastroCliente\Gradual.OMS.CadastroCliente\bin\Debug\Gradual.OMS.Persistencia.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CadastroCliente\Gradual.OMS.CadastroCliente\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CadastroCliente\Gradual.OMS.CadastroCliente\bin\Debug\log4net.xml
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CadastroCliente\Gradual.OMS.CadastroCliente\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CadastroCliente\Gradual.OMS.CadastroCliente\obj\Debug\Gradual.OMS.CadastroCliente.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.CadastroCliente\Gradual.OMS.CadastroCliente\obj\Debug\Gradual.OMS.CadastroCliente.pdb

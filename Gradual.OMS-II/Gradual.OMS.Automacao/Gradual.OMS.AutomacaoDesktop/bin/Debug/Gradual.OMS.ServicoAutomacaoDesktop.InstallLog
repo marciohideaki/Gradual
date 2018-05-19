@@ -1,0 +1,13 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Automacao\Gradual.OMS.AutomacaoDesktop\bin\Debug\Gradual.OMS.ServicoAutomacaoDesktop.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Automacao\Gradual.OMS.AutomacaoDesktop\bin\Debug\Gradual.OMS.ServicoAutomacaoDesktop.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Automacao\Gradual.OMS.AutomacaoDesktop\bin\Debug\Gradual.OMS.ServicoAutomacaoDesktop.exe
+Installing service Gradual_AutomacaoDesktop...
+Service Gradual_AutomacaoDesktop has been successfully installed.
+Creating EventLog source Gradual_AutomacaoDesktop in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Automacao\Gradual.OMS.AutomacaoDesktop\bin\Debug\Gradual.OMS.ServicoAutomacaoDesktop.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Automacao\Gradual.OMS.AutomacaoDesktop\bin\Debug\Gradual.OMS.ServicoAutomacaoDesktop.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Automacao\Gradual.OMS.AutomacaoDesktop\bin\Debug\Gradual.OMS.ServicoAutomacaoDesktop.exe

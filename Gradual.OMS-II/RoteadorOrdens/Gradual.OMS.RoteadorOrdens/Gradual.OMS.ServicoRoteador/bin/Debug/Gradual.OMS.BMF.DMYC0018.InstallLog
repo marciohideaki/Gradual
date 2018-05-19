@@ -1,0 +1,13 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.BMF.DMYC0018.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.BMF.DMYC0018.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.BMF.DMYC0018.exe
+Installing service dropcopy_bmf_dmyc0018...
+Service dropcopy_bmf_dmyc0018 has been successfully installed.
+Creating EventLog source dropcopy_bmf_dmyc0018 in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.BMF.DMYC0018.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.BMF.DMYC0018.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.ServicoRoteador\bin\Debug\Gradual.OMS.BMF.DMYC0018.exe

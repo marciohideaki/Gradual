@@ -1,0 +1,16 @@
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacao\bin\Debug\Gradual.OMS.CapturadorCotacao.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacao\bin\Debug\Gradual.OMS.CapturadorCotacao.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacao\bin\Debug\Gradual.OMS.AnaliseGrafica.Lib.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacao\bin\Debug\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacao\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacao\bin\Debug\Newtonsoft.Json.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacao\bin\Debug\Gradual.Generico.Dados.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacao\bin\Debug\Gradual.OMS.AnaliseGrafica.Lib.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacao\bin\Debug\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacao\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacao\bin\Debug\log4net.xml
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacao\bin\Debug\Newtonsoft.Json.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacao\bin\Debug\Gradual.Generico.Dados.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacao\obj\Debug\Gradual.OMS.CapturadorCotacao.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacao\obj\Debug\Gradual.OMS.CapturadorCotacao.pdb
+C:\aponso\Desenv\Gradual.OMS-II\Gradual.OMS.AnaliseGrafica\Gradual.OMS.CapturadorCotacao\obj\Debug\Gradual.OMS.CapturadorCotacao.csprojResolveAssemblyReference.cache

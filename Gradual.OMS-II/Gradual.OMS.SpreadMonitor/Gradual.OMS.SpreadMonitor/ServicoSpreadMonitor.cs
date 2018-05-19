@@ -85,6 +85,31 @@ namespace Gradual.OMS.SpreadMonitor
         {
             MonitorarCotacoesResponse response = new MonitorarCotacoesResponse();
 
+            try
+            {
+                PersistenciaDB db = new PersistenciaDB();
+
+                AlgoStruct algo = new AlgoStruct();
+                if (!String.IsNullOrEmpty(request.IDAlgoritmo))
+                    algo.IDRegistro = request.IDAlgoritmo;
+
+                algo.IDLogin = request.IDLogin;
+                algo.Instrumento1 = request.Instrumento1;
+                algo.Instrumento2 = request.Instrumento2;
+                algo.Qtde1 = request.Qtde1;
+                algo.Qtde2 = request.Qtde2;
+                algo.SentidoAlgoritmo = request.SentidoAlgoritmo;
+                algo.TipoAlgoritmo = request.TipoAlgoritmo;
+
+                response.IDRegistro = db.SalvarAlgoritmo(algo);
+
+                ThreadPoolManager.Instance.AddAlgoritmo(algo);
+            }
+            catch (Exception ex)
+            {
+                logger.Error("MonitorarCotacoes(): " + ex.Message);
+            }
+
             return response;
         }
 

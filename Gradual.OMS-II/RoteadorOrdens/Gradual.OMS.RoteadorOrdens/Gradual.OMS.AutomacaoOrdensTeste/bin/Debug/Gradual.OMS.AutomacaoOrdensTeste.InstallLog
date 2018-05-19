@@ -1,0 +1,13 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.AutomacaoOrdensTeste\bin\Debug\Gradual.OMS.AutomacaoOrdensTeste.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.AutomacaoOrdensTeste\bin\Debug\Gradual.OMS.AutomacaoOrdensTeste.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.AutomacaoOrdensTeste\bin\Debug\Gradual.OMS.AutomacaoOrdensTeste.exe
+Installing service Gradual_Robo_Ordem_Teste...
+Service Gradual_Robo_Ordem_Teste has been successfully installed.
+Creating EventLog source Gradual_Robo_Ordem_Teste in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.AutomacaoOrdensTeste\bin\Debug\Gradual.OMS.AutomacaoOrdensTeste.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.AutomacaoOrdensTeste\bin\Debug\Gradual.OMS.AutomacaoOrdensTeste.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\RoteadorOrdens\Gradual.OMS.RoteadorOrdens\Gradual.OMS.AutomacaoOrdensTeste\bin\Debug\Gradual.OMS.AutomacaoOrdensTeste.exe

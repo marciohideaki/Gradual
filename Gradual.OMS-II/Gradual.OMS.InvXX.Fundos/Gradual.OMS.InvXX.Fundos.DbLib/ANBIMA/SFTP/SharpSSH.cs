@@ -9,6 +9,7 @@ using Tamir.SharpSsh.jsch;
 using System.Collections;
 using Gradual.OMS.InvXX.Fundos.DbLib.ANBIMA;
 using System.Configuration;
+using System.Threading;
 namespace Gradual.OMS.InvXX.Fundos.DbLib
 {
     public class SharpSSH
@@ -42,6 +43,7 @@ namespace Gradual.OMS.InvXX.Fundos.DbLib
             ListaDir.Add("FundosMovCota", "/sianbima/anmovcot/");
             ListaDir.Add("FundosDia", "/sianbima/anvldia/");
             ListaDir.Add("FundosMes", "/sianbima/anvlmes/");
+            ListaDir.Add("FundosCad", "/sianbima/cbfundo/");
             //ListaDir.Add("IndicMes", "/sianbima/")
             //ListaArquivos.Add("Instituicoes","");
             //ListaArquivos.Add("FundosTipo","");
@@ -91,6 +93,8 @@ namespace Gradual.OMS.InvXX.Fundos.DbLib
                 gLogger.InfoFormat("SharpSSH > Abrindo conexão com ANBIMA******************************");
                 gLogger.InfoFormat("*******************************************************************");
 
+                DateTime lDtUil = new ImportacaoDbLib().SelecionaUltimoPregao();
+
                 //SshTransferProtocolBase sshCp;
 
                 SshConnectionInfo lInfo = new SshConnectionInfo();
@@ -106,9 +110,24 @@ namespace Gradual.OMS.InvXX.Fundos.DbLib
 
                 sshCp.Connect();
 
-                while (!sshCp.Connected)
+                int lTentativaConexao = 0;
+
+                while (!sshCp.Connected && lTentativaConexao!= 10)
                 {
-                    gLogger.InfoFormat("SharpSSH > Aguardando conexão SFTP com ANBIMA******************************");
+                    gLogger.InfoFormat("SharpSSH > Aguardando conexão SFTP com ANBIMA  ******************************");
+
+                    sshCp.Connect();
+                    
+                    if (lTentativaConexao == 10)
+                    {
+                        gLogger.InfoFormat("Já tentou conectar 10 vez, saindo do loop de tentativa de conexão");
+                        
+                        return false;
+                    }
+
+                    Thread.Sleep(2000);
+
+                    lTentativaConexao++;
                 }
 
                 sshCp.OnTransferStart    += new FileTransferEvent(sshCp_OnTransferStart);
@@ -116,8 +135,6 @@ namespace Gradual.OMS.InvXX.Fundos.DbLib
                 sshCp.OnTransferEnd      += new FileTransferEvent(sshCp_OnTransferEnd);
 
                 string lpath = ConfigurationManager.AppSettings["ArquivosAnbima"];
-                
-                DateTime lDtUil = new ImportacaoDbLib().SelecionaUltimoPregao();
 
                 foreach (KeyValuePair<string, string> lDir in ListaDir)
                 {
@@ -144,7 +161,8 @@ namespace Gradual.OMS.InvXX.Fundos.DbLib
 
                             DateTime lDtArquivo = new DateTime(lAno,lMes,lDia) ;
 
-                            if (lDtArquivo == lDtUil || lDir.Key == "IndicMes")
+                            if (lDtArquivo         == lDtUil     || 
+                                lDir.Key.ToLower() == "indicmes" )
                             {
                                 sshCp.Get(string.Concat(lDir.Value, lNome), lpath);
                             }

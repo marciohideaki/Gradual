@@ -1,0 +1,14 @@
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Alertas\Gradual.OMS.AlertasCliente\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Alertas\Gradual.OMS.AlertasCliente\bin\Debug\Gradual.OMS.AlertasCliente.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Alertas\Gradual.OMS.AlertasCliente\bin\Debug\Gradual.OMS.AlertasCliente.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Alertas\Gradual.OMS.AlertasCliente\bin\Debug\Gradual.OMS.Alertas.Lib.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Alertas\Gradual.OMS.AlertasCliente\bin\Debug\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Alertas\Gradual.OMS.AlertasCliente\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Alertas\Gradual.OMS.AlertasCliente\bin\Debug\Gradual.OMS.Alertas.Lib.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Alertas\Gradual.OMS.AlertasCliente\bin\Debug\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Alertas\Gradual.OMS.AlertasCliente\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Alertas\Gradual.OMS.AlertasCliente\bin\Debug\log4net.xml
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Alertas\Gradual.OMS.AlertasCliente\obj\Debug\Gradual.OMS.AlertasCliente.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Alertas\Gradual.OMS.AlertasCliente\obj\Debug\Gradual.OMS.AlertasCliente.pdb
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Alertas\Gradual.OMS.AlertasCliente\bin\Debug\Newtonsoft.Json.dll
+C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Alertas\Gradual.OMS.AlertasCliente\bin\Debug\Newtonsoft.Json.pdb

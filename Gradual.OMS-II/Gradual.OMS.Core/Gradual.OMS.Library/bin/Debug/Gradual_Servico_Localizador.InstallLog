@@ -1,0 +1,13 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\bin\Debug\Gradual_Servico_Localizador.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\bin\Debug\Gradual_Servico_Localizador.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\bin\Debug\Gradual_Servico_Localizador.exe
+Installing service Gradual_Localizador...
+Service Gradual_Localizador has been successfully installed.
+Creating EventLog source Gradual_Localizador in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\bin\Debug\Gradual_Servico_Localizador.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\bin\Debug\Gradual_Servico_Localizador.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\bin\Debug\Gradual_Servico_Localizador.exe

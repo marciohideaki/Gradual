@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ExportaCarteiraPorCpfcnpj">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Cpfcnpj" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportaCarteiraPorCpfcnpjResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExportaCarteiraPorCpfcnpjResult" type="tns:CarteiraViewModel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CarteiraViewModel">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoAnbid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cpfcnpj" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdCarteira" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Estrategia" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorMinimoAplicacao" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Categoria" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GrauRisco" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AgenteGestor" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Objetivo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AgenteAdministrador" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EnderecoAgenteAdministrador" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CNPJAgenteAdministrador" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CEPAgenteAdministrador" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CidadeAgenteAdministrador" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EstadoAgenteAdministrador" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DataInicioCota" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorUltimaCota" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="PLMaisRecente" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Benchmark" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TipoTributacao" type="s:unsignedByte" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorMinimoInicial" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorMinimoResgate" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorMinimoSaldo" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="TaxaAdministracao" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TaxaPerformance" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TipoCota" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DiasCotizacaoAplicacao" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DiasCotizacaoResgate" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DiasLiquidacaoAplicacao" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DiasLiquidacaoResgate" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="HorarioFim" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="HorarioLimiteCotizacao" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ValidateLogin" type="tns:ValidateLogin" />
+      <s:complexType name="ValidateLogin">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="ExportaListaCarteira">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TiposCliente" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ExportaListaCarteiraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExportaListaCarteiraResult" type="tns:ArrayOfCarteiraViewModel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCarteiraViewModel">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CarteiraViewModel" nillable="true" type="tns:CarteiraViewModel" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ExportaCarteiraPorCpfcnpjSoapIn">
+    <wsdl:part name="parameters" element="tns:ExportaCarteiraPorCpfcnpj" />
+  </wsdl:message>
+  <wsdl:message name="ExportaCarteiraPorCpfcnpjSoapOut">
+    <wsdl:part name="parameters" element="tns:ExportaCarteiraPorCpfcnpjResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExportaCarteiraPorCpfcnpjValidateLogin">
+    <wsdl:part name="ValidateLogin" element="tns:ValidateLogin" />
+  </wsdl:message>
+  <wsdl:message name="ExportaListaCarteiraSoapIn">
+    <wsdl:part name="parameters" element="tns:ExportaListaCarteira" />
+  </wsdl:message>
+  <wsdl:message name="ExportaListaCarteiraSoapOut">
+    <wsdl:part name="parameters" element="tns:ExportaListaCarteiraResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExportaListaCarteiraValidateLogin">
+    <wsdl:part name="ValidateLogin" element="tns:ValidateLogin" />
+  </wsdl:message>
+  <wsdl:portType name="FundoWSSoap">
+    <wsdl:operation name="ExportaCarteiraPorCpfcnpj">
+      <wsdl:input message="tns:ExportaCarteiraPorCpfcnpjSoapIn" />
+      <wsdl:output message="tns:ExportaCarteiraPorCpfcnpjSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExportaListaCarteira">
+      <wsdl:input message="tns:ExportaListaCarteiraSoapIn" />
+      <wsdl:output message="tns:ExportaListaCarteiraSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FundoWSSoap" type="tns:FundoWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ExportaCarteiraPorCpfcnpj">
+      <soap:operation soapAction="http://tempuri.org/ExportaCarteiraPorCpfcnpj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ExportaCarteiraPorCpfcnpjValidateLogin" part="ValidateLogin" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportaListaCarteira">
+      <soap:operation soapAction="http://tempuri.org/ExportaListaCarteira" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ExportaListaCarteiraValidateLogin" part="ValidateLogin" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FundoWSSoap12" type="tns:FundoWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ExportaCarteiraPorCpfcnpj">
+      <soap12:operation soapAction="http://tempuri.org/ExportaCarteiraPorCpfcnpj" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ExportaCarteiraPorCpfcnpjValidateLogin" part="ValidateLogin" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportaListaCarteira">
+      <soap12:operation soapAction="http://tempuri.org/ExportaListaCarteira" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ExportaListaCarteiraValidateLogin" part="ValidateLogin" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FundoWS">
+    <wsdl:port name="FundoWSSoap" binding="tns:FundoWSSoap">
+      <soap:address location="http://financial.gradual.intra/webservices/fundo.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FundoWSSoap12" binding="tns:FundoWSSoap12">
+      <soap12:address location="http://financial.gradual.intra/webservices/fundo.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
