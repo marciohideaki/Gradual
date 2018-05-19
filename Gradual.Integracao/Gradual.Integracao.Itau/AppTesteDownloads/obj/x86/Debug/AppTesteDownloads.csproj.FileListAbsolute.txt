@@ -1,0 +1,16 @@
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\AppTesteDownloads\bin\Debug\AppTesteDownloads.exe.config
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\AppTesteDownloads\bin\Debug\AppTesteDownloads.exe
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\AppTesteDownloads\bin\Debug\AppTesteDownloads.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\AppTesteDownloads\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\AppTesteDownloads\obj\x86\Debug\AppTesteDownloads.Form1.resources
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\AppTesteDownloads\obj\x86\Debug\AppTesteDownloads.Properties.Resources.resources
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\AppTesteDownloads\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\AppTesteDownloads\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\AppTesteDownloads\obj\x86\Debug\AppTesteDownloads.exe
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\AppTesteDownloads\obj\x86\Debug\AppTesteDownloads.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\AppTesteDownloads\bin\Debug\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\AppTesteDownloads\bin\Debug\Ionic.Zip.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\AppTesteDownloads\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\AppTesteDownloads\bin\Debug\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\AppTesteDownloads\bin\Debug\Ionic.Zip.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\AppTesteDownloads\bin\Debug\log4net.pdb

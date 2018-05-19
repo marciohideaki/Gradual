@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/Gradual.Integracao.IndiceGradual.Interface/WSIndiceGradualInterface" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/Gradual.Integracao.IndiceGradual.Interface/WSIndiceGradualInterface" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/Gradual.Integracao.IndiceGradual.Interface/WSIndiceGradualInterface">
+      <s:element name="QueryIndiceGradualString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pUser" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pPassword" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pInstitutionID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pIndiceID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryIndiceGradualStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryIndiceGradualStringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="QueryIndiceGradualStringSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryIndiceGradualString" />
+  </wsdl:message>
+  <wsdl:message name="QueryIndiceGradualStringSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryIndiceGradualStringResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSIndiceGradualInterfaceSoap">
+    <wsdl:operation name="QueryIndiceGradualString">
+      <wsdl:input message="tns:QueryIndiceGradualStringSoapIn" />
+      <wsdl:output message="tns:QueryIndiceGradualStringSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSIndiceGradualInterfaceSoap" type="tns:WSIndiceGradualInterfaceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="QueryIndiceGradualString">
+      <soap:operation soapAction="http://tempuri.org/Gradual.Integracao.IndiceGradual.Interface/WSIndiceGradualInterface/QueryIndiceGradualString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSIndiceGradualInterfaceSoap12" type="tns:WSIndiceGradualInterfaceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="QueryIndiceGradualString">
+      <soap12:operation soapAction="http://tempuri.org/Gradual.Integracao.IndiceGradual.Interface/WSIndiceGradualInterface/QueryIndiceGradualString" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSIndiceGradualInterface">
+    <wsdl:port name="WSIndiceGradualInterfaceSoap" binding="tns:WSIndiceGradualInterfaceSoap">
+      <soap:address location="http://localhost:4155/WSIndiceGradualInterface.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSIndiceGradualInterfaceSoap12" binding="tns:WSIndiceGradualInterfaceSoap12">
+      <soap12:address location="http://localhost:4155/WSIndiceGradualInterface.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

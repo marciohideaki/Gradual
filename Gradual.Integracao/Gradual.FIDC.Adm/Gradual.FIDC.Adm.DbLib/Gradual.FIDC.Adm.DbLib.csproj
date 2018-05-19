@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5E3E442-54DD-400A-B6D3-B22EF6FA35AB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.FIDC.Adm.DbLib</RootNamespace>
+    <AssemblyName>Gradual.FIDC.Adm.DbLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.Generico.Dados">
+      <HintPath>..\..\Gradual.Integracao.References\Gradual.Generico.Dados.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Email.Lib">
+      <HintPath>..\..\Gradual.Integracao.References\Gradual.OMS.Email.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Library">
+      <HintPath>..\..\Gradual.Integracao.References\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Seguranca.Lib">
+      <HintPath>..\..\Gradual.Integracao.References\Gradual.OMS.Seguranca.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Gradual.Integracao.References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Codigo\Extensions.cs" />
+    <Compile Include="class.cs" />
+    <Compile Include="Dados\CotistaFidcProcuradorAnexoInfo.cs" />
+    <Compile Include="Dados\CotistaFidcProcuradorInfo.cs" />
+    <Compile Include="Dados\CadastroCotistasFidcInfo.cs" />
+    <Compile Include="Dados\FundoCadastroAnexoInfo.cs" />
+    <Compile Include="Dados\CalendarioEventoInfo.cs" />
+    <Compile Include="Dados\ConsultaFundosConstituicaoInfo.cs" />
+    <Compile Include="Dados\CadastroFundoInfo.cs" />
+    <Compile Include="Dados\CarteirasInfo.cs" />
+    <Compile Include="Dados\CotistaFidcFundoInfo.cs" />
+    <Compile Include="Dados\ExtratoCotistaInfo.cs" />
+    <Compile Include="Dados\FundoFluxoAprovacaoAnexoInfo.cs" />
+    <Compile Include="Dados\FundoFluxoAlteracaoRegulamentoInfo.cs" />
+    <Compile Include="Dados\FundoFluxoAprovacaoInfo.cs" />
+    <Compile Include="Dados\FluxoAlteracaoRegulamentoGrupoInfo.cs" />
+    <Compile Include="Dados\FluxoAlteracaoRegulamentoGrupoEtapaInfo.cs" />
+    <Compile Include="Dados\FundoFluxoGrupoInfo.cs" />
+    <Compile Include="Dados\FluxoAlteracaoRegulamentoStatusInfo.cs" />
+    <Compile Include="Dados\FundoFluxoStatusInfo.cs" />
+    <Compile Include="Dados\FundoFluxoGrupoEtapaInfo.cs" />
+    <Compile Include="Dados\FundoCategoriaSubCategoriaInfo.cs" />
+    <Compile Include="Dados\FundoSubCategoriaInfo.cs" />
+    <Compile Include="Dados\FundoCategoriaInfo.cs" />
+    <Compile Include="Dados\ListaCotistaInfo.cs" />
+    <Compile Include="Dados\ListaFundosInfo.cs" />
+    <Compile Include="Dados\MecInfo.cs" />
+    <Compile Include="Dados\OrigemInfo.cs" />
+    <Compile Include="Dados\TitulosLiquidadosInfo.cs" />
+    <Compile Include="Mensagem\AlteracaoRegulamentacaoCarregarDadosModalEnvioEmailResponse.cs" />
+    <Compile Include="Mensagem\AssociacaoCotistaFidcFundoRequest.cs" />
+    <Compile Include="Mensagem\AlteracaoRegulamentacaoConsultaFundosCarregarGridRequest.cs" />
+    <Compile Include="Mensagem\AlteracaoRegulamentacaoConsultaFundosCarregarGridResponse.cs" />
+    <Compile Include="Mensagem\CotistaFidcProcuradorAnexoRequest.cs" />
+    <Compile Include="Mensagem\CotistaFidcProcuradorAnexoResponse.cs" />
+    <Compile Include="Mensagem\CotistaFidcProcuradorResponse.cs" />
+    <Compile Include="Mensagem\CotistaFidcProcuradorRequest.cs" />
+    <Compile Include="Mensagem\CadastroCotistasFidcRequest.cs" />
+    <Compile Include="Mensagem\AssociacaoCotistaFidcFundoResponse.cs" />
+    <Compile Include="Mensagem\CadastroCotistasFidcResponse.cs" />
+    <Compile Include="Mensagem\FundoCadastroAnexoResponse.cs" />
+    <Compile Include="Mensagem\FundoCadastroAnexoRequest.cs" />
+    <Compile Include="Mensagem\CalendarioEventoRequest.cs" />
+    <Compile Include="Mensagem\CalendarioEventoResponse.cs" />
+    <Compile Include="Mensagem\ConsultaFundosConstituicaoResponse.cs" />
+    <Compile Include="Mensagem\ConsultaFundosConstituicaoRequest.cs" />
+    <Compile Include="Mensagem\FundoFluxoAlteracaoRegulamentoAnexoRequest.cs" />
+    <Compile Include="Mensagem\FundoFluxoAprovacaoAnexoRequest.cs" />
+    <Compile Include="Mensagem\FundoFluxoAlteracaoRegulamentoRequest.cs" />
+    <Compile Include="Mensagem\FundoFluxoAlteracaoRegulamentoAnexoResponse.cs" />
+    <Compile Include="Mensagem\FundoFluxoAprovacaoRequest.cs" />
+    <Compile Include="Mensagem\FundoFluxoAprovacaoAnexoResponse.cs" />
+    <Compile Include="Mensagem\FundoFluxoAlteracaoRegulamentoResponse.cs" />
+    <Compile Include="Mensagem\FundoFluxoAprovacaoResponse.cs" />
+    <Compile Include="Mensagem\AlteracaoRegulamentacaoConsultaFundosCarregarListaGruposResponse.cs" />
+    <Compile Include="Mensagem\FluxoAlteracaoRegulamentoGrupoEtapaRequest.cs" />
+    <Compile Include="Mensagem\FluxoAlteracaoRegulamentoGrupoEtapaResponse.cs" />
+    <Compile Include="Mensagem\FundoFluxoGrupoResponse.cs" />
+    <Compile Include="Mensagem\FundoFluxoGrupoRequest.cs" />
+    <Compile Include="Mensagem\FluxoAlteracaoRegulamentoStatusResponse.cs" />
+    <Compile Include="Mensagem\FundoFluxoStatusResponse.cs" />
+    <Compile Include="Mensagem\FundoFluxoStatusRequest.cs" />
+    <Compile Include="Mensagem\FundoFluxoGrupoEtapaResponse.cs" />
+    <Compile Include="Mensagem\FundoFluxoGrupoEtapaRequest.cs" />
+    <Compile Include="Mensagem\CadastroFundoRequest.cs" />
+    <Compile Include="Mensagem\CadastroFundoResponse.cs" />
+    <Compile Include="Mensagem\CarteiraRequest.cs" />
+    <Compile Include="Mensagem\CarteiraResponse.cs" />
+    <Compile Include="Mensagem\ExtratoCotistaRequest.cs" />
+    <Compile Include="Mensagem\ExtratoCotistaResponse.cs" />
+    <Compile Include="Mensagem\FundoCategoriaSubCategoriaLogResponse.cs" />
+    <Compile Include="Mensagem\FundoCategoriaSubCategoriaLogRequest.cs" />
+    <Compile Include="Mensagem\FundoCategoriaSubCategoriaResponse.cs" />
+    <Compile Include="Mensagem\FundoCategoriaSubCategoriaRequest.cs" />
+    <Compile Include="Mensagem\FundoSubCategoriaResponse.cs" />
+    <Compile Include="Mensagem\FundoSubCategoriaRequest.cs" />
+    <Compile Include="Mensagem\FundoCategoriaRequest.cs" />
+    <Compile Include="Mensagem\FundoCategoriaResponse.cs" />
+    <Compile Include="Mensagem\MecRequest.cs" />
+    <Compile Include="Mensagem\MecResponse.cs" />
+    <Compile Include="Mensagem\OrigemResponse.cs" />
+    <Compile Include="Mensagem\TitulosLiquidadosRequest.cs" />
+    <Compile Include="Mensagem\TitulosLiquidadosResponse.cs" />
+    <Compile Include="Persistencia\AlteracaoRegulamentacaoFundosConsultaDb.cs" />
+    <Compile Include="Persistencia\CotistaFidcFundoDb.cs" />
+    <Compile Include="Persistencia\CotistaFidcProcuradorDb.cs" />
+    <Compile Include="Persistencia\CotistasFidcDb.cs" />
+    <Compile Include="Persistencia\CotistaFidcProcuradorAnexoDb.cs" />
+    <Compile Include="Persistencia\FundoCadastroAnexoDb.cs" />
+    <Compile Include="Persistencia\CalendarioEventoDB.cs" />
+    <Compile Include="Persistencia\ConsultaFundosConstituicaoDB.cs" />
+    <Compile Include="Persistencia\FundoFluxoAlteracaoRegulamentoAnexoDb.cs" />
+    <Compile Include="Persistencia\FundoFluxoAprovacaoAnexoDB.cs" />
+    <Compile Include="Persistencia\FundoFluxoAlteracaoRegulamentoDb.cs" />
+    <Compile Include="Persistencia\FundoFluxoAprovacaoDB.cs" />
+    <Compile Include="Persistencia\FluxoAlteracaoRegulamentoGrupoDb.cs" />
+    <Compile Include="Persistencia\FundoFluxoGrupoDB.cs" />
+    <Compile Include="Persistencia\FluxoAlteracaoRegulamentoStatusDb.cs" />
+    <Compile Include="Persistencia\FluxoAlteracaoRegulamentoGrupoEtapaDb.cs" />
+    <Compile Include="Persistencia\FundoFluxoStatusDB.cs" />
+    <Compile Include="Persistencia\FundoFluxoGrupoEtapaDB.cs" />
+    <Compile Include="Persistencia\CadastroFundoDB.cs" />
+    <Compile Include="Persistencia\FundoCategoriaSubCategoriaDB.cs" />
+    <Compile Include="Persistencia\FundoSubCategoriaDB.cs" />
+    <Compile Include="Persistencia\FundoCategoriaDB.cs" />
+    <Compile Include="Persistencia\RoboDownloadDB.cs" />
+    <Compile Include="Persistencia\TitulosLiquidadosDB.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\knockout-2.0.0.debug.js" />
+    <Content Include="Scripts\knockout-2.0.0.js" />
+    <Content Include="Scripts\knockout-jqAutocomplete.js" />
+    <Content Include="Scripts\knockout-jqAutocomplete.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

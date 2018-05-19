@@ -1,0 +1,13 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.Downloader\bin\Debug\Gradual.ItauFJ.Downloader.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.Downloader\bin\Debug\Gradual.ItauFJ.Downloader.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.Downloader\bin\Debug\Gradual.ItauFJ.Downloader.exe
+Installing service Gradual_ItauFJ_Downloader...
+Service Gradual_ItauFJ_Downloader has been successfully installed.
+Creating EventLog source Gradual_ItauFJ_Downloader in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.Downloader\bin\Debug\Gradual.ItauFJ.Downloader.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.Downloader\bin\Debug\Gradual.ItauFJ.Downloader.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.Downloader\bin\Debug\Gradual.ItauFJ.Downloader.exe

@@ -1,0 +1,13 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeracaoBases\bin\Debug\Gradual.GeradorBases.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeracaoBases\bin\Debug\Gradual.GeradorBases.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeracaoBases\bin\Debug\Gradual.GeradorBases.exe
+Installing service GradualGeradorBases...
+Service GradualGeradorBases has been successfully installed.
+Creating EventLog source GradualGeradorBases in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeracaoBases\bin\Debug\Gradual.GeradorBases.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeracaoBases\bin\Debug\Gradual.GeradorBases.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeracaoBases\bin\Debug\Gradual.GeradorBases.exe

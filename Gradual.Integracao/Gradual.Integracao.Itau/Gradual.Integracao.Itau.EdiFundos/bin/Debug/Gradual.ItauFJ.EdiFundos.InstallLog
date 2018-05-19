@@ -1,0 +1,13 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.EdiFundos\bin\Debug\Gradual.ItauFJ.EdiFundos.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.EdiFundos\bin\Debug\Gradual.ItauFJ.EdiFundos.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.EdiFundos\bin\Debug\Gradual.ItauFJ.EdiFundos.exe
+Installing service Gradual_ItauFJ_EDIFundos...
+Service Gradual_ItauFJ_EDIFundos has been successfully installed.
+Creating EventLog source Gradual_ItauFJ_EDIFundos in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.EdiFundos\bin\Debug\Gradual.ItauFJ.EdiFundos.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.EdiFundos\bin\Debug\Gradual.ItauFJ.EdiFundos.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.EdiFundos\bin\Debug\Gradual.ItauFJ.EdiFundos.exe

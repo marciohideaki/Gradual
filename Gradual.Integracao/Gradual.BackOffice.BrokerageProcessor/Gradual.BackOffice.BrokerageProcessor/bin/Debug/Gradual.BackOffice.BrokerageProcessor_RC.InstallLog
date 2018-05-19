@@ -1,0 +1,34 @@
+﻿Instalando o assembly 'C:\aponso\Desenv\Gradual.Integracao\Gradual.BackOffice.BrokerageProcessor\Gradual.BackOffice.BrokerageProcessor\bin\Debug\Gradual.BackOffice.BrokerageProcessor_RC.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   logfile = C:\aponso\Desenv\Gradual.Integracao\Gradual.BackOffice.BrokerageProcessor\Gradual.BackOffice.BrokerageProcessor\bin\Debug\Gradual.BackOffice.BrokerageProcessor_RC.InstallLog
+   assemblypath = C:\aponso\Desenv\Gradual.Integracao\Gradual.BackOffice.BrokerageProcessor\Gradual.BackOffice.BrokerageProcessor\bin\Debug\Gradual.BackOffice.BrokerageProcessor_RC.exe
+Instalando o serviço Gradual_BackOffice_BrokerageProcessor...
+Criando a origem de EventLog Gradual_BackOffice_BrokerageProcessor no log Application...
+Revertendo o assembly 'C:\aponso\Desenv\Gradual.Integracao\Gradual.BackOffice.BrokerageProcessor\Gradual.BackOffice.BrokerageProcessor\bin\Debug\Gradual.BackOffice.BrokerageProcessor_RC.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   logfile = C:\aponso\Desenv\Gradual.Integracao\Gradual.BackOffice.BrokerageProcessor\Gradual.BackOffice.BrokerageProcessor\bin\Debug\Gradual.BackOffice.BrokerageProcessor_RC.InstallLog
+   assemblypath = C:\aponso\Desenv\Gradual.Integracao\Gradual.BackOffice.BrokerageProcessor\Gradual.BackOffice.BrokerageProcessor\bin\Debug\Gradual.BackOffice.BrokerageProcessor_RC.exe
+Restaurando o log de eventos para o estado anterior da origem Gradual_BackOffice_BrokerageProcessor.
+Desinstalando o assembly 'C:\aponso\Desenv\Gradual.Integracao\Gradual.BackOffice.BrokerageProcessor\Gradual.BackOffice.BrokerageProcessor\bin\Debug\Gradual.BackOffice.BrokerageProcessor_RC.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   logfile = C:\aponso\Desenv\Gradual.Integracao\Gradual.BackOffice.BrokerageProcessor\Gradual.BackOffice.BrokerageProcessor\bin\Debug\Gradual.BackOffice.BrokerageProcessor_RC.InstallLog
+   assemblypath = C:\aponso\Desenv\Gradual.Integracao\Gradual.BackOffice.BrokerageProcessor\Gradual.BackOffice.BrokerageProcessor\bin\Debug\Gradual.BackOffice.BrokerageProcessor_RC.exe
+Removendo a origem do EventLog Gradual_BackOffice_BrokerageProcessor.
+Serviço Gradual_BackOffice_BrokerageProcessor está sendo removido do sistema...
+Serviço Gradual_BackOffice_BrokerageProcessor foi removido com êxito do sistema.
+Instalando o assembly 'C:\aponso\Desenv\Gradual.Integracao\Gradual.BackOffice.BrokerageProcessor\Gradual.BackOffice.BrokerageProcessor\bin\Debug\Gradual.BackOffice.BrokerageProcessor_RC.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   logfile = C:\aponso\Desenv\Gradual.Integracao\Gradual.BackOffice.BrokerageProcessor\Gradual.BackOffice.BrokerageProcessor\bin\Debug\Gradual.BackOffice.BrokerageProcessor_RC.InstallLog
+   assemblypath = C:\aponso\Desenv\Gradual.Integracao\Gradual.BackOffice.BrokerageProcessor\Gradual.BackOffice.BrokerageProcessor\bin\Debug\Gradual.BackOffice.BrokerageProcessor_RC.exe
+Instalando o serviço Gradual_BackOffice_BrokerageProcessor...
+Serviço Gradual_BackOffice_BrokerageProcessor foi instalado com êxito.
+Criando a origem de EventLog Gradual_BackOffice_BrokerageProcessor no log Application...
+Confirmando o assembly 'C:\aponso\Desenv\Gradual.Integracao\Gradual.BackOffice.BrokerageProcessor\Gradual.BackOffice.BrokerageProcessor\bin\Debug\Gradual.BackOffice.BrokerageProcessor_RC.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   logfile = C:\aponso\Desenv\Gradual.Integracao\Gradual.BackOffice.BrokerageProcessor\Gradual.BackOffice.BrokerageProcessor\bin\Debug\Gradual.BackOffice.BrokerageProcessor_RC.InstallLog
+   assemblypath = C:\aponso\Desenv\Gradual.Integracao\Gradual.BackOffice.BrokerageProcessor\Gradual.BackOffice.BrokerageProcessor\bin\Debug\Gradual.BackOffice.BrokerageProcessor_RC.exe

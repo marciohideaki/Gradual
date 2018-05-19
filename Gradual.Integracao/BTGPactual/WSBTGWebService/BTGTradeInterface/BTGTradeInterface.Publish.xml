@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="c:\temp\WSBTG" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/log4net.dll" publishTime="08/26/2010 17:29:13" />
+    <file relUrl="bin/BTGTradeInterface.dll" publishTime="08/16/2013 17:58:16" />
+    <file relUrl="bin/BTGTradeInterface.pdb" publishTime="08/16/2013 17:58:16" />
+    <file relUrl="bin/log4net.pdb" publishTime="08/26/2010 17:29:13" />
+    <file relUrl="Web.config" publishTime="08/16/2013 18:08:16" />
+    <file relUrl="bin/Gradual.OMS.Library.pdb" publishTime="11/18/2010 15:23:11" />
+    <file relUrl="WSBTG.asmx" publishTime="07/05/2013 19:15:01" />
+    <file relUrl="bin/BTGTradeProcessor.pdb" publishTime="08/16/2013 17:58:15" />
+    <file relUrl="bin/BTGTradeProcessor.dll" publishTime="08/16/2013 17:58:15" />
+    <file relUrl="bin/Gradual.OMS.Library.dll" publishTime="11/18/2010 15:23:11" />
+  </publishProfile>
+</publishData>

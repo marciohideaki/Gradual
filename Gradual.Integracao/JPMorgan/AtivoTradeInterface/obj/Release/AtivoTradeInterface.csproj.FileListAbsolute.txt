@@ -1,0 +1,11 @@
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\AtivoTradeInterface\bin\AtivoTradeInterface.dll
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\AtivoTradeInterface\bin\AtivoTradeInterface.pdb
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\AtivoTradeInterface\bin\Gradual.OMS.Library.dll
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\AtivoTradeInterface\bin\log4net.dll
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\AtivoTradeInterface\bin\OpenBlotterLib.dll
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\AtivoTradeInterface\bin\OpenBlotterLib.pdb
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\AtivoTradeInterface\bin\Gradual.OMS.Library.pdb
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\AtivoTradeInterface\bin\log4net.pdb
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\AtivoTradeInterface\obj\Release\ResolveAssemblyReference.cache
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\AtivoTradeInterface\obj\Release\AtivoTradeInterface.dll
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\AtivoTradeInterface\obj\Release\AtivoTradeInterface.pdb

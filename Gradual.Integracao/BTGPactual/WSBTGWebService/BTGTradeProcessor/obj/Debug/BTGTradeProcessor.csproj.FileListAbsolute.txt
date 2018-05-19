@@ -1,0 +1,9 @@
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\BTGTradeProcessor\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\BTGTradeProcessor\bin\Debug\BTGTradeProcessor.dll
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\BTGTradeProcessor\bin\Debug\BTGTradeProcessor.pdb
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\BTGTradeProcessor\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\BTGTradeProcessor\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\BTGTradeProcessor\obj\Debug\BTGTradeProcessor.dll
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\BTGTradeProcessor\obj\Debug\BTGTradeProcessor.pdb
+c:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\BTGTradeProcessor\bin\Debug\Gradual.OMS.Library.dll
+c:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\BTGTradeProcessor\bin\Debug\Gradual.OMS.Library.pdb

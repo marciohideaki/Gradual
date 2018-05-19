@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AppTesteDownloads.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AppTesteDownloads_br_com_itaucustodia_www_DownloadArquivoServiceService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.itaucustodia.com.br/PassivoWebServices/services/DownloadArquivoService</Value>
+    </Setting>
+    <Setting Name="AppTesteDownloads_br_com_itaucustodia_www1_PosicaoGerencialServiceService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.itaucustodia.com.br/PassivoWebServices/services/PosicaoGerencialService</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

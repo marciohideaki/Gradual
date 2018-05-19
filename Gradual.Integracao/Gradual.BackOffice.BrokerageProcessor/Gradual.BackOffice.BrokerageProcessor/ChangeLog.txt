@@ -1,0 +1,37 @@
+﻿v.2.0.0.0
+=========
+- Mudancas no split do arquivo;
+- Mudancas no envio de emails;
+
+v.1.0.0.6
+=========
+- Correcoes diversas;
+
+v.1.0.0.5
+=========
+- Validacao do assunto do email com idCliente e anexos;
+
+v.1.0.0.4
+=========
+- Envio de emails errado, correcao;
+
+v.1.0.0.3
+=========
+- Correcao da consulta de emails, insercao de logs;
+
+v.1.0.0.2
+=========
+- Adicao de novos relatorios para envio por email;
+- Nova consulta de email para novo relatorio;
+- Acerto de envio de emails / mudanca de assunto dos envios;
+
+v.1.0.0.1
+=========
+- Atualizacao do tratamento de erro no envio do email;
+
+v.1.0.0.0
+=========
+- Processamento do pdf;
+- FileWatcher;
+- Envio de emails;
+

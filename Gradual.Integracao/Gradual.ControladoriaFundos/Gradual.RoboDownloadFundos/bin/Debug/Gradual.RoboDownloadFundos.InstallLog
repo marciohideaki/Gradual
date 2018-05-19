@@ -1,0 +1,26 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.Integracao\Gradual.ControladoriaFundos\Gradual.RoboDownloadFundos\bin\Debug\Gradual.RoboDownloadFundos.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.Integracao\Gradual.ControladoriaFundos\Gradual.RoboDownloadFundos\bin\Debug\Gradual.RoboDownloadFundos.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.Integracao\Gradual.ControladoriaFundos\Gradual.RoboDownloadFundos\bin\Debug\Gradual.RoboDownloadFundos.exe
+Installing service Gradual_RoboDownloadFundos...
+Service Gradual_RoboDownloadFundos has been successfully installed.
+Creating EventLog source Gradual_RoboDownloadFundos in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.Integracao\Gradual.ControladoriaFundos\Gradual.RoboDownloadFundos\bin\Debug\Gradual.RoboDownloadFundos.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.Integracao\Gradual.ControladoriaFundos\Gradual.RoboDownloadFundos\bin\Debug\Gradual.RoboDownloadFundos.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.Integracao\Gradual.ControladoriaFundos\Gradual.RoboDownloadFundos\bin\Debug\Gradual.RoboDownloadFundos.exe
+Instalando o assembly 'C:\aponso\Desenv\Gradual.Integracao\Gradual.ControladoriaFundos\Gradual.RoboDownloadFundos\bin\Debug\Gradual.RoboDownloadFundos.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   logfile = C:\aponso\Desenv\Gradual.Integracao\Gradual.ControladoriaFundos\Gradual.RoboDownloadFundos\bin\Debug\Gradual.RoboDownloadFundos.InstallLog
+   assemblypath = C:\aponso\Desenv\Gradual.Integracao\Gradual.ControladoriaFundos\Gradual.RoboDownloadFundos\bin\Debug\Gradual.RoboDownloadFundos.exe
+Instalando o serviço Gradual_RoboDownloadFundos...
+Serviço Gradual_RoboDownloadFundos foi instalado com êxito.
+Criando a origem de EventLog Gradual_RoboDownloadFundos no log Application...
+Confirmando o assembly 'C:\aponso\Desenv\Gradual.Integracao\Gradual.ControladoriaFundos\Gradual.RoboDownloadFundos\bin\Debug\Gradual.RoboDownloadFundos.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   logfile = C:\aponso\Desenv\Gradual.Integracao\Gradual.ControladoriaFundos\Gradual.RoboDownloadFundos\bin\Debug\Gradual.RoboDownloadFundos.InstallLog
+   assemblypath = C:\aponso\Desenv\Gradual.Integracao\Gradual.ControladoriaFundos\Gradual.RoboDownloadFundos\bin\Debug\Gradual.RoboDownloadFundos.exe

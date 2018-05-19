@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://interfaces.webservice.rocket.cmsoftware.com.br" name="RocketProcessWS" targetNamespace="http://interfaces.webservice.rocket.cmsoftware.com.br" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema targetNamespace="http://interfaces.webservice.rocket.cmsoftware.com.br" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="BusinessException" type="tns:BusinessException" />
+      <xs:element name="WS_VALIDACAO_CADASTRAL_HOMOLOG" type="tns:WS_VALIDACAO_CADASTRAL_HOMOLOG" />
+      <xs:element name="WS_VALIDACAO_CADASTRAL_HOMOLOGResponse" type="tns:WS_VALIDACAO_CADASTRAL_HOMOLOGResponse" />
+      <xs:element name="WS_VALIDACAO_CADASTRAL_PRD" type="tns:WS_VALIDACAO_CADASTRAL_PRD" />
+      <xs:element name="WS_VALIDACAO_CADASTRAL_PRDResponse" type="tns:WS_VALIDACAO_CADASTRAL_PRDResponse" />
+      <xs:element name="rocketWSReturn" type="tns:rocketWSReturn" />
+      <xs:element name="statusProcess" type="tns:statusProcess" />
+      <xs:element name="statusProcessResponse" type="tns:statusProcessResponse" />
+      <xs:complexType name="statusProcess">
+        <xs:sequence>
+          <xs:element minOccurs="0" form="qualified" name="hash" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="ticket" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="statusProcessResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="status_processo" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="BusinessException">
+        <xs:sequence>
+          <xs:element name="code" type="xs:int" />
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="WS_VALIDACAO_CADASTRAL_HOMOLOG">
+        <xs:sequence>
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_BAIRRO_COMERCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_CEP_COMERCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_CIDADE_COMERCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_COMPLEMENTO_COMERCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_ESTADO_COMERCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_LOGRADOURO_COMERCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_NUMERO_COMERCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="FLAG_PROC_REPR" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="NOME_PAI" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_NOME_PAI" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="BAIRRO_COMERCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="BAIRRO_RESIDENCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="CEP_COMERCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="CEP_RESIDENCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="CIDADE_COMERCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="CIDADE_RESIDENCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="CODIGO_RJ_RG" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="COMPLEMENTO_COMERCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="COMPLEMENTO_RESIDENCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="CPF" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="DATA_EXPEDICAO_RG" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="DATA_NASCIMENTO" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="DDD_CELULAR" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="DDD_COMERCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="DDD_TELEFONE_RESIDENCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="DIGITO_RG" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="DOCUMENTO_ORIGEM_1_RG" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="DOCUMENTO_ORIGEM_2_RG" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="EMAIL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="ESTADO_COMERCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="ESTADO_RESIDENCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="LOGRADOURO_COMERCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="LOGRADOURO_RESIDENCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="NOME_COMPLETO" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="NOME_MAE" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="NUMERO_AGENCIA" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="NUMERO_BANCO" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="NUMERO_COMERCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="NUMERO_REGISTRO_CNH" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="NUMERO_RESIDENCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="NUMERO_RG" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="NUMERO_SEGURANCA_CNH" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="ORGAO_EMISSOR_RG" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_BAIRRO_RESIDENCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_CEP_RESIDENCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_CIDADE_RESIDENCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_CODIGO_RJ_RG" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_COMPLEMENTO_RESIDENCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_CPF" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_DATA_EXPEDICAO_RG" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_DATA_NASCIMENTO" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_DDD_CELULAR" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_DDD_COMERCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_DDD_TELEFONE_RESIDENCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_DIGITO_RG" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_DOCUMENTO_ORIGEM_1_RG" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_DOCUMENTO_ORIGEM_2_RG" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_EMAIL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_ESTADO_RESIDENCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_LOGRADOURO_RESIDENCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_NOME_COMPLETO" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_NOME_MAE" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_NUMERO_AGENCIA" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_NUMERO_BANCO" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_NUMERO_REGISTRO_CNH" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_NUMERO_RESIDENCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_NUMERO_RG" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_NUMERO_SEGURANCA_CNH" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_ORGAO_EMISSOR_RG" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_SEXO" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_TELEFONE_CELULAR" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_TELEFONE_COMERCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_TELEFONE_RESIDENCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="PROCURADOR_UF_EXPEDICAO_RG" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="SEXO" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="TELEFONE_CELULAR" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="TELEFONE_COMERCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="TELEFONE_RESIDENCIAL" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="UF_EXPEDICAO_RG" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="sync" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="header" type="tns:ProcessHeaderVo" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ProcessHeaderVo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="empresa" type="xs:string" />
+          <xs:element minOccurs="0" name="usuario" type="xs:string" />
+          <xs:element minOccurs="0" name="senha" type="xs:string" />
+          <xs:element minOccurs="0" name="hash" type="xs:string" />
+          <xs:element minOccurs="0" name="fluxo" type="xs:string" />
+          <xs:element minOccurs="0" name="ticket" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="WS_VALIDACAO_CADASTRAL_HOMOLOGResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="retorno" type="tns:rocketWSReturn" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="rocketWSReturn">
+        <xs:sequence>
+          <xs:choice minOccurs="0">
+            <xs:element name="provedor" type="tns:provedor" />
+            <xs:element name="processReturn" type="tns:ProcessReturnVo" />
+            <xs:element name="note" type="xs:string" />
+          </xs:choice>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="provedor">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idProvedor" type="xs:string" />
+          <xs:element minOccurs="0" name="idOutput" type="xs:string" />
+          <xs:element minOccurs="0" name="key" type="xs:string" />
+          <xs:element minOccurs="0" name="nome" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="variaveisOut" nillable="true" type="tns:variavel" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="listas" nillable="true" type="tns:lista" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="variavel">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idCampo" type="xs:string" />
+          <xs:element minOccurs="0" name="idOutput" type="xs:string" />
+          <xs:element minOccurs="0" name="nome" type="xs:string" />
+          <xs:element minOccurs="0" name="desc" type="xs:string" />
+          <xs:element minOccurs="0" name="tipoCampo" type="xs:string" />
+          <xs:element minOccurs="0" name="valor" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="lista">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="chave" type="xs:string" />
+          <xs:element minOccurs="0" name="idArray" type="xs:string" />
+          <xs:element minOccurs="0" name="idListOutput" type="xs:string" />
+          <xs:element minOccurs="0" name="desc" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="registros" nillable="true" type="tns:registro" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="registro">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="colunas" nillable="true" type="tns:coluna" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="provedoresLoop" nillable="true" type="tns:provedorLoop" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="coluna">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="chave" type="xs:string" />
+          <xs:element minOccurs="0" name="idCampo" type="xs:string" />
+          <xs:element minOccurs="0" name="tipoCampo" type="xs:string" />
+          <xs:element minOccurs="0" name="desc" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="provedorLoop">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idProvedor" type="xs:string" />
+          <xs:element minOccurs="0" name="idOutput" type="xs:string" />
+          <xs:element minOccurs="0" name="key" type="xs:string" />
+          <xs:element minOccurs="0" name="nome" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="variaveisOut" nillable="true" type="tns:variavel" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ProcessReturnVo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ticket" type="xs:string" />
+          <xs:element minOccurs="0" name="hash" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="processHeader" type="tns:ProcessHeaderVo" />
+          <xs:element minOccurs="0" name="idWorkProcesso" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="provedores" nillable="true" type="tns:provedor" />
+          <xs:element minOccurs="0" name="variaveisContexto" type="tns:variaveisContexto" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="listQuiz" nillable="true" type="tns:listQuiz" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="variaveisInput" nillable="true" type="tns:variavel" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="dataExtractor" nillable="true" type="tns:lista" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="variaveisContexto">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="variavelContexto" nillable="true" type="tns:variavel" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="listQuiz">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="desc" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="listaQuestionarios" nillable="true" type="tns:questionario" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="questionario">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idConfig" type="xs:string" />
+          <xs:element minOccurs="0" name="idRisco" type="xs:string" />
+          <xs:element minOccurs="0" name="descRisco" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="listaPerguntas" nillable="true" type="tns:pergunta" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="pergunta">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="descricao" type="xs:string" />
+          <xs:element minOccurs="0" name="flagAcerto" type="xs:string" />
+          <xs:element minOccurs="0" name="flagAcertoObrigatorio" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="WS_VALIDACAO_CADASTRAL_PRD">
+        <xs:sequence>
+          <xs:element minOccurs="0" form="qualified" name="sync" type="xs:string" />
+          <xs:element minOccurs="0" form="qualified" name="header" type="tns:ProcessHeaderVo" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="WS_VALIDACAO_CADASTRAL_PRDResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="retorno" type="tns:rocketWSReturn" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="RocketProcess_WS_VALIDACAO_CADASTRAL_HOMOLOGResponse">
+    <part name="WS_VALIDACAO_CADASTRAL_HOMOLOGResponse" element="tns:WS_VALIDACAO_CADASTRAL_HOMOLOGResponse" />
+  </message>
+  <message name="RocketProcess_WS_VALIDACAO_CADASTRAL_PRD">
+    <part name="WS_VALIDACAO_CADASTRAL_PRD" element="tns:WS_VALIDACAO_CADASTRAL_PRD" />
+  </message>
+  <message name="BusinessException">
+    <part name="BusinessException" element="tns:BusinessException" />
+  </message>
+  <message name="RocketProcess_statusProcess">
+    <part name="statusProcess" element="tns:statusProcess" />
+  </message>
+  <message name="RocketProcess_WS_VALIDACAO_CADASTRAL_PRDResponse">
+    <part name="WS_VALIDACAO_CADASTRAL_PRDResponse" element="tns:WS_VALIDACAO_CADASTRAL_PRDResponse" />
+  </message>
+  <message name="RocketProcess_WS_VALIDACAO_CADASTRAL_HOMOLOG">
+    <part name="WS_VALIDACAO_CADASTRAL_HOMOLOG" element="tns:WS_VALIDACAO_CADASTRAL_HOMOLOG" />
+  </message>
+  <message name="RocketProcess_statusProcessResponse">
+    <part name="statusProcessResponse" element="tns:statusProcessResponse" />
+  </message>
+  <portType name="RocketProcess">
+    <operation name="WS_VALIDACAO_CADASTRAL_HOMOLOG" parameterOrder="WS_VALIDACAO_CADASTRAL_HOMOLOG">
+      <input message="tns:RocketProcess_WS_VALIDACAO_CADASTRAL_HOMOLOG" />
+      <output message="tns:RocketProcess_WS_VALIDACAO_CADASTRAL_HOMOLOGResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="WS_VALIDACAO_CADASTRAL_PRD" parameterOrder="WS_VALIDACAO_CADASTRAL_PRD">
+      <input message="tns:RocketProcess_WS_VALIDACAO_CADASTRAL_PRD" />
+      <output message="tns:RocketProcess_WS_VALIDACAO_CADASTRAL_PRDResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="statusProcess" parameterOrder="statusProcess">
+      <input message="tns:RocketProcess_statusProcess" />
+      <output message="tns:RocketProcess_statusProcessResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+  </portType>
+  <binding name="RocketProcessBinding" type="tns:RocketProcess">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="WS_VALIDACAO_CADASTRAL_HOMOLOG">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="WS_VALIDACAO_CADASTRAL_PRD">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="statusProcess">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="RocketProcessWS">
+    <port name="RocketProcessPort" binding="tns:RocketProcessBinding">
+      <soap:address location="http://wsrocket.cmsw.com:80/Rocket_33918160000173/services" />
+    </port>
+  </service>
+</definitions>

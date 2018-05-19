@@ -1,0 +1,5399 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="generator" content="SQL*Plus 10.2.0">
+<style type='text/css'> body {font:10pt Arial,Helvetica,sans-serif; color:black; background:White;} p {font:10pt Arial,Helvetica,sans-serif; color:black; background:White;} table,tr,td {font:10pt Arial,Helvetica,sans-serif; color:Black; background:#f7f7e7; padding:0px 0px 0px 0px; margin:0px 0px 0px 0px;} th {font:bold 10pt Arial,Helvetica,sans-serif; color:#336699; background:#cccc99; padding:0px 0px 0px 0px;} h1 {font:16pt Arial,Helvetica,Geneva,sans-serif; color:#336699; background-color:White; border-bottom:1px solid #cccc99; margin-top:0pt; margin-bottom:0pt; padding:0px 0px 0px 0px;} h2 {font:bold 10pt Arial,Helvetica,Geneva,sans-serif; color:#336699; background-color:White; margin-top:4pt; margin-bottom:0pt;} a {font:9pt Arial,Helvetica,sans-serif; color:#663300; background:#ffffff; margin-top:0pt; margin-bottom:0pt; vertical-align:top;}</style><title>SQL*Plus Report</title>
+</head>
+<body>
+<p>
+<table border='1' width='90%' align='center' summary='Script output'>
+<tr>
+<td>
+Cliente
+</td>
+<td>
+Nome
+</td>
+<td>
+Receita DT
+</td>
+<td>
+Ultimo DT
+</td>
+<td>
+CPF/CNPJ
+</td>
+<td>
+Assessor
+</td>
+<td>
+Nome
+</td>
+</tr>
+</table>
+<p>
+<p>
+<table border='1' width='90%' align='center' summary='Script output'>
+<tr>
+<td align="right">
+      2486
+</td>
+<td>
+GAP MULTIPORTFOLIO FUNDO DE INVESTIMENTO MULTIMERCADO
+</td>
+<td align="right">
+       .57
+</td>
+<td>
+19/05/2015
+</td>
+<td>
+3804917000137
+</td>
+<td align="right">
+       562
+</td>
+<td>
+FILIAL RJ - CLAUDIO DE SOUZA PACINI
+</td>
+</tr>
+<tr>
+<td align="right">
+      2487
+</td>
+<td>
+GAP HEDGE FUNDO DE INVESTIMENTO MULTIMERCADO
+</td>
+<td align="right">
+       .15
+</td>
+<td>
+19/05/2015
+</td>
+<td>
+1576619000101
+</td>
+<td align="right">
+       562
+</td>
+<td>
+FILIAL RJ - CLAUDIO DE SOUZA PACINI
+</td>
+</tr>
+<tr>
+<td align="right">
+      2738
+</td>
+<td>
+DENISE RAIA DIAS SILVA RABELLO
+</td>
+<td align="right">
+        20
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+99032155768
+</td>
+<td align="right">
+        36
+</td>
+<td>
+MATRIZ SP - JORGE LUCAS AAI-JORGE LUCAS - VAREJO 
+</td>
+</tr>
+<tr>
+<td align="right">
+      2852
+</td>
+<td>
+ANTONIO CARLOS GOUVEIA RODRIGUES
+</td>
+<td align="right">
+      96.4
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+95459170834
+</td>
+<td align="right">
+       250
+</td>
+<td>
+MATRIZ-SP-GRADUAL FUNC/PESSOAS VINCULADAS
+</td>
+</tr>
+<tr>
+<td align="right">
+      3322
+</td>
+<td>
+JOSUE FERREIRA DA SILVA
+</td>
+<td align="right">
+        20
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+17509745845
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+      3775
+</td>
+<td>
+CELSO JOAO JAFET
+</td>
+<td align="right">
+    122.44
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+1422078884
+</td>
+<td align="right">
+        55
+</td>
+<td>
+MATRIZ-SP-NATA-PAULO FLORIANO E MARIO TANAKA-VAR
+</td>
+</tr>
+<tr>
+<td align="right">
+      3894
+</td>
+<td>
+FERNANDA VASSALLO CALDAS
+</td>
+<td align="right">
+    594.72
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+11615446745
+</td>
+<td align="right">
+         6
+</td>
+<td>
+MATRIZ SP -VNETTO AAI-VALTER NETTO-VAREJO 
+</td>
+</tr>
+<tr>
+<td align="right">
+      3895
+</td>
+<td>
+FABIANA VASSALLO CALDAS
+</td>
+<td align="right">
+    586.97
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+10016593766
+</td>
+<td align="right">
+         6
+</td>
+<td>
+MATRIZ SP -VNETTO AAI-VALTER NETTO-VAREJO 
+</td>
+</tr>
+<tr>
+<td align="right">
+      4054
+</td>
+<td>
+FIDES TREASURY FIM CP
+</td>
+<td align="right">
+     46.73
+</td>
+<td>
+20/05/2015
+</td>
+<td>
+5085727000132
+</td>
+<td align="right">
+       564
+</td>
+<td>
+FILIAL RJ - JOAO FERNANDO FERREIRA NETO
+</td>
+</tr>
+<tr>
+<td align="right">
+      4500
+</td>
+<td>
+TAKAAKI YASUMOTO
+</td>
+<td align="right">
+   2172.68
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+9440211822
+</td>
+<td align="right">
+       453
+</td>
+<td>
+MATRIZ-SP-CASTEL INVEST AAI-CASSIO ORTI-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+      5158
+</td>
+<td>
+EXPEDITO LUZ
+</td>
+<td align="right">
+        39
+</td>
+<td>
+20/05/2015
+</td>
+<td>
+14867222020
+</td>
+<td align="right">
+        73
+</td>
+<td>
+PORTO ALEGRE-RS-ICONE AAI-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+      6134
+</td>
+<td>
+HUMIHIRO NISHIZAWA
+</td>
+<td align="right">
+     44.39
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+4121910834
+</td>
+<td align="right">
+       250
+</td>
+<td>
+MATRIZ-SP-GRADUAL FUNC/PESSOAS VINCULADAS
+</td>
+</tr>
+<tr>
+<td align="right">
+      6359
+</td>
+<td>
+GAP LONG SHORT FUNDO DE INVESTIMENTO MULTIMERCADO 
+</td>
+<td align="right">
+       3.2
+</td>
+<td>
+19/05/2015
+</td>
+<td>
+7279819000189
+</td>
+<td align="right">
+       562
+</td>
+<td>
+FILIAL RJ - CLAUDIO DE SOUZA PACINI
+</td>
+</tr>
+<tr>
+<td align="right">
+      6663
+</td>
+<td>
+VALTER NETTO
+</td>
+<td align="right">
+     33.23
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+9557920700
+</td>
+<td align="right">
+       250
+</td>
+<td>
+MATRIZ-SP-GRADUAL FUNC/PESSOAS VINCULADAS
+</td>
+</tr>
+<tr>
+<td align="right">
+      6792
+</td>
+<td>
+EDUARDO MASSAYUKI FUJITA
+</td>
+<td align="right">
+        20
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+5036905890
+</td>
+<td align="right">
+       593
+</td>
+<td>
+Bruno Balassiano
+</td>
+</tr>
+<tr>
+<td align="right">
+      9088
+</td>
+<td>
+CELSO SETOGUTTE
+</td>
+<td align="right">
+     75.28
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+50755218949
+</td>
+<td align="right">
+       578
+</td>
+<td>
+FILIAL RJ - INVESTCAP AAI - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     20455
+</td>
+<td>
+ANA LUIZA ROSCOE SANTORO
+</td>
+<td align="right">
+    621.68
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+3973953619
+</td>
+<td align="right">
+       101
+</td>
+<td>
+FILIAL BH-MG-FARO AAI BASEGRADUAL-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     20866
+</td>
+<td>
+GUSTAVO FREIRE DE AZEVEDO CABRAL
+</td>
+<td align="right">
+    403.72
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+22244190668
+</td>
+<td align="right">
+       101
+</td>
+<td>
+FILIAL BH-MG-FARO AAI BASEGRADUAL-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     20898
+</td>
+<td>
+JOSE DONIZETE PAIFER
+</td>
+<td align="right">
+       400
+</td>
+<td>
+20/05/2015
+</td>
+<td>
+3046696876
+</td>
+<td align="right">
+       595
+</td>
+<td>
+SIDINEI MALAMAN
+</td>
+</tr>
+<tr>
+<td align="right">
+     20899
+</td>
+<td>
+ANDRE DE ALMEIDA FERREIRA
+</td>
+<td align="right">
+     18.15
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+78568722687
+</td>
+<td align="right">
+       101
+</td>
+<td>
+FILIAL BH-MG-FARO AAI BASEGRADUAL-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     23403
+</td>
+<td>
+JULIO COSTA DA SILVA
+</td>
+<td align="right">
+     18.07
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+48741272668
+</td>
+<td align="right">
+       101
+</td>
+<td>
+FILIAL BH-MG-FARO AAI BASEGRADUAL-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     23604
+</td>
+<td>
+GAVEA MACRO MASTER FUNDO DE INVESTIMENTO MULTIMERCADO
+</td>
+<td align="right">
+    284.63
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+8875020000118
+</td>
+<td align="right">
+       340
+</td>
+<td>
+MATRIZ-SP-GRADUAL-MESA INST ASS COMP-VARE E INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     23624
+</td>
+<td>
+MAURICIO PORTA SANTOS FERNANDES
+</td>
+<td align="right">
+     22.57
+</td>
+<td>
+19/05/2015
+</td>
+<td>
+6071941890
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     24041
+</td>
+<td>
+NILSON JORGE DE MORAES
+</td>
+<td align="right">
+      7.67
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+52861031620
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     24162
+</td>
+<td>
+RAQUEL DE OLIVEIRA COSTA SILVA
+</td>
+<td align="right">
+        40
+</td>
+<td>
+19/05/2015
+</td>
+<td>
+32745389653
+</td>
+<td align="right">
+       595
+</td>
+<td>
+SIDINEI MALAMAN
+</td>
+</tr>
+<tr>
+<td align="right">
+     24171
+</td>
+<td>
+WAGNER ROLIM GOES
+</td>
+<td align="right">
+    842.63
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+13417963885
+</td>
+<td align="right">
+       250
+</td>
+<td>
+MATRIZ-SP-GRADUAL FUNC/PESSOAS VINCULADAS
+</td>
+</tr>
+<tr>
+<td align="right">
+     24189
+</td>
+<td>
+ASTOR LUIZ AGNES
+</td>
+<td align="right">
+    371.74
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+2531828753
+</td>
+<td align="right">
+       134
+</td>
+<td>
+MATRIZ SP-WAGNER GOES AAI-WAGNER GOES-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     24420
+</td>
+<td>
+VALDIR ERIVELTON MIRAGLIA
+</td>
+<td align="right">
+    344.62
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+37013165891
+</td>
+<td align="right">
+       134
+</td>
+<td>
+MATRIZ SP-WAGNER GOES AAI-WAGNER GOES-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     24429
+</td>
+<td>
+VALMIR ROBERTO SANGALLI
+</td>
+<td align="right">
+        80
+</td>
+<td>
+19/05/2015
+</td>
+<td>
+24763152068
+</td>
+<td align="right">
+       142
+</td>
+<td>
+FLORIANOPOLIS-SC-STIER AAI-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     24466
+</td>
+<td>
+TELMA REGINA PEREIRA SANTOS RODRIGUES
+</td>
+<td align="right">
+     63.45
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+57602581687
+</td>
+<td align="right">
+       595
+</td>
+<td>
+SIDINEI MALAMAN
+</td>
+</tr>
+<tr>
+<td align="right">
+     24570
+</td>
+<td>
+WALACE PEIXOTO DOS PASSOS
+</td>
+<td align="right">
+     84.67
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+5646767644
+</td>
+<td align="right">
+       101
+</td>
+<td>
+FILIAL BH-MG-FARO AAI BASEGRADUAL-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     24899
+</td>
+<td>
+FLAVIO LIMA CORREA
+</td>
+<td align="right">
+    251.51
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+70520151704
+</td>
+<td align="right">
+       596
+</td>
+<td>
+THIAGO HEIDE SILENCIO
+</td>
+</tr>
+<tr>
+<td align="right">
+     24919
+</td>
+<td>
+SEBASTIAO WANDER DOS SANTOS 
+</td>
+<td align="right">
+    140.34
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+85739340853
+</td>
+<td align="right">
+       595
+</td>
+<td>
+SIDINEI MALAMAN
+</td>
+</tr>
+<tr>
+<td align="right">
+     24942
+</td>
+<td>
+MARCOS AMADEU SILVEIRA CORREIA
+</td>
+<td align="right">
+       390
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+13220881874
+</td>
+<td align="right">
+       343
+</td>
+<td>
+MATRIZ - SP - SALA TATUAPE I - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     26894
+</td>
+<td>
+JOSE ORLANDO GARLA
+</td>
+<td align="right">
+        10
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+8347141835
+</td>
+<td align="right">
+       578
+</td>
+<td>
+FILIAL RJ - INVESTCAP AAI - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     27281
+</td>
+<td>
+FABIO DESLANDES
+</td>
+<td align="right">
+       285
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+92596401720
+</td>
+<td align="right">
+       250
+</td>
+<td>
+MATRIZ-SP-GRADUAL FUNC/PESSOAS VINCULADAS
+</td>
+</tr>
+<tr>
+<td align="right">
+     27381
+</td>
+<td>
+BRUNO DE ESPANA PERNOLD 
+</td>
+<td align="right">
+       180
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+2826374605
+</td>
+<td align="right">
+       101
+</td>
+<td>
+FILIAL BH-MG-FARO AAI BASEGRADUAL-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     27408
+</td>
+<td>
+CHRISTIAN DE AGUIAR 
+</td>
+<td align="right">
+     68.93
+</td>
+<td>
+19/05/2015
+</td>
+<td>
+4035794902
+</td>
+<td align="right">
+       142
+</td>
+<td>
+FLORIANOPOLIS-SC-STIER AAI-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     27724
+</td>
+<td>
+FOCO FUNDO DE INVESTIMENTO MULTIMERCADO PLUS
+</td>
+<td align="right">
+    551.23
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+9172761000103
+</td>
+<td align="right">
+       307
+</td>
+<td>
+FILIAL RJ - CARLA / MIRIAN 
+</td>
+</tr>
+<tr>
+<td align="right">
+     28046
+</td>
+<td>
+DENIS FABIANO KOCHENBORGER 
+</td>
+<td align="right">
+     34.54
+</td>
+<td>
+20/05/2015
+</td>
+<td>
+14063582825
+</td>
+<td align="right">
+       597
+</td>
+<td>
+DANILO BRACCIO PIROZZI
+</td>
+</tr>
+<tr>
+<td align="right">
+     28065
+</td>
+<td>
+CLUBE DE INVESTIMENTO NGB
+</td>
+<td align="right">
+    145.37
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+9342177000140
+</td>
+<td align="right">
+        55
+</td>
+<td>
+MATRIZ-SP-NATA-PAULO FLORIANO E MARIO TANAKA-VAR
+</td>
+</tr>
+<tr>
+<td align="right">
+     28123
+</td>
+<td>
+EUGENIO BARON
+</td>
+<td align="right">
+     21.22
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+789992000
+</td>
+<td align="right">
+       142
+</td>
+<td>
+FLORIANOPOLIS-SC-STIER AAI-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     28325
+</td>
+<td>
+VALMIR LUIZ GROTTO
+</td>
+<td align="right">
+     39.98
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+43520456087
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     28603
+</td>
+<td>
+FIDES ABSOLUTO FUNDO DE INVESTIMENTO MULTIMERCADO
+</td>
+<td align="right">
+    654.69
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+9141867000131
+</td>
+<td align="right">
+       564
+</td>
+<td>
+FILIAL RJ - JOAO FERNANDO FERREIRA NETO
+</td>
+</tr>
+<tr>
+<td align="right">
+     29139
+</td>
+<td>
+CLUBE DE INVESTIMENTO JABUCA
+</td>
+<td align="right">
+     13.65
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+9482549000134
+</td>
+<td align="right">
+        55
+</td>
+<td>
+MATRIZ-SP-NATA-PAULO FLORIANO E MARIO TANAKA-VAR
+</td>
+</tr>
+<tr>
+<td align="right">
+     29401
+</td>
+<td>
+YVAN HERMELINO RIBEIRO
+</td>
+<td align="right">
+    389.41
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+42315115
+</td>
+<td align="right">
+       142
+</td>
+<td>
+FLORIANOPOLIS-SC-STIER AAI-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     29829
+</td>
+<td>
+GERALDO JANUARIO CHAVES
+</td>
+<td align="right">
+        20
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+9195084649
+</td>
+<td align="right">
+       495
+</td>
+<td>
+GOIANIA-GO-VERSATIL AAI-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     30164
+</td>
+<td>
+FLAVIO LOPES NETO
+</td>
+<td align="right">
+        20
+</td>
+<td>
+19/05/2015
+</td>
+<td>
+3156998680
+</td>
+<td align="right">
+       101
+</td>
+<td>
+FILIAL BH-MG-FARO AAI BASEGRADUAL-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     30324
+</td>
+<td>
+EDGAR RAFAEL SAFDIE
+</td>
+<td align="right">
+  12021.59
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+3009174810
+</td>
+<td align="right">
+       320
+</td>
+<td>
+MATRIZ SP - CALIL/TON
+</td>
+</tr>
+<tr>
+<td align="right">
+     30553
+</td>
+<td>
+GAVEA MACRO MASTER FUNDO DE INVESTIMENTO MULTIMERCADO IE
+</td>
+<td align="right">
+    736.11
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+9289155000164
+</td>
+<td align="right">
+       340
+</td>
+<td>
+MATRIZ-SP-GRADUAL-MESA INST ASS COMP-VARE E INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     30579
+</td>
+<td>
+JACI MAURO FRANZ
+</td>
+<td align="right">
+     69.62
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+21604401915
+</td>
+<td align="right">
+       142
+</td>
+<td>
+FLORIANOPOLIS-SC-STIER AAI-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     31209
+</td>
+<td>
+WALTON DE FREITAS SANTOS MOURA
+</td>
+<td align="right">
+    409.85
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+4978600820
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     31257
+</td>
+<td>
+PAULO JOSE CORREIA RIBEIRO
+</td>
+<td align="right">
+       168
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+31156550610
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     31623
+</td>
+<td>
+ADRIANO ZAMBIASI
+</td>
+<td align="right">
+     45.39
+</td>
+<td>
+19/05/2015
+</td>
+<td>
+56366256004
+</td>
+<td align="right">
+        73
+</td>
+<td>
+PORTO ALEGRE-RS-ICONE AAI-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     31717
+</td>
+<td>
+MANUEL GENEZIO MENDES
+</td>
+<td align="right">
+    140.75
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+337820406
+</td>
+<td align="right">
+       196
+</td>
+<td>
+JP-PB-GBMF AA-FERNANDO,GAIAO,FABIO-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     32585
+</td>
+<td>
+RENATA ERCILIA RIBEIRO DO AMARAL LINS
+</td>
+<td align="right">
+        20
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+78866278491
+</td>
+<td align="right">
+       595
+</td>
+<td>
+SIDINEI MALAMAN
+</td>
+</tr>
+<tr>
+<td align="right">
+     32702
+</td>
+<td>
+HAROLDO FAGANELLO
+</td>
+<td align="right">
+        20
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+4443877819
+</td>
+<td align="right">
+       340
+</td>
+<td>
+MATRIZ-SP-GRADUAL-MESA INST ASS COMP-VARE E INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     32932
+</td>
+<td>
+JOSE DELORENZO MACEDO
+</td>
+<td align="right">
+       100
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+480665400
+</td>
+<td align="right">
+       196
+</td>
+<td>
+JP-PB-GBMF AA-FERNANDO,GAIAO,FABIO-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     33083
+</td>
+<td>
+FIM EXTREME V
+</td>
+<td align="right">
+   5541.97
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+7996493000100
+</td>
+<td align="right">
+       307
+</td>
+<td>
+FILIAL RJ - CARLA / MIRIAN 
+</td>
+</tr>
+<tr>
+<td align="right">
+     33150
+</td>
+<td>
+VINICIUS D ANTONIO
+</td>
+<td align="right">
+    611.51
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+75005182772
+</td>
+<td align="right">
+       307
+</td>
+<td>
+FILIAL RJ - CARLA / MIRIAN 
+</td>
+</tr>
+<tr>
+<td align="right">
+     33160
+</td>
+<td>
+JOSE ALVES CAMPOS 
+</td>
+<td align="right">
+       110
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+1609777468
+</td>
+<td align="right">
+       196
+</td>
+<td>
+JP-PB-GBMF AA-FERNANDO,GAIAO,FABIO-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     33883
+</td>
+<td>
+JOAO BOSCO DA SILVA 
+</td>
+<td align="right">
+      59.7
+</td>
+<td>
+19/05/2015
+</td>
+<td>
+25127080478
+</td>
+<td align="right">
+       196
+</td>
+<td>
+JP-PB-GBMF AA-FERNANDO,GAIAO,FABIO-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     33965
+</td>
+<td>
+AMARO LAFAYETTE NOBRE FORMIGA
+</td>
+<td align="right">
+      2.49
+</td>
+<td>
+20/05/2015
+</td>
+<td>
+652466400
+</td>
+<td align="right">
+       196
+</td>
+<td>
+JP-PB-GBMF AA-FERNANDO,GAIAO,FABIO-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     33986
+</td>
+<td>
+JOSE CARLOS DE CASTRO
+</td>
+<td align="right">
+     61.41
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+16427505653
+</td>
+<td align="right">
+       593
+</td>
+<td>
+Bruno Balassiano
+</td>
+</tr>
+<tr>
+<td align="right">
+     34032
+</td>
+<td>
+STENIO PIRES GRASSI DOS SANTOS
+</td>
+<td align="right">
+     20.04
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+53528441534
+</td>
+<td align="right">
+       196
+</td>
+<td>
+JP-PB-GBMF AA-FERNANDO,GAIAO,FABIO-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     34069
+</td>
+<td>
+RIO ARBITRAGEM FUNDO DE INVESTIMENTO MULTIMERCADO
+</td>
+<td align="right">
+    289.33
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+7967080000106
+</td>
+<td align="right">
+       352
+</td>
+<td>
+FILIAL RJ -TEREZINHA PACHECO
+</td>
+</tr>
+<tr>
+<td align="right">
+     34232
+</td>
+<td>
+WILSON RIBEIRO DE MORAES FILHO 
+</td>
+<td align="right">
+    273.58
+</td>
+<td>
+20/05/2015
+</td>
+<td>
+13919210468
+</td>
+<td align="right">
+       196
+</td>
+<td>
+JP-PB-GBMF AA-FERNANDO,GAIAO,FABIO-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     34423
+</td>
+<td>
+HENRIQUE DE PAULA CARDINALI
+</td>
+<td align="right">
+    103.98
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+1357698682
+</td>
+<td align="right">
+       250
+</td>
+<td>
+MATRIZ-SP-GRADUAL FUNC/PESSOAS VINCULADAS
+</td>
+</tr>
+<tr>
+<td align="right">
+     34725
+</td>
+<td>
+EDISON JACOB FORNER DOS SANTOS
+</td>
+<td align="right">
+        40
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+9090550178
+</td>
+<td align="right">
+       116
+</td>
+<td>
+ALINE CARVALHO TITONI AAI
+</td>
+</tr>
+<tr>
+<td align="right">
+     34737
+</td>
+<td>
+LUIS GUILHERME DALL  AGNOL
+</td>
+<td align="right">
+        30
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+3245494904
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     34795
+</td>
+<td>
+CLAUDIO VERGUEIRO COSTA
+</td>
+<td align="right">
+    127.72
+</td>
+<td>
+19/05/2015
+</td>
+<td>
+20182519880
+</td>
+<td align="right">
+       593
+</td>
+<td>
+Bruno Balassiano
+</td>
+</tr>
+<tr>
+<td align="right">
+     35037
+</td>
+<td>
+HORACIO HENRIQUE LAMAS BATISTA PEREIRA
+</td>
+<td align="right">
+    169.08
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+85128155668
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     35353
+</td>
+<td>
+MIRTES DAVILA LINS 
+</td>
+<td align="right">
+    109.01
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+13168169404
+</td>
+<td align="right">
+       196
+</td>
+<td>
+JP-PB-GBMF AA-FERNANDO,GAIAO,FABIO-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     35462
+</td>
+<td>
+SILVER CHANNEL CONSULTORIA E PUBLICIDADE LTDA
+</td>
+<td align="right">
+    1316.9
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+8726464000191
+</td>
+<td align="right">
+       484
+</td>
+<td>
+FILIAL RJ - INVESTCAP VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     35888
+</td>
+<td>
+FLAVIA BOZZOLA PIMENTA
+</td>
+<td align="right">
+        50
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+29355708807
+</td>
+<td align="right">
+       578
+</td>
+<td>
+FILIAL RJ - INVESTCAP AAI - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     36216
+</td>
+<td>
+ANTONIO HUGO DA CUNHA XIMENES
+</td>
+<td align="right">
+    280.92
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+60197676472
+</td>
+<td align="right">
+       196
+</td>
+<td>
+JP-PB-GBMF AA-FERNANDO,GAIAO,FABIO-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     36952
+</td>
+<td>
+KADIMA MASTER FUNDO DE INVESTIMENTO MULTIMERCADO
+</td>
+<td align="right">
+   1387.79
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+9412694000149
+</td>
+<td align="right">
+       402
+</td>
+<td>
+FILIAL RJ - ANDERSON LEAL DA SILVA
+</td>
+</tr>
+<tr>
+<td align="right">
+     37047
+</td>
+<td>
+WAGNER WILIAM DA SILVA
+</td>
+<td align="right">
+        20
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+62859196900
+</td>
+<td align="right">
+         6
+</td>
+<td>
+MATRIZ SP -VNETTO AAI-VALTER NETTO-VAREJO 
+</td>
+</tr>
+<tr>
+<td align="right">
+     37184
+</td>
+<td>
+MARCIO AUGUSTO RIBEIRO FERREIRA
+</td>
+<td align="right">
+    335.89
+</td>
+<td>
+20/05/2015
+</td>
+<td>
+10154510807
+</td>
+<td align="right">
+       329
+</td>
+<td>
+RIB PRETO-SP-FORS AAI-SERGIO-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     37241
+</td>
+<td>
+ROBERTO PEREIRA DUARTE
+</td>
+<td align="right">
+    636.81
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+18714851857
+</td>
+<td align="right">
+       343
+</td>
+<td>
+MATRIZ - SP - SALA TATUAPE I - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     37952
+</td>
+<td>
+LEGAN SPECIAL FUNDO DE INVESTIMENTO MULTIMERCADO
+</td>
+<td align="right">
+    666.61
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+10447046000107
+</td>
+<td align="right">
+       562
+</td>
+<td>
+FILIAL RJ - CLAUDIO DE SOUZA PACINI
+</td>
+</tr>
+<tr>
+<td align="right">
+     38175
+</td>
+<td>
+ANDERSON APARECIDO MARTINES COSTA
+</td>
+<td align="right">
+    337.72
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+18047802860
+</td>
+<td align="right">
+       343
+</td>
+<td>
+MATRIZ - SP - SALA TATUAPE I - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     38345
+</td>
+<td>
+ANTONIO CARLOS GIMENES DE LIMA
+</td>
+<td align="right">
+      4.44
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+7223682833
+</td>
+<td align="right">
+       343
+</td>
+<td>
+MATRIZ - SP - SALA TATUAPE I - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     38384
+</td>
+<td>
+BANCO BTG PACTUAL SA
+</td>
+<td align="right">
+   4388.26
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+30306294000145
+</td>
+<td align="right">
+       535
+</td>
+<td>
+FILIAL-RJ-MESA COMPARTILHADA-INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     38761
+</td>
+<td>
+DAVI SILVERIO DE SIQUEIRA
+</td>
+<td align="right">
+    589.65
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+8337979801
+</td>
+<td align="right">
+       343
+</td>
+<td>
+MATRIZ - SP - SALA TATUAPE I - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     39071
+</td>
+<td>
+AFONSO APARECIDO PEREIRA
+</td>
+<td align="right">
+    438.83
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+17627526892
+</td>
+<td align="right">
+       343
+</td>
+<td>
+MATRIZ - SP - SALA TATUAPE I - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     39179
+</td>
+<td>
+JOSE ROBERTO ALVES DE OLIVEIRA
+</td>
+<td align="right">
+     182.4
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+8737672843
+</td>
+<td align="right">
+       343
+</td>
+<td>
+MATRIZ - SP - SALA TATUAPE I - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     39733
+</td>
+<td>
+LFR FUNDO DE INVESTIMENTO MULTIMERCADO
+</td>
+<td align="right">
+   1871.18
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+5063643000106
+</td>
+<td align="right">
+       402
+</td>
+<td>
+FILIAL RJ - ANDERSON LEAL DA SILVA
+</td>
+</tr>
+<tr>
+<td align="right">
+     39769
+</td>
+<td>
+SIDICLEY DE FREITAS LEITE
+</td>
+<td align="right">
+    587.17
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+19068270877
+</td>
+<td align="right">
+       343
+</td>
+<td>
+MATRIZ - SP - SALA TATUAPE I - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     39919
+</td>
+<td>
+ROBERTO TADEU RAMOS CARNEIRO
+</td>
+<td align="right">
+   1168.57
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+2949336892
+</td>
+<td align="right">
+       491
+</td>
+<td>
+SALA TATUAPE III-SP-CLIENTES ATIBAIA-VAREJO 
+</td>
+</tr>
+<tr>
+<td align="right">
+     39964
+</td>
+<td>
+GUILHERME GOMES PINTO FREDDO
+</td>
+<td align="right">
+     16.76
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+34383149839
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     39990
+</td>
+<td>
+ALEXANDRE DA COSTA SOARES
+</td>
+<td align="right">
+     61.12
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+2310708
+</td>
+<td align="right">
+       250
+</td>
+<td>
+MATRIZ-SP-GRADUAL FUNC/PESSOAS VINCULADAS
+</td>
+</tr>
+<tr>
+<td align="right">
+     40190
+</td>
+<td>
+JOAO TRIVELATO NETO
+</td>
+<td align="right">
+        30
+</td>
+<td>
+20/05/2015
+</td>
+<td>
+70045151172
+</td>
+<td align="right">
+       578
+</td>
+<td>
+FILIAL RJ - INVESTCAP AAI - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     40205
+</td>
+<td>
+ROGERIO HENRIQUE RINALDI
+</td>
+<td align="right">
+     93.01
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+18317683800
+</td>
+<td align="right">
+       327
+</td>
+<td>
+RIBEIRAO PRETO-SP-FORS AAI-RENE-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     41510
+</td>
+<td>
+MARIA DE FATIMA PERDIGAO SALES
+</td>
+<td align="right">
+    771.86
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+14488027172
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     41562
+</td>
+<td>
+ROBERTO CARLOS BRAGA
+</td>
+<td align="right">
+      79.6
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+59450410097
+</td>
+<td align="right">
+       142
+</td>
+<td>
+FLORIANOPOLIS-SC-STIER AAI-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     41622
+</td>
+<td>
+FLAVIO NAKAOKA
+</td>
+<td align="right">
+    171.31
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+28780397859
+</td>
+<td align="right">
+       343
+</td>
+<td>
+MATRIZ - SP - SALA TATUAPE I - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     41699
+</td>
+<td>
+CARLOS JOSE TRUJILLO
+</td>
+<td align="right">
+       470
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+8229284857
+</td>
+<td align="right">
+       343
+</td>
+<td>
+MATRIZ - SP - SALA TATUAPE I - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     41708
+</td>
+<td>
+CLAUDIO RODRIGUES LAGO 
+</td>
+<td align="right">
+     82.03
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+2108932810
+</td>
+<td align="right">
+       593
+</td>
+<td>
+Bruno Balassiano
+</td>
+</tr>
+<tr>
+<td align="right">
+     41851
+</td>
+<td>
+EMANUEL GUERRA DE BARROS FILHO
+</td>
+<td align="right">
+        30
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+13956647491
+</td>
+<td align="right">
+       196
+</td>
+<td>
+JP-PB-GBMF AA-FERNANDO,GAIAO,FABIO-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     42044
+</td>
+<td>
+CARLOS ALBERTO EPISCOPO
+</td>
+<td align="right">
+     31.71
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+17435103810
+</td>
+<td align="right">
+       410
+</td>
+<td>
+MATRIZ-SP-LUGANO AAI - ELIEZER PEREIRA 2 - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     42130
+</td>
+<td>
+EUGENIO VILA KEPPLER 
+</td>
+<td align="right">
+        65
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+57294410887
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     42256
+</td>
+<td>
+CLAYTON SOBRINHO DOS SANTOS
+</td>
+<td align="right">
+     50.76
+</td>
+<td>
+20/05/2015
+</td>
+<td>
+21489042806
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     42822
+</td>
+<td>
+YORDAN MOREIRA DELGADO
+</td>
+<td align="right">
+     511.4
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+55247474449
+</td>
+<td align="right">
+       196
+</td>
+<td>
+JP-PB-GBMF AA-FERNANDO,GAIAO,FABIO-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     43573
+</td>
+<td>
+WAGNER PERES
+</td>
+<td align="right">
+    367.13
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+4116306878
+</td>
+<td align="right">
+       343
+</td>
+<td>
+MATRIZ - SP - SALA TATUAPE I - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     43625
+</td>
+<td>
+JURANDIR PINHEIRO DE CASTRO
+</td>
+<td align="right">
+     12.38
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+4296186892
+</td>
+<td align="right">
+       343
+</td>
+<td>
+MATRIZ - SP - SALA TATUAPE I - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     43639
+</td>
+<td>
+BANCO DAYCOVAL S/A
+</td>
+<td align="right">
+      1.17
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+62232889000190
+</td>
+<td align="right">
+       304
+</td>
+<td>
+MATRIZ SP - ROBSON SERGIO VIEIRA - DAYCOVAL
+</td>
+</tr>
+<tr>
+<td align="right">
+     43647
+</td>
+<td>
+MARCO AURELIO SOARES PEREIRA
+</td>
+<td align="right">
+        60
+</td>
+<td>
+20/05/2015
+</td>
+<td>
+56210590004
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     44125
+</td>
+<td>
+RODAMAI FUNDO DE INVESTIMENTO MULTIMERCADO
+</td>
+<td align="right">
+   1561.75
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+7521980000117
+</td>
+<td align="right">
+       307
+</td>
+<td>
+FILIAL RJ - CARLA / MIRIAN 
+</td>
+</tr>
+<tr>
+<td align="right">
+     44155
+</td>
+<td>
+CLUBE DE INVESTIMENTO FAMILIA OMC
+</td>
+<td align="right">
+     43.09
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+8279164000101
+</td>
+<td align="right">
+       595
+</td>
+<td>
+SIDINEI MALAMAN
+</td>
+</tr>
+<tr>
+<td align="right">
+     44299
+</td>
+<td>
+KONDOR EQUITY TOTAL FUNDO DE INVESTIMENTO MULTIMERCADO
+</td>
+<td align="right">
+   4511.33
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+12430199000177
+</td>
+<td align="right">
+       535
+</td>
+<td>
+FILIAL-RJ-MESA COMPARTILHADA-INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     44752
+</td>
+<td>
+NELSON TEIXEIRA NASCIMENTO
+</td>
+<td align="right">
+    184.85
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+27420400644
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     44764
+</td>
+<td>
+CARLOS ALBERTO ALVES DE SOUZA
+</td>
+<td align="right">
+    206.48
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+4744686826
+</td>
+<td align="right">
+       343
+</td>
+<td>
+MATRIZ - SP - SALA TATUAPE I - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     44935
+</td>
+<td>
+DANIEL ZERBINI GUIMARAES
+</td>
+<td align="right">
+    142.31
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+31901577821
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     45132
+</td>
+<td>
+CARLOS CASTILHO DOMINGOS SILVA 
+</td>
+<td align="right">
+     52.23
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+19994745620
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     45174
+</td>
+<td>
+ERLAN PAULO APARECIDO CRUZ
+</td>
+<td align="right">
+   2487.04
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+19107707878
+</td>
+<td align="right">
+       558
+</td>
+<td>
+FILIAL - RJ - TATUAPE CENTRO - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     45382
+</td>
+<td>
+THIAGO HENRIQUE SENS
+</td>
+<td align="right">
+    312.41
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+5021483900
+</td>
+<td align="right">
+       142
+</td>
+<td>
+FLORIANOPOLIS-SC-STIER AAI-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     45426
+</td>
+<td>
+MARCO ANTONIO VALOSSI
+</td>
+<td align="right">
+    104.55
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+99262770804
+</td>
+<td align="right">
+       343
+</td>
+<td>
+MATRIZ - SP - SALA TATUAPE I - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     45500
+</td>
+<td>
+RICARDO UBIRAJARA DE MEDEIROS 
+</td>
+<td align="right">
+       3.8
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+12828416453
+</td>
+<td align="right">
+       545
+</td>
+<td>
+FILIAL - RJ - INVESTCAP - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     46691
+</td>
+<td>
+DOUGLAS ALFREDO BIGAL
+</td>
+<td align="right">
+    460.41
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+19527456835
+</td>
+<td align="right">
+       596
+</td>
+<td>
+THIAGO HEIDE SILENCIO
+</td>
+</tr>
+<tr>
+<td align="right">
+     46702
+</td>
+<td>
+PEDRO CESAR MACERA
+</td>
+<td align="right">
+    399.18
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+7086802832
+</td>
+<td align="right">
+       597
+</td>
+<td>
+DANILO BRACCIO PIROZZI
+</td>
+</tr>
+<tr>
+<td align="right">
+     47261
+</td>
+<td>
+DJALMA GOMES DE MOURA
+</td>
+<td align="right">
+    229.78
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+12389986404
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     47620
+</td>
+<td>
+CARLOS CLAYTON DA COSTA COELHO
+</td>
+<td align="right">
+    404.68
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+41065050100
+</td>
+<td align="right">
+       545
+</td>
+<td>
+FILIAL - RJ - INVESTCAP - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     47637
+</td>
+<td>
+JOAO CARLOS CORTI SANTO
+</td>
+<td align="right">
+    589.84
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+3854112866
+</td>
+<td align="right">
+       343
+</td>
+<td>
+MATRIZ - SP - SALA TATUAPE I - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     47787
+</td>
+<td>
+DANIEL SILVA CAVALCANTI
+</td>
+<td align="right">
+    224.41
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+7103963843
+</td>
+<td align="right">
+       491
+</td>
+<td>
+SALA TATUAPE III-SP-CLIENTES ATIBAIA-VAREJO 
+</td>
+</tr>
+<tr>
+<td align="right">
+     47795
+</td>
+<td>
+RACHEL SOUTO MARETTO
+</td>
+<td align="right">
+    158.05
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+15229851821
+</td>
+<td align="right">
+       343
+</td>
+<td>
+MATRIZ - SP - SALA TATUAPE I - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     48030
+</td>
+<td>
+FELICIO CASALE FILHO
+</td>
+<td align="right">
+    227.32
+</td>
+<td>
+20/05/2015
+</td>
+<td>
+276937830
+</td>
+<td align="right">
+       595
+</td>
+<td>
+SIDINEI MALAMAN
+</td>
+</tr>
+<tr>
+<td align="right">
+     48146
+</td>
+<td>
+CESAR EDUARDO DE OLIVEIRA RIBEIRO
+</td>
+<td align="right">
+    102.21
+</td>
+<td>
+20/05/2015
+</td>
+<td>
+14185754884
+</td>
+<td align="right">
+       545
+</td>
+<td>
+FILIAL - RJ - INVESTCAP - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     48250
+</td>
+<td>
+MIQUEIAS MOURA DE PAIVA
+</td>
+<td align="right">
+        20
+</td>
+<td>
+19/05/2015
+</td>
+<td>
+21573935875
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     48570
+</td>
+<td>
+JOAO CARLOS FERNANDES PIMENTA
+</td>
+<td align="right">
+      59.6
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+60781289815
+</td>
+<td align="right">
+        55
+</td>
+<td>
+MATRIZ-SP-NATA-PAULO FLORIANO E MARIO TANAKA-VAR
+</td>
+</tr>
+<tr>
+<td align="right">
+     48728
+</td>
+<td>
+SQUADRA MASTER LONG-BIASED FUNDO DE INVESTIMENTO EM ACOES
+</td>
+<td align="right">
+    319.21
+</td>
+<td>
+19/05/2015
+</td>
+<td>
+9412648000140
+</td>
+<td align="right">
+       433
+</td>
+<td>
+FILIAL RJ - ADRIANA RUNTE 
+</td>
+</tr>
+<tr>
+<td align="right">
+     48775
+</td>
+<td>
+LEONARDO SILVA DE JESUS
+</td>
+<td align="right">
+     45.74
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+6132570810
+</td>
+<td align="right">
+       595
+</td>
+<td>
+SIDINEI MALAMAN
+</td>
+</tr>
+<tr>
+<td align="right">
+     49012
+</td>
+<td>
+MANUEL ANTONINO MOREIRA MARQUES
+</td>
+<td align="right">
+        10
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+48342890791
+</td>
+<td align="right">
+       484
+</td>
+<td>
+FILIAL RJ - INVESTCAP VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     49043
+</td>
+<td>
+CELSO LUIZ SGUARIO
+</td>
+<td align="right">
+     70.85
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+1338166808
+</td>
+<td align="right">
+       593
+</td>
+<td>
+Bruno Balassiano
+</td>
+</tr>
+<tr>
+<td align="right">
+     49092
+</td>
+<td>
+NIVALDO DE OLIVEIRA SOUSA
+</td>
+<td align="right">
+     37.49
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+41944569200
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     49159
+</td>
+<td>
+CARLOS MOCHNACS DE SOUZA
+</td>
+<td align="right">
+        10
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+29899935840
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     49220
+</td>
+<td>
+EDIVAN BAGATINI
+</td>
+<td align="right">
+     44.05
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+52960234120
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     49263
+</td>
+<td>
+EDIMILSON DOS SANTOS AUGUSTO
+</td>
+<td align="right">
+       778
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+8361157832
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     49635
+</td>
+<td>
+ALEXANDRO SOUZA CAMPOS
+</td>
+<td align="right">
+    155.13
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+63493306172
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     49653
+</td>
+<td>
+RICARDO HOSKEN VIEIRA
+</td>
+<td align="right">
+        20
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+16057902653
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     49785
+</td>
+<td>
+ROBSON CERQUEIRA SOUZA
+</td>
+<td align="right">
+    356.54
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+15530097898
+</td>
+<td align="right">
+       593
+</td>
+<td>
+Bruno Balassiano
+</td>
+</tr>
+<tr>
+<td align="right">
+     49929
+</td>
+<td>
+TIAGO LASKARIS DE OLIVEIRA
+</td>
+<td align="right">
+        30
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+30332987884
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     49985
+</td>
+<td>
+HELIO RIBEIRO TIAGO
+</td>
+<td align="right">
+   1844.46
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+99691337134
+</td>
+<td align="right">
+       593
+</td>
+<td>
+Bruno Balassiano
+</td>
+</tr>
+<tr>
+<td align="right">
+     49995
+</td>
+<td>
+PAULO KASUO NOBEMASA
+</td>
+<td align="right">
+     122.2
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+64066959849
+</td>
+<td align="right">
+        55
+</td>
+<td>
+MATRIZ-SP-NATA-PAULO FLORIANO E MARIO TANAKA-VAR
+</td>
+</tr>
+<tr>
+<td align="right">
+     50118
+</td>
+<td>
+RODRIGO FERNANDES OLIVEIRA
+</td>
+<td align="right">
+    127.29
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+24984636823
+</td>
+<td align="right">
+       331
+</td>
+<td>
+RIBEIRAO PRETO-SP-FORS AAI-RAFAEL-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     50210
+</td>
+<td>
+JAIME FRANCISCO DE ALMEIDA JOHNSON
+</td>
+<td align="right">
+    528.64
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+22155082053
+</td>
+<td align="right">
+       473
+</td>
+<td>
+PORTO ALEGRE-RS-WIB AAI-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     50229
+</td>
+<td>
+FABIANA LUCIA DE REZENDE
+</td>
+<td align="right">
+        80
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+90056442149
+</td>
+<td align="right">
+       495
+</td>
+<td>
+GOIANIA-GO-VERSATIL AAI-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     50361
+</td>
+<td>
+MARIO ROIZENBRUCH
+</td>
+<td align="right">
+    145.61
+</td>
+<td>
+19/05/2015
+</td>
+<td>
+20021968691
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     50420
+</td>
+<td>
+LUIS ANTONIO ANTUNES
+</td>
+<td align="right">
+    591.02
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+50852477600
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     50582
+</td>
+<td>
+ROBERT CHARLES STEINBERG
+</td>
+<td align="right">
+    277.66
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+55025129753
+</td>
+<td align="right">
+       484
+</td>
+<td>
+FILIAL RJ - INVESTCAP VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     50691
+</td>
+<td>
+WELLINGTON UTUARI LACERDA
+</td>
+<td align="right">
+    749.94
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+5262337880
+</td>
+<td align="right">
+       491
+</td>
+<td>
+SALA TATUAPE III-SP-CLIENTES ATIBAIA-VAREJO 
+</td>
+</tr>
+<tr>
+<td align="right">
+     50747
+</td>
+<td>
+PERFIN LONG SHORT PLUS MASTER FIM
+</td>
+<td align="right">
+     551.8
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+13855024000174
+</td>
+<td align="right">
+        41
+</td>
+<td>
+MATRIZ SP - NERVAL BRAGA
+</td>
+</tr>
+<tr>
+<td align="right">
+     50768
+</td>
+<td>
+FERNANDO CHERTMAN
+</td>
+<td align="right">
+    132.56
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+31402670885
+</td>
+<td align="right">
+       593
+</td>
+<td>
+Bruno Balassiano
+</td>
+</tr>
+<tr>
+<td align="right">
+     50923
+</td>
+<td>
+ANNA CRISTINA AYUMI KUNIHIRO MURATA
+</td>
+<td align="right">
+        20
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+41559518863
+</td>
+<td align="right">
+       240
+</td>
+<td>
+BASTOS-SP-HITAKA&amp;SASAKAAI-NILTOM E MARCIA-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     50935
+</td>
+<td>
+ADEMIR DE MELLO
+</td>
+<td align="right">
+        20
+</td>
+<td>
+20/05/2015
+</td>
+<td>
+4350812687
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     51055
+</td>
+<td>
+CLUBE DE INVESTIMENTO GARANTIA
+</td>
+<td align="right">
+   1360.73
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+15626244000151
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     51200
+</td>
+<td>
+JOSE ROBERTO SARAIVA GOMES DA COSTA
+</td>
+<td align="right">
+     587.1
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+79775098734
+</td>
+<td align="right">
+       511
+</td>
+<td>
+FILIAL RJ - FERNANDO BARBOSA
+</td>
+</tr>
+<tr>
+<td align="right">
+     51201
+</td>
+<td>
+JULIANO CESAR LEMOS
+</td>
+<td align="right">
+       640
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+11124337830
+</td>
+<td align="right">
+       343
+</td>
+<td>
+MATRIZ - SP - SALA TATUAPE I - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     51452
+</td>
+<td>
+PAULO ROBERTO RAMOS
+</td>
+<td align="right">
+     279.8
+</td>
+<td>
+19/05/2015
+</td>
+<td>
+48019984704
+</td>
+<td align="right">
+       597
+</td>
+<td>
+DANILO BRACCIO PIROZZI
+</td>
+</tr>
+<tr>
+<td align="right">
+     51530
+</td>
+<td>
+ATACAMA MULTIMERCADO FUNDO DE INVESTIMENTO
+</td>
+<td align="right">
+       .32
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+4885503000142
+</td>
+<td align="right">
+       320
+</td>
+<td>
+MATRIZ SP - CALIL/TON
+</td>
+</tr>
+<tr>
+<td align="right">
+     51577
+</td>
+<td>
+ABIDIEL PINTO RABELO
+</td>
+<td align="right">
+   2629.72
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+5854768291
+</td>
+<td align="right">
+       331
+</td>
+<td>
+RIBEIRAO PRETO-SP-FORS AAI-RAFAEL-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     51652
+</td>
+<td>
+JOSE BENTES DE ARAUJO
+</td>
+<td align="right">
+    447.93
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+3428362349
+</td>
+<td align="right">
+       484
+</td>
+<td>
+FILIAL RJ - INVESTCAP VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     51655
+</td>
+<td>
+MARCELINO BISPO DO SACRAMENTO
+</td>
+<td align="right">
+     694.8
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+386049572
+</td>
+<td align="right">
+       137
+</td>
+<td>
+MATRIZ SP-STOCK MASTER-FERNANDO NARCHI-VAREJO 
+</td>
+</tr>
+<tr>
+<td align="right">
+     51997
+</td>
+<td>
+EDUARDO DA NOVA BONATO MIR PALMER 
+</td>
+<td align="right">
+      5.77
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+25389795873
+</td>
+<td align="right">
+       343
+</td>
+<td>
+MATRIZ - SP - SALA TATUAPE I - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     52197
+</td>
+<td>
+RICARDO DOS REIS FALCAO DE QUEIROZ
+</td>
+<td align="right">
+     33.27
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+26632489753
+</td>
+<td align="right">
+       484
+</td>
+<td>
+FILIAL RJ - INVESTCAP VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     52293
+</td>
+<td>
+DANILO DIOGENES
+</td>
+<td align="right">
+     38.96
+</td>
+<td>
+20/05/2015
+</td>
+<td>
+70527458104
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     52364
+</td>
+<td>
+ADEMIS DEBONI VITTI
+</td>
+<td align="right">
+    304.28
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+19213974892
+</td>
+<td align="right">
+       545
+</td>
+<td>
+FILIAL - RJ - INVESTCAP - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     52406
+</td>
+<td>
+EDUARDO DE OLIVEIRA MARTINS
+</td>
+<td align="right">
+   1430.34
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+66532108715
+</td>
+<td align="right">
+       539
+</td>
+<td>
+FILIAL RJ - FELIPE MAGALHAES
+</td>
+</tr>
+<tr>
+<td align="right">
+     52438
+</td>
+<td>
+DIEGO HENRIQUE ARAUJO DOS SANTOS
+</td>
+<td align="right">
+        10
+</td>
+<td>
+20/05/2015
+</td>
+<td>
+8335412693
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     52444
+</td>
+<td>
+JOSE DIAS DA SILVA
+</td>
+<td align="right">
+    158.54
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+50807188700
+</td>
+<td align="right">
+       509
+</td>
+<td>
+FILIAL RJ - CARLOS AUGUSTO DALE FILHO
+</td>
+</tr>
+<tr>
+<td align="right">
+     52457
+</td>
+<td>
+NELSON RICARDO LIMA
+</td>
+<td align="right">
+       750
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+85181994768
+</td>
+<td align="right">
+       558
+</td>
+<td>
+FILIAL - RJ - TATUAPE CENTRO - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     52553
+</td>
+<td>
+ELIEZER DE OLIVEIRA PINTO
+</td>
+<td align="right">
+        60
+</td>
+<td>
+19/05/2015
+</td>
+<td>
+6141844600
+</td>
+<td align="right">
+       506
+</td>
+<td>
+MESA COMERCIAL PF - RJ - INVESTCAP AAIS - BASE 4
+</td>
+</tr>
+<tr>
+<td align="right">
+     52559
+</td>
+<td>
+ROGER MAIA DE CARVALHO
+</td>
+<td align="right">
+      14.6
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+76246620
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     52561
+</td>
+<td>
+MARCUS VINICIUS AZEN
+</td>
+<td align="right">
+         5
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+97142557753
+</td>
+<td align="right">
+       558
+</td>
+<td>
+FILIAL - RJ - TATUAPE CENTRO - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     52638
+</td>
+<td>
+MB PARTICIPACOES SOCIETARIAS LTDA
+</td>
+<td align="right">
+      4.84
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+9283773000105
+</td>
+<td align="right">
+       558
+</td>
+<td>
+FILIAL - RJ - TATUAPE CENTRO - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     52699
+</td>
+<td>
+RICARDO CAPITANI DE CASTRO E SILVA
+</td>
+<td align="right">
+     200.2
+</td>
+<td>
+20/05/2015
+</td>
+<td>
+29985471768
+</td>
+<td align="right">
+       484
+</td>
+<td>
+FILIAL RJ - INVESTCAP VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     52748
+</td>
+<td>
+COUTO YOSHIYASU
+</td>
+<td align="right">
+    633.72
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+5847389868
+</td>
+<td align="right">
+       134
+</td>
+<td>
+MATRIZ SP-WAGNER GOES AAI-WAGNER GOES-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     52783
+</td>
+<td>
+MARIO FRANCISCO DOS SANTOS
+</td>
+<td align="right">
+    568.56
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+9062734715
+</td>
+<td align="right">
+       544
+</td>
+<td>
+FILIAL - RJ - TATUAPE BARRA - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     52857
+</td>
+<td>
+WILLIAM GUSTAVO DE OLIVEIRA RAMOS
+</td>
+<td align="right">
+     74.76
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+37519063801
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     52879
+</td>
+<td>
+MARCIO REIS FERNANDES
+</td>
+<td align="right">
+   1518.72
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+11579148700
+</td>
+<td align="right">
+       544
+</td>
+<td>
+FILIAL - RJ - TATUAPE BARRA - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     52880
+</td>
+<td>
+BRUNO REIS FERNANDES
+</td>
+<td align="right">
+    514.49
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+10529083736
+</td>
+<td align="right">
+       544
+</td>
+<td>
+FILIAL - RJ - TATUAPE BARRA - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     52891
+</td>
+<td>
+ADELSON ASSIS DIAS 
+</td>
+<td align="right">
+     422.5
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+5153477878
+</td>
+<td align="right">
+       343
+</td>
+<td>
+MATRIZ - SP - SALA TATUAPE I - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     52962
+</td>
+<td>
+LAUSTON DO COUTO PIRES
+</td>
+<td align="right">
+     67.28
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+78189403753
+</td>
+<td align="right">
+       538
+</td>
+<td>
+FILIAL RJ - FABIO COSTA
+</td>
+</tr>
+<tr>
+<td align="right">
+     53046
+</td>
+<td>
+QUELUZ TRADER FUNDO DE INVESTIMENTO MULTIMERCADO
+</td>
+<td align="right">
+    170.92
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+9052643000153
+</td>
+<td align="right">
+       564
+</td>
+<td>
+FILIAL RJ - JOAO FERNANDO FERREIRA NETO
+</td>
+</tr>
+<tr>
+<td align="right">
+     53110
+</td>
+<td>
+ADRIANA ALCANTARA ROTH
+</td>
+<td align="right">
+    198.29
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+64777529053
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     53132
+</td>
+<td>
+SERGIO COELHO SOUTO
+</td>
+<td align="right">
+     524.5
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+80687245753
+</td>
+<td align="right">
+       544
+</td>
+<td>
+FILIAL - RJ - TATUAPE BARRA - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     53136
+</td>
+<td>
+FELIPE TIMOTEO SITONIO BORGES
+</td>
+<td align="right">
+        40
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+5807774485
+</td>
+<td align="right">
+       196
+</td>
+<td>
+JP-PB-GBMF AA-FERNANDO,GAIAO,FABIO-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     53199
+</td>
+<td>
+HUDSON PALUMBO JUNIOR
+</td>
+<td align="right">
+    9303.2
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+15407704862
+</td>
+<td align="right">
+       567
+</td>
+<td>
+FILIAL RJ - FREDERICO HEINZ KEMMELMEIER 
+</td>
+</tr>
+<tr>
+<td align="right">
+     53318
+</td>
+<td>
+HEGEL JUGNI BAPTISTUCCI
+</td>
+<td align="right">
+       400
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+27516100803
+</td>
+<td align="right">
+       491
+</td>
+<td>
+SALA TATUAPE III-SP-CLIENTES ATIBAIA-VAREJO 
+</td>
+</tr>
+<tr>
+<td align="right">
+     53408
+</td>
+<td>
+ALEX VIEIRA DOS SANTOS
+</td>
+<td align="right">
+     12.65
+</td>
+<td>
+20/05/2015
+</td>
+<td>
+3811064703
+</td>
+<td align="right">
+       544
+</td>
+<td>
+FILIAL - RJ - TATUAPE BARRA - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     53448
+</td>
+<td>
+PAULO TARSO MENEZES PADOVANI
+</td>
+<td align="right">
+    647.11
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+840644809
+</td>
+<td align="right">
+       491
+</td>
+<td>
+SALA TATUAPE III-SP-CLIENTES ATIBAIA-VAREJO 
+</td>
+</tr>
+<tr>
+<td align="right">
+     53737
+</td>
+<td>
+RUI CARLOS BARBOSA
+</td>
+<td align="right">
+    403.07
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+15470083691
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     53954
+</td>
+<td>
+LUIZ GERALDO PINTO
+</td>
+<td align="right">
+        20
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+33188084668
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     53964
+</td>
+<td>
+LEANDRO DA SILVA DIAS CARDOSO
+</td>
+<td align="right">
+       650
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+9256035707
+</td>
+<td align="right">
+       558
+</td>
+<td>
+FILIAL - RJ - TATUAPE CENTRO - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     54007
+</td>
+<td>
+QUELUZ MACRO I FUNDO DE INVESTIMENTO MULTIMERCADO
+</td>
+<td align="right">
+    276.16
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+15534953000107
+</td>
+<td align="right">
+       564
+</td>
+<td>
+FILIAL RJ - JOAO FERNANDO FERREIRA NETO
+</td>
+</tr>
+<tr>
+<td align="right">
+     54008
+</td>
+<td>
+QUELUZ ALPHA FUNDO DE INVESTIMENTO MULTIMERCADO
+</td>
+<td align="right">
+     86.72
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+13969676000130
+</td>
+<td align="right">
+       564
+</td>
+<td>
+FILIAL RJ - JOAO FERNANDO FERREIRA NETO
+</td>
+</tr>
+<tr>
+<td align="right">
+     54106
+</td>
+<td>
+DANIEL MIRANDA DE FIGUEIREDO FILHO
+</td>
+<td align="right">
+       370
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+6008734475
+</td>
+<td align="right">
+       196
+</td>
+<td>
+JP-PB-GBMF AA-FERNANDO,GAIAO,FABIO-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     54129
+</td>
+<td>
+LEONARDO AUGUSTO AMARAL TERRA
+</td>
+<td align="right">
+        40
+</td>
+<td>
+20/05/2015
+</td>
+<td>
+29816264854
+</td>
+<td align="right">
+       329
+</td>
+<td>
+RIB PRETO-SP-FORS AAI-SERGIO-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     54130
+</td>
+<td>
+FLAVIO CARNEIRO DA COSTA E SILVA
+</td>
+<td align="right">
+        40
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+831509198
+</td>
+<td align="right">
+       495
+</td>
+<td>
+GOIANIA-GO-VERSATIL AAI-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     54160
+</td>
+<td>
+MARCOS ADILSON FRANCA MOREIRA
+</td>
+<td align="right">
+    262.66
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+13246542600
+</td>
+<td align="right">
+       250
+</td>
+<td>
+MATRIZ-SP-GRADUAL FUNC/PESSOAS VINCULADAS
+</td>
+</tr>
+<tr>
+<td align="right">
+     54299
+</td>
+<td>
+RICARDO NOGUEIRA BARROS
+</td>
+<td align="right">
+    358.78
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+46652124734
+</td>
+<td align="right">
+       558
+</td>
+<td>
+FILIAL - RJ - TATUAPE CENTRO - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     54300
+</td>
+<td>
+LEGAN PRIVATE MCG FUNDO DE INVESTIMENTO MULTIMERCADO CP
+</td>
+<td align="right">
+     93.55
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+11874869000181
+</td>
+<td align="right">
+       562
+</td>
+<td>
+FILIAL RJ - CLAUDIO DE SOUZA PACINI
+</td>
+</tr>
+<tr>
+<td align="right">
+     54375
+</td>
+<td>
+CLEONICE DA ROCHA SANTOS
+</td>
+<td align="right">
+    525.21
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+57423687715
+</td>
+<td align="right">
+       409
+</td>
+<td>
+MATRIZ -SP - LUGANO AAI - ELIEZER PEREIRA - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     54446
+</td>
+<td>
+GAVEA MACRO DOLAR MASTER FIM
+</td>
+<td align="right">
+    285.74
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+18391155000161
+</td>
+<td align="right">
+       340
+</td>
+<td>
+MATRIZ-SP-GRADUAL-MESA INST ASS COMP-VARE E INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     54596
+</td>
+<td>
+IRIA RAIMUNDA DA SILVA
+</td>
+<td align="right">
+    541.46
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+6038442863
+</td>
+<td align="right">
+       595
+</td>
+<td>
+SIDINEI MALAMAN
+</td>
+</tr>
+<tr>
+<td align="right">
+     54607
+</td>
+<td>
+ANTONIO CARLOS DA FREIRIA
+</td>
+<td align="right">
+        80
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+9481637808
+</td>
+<td align="right">
+       329
+</td>
+<td>
+RIB PRETO-SP-FORS AAI-SERGIO-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     54718
+</td>
+<td>
+FREDERICO FERNANDES BISARRIA
+</td>
+<td align="right">
+    126.62
+</td>
+<td>
+19/05/2015
+</td>
+<td>
+94195234620
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     54921
+</td>
+<td>
+EDSON LEITE FERNANDES
+</td>
+<td align="right">
+      4.56
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+4247164880
+</td>
+<td align="right">
+       491
+</td>
+<td>
+SALA TATUAPE III-SP-CLIENTES ATIBAIA-VAREJO 
+</td>
+</tr>
+<tr>
+<td align="right">
+     55212
+</td>
+<td>
+LEONARDO LEAL DO NASCIMENTO
+</td>
+<td align="right">
+         0
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+10880087714
+</td>
+<td align="right">
+       545
+</td>
+<td>
+FILIAL - RJ - INVESTCAP - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     55231
+</td>
+<td>
+VANDERLEI MAIA RIBEIRO
+</td>
+<td align="right">
+    463.99
+</td>
+<td>
+20/05/2015
+</td>
+<td>
+66359791749
+</td>
+<td align="right">
+       544
+</td>
+<td>
+FILIAL - RJ - TATUAPE BARRA - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     55248
+</td>
+<td>
+JOSE MAURO SPINOLA VIANA
+</td>
+<td align="right">
+    654.05
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+21589219864
+</td>
+<td align="right">
+       491
+</td>
+<td>
+SALA TATUAPE III-SP-CLIENTES ATIBAIA-VAREJO 
+</td>
+</tr>
+<tr>
+<td align="right">
+     55311
+</td>
+<td>
+GALILEU FUNDO DE INVESTIMENTO DE ACOES
+</td>
+<td align="right">
+   2791.78
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+7810479000170
+</td>
+<td align="right">
+       402
+</td>
+<td>
+FILIAL RJ - ANDERSON LEAL DA SILVA
+</td>
+</tr>
+<tr>
+<td align="right">
+     55546
+</td>
+<td>
+DENISE PASSOS VALENTIM
+</td>
+<td align="right">
+    290.86
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+41960750615
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     55609
+</td>
+<td>
+RIO ABSOLUTO FUNDO DE INVESTIMENTO MULTIMERCADO
+</td>
+<td align="right">
+     63.78
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+17155131000140
+</td>
+<td align="right">
+       352
+</td>
+<td>
+FILIAL RJ -TEREZINHA PACHECO
+</td>
+</tr>
+<tr>
+<td align="right">
+     55623
+</td>
+<td>
+JOSE LUIS DE SOUSA CAMPOS
+</td>
+<td align="right">
+    320.75
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+8417116826
+</td>
+<td align="right">
+       343
+</td>
+<td>
+MATRIZ - SP - SALA TATUAPE I - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     55695
+</td>
+<td>
+FERNANDO REINA REBANE
+</td>
+<td align="right">
+    117.53
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+22629842800
+</td>
+<td align="right">
+       570
+</td>
+<td>
+MATRIZ-SP-GRADUAL-CREDITO PRIVADO-VARE E INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     55697
+</td>
+<td>
+PAULO HENRIQUE DE SOUSA
+</td>
+<td align="right">
+       110
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+78323630968
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     55730
+</td>
+<td>
+CARLOS ALBERTO DA SILVA SANTOS
+</td>
+<td align="right">
+    143.46
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+8978298249
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     55794
+</td>
+<td>
+AUGUSTO LUZ ZUCULO
+</td>
+<td align="right">
+    838.69
+</td>
+<td>
+19/05/2015
+</td>
+<td>
+36648073837
+</td>
+<td align="right">
+       331
+</td>
+<td>
+RIBEIRAO PRETO-SP-FORS AAI-RAFAEL-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     55807
+</td>
+<td>
+CRISTIANO BORGES
+</td>
+<td align="right">
+       570
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+2652802739
+</td>
+<td align="right">
+       545
+</td>
+<td>
+FILIAL - RJ - INVESTCAP - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     56039
+</td>
+<td>
+RENAN GAMBARRA SOARES 
+</td>
+<td align="right">
+       180
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+5771814407
+</td>
+<td align="right">
+       196
+</td>
+<td>
+JP-PB-GBMF AA-FERNANDO,GAIAO,FABIO-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     56040
+</td>
+<td>
+JORGE MOREIRA SOARES NETO
+</td>
+<td align="right">
+       160
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+792008421
+</td>
+<td align="right">
+       196
+</td>
+<td>
+JP-PB-GBMF AA-FERNANDO,GAIAO,FABIO-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     56110
+</td>
+<td>
+LUCIANA CAPLAN DE ARGENTON E QUEIROZ
+</td>
+<td align="right">
+    196.48
+</td>
+<td>
+21/05/2015
+</td>
+<td>
+87455463987
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     56177
+</td>
+<td>
+SOLANA LONG AND SHORT FUNDO DE INVESTIMENTO MULTIMERCADO
+</td>
+<td align="right">
+     251.1
+</td>
+<td>
+20/05/2015
+</td>
+<td>
+18816393000171
+</td>
+<td align="right">
+       320
+</td>
+<td>
+MATRIZ SP - CALIL/TON
+</td>
+</tr>
+<tr>
+<td align="right">
+     56178
+</td>
+<td>
+SOLANA ABSOLUTTO FUNDO DE INVESTIMENTO DE ACOES
+</td>
+<td align="right">
+     72.48
+</td>
+<td>
+20/05/2015
+</td>
+<td>
+18816501000106
+</td>
+<td align="right">
+       320
+</td>
+<td>
+MATRIZ SP - CALIL/TON
+</td>
+</tr>
+<tr>
+<td align="right">
+     56188
+</td>
+<td>
+WILSON ITARU NAMIUTI
+</td>
+<td align="right">
+     290.5
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+31353222896
+</td>
+<td align="right">
+       596
+</td>
+<td>
+THIAGO HEIDE SILENCIO
+</td>
+</tr>
+<tr>
+<td align="right">
+     56245
+</td>
+<td>
+VIRGILIO PIRES DA SILVEIRA
+</td>
+<td align="right">
+        15
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+33819383808
+</td>
+<td align="right">
+       593
+</td>
+<td>
+Bruno Balassiano
+</td>
+</tr>
+<tr>
+<td align="right">
+     56273
+</td>
+<td>
+ANDRESSA RAMOS FERREIRA MANSO
+</td>
+<td align="right">
+    182.79
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+36556169889
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     56277
+</td>
+<td>
+LEONARDO GARZARO DO AMARAL
+</td>
+<td align="right">
+   3877.68
+</td>
+<td>
+18/05/2015
+</td>
+<td>
+31507100817
+</td>
+<td align="right">
+       593
+</td>
+<td>
+Bruno Balassiano
+</td>
+</tr>
+<tr>
+<td align="right">
+     56282
+</td>
+<td>
+CAIO PEIXOTO DE SOUZA
+</td>
+<td align="right">
+     21.34
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+10509253601
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+    103939
+</td>
+<td>
+FERNANDO CARDONE NARCHI
+</td>
+<td align="right">
+    685.64
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+25249640869
+</td>
+<td align="right">
+       250
+</td>
+<td>
+MATRIZ-SP-GRADUAL FUNC/PESSOAS VINCULADAS
+</td>
+</tr>
+<tr>
+<td align="right">
+    180506
+</td>
+<td>
+SPX RAPTOR MASTER FI NO EXTERIOR MULTIMERCADO CP
+</td>
+<td align="right">
+         0
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+12808980000132
+</td>
+<td align="right">
+       535
+</td>
+<td>
+FILIAL-RJ-MESA COMPARTILHADA-INST
+</td>
+</tr>
+<tr>
+<td align="right">
+    180507
+</td>
+<td>
+SPX NIMITZ MASTER FUNDO DE INVESTIMENTO MULTIMERCADO
+</td>
+<td align="right">
+         0
+</td>
+<td>
+22/05/2015
+</td>
+<td>
+12798221000136
+</td>
+<td align="right">
+       340
+</td>
+<td>
+MATRIZ-SP-GRADUAL-MESA INST ASS COMP-VARE E INST
+</td>
+</tr>
+</table>
+<p>
+</body>
+</html>

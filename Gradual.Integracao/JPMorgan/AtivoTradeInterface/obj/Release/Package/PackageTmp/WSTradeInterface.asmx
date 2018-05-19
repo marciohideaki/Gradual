@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="WSTradeInterface.asmx.cs" Class="AtivoTradeInterface.WSTradeInterface" %>

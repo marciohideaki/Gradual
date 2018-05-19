@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s0="http://tempuri.org/Gradual.IntegracaoBRP/InativacaoClientes" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/Gradual.IntegracaoBRP/InativacaoClientes">
+      <s:element name="GetInactiveAccounts">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Cd_Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ds_Senha" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInactiveAccountsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInactiveAccountsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetInactiveAccountsSoapIn">
+    <wsdl:part name="parameters" element="s0:GetInactiveAccounts" />
+  </wsdl:message>
+  <wsdl:message name="GetInactiveAccountsSoapOut">
+    <wsdl:part name="parameters" element="s0:GetInactiveAccountsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="InativacaoClientesWSSoap">
+    <wsdl:operation name="GetInactiveAccounts">
+      <wsdl:input message="tns:GetInactiveAccountsSoapIn" />
+      <wsdl:output message="tns:GetInactiveAccountsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="InativacaoClientesWSSoap" type="tns:InativacaoClientesWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetInactiveAccounts">
+      <soap:operation soapAction="http://tempuri.org/Gradual.IntegracaoBRP/InativacaoClientes/GetInactiveAccounts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="InativacaoClientesWSSoap12" type="tns:InativacaoClientesWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetInactiveAccounts">
+      <soap12:operation soapAction="http://tempuri.org/Gradual.IntegracaoBRP/InativacaoClientes/GetInactiveAccounts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="InativacaoClientesWS">
+    <wsdl:port name="InativacaoClientesWSSoap" binding="tns:InativacaoClientesWSSoap">
+      <soap:address location="http://localhost:39565/InativacaoClientesWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="InativacaoClientesWSSoap12" binding="tns:InativacaoClientesWSSoap12">
+      <soap12:address location="http://localhost:39565/InativacaoClientesWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

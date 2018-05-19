@@ -1,0 +1,10 @@
+C:\aponso\desenv\Gradual.Integracao\WSZarathustra\AppTesteWSZara\bin\Debug\AppTesteWSZara.exe.config
+C:\aponso\desenv\Gradual.Integracao\WSZarathustra\AppTesteWSZara\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.Integracao\WSZarathustra\AppTesteWSZara\obj\x86\Debug\AppTesteWSZara.Form1.resources
+C:\aponso\desenv\Gradual.Integracao\WSZarathustra\AppTesteWSZara\obj\x86\Debug\AppTesteWSZara.Properties.Resources.resources
+C:\aponso\desenv\Gradual.Integracao\WSZarathustra\AppTesteWSZara\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\aponso\desenv\Gradual.Integracao\WSZarathustra\AppTesteWSZara\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\aponso\desenv\Gradual.Integracao\WSZarathustra\AppTesteWSZara\bin\Debug\AppTesteWSZara.exe
+C:\aponso\desenv\Gradual.Integracao\WSZarathustra\AppTesteWSZara\bin\Debug\AppTesteWSZara.pdb
+C:\aponso\desenv\Gradual.Integracao\WSZarathustra\AppTesteWSZara\obj\x86\Debug\AppTesteWSZara.exe
+C:\aponso\desenv\Gradual.Integracao\WSZarathustra\AppTesteWSZara\obj\x86\Debug\AppTesteWSZara.pdb

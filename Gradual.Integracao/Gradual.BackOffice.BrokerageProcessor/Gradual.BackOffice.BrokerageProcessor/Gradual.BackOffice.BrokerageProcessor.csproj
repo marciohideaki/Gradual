@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9D704DF2-6E58-4104-A0AF-F94F72123A5C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.BackOffice.BrokerageProcessor</RootNamespace>
+    <AssemblyName>Gradual.BackOffice.BrokerageProcessor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.GeracaoBasesDB.Lib">
+      <HintPath>..\References\Gradual.GeracaoBasesDB.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Library">
+      <HintPath>..\References\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Spider.Utils.Email">
+      <HintPath>..\References\Gradual.Spider.Utils.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\References\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\References\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\AccountDigit.cs" />
+    <Compile Include="Account\AccountParser.cs" />
+    <Compile Include="BrokerageProcessorSrv.cs" />
+    <Compile Include="ColdProcessor.cs" />
+    <Compile Include="Email\EmailManager.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="FileManager\PdfManager.cs" />
+    <Compile Include="FileManager\TxtManager.cs" />
+    <Compile Include="IMBARQProcessor.cs" />
+    <Compile Include="MTAFilesProcessor.cs" />
+    <Compile Include="Processor\ColdFilesSplitter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Watcher\FileWatcherManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.BackOffice.BrokerageProcessor.Db\Gradual.BackOffice.BrokerageProcessor.Db.csproj">
+      <Project>{3E836739-7EBB-4361-9EA4-D9E1CD05D78E}</Project>
+      <Name>Gradual.BackOffice.BrokerageProcessor.Db</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.BackOffice.BrokerageProcessor.Lib\Gradual.BackOffice.BrokerageProcessor.Lib.csproj">
+      <Project>{095D2119-4026-4817-BC4C-3A13A9F0E8F3}</Project>
+      <Name>Gradual.BackOffice.BrokerageProcessor.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangeLog.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

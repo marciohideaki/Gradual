@@ -1,0 +1,13 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.RecalculoFinanceiroBRP\bin\Debug\Gradual.RecalculoFinanceiroBRP.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.RecalculoFinanceiroBRP\bin\Debug\Gradual.RecalculoFinanceiroBRP.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.RecalculoFinanceiroBRP\bin\Debug\Gradual.RecalculoFinanceiroBRP.exe
+Installing service Gradual_RecalculoFinanceiroBRP...
+Service Gradual_RecalculoFinanceiroBRP has been successfully installed.
+Creating EventLog source Gradual_RecalculoFinanceiroBRP in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.RecalculoFinanceiroBRP\bin\Debug\Gradual.RecalculoFinanceiroBRP.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.RecalculoFinanceiroBRP\bin\Debug\Gradual.RecalculoFinanceiroBRP.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.RecalculoFinanceiroBRP\bin\Debug\Gradual.RecalculoFinanceiroBRP.exe

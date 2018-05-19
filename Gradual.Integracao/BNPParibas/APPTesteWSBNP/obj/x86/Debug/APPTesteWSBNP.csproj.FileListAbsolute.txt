@@ -1,0 +1,10 @@
+C:\aponso\desenv\Gradual.Integracao\BNPParibas\APPTesteWSBNP\bin\Debug\APPTesteWSBNP.exe
+C:\aponso\desenv\Gradual.Integracao\BNPParibas\APPTesteWSBNP\bin\Debug\APPTesteWSBNP.pdb
+C:\aponso\desenv\Gradual.Integracao\BNPParibas\APPTesteWSBNP\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.Integracao\BNPParibas\APPTesteWSBNP\obj\x86\Debug\APPTesteWSBNP.Form1.resources
+C:\aponso\desenv\Gradual.Integracao\BNPParibas\APPTesteWSBNP\obj\x86\Debug\APPTesteWSBNP.Properties.Resources.resources
+C:\aponso\desenv\Gradual.Integracao\BNPParibas\APPTesteWSBNP\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\aponso\desenv\Gradual.Integracao\BNPParibas\APPTesteWSBNP\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\aponso\desenv\Gradual.Integracao\BNPParibas\APPTesteWSBNP\obj\x86\Debug\APPTesteWSBNP.exe
+C:\aponso\desenv\Gradual.Integracao\BNPParibas\APPTesteWSBNP\obj\x86\Debug\APPTesteWSBNP.pdb
+C:\aponso\desenv\Gradual.Integracao\BNPParibas\APPTesteWSBNP\bin\Debug\APPTesteWSBNP.exe.config

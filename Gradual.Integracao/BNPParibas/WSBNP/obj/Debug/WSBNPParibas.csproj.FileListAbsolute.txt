@@ -1,0 +1,9 @@
+C:\aponso\desenv\Gradual.Integracao\BNPParibas\WSBNP\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.Integracao\BNPParibas\WSBNP\bin\WSBNPParibas.dll
+C:\aponso\desenv\Gradual.Integracao\BNPParibas\WSBNP\bin\WSBNPParibas.pdb
+C:\aponso\desenv\Gradual.Integracao\BNPParibas\WSBNP\bin\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.Integracao\BNPParibas\WSBNP\bin\log4net.dll
+C:\aponso\desenv\Gradual.Integracao\BNPParibas\WSBNP\bin\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.Integracao\BNPParibas\WSBNP\bin\log4net.pdb
+C:\aponso\desenv\Gradual.Integracao\BNPParibas\WSBNP\obj\Debug\WSBNPParibas.dll
+C:\aponso\desenv\Gradual.Integracao\BNPParibas\WSBNP\obj\Debug\WSBNPParibas.pdb

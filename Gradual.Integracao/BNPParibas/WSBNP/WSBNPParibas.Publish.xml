@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="c:\temp\WSParibas" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="WSBNP.asmx" publishTime="03/24/2015 18:43:47" />
+    <file relUrl="bin/Gradual.OMS.Library.pdb" publishTime="10/22/2014 15:38:03" />
+    <file relUrl="bin/WSBNPParibas.dll" publishTime="07/16/2015 12:42:15" />
+    <file relUrl="Web.config" publishTime="07/16/2015 13:01:59" />
+    <file relUrl="bin/log4net.pdb" publishTime="10/22/2014 15:37:03" />
+    <file relUrl="bin/WSBNPParibas.pdb" publishTime="07/16/2015 12:42:15" />
+    <file relUrl="bin/log4net.dll" publishTime="10/22/2014 15:37:03" />
+    <file relUrl="bin/Gradual.OMS.Library.dll" publishTime="10/22/2014 15:38:03" />
+  </publishProfile>
+</publishData>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://wszarathustra.gradualinvestimentos.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s0="http://wszarathustra.gradualinvestimentos.com.br/WSZarathustra/WSTraderBean" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://wszarathustra.gradualinvestimentos.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://wszarathustra.gradualinvestimentos.com.br/WSZarathustra/WSTraderBean">
+      <s:element name="GetBeans">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pUser" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTradeID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBeansResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBeansResult" type="s0:ArrayOfTraderBean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTraderBean">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="traderBean" nillable="true" type="s0:traderBean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="traderBean">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DATA_NEGOCIO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HORA_NEGOCIO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NR_NEGOCIO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CODNEG" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SERPAP" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OPERACAO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="QTDADE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PDENEG" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FC_NOME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NM_EMIT_ORDEM" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MERCADO" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://wszarathustra.gradualinvestimentos.com.br/">
+      <s:element name="ArrayOfTraderBean" nillable="true" type="tns:ArrayOfTraderBean" />
+      <s:complexType name="ArrayOfTraderBean">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="traderBean" nillable="true" type="tns:traderBean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="traderBean">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DATA_NEGOCIO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HORA_NEGOCIO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NR_NEGOCIO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CODNEG" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SERPAP" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OPERACAO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="QTDADE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PDENEG" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FC_NOME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NM_EMIT_ORDEM" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MERCADO" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetBeansSoapIn">
+    <wsdl:part name="parameters" element="s0:GetBeans" />
+  </wsdl:message>
+  <wsdl:message name="GetBeansSoapOut">
+    <wsdl:part name="parameters" element="s0:GetBeansResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBeansHttpGetIn">
+    <wsdl:part name="pUser" type="s:string" />
+    <wsdl:part name="pPassword" type="s:string" />
+    <wsdl:part name="pTradeID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetBeansHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfTraderBean" />
+  </wsdl:message>
+  <wsdl:message name="GetBeansHttpPostIn">
+    <wsdl:part name="pUser" type="s:string" />
+    <wsdl:part name="pPassword" type="s:string" />
+    <wsdl:part name="pTradeID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetBeansHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfTraderBean" />
+  </wsdl:message>
+  <wsdl:portType name="WSTraderBeanSoap">
+    <wsdl:operation name="GetBeans">
+      <wsdl:input message="tns:GetBeansSoapIn" />
+      <wsdl:output message="tns:GetBeansSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WSTraderBeanHttpGet">
+    <wsdl:operation name="GetBeans">
+      <wsdl:input message="tns:GetBeansHttpGetIn" />
+      <wsdl:output message="tns:GetBeansHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WSTraderBeanHttpPost">
+    <wsdl:operation name="GetBeans">
+      <wsdl:input message="tns:GetBeansHttpPostIn" />
+      <wsdl:output message="tns:GetBeansHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSTraderBeanSoap" type="tns:WSTraderBeanSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetBeans">
+      <soap:operation soapAction="http://wszarathustra.gradualinvestimentos.com.br/WSZarathustra/WSTraderBean/GetBeans" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSTraderBeanSoap12" type="tns:WSTraderBeanSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetBeans">
+      <soap12:operation soapAction="http://wszarathustra.gradualinvestimentos.com.br/WSZarathustra/WSTraderBean/GetBeans" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSTraderBeanHttpGet" type="tns:WSTraderBeanHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="GetBeans">
+      <http:operation location="/GetBeans" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSTraderBeanHttpPost" type="tns:WSTraderBeanHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GetBeans">
+      <http:operation location="/GetBeans" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSTraderBean">
+    <wsdl:port name="WSTraderBeanSoap" binding="tns:WSTraderBeanSoap">
+      <soap:address location="http://wsblotter1.gradualinvestimentos.com.br/WSTraderBean.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSTraderBeanSoap12" binding="tns:WSTraderBeanSoap12">
+      <soap12:address location="http://wsblotter1.gradualinvestimentos.com.br/WSTraderBean.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSTraderBeanHttpGet" binding="tns:WSTraderBeanHttpGet">
+      <http:address location="http://wsblotter1.gradualinvestimentos.com.br/WSTraderBean.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSTraderBeanHttpPost" binding="tns:WSTraderBeanHttpPost">
+      <http:address location="http://wsblotter1.gradualinvestimentos.com.br/WSTraderBean.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

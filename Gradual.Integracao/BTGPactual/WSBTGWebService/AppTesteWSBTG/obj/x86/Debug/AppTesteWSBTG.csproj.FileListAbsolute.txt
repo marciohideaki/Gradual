@@ -1,0 +1,10 @@
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\AppTesteWSBTG\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\AppTesteWSBTG\obj\x86\Debug\AppTesteWSBTG.Properties.Resources.resources
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\AppTesteWSBTG\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\AppTesteWSBTG\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\AppTesteWSBTG\obj\x86\Debug\AppTesteWSBTG.frmTrades.resources
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\AppTesteWSBTG\bin\Debug\AppTesteWSBTG.exe.config
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\AppTesteWSBTG\bin\Debug\AppTesteWSBTG.exe
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\AppTesteWSBTG\bin\Debug\AppTesteWSBTG.pdb
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\AppTesteWSBTG\obj\x86\Debug\AppTesteWSBTG.exe
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\AppTesteWSBTG\obj\x86\Debug\AppTesteWSBTG.pdb

@@ -1,0 +1,10 @@
+C:\aponso\Desenv\Gradual.Integracao\Gradual.ControladoriaFundos\SimpleBrowser\obj\Debug\SimpleBrowser.csprojResolveAssemblyReference.cache
+C:\aponso\Desenv\Gradual.Integracao\Gradual.ControladoriaFundos\SimpleBrowser\obj\Debug\SimpleBrowser.Properties.Resources.resources
+C:\aponso\Desenv\Gradual.Integracao\Gradual.ControladoriaFundos\SimpleBrowser\obj\Debug\SimpleBrowser.csproj.GenerateResource.Cache
+C:\aponso\Desenv\Gradual.Integracao\Gradual.ControladoriaFundos\SimpleBrowser\bin\Debug\SimpleBrowser.dll
+C:\aponso\Desenv\Gradual.Integracao\Gradual.ControladoriaFundos\SimpleBrowser\bin\Debug\SimpleBrowser.pdb
+C:\aponso\Desenv\Gradual.Integracao\Gradual.ControladoriaFundos\SimpleBrowser\bin\Debug\RazorHosting.dll
+C:\aponso\Desenv\Gradual.Integracao\Gradual.ControladoriaFundos\SimpleBrowser\bin\Debug\System.Web.Razor.dll
+C:\aponso\Desenv\Gradual.Integracao\Gradual.ControladoriaFundos\SimpleBrowser\bin\Debug\RazorHosting.pdb
+C:\aponso\Desenv\Gradual.Integracao\Gradual.ControladoriaFundos\SimpleBrowser\obj\Debug\SimpleBrowser.dll
+C:\aponso\Desenv\Gradual.Integracao\Gradual.ControladoriaFundos\SimpleBrowser\obj\Debug\SimpleBrowser.pdb

@@ -1,0 +1,9 @@
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\OpenBlotterLib\OpenBlotterLib\bin\Release\OpenBlotterLib.dll
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\OpenBlotterLib\OpenBlotterLib\bin\Release\OpenBlotterLib.pdb
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\OpenBlotterLib\OpenBlotterLib\bin\Release\Gradual.OMS.Library.dll
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\OpenBlotterLib\OpenBlotterLib\bin\Release\log4net.dll
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\OpenBlotterLib\OpenBlotterLib\bin\Release\Gradual.OMS.Library.pdb
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\OpenBlotterLib\OpenBlotterLib\bin\Release\log4net.pdb
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\OpenBlotterLib\OpenBlotterLib\obj\Release\ResolveAssemblyReference.cache
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\OpenBlotterLib\OpenBlotterLib\obj\Release\OpenBlotterLib.dll
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\OpenBlotterLib\OpenBlotterLib\obj\Release\OpenBlotterLib.pdb

@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTGTradeInterface", "BTGTradeInterface\BTGTradeInterface.csproj", "{42D234B3-F58F-4898-B3E5-F21BDDE76596}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTGTradeProcessor", "BTGTradeProcessor\BTGTradeProcessor.csproj", "{72279EB6-EE54-4B36-86A3-C5E27A45FF9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTesteWSBTG", "AppTesteWSBTG\AppTesteWSBTG.csproj", "{C95FE0E2-28EA-4C29-A1DC-81E722BC854C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BTGTradeInterface\\BTGTradeInterface.csproj
+		SccProjectName1 = BTGTradeInterface
+		SccLocalPath1 = BTGTradeInterface
+		SccProjectUniqueName2 = BTGTradeProcessor\\BTGTradeProcessor.csproj
+		SccProjectName2 = BTGTradeProcessor
+		SccLocalPath2 = BTGTradeProcessor
+		SccProjectUniqueName3 = AppTesteWSBTG\\AppTesteWSBTG.csproj
+		SccProjectName3 = AppTesteWSBTG
+		SccLocalPath3 = AppTesteWSBTG
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42D234B3-F58F-4898-B3E5-F21BDDE76596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42D234B3-F58F-4898-B3E5-F21BDDE76596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42D234B3-F58F-4898-B3E5-F21BDDE76596}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{42D234B3-F58F-4898-B3E5-F21BDDE76596}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{42D234B3-F58F-4898-B3E5-F21BDDE76596}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{42D234B3-F58F-4898-B3E5-F21BDDE76596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42D234B3-F58F-4898-B3E5-F21BDDE76596}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42D234B3-F58F-4898-B3E5-F21BDDE76596}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{42D234B3-F58F-4898-B3E5-F21BDDE76596}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{42D234B3-F58F-4898-B3E5-F21BDDE76596}.Release|x86.ActiveCfg = Release|Any CPU
+		{72279EB6-EE54-4B36-86A3-C5E27A45FF9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72279EB6-EE54-4B36-86A3-C5E27A45FF9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72279EB6-EE54-4B36-86A3-C5E27A45FF9B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{72279EB6-EE54-4B36-86A3-C5E27A45FF9B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{72279EB6-EE54-4B36-86A3-C5E27A45FF9B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{72279EB6-EE54-4B36-86A3-C5E27A45FF9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72279EB6-EE54-4B36-86A3-C5E27A45FF9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72279EB6-EE54-4B36-86A3-C5E27A45FF9B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{72279EB6-EE54-4B36-86A3-C5E27A45FF9B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{72279EB6-EE54-4B36-86A3-C5E27A45FF9B}.Release|x86.ActiveCfg = Release|Any CPU
+		{C95FE0E2-28EA-4C29-A1DC-81E722BC854C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C95FE0E2-28EA-4C29-A1DC-81E722BC854C}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{C95FE0E2-28EA-4C29-A1DC-81E722BC854C}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{C95FE0E2-28EA-4C29-A1DC-81E722BC854C}.Debug|x86.ActiveCfg = Debug|x86
+		{C95FE0E2-28EA-4C29-A1DC-81E722BC854C}.Debug|x86.Build.0 = Debug|x86
+		{C95FE0E2-28EA-4C29-A1DC-81E722BC854C}.Release|Any CPU.ActiveCfg = Release|x86
+		{C95FE0E2-28EA-4C29-A1DC-81E722BC854C}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{C95FE0E2-28EA-4C29-A1DC-81E722BC854C}.Release|Mixed Platforms.Build.0 = Release|x86
+		{C95FE0E2-28EA-4C29-A1DC-81E722BC854C}.Release|x86.ActiveCfg = Release|x86
+		{C95FE0E2-28EA-4C29-A1DC-81E722BC854C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,8 @@
+C:\aponso\desenv\Gradual.Integracao\QGCadastro1\QGCadastro1\bin\Debug\QGCadastro1.exe.config
+C:\aponso\desenv\Gradual.Integracao\QGCadastro1\QGCadastro1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.Integracao\QGCadastro1\QGCadastro1\bin\Debug\QGCadastro1.exe
+C:\aponso\desenv\Gradual.Integracao\QGCadastro1\QGCadastro1\bin\Debug\QGCadastro1.pdb
+C:\aponso\desenv\Gradual.Integracao\QGCadastro1\QGCadastro1\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.Integracao\QGCadastro1\QGCadastro1\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.Integracao\QGCadastro1\QGCadastro1\obj\x86\Debug\QGCadastro1.exe
+C:\aponso\desenv\Gradual.Integracao\QGCadastro1\QGCadastro1\obj\x86\Debug\QGCadastro1.pdb

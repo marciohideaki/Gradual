@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QGCadastro1", "QGCadastro1\QGCadastro1.csproj", "{87FB7F97-373E-44F8-85E8-0FBF8A9D36CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovoArde", "NovoArde\NovoArde.csproj", "{B59251EE-4569-4659-B2F7-A8EEB4DC1C47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87FB7F97-373E-44F8-85E8-0FBF8A9D36CE}.Debug|x86.ActiveCfg = Debug|x86
+		{87FB7F97-373E-44F8-85E8-0FBF8A9D36CE}.Debug|x86.Build.0 = Debug|x86
+		{87FB7F97-373E-44F8-85E8-0FBF8A9D36CE}.Release|x86.ActiveCfg = Release|x86
+		{87FB7F97-373E-44F8-85E8-0FBF8A9D36CE}.Release|x86.Build.0 = Release|x86
+		{B59251EE-4569-4659-B2F7-A8EEB4DC1C47}.Debug|x86.ActiveCfg = Debug|x86
+		{B59251EE-4569-4659-B2F7-A8EEB4DC1C47}.Debug|x86.Build.0 = Debug|x86
+		{B59251EE-4569-4659-B2F7-A8EEB4DC1C47}.Release|x86.ActiveCfg = Release|x86
+		{B59251EE-4569-4659-B2F7-A8EEB4DC1C47}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

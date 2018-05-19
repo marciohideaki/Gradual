@@ -1,0 +1,11 @@
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.IntegracaoBRP\bin\Gradual.IntegracaoBRP.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.IntegracaoBRP\bin\Gradual.IntegracaoBRP.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.IntegracaoBRP\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.IntegracaoBRP\obj\Debug\Gradual.IntegracaoBRP.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.IntegracaoBRP\obj\Debug\Gradual.IntegracaoBRP.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.IntegracaoBRP\bin\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.IntegracaoBRP\bin\log4net.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.IntegracaoBRP\bin\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.IntegracaoBRP\bin\log4net.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.IntegracaoBRP\bin\Gradual.IntegracaoBRP.Lib.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.IntegracaoBRP\bin\Gradual.IntegracaoBRP.Lib.pdb

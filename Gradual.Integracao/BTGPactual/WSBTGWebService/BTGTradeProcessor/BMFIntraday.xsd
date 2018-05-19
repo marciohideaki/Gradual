@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSet xmlns="http://www.ICAP.com/WS">
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="SEQUENCIAL" type="xs:long" minOccurs="0" />
+                <xs:element name="TIPO_BOLETAGEM" type="xs:string" minOccurs="0" />
+                <xs:element name="CHAVE_ESTRANGEIRA" type="xs:long" minOccurs="0" />
+                <xs:element name="NOME_OPERADOR" type="xs:string" minOccurs="0" />
+                <xs:element name="DATA_OPERACAO" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="NOME_ATIVO" type="xs:string" minOccurs="0" />
+                <xs:element name="TIPO_DE_OPERACAO" type="xs:string" minOccurs="0" />
+                <xs:element name="QUANTIDADE" type="xs:long" minOccurs="0" />
+                <xs:element name="PRECO" type="xs:decimal" minOccurs="0" />
+                <xs:element name="AFTER_HOUR" type="xs:string" minOccurs="0" />
+                <xs:element name="COD_CORRETORA_BMF_ORIGEM" type="xs:long" minOccurs="0" />
+                <xs:element name="NOME_CORRETORA_ORIGEM" type="xs:string" minOccurs="0" />
+                <xs:element name="EXERCICIO_OPCAO_BMF" type="xs:string" minOccurs="0" />
+                <xs:element name="CNPJ_CLIENTE" type="xs:string" minOccurs="0" />
+                <xs:element name="NOME_CLIENTE" type="xs:string" minOccurs="0" />
+                <xs:element name="EXTERNA" type="xs:string" minOccurs="0" />
+                <xs:element name="BROKERAGEM" type="xs:string" minOccurs="0" />
+                <xs:element name="COD_CORRETORA_BMF_DESTINO" type="xs:long" minOccurs="0" />
+                <xs:element name="NOME_CORRETORA_DESTTINO" type="xs:string" minOccurs="0" />
+                <xs:element name="LEILAO_TERMO" type="xs:string" minOccurs="0" />
+                <xs:element name="DATA_TERMO" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="TRADERID" type="xs:string" minOccurs="0" />
+                <xs:element name="TRADERNAME" type="xs:string" minOccurs="0" />
+                <xs:element name="NUM_CONTA_CLIENTE" type="xs:string" minOccurs="0" />
+                <xs:element name="OBSERVACAO" type="xs:string" minOccurs="0" />
+                <xs:element name="DELTA" type="xs:string" minOccurs="0" />
+                <xs:element name="TX_x005F_x0020_JUROS_x005F_x0020_LONGO" type="xs:string" minOccurs="0" />
+                <xs:element name="TX_x005F_x0020_JUROS_x005F_x0020_CURTO" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+</DataSet>

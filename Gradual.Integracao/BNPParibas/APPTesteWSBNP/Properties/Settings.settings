@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="APPTesteWSBNP.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="APPTesteWSBNP_br_com_gradualinvestimentos_wsbnpparibas_WSBNP" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://wsblotter2.gradualinvestimentos.com.br/WSBNP.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

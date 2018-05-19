@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="c:\temp\wsintegracaobrp" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/Gradual.IntegracaoBRP.dll" publishTime="01/08/2016 14:37:45" />
+    <file relUrl="bin/log4net.dll" publishTime="10/22/2014 15:37:03" />
+    <file relUrl="bin/Gradual.OMS.Library.pdb" publishTime="04/06/2015 12:51:52" />
+    <file relUrl="bin/Gradual.IntegracaoBRP.Lib.dll" publishTime="01/07/2016 19:38:47" />
+    <file relUrl="bin/log4net.pdb" publishTime="10/22/2014 15:37:03" />
+    <file relUrl="Web.config" publishTime="01/08/2016 12:34:25" />
+    <file relUrl="bin/Gradual.IntegracaoBRP.Lib.pdb" publishTime="01/07/2016 19:38:47" />
+    <file relUrl="InativacaoClientesWS.asmx" publishTime="01/07/2016 19:16:07" />
+    <file relUrl="bin/Gradual.IntegracaoBRP.pdb" publishTime="01/08/2016 14:37:45" />
+    <file relUrl="bin/Gradual.OMS.Library.dll" publishTime="04/06/2015 12:51:46" />
+  </publishProfile>
+</publishData>

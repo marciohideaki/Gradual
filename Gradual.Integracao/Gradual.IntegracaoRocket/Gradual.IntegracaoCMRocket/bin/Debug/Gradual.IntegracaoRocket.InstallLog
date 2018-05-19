@@ -1,0 +1,34 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoRocket.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoRocket.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoRocket.exe
+Installing service Gradual_IntegracaoRocket...
+Service Gradual_IntegracaoRocket has been successfully installed.
+Creating EventLog source Gradual_IntegracaoRocket in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoRocket.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoRocket.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoRocket.exe
+Uninstalling assembly 'C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoRocket.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoRocket.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoRocket.exe
+Removing EventLog source Gradual_IntegracaoRocket.
+Service Gradual_IntegracaoRocket is being removed from the system...
+Service Gradual_IntegracaoRocket was successfully removed from the system.
+Installing assembly 'C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoRocket.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoRocket.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoRocket.exe
+Installing service Gradual_IntegracaoRocket...
+Service Gradual_IntegracaoRocket has been successfully installed.
+Creating EventLog source Gradual_IntegracaoRocket in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoRocket.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoRocket.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoRocket.exe

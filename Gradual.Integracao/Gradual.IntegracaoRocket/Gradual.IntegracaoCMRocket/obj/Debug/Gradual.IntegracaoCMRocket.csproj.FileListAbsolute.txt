@@ -1,0 +1,17 @@
+C:\aponso\Desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\obj\Debug\Gradual.IntegracaoCMRocket.csprojResolveAssemblyReference.cache
+C:\aponso\Desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoCMRocket.dll.config
+C:\aponso\Desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoCMRocket.dll
+C:\aponso\Desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoCMRocket.pdb
+C:\aponso\Desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoCMRocket.DB.Lib.dll
+C:\aponso\Desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoCMRocket.Lib.dll
+C:\aponso\Desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.Utils.dll
+C:\aponso\Desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.Utils.Logger.dll
+C:\aponso\Desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Newtonsoft.Json.dll
+C:\aponso\Desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\log4net.dll
+C:\aponso\Desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoCMRocket.DB.Lib.pdb
+C:\aponso\Desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoCMRocket.Lib.pdb
+C:\aponso\Desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.Utils.pdb
+C:\aponso\Desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.Utils.Logger.pdb
+C:\aponso\Desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\log4net.pdb
+C:\aponso\Desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\obj\Debug\Gradual.IntegracaoCMRocket.dll
+C:\aponso\Desenv\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\obj\Debug\Gradual.IntegracaoCMRocket.pdb

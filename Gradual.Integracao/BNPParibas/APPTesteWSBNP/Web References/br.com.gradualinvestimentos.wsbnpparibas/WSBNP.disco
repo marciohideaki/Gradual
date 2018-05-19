@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://wsblotter2.gradualinvestimentos.com.br/WSBNP.asmx?wsdl" docRef="http://wsblotter2.gradualinvestimentos.com.br/WSBNP.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://wsblotter2.gradualinvestimentos.com.br/WSBNP.asmx" xmlns:q1="http://tempuri.org/WSBNPParibas/WSBNP" binding="q1:WSBNPSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://wsblotter2.gradualinvestimentos.com.br/WSBNP.asmx" xmlns:q2="http://tempuri.org/WSBNPParibas/WSBNP" binding="q2:WSBNPSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

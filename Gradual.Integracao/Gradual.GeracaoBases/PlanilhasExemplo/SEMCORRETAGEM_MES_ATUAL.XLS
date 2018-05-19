@@ -1,0 +1,2248 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="generator" content="SQL*Plus 10.2.0">
+<style type='text/css'> body {font:10pt Arial,Helvetica,sans-serif; color:black; background:White;} p {font:10pt Arial,Helvetica,sans-serif; color:black; background:White;} table,tr,td {font:10pt Arial,Helvetica,sans-serif; color:Black; background:#f7f7e7; padding:0px 0px 0px 0px; margin:0px 0px 0px 0px;} th {font:bold 10pt Arial,Helvetica,sans-serif; color:#336699; background:#cccc99; padding:0px 0px 0px 0px;} h1 {font:16pt Arial,Helvetica,Geneva,sans-serif; color:#336699; background-color:White; border-bottom:1px solid #cccc99; margin-top:0pt; margin-bottom:0pt; padding:0px 0px 0px 0px;} h2 {font:bold 10pt Arial,Helvetica,Geneva,sans-serif; color:#336699; background-color:White; margin-top:4pt; margin-bottom:0pt;} a {font:9pt Arial,Helvetica,sans-serif; color:#663300; background:#ffffff; margin-top:0pt; margin-bottom:0pt; vertical-align:top;}</style><title>SQL*Plus Report</title>
+</head>
+<body>
+<p>
+<table border='1' width='90%' align='center' summary='Script output'>
+<tr>
+<td>
+Cliente
+</td>
+<td>
+Nome
+</td>
+<td>
+Ultima receita
+</td>
+<td>
+Receita
+</td>
+<td>
+CPF/CNPJ
+</td>
+<td>
+Assessor
+</td>
+<td>
+Nome
+</td>
+</tr>
+</table>
+<p>
+<p>
+<table border='1' width='90%' align='center' summary='Script output'>
+<tr>
+<td align="right">
+     41437
+</td>
+<td>
+BRASIL CAPITAL MASTER - FUNDO DE INVESTIMENTO EM ACOES
+</td>
+<td>
+04/10/2015
+</td>
+<td>
+160.00
+</td>
+<td>
+11176045000138
+</td>
+<td align="right">
+       340
+</td>
+<td>
+MATRIZ-SP-GRADUAL-MESA INST ASS COMP-VARE E INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     49521
+</td>
+<td>
+CELSO JOSE LOPES DA SILVA
+</td>
+<td>
+04/30/2015
+</td>
+<td>
+22.58
+</td>
+<td>
+10127347810
+</td>
+<td align="right">
+       331
+</td>
+<td>
+RIBEIRAO PRETO-SP-FORS AAI-RAFAEL-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     54973
+</td>
+<td>
+FRANCISCO FONSECA RIBEIRO DE OLIVEIRA
+</td>
+<td>
+04/20/2015
+</td>
+<td>
+102.39
+</td>
+<td>
+4377513680
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     43067
+</td>
+<td>
+CAIXA FMP-FGTS VALE DO RIO DOCE I
+</td>
+<td>
+04/28/2015
+</td>
+<td>
+614.13
+</td>
+<td>
+4885818000190
+</td>
+<td align="right">
+       340
+</td>
+<td>
+MATRIZ-SP-GRADUAL-MESA INST ASS COMP-VARE E INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     24517
+</td>
+<td>
+CAMILA LUTFALLA ZARZUR
+</td>
+<td>
+04/06/2015
+</td>
+<td>
+22.86
+</td>
+<td>
+38200102890
+</td>
+<td align="right">
+       595
+</td>
+<td>
+SIDINEI MALAMAN
+</td>
+</tr>
+<tr>
+<td align="right">
+     38495
+</td>
+<td>
+PORTFOLIO 5 FI ESPECIALMENTE CONSTITUIDO RF
+</td>
+<td>
+04/17/2015
+</td>
+<td>
+226.62
+</td>
+<td>
+7647609000104
+</td>
+<td align="right">
+       120
+</td>
+<td>
+MATRIZ SP - MARCELO TORRES
+</td>
+</tr>
+<tr>
+<td align="right">
+     24516
+</td>
+<td>
+MANOELA LUTFALLA ZARZUR 
+</td>
+<td>
+04/06/2015
+</td>
+<td>
+22.86
+</td>
+<td>
+38200099814
+</td>
+<td align="right">
+       595
+</td>
+<td>
+SIDINEI MALAMAN
+</td>
+</tr>
+<tr>
+<td align="right">
+     55923
+</td>
+<td>
+INST. DE PREV. SOCIAL DOS SERV.PUBLICOS DO MUN. DE ALTAMIRA
+</td>
+<td>
+04/29/2015
+</td>
+<td>
+6492.34
+</td>
+<td>
+1966769000121
+</td>
+<td align="right">
+       509
+</td>
+<td>
+FILIAL RJ - CARLOS AUGUSTO DALE FILHO
+</td>
+</tr>
+<tr>
+<td align="right">
+     20223
+</td>
+<td>
+BB GESTAO DE RECURSOS DTVM SA
+</td>
+<td>
+04/20/2015
+</td>
+<td>
+514.55
+</td>
+<td>
+30822936000169
+</td>
+<td align="right">
+       535
+</td>
+<td>
+FILIAL-RJ-MESA COMPARTILHADA-INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     53740
+</td>
+<td>
+JCF FUNDO DE INVESTIMENTO MULTIMERCADO
+</td>
+<td>
+04/16/2015
+</td>
+<td>
+722.96
+</td>
+<td>
+18812294000111
+</td>
+<td align="right">
+       538
+</td>
+<td>
+FILIAL RJ - FABIO COSTA
+</td>
+</tr>
+<tr>
+<td align="right">
+     32807
+</td>
+<td>
+BNY MELLON ARX LONG TERM FUNDO DE INVESTIMENTO DE ACOES
+</td>
+<td>
+04/28/2015
+</td>
+<td>
+2130.41
+</td>
+<td>
+10237480000162
+</td>
+<td align="right">
+       401
+</td>
+<td>
+FILIAL RJ - MARCELO RZEZINSKI
+</td>
+</tr>
+<tr>
+<td align="right">
+     44945
+</td>
+<td>
+BB GESTAO DE RECURSOS DTVM SA
+</td>
+<td>
+04/07/2015
+</td>
+<td>
+1203.53
+</td>
+<td>
+30822936000169
+</td>
+<td align="right">
+       535
+</td>
+<td>
+FILIAL-RJ-MESA COMPARTILHADA-INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     52172
+</td>
+<td>
+HERMES PIRES DO NASCIMENTO
+</td>
+<td>
+04/22/2015
+</td>
+<td>
+153.36
+</td>
+<td>
+6299654805
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     35502
+</td>
+<td>
+APREV II FUNDO DE INVESTIMENTO MULTIMERCADO
+</td>
+<td>
+04/17/2015
+</td>
+<td>
+30.05
+</td>
+<td>
+7647255000190
+</td>
+<td align="right">
+       120
+</td>
+<td>
+MATRIZ SP - MARCELO TORRES
+</td>
+</tr>
+<tr>
+<td align="right">
+     54117
+</td>
+<td>
+JOSE FRANCISCO BORGES MARQUES RIBEIRO
+</td>
+<td>
+04/15/2015
+</td>
+<td>
+30.00
+</td>
+<td>
+80337236020
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     24642
+</td>
+<td>
+ETHEL PERLMAN 
+</td>
+<td>
+04/22/2015
+</td>
+<td>
+105.08
+</td>
+<td>
+8994290842
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     28840
+</td>
+<td>
+BB GESTAO DE RECURSOS DTVM SA
+</td>
+<td>
+04/20/2015
+</td>
+<td>
+85.45
+</td>
+<td>
+30822936000169
+</td>
+<td align="right">
+       535
+</td>
+<td>
+FILIAL-RJ-MESA COMPARTILHADA-INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     52539
+</td>
+<td>
+FLAG MASTER FIM
+</td>
+<td>
+04/29/2015
+</td>
+<td>
+6710.92
+</td>
+<td>
+14828462000106
+</td>
+<td align="right">
+       401
+</td>
+<td>
+FILIAL RJ - MARCELO RZEZINSKI
+</td>
+</tr>
+<tr>
+<td align="right">
+     34373
+</td>
+<td>
+IGUANA FUNDO DE INVESTIMENTO DE AÇOES
+</td>
+<td>
+04/13/2015
+</td>
+<td>
+112.36
+</td>
+<td>
+10765194000170
+</td>
+<td align="right">
+        41
+</td>
+<td>
+MATRIZ SP - NERVAL BRAGA
+</td>
+</tr>
+<tr>
+<td align="right">
+     45889
+</td>
+<td>
+JACQUES PARREIRAS BARBOSA
+</td>
+<td>
+04/14/2015
+</td>
+<td>
+42.59
+</td>
+<td>
+49072005600
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     24861
+</td>
+<td>
+PARTNER FUNDO DE INVESTIMENTO EM ACOES INV. NO EXTERIOR
+</td>
+<td>
+04/10/2015
+</td>
+<td>
+15.00
+</td>
+<td>
+8464626000160
+</td>
+<td align="right">
+       589
+</td>
+<td>
+GRADUAL INSTITUCIONAL
+</td>
+</tr>
+<tr>
+<td align="right">
+     48378
+</td>
+<td>
+FELIPE AUGUSTO LAYOUN MOREIRA E SILVA 
+</td>
+<td>
+04/16/2015
+</td>
+<td>
+34.98
+</td>
+<td>
+6109351601
+</td>
+<td align="right">
+       250
+</td>
+<td>
+MATRIZ-SP-GRADUAL FUNC/PESSOAS VINCULADAS
+</td>
+</tr>
+<tr>
+<td align="right">
+     39244
+</td>
+<td>
+BB GESTAO DE RECURSOS DTVM SA
+</td>
+<td>
+04/20/2015
+</td>
+<td>
+172.52
+</td>
+<td>
+30822936000169
+</td>
+<td align="right">
+       535
+</td>
+<td>
+FILIAL-RJ-MESA COMPARTILHADA-INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     54954
+</td>
+<td>
+INDIE MASTER FUNDO DE INVESTIMENTO DE ACOES
+</td>
+<td>
+04/30/2015
+</td>
+<td>
+270.57
+</td>
+<td>
+17335645000188
+</td>
+<td align="right">
+       559
+</td>
+<td>
+FILIAL RJ - MATHEUS LAGE 
+</td>
+</tr>
+<tr>
+<td align="right">
+     36824
+</td>
+<td>
+CARLOS MAURICIO METZNER
+</td>
+<td>
+04/20/2015
+</td>
+<td>
+10.00
+</td>
+<td>
+3062530898
+</td>
+<td align="right">
+       329
+</td>
+<td>
+RIB PRETO-SP-FORS AAI-SERGIO-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     48212
+</td>
+<td>
+BB GESTAO DE RECURSOS DTVM SA
+</td>
+<td>
+04/30/2015
+</td>
+<td>
+17.27
+</td>
+<td>
+30822936000169
+</td>
+<td align="right">
+       535
+</td>
+<td>
+FILIAL-RJ-MESA COMPARTILHADA-INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     55441
+</td>
+<td>
+ANDRE LUIS DE BARROS PIVETTI
+</td>
+<td>
+04/24/2015
+</td>
+<td>
+5950.02
+</td>
+<td>
+1453020756
+</td>
+<td align="right">
+       409
+</td>
+<td>
+MATRIZ -SP - LUGANO AAI - ELIEZER PEREIRA - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     54955
+</td>
+<td>
+INDIE INSTITUCIONAL MASTER FUNDO DE INVESTIMENTO DE ACOES 
+</td>
+<td>
+04/30/2015
+</td>
+<td>
+122.46
+</td>
+<td>
+19278462000101
+</td>
+<td align="right">
+       559
+</td>
+<td>
+FILIAL RJ - MATHEUS LAGE 
+</td>
+</tr>
+<tr>
+<td align="right">
+     43066
+</td>
+<td>
+CAIXA FMP - FGTS VALE DO RIO DOCE - MIGRACAO
+</td>
+<td>
+04/28/2015
+</td>
+<td>
+8.85
+</td>
+<td>
+4885832000193
+</td>
+<td align="right">
+       538
+</td>
+<td>
+FILIAL RJ - FABIO COSTA
+</td>
+</tr>
+<tr>
+<td align="right">
+     51870
+</td>
+<td>
+TERRA BOA MASTER FUNDO DE INVESTIMENTO DE ACOES
+</td>
+<td>
+04/14/2015
+</td>
+<td>
+340.00
+</td>
+<td>
+15795971000142
+</td>
+<td align="right">
+       527
+</td>
+<td>
+MATRIZ-SP-GRADUAL-MESA EQUITIES-VARE E INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     20237
+</td>
+<td>
+BB GESTAO DE RECURSOS DTVM SA
+</td>
+<td>
+04/07/2015
+</td>
+<td>
+2507.92
+</td>
+<td>
+30822936000169
+</td>
+<td align="right">
+       535
+</td>
+<td>
+FILIAL-RJ-MESA COMPARTILHADA-INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     42672
+</td>
+<td>
+DORALINA MARIANO DA SILVA
+</td>
+<td>
+04/10/2015
+</td>
+<td>
+40.00
+</td>
+<td>
+20731582187
+</td>
+<td align="right">
+       578
+</td>
+<td>
+FILIAL RJ - INVESTCAP AAI - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     38372
+</td>
+<td>
+CLAYTON FURUKAWA
+</td>
+<td>
+04/22/2015
+</td>
+<td>
+10.00
+</td>
+<td>
+2149658801
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     43035
+</td>
+<td>
+FUNDO DE INVESTIMENTO CAIXA CELI MULTIMERCADO CP LP
+</td>
+<td>
+04/07/2015
+</td>
+<td>
+459.65
+</td>
+<td>
+10740612000174
+</td>
+<td align="right">
+       538
+</td>
+<td>
+FILIAL RJ - FABIO COSTA
+</td>
+</tr>
+<tr>
+<td align="right">
+      2778
+</td>
+<td>
+WILSON MARIO GIROTTI
+</td>
+<td>
+04/24/2015
+</td>
+<td>
+293.61
+</td>
+<td>
+5173027800
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     35275
+</td>
+<td>
+SEIVA RENDA FIXA - FUNDO DE INVESTIMENTO 
+</td>
+<td>
+04/17/2015
+</td>
+<td>
+30.05
+</td>
+<td>
+8169334000103
+</td>
+<td align="right">
+       120
+</td>
+<td>
+MATRIZ SP - MARCELO TORRES
+</td>
+</tr>
+<tr>
+<td align="right">
+     43073
+</td>
+<td>
+FUNDO DE INVESTIMENTO EM ACOES CAIXA VALE DO RIO DOCE
+</td>
+<td>
+04/28/2015
+</td>
+<td>
+477.05
+</td>
+<td>
+4885820000169
+</td>
+<td align="right">
+       538
+</td>
+<td>
+FILIAL RJ - FABIO COSTA
+</td>
+</tr>
+<tr>
+<td align="right">
+     20212
+</td>
+<td>
+BB GESTAO DE RECURSOS DTVM SA
+</td>
+<td>
+04/30/2015
+</td>
+<td>
+2635.13
+</td>
+<td>
+30822936000169
+</td>
+<td align="right">
+       535
+</td>
+<td>
+FILIAL-RJ-MESA COMPARTILHADA-INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     35498
+</td>
+<td>
+CARTEIRA CORPORATIVA 97 FI RENDA FIXA CREDITO PRIVADO
+</td>
+<td>
+04/17/2015
+</td>
+<td>
+226.62
+</td>
+<td>
+5906026000117
+</td>
+<td align="right">
+       120
+</td>
+<td>
+MATRIZ SP - MARCELO TORRES
+</td>
+</tr>
+<tr>
+<td align="right">
+     55253
+</td>
+<td>
+R&amp;C FUNDO DE INVESTIMENTO MULTIMERCADO
+</td>
+<td>
+04/27/2015
+</td>
+<td>
+3.66
+</td>
+<td>
+7420608000114
+</td>
+<td align="right">
+       591
+</td>
+<td>
+IANKEL NORONHA - CLIENTES INSTITUCIONAIS
+</td>
+</tr>
+<tr>
+<td align="right">
+     43008
+</td>
+<td>
+FIA CAIXA SUSTENTABILIDADE EMPRESARIAL - ISE
+</td>
+<td>
+04/29/2015
+</td>
+<td>
+34.27
+</td>
+<td>
+8070838000163
+</td>
+<td align="right">
+       144
+</td>
+<td>
+MATRIZ SP - MARCOS BONISEN
+</td>
+</tr>
+<tr>
+<td align="right">
+     27229
+</td>
+<td>
+RICARDO SANGALLI
+</td>
+<td>
+04/20/2015
+</td>
+<td>
+12.98
+</td>
+<td>
+3572166950
+</td>
+<td align="right">
+       250
+</td>
+<td>
+MATRIZ-SP-GRADUAL FUNC/PESSOAS VINCULADAS
+</td>
+</tr>
+<tr>
+<td align="right">
+     48417
+</td>
+<td>
+RONALD DA SILVA DE MIRANDA
+</td>
+<td>
+04/08/2015
+</td>
+<td>
+20.00
+</td>
+<td>
+7755052770
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     41454
+</td>
+<td>
+BRASIL CAPITAL MASTER - FUNDO DE INVESTIMENTO MULTIMERCADO
+</td>
+<td>
+04/10/2015
+</td>
+<td>
+40.00
+</td>
+<td>
+11176057000162
+</td>
+<td align="right">
+       340
+</td>
+<td>
+MATRIZ-SP-GRADUAL-MESA INST ASS COMP-VARE E INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     52119
+</td>
+<td>
+TOBIAS VAZ DA COSTA
+</td>
+<td>
+04/22/2015
+</td>
+<td>
+75.00
+</td>
+<td>
+1343290660
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     56092
+</td>
+<td>
+BANCO BTG PACTUAL SA
+</td>
+<td>
+04/24/2015
+</td>
+<td>
+76.58
+</td>
+<td>
+30306294000145
+</td>
+<td align="right">
+       340
+</td>
+<td>
+MATRIZ-SP-GRADUAL-MESA INST ASS COMP-VARE E INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     56227
+</td>
+<td>
+GIAN PAOLO RASTELLI
+</td>
+<td>
+04/29/2015
+</td>
+<td>
+132.02
+</td>
+<td>
+52991571853
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     37893
+</td>
+<td>
+INSTITUTIONAL ACTIVE FIX IB - MULTIMERCADO FI
+</td>
+<td>
+04/17/2015
+</td>
+<td>
+226.62
+</td>
+<td>
+4764174000181
+</td>
+<td align="right">
+       120
+</td>
+<td>
+MATRIZ SP - MARCELO TORRES
+</td>
+</tr>
+<tr>
+<td align="right">
+     53218
+</td>
+<td>
+BNY MELLON ARX LONG TERM INSTITUCIONAL FIA
+</td>
+<td>
+04/28/2015
+</td>
+<td>
+654.05
+</td>
+<td>
+17255006000102
+</td>
+<td align="right">
+       401
+</td>
+<td>
+FILIAL RJ - MARCELO RZEZINSKI
+</td>
+</tr>
+<tr>
+<td align="right">
+     28844
+</td>
+<td>
+BB GESTAO DE RECURSOS DTVM SA
+</td>
+<td>
+04/30/2015
+</td>
+<td>
+21.83
+</td>
+<td>
+30822936000169
+</td>
+<td align="right">
+       535
+</td>
+<td>
+FILIAL-RJ-MESA COMPARTILHADA-INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     53360
+</td>
+<td>
+CHELSEA FUNDO DE INVESTIMENTO EM ACOES
+</td>
+<td>
+04/28/2015
+</td>
+<td>
+254.05
+</td>
+<td>
+17133639000148
+</td>
+<td align="right">
+       401
+</td>
+<td>
+FILIAL RJ - MARCELO RZEZINSKI
+</td>
+</tr>
+<tr>
+<td align="right">
+     20214
+</td>
+<td>
+BB GESTAO DE RECURSOS DTVM SA
+</td>
+<td>
+04/30/2015
+</td>
+<td>
+5185.43
+</td>
+<td>
+30822936000169
+</td>
+<td align="right">
+       535
+</td>
+<td>
+FILIAL-RJ-MESA COMPARTILHADA-INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     48768
+</td>
+<td>
+IGOR VASQUES DO NASCIMENTO
+</td>
+<td>
+04/16/2015
+</td>
+<td>
+199.35
+</td>
+<td>
+10658188747
+</td>
+<td align="right">
+       597
+</td>
+<td>
+DANILO BRACCIO PIROZZI
+</td>
+</tr>
+<tr>
+<td align="right">
+     39861
+</td>
+<td>
+NILSON NESTOR WOLFGRAMM
+</td>
+<td>
+04/20/2015
+</td>
+<td>
+243.32
+</td>
+<td>
+56832842953
+</td>
+<td align="right">
+       597
+</td>
+<td>
+DANILO BRACCIO PIROZZI
+</td>
+</tr>
+<tr>
+<td align="right">
+     55630
+</td>
+<td>
+BNDES PARTICIPACOES SA BNDESPAR
+</td>
+<td>
+04/28/2015
+</td>
+<td>
+36056.04
+</td>
+<td>
+383281000109
+</td>
+<td align="right">
+       589
+</td>
+<td>
+GRADUAL INSTITUCIONAL
+</td>
+</tr>
+<tr>
+<td align="right">
+     51110
+</td>
+<td>
+ARVUS EQUITIES FUNDO DE INVESTIMENTO DE ACOES
+</td>
+<td>
+04/08/2015
+</td>
+<td>
+31.27
+</td>
+<td>
+11802635000129
+</td>
+<td align="right">
+       315
+</td>
+<td>
+MATRIZ SP - AMOS SALMON SANCHES
+</td>
+</tr>
+<tr>
+<td align="right">
+      5973
+</td>
+<td>
+EDUARDO DE SOUZA RAMOS FIGUEIREDO
+</td>
+<td>
+04/30/2015
+</td>
+<td>
+10.00
+</td>
+<td>
+33708267800
+</td>
+<td align="right">
+        13
+</td>
+<td>
+GRADUAL-SP- MATRIZ-MESA INSTITUCIONAL- INST BM&amp;F
+</td>
+</tr>
+<tr>
+<td align="right">
+     45224
+</td>
+<td>
+ROSARIA SCORZA FLORIANI
+</td>
+<td>
+04/20/2015
+</td>
+<td>
+27.00
+</td>
+<td>
+26434814020
+</td>
+<td align="right">
+       156
+</td>
+<td>
+PORTO ALEGRE-RS-ICONE AAI BASE 2-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     43042
+</td>
+<td>
+FUNDO DE INVESTIMENTO EM ACOES CAIXA IBOVESPA
+</td>
+<td>
+04/29/2015
+</td>
+<td>
+1888.97
+</td>
+<td>
+1525057000177
+</td>
+<td align="right">
+       144
+</td>
+<td>
+MATRIZ SP - MARCOS BONISEN
+</td>
+</tr>
+<tr>
+<td align="right">
+     52481
+</td>
+<td>
+MARCOS ADRIANO CANGUSSU RODRIGUES
+</td>
+<td>
+04/17/2015
+</td>
+<td>
+132.02
+</td>
+<td>
+63911027672
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     20213
+</td>
+<td>
+BB GESTAO DE RECURSOS DTVM SA
+</td>
+<td>
+04/30/2015
+</td>
+<td>
+48.20
+</td>
+<td>
+30822936000169
+</td>
+<td align="right">
+       535
+</td>
+<td>
+FILIAL-RJ-MESA COMPARTILHADA-INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     52101
+</td>
+<td>
+ICATU VANGUARDA TOP ACOES FIA
+</td>
+<td>
+04/10/2015
+</td>
+<td>
+12.88
+</td>
+<td>
+17209337000106
+</td>
+<td align="right">
+       320
+</td>
+<td>
+MATRIZ SP - CALIL/TON
+</td>
+</tr>
+<tr>
+<td align="right">
+     35273
+</td>
+<td>
+ITAU FLEXPREV FSA/TM MULTIMERCADO CREDITO PRIVADO - FI
+</td>
+<td>
+04/17/2015
+</td>
+<td>
+30.05
+</td>
+<td>
+3364021000184
+</td>
+<td align="right">
+       120
+</td>
+<td>
+MATRIZ SP - MARCELO TORRES
+</td>
+</tr>
+<tr>
+<td align="right">
+     38818
+</td>
+<td>
+BB GESTAO DE RECURSOS DTVM SA
+</td>
+<td>
+04/07/2015
+</td>
+<td>
+38.84
+</td>
+<td>
+30822936000169
+</td>
+<td align="right">
+       535
+</td>
+<td>
+FILIAL-RJ-MESA COMPARTILHADA-INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     47648
+</td>
+<td>
+MANDIN MULTIESTRATEGIA FIM CP IE
+</td>
+<td>
+04/24/2015
+</td>
+<td>
+121.15
+</td>
+<td>
+10430022000145
+</td>
+<td align="right">
+       315
+</td>
+<td>
+MATRIZ SP - AMOS SALMON SANCHES
+</td>
+</tr>
+<tr>
+<td align="right">
+     41132
+</td>
+<td>
+JOSE CARLOS DOS SANTOS JUNIOR
+</td>
+<td>
+04/30/2015
+</td>
+<td>
+50.00
+</td>
+<td>
+12757019813
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     30829
+</td>
+<td>
+MARCELO ALEXANDRE CAPARROZ MALACRIDA
+</td>
+<td>
+04/17/2015
+</td>
+<td>
+372.41
+</td>
+<td>
+17405699898
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     34269
+</td>
+<td>
+BB GESTAO DE RECURSOS DTVM SA
+</td>
+<td>
+04/07/2015
+</td>
+<td>
+19.02
+</td>
+<td>
+30822936000169
+</td>
+<td align="right">
+       535
+</td>
+<td>
+FILIAL-RJ-MESA COMPARTILHADA-INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     33139
+</td>
+<td>
+MARCELO RZEZINSKI 
+</td>
+<td>
+04/22/2015
+</td>
+<td>
+489.76
+</td>
+<td>
+82842841700
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     53775
+</td>
+<td>
+MARCUS AURELIUS PEREIRA E SILVA JUNIOR
+</td>
+<td>
+04/28/2015
+</td>
+<td>
+97.66
+</td>
+<td>
+7539685760
+</td>
+<td align="right">
+       511
+</td>
+<td>
+FILIAL RJ - FERNANDO BARBOSA
+</td>
+</tr>
+<tr>
+<td align="right">
+     24515
+</td>
+<td>
+PEDRO ERNESTO LUTFALLA ZARZUR
+</td>
+<td>
+04/13/2015
+</td>
+<td>
+22.86
+</td>
+<td>
+38200105806
+</td>
+<td align="right">
+       595
+</td>
+<td>
+SIDINEI MALAMAN
+</td>
+</tr>
+<tr>
+<td align="right">
+     51650
+</td>
+<td>
+BRASIL CAPITAL LONG BIASED MASTER FUNDO DE INVEST. EM ACOES
+</td>
+<td>
+04/10/2015
+</td>
+<td>
+40.00
+</td>
+<td>
+14284684000105
+</td>
+<td align="right">
+       340
+</td>
+<td>
+MATRIZ-SP-GRADUAL-MESA INST ASS COMP-VARE E INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     52136
+</td>
+<td>
+DANIEL MARIANI SILVA
+</td>
+<td>
+04/17/2015
+</td>
+<td>
+103.71
+</td>
+<td>
+6269228603
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+      8812
+</td>
+<td>
+FUNDACAO SAO FRANCISCO DE SEGURIDADE SOCIAL
+</td>
+<td>
+04/30/2015
+</td>
+<td>
+95.60
+</td>
+<td>
+1635671000191
+</td>
+<td align="right">
+       509
+</td>
+<td>
+FILIAL RJ - CARLOS AUGUSTO DALE FILHO
+</td>
+</tr>
+<tr>
+<td align="right">
+     43013
+</td>
+<td>
+FI CAIXA MASTER LONG SHORT MULTIMERCADO LONGO PRAZO
+</td>
+<td>
+04/07/2015
+</td>
+<td>
+262.75
+</td>
+<td>
+8074582000162
+</td>
+<td align="right">
+       144
+</td>
+<td>
+MATRIZ SP - MARCOS BONISEN
+</td>
+</tr>
+<tr>
+<td align="right">
+     53967
+</td>
+<td>
+RODRIGO OSCAR DE OLIVEIRA 26932402807 
+</td>
+<td>
+04/15/2015
+</td>
+<td>
+50.00
+</td>
+<td>
+16654521000100
+</td>
+<td align="right">
+        22
+</td>
+<td>
+CLIENTE GRADUAL INVESTIMENTOS
+</td>
+</tr>
+<tr>
+<td align="right">
+     55813
+</td>
+<td>
+BB GESTAO DE RECURSOS DTVM SA
+</td>
+<td>
+04/27/2015
+</td>
+<td>
+134.61
+</td>
+<td>
+30822936000169
+</td>
+<td align="right">
+       535
+</td>
+<td>
+FILIAL-RJ-MESA COMPARTILHADA-INST
+</td>
+</tr>
+<tr>
+<td align="right">
+     56062
+</td>
+<td>
+ACCESS YIELD FIM
+</td>
+<td>
+04/17/2015
+</td>
+<td>
+110.46
+</td>
+<td>
+17899612000160
+</td>
+<td align="right">
+       393
+</td>
+<td>
+MATRIZ - SP - GRADUAL - GRADUAL WEALTH - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     47246
+</td>
+<td>
+ITAU FLEXPREV FSA TM II CP MULTIMERCADO - FI
+</td>
+<td>
+04/17/2015
+</td>
+<td>
+30.05
+</td>
+<td>
+10263625000108
+</td>
+<td align="right">
+       120
+</td>
+<td>
+MATRIZ SP - MARCELO TORRES
+</td>
+</tr>
+<tr>
+<td align="right">
+     28345
+</td>
+<td>
+VIVIENNE TOMICH LAENDER GAZZINELLI
+</td>
+<td>
+04/20/2015
+</td>
+<td>
+20.00
+</td>
+<td>
+71159002649
+</td>
+<td align="right">
+       101
+</td>
+<td>
+FILIAL BH-MG-FARO AAI BASEGRADUAL-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     31419
+</td>
+<td>
+EDVAN JOSE CALADO
+</td>
+<td>
+04/20/2015
+</td>
+<td>
+20.00
+</td>
+<td>
+34373160449
+</td>
+<td align="right">
+       196
+</td>
+<td>
+JP-PB-GBMF AA-FERNANDO,GAIAO,FABIO-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     55734
+</td>
+<td>
+L3 FUNDO DE INVESTIMENTO DE ACOES
+</td>
+<td>
+04/09/2015
+</td>
+<td>
+63.92
+</td>
+<td>
+21329166000126
+</td>
+<td align="right">
+       591
+</td>
+<td>
+IANKEL NORONHA - CLIENTES INSTITUCIONAIS
+</td>
+</tr>
+<tr>
+<td align="right">
+     55733
+</td>
+<td>
+L3 FUNDO DE INVESTIMENTO MULTIMERCADO
+</td>
+<td>
+04/30/2015
+</td>
+<td>
+533.07
+</td>
+<td>
+21318416000122
+</td>
+<td align="right">
+       591
+</td>
+<td>
+IANKEL NORONHA - CLIENTES INSTITUCIONAIS
+</td>
+</tr>
+<tr>
+<td align="right">
+     55771
+</td>
+<td>
+L3 MULTIESTRATEGIA FUNDO DE INVESTIMENTO MULTIMERCADO
+</td>
+<td>
+04/28/2015
+</td>
+<td>
+85.37
+</td>
+<td>
+21646715000196
+</td>
+<td align="right">
+       591
+</td>
+<td>
+IANKEL NORONHA - CLIENTES INSTITUCIONAIS
+</td>
+</tr>
+<tr>
+<td align="right">
+     55198
+</td>
+<td>
+LEILA BASTOS WAGNER
+</td>
+<td>
+04/23/2015
+</td>
+<td>
+65.09
+</td>
+<td>
+2704495742
+</td>
+<td align="right">
+       250
+</td>
+<td>
+MATRIZ-SP-GRADUAL FUNC/PESSOAS VINCULADAS
+</td>
+</tr>
+<tr>
+<td align="right">
+     46509
+</td>
+<td>
+ANTONIO EDUARDO PINTO LEITE
+</td>
+<td>
+04/27/2015
+</td>
+<td>
+30.00
+</td>
+<td>
+3609087722
+</td>
+<td align="right">
+       597
+</td>
+<td>
+DANILO BRACCIO PIROZZI
+</td>
+</tr>
+<tr>
+<td align="right">
+     53922
+</td>
+<td>
+ARX PWM FUNDO DE INVESTIMENTO EM ACOES
+</td>
+<td>
+04/28/2015
+</td>
+<td>
+415.44
+</td>
+<td>
+18981005000108
+</td>
+<td align="right">
+       401
+</td>
+<td>
+FILIAL RJ - MARCELO RZEZINSKI
+</td>
+</tr>
+<tr>
+<td align="right">
+     43069
+</td>
+<td>
+CAIXA FMP-FGTS VALE DO RIO DOCE II
+</td>
+<td>
+04/28/2015
+</td>
+<td>
+962.12
+</td>
+<td>
+4885824000147
+</td>
+<td align="right">
+       538
+</td>
+<td>
+FILIAL RJ - FABIO COSTA
+</td>
+</tr>
+<tr>
+<td align="right">
+     24806
+</td>
+<td>
+CARLOS EDUARDO MOIZES 
+</td>
+<td>
+04/14/2015
+</td>
+<td>
+25.00
+</td>
+<td>
+99517922604
+</td>
+<td align="right">
+       578
+</td>
+<td>
+FILIAL RJ - INVESTCAP AAI - VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     52080
+</td>
+<td>
+MARCELO CARLOS DA SILVA TELLES
+</td>
+<td>
+04/27/2015
+</td>
+<td>
+20.85
+</td>
+<td>
+66509432749
+</td>
+<td align="right">
+       511
+</td>
+<td>
+FILIAL RJ - FERNANDO BARBOSA
+</td>
+</tr>
+<tr>
+<td align="right">
+     52291
+</td>
+<td>
+JOSE ROBERTO ARENSTEIN
+</td>
+<td>
+04/24/2015
+</td>
+<td>
+1638.64
+</td>
+<td>
+27032966810
+</td>
+<td align="right">
+       593
+</td>
+<td>
+Bruno Balassiano
+</td>
+</tr>
+<tr>
+<td align="right">
+     53750
+</td>
+<td>
+MAURICIO BARRETO
+</td>
+<td>
+04/20/2015
+</td>
+<td>
+397.99
+</td>
+<td>
+44180152720
+</td>
+<td align="right">
+       511
+</td>
+<td>
+FILIAL RJ - FERNANDO BARBOSA
+</td>
+</tr>
+<tr>
+<td align="right">
+     53324
+</td>
+<td>
+VITOR DE OLIVEIRA BRAZ
+</td>
+<td>
+04/17/2015
+</td>
+<td>
+20.00
+</td>
+<td>
+8763751666
+</td>
+<td align="right">
+       248
+</td>
+<td>
+FILIAL BH-MG-FARO AAIS-VAREJO
+</td>
+</tr>
+<tr>
+<td align="right">
+     35243
+</td>
+<td>
+NASHIRA PREVIDENCIARIO MULTIMERCADO CP- FI
+</td>
+<td>
+04/17/2015
+</td>
+<td>
+226.62
+</td>
+<td>
+3618274000137
+</td>
+<td align="right">
+       120
+</td>
+<td>
+MATRIZ SP - MARCELO TORRES
+</td>
+</tr>
+<tr>
+<td align="right">
+     45453
+</td>
+<td>
+ALOCC AÇOES TNA  FUNDO DE INVESTIMENTO EM COTAS FIA
+</td>
+<td>
+04/16/2015
+</td>
+<td>
+761.09
+</td>
+<td>
+12120470000178
+</td>
+<td align="right">
+       589
+</td>
+<td>
+GRADUAL INSTITUCIONAL
+</td>
+</tr>
+<tr>
+<td align="right">
+     55641
+</td>
+<td>
+FLAG MASTER FUNDO DE INVESTIMENTO DE ACOES
+</td>
+<td>
+04/29/2015
+</td>
+<td>
+2066.31
+</td>
+<td>
+21293631000116
+</td>
+<td align="right">
+       401
+</td>
+<td>
+FILIAL RJ - MARCELO RZEZINSKI
+</td>
+</tr>
+</table>
+<p>
+</body>
+</html>

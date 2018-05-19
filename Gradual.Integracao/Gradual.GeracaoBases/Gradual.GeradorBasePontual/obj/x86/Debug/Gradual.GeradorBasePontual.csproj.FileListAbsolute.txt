@@ -1,0 +1,13 @@
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeradorBasePontual\bin\Debug\Gradual.GeradorBasePontual.exe.config
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeradorBasePontual\bin\Debug\Gradual.GeradorBasePontual.exe
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeradorBasePontual\bin\Debug\Gradual.GeradorBasePontual.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeradorBasePontual\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeradorBasePontual\obj\x86\Debug\Gradual.GeradorBasePontual.exe
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeradorBasePontual\obj\x86\Debug\Gradual.GeradorBasePontual.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeradorBasePontual\bin\Debug\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeradorBasePontual\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeradorBasePontual\bin\Debug\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeradorBasePontual\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeradorBasePontual\bin\Debug\Gradual.GeracaoBasesDB.Lib.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeradorBasePontual\bin\Debug\EPPlus.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeradorBasePontual\bin\Debug\Gradual.GeracaoBasesDB.Lib.pdb

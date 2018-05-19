@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.Integracao.Itau.EdiFundos", "Gradual.Integracao.Itau.EdiFundos\Gradual.Integracao.Itau.EdiFundos.csproj", "{E8E19AE3-DFFE-4C6A-8E36-7EB96A0FF34B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.Integracao.Itau.EdiFundos.Lib", "Gradual.Integracao.Itau.EdiFundos.Lib\Gradual.Integracao.Itau.EdiFundos.Lib.csproj", "{0A612DAC-A5E5-457F-85BE-90CD7F05B0B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.Integracao.Itau.Downloader", "Gradual.Integracao.Itau.Downloader\Gradual.Integracao.Itau.Downloader.csproj", "{4E7BE0A3-475B-4DA5-990C-EE2577481D8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTesteDownloads", "AppTesteDownloads\AppTesteDownloads.csproj", "{6C395437-2DA2-425F-86E6-7CB1C7E36B99}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gradual.Integracao.Itau.EdiFundos\\Gradual.Integracao.Itau.EdiFundos.csproj
+		SccProjectName1 = Gradual.Integracao.Itau.EdiFundos
+		SccLocalPath1 = Gradual.Integracao.Itau.EdiFundos
+		SccProjectUniqueName2 = Gradual.Integracao.Itau.EdiFundos.Lib\\Gradual.Integracao.Itau.EdiFundos.Lib.csproj
+		SccProjectName2 = Gradual.Integracao.Itau.EdiFundos.Lib
+		SccLocalPath2 = Gradual.Integracao.Itau.EdiFundos.Lib
+		SccProjectUniqueName3 = Gradual.Integracao.Itau.Downloader\\Gradual.Integracao.Itau.Downloader.csproj
+		SccProjectName3 = Gradual.Integracao.Itau.Downloader
+		SccLocalPath3 = Gradual.Integracao.Itau.Downloader
+		SccProjectUniqueName4 = AppTesteDownloads\\AppTesteDownloads.csproj
+		SccProjectName4 = AppTesteDownloads
+		SccLocalPath4 = AppTesteDownloads
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8E19AE3-DFFE-4C6A-8E36-7EB96A0FF34B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8E19AE3-DFFE-4C6A-8E36-7EB96A0FF34B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8E19AE3-DFFE-4C6A-8E36-7EB96A0FF34B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E8E19AE3-DFFE-4C6A-8E36-7EB96A0FF34B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E8E19AE3-DFFE-4C6A-8E36-7EB96A0FF34B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E8E19AE3-DFFE-4C6A-8E36-7EB96A0FF34B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8E19AE3-DFFE-4C6A-8E36-7EB96A0FF34B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8E19AE3-DFFE-4C6A-8E36-7EB96A0FF34B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E8E19AE3-DFFE-4C6A-8E36-7EB96A0FF34B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E8E19AE3-DFFE-4C6A-8E36-7EB96A0FF34B}.Release|x86.ActiveCfg = Release|Any CPU
+		{0A612DAC-A5E5-457F-85BE-90CD7F05B0B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A612DAC-A5E5-457F-85BE-90CD7F05B0B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A612DAC-A5E5-457F-85BE-90CD7F05B0B0}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0A612DAC-A5E5-457F-85BE-90CD7F05B0B0}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0A612DAC-A5E5-457F-85BE-90CD7F05B0B0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0A612DAC-A5E5-457F-85BE-90CD7F05B0B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A612DAC-A5E5-457F-85BE-90CD7F05B0B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A612DAC-A5E5-457F-85BE-90CD7F05B0B0}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0A612DAC-A5E5-457F-85BE-90CD7F05B0B0}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0A612DAC-A5E5-457F-85BE-90CD7F05B0B0}.Release|x86.ActiveCfg = Release|Any CPU
+		{4E7BE0A3-475B-4DA5-990C-EE2577481D8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E7BE0A3-475B-4DA5-990C-EE2577481D8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E7BE0A3-475B-4DA5-990C-EE2577481D8D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4E7BE0A3-475B-4DA5-990C-EE2577481D8D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4E7BE0A3-475B-4DA5-990C-EE2577481D8D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4E7BE0A3-475B-4DA5-990C-EE2577481D8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E7BE0A3-475B-4DA5-990C-EE2577481D8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E7BE0A3-475B-4DA5-990C-EE2577481D8D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4E7BE0A3-475B-4DA5-990C-EE2577481D8D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4E7BE0A3-475B-4DA5-990C-EE2577481D8D}.Release|x86.ActiveCfg = Release|Any CPU
+		{6C395437-2DA2-425F-86E6-7CB1C7E36B99}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{6C395437-2DA2-425F-86E6-7CB1C7E36B99}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{6C395437-2DA2-425F-86E6-7CB1C7E36B99}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{6C395437-2DA2-425F-86E6-7CB1C7E36B99}.Debug|x86.ActiveCfg = Debug|x86
+		{6C395437-2DA2-425F-86E6-7CB1C7E36B99}.Debug|x86.Build.0 = Debug|x86
+		{6C395437-2DA2-425F-86E6-7CB1C7E36B99}.Release|Any CPU.ActiveCfg = Release|x86
+		{6C395437-2DA2-425F-86E6-7CB1C7E36B99}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{6C395437-2DA2-425F-86E6-7CB1C7E36B99}.Release|Mixed Platforms.Build.0 = Release|x86
+		{6C395437-2DA2-425F-86E6-7CB1C7E36B99}.Release|x86.ActiveCfg = Release|x86
+		{6C395437-2DA2-425F-86E6-7CB1C7E36B99}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.EdiFundos\bin\Debug\Gradual.Integracao.Itau.EdiFundos.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.EdiFundos\bin\Debug\Gradual.Integracao.Itau.EdiFundos.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.EdiFundos\bin\Debug\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.EdiFundos\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.EdiFundos\bin\Debug\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.EdiFundos\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.EdiFundos\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.EdiFundos\obj\Debug\Gradual.Integracao.Itau.EdiFundos.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.EdiFundos\obj\Debug\Gradual.Integracao.Itau.EdiFundos.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.EdiFundos\bin\Debug\Gradual.Integracao.Itau.EdiFundos.Lib.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.EdiFundos\bin\Debug\Gradual.Integracao.Itau.EdiFundos.Lib.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.EdiFundos\bin\Debug\Gradual.Generico.Dados.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.EdiFundos\bin\Debug\Gradual.Generico.Dados.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.EdiFundos\bin\Debug\Ionic.Zip.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.Integracao.Itau\Gradual.Integracao.Itau.EdiFundos\bin\Debug\Ionic.Zip.pdb

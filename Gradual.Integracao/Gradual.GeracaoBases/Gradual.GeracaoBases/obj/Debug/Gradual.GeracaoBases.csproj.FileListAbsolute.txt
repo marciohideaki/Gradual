@@ -1,0 +1,13 @@
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeracaoBases\bin\Debug\Gradual.GeracaoBases.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeracaoBases\bin\Debug\Gradual.GeracaoBases.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeracaoBases\bin\Debug\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeracaoBases\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeracaoBases\bin\Debug\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeracaoBases\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeracaoBases\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeracaoBases\obj\Debug\Gradual.GeracaoBases.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeracaoBases\obj\Debug\Gradual.GeracaoBases.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeracaoBases\bin\Debug\EPPlus.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeracaoBases\bin\Debug\Gradual.GeracaoBases.dll.config
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeracaoBases\bin\Debug\Gradual.GeracaoBasesDB.Lib.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.GeracaoBases\Gradual.GeracaoBases\bin\Debug\Gradual.GeracaoBasesDB.Lib.pdb

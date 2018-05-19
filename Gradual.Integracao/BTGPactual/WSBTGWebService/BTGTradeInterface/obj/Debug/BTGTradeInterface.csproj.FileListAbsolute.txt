@@ -1,0 +1,12 @@
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\WSBTGWebService\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\BTGTradeInterface\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\BTGTradeInterface\bin\BTGTradeInterface.dll
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\BTGTradeInterface\bin\BTGTradeInterface.pdb
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\BTGTradeInterface\bin\BTGTradeProcessor.dll
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\BTGTradeInterface\bin\log4net.dll
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\BTGTradeInterface\bin\BTGTradeProcessor.pdb
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\BTGTradeInterface\bin\log4net.pdb
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\BTGTradeInterface\obj\Debug\BTGTradeInterface.dll
+C:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\BTGTradeInterface\obj\Debug\BTGTradeInterface.pdb
+c:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\BTGTradeInterface\bin\Gradual.OMS.Library.dll
+c:\aponso\desenv\Gradual.Integracao\BTGPactual\WSBTGWebService\BTGTradeInterface\bin\Gradual.OMS.Library.pdb

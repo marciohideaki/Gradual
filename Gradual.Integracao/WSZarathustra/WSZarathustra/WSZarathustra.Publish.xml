@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="c:\temp\WSZarathustra" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/WSZarathustra.pdb" publishTime="06/10/2015 11:54:32" />
+    <file relUrl="trades.sql" publishTime="06/10/2015 11:44:32" />
+    <file relUrl="bin/Gradual.OMS.Library.pdb" publishTime="10/22/2014 15:38:03" />
+    <file relUrl="bin/log4net.pdb" publishTime="10/22/2014 15:37:03" />
+    <file relUrl="Web.config" publishTime="06/10/2015 11:54:35" />
+    <file relUrl="bin/WSZarathustra.dll" publishTime="06/10/2015 11:54:32" />
+    <file relUrl="WSTraderBean.asmx" publishTime="03/16/2015 18:39:59" />
+    <file relUrl="bin/log4net.dll" publishTime="10/22/2014 15:37:03" />
+    <file relUrl="bin/Gradual.OMS.Library.dll" publishTime="10/22/2014 15:38:03" />
+  </publishProfile>
+</publishData>

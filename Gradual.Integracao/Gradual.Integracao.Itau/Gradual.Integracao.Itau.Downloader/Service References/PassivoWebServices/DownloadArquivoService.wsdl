@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:intf="http://service.passivo.itau.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns1="http://axis.apache.org" xmlns:impl="http://service.passivo.itau.com" targetNamespace="http://service.passivo.itau.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types />
+  <wsdl:message name="operacoesEmSerPassivoD2XMLResponse">
+    <wsdl:part name="operacoesEmSerPassivoD2XMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="operacoesEmSerPassivoD1XMLNoZIPResponse">
+    <wsdl:part name="operacoesEmSerPassivoD1XMLNoZIPReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="aplicacoesEmAbertoCotasAberturaXMLNoZIPResponse">
+    <wsdl:part name="aplicacoesEmAbertoCotasAberturaXMLNoZIPReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="arquivoDeResgatesTotaisXMLResponse">
+    <wsdl:part name="arquivoDeResgatesTotaisXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="aplicacoesEmAbertoCotasDeFechamentoXMLResponse">
+    <wsdl:part name="aplicacoesEmAbertoCotasDeFechamentoXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastroAssistenteXMLResponse">
+    <wsdl:part name="cadastroAssistenteXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastroUsuarioXMLResponse">
+    <wsdl:part name="cadastroUsuarioXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="saldosCotaAberturaD0XMLNoZIPResponse">
+    <wsdl:part name="saldosCotaAberturaD0XMLNoZIPReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastroCoTitularXMLResponse">
+    <wsdl:part name="cadastroCoTitularXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastroContaCreditoXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastroContaCreditoXMLResponse">
+    <wsdl:part name="cadastroContaCreditoXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="aplicacoesEmAbertoCotasDeFechamentoXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="aplicacoesEmAbertoCotasAberturaXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="movimentacoesEfetivadasXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="saldosCotaAberturaD0XMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastroFundoXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastroGestorXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="arquivoDeMovimentacoesPendentesXMLResponse">
+    <wsdl:part name="arquivoDeMovimentacoesPendentesXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="aplicacoesEmAbertoCotasAberturaXMLNoZIPRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="InternalException" />
+  <wsdl:message name="arquivoDeBloqueiosXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="extratoCompensacaoPrejuizoXMLResponse">
+    <wsdl:part name="extratoCompensacaoPrejuizoXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="saldosCotaFechamentoD0XMLResponse">
+    <wsdl:part name="saldosCotaFechamentoD0XMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="controleArquivoGeradoXMLResponse">
+    <wsdl:part name="controleArquivoGeradoXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="operacoesEmSerPassivoD2XMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="posicaoResultanteRendimentosACompensarXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="movimentacoesEfetivadasXMLResponse">
+    <wsdl:part name="movimentacoesEfetivadasXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="operacoesEmSerPassivoXMLResponse">
+    <wsdl:part name="operacoesEmSerPassivoXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="saldosCotaFechamentoD0XMLNoZIPRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="arquivoDeBloqueiosXMLResponse">
+    <wsdl:part name="arquivoDeBloqueiosXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastroUsuarioXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cotacaoXMLResponse">
+    <wsdl:part name="cotacaoXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastroGrupoXMLResponse">
+    <wsdl:part name="cadastroGrupoXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastroFundoXMLResponse">
+    <wsdl:part name="cadastroFundoXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="aplicacoesEmAbertoCotasAberturaXMLResponse">
+    <wsdl:part name="aplicacoesEmAbertoCotasAberturaXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastroCoTitularXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="operacoesEmSerPassivoD1XMLResponse">
+    <wsdl:part name="operacoesEmSerPassivoD1XMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastroGestorXMLResponse">
+    <wsdl:part name="cadastroGestorXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastroAssistenteXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="saldosCotaFechamentoD0XMLNoZIPResponse">
+    <wsdl:part name="saldosCotaFechamentoD0XMLNoZIPReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="extratoCompensacaoPrejuizoXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="operacoesEmSerPassivoXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="historicoAplicacaoResgateEstornoXMLResponse">
+    <wsdl:part name="historicoAplicacaoResgateEstornoXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="historicoAplicacaoResgateEstornoXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="operacoesEmSerPassivoXMLNoZIPResponse">
+    <wsdl:part name="operacoesEmSerPassivoXMLNoZIPReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="InternalException1">
+    <wsdl:part name="fault" type="xsd:anyType" />
+  </wsdl:message>
+  <wsdl:message name="saldosCotaFechamentoD0XMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="saldosCotaAberturaD0XMLResponse">
+    <wsdl:part name="saldosCotaAberturaD0XMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="operacoesEmSerPassivoXMLNoZIPRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="arquivoDeMovimentacoesPendentesXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cadastroGrupoXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="operacoesEmSerPassivoD1XMLNoZIPRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="cotacaoXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="controleArquivoGeradoXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="operacoesEmSerPassivoD1XMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="posicaoResultanteRendimentosACompensarXMLResponse">
+    <wsdl:part name="posicaoResultanteRendimentosACompensarXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="arquivoDeResgatesTotaisXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="saldosCotaAberturaD0XMLNoZIPRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="DownloadArquivoService">
+    <wsdl:operation name="aplicacoesEmAbertoCotasAberturaXML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="aplicacoesEmAbertoCotasAberturaXMLRequest" message="impl:aplicacoesEmAbertoCotasAberturaXMLRequest" />
+      <wsdl:output name="aplicacoesEmAbertoCotasAberturaXMLResponse" message="impl:aplicacoesEmAbertoCotasAberturaXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="aplicacoesEmAbertoCotasAberturaXMLNoZIP" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="aplicacoesEmAbertoCotasAberturaXMLNoZIPRequest" message="impl:aplicacoesEmAbertoCotasAberturaXMLNoZIPRequest" />
+      <wsdl:output name="aplicacoesEmAbertoCotasAberturaXMLNoZIPResponse" message="impl:aplicacoesEmAbertoCotasAberturaXMLNoZIPResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="cadastroAssistenteXML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="cadastroAssistenteXMLRequest" message="impl:cadastroAssistenteXMLRequest" />
+      <wsdl:output name="cadastroAssistenteXMLResponse" message="impl:cadastroAssistenteXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="cadastroCoTitularXML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="cadastroCoTitularXMLRequest" message="impl:cadastroCoTitularXMLRequest" />
+      <wsdl:output name="cadastroCoTitularXMLResponse" message="impl:cadastroCoTitularXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="cadastroContaCreditoXML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="cadastroContaCreditoXMLRequest" message="impl:cadastroContaCreditoXMLRequest" />
+      <wsdl:output name="cadastroContaCreditoXMLResponse" message="impl:cadastroContaCreditoXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="cadastroFundoXML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="cadastroFundoXMLRequest" message="impl:cadastroFundoXMLRequest" />
+      <wsdl:output name="cadastroFundoXMLResponse" message="impl:cadastroFundoXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="cadastroGestorXML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="cadastroGestorXMLRequest" message="impl:cadastroGestorXMLRequest" />
+      <wsdl:output name="cadastroGestorXMLResponse" message="impl:cadastroGestorXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="cadastroGrupoXML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="cadastroGrupoXMLRequest" message="impl:cadastroGrupoXMLRequest" />
+      <wsdl:output name="cadastroGrupoXMLResponse" message="impl:cadastroGrupoXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="cadastroUsuarioXML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="cadastroUsuarioXMLRequest" message="impl:cadastroUsuarioXMLRequest" />
+      <wsdl:output name="cadastroUsuarioXMLResponse" message="impl:cadastroUsuarioXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="controleArquivoGeradoXML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="controleArquivoGeradoXMLRequest" message="impl:controleArquivoGeradoXMLRequest" />
+      <wsdl:output name="controleArquivoGeradoXMLResponse" message="impl:controleArquivoGeradoXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="cotacaoXML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="cotacaoXMLRequest" message="impl:cotacaoXMLRequest" />
+      <wsdl:output name="cotacaoXMLResponse" message="impl:cotacaoXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="extratoCompensacaoPrejuizoXML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="extratoCompensacaoPrejuizoXMLRequest" message="impl:extratoCompensacaoPrejuizoXMLRequest" />
+      <wsdl:output name="extratoCompensacaoPrejuizoXMLResponse" message="impl:extratoCompensacaoPrejuizoXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="historicoAplicacaoResgateEstornoXML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="historicoAplicacaoResgateEstornoXMLRequest" message="impl:historicoAplicacaoResgateEstornoXMLRequest" />
+      <wsdl:output name="historicoAplicacaoResgateEstornoXMLResponse" message="impl:historicoAplicacaoResgateEstornoXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="movimentacoesEfetivadasXML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="movimentacoesEfetivadasXMLRequest" message="impl:movimentacoesEfetivadasXMLRequest" />
+      <wsdl:output name="movimentacoesEfetivadasXMLResponse" message="impl:movimentacoesEfetivadasXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="operacoesEmSerPassivoXML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="operacoesEmSerPassivoXMLRequest" message="impl:operacoesEmSerPassivoXMLRequest" />
+      <wsdl:output name="operacoesEmSerPassivoXMLResponse" message="impl:operacoesEmSerPassivoXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="operacoesEmSerPassivoXMLNoZIP" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="operacoesEmSerPassivoXMLNoZIPRequest" message="impl:operacoesEmSerPassivoXMLNoZIPRequest" />
+      <wsdl:output name="operacoesEmSerPassivoXMLNoZIPResponse" message="impl:operacoesEmSerPassivoXMLNoZIPResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="operacoesEmSerPassivoD1XML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="operacoesEmSerPassivoD1XMLRequest" message="impl:operacoesEmSerPassivoD1XMLRequest" />
+      <wsdl:output name="operacoesEmSerPassivoD1XMLResponse" message="impl:operacoesEmSerPassivoD1XMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="operacoesEmSerPassivoD1XMLNoZIP" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="operacoesEmSerPassivoD1XMLNoZIPRequest" message="impl:operacoesEmSerPassivoD1XMLNoZIPRequest" />
+      <wsdl:output name="operacoesEmSerPassivoD1XMLNoZIPResponse" message="impl:operacoesEmSerPassivoD1XMLNoZIPResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="operacoesEmSerPassivoD2XML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="operacoesEmSerPassivoD2XMLRequest" message="impl:operacoesEmSerPassivoD2XMLRequest" />
+      <wsdl:output name="operacoesEmSerPassivoD2XMLResponse" message="impl:operacoesEmSerPassivoD2XMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="posicaoResultanteRendimentosACompensarXML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="posicaoResultanteRendimentosACompensarXMLRequest" message="impl:posicaoResultanteRendimentosACompensarXMLRequest" />
+      <wsdl:output name="posicaoResultanteRendimentosACompensarXMLResponse" message="impl:posicaoResultanteRendimentosACompensarXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="saldosCotaAberturaD0XML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="saldosCotaAberturaD0XMLRequest" message="impl:saldosCotaAberturaD0XMLRequest" />
+      <wsdl:output name="saldosCotaAberturaD0XMLResponse" message="impl:saldosCotaAberturaD0XMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="saldosCotaAberturaD0XMLNoZIP" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="saldosCotaAberturaD0XMLNoZIPRequest" message="impl:saldosCotaAberturaD0XMLNoZIPRequest" />
+      <wsdl:output name="saldosCotaAberturaD0XMLNoZIPResponse" message="impl:saldosCotaAberturaD0XMLNoZIPResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="saldosCotaFechamentoD0XML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="saldosCotaFechamentoD0XMLRequest" message="impl:saldosCotaFechamentoD0XMLRequest" />
+      <wsdl:output name="saldosCotaFechamentoD0XMLResponse" message="impl:saldosCotaFechamentoD0XMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="saldosCotaFechamentoD0XMLNoZIP" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="saldosCotaFechamentoD0XMLNoZIPRequest" message="impl:saldosCotaFechamentoD0XMLNoZIPRequest" />
+      <wsdl:output name="saldosCotaFechamentoD0XMLNoZIPResponse" message="impl:saldosCotaFechamentoD0XMLNoZIPResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="arquivoDeBloqueiosXML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="arquivoDeBloqueiosXMLRequest" message="impl:arquivoDeBloqueiosXMLRequest" />
+      <wsdl:output name="arquivoDeBloqueiosXMLResponse" message="impl:arquivoDeBloqueiosXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="aplicacoesEmAbertoCotasDeFechamentoXML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="aplicacoesEmAbertoCotasDeFechamentoXMLRequest" message="impl:aplicacoesEmAbertoCotasDeFechamentoXMLRequest" />
+      <wsdl:output name="aplicacoesEmAbertoCotasDeFechamentoXMLResponse" message="impl:aplicacoesEmAbertoCotasDeFechamentoXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="arquivoDeResgatesTotaisXML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="arquivoDeResgatesTotaisXMLRequest" message="impl:arquivoDeResgatesTotaisXMLRequest" />
+      <wsdl:output name="arquivoDeResgatesTotaisXMLResponse" message="impl:arquivoDeResgatesTotaisXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="arquivoDeMovimentacoesPendentesXML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="arquivoDeMovimentacoesPendentesXMLRequest" message="impl:arquivoDeMovimentacoesPendentesXMLRequest" />
+      <wsdl:output name="arquivoDeMovimentacoesPendentesXMLResponse" message="impl:arquivoDeMovimentacoesPendentesXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DownloadArquivoServiceSoapBinding" type="impl:DownloadArquivoService">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="aplicacoesEmAbertoCotasAberturaXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="aplicacoesEmAbertoCotasAberturaXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="aplicacoesEmAbertoCotasAberturaXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="aplicacoesEmAbertoCotasAberturaXMLNoZIP">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="aplicacoesEmAbertoCotasAberturaXMLNoZIPRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="aplicacoesEmAbertoCotasAberturaXMLNoZIPResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="cadastroAssistenteXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cadastroAssistenteXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="cadastroAssistenteXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="cadastroCoTitularXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cadastroCoTitularXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="cadastroCoTitularXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="cadastroContaCreditoXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cadastroContaCreditoXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="cadastroContaCreditoXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="cadastroFundoXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cadastroFundoXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="cadastroFundoXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="cadastroGestorXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cadastroGestorXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="cadastroGestorXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="cadastroGrupoXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cadastroGrupoXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="cadastroGrupoXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="cadastroUsuarioXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cadastroUsuarioXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="cadastroUsuarioXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="controleArquivoGeradoXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="controleArquivoGeradoXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="controleArquivoGeradoXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="cotacaoXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cotacaoXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="cotacaoXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="extratoCompensacaoPrejuizoXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="extratoCompensacaoPrejuizoXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="extratoCompensacaoPrejuizoXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="historicoAplicacaoResgateEstornoXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="historicoAplicacaoResgateEstornoXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="historicoAplicacaoResgateEstornoXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="movimentacoesEfetivadasXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="movimentacoesEfetivadasXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="movimentacoesEfetivadasXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="operacoesEmSerPassivoXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="operacoesEmSerPassivoXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="operacoesEmSerPassivoXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="operacoesEmSerPassivoXMLNoZIP">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="operacoesEmSerPassivoXMLNoZIPRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="operacoesEmSerPassivoXMLNoZIPResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="operacoesEmSerPassivoD1XML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="operacoesEmSerPassivoD1XMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="operacoesEmSerPassivoD1XMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="operacoesEmSerPassivoD1XMLNoZIP">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="operacoesEmSerPassivoD1XMLNoZIPRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="operacoesEmSerPassivoD1XMLNoZIPResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="operacoesEmSerPassivoD2XML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="operacoesEmSerPassivoD2XMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="operacoesEmSerPassivoD2XMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="posicaoResultanteRendimentosACompensarXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="posicaoResultanteRendimentosACompensarXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="posicaoResultanteRendimentosACompensarXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="saldosCotaAberturaD0XML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="saldosCotaAberturaD0XMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="saldosCotaAberturaD0XMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="saldosCotaAberturaD0XMLNoZIP">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="saldosCotaAberturaD0XMLNoZIPRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="saldosCotaAberturaD0XMLNoZIPResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="saldosCotaFechamentoD0XML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="saldosCotaFechamentoD0XMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="saldosCotaFechamentoD0XMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="saldosCotaFechamentoD0XMLNoZIP">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="saldosCotaFechamentoD0XMLNoZIPRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="saldosCotaFechamentoD0XMLNoZIPResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="arquivoDeBloqueiosXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="arquivoDeBloqueiosXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="arquivoDeBloqueiosXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="aplicacoesEmAbertoCotasDeFechamentoXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="aplicacoesEmAbertoCotasDeFechamentoXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="aplicacoesEmAbertoCotasDeFechamentoXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="arquivoDeResgatesTotaisXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="arquivoDeResgatesTotaisXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="arquivoDeResgatesTotaisXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="arquivoDeMovimentacoesPendentesXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="arquivoDeMovimentacoesPendentesXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="arquivoDeMovimentacoesPendentesXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DownloadArquivoServiceService">
+    <wsdl:port name="DownloadArquivoService" binding="impl:DownloadArquivoServiceSoapBinding">
+      <wsdlsoap:address location="http://www.itaucustodia.com.br/PassivoWebServices/services/DownloadArquivoService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

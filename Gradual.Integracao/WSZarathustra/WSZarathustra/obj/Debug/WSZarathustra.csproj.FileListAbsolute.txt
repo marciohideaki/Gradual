@@ -1,0 +1,9 @@
+C:\aponso\desenv\Gradual.Integracao\WSZarathustra\WSZarathustra\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.Integracao\WSZarathustra\WSZarathustra\bin\WSZarathustra.dll
+C:\aponso\desenv\Gradual.Integracao\WSZarathustra\WSZarathustra\bin\WSZarathustra.pdb
+C:\aponso\desenv\Gradual.Integracao\WSZarathustra\WSZarathustra\bin\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.Integracao\WSZarathustra\WSZarathustra\bin\log4net.dll
+C:\aponso\desenv\Gradual.Integracao\WSZarathustra\WSZarathustra\bin\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.Integracao\WSZarathustra\WSZarathustra\bin\log4net.pdb
+C:\aponso\desenv\Gradual.Integracao\WSZarathustra\WSZarathustra\obj\Debug\WSZarathustra.dll
+C:\aponso\desenv\Gradual.Integracao\WSZarathustra\WSZarathustra\obj\Debug\WSZarathustra.pdb

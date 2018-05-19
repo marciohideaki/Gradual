@@ -1,0 +1,9 @@
+C:\aponso\desenv\Gradual.Integracao\QGCadastro1\NovoArde\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.Integracao\QGCadastro1\NovoArde\bin\Debug\NovoArde.exe.config
+C:\aponso\desenv\Gradual.Integracao\QGCadastro1\NovoArde\bin\Debug\NovoArde.exe
+C:\aponso\desenv\Gradual.Integracao\QGCadastro1\NovoArde\bin\Debug\NovoArde.pdb
+C:\aponso\desenv\Gradual.Integracao\QGCadastro1\NovoArde\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.Integracao\QGCadastro1\NovoArde\bin\Debug\log4net.pdb
+C:\aponso\desenv\Gradual.Integracao\QGCadastro1\NovoArde\bin\Debug\log4net.xml
+C:\aponso\desenv\Gradual.Integracao\QGCadastro1\NovoArde\obj\x86\Debug\NovoArde.exe
+C:\aponso\desenv\Gradual.Integracao\QGCadastro1\NovoArde\obj\x86\Debug\NovoArde.pdb

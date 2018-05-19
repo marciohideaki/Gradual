@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Temp\JPMorgan" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/log4net.dll" publishTime="08/26/2010 17:29:13" />
+    <file relUrl="bin/Gradual.OMS.Library.pdb" publishTime="11/18/2010 15:23:11" />
+    <file relUrl="bin/log4net.pdb" publishTime="08/26/2010 17:29:13" />
+    <file relUrl="Web.config" publishTime="06/02/2015 00:23:59" />
+    <file relUrl="bin/AtivoTradeInterface.dll" publishTime="08/20/2015 18:48:30" />
+    <file relUrl="bin/OpenBlotterLib.dll" publishTime="08/20/2015 18:48:29" />
+    <file relUrl="bin/OpenBlotterLib.pdb" publishTime="08/20/2015 18:48:29" />
+    <file relUrl="bin/AtivoTradeInterface.pdb" publishTime="08/20/2015 18:48:30" />
+    <file relUrl="WSTradeInterface.asmx" publishTime="11/30/2010 11:43:52" />
+    <file relUrl="bin/Gradual.OMS.Library.dll" publishTime="11/18/2010 15:23:11" />
+  </publishProfile>
+</publishData>

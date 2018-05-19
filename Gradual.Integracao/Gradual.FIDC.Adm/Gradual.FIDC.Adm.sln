@@ -1,0 +1,113 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.FIDC.Adm.Web", "Gradual.FIDC.Adm.Web\Gradual.FIDC.Adm.Web.csproj", "{407D9CDA-FC7A-4E43-9D4B-445891C194B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.FIDC.Adm.DbLib", "Gradual.FIDC.Adm.DbLib\Gradual.FIDC.Adm.DbLib.csproj", "{A5E3E442-54DD-400A-B6D3-B22EF6FA35AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{A717D33B-864D-4DB8-9407-1C4E21132F99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tables", "Tables", "{84FEF511-7FF7-4692-9D34-9200B18C20B6}"
+	ProjectSection(SolutionItems) = preProject
+		Database\Tables\001_tbFundoCadastro_Create.sql = Database\Tables\001_tbFundoCadastro_Create.sql
+		Database\Tables\002_tbFundoCadastroLog_Create.sql = Database\Tables\002_tbFundoCadastroLog_Create.sql
+		Database\Tables\003_TbFundoCategoria_Create.sql = Database\Tables\003_TbFundoCategoria_Create.sql
+		Database\Tables\004_TbFundoSubCategoria_Create.sql = Database\Tables\004_TbFundoSubCategoria_Create.sql
+		Database\Tables\005_TbFundoCategoriaSubCategoria_Create.sql = Database\Tables\005_TbFundoCategoriaSubCategoria_Create.sql
+		Database\Tables\006_TbFundoCategoriaSubCategoriaManutencaoLog_Create.sql = Database\Tables\006_TbFundoCategoriaSubCategoriaManutencaoLog_Create.sql
+		Database\Tables\007_TbFundoFluxoStatus_Create.sql = Database\Tables\007_TbFundoFluxoStatus_Create.sql
+		Database\Tables\008_TbFundoFluxoGrupo_Create.sql = Database\Tables\008_TbFundoFluxoGrupo_Create.sql
+		Database\Tables\009_TbFundoFluxoGrupoEtapa_Create.sql = Database\Tables\009_TbFundoFluxoGrupoEtapa_Create.sql
+		Database\Tables\010_TbFundoFluxoAprovacao_Create.sql = Database\Tables\010_TbFundoFluxoAprovacao_Create.sql
+		Database\Tables\011_TbFundoFluxoAprovacaoAnexo_Create.sql = Database\Tables\011_TbFundoFluxoAprovacaoAnexo_Create.sql
+		Database\Tables\012_TbCotistaFidc_Create.sql = Database\Tables\012_TbCotistaFidc_Create.sql
+		Database\Tables\013_TbCotistaFidcFundo_Create.sql = Database\Tables\013_TbCotistaFidcFundo_Create.sql
+		Database\Tables\014_TbEventoCalendario_Create.sql = Database\Tables\014_TbEventoCalendario_Create.sql
+		Database\Tables\015_TbFundoCadastroAnexo_Create.sql = Database\Tables\015_TbFundoCadastroAnexo_Create.sql
+		Database\Tables\016_tbFundoCadastro_AddTxGestao.sql = Database\Tables\016_tbFundoCadastro_AddTxGestao.sql
+		Database\Tables\017_TbCotistaFidcProcurador_Create.sql = Database\Tables\017_TbCotistaFidcProcurador_Create.sql
+		Database\Tables\018_TbCotistaFidcProcuradorAnexo_Create.sql = Database\Tables\018_TbCotistaFidcProcuradorAnexo_Create.sql
+		Database\Tables\019_TbFluxoAlteracaoRegulamentoStatus_Create.sql = Database\Tables\019_TbFluxoAlteracaoRegulamentoStatus_Create.sql
+		Database\Tables\020_TbFluxoAlteracaoRegulamentoGrupo_Create.sql = Database\Tables\020_TbFluxoAlteracaoRegulamentoGrupo_Create.sql
+		Database\Tables\021_TbFluxoAlteracaoRegulamentoGrupoEtapa_Create.sql = Database\Tables\021_TbFluxoAlteracaoRegulamentoGrupoEtapa_Create.sql
+		Database\Tables\022_TbFundoFluxoAlteracaoRegulamento_Create.sql = Database\Tables\022_TbFundoFluxoAlteracaoRegulamento_Create.sql
+		Database\Tables\023_TbFundoFluxoAlteracaoRegulamentoAnexo_Create.sql = Database\Tables\023_TbFundoFluxoAlteracaoRegulamentoAnexo_Create.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Procedures", "Procedures", "{D7670644-4847-4F68-9753-C95CF93757D4}"
+	ProjectSection(SolutionItems) = preProject
+		Database\Procedures\prc_cotista_fidc_fundo_del.sql = Database\Procedures\prc_cotista_fidc_fundo_del.sql
+		Database\Procedures\prc_cotista_fidc_fundo_ins.sql = Database\Procedures\prc_cotista_fidc_fundo_ins.sql
+		Database\Procedures\prc_cotista_fidc_fundo_sel.sql = Database\Procedures\prc_cotista_fidc_fundo_sel.sql
+		Database\Procedures\prc_cotista_fidc_ins.sql = Database\Procedures\prc_cotista_fidc_ins.sql
+		Database\Procedures\prc_cotista_fidc_procurador_anexo_ins.sql = Database\Procedures\prc_cotista_fidc_procurador_anexo_ins.sql
+		Database\Procedures\prc_cotista_fidc_procurador_anexo_removerPorProcurador.sql = Database\Procedures\prc_cotista_fidc_procurador_anexo_removerPorProcurador.sql
+		Database\Procedures\prc_cotista_fidc_procurador_del.sql = Database\Procedures\prc_cotista_fidc_procurador_del.sql
+		Database\Procedures\prc_cotista_fidc_procurador_ins.sql = Database\Procedures\prc_cotista_fidc_procurador_ins.sql
+		Database\Procedures\prc_cotista_fidc_procurador_sel.sql = Database\Procedures\prc_cotista_fidc_procurador_sel.sql
+		Database\Procedures\prc_cotista_fidc_procurador_upd.sql = Database\Procedures\prc_cotista_fidc_procurador_upd.sql
+		Database\Procedures\prc_cotista_fidc_sel.sql = Database\Procedures\prc_cotista_fidc_sel.sql
+		Database\Procedures\prc_cotista_fidc_upd.sql = Database\Procedures\prc_cotista_fidc_upd.sql
+		Database\Procedures\prc_eventos_calendario_del.sql = Database\Procedures\prc_eventos_calendario_del.sql
+		Database\Procedures\prc_eventos_calendario_ins.sql = Database\Procedures\prc_eventos_calendario_ins.sql
+		Database\Procedures\prc_eventos_calendario_sel.sql = Database\Procedures\prc_eventos_calendario_sel.sql
+		Database\Procedures\prc_fundo_cadastro_anexo_ins.sql = Database\Procedures\prc_fundo_cadastro_anexo_ins.sql
+		Database\Procedures\prc_fundo_categoria_sub_categoria_del.sql = Database\Procedures\prc_fundo_categoria_sub_categoria_del.sql
+		Database\Procedures\prc_fundo_categoria_sub_categoria_ins.sql = Database\Procedures\prc_fundo_categoria_sub_categoria_ins.sql
+		Database\Procedures\prc_fundo_categoria_sub_categoria_log_ins.sql = Database\Procedures\prc_fundo_categoria_sub_categoria_log_ins.sql
+		Database\Procedures\prc_fundo_categoria_sub_categoria_sel.sql = Database\Procedures\prc_fundo_categoria_sub_categoria_sel.sql
+		Database\Procedures\prc_fundo_fluxo_aprovacao_anexo_ins.sql = Database\Procedures\prc_fundo_fluxo_aprovacao_anexo_ins.sql
+		Database\Procedures\prc_fundo_fluxo_aprovacao_consulta_constituicao_geral_sel.sql = Database\Procedures\prc_fundo_fluxo_aprovacao_consulta_constituicao_geral_sel.sql
+		Database\Procedures\prc_fundo_fluxo_aprovacao_consulta_constituicao_sel.sql = Database\Procedures\prc_fundo_fluxo_aprovacao_consulta_constituicao_sel.sql
+		Database\Procedures\prc_fundo_fluxo_aprovacao_ultimas_etapas_sel.sql = Database\Procedures\prc_fundo_fluxo_aprovacao_ultimas_etapas_sel.sql
+		Database\Procedures\prc_fundo_fluxo_grupo_etapa_fluxo_aprovacao_sel.sql = Database\Procedures\prc_fundo_fluxo_grupo_etapa_fluxo_aprovacao_sel.sql
+		Database\Procedures\prc_fundo_fluxo_grupo_sel.sql = Database\Procedures\prc_fundo_fluxo_grupo_sel.sql
+		Database\Procedures\prc_fundo_fluxo_status_sel.sql = Database\Procedures\prc_fundo_fluxo_status_sel.sql
+		Database\Procedures\prc_fundos_cadastro_categoria_sub_categoria_sel.sql = Database\Procedures\prc_fundos_cadastro_categoria_sub_categoria_sel.sql
+		Database\Procedures\prc_fundos_cadastro_ins.sql = Database\Procedures\prc_fundos_cadastro_ins.sql
+		Database\Procedures\prc_fundos_cadastro_log_ins.sql = Database\Procedures\prc_fundos_cadastro_log_ins.sql
+		Database\Procedures\prc_fundos_cadastro_sel.sql = Database\Procedures\prc_fundos_cadastro_sel.sql
+		Database\Procedures\prc_fundos_cadastro_upd.sql = Database\Procedures\prc_fundos_cadastro_upd.sql
+		Database\Procedures\prc_fundos_categoria_sel.sql = Database\Procedures\prc_fundos_categoria_sel.sql
+		Database\Procedures\prc_fundos_fluxo_aprovacao_ins.sql = Database\Procedures\prc_fundos_fluxo_aprovacao_ins.sql
+		Database\Procedures\prc_fundos_por_categoria_subcategoria_sel_todos.sql = Database\Procedures\prc_fundos_por_categoria_subcategoria_sel_todos.sql
+		Database\Procedures\prc_fundos_sub_categoria_sel.sql = Database\Procedures\prc_fundos_sub_categoria_sel.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{407D9CDA-FC7A-4E43-9D4B-445891C194B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{407D9CDA-FC7A-4E43-9D4B-445891C194B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{407D9CDA-FC7A-4E43-9D4B-445891C194B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{407D9CDA-FC7A-4E43-9D4B-445891C194B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5E3E442-54DD-400A-B6D3-B22EF6FA35AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5E3E442-54DD-400A-B6D3-B22EF6FA35AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5E3E442-54DD-400A-B6D3-B22EF6FA35AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5E3E442-54DD-400A-B6D3-B22EF6FA35AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{84FEF511-7FF7-4692-9D34-9200B18C20B6} = {A717D33B-864D-4DB8-9407-1C4E21132F99}
+		{D7670644-4847-4F68-9753-C95CF93757D4} = {A717D33B-864D-4DB8-9407-1C4E21132F99}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gradual.FIDC.Adm.Web\\Gradual.FIDC.Adm.Web.csproj
+		SccProjectName1 = Gradual.FIDC.Adm.Web
+		SccLocalPath1 = Gradual.FIDC.Adm.Web
+		SccProjectUniqueName2 = Gradual.FIDC.Adm.DbLib\\Gradual.FIDC.Adm.DbLib.csproj
+		SccProjectName2 = Gradual.FIDC.Adm.DbLib
+		SccLocalPath2 = Gradual.FIDC.Adm.DbLib
+	EndGlobalSection
+EndGlobal

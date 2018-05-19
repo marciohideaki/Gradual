@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/AttivoTradeInterface/WSTradeInterface" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/AttivoTradeInterface/WSTradeInterface" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/AttivoTradeInterface/WSTradeInterface">
+      <s:element name="QueryTradesStr">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pUser" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pPassword" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pInstitutionID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pInitialDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFinalDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pTradeID" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTradeStatus" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pProduct" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pAfterHour" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTraderID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryTradesStrResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryTradesStrResult" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pTradeID" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="QueryTradesStrSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryTradesStr" />
+  </wsdl:message>
+  <wsdl:message name="QueryTradesStrSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryTradesStrResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSTradeInterfaceSoap">
+    <wsdl:operation name="QueryTradesStr">
+      <wsdl:input message="tns:QueryTradesStrSoapIn" />
+      <wsdl:output message="tns:QueryTradesStrSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSTradeInterfaceSoap" type="tns:WSTradeInterfaceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="QueryTradesStr">
+      <soap:operation soapAction="http://tempuri.org/AttivoTradeInterface/WSTradeInterface/QueryTradesStr" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSTradeInterfaceSoap12" type="tns:WSTradeInterfaceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="QueryTradesStr">
+      <soap12:operation soapAction="http://tempuri.org/AttivoTradeInterface/WSTradeInterface/QueryTradesStr" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSTradeInterface">
+    <wsdl:port name="WSTradeInterfaceSoap" binding="tns:WSTradeInterfaceSoap">
+      <soap:address location="http://localhost:2769/WSTradeInterface.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSTradeInterfaceSoap12" binding="tns:WSTradeInterfaceSoap12">
+      <soap12:address location="http://localhost:2769/WSTradeInterface.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

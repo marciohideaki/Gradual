@@ -1,0 +1,12 @@
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\OpenBlotterTester\bin\Release\OpenBlotterTester.exe.config
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\OpenBlotterTester\bin\Release\OpenBlotterTester.exe
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\OpenBlotterTester\bin\Release\OpenBlotterTester.XmlSerializers.dll
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\OpenBlotterTester\bin\Release\OpenBlotterTester.pdb
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\OpenBlotterTester\obj\x86\Release\ResolveAssemblyReference.cache
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\OpenBlotterTester\obj\x86\Release\OpenBlotterTester.Form1.resources
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\OpenBlotterTester\obj\x86\Release\OpenBlotterTester.Properties.Resources.resources
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\OpenBlotterTester\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\OpenBlotterTester\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\OpenBlotterTester\obj\x86\Release\OpenBlotterTester.exe
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\OpenBlotterTester\obj\x86\Release\OpenBlotterTester.pdb
+c:\aponso\desenv\Gradual.Integracao\JPMorgan\OpenBlotterTester\obj\x86\Release\OpenBlotterTester.XmlSerializers.dll

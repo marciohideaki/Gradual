@@ -1,0 +1,11 @@
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.RecalculoFinanceiroBRP\bin\Debug\Gradual.RecalculoFinanceiroBRP.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.RecalculoFinanceiroBRP\bin\Debug\Gradual.RecalculoFinanceiroBRP.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.RecalculoFinanceiroBRP\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.RecalculoFinanceiroBRP\obj\Debug\Gradual.RecalculoFinanceiroBRP.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.RecalculoFinanceiroBRP\obj\Debug\Gradual.RecalculoFinanceiroBRP.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.RecalculoFinanceiroBRP\bin\Debug\Gradual.IntegracaoBRP.Lib.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.RecalculoFinanceiroBRP\bin\Debug\Gradual.OMS.Library.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.RecalculoFinanceiroBRP\bin\Debug\log4net.dll
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.RecalculoFinanceiroBRP\bin\Debug\Gradual.IntegracaoBRP.Lib.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.RecalculoFinanceiroBRP\bin\Debug\Gradual.OMS.Library.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\Gradual.RecalculoFinanceiroBRP\bin\Debug\log4net.pdb

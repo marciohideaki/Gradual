@@ -1,0 +1,364 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="Gradual.FIDC.Adm.Web.Principal" %>
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+
+<head>
+    
+    <title>INTEGRADOR - GRADUAL INVESTIMENTOS</title>
+
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- JQueryUI v1.9.2 -->
+    <link rel="stylesheet" href="<%=this.RaizDoSite %>/Resc/Skin/Theme/theme/scripts/jquery-ui-1.9.2.custom/css/smoothness/jquery-ui-1.9.2.custom.min.css" />
+
+    <!-- Glyphicons -->
+    <link rel="stylesheet" href="<%=this.RaizDoSite %>/Resc/Skin/Theme/theme/css/glyphicons.css" />
+    <link rel="shortcut icon" href="<%=this.RaizDoSite %>/assets/ico/favicon.png" />
+
+    <!-- Uniform -->
+    <link rel="stylesheet" media="screen" href="<%=this.RaizDoSite %>/Resc/Skin/Theme/theme/scripts/pixelmatrix-uniform/css/uniform.default.css" /> 
+
+    <!-- jqGrid -->
+    <link rel="stylesheet" href="<%=this.RaizDoSite %>/Resc/Skin/Default/Css/ui.bootstrap.jqgrid.css" />
+    <link rel="stylesheet" href="<%=this.RaizDoSite %>/Resc/Skin/Default/Css/ui.jqgrid.css" />
+
+    <!-- MiniColors -->
+    <link rel="stylesheet" media="screen" href="<%= this.RaizDoSite %>/Resc/Skin/Theme/theme/scripts/jquery-miniColors/jquery.miniColors.css" />
+
+    <!-- Theme -->
+    <link rel="stylesheet" href="<%= this.RaizDoSite %>/Resc/Skin/Theme/theme/css/style.min.css?1363272390" />
+
+    <link rel="Stylesheet" media="screen" href="<%= this.RaizDoSite %>/Resc/Skin/<%= this.SkinEmUso %>/Css/01-Principal.css?v=<%= this.VersaoDoSite %>" />
+
+    <link href="<%= this.RaizDoSite %>/Resc/Js/Lib/bootstrap-datetimepicker/css/bootstrap-datetimepicker-standalone.css" rel="stylesheet" />
+    <link href="<%= this.RaizDoSite %>/Resc/Js/Lib/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link href="<%= this.RaizDoSite %>/Resc/Js/Lib/fullcalendar-3.1.0/fullcalendar.min.css" rel="stylesheet" />
+    <link href="<%= this.RaizDoSite %>/Resc/Js/Lib/fullcalendar-3.1.0/fullcalendar.print.min.css" rel="stylesheet" media='print' />
+
+    <script type="text/javascript" src="<%= this.RaizDoSite %>/Resc/Js/Lib/raphael-min.js?v=<%= this.VersaoDoSite %>"></script>
+    <script type="text/javascript" src="<%= this.RaizDoSite %>/Resc/Js/Lib/g.raphael-min.js?v=<%= this.VersaoDoSite %>"></script>
+    <script type="text/javascript" src="<%= this.RaizDoSite %>/Resc/Js/Lib/i18n/grid.locale-pt-br.js?v=<%= this.VersaoDoSite %>"></script>
+    <script type="text/javascript" src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.jqGrid.min.js?v=<%= this.VersaoDoSite %>"></script>
+    <script type="text/javascript" src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.mask.min.js?v=<%= this.VersaoDoSite %>"></script>
+    <script type="text/javascript" src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.maskMoney.js?v=<%= this.VersaoDoSite %>"></script>
+    <script type="text/javascript" src="<%= this.RaizDoSite %>/Resc/Js/Lib/jshashtable-2.1.js?v=<%= this.VersaoDoSite %>"></script>
+    <script type="text/javascript" src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.numberformatter.js?v=<%= this.VersaoDoSite %>"></script>
+    <script type="text/javascript" src="<%= this.RaizDoSite %>/Resc/Js/Site/jquery-ui-1.9.2.custom/development-bundle/ui/jquery.ui.widget.js?v=<%= this.VersaoDoSite %>"></script>
+    <script type="text/javascript" src="<%= this.RaizDoSite %>/Resc/Js/Site/jquery-ui-1.9.2.custom/development-bundle/ui/jquery.ui.autocomplete.js?v=<%= this.VersaoDoSite %>"></script>
+    <script type="text/javascript" src="<%= this.RaizDoSite %>/Scripts/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="<%= this.RaizDoSite %>/Resc/Js/Lib/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="<%= this.RaizDoSite %>/Resc/Js/Lib/bootstrap-datetimepicker/js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="<%= this.RaizDoSite %>/Resc/Js/Lib/fullcalendar-3.1.0/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="<%= this.RaizDoSite %>/Resc/Js/Lib/fullcalendar-3.1.0/locale/pt-br.js"></script>
+    <%--<script type="text/javascript" src="<%= this.RaizDoSite %>/Resc/Js/Lib/fullcalendar-3.1.0/lib/jquery-ui.min.js"></script>--%>
+
+    <!-- Custom Onload Script -->
+    <script type="text/javascript" src="<%=this.RaizDoSite %>/Resc/Js/Site/00-Auxiliares.js" >       </script>
+    <script type="text/javascript" src="<%=this.RaizDoSite %>/Resc/Js/Site/01-Principal.js" >        </script>
+    <script type="text/javascript" src="<%=this.RaizDoSite %>/Resc/Js/Site/02-Carteiras.js" >        </script>
+    <script type="text/javascript" src="<%=this.RaizDoSite %>/Resc/Js/Site/03-DownloadHandler.js">   </script>
+    <script type="text/javascript" src="<%=this.RaizDoSite %>/Resc/Js/Site/04-Mec.js">               </script>
+    <script type="text/javascript" src="<%=this.RaizDoSite %>/Resc/Js/Site/05-ExtratoCotista.js">    </script>
+    <script type="text/javascript" src="<%=this.RaizDoSite %>/Resc/Js/Site/06-TitulosLiquidados.js"> </script>
+    <script type="text/javascript" src="<%=this.RaizDoSite %>/Resc/Js/Site/07-CadastroFundos.js">    </script>
+    <script type="text/javascript" src="<%=this.RaizDoSite %>/Resc/Js/Site/08-ManutencaoFundos.js">  </script>
+    <script type="text/javascript" src="<%=this.RaizDoSite %>/Resc/Js/Site/09-FluxoAprovacaoFundos.js"></script>
+    <script type="text/javascript" src="<%=this.RaizDoSite %>/Resc/Js/Site/10-ConsultaFundosConstituicao.js"></script>
+    <script type="text/javascript" src="<%=this.RaizDoSite %>/Resc/Js/Site/11-CadastroCotistas.js"></script>
+    <script type="text/javascript" src="<%=this.RaizDoSite %>/Resc/Js/Site/12-AssociacaoCotistasXFundos.js"></script>
+    <script type="text/javascript" src="<%=this.RaizDoSite %>/Resc/Js/Site/13-CadastroEventos.js"></script>
+    <script type="text/javascript" src="<%=this.RaizDoSite %>/Resc/Js/Site/14-Calendario.js"></script>
+    <script type="text/javascript" src="<%=this.RaizDoSite %>/Resc/Js/Site/15-AlteracaoRegulamentoConsultaFundos.js"></script>
+    <script type="text/javascript" src="<%=this.RaizDoSite %>/Resc/Js/Site/16-FluxoAlteracaoRegulamento.js"></script>
+
+    <!-- JQueryUI v1.9.2 -->
+    <script src="<%= this.RaizDoSite %>/Resc/Skin/Theme/theme/scripts/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.js"></script>
+
+    <!-- Uniform -->
+    <script src="<%= this.RaizDoSite %>/Resc/Skin/Theme/theme/scripts/pixelmatrix-uniform/jquery.uniform.js" type="text/javascript"></script>
+
+    <!-- Bootstrap Extended -->
+    <script src="<%= this.RaizDoSite %>/Resc/Skin/Theme/bootstrap/extend/bootstrap-select/bootstrap-select.js"                              type="text/javascript"></script>
+    <script src="<%= this.RaizDoSite %>/Resc/Skin/Theme/bootstrap/extend/bootstrap-toggle-buttons/static/js/jquery.toggle.buttons.js"       type="text/javascript"></script>
+    <script src="<%= this.RaizDoSite %>/Resc/Skin/Theme/bootstrap/extend/jasny-bootstrap/js/jasny-bootstrap.min.js"                         type="text/javascript"></script>
+    <script src="<%= this.RaizDoSite %>/Resc/Skin/Theme/bootstrap/extend/jasny-bootstrap/js/bootstrap-fileupload.js"                        type="text/javascript"></script>
+    <script src="<%= this.RaizDoSite %>/Resc/Skin/Theme/bootstrap/extend/bootbox.js"                                                        type="text/javascript"></script>
+    <script src="<%= this.RaizDoSite %>/Resc/Skin/Theme/bootstrap/extend/bootstrap-wysihtml5/js/wysihtml5-0.3.0_rc2.min.js"                 type="text/javascript"></script>
+    <script src="<%= this.RaizDoSite %>/Resc/Skin/Theme/bootstrap/extend/bootstrap-wysihtml5/js/bootstrap-wysihtml5-0.0.2.js"               type="text/javascript"></script>
+    <script src="<%= this.RaizDoSite %>/Resc/Skin/Theme/theme/scripts/load.js"                                                              type="text/javascript"></script>
+    <%--<script src="<%= this.RaizDoSite %>/assets/js/scripts.js"></script>--%>
+    <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/bootbox.min.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- menu topo -->
+        <nav class="navbar navbar-inverse  navbar-fixed-top"">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand text-hide" href="#" >Integração FIDC</a>
+                </div>
+    
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Robô Downloads<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu" id="menu_robo_downloads">
+                                <li class="divider"></li>
+                                <li><asp:hyperlink id="Hyperlink1" runat="server" navigateurl="~/RoboDownload/Carteiras.aspx"><span>Carteiras</span></asp:hyperlink></li>
+                                <li><asp:hyperlink id="Hyperlink2" runat="server" navigateurl="~/RoboDownload/Mec.aspx"><span>Mec</span></asp:hyperlink></li>
+                                <li><asp:hyperlink id="Hyperlink3" runat="server" navigateurl="~/RoboDownload/ExtratoCotista.aspx"><span>Extrato Cotista</span></asp:hyperlink></li>
+                                <li><asp:hyperlink id="Hyperlink4" runat="server" navigateurl="~/RoboDownload/TitulosLiquidados.aspx"><span>Títulos Liquidados</span></asp:hyperlink></li>
+                                <li class="divider"></li>
+                            </ul>
+                        </li>
+                        <li><asp:hyperlink id="Hyperlink5" runat="server" navigateurl="~/TitulosLiquidados/TitulosLiquidados.aspx"><span>Títulos Liquidados</span></asp:hyperlink></li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Configurações <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="dropdown-header">Configs. diversas</li>
+                                <li><a href="#">Parametrização</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Configs. de Email</li>
+                                <li><a href="#">Fluxo de Email</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Manutenção Fundos<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu" id="menu_manutencao_fundos">
+                                <li class="divider"></li>
+                                <li><asp:hyperlink id="Hyperlink7" runat="server" navigateurl="~/CadastroFundos/CadastroFundos.aspx"><span>Cadastro de Fundos</span></asp:hyperlink></li>
+                                <li><asp:hyperlink id="Hyperlink8" runat="server" navigateurl="~/CadastroFundos/ManutencaoFundos.aspx"><span>Manutenção de Fundos</span></asp:hyperlink></li>
+                                <li><asp:hyperlink id="Hyperlink10" runat="server" navigateurl="~/CadastroFundos/CadastroCotistas.aspx"><span>Cadastro Cotistas</span></asp:hyperlink></li>
+                                <li><asp:hyperlink id="Hyperlink11" runat="server" navigateurl="~/CadastroFundos/AssociacaoCostistasFidcXFundos.aspx"><span>Associar cotistas x fundos</span></asp:hyperlink></li>
+                                <li><asp:hyperlink id="Hyperlink14" runat="server" navigateurl="~/CadastroFundos/CalendarioEventos.aspx"><span>Calendário de Eventos</span></asp:hyperlink></li>
+                                <li class="divider"></li>
+                            </ul>
+                        </li>
+                        
+                        
+                        
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Workflow<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu" id="menu_workflow_fundos">
+                                <li class="divider"></li>
+                                    <li><asp:hyperlink id="Hyperlink9" runat="server" navigateurl="~/CadastroFundos/ConsultaFundosConstituicao.aspx"><span>Fundos em Constituição</span></asp:hyperlink></li>
+                                    <li><asp:hyperlink id="Hyperlink12" runat="server" navigateurl="~/CadastroFundos/AlteracaoRegulamentoConsultaFundos.aspx"><span>Alteração de Regulamentos</span></asp:hyperlink></li>
+                                <li class="divider"></li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <%--<li><a data-toggle="dropdown" href="#" class="glyphicons logout lock"><span class="hidden-phone text">  </span><i></i></a>--%>
+                        <li><asp:hyperlink id="Hyperlink13" runat="server" navigateurl="~/CadastroFundos/Calendario.aspx"
+                            data-toggle="tooltip" data-placement="left" title="Calendário de Eventos"><i class="glyphicon glyphicon-calendar"></i></asp:hyperlink></li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><asp:literal id="lblNomeDoUsuario" runat="server"></asp:literal><span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><asp:hyperlink id="Hyperlink6" runat="server" navigateurl="~/Logout.aspx"><span>Logout</span></asp:hyperlink></li>
+                            </ul>
+                        </li>
+                        <%--
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle"  data-toggle="dropdown" id="navLogin" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                            <div class="dropdown-menu" style="padding:17px;">
+                                <input name="username" id="username" type="text" placeholder="Username"> 
+                                <input name="password" id="password" type="password" placeholder="Password"><br>
+                                <button type="button" id="btnLogin" class="btn">Login</button>
+                                <div class="container" style="width:200px;">
+                                    <div class="row">
+                                        <div class="col-sm-1">Login:</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-1 uniformjs"><asp:textbox ID="txtLogin" class="" runat="server" style="width:150px;"/></div>
+                                    </div>  
+                                    <div class="row">
+                                        <div class="col-sm-1 formLabel">Senha:</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-1 uniformjs"><asp:Textbox TextMode="password" ID="txtSenha" runat="server" style="width:150px;"/></div>
+                                        <div class="col-sm-1 formLabel"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-1 formLabel"></div>
+                                        <div class="col-sm-1 uniformjs"><asp:Button ID="btnAutenticar" runat="server"  class="btn btn-primary btn-small" Text="Autenticar" OnClick="btnAutenticar_Click" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>--%>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="container-fluid">
+            <div id="content">
+                <ul id="lstDashboardAbas" class="breadcrumb" >
+                    <li data-IdDoCliente="0" style="display:inline">
+                        <a href="javascript:void(0);" class="glyphicons display"  ><i></i> <asp:literal id="lblTituloDaPagina" runat="server"></asp:literal></a>
+                    </li>
+
+                    <li style="display:inline">
+                        <div style="float:right; display: none;" class="lblMensagens" id="pnlMensagem">
+                            <button id="btnMensagem_Fechar" onclick="return Aux_RetornarMensagemAoEstadoNormal()"></button>
+                            <span></span>
+                        </div>
+                        <div id="pnlMensagemAdicional" style="display: none; float: right">
+                            <textarea readonly="readonly"></textarea>
+                            <a href="#" onclick="return lnlMensagemAdicional_Fechar_Click(this)">fechar</a>
+                        </div>
+                    </li>
+
+                </ul>
+                <div class="separator"></div>                
+                
+                <div class="separator bottom"></div> 
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+        <input type="hidden" id="hidRaizDoSite" runat="server" />
+        <input type="hidden" id="hidLinkPreSelecionado" runat="server" />
+        <input type="hidden" id="hidPerfilUser" runat="server" />
+        <input type="hidden" id="hidAdminUser" runat="server" />
+
+        <!-- Sticky Footer -->
+        <div id="footer" class="visible-desktop">
+            <div class="wrap">
+                <ul>
+                    <li><a href="documentation.html?lang=en" class="glyphicons circle_question_mark text" title=""><i></i><span class="hidden-phone">Ajuda</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <style type="text/css">
+            #content 
+            {
+                padding-top     : 55px;
+                background-color: transparent;
+            }
+            
+            #MainMenu
+            {
+                background  : #333 ;
+            }
+    
+            .navbar-brand 
+            {
+                background  : url(<%=this.RaizDoSite %>/Resc/images/gradual_logo.png) center / contain no-repeat;
+                width       : 119px;
+            }
+    
+            input[type=text]
+            , input[type=password]
+            , select, textarea 
+            {
+                border-color    : #D8D9DA;
+                border-radius   : 0 0 0 0;
+            }
+
+            textarea
+            , input[type="text"]
+            , input[type="password"]
+            , input[type="datetime"]
+            , input[type="datetime-local"]
+            , input[type="date"]
+            , input[type="month"]
+            , input[type="time"]
+            , input[type="week"]
+            , input[type="number"]
+            , input[type="email"]
+            , input[type="url"]
+            , input[type="search"]
+            , input[type="tel"]
+            , input[type="color"]
+            , .uneditable-input 
+            {
+                background-color: #fff;
+                border          : 1px solid #ccc;
+                box-shadow      : inset 0 1px 1px rgba(0,0,0,0.075);
+                transition      : border linear .2s,box-shadow linear .2s;
+            }
+
+            select
+            , textarea
+            , input[type="text"]
+            , input[type="password"]
+            , input[type="datetime"]
+            , input[type="datetime-local"]
+            , input[type="date"]
+            , input[type="month"]
+            , input[type="time"]
+            , input[type="week"]
+            , input[type="number"]
+            , input[type="email"]
+            , input[type="url"]
+            , input[type="search"]
+            , input[type="tel"]
+            , input[type="color"]
+            , .uneditable-input 
+            {
+                display         : inline-block;
+                padding         : 4px 6px;
+                margin-bottom   : 10px;
+                line-height     : 20px;
+                vertical-align  : middle;
+            }
+
+            /*
+            .container-fluid 
+            {
+                background-color: #333;
+            }
+    
+            .formulario
+            {
+                background-color: #333;
+            }
+
+            .ui-widget-header 
+            {
+                border-color: #4e4e4e;
+                background: #737373;
+                color: #fff;
+            }
+    
+            .btn-warning 
+            {
+                background: #FBB450;
+                border: 1px solid #FBB450;
+                color: #ffffff;
+                text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+            }
+            */
+        </style>
+
+    </form>
+
+    <script type="text/javascript">
+        function Page_Load_CodeBehind()
+        {
+            <asp:literal id="litJavascriptOnLoad" runat="server"></asp:literal>
+        }
+
+        $(document).ready(Page_Load);
+    </script>
+
+</body>
+</html>

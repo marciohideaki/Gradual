@@ -1,0 +1,118 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.BancoPaulista.Lib", "Gradual.BancoPaulista.Lib\Gradual.BancoPaulista.Lib.csproj", "{F048093B-F0CA-4460-A167-167E4650BB4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.RoboDownloadFundos", "Gradual.RoboDownloadFundos\Gradual.RoboDownloadFundos.csproj", "{46EDB500-F8FE-4405-8FE3-C34F78C449EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.RoboDownloadFundos.Lib", "Gradual.RoboDownloadFundos.Lib\Gradual.RoboDownloadFundos.Lib.csproj", "{7DCCCD20-6843-4FEB-A5A2-077B7E61D1EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.FINC.Lib", "Gradual.FINC.Lib\Gradual.FINC.Lib.csproj", "{2245E87C-D412-49DC-BBD5-3244A8CE17EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.Cetip.Lib", "Gradual.Cetip.Lib\Gradual.Cetip.Lib.csproj", "{01440AFA-8798-43DA-98DA-099385BCB660}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleBrowser", "SimpleBrowser\SimpleBrowser.csproj", "{8C41F89D-F3FC-4514-AB7A-33D6DBAEFD2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F048093B-F0CA-4460-A167-167E4650BB4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F048093B-F0CA-4460-A167-167E4650BB4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F048093B-F0CA-4460-A167-167E4650BB4D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F048093B-F0CA-4460-A167-167E4650BB4D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F048093B-F0CA-4460-A167-167E4650BB4D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F048093B-F0CA-4460-A167-167E4650BB4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F048093B-F0CA-4460-A167-167E4650BB4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F048093B-F0CA-4460-A167-167E4650BB4D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F048093B-F0CA-4460-A167-167E4650BB4D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F048093B-F0CA-4460-A167-167E4650BB4D}.Release|x86.ActiveCfg = Release|Any CPU
+		{46EDB500-F8FE-4405-8FE3-C34F78C449EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46EDB500-F8FE-4405-8FE3-C34F78C449EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46EDB500-F8FE-4405-8FE3-C34F78C449EA}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{46EDB500-F8FE-4405-8FE3-C34F78C449EA}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{46EDB500-F8FE-4405-8FE3-C34F78C449EA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{46EDB500-F8FE-4405-8FE3-C34F78C449EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46EDB500-F8FE-4405-8FE3-C34F78C449EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46EDB500-F8FE-4405-8FE3-C34F78C449EA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{46EDB500-F8FE-4405-8FE3-C34F78C449EA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{46EDB500-F8FE-4405-8FE3-C34F78C449EA}.Release|x86.ActiveCfg = Release|Any CPU
+		{7DCCCD20-6843-4FEB-A5A2-077B7E61D1EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DCCCD20-6843-4FEB-A5A2-077B7E61D1EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DCCCD20-6843-4FEB-A5A2-077B7E61D1EF}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7DCCCD20-6843-4FEB-A5A2-077B7E61D1EF}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7DCCCD20-6843-4FEB-A5A2-077B7E61D1EF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7DCCCD20-6843-4FEB-A5A2-077B7E61D1EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DCCCD20-6843-4FEB-A5A2-077B7E61D1EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DCCCD20-6843-4FEB-A5A2-077B7E61D1EF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{7DCCCD20-6843-4FEB-A5A2-077B7E61D1EF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{7DCCCD20-6843-4FEB-A5A2-077B7E61D1EF}.Release|x86.ActiveCfg = Release|Any CPU
+		{2245E87C-D412-49DC-BBD5-3244A8CE17EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2245E87C-D412-49DC-BBD5-3244A8CE17EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2245E87C-D412-49DC-BBD5-3244A8CE17EF}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2245E87C-D412-49DC-BBD5-3244A8CE17EF}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2245E87C-D412-49DC-BBD5-3244A8CE17EF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2245E87C-D412-49DC-BBD5-3244A8CE17EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2245E87C-D412-49DC-BBD5-3244A8CE17EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2245E87C-D412-49DC-BBD5-3244A8CE17EF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2245E87C-D412-49DC-BBD5-3244A8CE17EF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2245E87C-D412-49DC-BBD5-3244A8CE17EF}.Release|x86.ActiveCfg = Release|Any CPU
+		{01440AFA-8798-43DA-98DA-099385BCB660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01440AFA-8798-43DA-98DA-099385BCB660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01440AFA-8798-43DA-98DA-099385BCB660}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{01440AFA-8798-43DA-98DA-099385BCB660}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{01440AFA-8798-43DA-98DA-099385BCB660}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{01440AFA-8798-43DA-98DA-099385BCB660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01440AFA-8798-43DA-98DA-099385BCB660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01440AFA-8798-43DA-98DA-099385BCB660}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{01440AFA-8798-43DA-98DA-099385BCB660}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{01440AFA-8798-43DA-98DA-099385BCB660}.Release|x86.ActiveCfg = Release|Any CPU
+		{8C41F89D-F3FC-4514-AB7A-33D6DBAEFD2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C41F89D-F3FC-4514-AB7A-33D6DBAEFD2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C41F89D-F3FC-4514-AB7A-33D6DBAEFD2F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8C41F89D-F3FC-4514-AB7A-33D6DBAEFD2F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8C41F89D-F3FC-4514-AB7A-33D6DBAEFD2F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8C41F89D-F3FC-4514-AB7A-33D6DBAEFD2F}.Debug|x86.Build.0 = Debug|Any CPU
+		{8C41F89D-F3FC-4514-AB7A-33D6DBAEFD2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C41F89D-F3FC-4514-AB7A-33D6DBAEFD2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C41F89D-F3FC-4514-AB7A-33D6DBAEFD2F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8C41F89D-F3FC-4514-AB7A-33D6DBAEFD2F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8C41F89D-F3FC-4514-AB7A-33D6DBAEFD2F}.Release|x86.ActiveCfg = Release|Any CPU
+		{8C41F89D-F3FC-4514-AB7A-33D6DBAEFD2F}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gradual.BancoPaulista.Lib\\Gradual.BancoPaulista.Lib.csproj
+		SccProjectName1 = Gradual.BancoPaulista.Lib
+		SccLocalPath1 = Gradual.BancoPaulista.Lib
+		SccProjectUniqueName2 = Gradual.RoboDownloadFundos\\Gradual.RoboDownloadFundos.csproj
+		SccProjectName2 = Gradual.RoboDownloadFundos
+		SccLocalPath2 = Gradual.RoboDownloadFundos
+		SccProjectUniqueName3 = Gradual.RoboDownloadFundos.Lib\\Gradual.RoboDownloadFundos.Lib.csproj
+		SccProjectName3 = Gradual.RoboDownloadFundos.Lib
+		SccLocalPath3 = Gradual.RoboDownloadFundos.Lib
+		SccProjectUniqueName4 = Gradual.FINC.Lib\\Gradual.FINC.Lib.csproj
+		SccProjectName4 = Gradual.FINC.Lib
+		SccLocalPath4 = Gradual.FINC.Lib
+		SccProjectUniqueName5 = Gradual.Cetip.Lib\\Gradual.Cetip.Lib.csproj
+		SccProjectName5 = Gradual.Cetip.Lib
+		SccLocalPath5 = Gradual.Cetip.Lib
+		SccProjectUniqueName6 = SimpleBrowser\\SimpleBrowser.csproj
+		SccProjectName6 = SimpleBrowser
+		SccLocalPath6 = SimpleBrowser
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,10 @@
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\AppTesteIntegracaoBRP\bin\Debug\AppTesteIntegracaoBRP.exe.config
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\AppTesteIntegracaoBRP\bin\Debug\AppTesteIntegracaoBRP.exe
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\AppTesteIntegracaoBRP\bin\Debug\AppTesteIntegracaoBRP.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\AppTesteIntegracaoBRP\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\AppTesteIntegracaoBRP\obj\x86\Debug\AppTesteIntegracaoBRP.Properties.Resources.resources
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\AppTesteIntegracaoBRP\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\AppTesteIntegracaoBRP\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\AppTesteIntegracaoBRP\obj\x86\Debug\AppTesteIntegracaoBRP.exe
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\AppTesteIntegracaoBRP\obj\x86\Debug\AppTesteIntegracaoBRP.pdb
+C:\aponso\desenv\Gradual.Integracao\Gradual.IntegracaoBRP\AppTesteIntegracaoBRP\obj\x86\Debug\AppTesteIntegracaoBRP.Form1.resources
