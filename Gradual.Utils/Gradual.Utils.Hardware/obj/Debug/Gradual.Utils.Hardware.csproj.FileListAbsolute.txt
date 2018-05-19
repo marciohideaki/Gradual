@@ -1,0 +1,7 @@
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils.Hardware\bin\Debug\Settings\settings.xml
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils.Hardware\bin\Debug\Gradual.Utils.Hardware.exe.config
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils.Hardware\bin\Debug\Gradual.Utils.Hardware.exe
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils.Hardware\bin\Debug\Gradual.Utils.Hardware.pdb
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils.Hardware\obj\Debug\Gradual.Utils.Hardware.exe
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils.Hardware\obj\Debug\Gradual.Utils.Hardware.pdb
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils.Hardware\obj\Debug\Gradual.Utils.Hardware.csprojResolveAssemblyReference.cache

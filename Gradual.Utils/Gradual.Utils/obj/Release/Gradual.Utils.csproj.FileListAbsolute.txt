@@ -1,0 +1,11 @@
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils\bin\Release\Gradual.Utils.dll
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils\bin\Release\Gradual.Utils.pdb
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils\bin\Release\Gradual.Utils.Logger.dll
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils\bin\Release\log4net.dll
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils\bin\Release\Gradual.Utils.Logger.xml
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils\obj\Release\Gradual.Utils.csprojResolveAssemblyReference.cache
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils\obj\Release\Gradual.Utils.LoadingPanel.resources
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils\obj\Release\Gradual.Utils.Properties.Resources.resources
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils\obj\Release\Gradual.Utils.csproj.GenerateResource.Cache
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils\obj\Release\Gradual.Utils.dll
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils\obj\Release\Gradual.Utils.pdb

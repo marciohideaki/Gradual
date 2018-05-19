@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{99990CE2-154C-4942-B9A6-60680585B1AA}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.Utils.Hardware</RootNamespace>
+    <AssemblyName>Gradual.Utils.Hardware</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\Connection.cs" />
+    <Compile Include="Class\WMIReader.cs" />
+    <Compile Include="Class\XMLConfig.cs" />
+    <Compile Include="Hardware\IWMI.cs" />
+    <Compile Include="Hardware\Win32_BaseBoard.cs" />
+    <Compile Include="Hardware\Win32_Battery.cs" />
+    <Compile Include="Hardware\Win32_BIOS.cs" />
+    <Compile Include="Hardware\Win32_Bus.cs" />
+    <Compile Include="Hardware\Win32_CDROMDrive.cs" />
+    <Compile Include="Hardware\Win32_DiskDrive.cs" />
+    <Compile Include="Hardware\Win32_DMAChannel.cs" />
+    <Compile Include="Hardware\Win32_Fan.cs" />
+    <Compile Include="Hardware\Win32_FloppyController.cs" />
+    <Compile Include="Hardware\Win32_FloppyDrive.cs" />
+    <Compile Include="Hardware\Win32_IDEController.cs" />
+    <Compile Include="Hardware\Win32_IRQResource.cs" />
+    <Compile Include="Hardware\Win32_Keyboard.cs" />
+    <Compile Include="Hardware\Win32_MemoryDevice.cs" />
+    <Compile Include="Hardware\Win32_NetworkAdapter.cs" />
+    <Compile Include="Hardware\Win32_NetworkAdapterConfiguration.cs" />
+    <Compile Include="Hardware\Win32_OnBoardDevice.cs" />
+    <Compile Include="Hardware\Win32_ParallelPort.cs" />
+    <Compile Include="Hardware\Win32_PCMCIController.cs" />
+    <Compile Include="Hardware\Win32_PhysicalMedia.cs" />
+    <Compile Include="Hardware\Win32_PhysicalMemory.cs" />
+    <Compile Include="Hardware\Win32_PortConnector.cs" />
+    <Compile Include="Hardware\Win32_PortResource.cs" />
+    <Compile Include="Hardware\Win32_POTSModem.cs" />
+    <Compile Include="Hardware\Win32_Processor.cs" />
+    <Compile Include="Hardware\Win32_SCSIController.cs" />
+    <Compile Include="Hardware\Win32_SerialPort.cs" />
+    <Compile Include="Hardware\Win32_SerialPortConfiguration.cs" />
+    <Compile Include="Hardware\Win32_SoundDevice.cs" />
+    <Compile Include="Hardware\Win32_SystemEnclosure.cs" />
+    <Compile Include="Hardware\Win32_TapeDrive.cs" />
+    <Compile Include="Hardware\Win32_TemperatureProbe.cs" />
+    <Compile Include="Hardware\Win32_UninterruptiblePowerSupply.cs" />
+    <Compile Include="Hardware\Win32_USBController.cs" />
+    <Compile Include="Hardware\Win32_USBHub.cs" />
+    <Compile Include="Hardware\Win32_VideoController.cs" />
+    <Compile Include="Hardware\Win32_VoltageProbe.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Settings\settings.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

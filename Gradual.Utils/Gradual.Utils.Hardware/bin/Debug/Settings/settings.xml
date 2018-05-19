@@ -1,0 +1,1281 @@
+﻿<?xmlversion = "1.0"encoding="utf-8"?>
+<AppSettings>
+<WMI>
+<Win32_BaseBoard>
+<property>Caption</property>
+<property>CreationClassName</property>
+<property>Depth</property>
+<property>Description</property>
+<property>Height</property>
+<property>HostingBoard</property>
+<property>HotSwappable</property>
+<property>InstallDate</property>
+<property>Manufacturer</property>
+<property>Model</property>
+<property>Name</property>
+<property>OtherIdentifyingInfo</property>
+<property>PartNumber</property>
+<property>PoweredOn</property>
+<property>Product</property>
+<property>Removable</property>
+<property>Replaceable</property>
+<property>RequirementsDescription</property>
+<property>RequiresDaughterBoard</property>
+<property>SerialNumber</property>
+<property>SKU</property>
+<property>SlotLayout</property>
+<property>SpecialRequirements</property>
+<property>Status</property>
+<property>Tag</property>
+<property>Version</property>
+<property>Weight</property>
+<property>Width</property>
+</Win32_BaseBoard>
+<Win32_Battery>
+<property>Availability</property>
+<property>BatteryRechargeTime</property>
+<property>BatteryStatus</property>
+<property>Caption</property>
+<property>Chemistry</property>
+<property>ConfigManagerErrorCode</property>
+<property>ConfigManagerUserConfig</property>
+<property>CreationClassName</property>
+<property>Description</property>
+<property>DesignCapacity</property>
+<property>DesignVoltage</property>
+<property>DeviceID</property>
+<property>ErrorCleared</property>
+<property>ErrorDescription</property>
+<property>EstimatedChargeRemaining</property>
+<property>EstimatedRunTime</property>
+<property>ExpectedBatteryLife</property>
+<property>ExpectedLife</property>
+<property>FullChargeCapacity</property>
+<property>InstallDate</property>
+<property>LastErrorCode</property>
+<property>MaxRechargeTime</property>
+<property>Name</property>
+<property>PNPDeviceID</property>
+<property>PowerManagementSupported</property>
+<property>SmartBatteryVersion</property>
+<property>Status</property>
+<property>StatusInfo</property>
+<property>SystemCreationClassName</property>
+<property>SystemName</property>
+<property>TimeOnBattery</property>
+<property>TimeToFullCharge</property>
+</Win32_Battery>
+<Win32_BIOS>
+<property>BuildNumber</property>
+<property>Caption</property>
+<property>CodeSet</property>
+<property>CurrentLanguage</property>
+<property>Description</property>
+<property>IdentificationCode</property>
+<property>InstallableLanguages</property>
+<property>InstallDate</property>
+<property>LanguageEdition</property>
+<property>Manufacturer</property>
+<property>Name</property>
+<property>OtherTargetOS</property>
+<property>PrimaryBIOS</property>
+<property>ReleaseDate</property>
+<property>SerialNumber</property>
+<property>SMBIOSBIOSVersion</property>
+<property>SMBIOSMajorVersion</property>
+<property>SMBIOSMinorVersion</property>
+<property>SMBIOSPresent</property>
+<property>SoftwareElementID</property>
+<property>SoftwareElementState</property>
+<property>Status</property>
+<property>TargetOperatingSystem</property>
+<property>Version</property>
+</Win32_BIOS>
+<Win32_Bus>
+<property>Availability</property>
+<property>BusNum</property>
+<property>BusType</property>
+<property>Caption</property>
+<property>ConfigManagerErrorCode</property>
+<property>ConfigManagerUserConfig</property>
+<property>CreationClassName</property>
+<property>Description</property>
+<property>DeviceID</property>
+<property>ErrorCleared</property>
+<property>ErrorDescription</property>
+<property>InstallDate</property>
+<property>LastErrorCode</property>
+<property>Name</property>
+<property>PNPDeviceID</property>
+<property>PowerManagementSupported</property>
+<property>Status</property>
+<property>StatusInfo</property>
+<property>SystemCreationClassName</property>
+<property>SystemName</property>
+</Win32_Bus>
+<Win32_CDROMDrive>
+<property>Availability</property>
+<property>Caption</property>
+<property>CompressionMethod</property>
+<property>ConfigManagerErrorCode</property>
+<property>ConfigManagerUserConfig</property>
+<property>CreationClassName</property>
+<property>DefaultBlockSize</property>
+<property>Description</property>
+<property>DeviceID</property>
+<property>Drive</property>
+<property>DriveIntegrity</property>
+<property>ErrorCleared</property>
+<property>ErrorDescription</property>
+<property>ErrorMethodology</property>
+<property>FileSystemFlags</property>
+<property>FileSystemFlagsEx</property>
+<property>InstallDate</property>
+<property>LastErrorCode</property>
+<property>Manufacturer</property>
+<property>MaxBlockSize</property>
+<property>MaximumComponentLength</property>
+<property>MaxMediaSize</property>
+<property>MediaLoaded</property>
+<property>MediaType</property>
+<property>MfrAssignedRevisionLevel</property>
+<property>MinBlockSize</property>
+<property>Name</property>
+<property>NeedsCleaning</property>
+<property>NumberOfMediaSupported</property>
+<property>PNPDeviceID</property>
+<property>PowerManagementSupported</property>
+<property>RevisionLevel</property>
+<property>SCSIBus</property>
+<property>SCSILogicalUnit</property>
+<property>SCSIPort</property>
+<property>SCSITargetId</property>
+<property>SerialNumber</property>
+<property>Size</property>
+<property>Status</property>
+<property>StatusInfo</property>
+<property>SystemCreationClassName</property>
+<property>SystemName</property>
+<property>TransferRate</property>
+<property>VolumeName</property>
+<property>VolumeSerialNumber</property>
+</Win32_CDROMDrive>
+  <Win32_DiskDrive>
+    <property>Availability</property>
+    <property>BytesPerSector</property>
+    <property>Capabilities[]</property>
+    <property>CapabilityDescriptions[]</property>
+    <property>Caption</property>
+    <property>CompressionMethod</property>
+    <property>ConfigManagerErrorCode</property>
+    <property>ConfigManagerUserConfig</property>
+    <property>CreationClassName</property>
+    <property>DefaultBlockSize</property>
+    <property>Description</property>
+    <property>DeviceID</property>
+    <property>ErrorCleared</property>
+    <property>ErrorDescription</property>
+    <property>ErrorMethodology</property>
+    <property>FirmwareRevision</property>
+    <property>Index</property>
+    <property>InstallDate</property>
+    <property>InterfaceType</property>
+    <property>LastErrorCode</property>
+    <property>Manufacturer</property>
+    <property>MaxBlockSize</property>
+    <property>MaxMediaSize</property>
+    <property>MediaLoaded</property>
+    <property>MediaType</property>
+    <property>MinBlockSize</property>
+    <property>Model</property>
+    <property>Name</property>
+    <property>NeedsCleaning</property>
+    <property>NumberOfMediaSupported</property>
+    <property>Partitions</property>
+    <property>PNPDeviceID</property>
+    <property>PowerManagementCapabilities[]</property>
+    <property>PowerManagementSupported</property>
+    <property>SCSIBus</property>
+    <property>SCSILogicalUnit</property>
+    <property>SCSIPort</property>
+    <property>SCSITargetId</property>
+    <property>SectorsPerTrack</property>
+    <property>SerialNumber</property>
+    <property>Signature</property>
+    <property>Size</property>
+    <property>Status</property>
+    <property>StatusInfo</property>
+    <property>SystemCreationClassName</property>
+    <property>SystemName</property>
+    <property>TotalCylinders</property>
+    <property>TotalHeads</property>
+    <property>TotalSectors</property>
+    <property>TotalTracks</property>
+    <property>TracksPerCylinder</property>
+  </Win32_DiskDrive>
+  <Win32_DMAChannel>
+    <property>16AddressSize</property>
+    <property>16Availability</property>
+    <property>BurstMode</property>
+    <property>16ByteMode</property>
+    <property>Caption</property>
+    <property>16ChannelTiming</property>
+    <property>CreationClassName</property>
+    <property>CSCreationClassName</property>
+    <property>CSName</property>
+    <property>Description</property>
+    <property>32DMAChannel</property>
+    <property>InstallDate</property>
+    <property>32MaxTransferSize</property>
+    <property>Name</property>
+    <property>32Port</property>
+    <property>Status</property>
+    <property>16TransferWidths[]</property>
+    <property>16TypeCTiming</property>
+    <property>16WordMode</property>
+  </Win32_DMAChannel>
+  <Win32_Fan>
+    <property>ActiveCooling</property>
+    <property>Availability</property>
+    <property>Caption</property>
+    <property>ConfigManagerErrorCode</property>
+    <property>ConfigManagerUserConfig</property>
+    <property>CreationClassName</property>
+    <property>Description</property>
+    <property>DesiredSpeed</property>
+    <property>DeviceID</property>
+    <property>ErrorCleared</property>
+    <property>ErrorDescription</property>
+    <property>InstallDate</property>
+    <property>LastErrorCode</property>
+    <property>Name</property>
+    <property>PNPDeviceID</property>
+    <property>PowerManagementCapabilities[]</property>
+    <property>PowerManagementSupported</property>
+    <property>Status</property>
+    <property>StatusInfo</property>
+    <property>SystemCreationClassName</property>
+    <property>SystemName</property>
+    <property>VariableSpeed</property>
+  </Win32_Fan>
+  <Win32_FloppyController>
+    <property>Availability</property>
+    <property>Caption</property>
+    <property>ConfigManagerErrorCode</property>
+    <property>ConfigManagerUserConfig</property>
+    <property>CreationClassName</property>
+    <property>Description</property>
+    <property>DeviceID</property>
+    <property>ErrorCleared</property>
+    <property>ErrorDescription</property>
+    <property>InstallDate</property>
+    <property>LastErrorCode</property>
+    <property>Manufacturer</property>
+    <property>MaxNumberControlled</property>
+    <property>Name</property>
+    <property>PNPDeviceID</property>
+    <property>PowerManagementSupported</property>
+    <property>ProtocolSupported</property>
+    <property>Status</property>
+    <property>StatusInfo</property>
+    <property>SystemCreationClassName</property>
+    <property>SystemName</property>
+    <property>TimeOfLastReset</property>
+  </Win32_FloppyController>
+  <Win32_FloppyDrive>
+    <property>Availability</property>
+    <property>Caption</property>
+    <property>CompressionMethod</property>
+    <property>ConfigManagerErrorCode</property>
+    <property>ConfigManagerUserConfig</property>
+    <property>CreationClassName</property>
+    <property>DefaultBlockSize</property>
+    <property>Description</property>
+    <property>DeviceID</property>
+    <property>ErrorCleared</property>
+    <property>ErrorDescription</property>
+    <property>ErrorMethodology</property>
+    <property>InstallDate</property>
+    <property>LastErrorCode</property>
+    <property>Manufacturer</property>
+    <property>MaxBlockSize</property>
+    <property>MaxMediaSize</property>
+    <property>MinBlockSize</property>
+    <property>Name</property>
+    <property>NeedsCleaning</property>
+    <property>NumberOfMediaSupported</property>
+    <property>PNPDeviceID</property>
+    <property>PowerManagementCapabilities[]</property>
+    <property>PowerManagementSupported</property>
+    <property>Status</property>
+    <property>StatusInfo</property>
+    <property>SystemCreationClassName</property>
+    <property>SystemName</property>
+  </Win32_FloppyDrive>
+  <Win32_IDEController>
+    <property>Availability</property>
+    <property>Caption</property>
+    <property>ConfigManagerErrorCode</property>
+    <property>ConfigManagerUserConfig</property>
+    <property>CreationClassName</property>
+    <property>Description</property>
+    <property>DeviceID</property>
+    <property>ErrorCleared</property>
+    <property>ErrorDescription</property>
+    <property>InstallDate</property>
+    <property>LastErrorCode</property>
+    <property>Manufacturer</property>
+    <property>MaxNumberControlled</property>
+    <property>Name</property>
+    <property>PNPDeviceID</property>
+    <property>PowerManagementCapabilities[]</property>
+    <property>PowerManagementSupported</property>
+    <property>ProtocolSupported</property>
+    <property>Status</property>
+    <property>StatusInfo</property>
+    <property>SystemCreationClassName</property>
+    <property>SystemName</property>
+    <property>TimeOfLastReset</property>
+  </Win32_IDEController>
+  <Win32_IRQResource>
+    <property>Availability</property>
+    <property>Caption</property>
+    <property>CreationClassName</property>
+    <property>CSCreationClassName</property>
+    <property>CSName</property>
+    <property>Description</property>
+    <property>Hardware</property>
+    <property>InstallDate</property>
+    <property>IRQNumber</property>
+    <property>Name</property>
+    <property>Shareable</property>
+    <property>Status</property>
+    <property>TriggerLevel</property>
+    <property>TriggerType</property>
+    <property>Vector</property> 
+  </Win32_IRQResource>
+  <Win32_Keyboard>
+    <property>Availability</property>
+    <property>Caption</property>
+    <property>ConfigManagerErrorCode</property>
+    <property>ConfigManagerUserConfig</property>
+    <property>CreationClassName</property>
+    <property>Description</property>
+    <property>DeviceID</property>
+    <property>ErrorCleared</property>
+    <property>ErrorDescription</property>
+    <property>InstallDate</property>
+    <property>IsLocked</property>
+    <property>LastErrorCode</property>
+    <property>Layout</property>
+    <property>Name</property>
+    <property>NumberOfFunctionKeys</property>
+    <property>Password</property>
+    <property>PNPDeviceID</property>
+    <property>PowerManagementSupported</property>
+    <property>Status</property>
+    <property>StatusInfo</property>
+    <property>SystemCreationClassName</property>
+    <property>SystemName</property>
+  </Win32_Keyboard>
+  <Win32_MemoryDevice>
+    <property>Access</property>
+    <property>AdditionalErrorData[]</property>
+    <property>Availability</property>
+    <property>BlockSize</property>
+    <property>Caption</property>
+    <property>ConfigManagerErrorCode</property>
+    <property>ConfigManagerUserConfig</property>
+    <property>CorrectableError</property>
+    <property>CreationClassName</property>
+    <property>Description</property>
+    <property>DeviceID</property>
+    <property>EndingAddress</property>
+    <property>ErrorAccess</property>
+    <property>ErrorAddress</property>
+    <property>ErrorCleared</property>
+    <property>ErrorDataOrder</property>
+    <property>ErrorDescription</property>
+    <property>ErrorGranularity</property>
+    <property>ErrorInfo</property>
+    <property>ErrorMethodology</property>
+    <property>ErrorResolution</property>
+    <property>ErrorTime</property>
+    <property>ErrorTransferSize</property>
+    <property>InstallDate</property>
+    <property>LastErrorCode</property>
+    <property>Name</property>
+    <property>NumberOfBlocks</property>
+    <property>OtherErrorDescription</property>
+    <property>PNPDeviceID</property>
+    <property>PowerManagementCapabilities[]</property>
+    <property>PowerManagementSupported</property>
+    <property>Purpose</property>
+    <property>StartingAddress</property>
+    <property>Status</property>
+    <property>StatusInfo</property>
+    <property>SystemCreationClassName</property>
+    <property>SystemLevelAddress</property>
+    <property>SystemName</property>
+  </Win32_MemoryDevice>
+  <Win32_NetworkAdapter>
+    <property>AdapterType</property>
+    <property>AdapterTypeID</property>
+    <property>AutoSense</property>
+    <property>Availability</property>
+    <property>Caption</property>
+    <property>ConfigManagerErrorCode</property>
+    <property>ConfigManagerUserConfig</property>
+    <property>CreationClassName</property>
+    <property>Description</property>
+    <property>DeviceID</property>
+    <property>ErrorCleared</property>
+    <property>ErrorDescription</property>
+    <property>GUID</property>
+    <property>Index</property>
+    <property>InstallDate</property>
+    <property>Installed</property>
+    <property>InterfaceIndex</property>
+    <property>LastErrorCode</property>
+    <property>MACAddress</property>
+    <property>Manufacturer</property>
+    <property>MaxNumberControlled</property>
+    <property>MaxSpeed</property>
+    <property>Name</property>
+    <property>NetConnectionID</property>
+    <property>NetConnectionStatus</property>
+    <property>NetEnabled</property>
+    <property>NetworkAddresses[]</property>
+    <property>PermanentAddress</property>
+    <property>PhysicalAdapter</property>
+    <property>PNPDeviceID</property>
+    <property>PowerManagementCapabilities[]</property>
+    <property>PowerManagementSupported</property>
+    <property>ProductName</property>
+    <property>ServiceName</property>
+    <property>Speed</property>
+    <property>Status</property>
+    <property>StatusInfo</property>
+    <property>SystemCreationClassName</property>
+    <property>SystemName</property>
+    <property>TimeOfLastReset</property>
+  </Win32_NetworkAdapter>
+  <Win32_NetworkAdapterConfiguration>
+    <property>ArpAlwaysSourceRoute</property>
+    <property>ArpUseEtherSNAP</property>
+    <property>Caption</property>
+    <property>DatabasePath</property>
+    <property>DeadGWDetectEnabled</property>
+    <property>DefaultIPGateway[]</property>
+    <property>DefaultTOS</property>
+    <property>DefaultTTL</property>
+    <property>Description</property>
+    <property>DHCPEnabled</property>
+    <property>DHCPLeaseExpires</property>
+    <property>DHCPLeaseObtained</property>
+    <property>DHCPServer</property>
+    <property>DNSDomain</property>
+    <property>DNSDomainSuffixSearchOrder[]</property>
+    <property>DNSEnabledForWINSResolution</property>
+    <property>DNSHostName</property>
+    <property>DNSServerSearchOrder[]</property>
+    <property>DomainDNSRegistrationEnabled</property>
+    <property>ForwardBufferMemory</property>
+    <property>FullDNSRegistrationEnabled</property>
+    <property>GatewayCostMetric[]</property>
+    <property>IGMPLevel</property>
+    <property>Index</property>
+    <property>InterfaceIndex</property>
+    <property>IPAddress[]</property>
+    <property>IPConnectionMetric</property>
+    <property>IPEnabled</property>
+    <property>IPFilterSecurityEnabled</property>
+    <property>IPPortSecurityEnabled</property>
+    <property>IPSecPermitIPProtocols[]</property>
+    <property>IPSecPermitTCPPorts[]</property>
+    <property>IPSecPermitUDPPorts[]</property>
+    <property>IPSubnet[]</property>
+    <property>IPUseZeroBroadcast</property>
+    <property>IPXAddress</property>
+    <property>IPXEnabled</property>
+    <property>IPXFrameType[]</property>
+    <property>IPXMediaType</property>
+    <property>IPXNetworkNumber[]</property>
+    <property>IPXVirtualNetNumber</property>
+    <property>KeepAliveInterval</property>
+    <property>KeepAliveTime</property>
+    <property>MACAddress</property>
+    <property>MTU</property>
+    <property>NumForwardPackets</property>
+    <property>PMTUBHDetectEnabled</property>
+    <property>PMTUDiscoveryEnabled</property>
+    <property>ServiceName</property>
+    <property>SettingID</property>
+    <property>TcpipNetbiosOptions</property>
+    <property>TcpMaxConnectRetransmissions</property>
+    <property>TcpMaxDataRetransmissions</property>
+    <property>TcpNumConnections</property>
+    <property>TcpUseRFC1122UrgentPointer</property>
+    <property>TcpWindowSize</property>
+    <property>WINSEnableLMHostsLookup</property>
+    <property>WINSHostLookupFile</property>
+    <property>WINSPrimaryServer</property>
+    <property>WINSScopeID</property>
+    <property>WINSSecondaryServer</property>
+  </Win32_NetworkAdapterConfiguration>
+  <Win32_OnBoardDevice>
+    <property>Caption</property>
+    <property>CreationClassName</property>
+    <property>Description</property>
+    <property>DeviceType</property>
+    <property>Enabled</property>
+    <property>HotSwappable</property>
+    <property>InstallDate</property>
+    <property>Manufacturer</property>
+    <property>Model</property>
+    <property>Name</property>
+    <property>OtherIdentifyingInfo</property>
+    <property>PartNumber</property>
+    <property>PoweredOn</property>
+    <property>Removable</property>
+    <property>Replaceable</property>
+    <property>SerialNumber</property>
+    <property>SKU</property>
+    <property>Status</property>
+    <property>Tag</property>
+    <property>Version</property>
+  </Win32_OnBoardDevice>
+  <Win32_ParallelPort>
+    <property>Availability</property>
+    <property>Capabilities[]</property>
+    <property>CapabilityDescriptions[]</property>
+    <property>Caption</property>
+    <property>ConfigManagerErrorCode</property>
+    <property>ConfigManagerUserConfig</property>
+    <property>CreationClassName</property>
+    <property>Description</property>
+    <property>DeviceID</property>
+    <property>DMASupport</property>
+    <property>ErrorCleared</property>
+    <property>ErrorDescription</property>
+    <property>InstallDate</property>
+    <property>LastErrorCode</property>
+    <property>MaxNumberControlled</property>
+    <property>Name</property>
+    <property>OSAutoDiscovered</property>
+    <property>PNPDeviceID</property>
+    <property>PowerManagementCapabilities[]</property>
+    <property>PowerManagementSupported</property>
+    <property>ProtocolSupported</property>
+    <property>Status</property>
+    <property>StatusInfo</property>
+    <property>SystemCreationClassName</property>
+    <property>SystemName</property>
+    <property>TimeOfLastReset</property>
+  </Win32_ParallelPort>
+  <Win32_PCMCIAController>
+    <property>Availability</property>
+    <property>Caption</property>
+    <property>ConfigManagerErrorCode</property>
+    <property>ConfigManagerUserConfig</property>
+    <property>CreationClassName</property>
+    <property>Description</property>
+    <property>DeviceID</property>
+    <property>ErrorCleared</property>
+    <property>ErrorDescription</property>
+    <property>InstallDate</property>
+    <property>LastErrorCode</property>
+    <property>Manufacturer</property>
+    <property>MaxNumberControlled</property>
+    <property>Name</property>
+    <property>PNPDeviceID</property>
+    <property>PowerManagementCapabilities[]</property>
+    <property>PowerManagementSupported</property>
+    <property>ProtocolSupported</property>
+    <property>Status</property>
+    <property>StatusInfo</property>
+    <property>SystemCreationClassName</property>
+    <property>SystemName</property>
+    <property>TimeOfLastReset</property>
+  </Win32_PCMCIAController>
+  <Win32_PhysicalMedia>
+    <property>Caption</property>
+    <property>Description</property>
+    <property>InstallDate</property>
+    <property>Name</property>
+    <property>Status</property>
+    <property>CreationClassName</property>
+    <property>Manufacturer</property>
+    <property>Model</property>
+    <property>SKU</property>
+    <property>SerialNumber</property>
+    <property>Tag</property>
+    <property>Version</property>
+    <property>PartNumber</property>
+    <property>OtherIdentifyingInfo</property>
+    <property>PoweredOn</property>
+    <property>Removable</property>
+    <property>Replaceable</property>
+    <property>HotSwappable</property>
+    <property>Capacity</property>
+    <property>MediaType</property>
+    <property>MediaDescription</property>
+    <property>WriteProtectOn</property>
+    <property>CleanerMedia</property>
+  </Win32_PhysicalMedia>
+  <Win32_PhysicalMemory>
+    <property>BankLabel</property>
+    <property>Capacity</property>
+    <property>Caption</property>
+    <property>CreationClassName</property>
+    <property>DataWidth</property>
+    <property>Description</property>
+    <property>DeviceLocator</property>
+    <property>FormFactor</property>
+    <property>HotSwappable</property>
+    <property>InstallDate</property>
+    <property>InterleaveDataDepth</property>
+    <property>InterleavePosition</property>
+    <property>Manufacturer</property>
+    <property>MemoryType</property>
+    <property>Model</property>
+    <property>Name</property>
+    <property>OtherIdentifyingInfo</property>
+    <property>PartNumber</property>
+    <property>PositionInRow</property>
+    <property>PoweredOn</property>
+    <property>Removable</property>
+    <property>Replaceable</property>
+    <property>SerialNumber</property>
+    <property>SKU</property>
+    <property>Speed</property>
+    <property>Status</property>
+    <property>Tag</property>
+    <property>TotalWidth</property>
+    <property>TypeDetail</property>
+    <property>Version</property>
+  </Win32_PhysicalMemory>
+  <Win32_PortConnector>
+    <property>Caption</property>
+    <property>ConnectorPinout</property>
+    <property>ConnectorType[]</property>
+    <property>CreationClassName</property>
+    <property>Description</property>
+    <property>ExternalReferenceDesignator</property>
+    <property>InstallDate</property>
+    <property>InternalReferenceDesignator</property>
+    <property>Manufacturer</property>
+    <property>Model</property>
+    <property>Name</property>
+    <property>OtherIdentifyingInfo</property>
+    <property>PartNumber</property>
+    <property>PortType</property>
+    <property>PoweredOn</property>
+    <property>SerialNumber</property>
+    <property>SKU</property>
+    <property>Status</property>
+    <property>Tag</property>
+    <property>Version</property>
+  </Win32_PortConnector>
+  <Win32_PortResource>
+    <property>Alias</property>
+    <property>Caption</property>
+    <property>CreationClassName</property>
+    <property>CSCreationClassName</property>
+    <property>CSName</property>
+    <property>Description</property>
+    <property>EndingAddress</property>
+    <property>InstallDate</property>
+    <property>Name</property>
+    <property>StartingAddress</property>
+    <property>Status</property>
+  </Win32_PortResource>
+  <Win32_POTSModem>
+    <property>AnswerMode</property>
+    <property>AttachedTo</property>
+    <property>Availability</property>
+    <property>BlindOff</property>
+    <property>BlindOn</property>
+    <property>Caption</property>
+    <property>CompatibilityFlags</property>
+    <property>CompressionInfo</property>
+    <property>CompressionOff</property>
+    <property>CompressionOn</property>
+    <property>ConfigManagerErrorCode</property>
+    <property>ConfigManagerUserConfig</property>
+    <property>ConfigurationDialog</property>
+    <property>CountriesSupported[]</property>
+    <property>CountrySelected</property>
+    <property>CreationClassName</property>
+    <property>CurrentPasswords[]</property>
+    <property>DCB[]</property>
+    <property>Default[]</property>
+    <property>Description</property>
+    <property>DeviceID</property>
+    <property>DeviceLoader</property>
+    <property>DeviceType</property>
+    <property>DialType</property>
+    <property>DriverDate</property>
+    <property>ErrorCleared</property>
+    <property>ErrorControlForced</property>
+    <property>ErrorControlInfo</property>
+    <property>ErrorControlOff</property>
+    <property>ErrorControlOn</property>
+    <property>ErrorDescription</property>
+    <property>FlowControlHard</property>
+    <property>FlowControlOff</property>
+    <property>FlowControlSoft</property>
+    <property>InactivityScale</property>
+    <property>InactivityTimeout</property>
+    <property>Index</property>
+    <property>InstallDate</property>
+    <property>LastErrorCode</property>
+    <property>MaxBaudRateToPhone</property>
+    <property>MaxBaudRateToSerialPort</property>
+    <property>MaxNumberOfPasswords</property>
+    <property>Model</property>
+    <property>ModemInfPath</property>
+    <property>ModemInfSection</property>
+    <property>ModulationBell</property>
+    <property>ModulationCCITT</property>
+    <property>ModulationScheme</property>
+    <property>Name</property>
+    <property>PNPDeviceID</property>
+    <property>PortSubClass</property>
+    <property>PowerManagementCapabilities[]</property>
+    <property>PowerManagementSupported</property>
+    <property>Prefix</property>
+    <property>Properties[]</property>
+    <property>ProviderName</property>
+    <property>Pulse</property>
+    <property>Reset</property>
+    <property>ResponsesKeyName</property>
+    <property>RingsBeforeAnswer</property>
+    <property>SpeakerModeDial</property>
+    <property>SpeakerModeOff</property>
+    <property>SpeakerModeOn</property>
+    <property>SpeakerModeSetup</property>
+    <property>SpeakerVolumeHigh</property>
+    <property>SpeakerVolumeInfo</property>
+    <property>SpeakerVolumeLow</property>
+    <property>SpeakerVolumeMed</property>
+    <property>Status</property>
+    <property>StatusInfo</property>
+    <property>StringFormat</property>
+    <property>SupportsCallback</property>
+    <property>SupportsSynchronousConnect</property>
+    <property>SystemCreationClassName</property>
+    <property>SystemName</property>
+    <property>Terminator</property>
+    <property>TimeOfLastReset</property>
+    <property>Tone</property>
+    <property>VoiceSwitchFeature</property>
+  </Win32_POTSModem>
+  <Win32_Processor>
+    <property>AddressWidth</property>
+    <property>Architecture</property>
+    <property>Availability</property>
+    <property>Caption</property>
+    <property>ConfigManagerErrorCode</property>
+    <property>ConfigManagerUserConfig</property>
+    <property>CpuStatus</property>
+    <property>CreationClassName</property>
+    <property>CurrentClockSpeed</property>
+    <property>CurrentVoltage</property>
+    <property>DataWidth</property>
+    <property>Description</property>
+    <property>DeviceID</property>
+    <property>ErrorCleared</property>
+    <property>ErrorDescription</property>
+    <property>ExtClock</property>
+    <property>Family</property>
+    <property>InstallDate</property>
+    <property>L2CacheSize</property>
+    <property>L2CacheSpeed</property>
+    <property>L3CacheSize</property>
+    <property>L3CacheSpeed</property>
+    <property>LastErrorCode</property>
+    <property>Level</property>
+    <property>LoadPercentage</property>
+    <property>Manufacturer</property>
+    <property>MaxClockSpeed</property>
+    <property>Name</property>
+    <property>NumberOfCores</property>
+    <property>NumberOfLogicalProcessors</property>
+    <property>OtherFamilyDescription</property>
+    <property>PNPDeviceID</property>
+    <property>PowerManagementSupported</property>
+    <property>ProcessorId</property>
+    <property>ProcessorType</property>
+    <property>Revision</property>
+    <property>Role</property>
+    <property>SocketDesignation</property>
+    <property>Status</property>
+    <property>StatusInfo</property>
+    <property>Stepping</property>
+    <property>SystemCreationClassName</property>
+    <property>SystemName</property>
+    <property>UniqueId</property>
+    <property>UpgradeMethod</property>
+    <property>Version</property>
+    <property>VoltageCaps</property>
+  </Win32_Processor>
+  <Win32_SCSIController>
+    <property>Availability</property>
+    <property>Caption</property>
+    <property>ConfigManagerErrorCode</property>
+    <property>ConfigManagerUserConfig</property>
+    <property>ControllerTimeouts</property>
+    <property>CreationClassName</property>
+    <property>Description</property>
+    <property>DeviceID</property>
+    <property>DeviceMap</property>
+    <property>DriverName</property>
+    <property>ErrorCleared</property>
+    <property>ErrorDescription</property>
+    <property>HardwareVersion</property>
+    <property>Index</property>
+    <property>InstallDate</property>
+    <property>LastErrorCode</property>
+    <property>Manufacturer</property>
+    <property>MaxDataWidth</property>
+    <property>MaxNumberControlled</property>
+    <property>MaxTransferRate</property>
+    <property>Name</property>
+    <property>PNPDeviceID</property>
+    <property>PowerManagementCapabilities[]</property>
+    <property>PowerManagementSupported</property>
+    <property>ProtectionManagement</property>
+    <property>ProtocolSupported</property>
+    <property>Status</property>
+    <property>StatusInfo</property>
+    <property>SystemCreationClassName</property>
+    <property>SystemName</property>
+    <property>TimeOfLastReset</property>
+  </Win32_SCSIController>
+  <Win32_SerialPort>
+    <property>Availability</property>
+    <property>Binary</property>
+    <property>Capabilities[]</property>
+    <property>CapabilityDescriptions[]</property>
+    <property>Caption</property>
+    <property>ConfigManagerErrorCode</property>
+    <property>ConfigManagerUserConfig</property>
+    <property>CreationClassName</property>
+    <property>Description</property>
+    <property>DeviceID</property>
+    <property>ErrorCleared</property>
+    <property>ErrorDescription</property>
+    <property>InstallDate</property>
+    <property>LastErrorCode</property>
+    <property>MaxBaudRate</property>
+    <property>MaximumInputBufferSize</property>
+    <property>MaximumOutputBufferSize</property>
+    <property>MaxNumberControlled</property>
+    <property>Name</property>
+    <property>OSAutoDiscovered</property>
+    <property>PNPDeviceID</property>
+    <property>PowerManagementCapabilities[]</property>
+    <property>PowerManagementSupported</property>
+    <property>ProtocolSupported</property>
+    <property>ProviderType</property>
+    <property>SettableBaudRate</property>
+    <property>SettableDataBits</property>
+    <property>SettableFlowControl</property>
+    <property>SettableParity</property>
+    <property>SettableParityCheck</property>
+    <property>SettableRLSD</property>
+    <property>SettableStopBits</property>
+    <property>Status</property>
+    <property>StatusInfo</property>
+    <property>Supports16BitMode</property>
+    <property>SupportsDTRDSR</property>
+    <property>SupportsElapsedTimeouts</property>
+    <property>SupportsIntTimeouts</property>
+    <property>SupportsParityCheck</property>
+    <property>SupportsRLSD</property>
+    <property>SupportsRTSCTS</property>
+    <property>SupportsSpecialCharacters</property>
+    <property>SupportsXOnXOff</property>
+    <property>SupportsXOnXOffSet</property>
+    <property>SystemCreationClassName</property>
+    <property>SystemName</property>
+    <property>TimeOfLastReset</property>
+  </Win32_SerialPort>
+  <Win32_SerialPortConfiguration>
+    <property>AbortReadWriteOnError</property>
+    <property>BaudRate</property>
+    <property>BinaryModeEnabled</property>
+    <property>BitsPerByte</property>
+    <property>Caption</property>
+    <property>ContinueXMitOnXOff</property>
+    <property>CTSOutflowControl</property>
+    <property>Description</property>
+    <property>DiscardNULLBytes</property>
+    <property>DSROutflowControl</property>
+    <property>DSRSensitivity</property>
+    <property>DTRFlowControlType</property>
+    <property>EOFCharacter</property>
+    <property>ErrorReplaceCharacter</property>
+    <property>ErrorReplacementEnabled</property>
+    <property>EventCharacter</property>
+    <property>IsBusy</property>
+    <property>Name</property>
+    <property>Parity</property>
+    <property>ParityCheckEnabled</property>
+    <property>RTSFlowControlType</property>
+    <property>SettingID</property>
+    <property>StopBits</property>
+    <property>XOffCharacter</property>
+    <property>XOffXMitThreshold</property>
+    <property>XOnCharacter</property>
+    <property>XOnXMitThreshold</property>
+    <property>XOnXOffInFlowControl</property>
+    <property>XOnXOffOutFlowControl</property>
+  </Win32_SerialPortConfiguration>
+  <Win32_SoundDevice>
+    <property>Availability</property>
+    <property>Caption</property>
+    <property>ConfigManagerErrorCode</property>
+    <property>ConfigManagerUserConfig</property>
+    <property>CreationClassName</property>
+    <property>Description</property>
+    <property>DeviceID</property>
+    <property>DMABufferSize</property>
+    <property>ErrorCleared</property>
+    <property>ErrorDescription</property>
+    <property>InstallDate</property>
+    <property>LastErrorCode</property>
+    <property>Manufacturer</property>
+    <property>MPU401Address</property>
+    <property>Name</property>
+    <property>PNPDeviceID</property>
+    <property>PowerManagementCapabilities[]</property>
+    <property>PowerManagementSupported</property>
+    <property>ProductName</property>
+    <property>Status</property>
+    <property>StatusInfo</property>
+    <property>SystemCreationClassName</property>
+    <property>SystemName</property>
+  </Win32_SoundDevice>
+  <Win32_SystemEnclosure>
+    <property>AudibleAlarm</property>
+    <property>BreachDescription</property>
+    <property>CableManagementStrategy</property>
+    <property>Caption</property>
+    <property>ChassisTypes[]</property>
+    <property>CreationClassName</property>
+    <property>CurrentRequiredOrProduced</property>
+    <property>Depth</property>
+    <property>Description</property>
+    <property>HeatGeneration</property>
+    <property>Height</property>
+    <property>HotSwappable</property>
+    <property>InstallDate</property>
+    <property>LockPresent</property>
+    <property>Manufacturer</property>
+    <property>Model</property>
+    <property>Name</property>
+    <property>NumberOfPowerCords</property>
+    <property>OtherIdentifyingInfo</property>
+    <property>PartNumber</property>
+    <property>PoweredOn</property>
+    <property>Removable</property>
+    <property>Replaceable</property>
+    <property>SecurityBreach</property>
+    <property>SecurityStatus</property>
+    <property>SerialNumber</property>
+    <property>ServiceDescriptions[]</property>
+    <property>ServicePhilosophy[]</property>
+    <property>SKU</property>
+    <property>SMBIOSAssetTag</property>
+    <property>Status</property>
+    <property>Tag</property>
+    <property>TypeDescriptions[]</property>
+    <property>Version</property>
+    <property>VisibleAlarm</property>
+    <property>Weight</property>
+    <property>Width</property>
+  </Win32_SystemEnclosure>
+  <Win32_TapeDrive>
+    <property>Availability</property>
+    <property>Capabilities[]</property>
+    <property>CapabilityDescriptions[]</property>
+    <property>Caption</property>
+    <property>Compression</property>
+    <property>CompressionMethod</property>
+    <property>ConfigManagerErrorCode</property>
+    <property>ConfigManagerUserConfig</property>
+    <property>CreationClassName</property>
+    <property>DefaultBlockSize</property>
+    <property>Description</property>
+    <property>DeviceID</property>
+    <property>ECC</property>
+    <property>EOTWarningZoneSize</property>
+    <property>ErrorCleared</property>
+    <property>ErrorDescription</property>
+    <property>ErrorMethodology</property>
+    <property>FeaturesHigh</property>
+    <property>FeaturesLow</property>
+    <property>Id</property>
+    <property>InstallDate</property>
+    <property>LastErrorCode</property>
+    <property>Manufacturer</property>
+    <property>MaxBlockSize</property>
+    <property>MaxMediaSize</property>
+    <property>MaxPartitionCount</property>
+    <property>MediaType</property>
+    <property>MinBlockSize</property>
+    <property>Name</property>
+    <property>NeedsCleaning</property>
+    <property>NumberOfMediaSupported</property>
+    <property>Padding</property>
+    <property>PNPDeviceID</property>
+    <property>PowerManagementCapabilities[]</property>
+    <property>PowerManagementSupported</property>
+    <property>ReportSetMarks</property>
+    <property>Status</property>
+    <property>StatusInfo</property>
+    <property>SystemCreationClassName</property>
+    <property>SystemName</property>
+  </Win32_TapeDrive>
+  <Win32_TemperatureProbe>
+    <property>Accuracy</property>
+    <property>Availability</property>
+    <property>Caption</property>
+    <property>ConfigManagerErrorCode</property>
+    <property>ConfigManagerUserConfig</property>
+    <property>CreationClassName</property>
+    <property>CurrentReading</property>
+    <property>Description</property>
+    <property>DeviceID</property>
+    <property>ErrorCleared</property>
+    <property>ErrorDescription</property>
+    <property>InstallDate</property>
+    <property>IsLinear</property>
+    <property>LastErrorCode</property>
+    <property>LowerThresholdCritical</property>
+    <property>LowerThresholdFatal</property>
+    <property>LowerThresholdNonCritical</property>
+    <property>MaxReadable</property>
+    <property>MinReadable</property>
+    <property>Name</property>
+    <property>NominalReading</property>
+    <property>NormalMax</property>
+    <property>NormalMin</property>
+    <property>PNPDeviceID</property>
+    <property>PowerManagementCapabilities[]</property>
+    <property>PowerManagementSupported</property>
+    <property>Resolution</property>
+    <property>Status</property>
+    <property>StatusInfo</property>
+    <property>SystemCreationClassName</property>
+    <property>SystemName</property>
+    <property>Tolerance</property>
+    <property>UpperThresholdCritical</property>
+    <property>UpperThresholdFatal</property>
+    <property>UpperThresholdNonCritical</property>
+  </Win32_TemperatureProbe>
+  <Win32_UninterruptiblePowerSupply>
+    <property>ActiveInputVoltage</property>
+    <property>Availability</property>
+    <property>BatteryInstalled</property>
+    <property>CanTurnOffRemotely</property>
+    <property>Caption</property>
+    <property>CommandFile</property>
+    <property>ConfigManagerErrorCode</property>
+    <property>ConfigManagerUserConfig</property>
+    <property>CreationClassName</property>
+    <property>Description</property>
+    <property>DeviceID</property>
+    <property>ErrorCleared</property>
+    <property>ErrorDescription</property>
+    <property>EstimatedChargeRemaining</property>
+    <property>EstimatedRunTime</property>
+    <property>FirstMessageDelay</property>
+    <property>InstallDate</property>
+    <property>IsSwitchingSupply</property>
+    <property>LastErrorCode</property>
+    <property>LowBatterySignal</property>
+    <property>MessageInterval</property>
+    <property>Name</property>
+    <property>PNPDeviceID</property>
+    <property>PowerFailSignal</property>
+    <property>PowerManagementCapabilities[]</property>
+    <property>PowerManagementSupported</property>
+    <property>Range1InputFrequencyHigh</property>
+    <property>Range1InputFrequencyLow</property>
+    <property>Range1InputVoltageHigh</property>
+    <property>Range1InputVoltageLow</property>
+    <property>Range2InputFrequencyHigh</property>
+    <property>Range2InputFrequencyLow</property>
+    <property>Range2InputVoltageHigh</property>
+    <property>Range2InputVoltageLow</property>
+    <property>RemainingCapacityStatus</property>
+    <property>Status</property>
+    <property>StatusInfo</property>
+    <property>SystemCreationClassName</property>
+    <property>SystemName</property>
+    <property>TimeOnBackup</property>
+    <property>TotalOutputPower</property>
+    <property>TypeOfRangeSwitching</property>
+    <property>UPSPort</property>
+  </Win32_UninterruptiblePowerSupply>
+  <Win32_USBController>
+    <property>Availability</property>
+    <property>Caption</property>
+    <property>ConfigManagerErrorCode</property>
+    <property>ConfigManagerUserConfig</property>
+    <property>CreationClassName</property>
+    <property>Description</property>
+    <property>DeviceID</property>
+    <property>ErrorCleared</property>
+    <property>ErrorDescription</property>
+    <property>InstallDate</property>
+    <property>LastErrorCode</property>
+    <property>Manufacturer</property>
+    <property>MaxNumberControlled</property>
+    <property>Name</property>
+    <property>PNPDeviceID</property>
+    <property>PowerManagementCapabilities[]</property>
+    <property>PowerManagementSupported</property>
+    <property>ProtocolSupported</property>
+    <property>Status</property>
+    <property>StatusInfo</property>
+    <property>SystemCreationClassName</property>
+    <property>SystemName</property>
+    <property>TimeOfLastReset</property>
+  </Win32_USBController>
+  <Win32_USBHub>
+    <property>Availability</property>
+    <property>Caption</property>
+    <property>ClassCode</property>
+    <property>ConfigManagerErrorCode</property>
+    <property>ConfigManagerUserCode</property>
+    <property>CreationClassName</property>
+    <property>CurrentAlternativeSettings</property>
+    <property>CurrentConfigValue</property>
+    <property>Description</property>
+    <property>DeviceID</property>
+    <property>ErrorCleared</property>
+    <property>ErrorDescription</property>
+    <property>GangSwitched</property>
+    <property>InstallDate</property>
+    <property>LastErrorCode</property>
+    <property>Name</property>
+    <property>NumberOfConfigs</property>
+    <property>NumberOfPorts</property>
+    <property>PNPDeviceID</property>
+    <property>PowerManagementCapabilities[]</property>
+    <property>PowerManagementSupported</property>
+    <property>ProtocolCode</property>
+    <property>Status</property>
+    <property>StatusInfo</property>
+    <property>SubclassCode</property>
+    <property>SystemCreationClassName</property>
+    <property>SystemName</property>
+    <property>USBVersion</property>
+  </Win32_USBHub>
+  <Win32_VideoController>
+    <property>AcceleratorCapabilities[]</property>
+    <property>AdapterCompatibility</property>
+    <property>AdapterDACType</property>
+    <property>AdapterRAM</property>
+    <property>Availability</property>
+    <property>CapabilityDescriptions[]</property>
+    <property>Caption</property>
+    <property>ColorTableEntries</property>
+    <property>ConfigManagerErrorCode</property>
+    <property>ConfigManagerUserConfig</property>
+    <property>CreationClassName</property>
+    <property>CurrentBitsPerPixel</property>
+    <property>CurrentHorizontalResolution</property>
+    <property>CurrentNumberOfColors</property>
+    <property>CurrentNumberOfColumns</property>
+    <property>CurrentNumberOfRows</property>
+    <property>CurrentRefreshRate</property>
+    <property>CurrentScanMode</property>
+    <property>CurrentVerticalResolution</property>
+    <property>Description</property>
+    <property>DeviceID</property>
+    <property>DeviceSpecificPens</property>
+    <property>DitherType</property>
+    <property>DriverDate</property>
+    <property>DriverVersion</property>
+    <property>ErrorCleared</property>
+    <property>ErrorDescription</property>
+    <property>ICMIntent</property>
+    <property>ICMMethod</property>
+    <property>InfFilename</property>
+    <property>InfSection</property>
+    <property>InstallDate</property>
+    <property>InstalledDisplayDrivers</property>
+    <property>LastErrorCode</property>
+    <property>MaxMemorySupported</property>
+    <property>MaxNumberControlled</property>
+    <property>MaxRefreshRate</property>
+    <property>MinRefreshRate</property>
+    <property>Monochrome</property>
+    <property>Name</property>
+    <property>NumberOfColorPlanes</property>
+    <property>NumberOfVideoPages</property>
+    <property>PNPDeviceID</property>
+    <property>PowerManagementCapabilities[]</property>
+    <property>PowerManagementSupported</property>
+    <property>ProtocolSupported</property>
+    <property>ReservedSystemPaletteEntries</property>
+    <property>SpecificationVersion</property>
+    <property>Status</property>
+    <property>StatusInfo</property>
+    <property>SystemCreationClassName</property>
+    <property>SystemName</property>
+    <property>SystemPaletteEntries</property>
+    <property>TimeOfLastReset</property>
+    <property>VideoArchitecture</property>
+    <property>VideoMemoryType</property>
+    <property>VideoMode</property>
+    <property>VideoModeDescription</property>
+    <property>VideoProcessor</property>
+  </Win32_VideoController>
+  <Win32_VoltageProbe>
+    <property>Accuracy</property>
+    <property>Availability</property>
+    <property>Caption</property>
+    <property>ConfigManagerErrorCode</property>
+    <property>ConfigManagerUserConfig</property>
+    <property>CreationClassName</property>
+    <property>CurrentReading</property>
+    <property>Description</property>
+    <property>DeviceID</property>
+    <property>ErrorCleared</property>
+    <property>ErrorDescription</property>
+    <property>InstallDate</property>
+    <property>IsLinear</property>
+    <property>LastErrorCode</property>
+    <property>LowerThresholdCritical</property>
+    <property>LowerThresholdFatal</property>
+    <property>LowerThresholdNonCritical</property>
+    <property>MaxReadable</property>
+    <property>MinReadable</property>
+    <property>Name</property>
+    <property>NominalReading</property>
+    <property>NormalMax</property>
+    <property>NormalMin</property>
+    <property>PNPDeviceID</property>
+    <property>PowerManagementCapabilities[]</property>
+    <property>PowerManagementSupported</property>
+    <property>Resolution</property>
+    <property>Status</property>
+    <property>StatusInfo</property>
+    <property>SystemCreationClassName</property>
+    <property>SystemName</property>
+    <property>Tolerance</property>
+    <property>UpperThresholdCritical</property>
+    <property>UpperThresholdFatal</property>
+    <property>UpperThresholdNonCritical</property>
+  </Win32_VoltageProbe>
+  
+</WMI>
+
+</AppSettings>
+

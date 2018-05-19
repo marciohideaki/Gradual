@@ -1,0 +1,4 @@
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils.Logger\bin\Release\Gradual.Utils.Logger.xml
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils.Logger\bin\Release\Gradual.Utils.Logger.dll
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils.Logger\bin\Release\log4net.dll
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils.Logger\obj\Release\Gradual.Utils.Logger.dll

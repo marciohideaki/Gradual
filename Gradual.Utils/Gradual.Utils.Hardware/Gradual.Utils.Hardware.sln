@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.Utils.Hardware", "Gradual.Utils.Hardware.csproj", "{99990CE2-154C-4942-B9A6-60680585B1AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.Utils.Logger", "..\Gradual.Utils.Logger\Gradual.Utils.Logger.csproj", "{7AB1E12A-8DAA-4C10-842B-F2B0B7B4F04C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{99990CE2-154C-4942-B9A6-60680585B1AA} = {99990CE2-154C-4942-B9A6-60680585B1AA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.Utils", "..\Gradual.Utils\Gradual.Utils.csproj", "{D92548A5-47C7-45C5-954C-5AD0C13E7A2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99990CE2-154C-4942-B9A6-60680585B1AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99990CE2-154C-4942-B9A6-60680585B1AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99990CE2-154C-4942-B9A6-60680585B1AA}.Debug|x86.ActiveCfg = Debug|x86
+		{99990CE2-154C-4942-B9A6-60680585B1AA}.Debug|x86.Build.0 = Debug|x86
+		{99990CE2-154C-4942-B9A6-60680585B1AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99990CE2-154C-4942-B9A6-60680585B1AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99990CE2-154C-4942-B9A6-60680585B1AA}.Release|x86.ActiveCfg = Release|x86
+		{99990CE2-154C-4942-B9A6-60680585B1AA}.Release|x86.Build.0 = Release|x86
+		{7AB1E12A-8DAA-4C10-842B-F2B0B7B4F04C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AB1E12A-8DAA-4C10-842B-F2B0B7B4F04C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AB1E12A-8DAA-4C10-842B-F2B0B7B4F04C}.Debug|x86.ActiveCfg = Debug|x86
+		{7AB1E12A-8DAA-4C10-842B-F2B0B7B4F04C}.Debug|x86.Build.0 = Debug|x86
+		{7AB1E12A-8DAA-4C10-842B-F2B0B7B4F04C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AB1E12A-8DAA-4C10-842B-F2B0B7B4F04C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AB1E12A-8DAA-4C10-842B-F2B0B7B4F04C}.Release|x86.ActiveCfg = Release|x86
+		{7AB1E12A-8DAA-4C10-842B-F2B0B7B4F04C}.Release|x86.Build.0 = Release|x86
+		{D92548A5-47C7-45C5-954C-5AD0C13E7A2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D92548A5-47C7-45C5-954C-5AD0C13E7A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D92548A5-47C7-45C5-954C-5AD0C13E7A2C}.Debug|x86.ActiveCfg = Debug|x86
+		{D92548A5-47C7-45C5-954C-5AD0C13E7A2C}.Debug|x86.Build.0 = Debug|x86
+		{D92548A5-47C7-45C5-954C-5AD0C13E7A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D92548A5-47C7-45C5-954C-5AD0C13E7A2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D92548A5-47C7-45C5-954C-5AD0C13E7A2C}.Release|x86.ActiveCfg = Release|x86
+		{D92548A5-47C7-45C5-954C-5AD0C13E7A2C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 1
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccProjectUniqueName0 = ..\\Gradual.Utils\\Gradual.Utils.csproj
+		SccProjectName0 = $/Gradual.GTI/Gradual.Utils/Gradual.Utils
+		SccAuxPath0 = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = ..\\Gradual.Utils
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+EndGlobal

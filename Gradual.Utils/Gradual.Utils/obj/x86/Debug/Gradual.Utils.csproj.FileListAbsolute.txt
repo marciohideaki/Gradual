@@ -1,0 +1,10 @@
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils\bin\x86\Debug\Gradual.Utils.dll
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils\bin\x86\Debug\Gradual.Utils.pdb
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils\bin\x86\Debug\Gradual.Utils.Logger.dll
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils\bin\x86\Debug\Gradual.Utils.Logger.pdb
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils\obj\x86\Debug\Gradual.Utils.csprojResolveAssemblyReference.cache
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils\obj\x86\Debug\Gradual.Utils.LoadingPanel.resources
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils\obj\x86\Debug\Gradual.Utils.Properties.Resources.resources
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils\obj\x86\Debug\Gradual.Utils.csproj.GenerateResource.Cache
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils\obj\x86\Debug\Gradual.Utils.dll
+D:\Gradual\Source\Gradual.Utils\Gradual.Utils\obj\x86\Debug\Gradual.Utils.pdb
