@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Host.Windows.ConsoleServicos", "..\..\Gradual.OMS.Host.Windows.ConsoleServicos\Gradual.OMS.Host.Windows.ConsoleServicos.csproj", "{5A67B1B7-D211-41C4-98E5-521F238F5168}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Library", "..\..\Gradual.OMS.Library\Gradual.OMS.Library.csproj", "{A5E45264-237E-471B-9260-88552A1EF7F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A67B1B7-D211-41C4-98E5-521F238F5168}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A67B1B7-D211-41C4-98E5-521F238F5168}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A67B1B7-D211-41C4-98E5-521F238F5168}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A67B1B7-D211-41C4-98E5-521F238F5168}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5E45264-237E-471B-9260-88552A1EF7F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5E45264-237E-471B-9260-88552A1EF7F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5E45264-237E-471B-9260-88552A1EF7F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5E45264-237E-471B-9260-88552A1EF7F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

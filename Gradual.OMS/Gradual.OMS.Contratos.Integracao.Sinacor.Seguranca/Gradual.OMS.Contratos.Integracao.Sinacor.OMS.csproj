@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6CAF1B5A-A95A-436E-A4AF-21D64CAA91E1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.Contratos.Integracao.Sinacor.OMS</RootNamespace>
+    <AssemblyName>Gradual.OMS.Contratos.Integracao.Sinacor.OMS</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\Docs\VsDocs\Gradual.OMS.Contratos.Integracao.Sinacor.Seguranca.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dados\ContextoOMSInfo.cs" />
+    <Compile Include="IServicoIntegracaoSinacorOMS.cs" />
+    <Compile Include="Mensagens\InicializarUsuarioRequest.cs" />
+    <Compile Include="Mensagens\InicializarUsuarioResponse.cs" />
+    <Compile Include="Mensagens\SincronizarContaCorrenteRequest.cs" />
+    <Compile Include="Mensagens\SincronizarContaCorrenteResponse.cs" />
+    <Compile Include="Mensagens\SincronizarCustodiaRequest.cs" />
+    <Compile Include="Mensagens\SincronizarCustodiaResponse.cs" />
+    <Compile Include="Mensagens\TraduzirCodigoCBLCRequest.cs" />
+    <Compile Include="Mensagens\TraduzirCodigoCBLCResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Comum\Gradual.OMS.Contratos.Comum.csproj">
+      <Project>{AE2DB70E-A19F-4EA4-8AD6-5441AE70A474}</Project>
+      <Name>Gradual.OMS.Contratos.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.ContaCorrente\Gradual.OMS.Contratos.ContaCorrente.csproj">
+      <Project>{82E4AAA9-5E88-4591-9130-6DE4EFCEA5BF}</Project>
+      <Name>Gradual.OMS.Contratos.ContaCorrente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Custodia\Gradual.OMS.Contratos.Custodia.csproj">
+      <Project>{8F28A40D-98B3-427B-8831-E250C1AC1E91}</Project>
+      <Name>Gradual.OMS.Contratos.Custodia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Library\Gradual.OMS.Library.csproj">
+      <Project>{A5E45264-237E-471B-9260-88552A1EF7F3}</Project>
+      <Name>Gradual.OMS.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

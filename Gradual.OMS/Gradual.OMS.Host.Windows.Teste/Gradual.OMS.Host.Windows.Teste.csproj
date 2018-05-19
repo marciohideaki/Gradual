@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{26E3BB37-7B37-4945-8C9E-3188DBE7F79B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.Host.Windows.Teste</RootNamespace>
+    <AssemblyName>Gradual.OMS.Host.Windows.Teste</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v8.3, Version=8.3.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v8.3, Version=8.3.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v8.3, Version=8.3.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControleEnvioMensagens.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControleEnvioMensagens.Designer.cs">
+      <DependentUpon>ControleEnvioMensagens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControleListaAtivos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControleListaAtivos.Designer.cs">
+      <DependentUpon>ControleListaAtivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControleMonitorEventos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControleMonitorEventos.Designer.cs">
+      <DependentUpon>ControleMonitorEventos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInstrumentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInstrumentos.Designer.cs">
+      <DependentUpon>frmInstrumentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmObjeto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmObjeto.Designer.cs">
+      <DependentUpon>frmObjeto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mensagem.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ControleEnvioMensagens.resx">
+      <DependentUpon>ControleEnvioMensagens.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControleListaAtivos.resx">
+      <DependentUpon>ControleListaAtivos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControleMonitorEventos.resx">
+      <DependentUpon>ControleMonitorEventos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInstrumentos.resx">
+      <DependentUpon>frmInstrumentos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmObjeto.resx">
+      <DependentUpon>frmObjeto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config.usandoLocal">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App.config.usandoServidorComInterface">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="App.config.usandoServidor">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="App.config.usandoLocalComIP">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TesteRisco.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Automacao.Ordens\Gradual.OMS.Contratos.Automacao.Ordens.csproj">
+      <Project>{F6FD8B53-3848-44ED-8579-15AC86244569}</Project>
+      <Name>Gradual.OMS.Contratos.Automacao.Ordens</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.CanaisNegociacao\Gradual.OMS.Contratos.CanaisNegociacao.csproj">
+      <Project>{FC2A0D28-2B8E-4B64-A2D2-0BA8E2691AC2}</Project>
+      <Name>Gradual.OMS.Contratos.CanaisNegociacao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Comum\Gradual.OMS.Contratos.Comum.csproj">
+      <Project>{AE2DB70E-A19F-4EA4-8AD6-5441AE70A474}</Project>
+      <Name>Gradual.OMS.Contratos.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.ContaCorrente\Gradual.OMS.Contratos.ContaCorrente.csproj">
+      <Project>{82E4AAA9-5E88-4591-9130-6DE4EFCEA5BF}</Project>
+      <Name>Gradual.OMS.Contratos.ContaCorrente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Custodia\Gradual.OMS.Contratos.Custodia.csproj">
+      <Project>{8F28A40D-98B3-427B-8831-E250C1AC1E91}</Project>
+      <Name>Gradual.OMS.Contratos.Custodia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Integracao.Sinacor.Seguranca\Gradual.OMS.Contratos.Integracao.Sinacor.OMS.csproj">
+      <Project>{6CAF1B5A-A95A-436E-A4AF-21D64CAA91E1}</Project>
+      <Name>Gradual.OMS.Contratos.Integracao.Sinacor.OMS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Integracao.Sinacor\Gradual.OMS.Contratos.Integracao.Sinacor.csproj">
+      <Project>{30854102-D6A4-4AA7-8B75-C6753D9C140E}</Project>
+      <Name>Gradual.OMS.Contratos.Integracao.Sinacor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Interface.Desktop.Controles.Comum\Gradual.OMS.Contratos.Interface.Desktop.Controles.Comum.csproj">
+      <Project>{B1B397AB-181D-4785-AD22-1D85A696B171}</Project>
+      <Name>Gradual.OMS.Contratos.Interface.Desktop.Controles.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Interface.Desktop\Gradual.OMS.Contratos.Interface.Desktop.csproj">
+      <Project>{E9F22E09-7819-4454-8FED-8B643BAC7771}</Project>
+      <Name>Gradual.OMS.Contratos.Interface.Desktop</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Interface\Gradual.OMS.Contratos.Interface.csproj">
+      <Project>{0A118929-378C-437C-BCE6-F9ECA2E10A7E}</Project>
+      <Name>Gradual.OMS.Contratos.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Ordens\Gradual.OMS.Contratos.Ordens.csproj">
+      <Project>{0F222CC0-1398-4EA9-90E9-222A0316DDD0}</Project>
+      <Name>Gradual.OMS.Contratos.Ordens</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Risco.Regras\Gradual.OMS.Contratos.Risco.Regras.csproj">
+      <Project>{3A11AE61-E896-4C1F-81D8-8A6FC00D55DC}</Project>
+      <Name>Gradual.OMS.Contratos.Risco.Regras</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Risco\Gradual.OMS.Contratos.Risco.csproj">
+      <Project>{49770DEF-F986-4530-9985-33EBCBDB24EF}</Project>
+      <Name>Gradual.OMS.Contratos.Risco</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Library\Gradual.OMS.Library.csproj">
+      <Project>{A5E45264-237E-471B-9260-88552A1EF7F3}</Project>
+      <Name>Gradual.OMS.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.CanaisNegociacao\Gradual.OMS.Sistemas.CanaisNegociacao.csproj">
+      <Project>{7A1BE891-6D8C-4473-8034-F5CCF9B11B08}</Project>
+      <Name>Gradual.OMS.Sistemas.CanaisNegociacao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Comum\Gradual.OMS.Sistemas.Comum.csproj">
+      <Project>{91C9E39D-8EC8-4892-A6F0-496F1A67BD84}</Project>
+      <Name>Gradual.OMS.Sistemas.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.ContaCorrente\Gradual.OMS.Sistemas.ContaCorrente.csproj">
+      <Project>{8B429948-42A2-4C5F-B7BD-5C308AA2DE21}</Project>
+      <Name>Gradual.OMS.Sistemas.ContaCorrente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Custodia\Gradual.OMS.Sistemas.Custodia.csproj">
+      <Project>{06A7ACFD-04EB-43A1-846D-39D60ABD1419}</Project>
+      <Name>Gradual.OMS.Sistemas.Custodia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Integracao.Sinacor.Seguranca\Gradual.OMS.Sistemas.Integracao.Sinacor.OMS.csproj">
+      <Project>{B0DFD849-D67D-4ED9-B2BC-16D626856651}</Project>
+      <Name>Gradual.OMS.Sistemas.Integracao.Sinacor.OMS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Integracao.Sinacor\Gradual.OMS.Sistemas.Integracao.Sinacor.csproj">
+      <Project>{B81B6529-DEF8-4299-9A33-3B930585133D}</Project>
+      <Name>Gradual.OMS.Sistemas.Integracao.Sinacor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Interface.Desktop.Controles.Comum\Gradual.OMS.Sistemas.Interface.Desktop.Controles.Comum.csproj">
+      <Project>{96603A07-1B17-4E82-9A17-A4AA202AE6DE}</Project>
+      <Name>Gradual.OMS.Sistemas.Interface.Desktop.Controles.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Interface.Desktop.Controles.Custodia\Gradual.OMS.Sistemas.Interface.Desktop.Controles.Custodia.csproj">
+      <Project>{D710EA68-ABC4-49FB-857A-098312C87D63}</Project>
+      <Name>Gradual.OMS.Sistemas.Interface.Desktop.Controles.Custodia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Interface.Desktop.Controles.MarketData\Gradual.OMS.Sistemas.Interface.Desktop.Controles.MarketData.csproj">
+      <Project>{7C0867A4-0EC2-41F3-BFF7-6D162CCF271E}</Project>
+      <Name>Gradual.OMS.Sistemas.Interface.Desktop.Controles.MarketData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Interface.Desktop.Controles.Ordens\Gradual.OMS.Sistemas.Interface.Desktop.Controles.Ordens.csproj">
+      <Project>{1A47856F-F580-4A16-9C7D-7581FD48F0BF}</Project>
+      <Name>Gradual.OMS.Sistemas.Interface.Desktop.Controles.Ordens</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Interface.Desktop.Controles.Persistencia\Gradual.OMS.Sistemas.Interface.Desktop.Controles.Persistencia.csproj">
+      <Project>{576E2071-1CFF-490D-80E8-47E473F27C2C}</Project>
+      <Name>Gradual.OMS.Sistemas.Interface.Desktop.Controles.Persistencia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Interface.Desktop.Controles.Risco\Gradual.OMS.Sistemas.Interface.Desktop.Controles.Risco.csproj">
+      <Project>{E6215DAD-29D0-476D-BF69-BAC9171EC3E5}</Project>
+      <Name>Gradual.OMS.Sistemas.Interface.Desktop.Controles.Risco</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Interface.Desktop.Controles.Seguranca\Gradual.OMS.Sistemas.Interface.Desktop.Controles.Seguranca.csproj">
+      <Project>{D5153BC3-EDD8-4B62-A6BD-746145AA21A4}</Project>
+      <Name>Gradual.OMS.Sistemas.Interface.Desktop.Controles.Seguranca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Interface.Desktop.SkinDevExpress\Gradual.OMS.Sistemas.Interface.Desktop.SkinDevExpress.csproj">
+      <Project>{ED6D0E77-FC51-4449-88ED-40F464EA5941}</Project>
+      <Name>Gradual.OMS.Sistemas.Interface.Desktop.SkinDevExpress</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Interface.Desktop\Gradual.OMS.Sistemas.Interface.Desktop.csproj">
+      <Project>{63B7C302-6158-4B7F-98D7-F6F4EB1EFDCB}</Project>
+      <Name>Gradual.OMS.Sistemas.Interface.Desktop</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Interface.Persistencia\Gradual.OMS.Sistemas.Interface.Persistencias.csproj">
+      <Project>{0C036504-B6D4-46BB-A4AA-0CD3065A4057}</Project>
+      <Name>Gradual.OMS.Sistemas.Interface.Persistencias</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Interface\Gradual.OMS.Sistemas.Interface.csproj">
+      <Project>{91337A6A-FD34-43C1-AAF7-E7402B80F7C5}</Project>
+      <Name>Gradual.OMS.Sistemas.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Ordens\Gradual.OMS.Sistemas.Ordens.csproj">
+      <Project>{9A2771A3-E30C-4332-81F2-7B418EE7AAC9}</Project>
+      <Name>Gradual.OMS.Sistemas.Ordens</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Risco.Regras\Gradual.OMS.Sistemas.Risco.Regras.csproj">
+      <Project>{D46691A5-0236-4676-8B98-A7A232C9C1BD}</Project>
+      <Name>Gradual.OMS.Sistemas.Risco.Regras</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Risco\Gradual.OMS.Sistemas.Risco.csproj">
+      <Project>{FBB5CCBB-7AF4-4333-8E42-4FB21E744D06}</Project>
+      <Name>Gradual.OMS.Sistemas.Risco</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Seguranca.Persistencia\Gradual.OMS.Sistemas.Seguranca.Persistencias.csproj">
+      <Project>{FFA33E2F-02FF-44A5-B507-DC2FB3EDD7DF}</Project>
+      <Name>Gradual.OMS.Sistemas.Seguranca.Persistencias</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Orbite.RV.Contratos.Integracao.BVMF.Legado\Orbite.RV.Contratos.Integracao.BVMF.Legado.csproj">
+      <Project>{B38FBA0C-9034-42E3-B0CE-573FF00C756A}</Project>
+      <Name>Orbite.RV.Contratos.Integracao.BVMF.Legado</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Orbite.RV.Contratos.Integracao\Orbite.RV.Contratos.Integracao.csproj">
+      <Project>{A217D037-3C93-45B4-A68A-42B3A86B40B0}</Project>
+      <Name>Orbite.RV.Contratos.Integracao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Orbite.RV.Contratos.MarketData.BMF\Orbite.RV.Contratos.MarketData.BMF.csproj">
+      <Project>{5BD5D460-B038-41FD-9685-CF7D28BF81E3}</Project>
+      <Name>Orbite.RV.Contratos.MarketData.BMF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Orbite.RV.Contratos.MarketData.Bovespa\Orbite.RV.Contratos.MarketData.Bovespa.csproj">
+      <Project>{5CE7B62D-2E5A-4EE5-BA8C-3D236F68302E}</Project>
+      <Name>Orbite.RV.Contratos.MarketData.Bovespa</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="problemas a resolver.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>rem copy "$(TargetPath)" "$(SolutionDir)..\..\..\bin"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

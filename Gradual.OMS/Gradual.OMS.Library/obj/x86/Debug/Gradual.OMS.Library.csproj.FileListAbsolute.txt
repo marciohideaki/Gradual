@@ -1,0 +1,5 @@
+D:\Gradual\Source\Gradual.OMS\Gradual.OMS.Library\bin\x86\Debug\Gradual.OMS.Library.dll
+D:\Gradual\Source\Gradual.OMS\Gradual.OMS.Library\bin\x86\Debug\Gradual.OMS.Library.pdb
+D:\Gradual\Source\Gradual.OMS\Gradual.OMS.Library\bin\x86\Debug\Gradual.OMS.Library.XML
+D:\Gradual\Source\Gradual.OMS\Gradual.OMS.Library\obj\x86\Debug\Gradual.OMS.Library.dll
+D:\Gradual\Source\Gradual.OMS\Gradual.OMS.Library\obj\x86\Debug\Gradual.OMS.Library.pdb

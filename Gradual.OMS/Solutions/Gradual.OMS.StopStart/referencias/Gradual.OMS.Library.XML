@@ -1,0 +1,1452 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Gradual.OMS.Library</name>
+    </assembly>
+    <members>
+        <member name="T:Gradual.OMS.Library.Servicos.ServicoEndPointInfo">
+            <summary>
+            Informações sobre o endpoint wcf
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.ResolutorTipos">
+            <summary>
+            Resolve tipos com nomes parciais.
+            Pode-se, por exemplo, informar a string Log e ter o tipo resolvido para Gradual.OMS.Library.Log
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.ResolutorTipos._config">
+            <summary>
+            Configurações do Resolutor
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.ResolutorTipos._tiposConhecidos">
+            <summary>
+            Lista de tipos conhecidos
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.ResolutorTipos.Resolver(System.String)">
+            <summary>
+            Tenta fazer a resolução do tipo
+            </summary>
+            <param name="nomeParcial"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gradual.OMS.Library.ResolutorTipos.inicializarListaTipos">
+            <summary>
+            Inicializa a lista com os tipos conhecidos
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.LocalizadorTiposHelper">
+            <summary>
+            Classe de auxilio para o WCF.
+            Contem o método que retorna os tipos possíveis para serem inclusos na lista de serialização, 
+            de acordo com o tipo chamador
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.LocalizadorTiposHelper._config">
+            <summary>
+            Referencia para o objeto de configurações
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.LocalizadorTiposHelper._cache">
+            <summary>
+            Variável local para fazer o cache dos tipos. Evita que a cada chamada seja recriada a lista
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.LocalizadorTiposHelper.RetornarTipos(System.Reflection.ICustomAttributeProvider)">
+            <summary>
+            Método para retornar a lista de tipos conhecidos. Retorna os tipos de todos as classes de 
+            dados e de mensagens deste assembly.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Gradual.OMS.Library.EntidadeTipoSerializacaoEnum">
+            <summary>
+            Tipos de serializacao de entidades
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.EntidadeTipoSerializacaoEnum.Binaria">
+            <summary>
+            Serialização Binária
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.EntidadeTipoSerializacaoEnum.XML">
+            <summary>
+            Serialização XML
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.CondicaoTipoEnum">
+            <summary>
+            Lista de tipos de condições
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.Servicos.CallbackEvento">
+            <summary>
+            Implementação do callback utilizado no modelo de chamadas do WCF.
+            Utilizado também quando não se está utilizando WCF.
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.Servicos.ICallbackEvento">
+            <summary>
+            Interface para implementação do objeto de callback utilizado no modelo WCF.
+            O mesmo modelo também é utilizado em momentos que não se está utilizando WCF.
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.ICallbackEvento.SinalizarEvento(Gradual.OMS.Library.Servicos.EventoInfo)">
+            <summary>
+            Método para fazer o disparo do evento pelo servidor. Chamado quando o servidor quer
+            informar algo ao cliente. Na implementação do objeto concreto, está chamada faz o disparo
+            de um evento.
+            </summary>
+            <param name="evento"></param>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.ICallbackEvento.SinalizarEvento2(System.EventArgs)">
+            <summary>
+            Método para sinalização de eventos usando o próprio eventargs.
+            Em teste.
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.ICallbackEvento.ReceberId">
+            <summary>
+            Método para retornar o Id do callback
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Gradual.OMS.Library.Servicos.ICallbackEvento.Id">
+            <summary>
+            Identificador único do callback
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.CallbackEvento.SinalizarEvento(Gradual.OMS.Library.Servicos.EventoInfo)">
+            <summary>
+            Implementação da interface, faz o disparo do evento para sinalizar mensagem do servidor.
+            </summary>
+            <param name="evento"></param>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.CallbackEvento.SinalizarEvento2(System.EventArgs)">
+            <summary>
+            Implementação da interface, faz o disparo do evento para sinalizar mensagem do servidor.
+            </summary>
+            <param name="evento"></param>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.CallbackEvento.ReceberId">
+            <summary>
+            Método para retornar o id do callback
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.CallbackEvento.#ctor">
+            <summary>
+            Contrutor.
+            Gera o id deste callback
+            </summary>
+        </member>
+        <member name="E:Gradual.OMS.Library.Servicos.CallbackEvento.Evento">
+            <summary>
+            Evento disparado para sinalizar informações que chegaram do servidor
+            </summary>
+        </member>
+        <member name="E:Gradual.OMS.Library.Servicos.CallbackEvento.Evento2">
+            <summary>
+            Evento disparado para sinalizar informações que chegaram do servidor
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.Servicos.CallbackEvento.Id">
+            <summary>
+            Implementação da interface. Identificador do callback
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.LocalizadorTipoInfo">
+            <summary>
+            Contem informações para localizar os tipos a serem adicionados
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.LocalizadorTipoInfo.IncluirNamespace">
+            <summary>
+            Indica que todos os tipos do namespace devem ser incluídos.
+            O namespace é representado no formato namespace, assembly
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.LocalizadorTipoInfo.IncluirTipo">
+            <summary>
+            Indica que o tipo deve ser incluído.
+            O formato desta propriedade é tipo, assembly
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.LocalizadorTipoInfo.IncluirAssembly">
+            <summary>
+            Indica que todos os tipos do assembly devem ser incluidos.
+            O formato é apenas o nome do assembly
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.LocalizadorTipoInfo.AprofundarNamespace">
+            <summary>
+            Indica se deve considerar o namespace informado e os filhos
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.Db.SqlDbLib">
+            <summary>
+            Classe de auxilio para chamadas em Banco de Dados SQL Server.
+            Possui facilitadores para chamada de procedures e execução de comandos sql.
+            Atualmente trabalha com a string de conexao "default" do arquivo de configurações.
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.Db.IDbLib">
+            <summary>
+            Interface para bibliotecas de acesso a banco de dados relacional
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.Db.IDbLib.Inicializar(System.Object)">
+            <summary>
+            Pede inicialização da instancia
+            </summary>
+            <param name="parametros"></param>
+        </member>
+        <member name="M:Gradual.OMS.Library.Db.IDbLib.Finalizar">
+            <summary>
+            Pede finalização da instancia
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.Db.IDbLib.ExecutarProcedure(System.String,System.Object[])">
+            <summary>
+            Solicita a execução de uma procedure.
+            Os parametros são passados em duplas de nome do parametro, valor
+            </summary>
+            <param name="nomeProcedure"></param>
+            <param name="parametros"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gradual.OMS.Library.Db.IDbLib.ExecutarProcedure(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Overload da execução de procedure que recebe a lista de parametros através de 
+            um dicionário.
+            </summary>
+            <param name="nomeProcedure"></param>
+            <param name="parametros"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gradual.OMS.Library.Db.IDbLib.ExecutarProcedure(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.String})">
+            <summary>
+            Overload da execução de procedure que recebe os parametros num dicionário e permite
+            o retorno de parametros de output.
+            O valor dos parametros de output são retornados na propria coleção de parametros.
+            A lista outputParams indica quais são os parametros de output.
+            </summary>
+            <param name="nomeProcedure"></param>
+            <param name="parametros"></param>
+            <param name="outputParams"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gradual.OMS.Library.Db.IDbLib.ExecutarConsulta(System.String,System.Object[])">
+            <summary>
+            Solicita a execução de uma string sql.
+            Os parametros são passados em duplas de nome do parametro, valor
+            </summary>
+            <param name="sql"></param>
+            <param name="parametros"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gradual.OMS.Library.Db.IDbLib.ExecutarConsulta(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Overload da execução de string sql que recebe os parametros num dicionário
+            </summary>
+            <param name="sql"></param>
+            <param name="parametros"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Gradual.OMS.Library.Db.SqlDbLib._cn">
+            <summary>
+            Referencia para uma conexão SQL
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.Db.SqlDbLib._default">
+            <summary>
+            Instancia estática da classe para ser oferecida como default
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.Db.SqlDbLib.Inicializar(System.Object)">
+            <summary>
+            Pede inicialização da instancia
+            </summary>
+            <param name="parametros"></param>
+        </member>
+        <member name="M:Gradual.OMS.Library.Db.SqlDbLib.Finalizar">
+            <summary>
+            Pede finalização da instancia
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.Db.SqlDbLib.ExecutarProcedure(System.String,System.Object[])">
+            <summary>
+            Solicita a execução de uma procedure.
+            Os parametros são passados em duplas de nome do parametro, valor
+            </summary>
+            <param name="nomeProcedure"></param>
+            <param name="parametros"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gradual.OMS.Library.Db.SqlDbLib.ExecutarProcedure(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Overload da execução de procedure que recebe a lista de parametros através de 
+            um dicionário.
+            </summary>
+            <param name="nomeProcedure"></param>
+            <param name="parametros"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gradual.OMS.Library.Db.SqlDbLib.ExecutarProcedure(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.String})">
+            <summary>
+            Executa uma procedure no banco de dados.
+            </summary>
+            <param name="nomeProcedure"></param>
+            <param name="?"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gradual.OMS.Library.Db.SqlDbLib.ExecutarConsulta(System.String,System.Object[])">
+            <summary>
+            Executa uma consulta no banco de dados.
+            Overload para receber os parametros como duplas de parametro e valor.
+            </summary>
+            <param name="sql"></param>
+            <param name="parametros"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gradual.OMS.Library.Db.SqlDbLib.ExecutarConsulta(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Executa uma consulta 
+            </summary>
+            <param name="sql"></param>
+            <param name="parametros"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gradual.OMS.Library.Db.SqlDbLib.ReceberConexao">
+            <summary>
+            Retorna uma conexão com o banco de dados 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Gradual.OMS.Library.Db.SqlDbLib.OnReceberConexao">
+            <summary>
+            Método virtual para retornar conexão com o banco de dados
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Gradual.OMS.Library.Db.SqlDbLib.Default">
+            <summary>
+            Acesso estático à instancia default
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.MensagemAttribute">
+            <summary>
+            Contem informações complementares para o tipo representando a mensagem
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.MensagemAttribute.TipoMensagemResponse">
+            <summary>
+            Caso o atributo represente uma classe de request, esta propriedade relaciona
+            qual o tipo da resposta a esta mensagem
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.LocalizadorTiposConfig">
+            <summary>
+            Classe de configuração para o localizadorTiposHelper.
+            Permite que seja associado tipos a serem trabalhados a um 
+            tipo chamador.
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.LocalizadorTiposConfig.#ctor">
+            <summary>
+            Construtor default
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.LocalizadorTiposConfig.Grupos">
+            <summary>
+            Lista com os grupos chamadores
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.Servicos.ServicoHostColecao">
+            <summary>
+            Classe estática que contém lista de hosts de serviços.
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.Servicos.IServicoID">
+            <summary>
+            Interface para serviços que podem ter várias instâncias.
+            Tem associação com leitura de arquivos de configuração.
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.IServicoID.SetarID(System.String)">
+            <summary>
+            Atribui o id ao serviço
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.IServicoID.ReceberID">
+            <summary>
+            Recebe o id do servico
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Gradual.OMS.Library.Servicos.IServicoControlavel">
+            <summary>
+            Interface a ser implementada por serviços que podem ter seu ciclo de vida controlado.
+            Expõe métodos Iniciar, Parar e ReceberStatus.
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.IServicoControlavel.IniciarServico">
+            <summary>
+            Solicita a inicialização do serviço
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.IServicoControlavel.PararServico">
+            <summary>
+            Solicita a finalização do serviço
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.IServicoControlavel.ReceberStatusServico">
+            <summary>
+            Recebe o status atual do serviço
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Gradual.OMS.Library.SessaoInfo">
+            <summary>
+            Classe com informações de uma sessão.
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.ICodigoEntidade">
+            <summary>
+            Interface a ser implementada por entidades para informar o seu código
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.ICodigoEntidade.ReceberCodigo">
+            <summary>
+            Informa o código da entidade
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Gradual.OMS.Library.SessaoInfo.#ctor">
+            <summary>
+            Construtor default
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.SessaoInfo.CodigoSessao">
+            <summary>
+            Chave primária da sessão
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.SessaoInfo.CodigoSistemaCliente">
+            <summary>
+            Código do sistema cliente autenticado na sessão.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.SessaoInfo.CodigoUsuario">
+            <summary>
+            Código do usuário autenticado na sessão.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.SessaoInfo.DataCriacao">
+            <summary>
+            Data da criação da sessão.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.SessaoInfo.DataUltimaConsulta">
+            <summary>
+            Informa a data em que a sessão foi consultada pela última vez.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.SessaoInfo.EhSessaoDeAdministrador">
+            <summary>
+            Indica se a sessao é do usuário administrador
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.CriticaStatusEnum">
+            <summary>
+            Enumerador de status possíveis de críticas
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.CriticaStatusEnum.NaoSeAplica">
+            <summary>
+            Indica que um status não se aplica à critica
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.CriticaStatusEnum.Informativo">
+            <summary>
+            Indica que é uma crítica informativa, não indicando nenhum tipo
+            de validade
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.CriticaStatusEnum.ErroNegocio">
+            <summary>
+            Indica que é uma crítica relativa a uma violação de regra de negócio
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.CriticaStatusEnum.ErroPrograma">
+            <summary>
+            Indica que é uma crítica relativa a um erro de programa
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.CriticaStatusEnum.Validado">
+            <summary>
+            Indica que é uma crítica de uma regra indicando que uma validação foi feita com sucesso
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.CondicaoInfo">
+            <summary>
+            Classe para representar condições flexíveis de pesquisa
+            de objetos. 
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.CondicaoInfo.#ctor">
+            <summary>
+            Construtor default
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.CondicaoInfo.#ctor(System.String,Gradual.OMS.Library.CondicaoTipoEnum,System.Object)">
+            <summary>
+            Construtor que aceita diretamente as propriedades e apenas 1 valor.
+            </summary>
+            <param name="propriedade"></param>
+            <param name="tipoCondicao"></param>
+            <param name="valor"></param>
+        </member>
+        <member name="M:Gradual.OMS.Library.CondicaoInfo.#ctor(System.String,Gradual.OMS.Library.CondicaoTipoEnum,System.Object[])">
+            <summary>
+            Construtor que aceita diretamente as propriedades e diversos valores.
+            </summary>
+            <param name="propriedade"></param>
+            <param name="tipoCondicao"></param>
+            <param name="valores"></param>
+        </member>
+        <member name="P:Gradual.OMS.Library.CondicaoInfo.Propriedade">
+            <summary>
+            Indica a propriedade em que será verificada a condição
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.CondicaoInfo.TipoCondicao">
+            <summary>
+            Indica o tipo da condição
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.CondicaoInfo.Valores">
+            <summary>
+            Valor ou valores a serem testados
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.Servicos.IServicoStarter">
+            <summary>
+            Interface para ser implementada por classes que fazem ativação de conjunto de serviços.
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.Servicos.ServicoLocalizador">
+            <summary>
+            Implementação do serviço de localização (interface IServicoLocalizador)
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.Servicos.IServicoLocalizador">
+            <summary>
+            Servico que implementa um diretório de serviços.
+            Fornece transparencia na ativação dos serviços.
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.Servicos.ServicoHost">
+            <summary>
+            É o host de serviços.
+            Lê arquivo de configuração, ou permite o cadastro manual de serviços.
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.ServicoHost.CarregarConfig(System.String)">
+            <summary>
+            Efetua a carga das configuracoes definidas na secao [Gradual.OMS.Library.Servicos.ServicoHostConfig-xxxx]
+            onde xxxx é o id da secao a ser carregada (normalmente "Default");
+            </summary>
+            <param name="id">id da secao a ser carregada (normalmente "Default")</param>
+        </member>
+        <member name="T:Gradual.OMS.Library.Servicos.LocalizadorCliente">
+            <summary>
+            Função semelhante ao do ativador mas apenas para o IServicoLocalizador.
+            A rotina de ativação deste componente não consulta o localizador e sim 
+            diretamente um arquivo de configuração.
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.Servicos.Ativador">
+            <summary>
+            Utilizado pelos programas clientes para receber instancias de serviços.
+            Utiliza o localizador para receber serviços externos.
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.Ativador.Get``1(System.Object)">
+            <summary>
+            Retorna uma instancia do servico correspondente ao 
+            </summary>
+            <typeparam name="T">Class Type a ser instanciada</typeparam>
+            <param name="callbackImpl">objeto que implementa o tratamento dos callbacks</param>
+            <returns>Nova instancia de T</returns>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.Ativador.GetCallback``1">
+            <summary>
+            Retorna o objeto de callback a ser invocado pelo servico
+            </summary>
+            <typeparam name="T">Interface que define o callback</typeparam>
+            <returns>Instancia do tipo [Interface]</returns>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.Ativador.IsValidChannel(System.Object)">
+            <summary>
+            Valida se canal de callback eh valido
+            </summary>
+            <param name="callback">instancia do callback, retornada em GetCallback[T}()</param>
+            <returns>true, se o ChannelState = Opened </returns>
+        </member>
+        <member name="T:Gradual.OMS.Library.Servicos.IServicoComCallback">
+            <summary>
+            Interface para sinalizar um serviço que trabalha com callbacks.
+            Esta interface trabalha exclusivamente com callbacks do tipo ICallbackEvento
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.IServicoComCallback.Registrar(System.Object)">
+            <summary>
+            Pede para o serviço registrar o callback.
+            Este overload, que não pede o callback, é utilizado quando
+            a comunicação é por wcf. Neste caso, o serviço wcf irá conseguir
+            o callback pelos próprios mecanismos do wcf.
+            </summary>
+            <param name="parametros"></param>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.IServicoComCallback.Registrar(System.Object,Gradual.OMS.Library.Servicos.ICallbackEvento)">
+            <summary>
+            Pede para o serviço registrar o callback.
+            Este overload, que pede o callback, é utilizado quando a 
+            comunicação não é via wcf. Neste caso o callback tem que
+            ser enviado explicitamente.
+            </summary>
+            <param name="parametros"></param>
+            <param name="callback"></param>
+        </member>
+        <member name="T:Gradual.OMS.Library.ResolutorTiposConfig">
+            <summary>
+            Classe de configuração para o resolutor de tipos
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.ResolutorTiposConfig.#ctor">
+            <summary>
+            Construtor default
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.ResolutorTiposConfig.IncluirNamespaces">
+            <summary>
+            Adiciona os tipos contidos nos namespaces informados
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.ResolutorTiposConfig.AprofundarNamespaces">
+            <summary>
+            Indica se a lista de namespaces devem ser batidas no primeiro nivel ou
+            deve-se descer aos subniveis, se existirem
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.ResolutorTiposConfig.IncluirTipos">
+            <summary>
+            Adiciona os tipos informados
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.ResolutorTiposConfig.ExcluirTipos">
+            <summary>
+            Da lista final, exclui os tipos informados
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.ListaInfo">
+            <summary>
+            Representa uma lista de elementos.
+            O objetivo desta lista é servir de metadados para entidades 
+            bancos de dados. Geralmente essas listas serão itens mapeados
+            de enumeradores, ou classes, etc, ou seja, artefatos fixos
+            usados nos programas. Mas nada impede que estas listas tenham
+            elementos de outras origens.
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.ListaInfo.#ctor">
+            <summary>
+            Construtor default
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.ListaInfo.Descricao">
+            <summary>
+            Descrição da lista
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.ListaInfo.Mnemonico">
+            <summary>
+            Mnemonico da lista.
+            Geralmente um código que poderá ser referenciado através de 
+            algum tipo de rotina. Seja stored procedures, programas intermediários,
+            etc.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.ListaInfo.Itens">
+            <summary>
+            Itens da lista
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.Servicos.ServicoHostConfig.Servicos">
+            <summary>
+            Lista de servicos configurados
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.Servicos.ServicoHostConfig.BaseAddress">
+            <summary>
+            Endereco base para endpoints WCF
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.Servicos.ServicoHostConfig.MexBaseAddress">
+            <summary>
+            Endereco base para exposicao de Metadados (MEX)
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.MensagemResponseStatusEnum">
+            <summary>
+            Lista de status de resposta de mensagens.
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.MensagemResponseStatusEnum.OK">
+            <summary>
+            Indica que a solicitação foi executada sem problemas
+            e a resposta não contem nenhum erro.
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.MensagemResponseStatusEnum.ErroNegocio">
+            <summary>
+            Indica que foram encontrados erros de negócio, provavelmente
+            devido a alguma validação efetuada.
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.MensagemResponseStatusEnum.ErroPrograma">
+            <summary>
+            Indica que foram encontrados erros de programa, lógica, ou 
+            qualquer outro erro inexperado.
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.MensagemResponseStatusEnum.ErroValidacao">
+            <summary>
+            Indica que não passou na camada de validação.
+            Neste caso a mensagem deverá carregar uma lista de críticas
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.MensagemResponseStatusEnum.AcessoNaoPermitido">
+            <summary>
+            Indica que o processamento da mensagem não foi permitido por
+            motivos de segurança
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.MensagemResponseStatusEnum.SessaoInvalida">
+            <summary>
+            Indica que o processamento não poderá ocorrer por problemas
+            na sessão. Sessão expirada ou número incorreto
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.GerenciadorConfig">
+            <summary>
+            Fornece as configurações referentes ao objeto e id solicitados.
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.Servicos.LocalizadorClienteConfig">
+            <summary>
+            Configuração para o cliente achar o localizador
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.LogTipoEnum">
+            <summary>
+            Indica os tipos de log utilizados pelo utilitario Log
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.LogTipoEnum.Erro">
+            <summary>
+            Indica uma entrada de log de erro
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.LogTipoEnum.Aviso">
+            <summary>
+            Indica uma entrada de log de aviso
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.LogTipoEnum.Passagem">
+            <summary>
+            Indica uma entrada de log de passagem, informação, etc.
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.LocalizadorGrupoTipoInfo">
+            <summary>
+            Representa um tipo chamador que contem uma 
+            lista de tipos que podem ser referenciados
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.LocalizadorGrupoTipoInfo.#ctor">
+            <summary>
+            Construtor default
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.LocalizadorGrupoTipoInfo.TipoChamador">
+            <summary>
+            Indica o tipo do chamador
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.LocalizadorGrupoTipoInfo.TipoChamadorString">
+            <summary>
+            Propriedade utilizada na serialização
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.LocalizadorGrupoTipoInfo.Tipos">
+            <summary>
+            Tipos a serem incluidos para esse chamador
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.EntidadeInfo">
+            <summary>
+            Classe de dados para carregar informações de entidade.
+            Utilizado para persistir entidades em arquivos.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.EntidadeInfo.Codigo">
+            <summary>
+            Codigo da entidade
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.EntidadeInfo.DataCriacao">
+            <summary>
+            Data de criação, ou de primeira entrada da entidade na persistencia
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.EntidadeInfo.DataUltimaAlteracao">
+            <summary>
+            Data da ultima alteração da entidade na persistencia
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.EntidadeInfo.TipoObjeto">
+            <summary>
+            Indica o tipo do objeto da entidade. Este é o tipo do objeto
+            informado no momento em que foi feito o pedido para salvar.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.EntidadeInfo.TipoObjetoSalvo">
+            <summary>
+            Indica o tipo do objeto real salvo. Pode ser um subtipo do
+            objeto informado no momento de salvar.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.EntidadeInfo.AssemblyObjeto">
+            <summary>
+            Indica o assembly do objeto.
+            Utilizado para desserializar om objeto via serialização xml
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.EntidadeInfo.AssemblyObjetoSalvo">
+            <summary>
+            Indica o assembly do objeto salvo.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.EntidadeInfo.TipoSerializacao">
+            <summary>
+            Tipo de serialização da entidade
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.EntidadeInfo.Serializacao">
+            <summary>
+            Serializacao da entidade
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.EchoEventArgs">
+            <summary>
+            EventArgs do evento de echo
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.EchoEventArgs.Mensagem">
+            <summary>
+            Mensagem do echo
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.ConfigurationHandler">
+            <summary>
+            Utilizado para gerenciamento de configurações.
+            Utiliza o nome da tag utilizada na configuração para determinar a 
+            classe de configuração correspondente.
+            Permite utilização de ID´s no nome das tags.
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.LogOrigemAttribute">
+            <summary>
+            Atributo para identificar uma origem de log.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.LogOrigemAttribute.Origem">
+            <summary>
+            Indica o nome da origem a ser utilizada no log.
+            Caso este valor seja nulo, utiliza a string retornada
+            pelo método como nome da origem.
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.ModulosOMS">
+            <summary>
+            Classe de auxilio para fornecer as constantes dos sistemas do OMS.
+            Inicialmente criado para auxiliar as rotinas de log
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.Servicos.ServicoAtivacaoTipo">
+            <summary>
+            Tipos suportados de ativação de serviço.
+            Local ou WCF.
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.Servicos.EventoInfoSerializacaoTipoEnum">
+            <summary>
+            Tipos de serializações de eventos
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.Servicos.EventoInfo">
+            <summary>
+            Classe utilizada para envio de eventos para um cliente wcf.
+            Possui mecanismos de serialização para evitar alguns problemas
+            com contratos wcf.
+            Classe antiga... foi feita quando eu ainda não tinha domínio sobre
+            o atributo ServiceKnownType
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.EventoInfo.ObjetoSerializar(System.Object,Gradual.OMS.Library.Servicos.EventoInfoSerializacaoTipoEnum)">
+            <summary>
+            Serializa o objeto e guarda em ObjetoSerializado
+            </summary>
+            <param name="obj"></param>
+            <param name="objetoSerializacaoTipo"></param>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.EventoInfo.ObjetoDesserializar">
+            <summary>
+            Desserializa o objeto e retorna
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.EventoInfo.ParametroSetar(System.String,System.Object)">
+            <summary>
+            Adiciona um parametro nas devidas coleções
+            </summary>
+            <param name="nome"></param>
+            <param name="valor"></param>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.EventoInfo.ParametroRemover(System.String)">
+            <summary>
+            Remove um parametro nas devidas coleções
+            </summary>
+            <param name="nome"></param>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.EventoInfo.ParametroReceber(System.String)">
+            <summary>
+            Recebe um parametro
+            </summary>
+            <param name="nome"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Gradual.OMS.Library.Servicos.EventoInfo.ObjetoTipo">
+            <summary>
+            String que contem o nome do tipo do objeto.
+            Utilizado para desserializar objetos via serialização Xml
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.Servicos.EventoInfo.ObjetoSerializacaoTipo">
+            <summary>
+            Tipo da serialização que este objeto está carregando.
+            Utilizado para saber como desserializar o objeto.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.Servicos.EventoInfo.ObjetoSerializado">
+            <summary>
+            Contem o objeto serializado
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.Servicos.EventoInfo.Nome">
+            <summary>
+            Contem o nome do evento
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.Servicos.EventoInfo.ParametrosNome">
+            <summary>
+            Lista dos nomes de parametros que vieram no evento
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.Servicos.EventoInfo.ParametrosValor">
+            <summary>
+            Lista dos valores dos parametros que vieram no evento
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.MensagemBase">
+            <summary>
+            Classe base para implementação de mensagens.
+            Fornece a identificação única da mensagem através do CodigoMensagem e faz controle de sessão 
+            através do CodigoSessao.
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.MensagemBase.#ctor">
+            <summary>
+            Construtor. Gera um ClOrdID para a mensagem
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.MensagemBase.ReceberCodigo">
+            <summary>
+            Retorna o código desta entidade
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Gradual.OMS.Library.MensagemBase.CodigoMensagem">
+            <summary>
+            BMF / Bovespa:
+            Identificador único da mensagem
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.MensagemBase.CodigoSessao">
+            <summary>
+            Indica a sessao correspondente da mensagem.
+            Em casos de solicitação, indica a sessão que está fazendo a solicitação.
+            Em casos de resposta, indica a sessão que deve ser avisada da resposta.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.MensagemBase.DataReferencia">
+            <summary>
+            Data de referencia da mensagem. Geralmente irá indicar a data de criação
+            da mensagem.
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.MensagemRequestAttribute">
+            <summary>
+            Atributo para mensagens de request.
+            Complementa informações do tipo, como por exemplo, qual o tipo do response
+            esperado.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.MensagemRequestAttribute.TipoResponse">
+            <summary>
+            Tipo do response esperado para o request
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.Log">
+            <summary>
+            Utilitário para fornecer funções de log de mensagens.
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.Log._inicializado">
+            <summary>
+            Indica se o log foi inicializado nesta execução.
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.Log._config">
+            <summary>
+            Aponta para a classe de configurações do log
+            </summary>
+        </member>
+        <member name="F:Gradual.OMS.Library.Log._dicionarioOrigens">
+            <summary>
+            Dicionário associando as origens com a referencia das origens de log.
+            A chave é o valor da propriedade da classe de origens e o valor é o que 
+            tem que ser informado no EventLog como origem.
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.Log.EfetuarLog(System.Exception)">
+            <summary>
+            Efetua o log. Overload que recebe diretamente uma excessão
+            </summary>
+            <param name="ex"></param>
+        </member>
+        <member name="M:Gradual.OMS.Library.Log.EfetuarLog(System.Exception,System.Object)">
+            <summary>
+            Efetuar log. Faz o log de uma excessão serializando o parametro e assumindo origem default.
+            </summary>
+            <param name="ex"></param>
+            <param name="parametro"></param>
+            <param name="referenciaOrigem"></param>
+        </member>
+        <member name="M:Gradual.OMS.Library.Log.EfetuarLog(System.Exception,System.Object,System.String)">
+            <summary>
+            Efetua o log. Overload que recebe diretamente uma excessão
+            </summary>
+            <param name="ex"></param>
+        </member>
+        <member name="M:Gradual.OMS.Library.Log.EfetuarLog(System.Exception,System.String)">
+            <summary>
+            Efetua o log. Overload que loga excessão junto com mensagem utilizando origem default
+            </summary>
+            <param name="ex"></param>
+            <param name="mensagem"></param>
+        </member>
+        <member name="M:Gradual.OMS.Library.Log.EfetuarLog(System.Exception,System.String,System.String)">
+            <summary>
+            Efetua o log. Overload que recebe diretamente uma excessão
+            </summary>
+            <param name="ex"></param>
+        </member>
+        <member name="M:Gradual.OMS.Library.Log.EfetuarLog(System.String,Gradual.OMS.Library.LogTipoEnum)">
+            <summary>
+            Efetua o log. Overload que faz o log de uma mensagem passando a origem default
+            </summary>
+            <param name="mensagem"></param>
+            <param name="tipo"></param>
+            <param name="referenciaOrigem"></param>
+        </member>
+        <member name="M:Gradual.OMS.Library.Log.EfetuarLog(System.String,Gradual.OMS.Library.LogTipoEnum,System.String)">
+            <summary>
+            Efetua o log
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.Log.inicializar">
+            <summary>
+            Faz a inicialização do log.
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.Log.retornarCaractereInicio(Gradual.OMS.Library.LogTipoEnum)">
+            <summary>
+            Retorna o caractere utilizado no inicio das mensagens do console
+            </summary>
+            <param name="tipo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gradual.OMS.Library.Log.traduzirEventLogEntryType(Gradual.OMS.Library.LogTipoEnum)">
+            <summary>
+            Faz a tradução do tipo proprietário para o EventLogEntryType para poder
+            efetuar o log no event viewer corretamente.
+            </summary>
+            <param name="tipo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Gradual.OMS.Library.Servicos.Servico">
+            <summary>
+            Gerencia a vida do serviço, enquanto o objeto é tratado como serviço.
+            Faz o bind dos canais de comunicação e registra no localizador.
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.Servico.Ativar">
+            <summary>
+            Ativar() - Cria instancia do servico, para uso local ou como WCF
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.Servico.Desativar">
+            <summary>
+            Desativar - Remove servico do localizador e WCF
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.CriticaInfo">
+            <summary>
+            Representa uma crítica na validação da mensagem.
+            A crítica pode ser apenas informativa ou pode ser um erro na validação.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.CriticaInfo.Descricao">
+            <summary>
+            Descricao da crítica
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.CriticaInfo.Status">
+            <summary>
+            Informa um status da crítica
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.Servicos.ServicoStatus">
+            <summary>
+            Possíveis status de serviços. Utilizado por quem implementa IServicoControlavel.
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.MensagemRequestBase">
+            <summary>
+            Classe base para mensagens de requisição
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.MensagemRequestBase.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.ListaItemInfo">
+            <summary>
+            Representa um item numa lista de metadados.
+            Geralmente terá uma relação com um item de
+            enumerador, ou um tipo de classe, etc.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.ListaItemInfo.Descricao">
+            <summary>
+            Descricao do elemento.
+            Enumeradores fornecem esse valor através do atributo descrição,
+            caso esteja presente.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.ListaItemInfo.Mnemonico">
+            <summary>
+            Mnemonico do elemento.
+            Em enumeradores este é o próprio nome do item.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.ListaItemInfo.Valor">
+            <summary>
+            Valor do elemento.
+            Em enumeradores este é o próprio valor do item.
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.ComplementoAutenticacaoInfo">
+            <summary>
+            Classe contendo informações de um complemento de autenticação
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.ComplementoAutenticacaoInfo.Habilitado">
+            <summary>
+            Indica se o complemento está habilitado
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.ComplementoAutenticacaoInfo.TipoComplemento">
+            <summary>   
+            Indica o tipo do complemento
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.ComplementoAutenticacaoInfo.TipoComplementoString">
+            <summary>
+            Propriedade auxiliar para serialização
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.Serializador">
+            <summary>
+            Classe que fornece serviços de serialização e clonagem através de serialização
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.Serializador.SerializaParametro(System.Object)">
+            <summary>
+            Faz a serialização de um objeto.
+            A serialização realizada é XML e coloca o tipo do objeto no inicio da string
+            XML para permitir a desserialização sem conhecer o tipo previamente.
+            </summary>
+            <param name="parametro"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gradual.OMS.Library.Serializador.DesserializaParametro(System.String)">
+            <summary>
+            Faz a desserialização de um objeto.
+            Utiliza a string do inicio do XML para descobrir o tipo do objeto a ser desserializado.
+            </summary>
+            <param name="parametro"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gradual.OMS.Library.Serializador.ClonarObjeto``1(``0)">
+            <summary>
+            Faz o deep clone de um objeto utilizando serialização binária.
+            Representado como um 'extension method'
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="originalObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gradual.OMS.Library.Serializador.TransformarEmString(System.Object)">
+            <summary>
+            Retorna uma string representando o objeto com as suas propriedades
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Gradual.OMS.Library.ColecaoTipoInstancia">
+            <summary>
+            Esta classe tem como finalidade prover funções para armazenamento de objetos, que podem
+            ser acessados pelo seu tipo. Ou seja, assume que só poderá existir um objeto de cada tipo.
+            Mesmo conceito de classes de serviços, mas com outro nome.
+            Utilizado para, por exemplo, permitir que vários objetos de configuração existam ao mesmo
+            tempo em um mesmo contexto.
+            O nome é uma referencia à coleção de tipos e instancias.
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.ColecaoTipoInstancia.#ctor">
+            <summary>
+            Construtor default
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.ColecaoTipoInstancia.#ctor(System.Object)">
+            <summary>
+            Construtor que permite já adicionar um item
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Gradual.OMS.Library.ColecaoTipoInstancia.#ctor(System.Object[])">
+            <summary>
+            Construtor que permite adicionar diversos itens
+            </summary>
+            <param name="itens"></param>
+        </member>
+        <member name="M:Gradual.OMS.Library.ColecaoTipoInstancia.AdicionarItem``1(``0)">
+            <summary>
+            Adiciona novo item na colecao
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Gradual.OMS.Library.ColecaoTipoInstancia.ReceberItem``1">
+            <summary>
+            Recebe um item da colecao
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Gradual.OMS.Library.ColecaoTipoInstancia.RemoverItem``1">
+            <summary>
+            Remove um item da coleção
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Gradual.OMS.Library.ColecaoTipoInstancia.Colecao">
+            <summary>
+            Dicionario com lista de elementos. A chave é o tipo do elemento
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.Servicos.ServicoInfo">
+            <summary>
+            Arquivo de dados de informações de serviço.
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.Servicos.ServicoInfo.#ctor">
+            <summary>
+            Construtor. Carrega valores default
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.Servicos.ServicoInfo.ID">
+            <summary>
+            ID da instância do serviço.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.Servicos.ServicoInfo.NomeInterface">
+            <summary>
+            Nome da interface que está implementando o serviço. Por exemplo: Gradual.OMS.Sistemas.Comum.ServicoPersistencia
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.Servicos.ServicoInfo.NomeInstancia">
+            <summary>
+            Nome do tipo da instância a ser criado. Por exemplo: Gradual.OMS.Contratos.Comum.IServicoPersistencia
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.Servicos.ServicoInfo.AtivacaoDefaultTipo">
+            <summary>
+            Indica como deve ser a ativação default do serviço.
+            Utilizado quando o serviço será ativado via informações contidas no localizador. Caso a ativação default seja 
+            local, faz com que o ativador primeiro tente achar o serviço localmente, e em caso de falha, faz a ativação via WCF.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.Servicos.ServicoInfo.RegistrarLocalizador">
+            <summary>
+            Indica se deve registrar o serviço no localizador.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.Servicos.ServicoInfo.EndPoints">
+            <summary>
+            Lista de endpoints a serem criados no WCF.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.Servicos.ServicoInfo.AtivarWCF">
+            <summary>
+            Lista de endpoints a serem criados no WCF.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.Servicos.ServicoInfo.Habilitado">
+            <summary>
+            Indica se o serviço está habilitado e deve ser iniciado
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.Servicos.ServicoAtributo">
+            <summary>
+            Atributo para marcar uma classe de serviço e permitir uma futura localização ou montagem de lista.
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.MensagemResponseBase">
+            <summary>
+            Classe base para mensagens de resposta
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.MensagemResponseBase.#ctor">
+            <summary>
+            Construtor default.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.MensagemResponseBase.CodigoMensagemRequest">
+            <summary>
+            Código da mensagem que fez a requisição
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.MensagemResponseBase.StatusResposta">
+            <summary>
+            Indica o status da resposta
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.MensagemResponseBase.DescricaoResposta">
+            <summary>
+            Contem uma descrição da resposta. Caso o status indique algum erro,
+            esta propriedade irá conter a descrição do erro.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.MensagemResponseBase.Criticas">
+            <summary>
+            Lista de críticas da mensagem.
+            As críticas geralmente são colocadas pelas regras do sistema de validação.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.MensagemResponseBase.DataResposta">
+            <summary>
+            Data da Resposta
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.MensagemResponseBase.ResponseTag">
+            <summary>
+            Propriedade de uso geral
+            </summary>
+        </member>
+        <member name="T:Gradual.OMS.Library.LogConfig">
+            <summary>
+            Classe de configurações do utilitário de log
+            </summary>
+        </member>
+        <member name="M:Gradual.OMS.Library.LogConfig.#ctor">
+            <summary>
+            Construtor default.
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.LogConfig.TipoComOrigensDeLog">
+            <summary>
+            Indica o tipo que irá conter as origens de log que 
+            podem ser utilizadas pelos sistemas
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.LogConfig.TipoComOrigensDeLogString">
+            <summary>
+            Classe utilizada para serialização
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.LogConfig.LogarEmConsole">
+            <summary>
+            Indica se deve efetuar o log em console
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.LogConfig.LogarEmEventViewer">
+            <summary>
+            Indica se deve efetuar o log no event viewer
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.LogConfig.LogarErrosNoConsole">
+            <summary>
+            Indica se deve mostrar erros no console
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.LogConfig.LogarErrosNoEventViewer">
+            <summary>
+            Indica se deve logar erros no event viewer
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.LogConfig.LogarPassagemNoConsole">
+            <summary>
+            Indica se deve mostrar mensagens de passagem no console
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.LogConfig.LogarPassagemNoEventViewer">
+            <summary>
+            Indica se deve logar mensagens de passagem no event viewer
+            </summary>
+        </member>
+        <member name="P:Gradual.OMS.Library.LogConfig.NomeOrigemLogDefault">
+            <summary>
+            Indica o nome da aplicação default que deve ser registrada no event viewer
+            </summary>
+        </member>
+    </members>
+</doc>

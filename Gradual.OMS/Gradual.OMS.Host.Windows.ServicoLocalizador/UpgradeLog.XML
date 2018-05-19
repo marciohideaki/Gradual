@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Gradual.OMS.Host.Windows.ServicoLocalizador">
+</Property><Property Name="Solution File" Value="C:\Projetos2\Gradual\OMS\Src\Gradual.OMS.Host.Windows.ServicoLocalizador\Gradual.OMS.Host.Windows.ServicoLocalizador.sln">
+</Property><Property Name="User Options File" Value="C:\Projetos2\Gradual\OMS\Src\Gradual.OMS.Host.Windows.ServicoLocalizador\Gradual.OMS.Host.Windows.ServicoLocalizador.suo">
+</Property><Property Name="Date" Value="quinta-feira, 15 de julho de 2010">
+</Property><Property Name="Time" Value="15:51">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Gradual.OMS.Host.Windows.ServicoLocalizador.sln" Description="File successfully backed up as C:\Projetos2\Gradual\OMS\Src\Gradual.OMS.Host.Windows.ServicoLocalizador\Backup\Gradual.OMS.Host.Windows.ServicoLocalizador.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Gradual.OMS.Host.Windows.ServicoLocalizador.suo" Description="File successfully backed up as C:\Projetos2\Gradual\OMS\Src\Gradual.OMS.Host.Windows.ServicoLocalizador\Backup\Gradual.OMS.Host.Windows.ServicoLocalizador.suo">
+</Event><Event ErrorLevel="0" Project="Gradual.OMS.Host.Windows.ServicoLocalizador" Source="Gradual.OMS.Host.Windows.ServicoLocalizador.csproj" Description="Project file successfully backed up as C:\Projetos2\Gradual\OMS\Src\Gradual.OMS.Host.Windows.ServicoLocalizador\Backup\Gradual.OMS.Host.Windows.ServicoLocalizador.csproj">
+</Event><Event ErrorLevel="0" Project="Gradual.OMS.Host.Windows.ServicoLocalizador" Source="Gradual.OMS.Host.Windows.ServicoLocalizador.csproj.user" Description="Project user file successfully backed up as C:\Projetos2\Gradual\OMS\Src\Gradual.OMS.Host.Windows.ServicoLocalizador\Backup\Gradual.OMS.Host.Windows.ServicoLocalizador.csproj.user">
+</Event><Event ErrorLevel="0" Project="Gradual.OMS.Host.Windows.ServicoLocalizador" Source="Program.cs" Description="File successfully backed up as C:\Projetos2\Gradual\OMS\Src\Gradual.OMS.Host.Windows.ServicoLocalizador\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="Gradual.OMS.Host.Windows.ServicoLocalizador" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Projetos2\Gradual\OMS\Src\Gradual.OMS.Host.Windows.ServicoLocalizador\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Gradual.OMS.Host.Windows.ServicoLocalizador" Source="App.config" Description="File successfully backed up as C:\Projetos2\Gradual\OMS\Src\Gradual.OMS.Host.Windows.ServicoLocalizador\Backup\App.config">
+</Event><Event ErrorLevel="0" Project="Gradual.OMS.Host.Windows.ServicoLocalizador" Source="Gradual.OMS.Host.Windows.ServicoLocalizador.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Gradual.OMS.Host.Windows.ServicoLocalizador" Source="Gradual.OMS.Host.Windows.ServicoLocalizador.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Gradual.OMS.Host.Windows.ServicoLocalizador.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Gradual.OMS.Host.Windows.ServicoLocalizador.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Gradual.OMS.Host.Windows.ServicoLocalizador" Source="Gradual.OMS.Host.Windows.ServicoLocalizador.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

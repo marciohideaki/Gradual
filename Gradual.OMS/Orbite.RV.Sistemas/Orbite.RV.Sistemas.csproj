@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BEF5A036-E4BF-4AE7-8DDA-BA84AC9BC7DD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Orbite.RV.Sistemas</RootNamespace>
+    <AssemblyName>Orbite.RV.Sistemas</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Integracao\Bacen\DataSetHelper.cs" />
+    <Compile Include="Integracao\Bacen\Utilitarios.cs" />
+    <Compile Include="Integracao\Bacen\WsBCB\ArrayOfflong.cs" />
+    <Compile Include="Integracao\Bacen\ListaSeries.cs" />
+    <Compile Include="Integracao\Bacen\ServicoIntegracaoBacen.cs" />
+    <Compile Include="Integracao\Bacen\ServicoIntegracaoBacenPersistencia.cs" />
+    <Compile Include="Integracao\BVMF\ConversorCampoBase.cs" />
+    <Compile Include="Integracao\BVMF\ConversorCampoBovespaColunaParametro.cs" />
+    <Compile Include="Integracao\BVMF\ConversorCampoBovespaColunaTipoEnum.cs" />
+    <Compile Include="Integracao\BVMF\ConversorCampoData.cs" />
+    <Compile Include="Integracao\BVMF\ConversorCampoDataParametro.cs" />
+    <Compile Include="Integracao\BVMF\ConversorCampoGenerico.cs" />
+    <Compile Include="Integracao\BVMF\ConversorCampoNumero.cs" />
+    <Compile Include="Integracao\BVMF\ConversorCampoNumeroParametro.cs" />
+    <Compile Include="Integracao\BVMF\ConversorLayoutBovespa.cs" />
+    <Compile Include="Integracao\BVMF\ConversorLayoutBovespaConfig.cs" />
+    <Compile Include="Integracao\BVMF\ConversorLayoutBovespaParametro.cs" />
+    <Compile Include="Integracao\BVMF\ConversorLayoutBovespaParametroTabela.cs" />
+    <Compile Include="Integracao\BVMF\ConversorLayoutBovespaParametroTabelaTipoEnum.cs" />
+    <Compile Include="Integracao\BVMF\ServicoIntegracaoBVMF.cs" />
+    <Compile Include="Integracao\BVMF\ServicoIntegracaoBVMFArquivos.cs" />
+    <Compile Include="Integracao\BVMF\ServicoIntegracaoBVMFArquivosConfig.cs" />
+    <Compile Include="Integracao\BVMF\ServicoIntegracaoBVMFConfig.cs" />
+    <Compile Include="Integracao\BVMF\ServicoIntegracaoBVMFPersistenciaDiretorio.cs" />
+    <Compile Include="Integracao\BVMF\ServicoIntegracaoBVMFPersistenciaDiretorioConfig.cs" />
+    <Compile Include="Integracao\BVMF\ServicoIntegracaoBVMFPersistenciaLayoutsBin.cs" />
+    <Compile Include="Integracao\BVMF\ServicoIntegracaoBVMFPersistenciaLayoutsBinConfig.cs" />
+    <Compile Include="MarketData\CanalMarketDataBovespa.cs" />
+    <Compile Include="MarketData\CanalMarketDataBovespaConfig.cs" />
+    <Compile Include="MarketData\CanalMarketDataHelper.cs" />
+    <Compile Include="MarketData\ElementoExternoColecaoHelper.cs" />
+    <Compile Include="MarketData\ElementoExternoHelper.cs" />
+    <Compile Include="MarketData\ServicoMarketData.cs" />
+    <Compile Include="MarketData\ServicoMarketDataConfig.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\Integracao.Bacen.WsBCB\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Gradual\OMS\Src\Gradual.OMS.Library\Gradual.OMS.Library.csproj">
+      <Project>{A5E45264-237E-471B-9260-88552A1EF7F3}</Project>
+      <Name>Gradual.OMS.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Orbite.Comum\Orbite.Comum.csproj">
+      <Project>{C322F862-09CB-410A-946B-AF38B8A1E533}</Project>
+      <Name>Orbite.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Orbite.RV.Contratos\Orbite.RV.Contratos.csproj">
+      <Project>{58E12A3B-F52B-42E5-B3F4-53F5BBE8AC3B}</Project>
+      <Name>Orbite.RV.Contratos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Integracao.Bacen.WsBCB\ArrayOffWSSerieVO1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Integracao.Bacen.WsBCB\FachadaWSSGS.wsdl" />
+    <None Include="Web References\Integracao.Bacen.WsBCB\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Integracao.Bacen.WsBCB\WSSerieVO1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://www3.bcb.gov.br/sgspub/JSP/sgsgeral/FachadaWSSGS.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Integracao.Bacen.WsBCB\</RelPath>
+      <UpdateFromURL>https://www3.bcb.gov.br/sgspub/JSP/sgsgeral/FachadaWSSGS.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Orbite_RV_Sistemas_WsBCB_FachadaWSSGSService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

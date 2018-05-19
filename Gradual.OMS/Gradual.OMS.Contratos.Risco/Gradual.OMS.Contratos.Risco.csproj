@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{49770DEF-F986-4530-9985-33EBCBDB24EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.Contratos.Risco</RootNamespace>
+    <AssemblyName>Gradual.OMS.Contratos.Risco</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\Docs\VsDocs\Gradual.OMS.Contratos.Risco.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dados\CacheRiscoInfo.cs" />
+    <Compile Include="Dados\PerfilRiscoInfo.cs" />
+    <Compile Include="Dados\RegraRiscoInfo.cs" />
+    <Compile Include="Dados\RiscoGrupoInfo.cs" />
+    <Compile Include="Dados\TicketRiscoInfo.cs" />
+    <Compile Include="Dados\TicketRiscoStatusEnum.cs" />
+    <Compile Include="IServicoRisco.cs" />
+    <Compile Include="IServicoRiscoPersistencia.cs" />
+    <Compile Include="Mensagens\ConsultarRegrasDoAgrupamentoRequest.cs" />
+    <Compile Include="Mensagens\ConsultarRegrasDoAgrupamentoResponse.cs" />
+    <Compile Include="Mensagens\ListarPerfisRiscoRequest.cs" />
+    <Compile Include="Mensagens\ListarPerfisRiscoResponse.cs" />
+    <Compile Include="Mensagens\ProcessarOperacaoRequest.cs" />
+    <Compile Include="Mensagens\ProcessarOperacaoResponse.cs" />
+    <Compile Include="Mensagens\ProcessarOperacaoTipoEventoEnum.cs" />
+    <Compile Include="Mensagens\RecarregarListaRegrasRequest.cs" />
+    <Compile Include="Mensagens\RecarregarListaRegrasResponse.cs" />
+    <Compile Include="Mensagens\ReceberPerfilRiscoRequest.cs" />
+    <Compile Include="Mensagens\ReceberPerfilRiscoResponse.cs" />
+    <Compile Include="Mensagens\RemoverPerfilRiscoRequest.cs" />
+    <Compile Include="Mensagens\RemoverPerfilRiscoResponse.cs" />
+    <Compile Include="Mensagens\SalvarPerfilRiscoRequest.cs" />
+    <Compile Include="Mensagens\SalvarPerfilRiscoResponse.cs" />
+    <Compile Include="Mensagens\SincronizarContaCorrenteSinacorRequest.cs" />
+    <Compile Include="Mensagens\SincronizarContaCorrenteSinacorResponse.cs" />
+    <Compile Include="Mensagens\ValidarOperacaoRequest.cs" />
+    <Compile Include="Mensagens\ValidarOperacaoResponse.cs" />
+    <Compile Include="Mensagens\InicializarClienteRequest.cs" />
+    <Compile Include="Mensagens\InicializarClienteResponse.cs" />
+    <Compile Include="Mensagens\LiberarClienteRequest.cs" />
+    <Compile Include="Mensagens\LiberarClienteResponse.cs" />
+    <Compile Include="Mensagens\ListarRegraRiscoRequest.cs" />
+    <Compile Include="Mensagens\ListarRegraRiscoResponse.cs" />
+    <Compile Include="Mensagens\ListarRegrasDisponiveisRequest.cs" />
+    <Compile Include="Mensagens\ListarRegrasDisponiveisResponse.cs" />
+    <Compile Include="Mensagens\ListarTicketsRiscoRequest.cs" />
+    <Compile Include="Mensagens\ListarTicketsRiscoResponse.cs" />
+    <Compile Include="Mensagens\ReceberCacheRiscoRequest.cs" />
+    <Compile Include="Mensagens\ReceberCacheRiscoResponse.cs" />
+    <Compile Include="Mensagens\ReceberRegraRiscoRequest.cs" />
+    <Compile Include="Mensagens\ReceberRegraRiscoResponse.cs" />
+    <Compile Include="Mensagens\ReceberTicketRiscoRequest.cs" />
+    <Compile Include="Mensagens\ReceberTicketRiscoResponse.cs" />
+    <Compile Include="Mensagens\RemoverRegraRiscoRequest.cs" />
+    <Compile Include="Mensagens\RemoverRegraRiscoResponse.cs" />
+    <Compile Include="Mensagens\RemoverTicketRiscoRequest.cs" />
+    <Compile Include="Mensagens\RemoverTicketRiscoResponse.cs" />
+    <Compile Include="Mensagens\SalvarRegraRiscoRequest.cs" />
+    <Compile Include="Mensagens\SalvarRegraRiscoResponse.cs" />
+    <Compile Include="Mensagens\SalvarTicketRiscoRequest.cs" />
+    <Compile Include="Mensagens\SalvarTicketRiscoResponse.cs" />
+    <Compile Include="Permissoes\PermissaoListarPerfilRisco.cs" />
+    <Compile Include="Permissoes\PermissaoListarRegraRisco.cs" />
+    <Compile Include="Permissoes\PermissaoListarTicketRisco.cs" />
+    <Compile Include="Permissoes\PermissaoSalvarPerfilRisco.cs" />
+    <Compile Include="Permissoes\PermissaoSalvarRegraRisco.cs" />
+    <Compile Include="Permissoes\PermissaoSalvarTicketRisco.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegraRiscoBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Comum\Gradual.OMS.Contratos.Comum.csproj">
+      <Project>{AE2DB70E-A19F-4EA4-8AD6-5441AE70A474}</Project>
+      <Name>Gradual.OMS.Contratos.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.ContaCorrente\Gradual.OMS.Contratos.ContaCorrente.csproj">
+      <Project>{82E4AAA9-5E88-4591-9130-6DE4EFCEA5BF}</Project>
+      <Name>Gradual.OMS.Contratos.ContaCorrente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Custodia\Gradual.OMS.Contratos.Custodia.csproj">
+      <Project>{8F28A40D-98B3-427B-8831-E250C1AC1E91}</Project>
+      <Name>Gradual.OMS.Contratos.Custodia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Ordens\Gradual.OMS.Contratos.Ordens.csproj">
+      <Project>{0F222CC0-1398-4EA9-90E9-222A0316DDD0}</Project>
+      <Name>Gradual.OMS.Contratos.Ordens</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Library\Gradual.OMS.Library.csproj">
+      <Project>{A5E45264-237E-471B-9260-88552A1EF7F3}</Project>
+      <Name>Gradual.OMS.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>rem copy "$(TargetPath)" "$(SolutionDir)..\..\..\bin"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

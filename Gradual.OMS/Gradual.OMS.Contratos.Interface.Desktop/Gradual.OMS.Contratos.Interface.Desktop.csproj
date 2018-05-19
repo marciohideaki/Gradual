@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E9F22E09-7819-4454-8FED-8B643BAC7771}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.Contratos.Interface.Desktop</RootNamespace>
+    <AssemblyName>Gradual.OMS.Contratos.Interface.Desktop</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\Docs\VsDocs\Gradual.OMS.Contratos.Interface.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dados\ComandoInfo.cs" />
+    <Compile Include="Dados\ConsultaControlesHelper.cs" />
+    <Compile Include="Dados\ControleInfo.cs" />
+    <Compile Include="Dados\ControleSerializacaoInfo.cs" />
+    <Compile Include="Dados\DesktopInfo.cs" />
+    <Compile Include="Dados\HostInfo.cs" />
+    <Compile Include="Dados\HostInicializacaoTipoEnum.cs" />
+    <Compile Include="Dados\InterfaceSerializacaoInfo.cs" />
+    <Compile Include="Dados\ItemInfoBase.cs" />
+    <Compile Include="Dados\ItemTipoEnum.cs" />
+    <Compile Include="Dados\JanelaInfo.cs" />
+    <Compile Include="Dados\JanelaInicializacaoInfo.cs" />
+    <Compile Include="Dados\JanelaSerializacaoInfo.cs" />
+    <Compile Include="Dados\RelacaoItemControleInfo.cs" />
+    <Compile Include="Dados\SkinInfo.cs" />
+    <Compile Include="EventoJanelaEventArgs.cs" />
+    <Compile Include="IServicoInterfaceDesktop.cs" />
+    <Compile Include="IServicoInterfaceDesktopHost.cs" />
+    <Compile Include="Mensagens\AtivarJanelaRequest.cs" />
+    <Compile Include="Mensagens\EnviarMensagemParaControleRequest.cs" />
+    <Compile Include="Mensagens\EnviarMensagemParaControleResponse.cs" />
+    <Compile Include="Mensagens\MensagemInterfaceRequestBase.cs" />
+    <Compile Include="Mensagens\MensagemInterfaceResponseBase.cs" />
+    <Compile Include="Mensagens\SinalizarDesktopAtivoAlteradoRequest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.OMS.Library\Gradual.OMS.Library.csproj">
+      <Project>{A5E45264-237E-471B-9260-88552A1EF7F3}</Project>
+      <Name>Gradual.OMS.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

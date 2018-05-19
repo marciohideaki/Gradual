@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E6215DAD-29D0-476D-BF69-BAC9171EC3E5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.Sistemas.Interface.Desktop.Controles.Risco</RootNamespace>
+    <AssemblyName>Gradual.OMS.Sistemas.Interface.Desktop.Controles.Risco</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v8.3, Version=8.3.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v8.3, Version=8.3.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v8.3, Version=8.3.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v8.3, Version=8.3.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v8.3, Version=8.3.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v8.3, Version=8.3.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v8.3, Version=8.3.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CadastroPerfilRisco.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CadastroPerfilRisco.Designer.cs">
+      <DependentUpon>CadastroPerfilRisco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroPerfilRiscoParametros.cs" />
+    <Compile Include="CadastroRegrasRiscoBaseEventArgs.cs" />
+    <Compile Include="CadastroRegrasRisco.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CadastroRegrasRisco.Designer.cs">
+      <DependentUpon>CadastroRegrasRisco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroRegrasRiscoBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CadastroRegrasRiscoBase.Designer.cs">
+      <DependentUpon>CadastroRegrasRiscoBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroRegrasRiscoBaseParametros.cs" />
+    <Compile Include="CadastroRegrasRiscoParametros.cs" />
+    <Compile Include="CadastroTicketsRisco.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CadastroTicketsRisco.Designer.cs">
+      <DependentUpon>CadastroTicketsRisco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroTicketsRiscoParametros.cs" />
+    <Compile Include="PerfilRiscoDetalhe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PerfilRiscoDetalhe.Designer.cs">
+      <DependentUpon>PerfilRiscoDetalhe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilRiscoDetalheParametros.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegraRiscoDetalhe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RegraRiscoDetalhe.Designer.cs">
+      <DependentUpon>RegraRiscoDetalhe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegraRiscoDetalheParametros.cs" />
+    <Compile Include="TabRegraRisco.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabRegraRisco.Designer.cs">
+      <DependentUpon>TabRegraRisco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabRegraRiscoParametros.cs" />
+    <Compile Include="TicketRiscoDetalhe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TicketRiscoDetalhe.Designer.cs">
+      <DependentUpon>TicketRiscoDetalhe.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Comum\Gradual.OMS.Contratos.Comum.csproj">
+      <Project>{AE2DB70E-A19F-4EA4-8AD6-5441AE70A474}</Project>
+      <Name>Gradual.OMS.Contratos.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Interface.Desktop.Controles.Comum\Gradual.OMS.Contratos.Interface.Desktop.Controles.Comum.csproj">
+      <Project>{B1B397AB-181D-4785-AD22-1D85A696B171}</Project>
+      <Name>Gradual.OMS.Contratos.Interface.Desktop.Controles.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Interface.Desktop.Controles.MarketData\Gradual.OMS.Contratos.Interface.Desktop.Controles.MarketData.csproj">
+      <Project>{9E06501A-33C9-40B2-9038-4ABAE1CC61DD}</Project>
+      <Name>Gradual.OMS.Contratos.Interface.Desktop.Controles.MarketData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Interface.Desktop.Controles.Risco\Gradual.OMS.Contratos.Interface.Desktop.Controles.Risco.csproj">
+      <Project>{10773E4A-DF51-4A4E-A6FB-4FCF73AFF3DF}</Project>
+      <Name>Gradual.OMS.Contratos.Interface.Desktop.Controles.Risco</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Interface.Desktop.Controles.Seguranca\Gradual.OMS.Contratos.Interface.Desktop.Controles.Seguranca.csproj">
+      <Project>{A883E260-6392-4122-B84F-F226764C2A67}</Project>
+      <Name>Gradual.OMS.Contratos.Interface.Desktop.Controles.Seguranca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Interface.Desktop\Gradual.OMS.Contratos.Interface.Desktop.csproj">
+      <Project>{E9F22E09-7819-4454-8FED-8B643BAC7771}</Project>
+      <Name>Gradual.OMS.Contratos.Interface.Desktop</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Risco\Gradual.OMS.Contratos.Risco.csproj">
+      <Project>{49770DEF-F986-4530-9985-33EBCBDB24EF}</Project>
+      <Name>Gradual.OMS.Contratos.Risco</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Library\Gradual.OMS.Library.csproj">
+      <Project>{A5E45264-237E-471B-9260-88552A1EF7F3}</Project>
+      <Name>Gradual.OMS.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Interface.Desktop.Controles.Comum\Gradual.OMS.Sistemas.Interface.Desktop.Controles.Comum.csproj">
+      <Project>{96603A07-1B17-4E82-9A17-A4AA202AE6DE}</Project>
+      <Name>Gradual.OMS.Sistemas.Interface.Desktop.Controles.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Interface.Desktop\Gradual.OMS.Sistemas.Interface.Desktop.csproj">
+      <Project>{63B7C302-6158-4B7F-98D7-F6F4EB1EFDCB}</Project>
+      <Name>Gradual.OMS.Sistemas.Interface.Desktop</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Orbite.RV.Contratos.MarketData.Bovespa\Orbite.RV.Contratos.MarketData.Bovespa.csproj">
+      <Project>{5CE7B62D-2E5A-4EE5-BA8C-3D236F68302E}</Project>
+      <Name>Orbite.RV.Contratos.MarketData.Bovespa</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CadastroPerfilRisco.resx">
+      <DependentUpon>CadastroPerfilRisco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroRegrasRisco.resx">
+      <DependentUpon>CadastroRegrasRisco.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroRegrasRiscoBase.resx">
+      <DependentUpon>CadastroRegrasRiscoBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroTicketsRisco.resx">
+      <DependentUpon>CadastroTicketsRisco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfilRiscoDetalhe.resx">
+      <DependentUpon>PerfilRiscoDetalhe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="RegraRiscoDetalhe.resx">
+      <DependentUpon>RegraRiscoDetalhe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabRegraRisco.resx">
+      <DependentUpon>TabRegraRisco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketRiscoDetalhe.resx">
+      <DependentUpon>TicketRiscoDetalhe.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

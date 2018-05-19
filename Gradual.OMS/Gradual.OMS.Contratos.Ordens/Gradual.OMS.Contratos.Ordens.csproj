@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F222CC0-1398-4EA9-90E9-222A0316DDD0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.Contratos.Ordens</RootNamespace>
+    <AssemblyName>Gradual.OMS.Contratos.Ordens</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\Docs\VsDocs\Gradual.OMS.Contratos.Ordens.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dados\ClienteInfo.cs" />
+    <Compile Include="Dados\ContaInfo.cs" />
+    <Compile Include="Dados\InstrumentoInfo.cs" />
+    <Compile Include="Dados\OrdemDiretoPontaInfo.cs" />
+    <Compile Include="Dados\PartyInfo.cs" />
+    <Compile Include="Dados\RelacaoBolsaCanalInfo.cs" />
+    <Compile Include="Dados\SessaoOrdensInfo.cs" />
+    <Compile Include="IServicoOrdensPersistencia.cs" />
+    <Compile Include="IServicoOrdensProxyMQ.cs" />
+    <Compile Include="IServicoOrdensServidor.cs" />
+    <Compile Include="IServicoOrdensServidorSemCallback.cs" />
+    <Compile Include="Mensagens\AlterarOrdemRequest.cs" />
+    <Compile Include="Mensagens\AlterarOrdemResponse.cs" />
+    <Compile Include="Mensagens\CancelarOrdemRequest.cs" />
+    <Compile Include="Mensagens\CancelarOrdemResponse.cs" />
+    <Compile Include="Mensagens\ConsultarInstrumentosRequest.cs" />
+    <Compile Include="Mensagens\ConsultarInstrumentosResponse.cs" />
+    <Compile Include="Mensagens\ExecutarDiretoRequest.cs" />
+    <Compile Include="Mensagens\ExecutarDiretoResponse.cs" />
+    <Compile Include="Mensagens\ListarOrdensRequest.cs" />
+    <Compile Include="Mensagens\ListarOrdensResponse.cs" />
+    <Compile Include="Mensagens\MensagemOrdemRequestBase.cs" />
+    <Compile Include="Mensagens\MensagemOrdemResponseBase.cs" />
+    <Compile Include="Mensagens\MensagemStatusEnum.cs" />
+    <Compile Include="Mensagens\ReceberOrdemRequest.cs" />
+    <Compile Include="Mensagens\ReceberOrdemResponse.cs" />
+    <Compile Include="Mensagens\SalvarOrdemRequest.cs" />
+    <Compile Include="Mensagens\SalvarOrdemResponse.cs" />
+    <Compile Include="Mensagens\SinalizarExecucaoOrdemResponse.cs" />
+    <Compile Include="Mensagens\SinalizarListaInstrumentosResponse.cs" />
+    <Compile Include="Mensagens\SinalizarMensagemInvalidaResponse.cs" />
+    <Compile Include="Mensagens\SinalizarRejeicaoCancelamentoOrdemRequest.cs" />
+    <Compile Include="Mensagens\SinalizarRejeicaoCancelamentoOrdemResponse.cs" />
+    <Compile Include="Mensagens\SincronizarCanalRequest.cs" />
+    <Compile Include="Mensagens\SincronizarCanalResponse.cs" />
+    <Compile Include="Dados\OrdemDirecaoEnum.cs" />
+    <Compile Include="Dados\OrdemInfo.cs" />
+    <Compile Include="IServicoOrdens.cs" />
+    <Compile Include="Mensagens\ExecutarOrdemRequest.cs" />
+    <Compile Include="Mensagens\ExecutarOrdemResponse.cs" />
+    <Compile Include="Mensagens\ExecutarOrdemStatusSolicitacaoEnum.cs" />
+    <Compile Include="Mensagens\ListarInstrumentosRequest.cs" />
+    <Compile Include="Mensagens\ListarInstrumentosResponse.cs" />
+    <Compile Include="Mensagens\SinalizarExecucaoOrdemRequest.cs" />
+    <Compile Include="Mensagens\SinalizarListaInstrumentosRequest.cs" />
+    <Compile Include="Mensagens\SinalizarMensagemInvalidaRequest.cs" />
+    <Compile Include="Dados\OrdemMotivoRejeicaoEnum.cs" />
+    <Compile Include="Dados\OrdemStatusEnum.cs" />
+    <Compile Include="Dados\OrdemTipoEnum.cs" />
+    <Compile Include="Dados\OrdemTipoExecucaoEnum.cs" />
+    <Compile Include="Dados\OrdemValidadeEnum.cs" />
+    <Compile Include="OrdensTiposHelper.cs" />
+    <Compile Include="Permissoes\PermissaoAlterarOrdem.cs" />
+    <Compile Include="Permissoes\PermissaoCancelarOrdem.cs" />
+    <Compile Include="Permissoes\PermissaoExecutarOrdem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Dados\SinalizarEventArgs.cs" />
+    <Compile Include="Dados\SinalizarExecucaoOrdemEventArgs.cs" />
+    <Compile Include="Dados\SinalizarListaInstrumentosEventArgs.cs" />
+    <Compile Include="Dados\SinalizarMensagemInvalidaEventArgs.cs" />
+    <Compile Include="Dados\SinalizarRejeicaoCancelamentoOrdemEventArgs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Comum\Gradual.OMS.Contratos.Comum.csproj">
+      <Project>{AE2DB70E-A19F-4EA4-8AD6-5441AE70A474}</Project>
+      <Name>Gradual.OMS.Contratos.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Library\Gradual.OMS.Library.csproj">
+      <Project>{A5E45264-237E-471B-9260-88552A1EF7F3}</Project>
+      <Name>Gradual.OMS.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>rem copy "$(TargetPath)" "$(SolutionDir)..\..\..\bin"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Host.Windows.ServicoLocalizador", "Gradual.OMS.Host.Windows.ServicoLocalizador.csproj", "{8BBE42CB-23B4-4B4E-B329-68C6C2BF32AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BBE42CB-23B4-4B4E-B329-68C6C2BF32AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BBE42CB-23B4-4B4E-B329-68C6C2BF32AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BBE42CB-23B4-4B4E-B329-68C6C2BF32AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BBE42CB-23B4-4B4E-B329-68C6C2BF32AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

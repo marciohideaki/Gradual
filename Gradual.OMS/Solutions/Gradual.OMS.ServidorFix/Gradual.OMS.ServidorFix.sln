@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Contratos.CanaisNegociacao", "..\..\Gradual.OMS.Contratos.CanaisNegociacao\Gradual.OMS.Contratos.CanaisNegociacao.csproj", "{FC2A0D28-2B8E-4B64-A2D2-0BA8E2691AC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Contratos.Comum", "..\..\Gradual.OMS.Contratos.Comum\Gradual.OMS.Contratos.Comum.csproj", "{AE2DB70E-A19F-4EA4-8AD6-5441AE70A474}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Host.Windows.ServidorFix", "..\..\Gradual.OMS.Host.Windows.ServidorFix\Gradual.OMS.Host.Windows.ServidorFix.csproj", "{43CA7119-4F1C-4BA1-B6DC-EF964038775C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Library", "..\..\Gradual.OMS.Library\Gradual.OMS.Library.csproj", "{A5E45264-237E-471B-9260-88552A1EF7F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Library.Fix", "..\..\Gradual.OMS.Library.Fix\Gradual.OMS.Library.Fix.csproj", "{5073A824-52F4-499E-BF5E-B93985106E79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Sistemas.CanaisNegociacao", "..\..\Gradual.OMS.Sistemas.CanaisNegociacao\Gradual.OMS.Sistemas.CanaisNegociacao.csproj", "{7A1BE891-6D8C-4473-8034-F5CCF9B11B08}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CanaisNegociacao", "CanaisNegociacao", "{A3818DFD-F099-430A-A81E-116111D99CAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comum", "Comum", "{47672DEC-7657-4388-8E27-EFFA360A7C65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{D5222EC5-DE7A-4FBA-8F45-26938E519277}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configs", "Configs", "{76C776FE-7904-41F9-9265-A3E7D4A5A7FD}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\QuickFixConfigs\Server.conf = ..\..\QuickFixConfigs\Server.conf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Referencias", "Referencias", "{B4E2112B-283C-4BA7-88DC-2C857CD020AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Contratos.Ordens", "..\..\Gradual.OMS.Contratos.Ordens\Gradual.OMS.Contratos.Ordens.csproj", "{0F222CC0-1398-4EA9-90E9-222A0316DDD0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC2A0D28-2B8E-4B64-A2D2-0BA8E2691AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC2A0D28-2B8E-4B64-A2D2-0BA8E2691AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC2A0D28-2B8E-4B64-A2D2-0BA8E2691AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC2A0D28-2B8E-4B64-A2D2-0BA8E2691AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE2DB70E-A19F-4EA4-8AD6-5441AE70A474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE2DB70E-A19F-4EA4-8AD6-5441AE70A474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE2DB70E-A19F-4EA4-8AD6-5441AE70A474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE2DB70E-A19F-4EA4-8AD6-5441AE70A474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43CA7119-4F1C-4BA1-B6DC-EF964038775C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43CA7119-4F1C-4BA1-B6DC-EF964038775C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43CA7119-4F1C-4BA1-B6DC-EF964038775C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43CA7119-4F1C-4BA1-B6DC-EF964038775C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5E45264-237E-471B-9260-88552A1EF7F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5E45264-237E-471B-9260-88552A1EF7F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5E45264-237E-471B-9260-88552A1EF7F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5E45264-237E-471B-9260-88552A1EF7F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5073A824-52F4-499E-BF5E-B93985106E79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5073A824-52F4-499E-BF5E-B93985106E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5073A824-52F4-499E-BF5E-B93985106E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5073A824-52F4-499E-BF5E-B93985106E79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A1BE891-6D8C-4473-8034-F5CCF9B11B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A1BE891-6D8C-4473-8034-F5CCF9B11B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A1BE891-6D8C-4473-8034-F5CCF9B11B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A1BE891-6D8C-4473-8034-F5CCF9B11B08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F222CC0-1398-4EA9-90E9-222A0316DDD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F222CC0-1398-4EA9-90E9-222A0316DDD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F222CC0-1398-4EA9-90E9-222A0316DDD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F222CC0-1398-4EA9-90E9-222A0316DDD0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5073A824-52F4-499E-BF5E-B93985106E79} = {A3818DFD-F099-430A-A81E-116111D99CAB}
+		{7A1BE891-6D8C-4473-8034-F5CCF9B11B08} = {A3818DFD-F099-430A-A81E-116111D99CAB}
+		{FC2A0D28-2B8E-4B64-A2D2-0BA8E2691AC2} = {A3818DFD-F099-430A-A81E-116111D99CAB}
+		{A5E45264-237E-471B-9260-88552A1EF7F3} = {47672DEC-7657-4388-8E27-EFFA360A7C65}
+		{AE2DB70E-A19F-4EA4-8AD6-5441AE70A474} = {47672DEC-7657-4388-8E27-EFFA360A7C65}
+		{43CA7119-4F1C-4BA1-B6DC-EF964038775C} = {D5222EC5-DE7A-4FBA-8F45-26938E519277}
+		{0F222CC0-1398-4EA9-90E9-222A0316DDD0} = {B4E2112B-283C-4BA7-88DC-2C857CD020AB}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B77A8FF9-F0B8-435F-A007-F01B9FDA2881}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Orbite.RV.Contratos.MarketData.Bolsa</RootNamespace>
+    <AssemblyName>Orbite.RV.Contratos.MarketData.Bolsa</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dados\InstrumentoAcaoInfo.cs" />
+    <Compile Include="Dados\InstrumentoOpcaoInfo.cs" />
+    <Compile Include="Dados\InstrumentoOpcaoTipoEnum.cs" />
+    <Compile Include="Dados\InstrumentoStatusEnum.cs" />
+    <Compile Include="Dados\CanalMarketDataBolsaInfo.cs" />
+    <Compile Include="Dados\CustoBolsaInfo.cs" />
+    <Compile Include="Dados\EventoBolsaInfo.cs" />
+    <Compile Include="Dados\InstrumentoInfo.cs" />
+    <Compile Include="Dados\InstrumentoTipoEnum.cs" />
+    <Compile Include="Dados\SerieBolsaTipoEnum.cs" />
+    <Compile Include="Dados\SerieCustoBolsaInfo.cs" />
+    <Compile Include="Dados\TickInfo.cs" />
+    <Compile Include="Mensagens\ReceberSerieDetalheInstrumentoRequest.cs" />
+    <Compile Include="Mensagens\ReceberSerieDetalheInstrumentoResponse.cs" />
+    <Compile Include="Mensagens\ReceberSerieCustosBolsaRequest.cs" />
+    <Compile Include="Mensagens\ReceberSerieCustosBolsaResponse.cs" />
+    <Compile Include="Mensagens\ReceberSerieInstrumentosTipoListaEnum.cs" />
+    <Compile Include="Mensagens\ReceberSerieCotacaoRequest.cs" />
+    <Compile Include="Mensagens\ReceberSerieCotacaoResponse.cs" />
+    <Compile Include="Mensagens\ReceberSerieEventoRequest.cs" />
+    <Compile Include="Mensagens\ReceberSerieEventoResponse.cs" />
+    <Compile Include="Mensagens\ReceberSerieInstrumentosRequest.cs" />
+    <Compile Include="Mensagens\ReceberSerieInstrumentosResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SinalizarBookItemRecebidoEventArgs.cs" />
+    <Compile Include="SinalizarSerieItemRecebidoEventArgs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Gradual\OMS\Src\Gradual.OMS.Contratos.Comum\Gradual.OMS.Contratos.Comum.csproj">
+      <Project>{AE2DB70E-A19F-4EA4-8AD6-5441AE70A474}</Project>
+      <Name>Gradual.OMS.Contratos.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Gradual\OMS\Src\Gradual.OMS.Library\Gradual.OMS.Library.csproj">
+      <Project>{A5E45264-237E-471B-9260-88552A1EF7F3}</Project>
+      <Name>Gradual.OMS.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Orbite.Comum\Orbite.Comum.csproj">
+      <Project>{C322F862-09CB-410A-946B-AF38B8A1E533}</Project>
+      <Name>Orbite.Comum</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

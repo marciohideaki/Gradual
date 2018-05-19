@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <configSections>
+    <section
+			name="Gradual.OMS.Library.Servicos.LocalizadorClienteConfig"
+			type="Gradual.OMS.Library.ConfigurationHandler, Gradual.OMS.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+			allowLocation="true"
+			allowDefinition="Everywhere"/>
+    <section
+			name="Gradual.OMS.Library.Servicos.ServicoHostConfig-Default"
+			type="Gradual.OMS.Library.ConfigurationHandler, Gradual.OMS.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+			allowLocation="true"
+			allowDefinition="Everywhere"/>
+    <section
+			  name="Gradual.OMS.Sistemas.Interface.Desktop.ServicoInterfaceDesktopConfig"
+			  type="Gradual.OMS.Library.ConfigurationHandler, Gradual.OMS.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+			  allowLocation="true"
+			  allowDefinition="Everywhere"/>
+    <section
+			  name="Gradual.OMS.Library.LocalizadorTiposConfig"
+			  type="Gradual.OMS.Library.ConfigurationHandler, Gradual.OMS.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+			  allowLocation="true"
+			  allowDefinition="Everywhere"/>
+  </configSections>
+
+  <!-- LOCALIZADOR DE TIPOS -->
+  <Gradual.OMS.Library.LocalizadorTiposConfig>
+    <Grupos>
+      <LocalizadorGrupoTipoInfo TipoChamador="Gradual.OMS.Contratos.Ordens.IServicoOrdensServidor, Gradual.OMS.Contratos.Ordens">
+        <Tipos>
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Ordens.Dados, Gradual.OMS.Contratos.Ordens" />
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Ordens.Mensagens, Gradual.OMS.Contratos.Ordens" />
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Comum.Dados, Gradual.OMS.Contratos.Comum" />
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Comum.Mensagens, Gradual.OMS.Contratos.Comum" />
+        </Tipos>
+      </LocalizadorGrupoTipoInfo>
+      <LocalizadorGrupoTipoInfo TipoChamador="Gradual.OMS.Contratos.Comum.IServicoAutenticador, Gradual.OMS.Contratos.Comum">
+        <Tipos>
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Comum.Dados, Gradual.OMS.Contratos.Comum" />
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Comum.Mensagens, Gradual.OMS.Contratos.Comum" />
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Comum.Permissoes, Gradual.OMS.Contratos.Comum" />
+          <LocalizadorTipoInfo IncluirAssembly="Gradual.OMS.Contratos.Integracao.Sinacor.OMS" />
+        </Tipos>
+      </LocalizadorGrupoTipoInfo>
+    </Grupos>
+  </Gradual.OMS.Library.LocalizadorTiposConfig>
+
+  <!-- CLIENTE DO LOCALIZADOR -->
+  <Gradual.OMS.Library.Servicos.LocalizadorClienteConfig>
+    <AtivacaoTipo>WCF</AtivacaoTipo>
+    <EndPoint>
+      <Endereco>net.tcp://192.168.254.11:8080/gradual/servicoLocalizador</Endereco>
+      <NomeBindingType>System.ServiceModel.NetTcpBinding</NomeBindingType>
+    </EndPoint>
+  </Gradual.OMS.Library.Servicos.LocalizadorClienteConfig>
+
+  <!-- SERVICOS A CARREGAR -->
+  <Gradual.OMS.Library.Servicos.ServicoHostConfig-Default>
+    <Servicos>
+
+      <!-- Gradual.OMS.Contratos.Interface.IServicoInterface -->
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.Contratos.Interface.Desktop.IServicoInterfaceDesktop, Gradual.OMS.Contratos.Interface.Desktop</NomeInterface>
+        <NomeInstancia>Gradual.OMS.Sistemas.Interface.Desktop.ServicoInterfaceDesktop, Gradual.OMS.Sistemas.Interface.Desktop</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+    </Servicos>
+  </Gradual.OMS.Library.Servicos.ServicoHostConfig-Default>
+
+  <!-- SERVICO DE INTERFACE -->
+  <Gradual.OMS.Sistemas.Interface.Desktop.ServicoInterfaceDesktopConfig SkinAtual="Skin1">
+    <ArquivoConfiguracoes>K:\Projetos\Gradual\OMS\Bin\interfaceConfigServer.bin</ArquivoConfiguracoes>
+    <ArquivoConfiguracoesDefault>K:\Projetos\Gradual\OMS\Bin\interfaceDefaultConfigServer.bin</ArquivoConfiguracoesDefault>
+    <SkinAtual>Skin1</SkinAtual>
+    <Skins>
+      <SkinInfo Nome="Skin1">
+        <RelacaoItensControles>
+          <RelacaoItemControleInfo ItemTipo="JanelaLauncher" TipoObjetoDestino="Gradual.OMS.Sistemas.Interface.Desktop.SkinDevExpress.JanelaLauncher, Gradual.OMS.Sistemas.Interface.Desktop.SkinDevExpress" />
+          <RelacaoItemControleInfo ItemTipo="JanelaForm" TipoObjetoDestino="Gradual.OMS.Sistemas.Interface.Desktop.SkinDevExpress.JanelaForm, Gradual.OMS.Sistemas.Interface.Desktop.SkinDevExpress" />
+        </RelacaoItensControles>
+        <InicializacaoJanelas>
+          <JanelaInicializacaoInfo TipoJanelaAlvo="Gradual.OMS.Sistemas.Interface.Desktop.SkinDevExpress.JanelaLauncher">
+            <Comandos>
+              <ComandoInfo TipoInstanciaString="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControle, Gradual.OMS.Sistemas.Interface.Desktop"
+                           Titulo="Painél de Cotações"
+                           RegistrarEmToolbar="true"
+						               RegistrarEmMenu="true"
+                           ImagemArquivo="K:\Projetos\Icones\Ico_xp\16\Money_3.ico">
+                <Parametros TipoObjeto="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControleParametro, Gradual.OMS.Sistemas.Interface.Desktop">
+                  <ComandoIniciarControleParametro>
+                    <ControleInfo TipoInstanciaString="Gradual.OMS.Sistemas.Interface.Desktop.Controles.Ordens.PainelCotacao, Gradual.OMS.Sistemas.Interface.Desktop.Controles.Ordens"
+                                  Titulo="Painél de Cotações" />
+                  </ComandoIniciarControleParametro>
+                </Parametros>
+              </ComandoInfo>
+              <ComandoInfo TipoInstanciaString="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControle, Gradual.OMS.Sistemas.Interface.Desktop"
+                           Titulo="Envio de Mensagens"
+                           RegistrarEmToolbar="true"
+						               RegistrarEmMenu="true"
+                           ImagemArquivo="K:\Projetos\Icones\Ico_xp\16\NETWORK CONNECTION.ico">
+                <Parametros TipoObjeto="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControleParametro, Gradual.OMS.Sistemas.Interface.Desktop">
+                  <ComandoIniciarControleParametro>
+                    <ControleInfo TipoInstanciaString="Gradual.OMS.Host.Windows.Teste.ControleEnvioMensagens, Gradual.OMS.Host.Windows.Teste"
+                                  Titulo="Envio de Mensagens" />
+                  </ComandoIniciarControleParametro>
+                </Parametros>
+              </ComandoInfo>
+              <ComandoInfo TipoInstanciaString="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControle, Gradual.OMS.Sistemas.Interface.Desktop"
+                           Titulo="Lista de Ativos"
+                           RegistrarEmToolbar="true"
+						               RegistrarEmMenu="true"
+                           ImagemArquivo="K:\Projetos\Icones\Ico_xp\16\Document.ico">
+                <Parametros TipoObjeto="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControleParametro, Gradual.OMS.Sistemas.Interface.Desktop">
+                  <ComandoIniciarControleParametro>
+                    <ControleInfo TipoInstanciaString="Gradual.OMS.Host.Windows.Teste.ControleListaAtivos, Gradual.OMS.Host.Windows.Teste"
+                                  Titulo="Lista de Ativos" />
+                  </ComandoIniciarControleParametro>
+                </Parametros>
+              </ComandoInfo>
+              <ComandoInfo TipoInstanciaString="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControle, Gradual.OMS.Sistemas.Interface.Desktop"
+                           Titulo="Histórico de Operações"
+                           RegistrarEmToolbar="true"
+						               RegistrarEmMenu="true"
+                           ImagemArquivo="K:\Projetos\Icones\Ico_xp\16\Processing.ico">
+                <Parametros TipoObjeto="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControleParametro, Gradual.OMS.Sistemas.Interface.Desktop">
+                  <ComandoIniciarControleParametro>
+                    <ControleInfo TipoInstanciaString="Gradual.OMS.Sistemas.Interface.Desktop.Controles.Ordens.OperacaoHistorico, Gradual.OMS.Sistemas.Interface.Desktop.Controles.Ordens"
+                                  Titulo="Histórico de Operações" />
+                  </ComandoIniciarControleParametro>
+                </Parametros>
+              </ComandoInfo>
+              <ComandoInfo TipoInstanciaString="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControle, Gradual.OMS.Sistemas.Interface.Desktop"
+                           Titulo="Boleto"
+                           RegistrarEmToolbar="true"
+						               RegistrarEmMenu="true"
+                           ImagemArquivo="K:\Projetos\Icones\Ico_xp\16\Money_4.ico">
+                <Parametros TipoObjeto="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControleParametro, Gradual.OMS.Sistemas.Interface.Desktop">
+                  <ComandoIniciarControleParametro>
+                    <ControleInfo TipoInstanciaString="Gradual.OMS.Sistemas.Interface.Desktop.Controles.Ordens.OperacaoBoleto, Gradual.OMS.Sistemas.Interface.Desktop.Controles.Ordens"
+                                  Titulo="Boleto" />
+                  </ComandoIniciarControleParametro>
+                </Parametros>
+              </ComandoInfo>
+              <ComandoInfo TipoInstanciaString="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControle, Gradual.OMS.Sistemas.Interface.Desktop"
+                           Titulo="Cadastro de Usuários"
+                           RegistrarEmToolbar="true"
+						               RegistrarEmMenu="true"
+                           ImagemArquivo="K:\Projetos\Icones\Ico_xp\16\Money_4.ico">
+                <Parametros TipoObjeto="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControleParametro, Gradual.OMS.Sistemas.Interface.Desktop">
+                  <ComandoIniciarControleParametro>
+                    <ControleInfo TipoInstanciaString="Gradual.OMS.Sistemas.Interface.Desktop.Controles.Seguranca.CadastroUsuarios, Gradual.OMS.Sistemas.Interface.Desktop.Controles.Seguranca"
+                                  Titulo="Cadastro de Usuários" />
+                  </ComandoIniciarControleParametro>
+                </Parametros>
+              </ComandoInfo>
+              <ComandoInfo TipoInstanciaString="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControle, Gradual.OMS.Sistemas.Interface.Desktop"
+                           Titulo="Cadastro de Grupos de Usuários"
+                           RegistrarEmToolbar="true"
+						               RegistrarEmMenu="true"
+                           ImagemArquivo="K:\Projetos\Icones\Ico_xp\16\Money_4.ico">
+                <Parametros TipoObjeto="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControleParametro, Gradual.OMS.Sistemas.Interface.Desktop">
+                  <ComandoIniciarControleParametro>
+                    <ControleInfo TipoInstanciaString="Gradual.OMS.Sistemas.Interface.Desktop.Controles.Seguranca.CadastroUsuarioGrupos, Gradual.OMS.Sistemas.Interface.Desktop.Controles.Seguranca"
+                                  Titulo="Cadastro de Grupos de Usuários" />
+                  </ComandoIniciarControleParametro>
+                </Parametros>
+              </ComandoInfo>
+              <ComandoInfo TipoInstanciaString="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControle, Gradual.OMS.Sistemas.Interface.Desktop"
+                           Titulo="Cadastro de Perfis"
+                           RegistrarEmToolbar="true"
+						               RegistrarEmMenu="true"
+                           ImagemArquivo="K:\Projetos\Icones\Ico_xp\16\Money_4.ico">
+                <Parametros TipoObjeto="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControleParametro, Gradual.OMS.Sistemas.Interface.Desktop">
+                  <ComandoIniciarControleParametro>
+                    <ControleInfo TipoInstanciaString="Gradual.OMS.Sistemas.Interface.Desktop.Controles.Seguranca.CadastroPerfis, Gradual.OMS.Sistemas.Interface.Desktop.Controles.Seguranca"
+                                  Titulo="Cadastro de Perfis" />
+                  </ComandoIniciarControleParametro>
+                </Parametros>
+              </ComandoInfo>
+              <ComandoInfo TipoInstanciaString="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControle, Gradual.OMS.Sistemas.Interface.Desktop"
+                           Titulo="Cadastro de Objetos"
+                           RegistrarEmToolbar="true"
+						               RegistrarEmMenu="true"
+                           ImagemArquivo="K:\Projetos\Icones\Ico_xp\16\Money_4.ico">
+                <Parametros TipoObjeto="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControleParametro, Gradual.OMS.Sistemas.Interface.Desktop">
+                  <ComandoIniciarControleParametro>
+                    <ControleInfo TipoInstanciaString="Gradual.OMS.Sistemas.Interface.Desktop.Controles.Persistencia.CadastroPersistencia, Gradual.OMS.Sistemas.Interface.Desktop.Controles.Persistencia"
+                                  Titulo="Cadastro de Objetos" />
+                  </ComandoIniciarControleParametro>
+                </Parametros>
+              </ComandoInfo>
+              <ComandoInfo TipoInstanciaString="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControle, Gradual.OMS.Sistemas.Interface.Desktop"
+                           Titulo="Manutenção de Configurações"
+                           RegistrarEmToolbar="true"
+						               RegistrarEmMenu="true"
+                           ImagemArquivo="K:\Projetos\Icones\Ico_xp\16\Money_4.ico">
+                <Parametros TipoObjeto="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControleParametro, Gradual.OMS.Sistemas.Interface.Desktop">
+                  <ComandoIniciarControleParametro>
+                    <ControleInfo TipoInstanciaString="Gradual.OMS.Sistemas.Interface.Desktop.Controles.Comum.ManutencaoConfiguracoes, Gradual.OMS.Sistemas.Interface.Desktop.Controles.Comum"
+                                  Titulo="Manutenção de Configurações" />
+                  </ComandoIniciarControleParametro>
+                </Parametros>
+              </ComandoInfo>
+              <ComandoInfo TipoInstanciaString="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControle, Gradual.OMS.Sistemas.Interface.Desktop"
+                           Titulo="Cadastro de Regras de Risco"
+                           RegistrarEmToolbar="true"
+						               RegistrarEmMenu="true"
+                           ImagemArquivo="K:\Projetos\Icones\Ico_xp\16\Money_4.ico">
+                <Parametros TipoObjeto="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControleParametro, Gradual.OMS.Sistemas.Interface.Desktop">
+                  <ComandoIniciarControleParametro>
+                    <ControleInfo TipoInstanciaString="Gradual.OMS.Sistemas.Interface.Desktop.Controles.Risco.CadastroRegrasRisco, Gradual.OMS.Sistemas.Interface.Desktop.Controles.Risco"
+                                  Titulo="Cadastro de Regras de Risco" />
+                  </ComandoIniciarControleParametro>
+                </Parametros>
+              </ComandoInfo>
+              <ComandoInfo TipoInstanciaString="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControle, Gradual.OMS.Sistemas.Interface.Desktop"
+                           Titulo="Cadastro de Custódias"
+                           RegistrarEmToolbar="true"
+						               RegistrarEmMenu="true"
+                           ImagemArquivo="K:\Projetos\Icones\Ico_xp\16\Money_4.ico">
+                <Parametros TipoObjeto="Gradual.OMS.Sistemas.Interface.Desktop.Comandos.ComandoIniciarControleParametro, Gradual.OMS.Sistemas.Interface.Desktop">
+                  <ComandoIniciarControleParametro>
+                    <ControleInfo TipoInstanciaString="Gradual.OMS.Sistemas.Interface.Desktop.Controles.Custodia.CadastroCustodias, Gradual.OMS.Sistemas.Interface.Desktop.Controles.Custodia"
+                                  Titulo="Cadastro de Custódias" />
+                  </ComandoIniciarControleParametro>
+                </Parametros>
+              </ComandoInfo>
+            </Comandos>
+          </JanelaInicializacaoInfo>
+        </InicializacaoJanelas>
+      </SkinInfo>
+    </Skins>
+  </Gradual.OMS.Sistemas.Interface.Desktop.ServicoInterfaceDesktopConfig>
+
+</configuration>

@@ -1,0 +1,10 @@
+﻿12/04/2010
+
+- Precisa tratar a mensagem de retorno de ordem: SinalizarExecucaoOrdem 
+	. Achar a mensagem original para criar o grupo
+
+- A regra precisa tratar o evento de execução da regra. Isso quer dizer que, a regra pode estar sendo executada por motivos diferentes. 
+	Por exemplo: a regra de tratamento de limite bmf pode estar sendo executada tanto para a mensagem ExecutarOrdemRequest, que significa
+	o momento de validação do limite, quanto para a mensagem SinalizarExecucaoOrdemRequest, que pode estar indicando um cancelamento,
+	execução completa, execução parcial, e outros.
+	

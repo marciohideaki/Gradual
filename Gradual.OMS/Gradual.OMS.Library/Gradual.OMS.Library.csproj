@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A5E45264-237E-471B-9260-88552A1EF7F3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.Library</RootNamespace>
+    <AssemblyName>Gradual.OMS.Library</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\Docs\VsDocs\Gradual.OMS.Library.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>..\..\Docs\VsDocs\Gradual.OMS.Library.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arvore.cs" />
+    <Compile Include="ArvoreComparadorEnum.cs" />
+    <Compile Include="ArvoreNo.cs" />
+    <Compile Include="ArvoreNoInicializarEventArgs.cs" />
+    <Compile Include="ArvoreNuloTipoEnum.cs" />
+    <Compile Include="ColecaoTipoInstancia.cs" />
+    <Compile Include="ConfigurationHandler.cs" />
+    <Compile Include="Db\IDbLib.cs" />
+    <Compile Include="Db\SqlDbLib.cs" />
+    <Compile Include="RelacaoValorValorHelper.cs" />
+    <Compile Include="RelacaoValorValorInfo.cs" />
+    <Compile Include="GerenciadorConfig.cs" />
+    <Compile Include="ICodigoEntidade.cs" />
+    <Compile Include="LocalizadorGrupoTipoInfo.cs" />
+    <Compile Include="LocalizadorTipoInfo.cs" />
+    <Compile Include="LocalizadorTiposConfig.cs" />
+    <Compile Include="LocalizadorTiposHelper.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="LogConfig.cs" />
+    <Compile Include="LogOrigemAttribute.cs" />
+    <Compile Include="LogTipoEnum.cs" />
+    <Compile Include="ObjetoSerializado.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResolutorTipos.cs" />
+    <Compile Include="ResolutorTiposConfig.cs" />
+    <Compile Include="Serializador.cs" />
+    <Compile Include="Servicos\AtivadorConfig.cs" />
+    <Compile Include="Servicos\CallbackEvento.cs" />
+    <Compile Include="Servicos\EventoEventArgs.cs" />
+    <Compile Include="Servicos\EventoInfo.cs" />
+    <Compile Include="Servicos\EventoInfoSerializacaoTipoEnum.cs" />
+    <Compile Include="Servicos\ICallbackEvento.cs" />
+    <Compile Include="Servicos\IServicoComCallback.cs" />
+    <Compile Include="Servicos\IServicoControlavel.cs" />
+    <Compile Include="Servicos\IServicoID.cs" />
+    <Compile Include="Servicos\IServicoLocalizador.cs" />
+    <Compile Include="Servicos\IServicoStarter.cs" />
+    <Compile Include="Servicos\LocalizadorClienteConfig.cs" />
+    <Compile Include="Servicos\ServicoAtivacaoTipo.cs" />
+    <Compile Include="Servicos\Ativador.cs" />
+    <Compile Include="Servicos\LocalizadorCliente.cs" />
+    <Compile Include="Servicos\Servico.cs" />
+    <Compile Include="Servicos\ServicoEndPointInfo.cs" />
+    <Compile Include="Servicos\ServicoHost.cs" />
+    <Compile Include="Servicos\ServicoAtributo.cs" />
+    <Compile Include="Servicos\ServicoHostColecao.cs" />
+    <Compile Include="Servicos\ServicoHostConfig.cs" />
+    <Compile Include="Servicos\ServicoInfo.cs" />
+    <Compile Include="Servicos\ServicoLocalizador.cs" />
+    <Compile Include="Servicos\ServicoStatus.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>rem copy "$(TargetPath)" "$(SolutionDir)..\..\..\bin"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

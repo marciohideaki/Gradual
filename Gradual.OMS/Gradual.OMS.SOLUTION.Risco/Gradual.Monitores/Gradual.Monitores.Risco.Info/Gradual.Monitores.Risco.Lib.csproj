@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{95208023-6460-4D96-B02F-518443A526EE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.Monitores.Risco.Lib</RootNamespace>
+    <AssemblyName>Gradual.Monitores.Risco.Lib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.OMS.Email.Lib">
+      <HintPath>..\..\Gradual.OMS-II\Gradual.OMS.References\Gradual.OMS.Email.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Library">
+      <HintPath>..\..\Gradual.OMS-II\Gradual.OMS.References\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Mensageria\EnumCriticidadePLD.cs" />
+    <Compile Include="Mensageria\EnumProporcaoPrejuiso.cs" />
+    <Compile Include="Mensageria\EnumSemaforo.cs" />
+    <Compile Include="Mensageria\EnumStatusPLD.cs" />
+    <Compile Include="Mensageria\MonitorPLDRequest.cs" />
+    <Compile Include="Mensageria\MonitorPLDResponse.cs" />
+    <Compile Include="PLD.Repasse\LucroPrejuisoPLDInfo.cs" />
+    <Compile Include="PLD.Repasse\PLDOperacaoInfo.cs" />
+    <Compile Include="Risco.Monitor\BTCInfo.cs" />
+    <Compile Include="Risco.Monitor\ClienteFundoInfo.cs" />
+    <Compile Include="Risco.Monitor\ClienteInfo.cs" />
+    <Compile Include="Risco.Monitor\ClienteMutexInfo.cs" />
+    <Compile Include="Risco.Monitor\ClienteRiscoResumo.cs" />
+    <Compile Include="Risco.Monitor\ContaCorrenteInfo.cs" />
+    <Compile Include="Risco.Monitor\CustodiaAberturaInfo.cs" />
+    <Compile Include="Risco.Monitor\EnumProcessamento.cs" />
+    <Compile Include="Mensageria\EnumTipoMercado.cs" />
+    <Compile Include="Risco.Monitor\OperacoesInfo.cs" />
+    <Compile Include="Risco.Monitor\PosicaoBmfInfo.cs" />
+    <Compile Include="Risco.Monitor\PosicaoClienteIntradayInfo.cs" />
+    <Compile Include="Risco.Monitor\ClientPortifolio.cs" />
+    <Compile Include="Risco.Monitor\IServicoMonitorRisco.cs" />
+    <Compile Include="Risco.Monitor\LimitesInfo.cs" />
+    <Compile Include="Mensageria\MonitorLucroPrejuizoRequest.cs" />
+    <Compile Include="Mensageria\MonitorLucroPrejuizoResponse.cs" />
+    <Compile Include="Risco.Monitor\ExposicaoClienteInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Risco.Monitor\PosicaoTermoInfo.cs" />
+    <Compile Include="Risco.Monitor\TradesInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

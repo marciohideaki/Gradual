@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D5153BC3-EDD8-4B62-A6BD-746145AA21A4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.Sistemas.Interface.Desktop.Controles.Seguranca</RootNamespace>
+    <AssemblyName>Gradual.OMS.Sistemas.Interface.Desktop.Controles.Seguranca</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\Docs\VsDocs\Gradual.OMS.Sistemas.Interface.Controles.Seguranca.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v8.3, Version=8.3.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v8.3, Version=8.3.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v8.3, Version=8.3.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v8.3, Version=8.3.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v8.3, Version=8.3.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v8.3, Version=8.3.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v8.3, Version=8.3.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CadastroPerfis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CadastroPerfis.Designer.cs">
+      <DependentUpon>CadastroPerfis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroPerfisParametros.cs" />
+    <Compile Include="CadastroUsuarioGrupos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CadastroUsuarioGrupos.Designer.cs">
+      <DependentUpon>CadastroUsuarioGrupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroUsuarioGruposParametros.cs" />
+    <Compile Include="CadastroUsuarios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CadastroUsuarios.Designer.cs">
+      <DependentUpon>CadastroUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroUsuariosParametros.cs" />
+    <Compile Include="ControleSessoes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControleSessoes.Designer.cs">
+      <DependentUpon>ControleSessoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControleSessoesParametros.cs" />
+    <Compile Include="ControlesSegurancaConfig.cs" />
+    <Compile Include="FormAssociarPermissao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAssociarPermissao.Designer.cs">
+      <DependentUpon>FormAssociarPermissao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAssociarUsuarioRelacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAssociarUsuarioRelacao.Designer.cs">
+      <DependentUpon>FormAssociarUsuarioRelacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAssociarUsuarioRelacaoVisaoEnum.cs" />
+    <Compile Include="FormPerfilLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPerfilLista.Designer.cs">
+      <DependentUpon>FormPerfilLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsuarioGrupoLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsuarioGrupoLista.Designer.cs">
+      <DependentUpon>FormUsuarioGrupoLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsuarioLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsuarioLista.Designer.cs">
+      <DependentUpon>FormUsuarioLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilDetalhe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PerfilDetalhe.Designer.cs">
+      <DependentUpon>PerfilDetalhe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsuarioDetalhe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsuarioDetalhe.Designer.cs">
+      <DependentUpon>UsuarioDetalhe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioDetalheParametros.cs" />
+    <Compile Include="UsuarioGrupoDetalhe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsuarioGrupoDetalhe.Designer.cs">
+      <DependentUpon>UsuarioGrupoDetalhe.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Comum\Gradual.OMS.Contratos.Comum.csproj">
+      <Project>{AE2DB70E-A19F-4EA4-8AD6-5441AE70A474}</Project>
+      <Name>Gradual.OMS.Contratos.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Integracao.Sinacor.Seguranca\Gradual.OMS.Contratos.Integracao.Sinacor.OMS.csproj">
+      <Project>{6CAF1B5A-A95A-436E-A4AF-21D64CAA91E1}</Project>
+      <Name>Gradual.OMS.Contratos.Integracao.Sinacor.OMS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Interface.Desktop.Controles.Comum\Gradual.OMS.Contratos.Interface.Desktop.Controles.Comum.csproj">
+      <Project>{B1B397AB-181D-4785-AD22-1D85A696B171}</Project>
+      <Name>Gradual.OMS.Contratos.Interface.Desktop.Controles.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Interface.Desktop.Controles.Seguranca\Gradual.OMS.Contratos.Interface.Desktop.Controles.Seguranca.csproj">
+      <Project>{A883E260-6392-4122-B84F-F226764C2A67}</Project>
+      <Name>Gradual.OMS.Contratos.Interface.Desktop.Controles.Seguranca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Interface.Desktop\Gradual.OMS.Contratos.Interface.Desktop.csproj">
+      <Project>{E9F22E09-7819-4454-8FED-8B643BAC7771}</Project>
+      <Name>Gradual.OMS.Contratos.Interface.Desktop</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Library\Gradual.OMS.Library.csproj">
+      <Project>{A5E45264-237E-471B-9260-88552A1EF7F3}</Project>
+      <Name>Gradual.OMS.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Interface.Desktop.Controles.Comum\Gradual.OMS.Sistemas.Interface.Desktop.Controles.Comum.csproj">
+      <Project>{96603A07-1B17-4E82-9A17-A4AA202AE6DE}</Project>
+      <Name>Gradual.OMS.Sistemas.Interface.Desktop.Controles.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Sistemas.Interface.Desktop\Gradual.OMS.Sistemas.Interface.Desktop.csproj">
+      <Project>{63B7C302-6158-4B7F-98D7-F6F4EB1EFDCB}</Project>
+      <Name>Gradual.OMS.Sistemas.Interface.Desktop</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CadastroPerfis.resx">
+      <DependentUpon>CadastroPerfis.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroUsuarioGrupos.resx">
+      <DependentUpon>CadastroUsuarioGrupos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroUsuarios.resx">
+      <DependentUpon>CadastroUsuarios.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControleSessoes.resx">
+      <DependentUpon>ControleSessoes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAssociarPermissao.resx">
+      <DependentUpon>FormAssociarPermissao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAssociarUsuarioRelacao.resx">
+      <DependentUpon>FormAssociarUsuarioRelacao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPerfilLista.resx">
+      <DependentUpon>FormPerfilLista.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsuarioGrupoLista.resx">
+      <DependentUpon>FormUsuarioGrupoLista.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsuarioLista.resx">
+      <DependentUpon>FormUsuarioLista.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfilDetalhe.resx">
+      <DependentUpon>PerfilDetalhe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="UsuarioDetalhe.resx">
+      <DependentUpon>UsuarioDetalhe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuarioGrupoDetalhe.resx">
+      <DependentUpon>UsuarioGrupoDetalhe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

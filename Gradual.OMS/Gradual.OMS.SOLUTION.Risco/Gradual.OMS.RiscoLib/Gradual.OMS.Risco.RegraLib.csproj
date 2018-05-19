@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76125CF7-D4CB-4299-BE7C-C4C69FAF854B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.Risco.RegraLib</RootNamespace>
+    <AssemblyName>Gradual.OMS.Risco.RegraLib</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.OMS.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\New\Core\Gradual.OMS.Persistencia\bin\Debug\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Persistencia">
+      <HintPath>..\..\..\New\Core\Gradual.OMS.Persistencia\bin\Debug\Gradual.OMS.Persistencia.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dados\BolsaInfo.cs" />
+    <Compile Include="Dados\GrupoInfo.cs" />
+    <Compile Include="Dados\GrupoItemInfo.cs" />
+    <Compile Include="Dados\ParametroRiscoClienteInfo.cs" />
+    <Compile Include="Dados\ParametroRiscoClienteValorInfo.cs" />
+    <Compile Include="Dados\ParametroRiscoInfo.cs" />
+    <Compile Include="Dados\PermissaoRiscoAssociadaInfo.cs" />
+    <Compile Include="Dados\PermissaoRiscoInfo.cs" />
+    <Compile Include="IServicoRegrasRisco.cs" />
+    <Compile Include="Mensagens\ListarGruposRequest.cs" />
+    <Compile Include="Mensagens\ListarGruposResponse.cs" />
+    <Compile Include="Mensagens\ListarParametrosRiscoClienteRequest.cs" />
+    <Compile Include="Mensagens\ListarParametrosRiscoClienteResponse.cs" />
+    <Compile Include="Mensagens\ListarParametrosRiscoRequest.cs" />
+    <Compile Include="Mensagens\ListarParametrosRiscoResponse.cs" />
+    <Compile Include="Mensagens\ListarPermissoesRiscoRequest.cs" />
+    <Compile Include="Mensagens\ListarPermissoesRiscoResponse.cs" />
+    <Compile Include="Mensagens\ProcessarOperacaoRequest.cs" />
+    <Compile Include="Mensagens\ProcessarOperacaoResponse.cs" />
+    <Compile Include="Mensagens\ReceberGrupoRequest.cs" />
+    <Compile Include="Mensagens\ReceberGrupoResponse.cs" />
+    <Compile Include="Mensagens\ReceberParametroRiscoClienteRequest.cs" />
+    <Compile Include="Mensagens\ReceberParametroRiscoClienteResponse.cs" />
+    <Compile Include="Mensagens\ReceberParametroRiscoRequest.cs" />
+    <Compile Include="Mensagens\ReceberParametroRiscoResponse.cs" />
+    <Compile Include="Mensagens\ReceberPermissaoRiscoRequest.cs" />
+    <Compile Include="Mensagens\ReceberPermissaoRiscoResponse.cs" />
+    <Compile Include="Mensagens\RemoverGrupoItemRequest.cs" />
+    <Compile Include="Mensagens\RemoverGrupoItemResponse.cs" />
+    <Compile Include="Mensagens\SalvarGrupoItemRequest.cs" />
+    <Compile Include="Mensagens\SalvarGrupoItemResponse.cs" />
+    <Compile Include="Mensagens\SalvarGrupoRequest.cs" />
+    <Compile Include="Mensagens\SalvarGrupoResponse.cs" />
+    <Compile Include="Mensagens\SalvarParametroRiscoClienteRequest.cs" />
+    <Compile Include="Mensagens\SalvarParametroRiscoClienteResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

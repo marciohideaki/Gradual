@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{58E12A3B-F52B-42E5-B3F4-53F5BBE8AC3B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Orbite.RV.Contratos</RootNamespace>
+    <AssemblyName>Orbite.RV.Contratos</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Integracao\Bacen\DsBCB1.Designer.cs">
+      <DependentUpon>DsBCB.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Integracao\Bacen\IServicoIntegracaoBacen.cs" />
+    <Compile Include="Integracao\Bacen\IServicoIntegracaoBacenPersistencia.cs" />
+    <Compile Include="Integracao\Bacen\ListaSeriesProgress.cs" />
+    <Compile Include="Integracao\BVMF\Dados\ArquivoBVMFInfo.cs" />
+    <Compile Include="Integracao\BVMF\IConversorLayoutBase.cs" />
+    <Compile Include="Integracao\BVMF\IServicoIntegracaoBVMF.cs" />
+    <Compile Include="Integracao\BVMF\IServicoIntegracaoBVMFArquivos.cs" />
+    <Compile Include="Integracao\BVMF\IServicoIntegracaoBVMFPersistencia.cs" />
+    <Compile Include="Integracao\BVMF\IServicoIntegracaoBVMFPersistenciaLayouts.cs" />
+    <Compile Include="Integracao\BVMF\Dados\LayoutBVMFInfo.cs" />
+    <Compile Include="Integracao\BVMF\Dados\LayoutBVMFCampoInfo.cs" />
+    <Compile Include="Integracao\BVMF\Dados\LayoutBVMFTabelaInfo.cs" />
+    <Compile Include="MarketData\CanalMarketDataBase.cs" />
+    <Compile Include="MarketData\Dados\AtivoAcaoInfo.cs" />
+    <Compile Include="MarketData\Dados\AtivoInfo.cs" />
+    <Compile Include="MarketData\Dados\AtivoStatusEnum.cs" />
+    <Compile Include="MarketData\Dados\CanalMarketDataInfo.cs" />
+    <Compile Include="MarketData\Dados\EventoFinanceiroInfo.cs" />
+    <Compile Include="MarketData\Dados\EventoNaoFinanceiroInfo.cs" />
+    <Compile Include="MarketData\Dados\InstrumentoInfo.cs" />
+    <Compile Include="MarketData\Dados\InstrumentoTipoEnum.cs" />
+    <Compile Include="MarketData\Dados\SerieElementosInfo.cs" />
+    <Compile Include="MarketData\Dados\SerieInfo.cs" />
+    <Compile Include="MarketData\Dados\SerieTipoEnum.cs" />
+    <Compile Include="MarketData\Dados\TickInfo.cs" />
+    <Compile Include="MarketData\IServicoMarketData.cs" />
+    <Compile Include="MarketData\Mensagens\AssinarBookRequest.cs" />
+    <Compile Include="MarketData\Mensagens\AssinarBookResponse.cs" />
+    <Compile Include="MarketData\Mensagens\AssinarSerieRequest.cs" />
+    <Compile Include="MarketData\Mensagens\AssinarSerieResponse.cs" />
+    <Compile Include="MarketData\Mensagens\ReceberListaInstrumentosRequest.cs" />
+    <Compile Include="MarketData\Mensagens\ReceberListaInstrumentosResponse.cs" />
+    <Compile Include="MarketData\Mensagens\ReceberListaInstrumentoTipoListaEnum.cs" />
+    <Compile Include="MarketData\Mensagens\ReceberListaSeriesRequest.cs" />
+    <Compile Include="MarketData\Mensagens\ReceberListaSeriesResponse.cs" />
+    <Compile Include="MarketData\Mensagens\ReceberSerieHistoricoRequest.cs" />
+    <Compile Include="MarketData\Mensagens\ReceberSerieHistoricoResponse.cs" />
+    <Compile Include="MarketData\SinalizarBookItemRecebidoEventArgs.cs" />
+    <Compile Include="MarketData\SinalizarSerieItemRecebidoEventArgs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Orbite.Comum\Orbite.Comum.csproj">
+      <Project>{C322F862-09CB-410A-946B-AF38B8A1E533}</Project>
+      <Name>Orbite.Comum</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Integracao\Bacen\DsBCB.xsc">
+      <DependentUpon>DsBCB.xsd</DependentUpon>
+    </None>
+    <None Include="Integracao\Bacen\DsBCB.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsBCB1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Integracao\Bacen\DsBCB.xss">
+      <DependentUpon>DsBCB.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

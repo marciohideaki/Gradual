@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Contratos.CadastroPapeis", "..\..\Gradual.OMS.Contratos.CadastroPapeis\Gradual.OMS.Contratos.CadastroPapeis\Gradual.OMS.Contratos.CadastroPapeis.csproj", "{4C99B095-929C-4982-80A6-CA32F2556D1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Persistencia.CadastroPapeis", "..\..\Gradual.OMS.Persistencia.CadastroPapeis\Gradual.OMS.Persistencia.CadastroPapeis.csproj", "{5662F537-8767-4D0B-80D5-B6C5ED1CF70E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Sistemas.CadastroPapeis", "..\..\Gradual.OMS.Sistemas.CadastroPapeis\Gradual.OMS.Sistemas.CadastroPapeis.csproj", "{DADFB722-51A0-4BEA-98A3-3EB73A41608E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Teste.CadastroPapeis", "..\..\Gradual.OMS.Teste.CadastroPapeis\Gradual.OMS.Teste.CadastroPapeis.csproj", "{EA679DCB-68F3-41E5-854B-28D63033FDC6}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\..\\Gradual.OMS.Contratos.CadastroPapeis\\Gradual.OMS.Contratos.CadastroPapeis\\Gradual.OMS.Contratos.CadastroPapeis.csproj
+		SccProjectName1 = ../../Gradual.OMS.Contratos.CadastroPapeis/Gradual.OMS.Contratos.CadastroPapeis
+		SccLocalPath1 = ..\\..\\Gradual.OMS.Contratos.CadastroPapeis\\Gradual.OMS.Contratos.CadastroPapeis
+		SccProjectUniqueName2 = ..\\..\\Gradual.OMS.Persistencia.CadastroPapeis\\Gradual.OMS.Persistencia.CadastroPapeis.csproj
+		SccProjectName2 = ../../Gradual.OMS.Persistencia.CadastroPapeis
+		SccLocalPath2 = ..\\..\\Gradual.OMS.Persistencia.CadastroPapeis
+		SccProjectUniqueName3 = ..\\..\\Gradual.OMS.Sistemas.CadastroPapeis\\Gradual.OMS.Sistemas.CadastroPapeis.csproj
+		SccProjectName3 = ../../Gradual.OMS.Sistemas.CadastroPapeis
+		SccLocalPath3 = ..\\..\\Gradual.OMS.Sistemas.CadastroPapeis
+		SccProjectUniqueName4 = ..\\..\\Gradual.OMS.Teste.CadastroPapeis\\Gradual.OMS.Teste.CadastroPapeis.csproj
+		SccProjectName4 = ../../Gradual.OMS.Teste.CadastroPapeis
+		SccLocalPath4 = ..\\..\\Gradual.OMS.Teste.CadastroPapeis
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Gradual.OMS.CadastroPapeis.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C99B095-929C-4982-80A6-CA32F2556D1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C99B095-929C-4982-80A6-CA32F2556D1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C99B095-929C-4982-80A6-CA32F2556D1C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4C99B095-929C-4982-80A6-CA32F2556D1C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4C99B095-929C-4982-80A6-CA32F2556D1C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4C99B095-929C-4982-80A6-CA32F2556D1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C99B095-929C-4982-80A6-CA32F2556D1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C99B095-929C-4982-80A6-CA32F2556D1C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4C99B095-929C-4982-80A6-CA32F2556D1C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4C99B095-929C-4982-80A6-CA32F2556D1C}.Release|x86.ActiveCfg = Release|Any CPU
+		{5662F537-8767-4D0B-80D5-B6C5ED1CF70E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5662F537-8767-4D0B-80D5-B6C5ED1CF70E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5662F537-8767-4D0B-80D5-B6C5ED1CF70E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5662F537-8767-4D0B-80D5-B6C5ED1CF70E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5662F537-8767-4D0B-80D5-B6C5ED1CF70E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5662F537-8767-4D0B-80D5-B6C5ED1CF70E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5662F537-8767-4D0B-80D5-B6C5ED1CF70E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5662F537-8767-4D0B-80D5-B6C5ED1CF70E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5662F537-8767-4D0B-80D5-B6C5ED1CF70E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5662F537-8767-4D0B-80D5-B6C5ED1CF70E}.Release|x86.ActiveCfg = Release|Any CPU
+		{DADFB722-51A0-4BEA-98A3-3EB73A41608E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DADFB722-51A0-4BEA-98A3-3EB73A41608E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DADFB722-51A0-4BEA-98A3-3EB73A41608E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DADFB722-51A0-4BEA-98A3-3EB73A41608E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DADFB722-51A0-4BEA-98A3-3EB73A41608E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DADFB722-51A0-4BEA-98A3-3EB73A41608E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DADFB722-51A0-4BEA-98A3-3EB73A41608E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DADFB722-51A0-4BEA-98A3-3EB73A41608E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DADFB722-51A0-4BEA-98A3-3EB73A41608E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DADFB722-51A0-4BEA-98A3-3EB73A41608E}.Release|x86.ActiveCfg = Release|Any CPU
+		{EA679DCB-68F3-41E5-854B-28D63033FDC6}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{EA679DCB-68F3-41E5-854B-28D63033FDC6}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{EA679DCB-68F3-41E5-854B-28D63033FDC6}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{EA679DCB-68F3-41E5-854B-28D63033FDC6}.Debug|x86.ActiveCfg = Debug|x86
+		{EA679DCB-68F3-41E5-854B-28D63033FDC6}.Debug|x86.Build.0 = Debug|x86
+		{EA679DCB-68F3-41E5-854B-28D63033FDC6}.Release|Any CPU.ActiveCfg = Release|x86
+		{EA679DCB-68F3-41E5-854B-28D63033FDC6}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{EA679DCB-68F3-41E5-854B-28D63033FDC6}.Release|Mixed Platforms.Build.0 = Release|x86
+		{EA679DCB-68F3-41E5-854B-28D63033FDC6}.Release|x86.ActiveCfg = Release|x86
+		{EA679DCB-68F3-41E5-854B-28D63033FDC6}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

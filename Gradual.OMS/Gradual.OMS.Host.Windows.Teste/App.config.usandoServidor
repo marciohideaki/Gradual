@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <configSections>
+    <section
+			name="Gradual.OMS.Library.Servicos.LocalizadorClienteConfig"
+			type="Gradual.OMS.Library.ConfigurationHandler, Gradual.OMS.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+			allowLocation="true"
+			allowDefinition="Everywhere"/>
+    <section
+			  name="Gradual.OMS.Library.LocalizadorTiposConfig"
+			  type="Gradual.OMS.Library.ConfigurationHandler, Gradual.OMS.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+			  allowLocation="true"
+			  allowDefinition="Everywhere"/>
+  </configSections>
+
+  <!-- CLIENTE DO LOCALIZADOR -->
+  <Gradual.OMS.Library.Servicos.LocalizadorClienteConfig>
+    <AtivacaoTipo>WCF</AtivacaoTipo>
+    <EndPoint>
+      <Endereco>net.tcp://192.168.254.11:7080/gradual/servicoLocalizador</Endereco>
+      <NomeBindingType>System.ServiceModel.NetTcpBinding</NomeBindingType>
+    </EndPoint>
+  </Gradual.OMS.Library.Servicos.LocalizadorClienteConfig>
+
+  <!-- LOCALIZADOR DE TIPOS -->
+  <Gradual.OMS.Library.LocalizadorTiposConfig>
+    <Grupos>
+      <LocalizadorGrupoTipoInfo TipoChamador="Gradual.OMS.Contratos.Comum.IServicoMensageria, Gradual.OMS.Contratos.Comum">
+        <Tipos>
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.ContaCorrente.Dados, Gradual.OMS.Contratos.ContaCorrente" />
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.ContaCorrente.Mensagens, Gradual.OMS.Contratos.ContaCorrente" />
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Custodia.Dados, Gradual.OMS.Contratos.Custodia" />
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Custodia.Mensagens, Gradual.OMS.Contratos.Custodia" />
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Ordens.Dados, Gradual.OMS.Contratos.Ordens" />
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Ordens.Mensagens, Gradual.OMS.Contratos.Ordens" />
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Comum.Dados, Gradual.OMS.Contratos.Comum" />
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Comum.Mensagens, Gradual.OMS.Contratos.Comum" />
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Comum.Permissoes, Gradual.OMS.Contratos.Comum" />
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Integracao.Sinacor.OMS.Dados, Gradual.OMS.Contratos.Integracao.Sinacor.OMS" />
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Integracao.Sinacor.OMS.Mensagens, Gradual.OMS.Contratos.Integracao.Sinacor.OMS" />
+        </Tipos>
+      </LocalizadorGrupoTipoInfo>
+      <LocalizadorGrupoTipoInfo TipoChamador="Gradual.OMS.Contratos.Ordens.IServicoOrdensServidor, Gradual.OMS.Contratos.Ordens">
+        <Tipos>
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Ordens.Dados, Gradual.OMS.Contratos.Ordens" />
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Ordens.Mensagens, Gradual.OMS.Contratos.Ordens" />
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Comum.Dados, Gradual.OMS.Contratos.Comum" />
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Comum.Mensagens, Gradual.OMS.Contratos.Comum" />
+        </Tipos>
+      </LocalizadorGrupoTipoInfo>
+      <LocalizadorGrupoTipoInfo TipoChamador="Gradual.OMS.Contratos.Comum.IServicoAutenticador, Gradual.OMS.Contratos.Comum">
+        <Tipos>
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Comum.Dados, Gradual.OMS.Contratos.Comum" />
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Comum.Mensagens, Gradual.OMS.Contratos.Comum" />
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Comum.Dados, Gradual.OMS.Contratos.Comum" />
+          <LocalizadorTipoInfo IncluirNamespace="Gradual.OMS.Contratos.Comum.Mensagens, Gradual.OMS.Contratos.Comum" />
+          <LocalizadorTipoInfo IncluirAssembly="Gradual.OMS.Contratos.Integracao.Sinacor.Seguranca" />
+          <LocalizadorTipoInfo IncluirAssembly="Gradual.OMS.Contratos.Comum.Permissoes" />
+        </Tipos>
+      </LocalizadorGrupoTipoInfo>
+    </Grupos>
+  </Gradual.OMS.Library.LocalizadorTiposConfig>
+
+</configuration>

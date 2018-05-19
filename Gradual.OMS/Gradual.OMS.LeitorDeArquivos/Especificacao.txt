@@ -1,0 +1,125 @@
+﻿
+Importador de arquivos genérico
+
+    Descrição
+
+        Ferramenta command-line para ler um arquivo texto e importar para um banco de dados SQL ou 
+        outro arquivo (exportar os inserts pra um .sql por exemplo)
+
+        É command line para ser flexível, utilizado independentemente ou pelo scheduler do windows.
+
+    Funções Principais:
+
+        CriarDefinicao <"caminho_do_arquivo.defimp">
+
+            Função que gera um arquivo .defimp de definição de importação, que tem a descrição de
+            como ele deve importar um arquivo de texto qualquer. O usuário deve pegar esse arquivo
+            em branco e preencher com as dados do formato do arquivo que será importado
+
+            <caminho_do_arquivo.defimp>    (opcional, padrão: \caminho\do\executavel\Definicao_AAAAMMDDHHMM.defimp)
+                Parâmetro opcional com o caminho do arquivo .defimp que será gerado
+
+        Importar [caminho_do_arquivo.defimp] [caminho_do_arquivo_para_importar.xxx]
+
+            Função que importa o arquivo .xxx utilizando a definição no arquivo .defimp
+            Gera um arquivo de log na mesma pasta do executável.
+            Se [caminho_do_arquivo_para_importar] terminar com o caracter "\", importa todos os arquivos da pasta que não tenham final ".importado"
+
+    Formato do arquivo .defimp:
+
+        Os parâmetros são passados com [nome do parâmetro:] (dois-pontos separam o parâmetro do valor), não são
+        case-sensitive e toleram espaços entre o nome do campo e o valor. O valor é considerado até o final da linha.
+
+        Linhas de comentário devem começar com //
+
+        Linhas em branco são ignoradas.
+
+        Na parte de descrição de campos, os valores são identificados na coluna pelo alinhamento à esquerda, com | à frente
+        para facilitar a visualização; para deixar campos em branco, bastam espaços. Tabulações são substituídas por 4 espaços. 
+        A ordem das colunas é irrelevante, posto que os valores estejam alinhados.
+
+        Parâmetros:
+            Conexão:            <valor>    // Connection String com o banco de dados ("Conexão" ou "Arquivo" devem estar definidos, ou ambos)
+            Arquivo:            <valor>    // Arquivo para exportar os Inserts
+            Tabela de Destino:  <valor>    // Nome da tabela que será montado o Insert     ("Tabela" ou "Proc" devem estar definidos, mas não ambos)
+            Proc de Destinno:   <valor>    // Nome da tabela que será executada pro Insert
+
+            Proc Anterior:      <valor>    // Nome de uma procedure pra rodar antes da importação começar
+            Proc Posterior:     <valor>    // Nome de uma procedure pra rodar depois da importação ser realizada (com sucesso ou com erro)
+            Proc Caso Erro:     <valor>    // Nome de uma procedure pra rodar após a "Proc Posterior", somente se a importação for realizada com erro(s)
+            Proc Caso Sucesso:  <valor>    // Nome de uma procedure pra rodar após a "Proc Posterior", somente se a importação for realizada com sucesso
+
+            Campo de Data de Importação:    <valor>  // Nome do campo ou do parâmetro da proc onde será colocada a Data de Importação (opcional)
+            Campo de Linha do arquivo:      <valor>  // Nome do campo ou do parâmetro da proc onde será colocada a linha que está sendo importada (opcional)
+
+            Campos:                         // Lista de campos que são encontrados em cada linha do arquivo
+                |Nome do Campo              // Coluna que indica o nome do campo na tabela de destino ou do parâmetro da proc
+                |De                         // Índice dentro da string da linha de onde será feito o substring (começo do valor)
+                |Até                        // Índice dentro da string da linha de onde terminará o substring 
+                                               (se "Até" for definido, "Comprimento" não deve ser definido; o tamanho do substring será (Até - De)
+                |Comprimento                // Comprimento que será feito o substring para pegar o valor
+                |Formato de Origem          // Aplicado para campos de data, mostra como parsear a data na linha (ex.: AAAADDMM) => Será feito DateTime.ParseExact(<valor_aqui>)
+                |Formato de Destino         // Formatação opcional quando o destino é tipo texto, ele roda um <ValorDaLinha>.ToString(<valor_aqui>)
+                |Tipo de Destino            // Tipo final do campo de destino. Suporta: "texto" (string), "inteiro" (int), "decimal" (double), "data" (DateTime)
+                |Opções                     // Opções de importação do campo, separadas por vírgula:
+                                                   "branco=nulo"  => Passa DBNull quando o valor estiver em branco
+                                                   "branco=zero"  => Passa 0 (zero) quando o valor estiver em branco (somente para tipos numéricos)
+                                                   "trim"         => Faz um trim de espaços antes de mandar pro banco
+
+                
+
+    Exemplo de arquivo .defimp:
+
+        //Arquivo .defimp exemplo 1
+        Conexão: Data Source=192.168.254.14;Initial Catalog=OMS;User Id=oms;Password=lalalelelele;
+        Tabela de Destino: tblPapel
+        Campo de Data de Importação: dtImportacao
+        Campo de Linha do arquivo: sLinhaImportacao
+
+        Campos:
+            |Nome do Campo      |De        |Até     |Formato de Origem        |Formato de Destino    |Tipo de Destino    |Opções
+            | Dismex            | 157      | 159    |                         |                      | inteiro           | branco=nulo
+            | Preexe            | 226      | 242    |                         |                      | decimal           | branco=zero
+            | DatFch            | 280      | 287    | AAAAMMDD                |                      | data              | branco=nulo
+
+
+
+        //Arquivo .defimp exemplo 2
+        Conexão:          Data Source=192.168.254.14;Initial Catalog=OMS;User Id=oms;Password=lalalelelele;
+        Proc de Destino:  prc_Inserir_Papel
+
+        Campos:
+            |Nome do Campo      |De        |Comprimento |Formato de Origem        |Formato de Destino    |Tipo de Destino    |Opções
+            | @NomePapel        | 1        | 20         |                         |                      | inteiro           | branco=nulo
+            | @Data             | 21       | 8          |                         |                      | decimal           | branco=zero
+            | @DatFch           | 280      | 287        | AAAAMMDD                |                      | data              | branco=nulo
+
+            
+//Arquivo .defimp de template
+
+//
+//  Descomentar as linhas que for utilizar!
+//
+
+//Conexão:                  Data Source=111.222.333.44; Initial Catalog=BANCO_XXX;User Id=USER_YYY;Password=123456;
+        
+//Tabela de Destino:        tbAlgumaTabela
+//Proc de Destino:          pcAlgumaCoisa
+
+// (utilizar tabela OU proc, não ambos)
+
+//Campo de Data de Importação:  dtImportacao        (opcional)
+//Campo de Linha do arquivo:    sLinhaImportacao    (opcional)
+
+//Campos:
+//    |Nome do Campo      |De        |Até     |Formato de Origem        |Formato de Destino    |Tipo de Destino    |Opções
+//    | XXXXXX            | 1        | 11     |                         |                      |                   | 
+
+//Valores válidos:
+//  Nome do Campo:           Deve ter @ na frente se usar "Proc de Destino" nas opções acima
+//  De:                      Deve ser um número, não pode estar vazio
+//  Até (ou "Comprimento")   Se for "Até", o substring irá usar (Até - De) para "length". Se for "Comprimento", usa o valor direto
+//  Formato de Origem        Aceita qualquer string que caiba em DateTime.ParseExact(s), para quando o dado de origem for uma data
+//  Formato de Destino       Aceita qualquer string que caiba em <Tipo de Destino>.ToString(s), quando o destino for texto
+//  Tipo de Destino          Aceita somente os valores: "texto", "inteiro", "decimal" ou "data" (sem aspas)
+//  Opções                   Aceita 'branco=nulo', 'branco=zero', 'erro=nulo', 'trim','espacamento=XXXX' ou 'casasdeciamis=XXX'

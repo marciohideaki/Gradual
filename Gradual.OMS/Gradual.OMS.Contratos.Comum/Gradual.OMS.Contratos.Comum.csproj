@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AE2DB70E-A19F-4EA4-8AD6-5441AE70A474}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.Contratos.Comum</RootNamespace>
+    <AssemblyName>Gradual.OMS.Contratos.Comum</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\Docs\VsDocs\Gradual.OMS.Contratos.Comum.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dados\ComplementoAutenticacaoInfo.cs" />
+    <Compile Include="Dados\CondicaoInfo.cs" />
+    <Compile Include="Dados\CondicaoTipoEnum.cs" />
+    <Compile Include="Dados\ContextoValidacaoInfo.cs" />
+    <Compile Include="Dados\CriticaInfo.cs" />
+    <Compile Include="Dados\CriticaStatusEnum.cs" />
+    <Compile Include="Dados\CriticaValidacaoInfo.cs" />
+    <Compile Include="Dados\EntidadeInfo.cs" />
+    <Compile Include="Dados\EntidadeTipoSerializacaoEnum.cs" />
+    <Compile Include="Dados\GeradorRegraInfo.cs" />
+    <Compile Include="Dados\ItemSegurancaAtivacaoTipoEnum.cs" />
+    <Compile Include="Dados\ItemSegurancaInfo.cs" />
+    <Compile Include="Dados\ListaInfo.cs" />
+    <Compile Include="Dados\ListaItemInfo.cs" />
+    <Compile Include="Dados\PerfilInfo.cs" />
+    <Compile Include="Dados\PermissaoAssociadaInfo.cs" />
+    <Compile Include="Dados\PermissaoAssociadaStatusEnum.cs" />
+    <Compile Include="Dados\PermissaoInfo.cs" />
+    <Compile Include="Dados\PersistenciaInfo.cs" />
+    <Compile Include="Dados\RegraInfo.cs" />
+    <Compile Include="Dados\RegrasPorTipoInfo.cs" />
+    <Compile Include="Dados\SessaoInfo.cs" />
+    <Compile Include="Dados\SistemaClienteInfo.cs" />
+    <Compile Include="Dados\UsuarioGrupoInfo.cs" />
+    <Compile Include="Dados\UsuarioInfo.cs" />
+    <Compile Include="Dados\UsuarioRelacaoInfo.cs" />
+    <Compile Include="Dados\UsuarioRelacaoTipoEnum.cs" />
+    <Compile Include="Dados\UsuarioStatusEnum.cs" />
+    <Compile Include="Dados\EchoEventArgs.cs" />
+    <Compile Include="IGeradorRegra.cs" />
+    <Compile Include="IServicoAutenticador.cs" />
+    <Compile Include="IServicoEcho.cs" />
+    <Compile Include="IServicoMensageriaComCallback.cs" />
+    <Compile Include="IServicoMetadadoSeguranca.cs" />
+    <Compile Include="IServicoSeguranca.cs" />
+    <Compile Include="IServicoSegurancaPersistencia.cs" />
+    <Compile Include="IServicoValidacao.cs" />
+    <Compile Include="Mensagens\AlterarAssinaturaEletronicaRequest.cs" />
+    <Compile Include="Mensagens\AlterarAssinaturaEletronicaResponse.cs" />
+    <Compile Include="Mensagens\AlterarSenhaRequest.cs" />
+    <Compile Include="Mensagens\AlterarSenhaResponse.cs" />
+    <Compile Include="Mensagens\AssinarEventoRequest.cs" />
+    <Compile Include="Mensagens\AssinarEventoResponse.cs" />
+    <Compile Include="Mensagens\AssociarPerfilRequest.cs" />
+    <Compile Include="Mensagens\AssociarPerfilResponse.cs" />
+    <Compile Include="Mensagens\AssociarPermissaoRequest.cs" />
+    <Compile Include="Mensagens\AssociarPermissaoResponse.cs" />
+    <Compile Include="Mensagens\AssociarUsuarioGrupoRequest.cs" />
+    <Compile Include="Mensagens\AssociarUsuarioGrupoResponse.cs" />
+    <Compile Include="Mensagens\AutenticarUsuarioRequest.cs" />
+    <Compile Include="Mensagens\AutenticarUsuarioResponse.cs" />
+    <Compile Include="Mensagens\ConsultarSessoesRequest.cs" />
+    <Compile Include="Mensagens\ConsultarSessoesResponse.cs" />
+    <Compile Include="Mensagens\ConsultarSistemasClienteRequest.cs" />
+    <Compile Include="Mensagens\ConsultarSistemasClienteResponse.cs" />
+    <Compile Include="Mensagens\ExecutarEchoRequest.cs" />
+    <Compile Include="Mensagens\ExecutarEchoResponse.cs" />
+    <Compile Include="Mensagens\ExecutarEchoTipoFuncaoEnum.cs" />
+    <Compile Include="Mensagens\GerarMetadadoSegurancaRequest.cs" />
+    <Compile Include="Mensagens\GerarMetadadoSegurancaResponse.cs" />
+    <Compile Include="Mensagens\InicializarSegurancaRequest.cs" />
+    <Compile Include="Mensagens\InicializarSegurancaResponse.cs" />
+    <Compile Include="Mensagens\ListarPerfisRequest.cs" />
+    <Compile Include="Mensagens\ListarPerfisResponse.cs" />
+    <Compile Include="Mensagens\ListarPermissoesRequest.cs" />
+    <Compile Include="Mensagens\ListarPermissoesResponse.cs" />
+    <Compile Include="Mensagens\ListarUsuarioGruposRequest.cs" />
+    <Compile Include="Mensagens\ListarUsuarioGruposResponse.cs" />
+    <Compile Include="Mensagens\ListarUsuariosRequest.cs" />
+    <Compile Include="Mensagens\ListarUsuariosResponse.cs" />
+    <Compile Include="Mensagens\MensagemErroValidacaoResponse.cs" />
+    <Compile Include="Mensagens\ReceberPerfilRequest.cs" />
+    <Compile Include="Mensagens\ReceberPerfilResponse.cs" />
+    <Compile Include="Mensagens\ReceberSessaoRequest.cs" />
+    <Compile Include="Mensagens\ReceberSessaoResponse.cs" />
+    <Compile Include="Mensagens\ReceberSistemaClienteRequest.cs" />
+    <Compile Include="Mensagens\ReceberSistemaClienteResponse.cs" />
+    <Compile Include="Mensagens\ReceberUsuarioGrupoRequest.cs" />
+    <Compile Include="Mensagens\ReceberUsuarioGrupoResponse.cs" />
+    <Compile Include="Mensagens\ReceberUsuarioRequest.cs" />
+    <Compile Include="Mensagens\ReceberUsuarioResponse.cs" />
+    <Compile Include="Mensagens\RemoverPerfilRequest.cs" />
+    <Compile Include="Mensagens\RemoverPerfilResponse.cs" />
+    <Compile Include="Mensagens\RemoverSessaoRequest.cs" />
+    <Compile Include="Mensagens\RemoverSessaoResponse.cs" />
+    <Compile Include="Mensagens\RemoverSistemaClienteRequest.cs" />
+    <Compile Include="Mensagens\RemoverSistemaClienteResponse.cs" />
+    <Compile Include="Mensagens\RemoverUsuarioGrupoRequest.cs" />
+    <Compile Include="Mensagens\RemoverUsuarioGrupoResponse.cs" />
+    <Compile Include="Mensagens\RemoverUsuarioRequest.cs" />
+    <Compile Include="Mensagens\RemoverUsuarioResponse.cs" />
+    <Compile Include="Mensagens\SalvarPerfilRequest.cs" />
+    <Compile Include="Mensagens\SalvarPerfilResponse.cs" />
+    <Compile Include="Mensagens\SalvarPermissoesRequest.cs" />
+    <Compile Include="Mensagens\SalvarPermissoesResponse.cs" />
+    <Compile Include="Mensagens\SalvarSessaoRequest.cs" />
+    <Compile Include="Mensagens\SalvarSessaoResponse.cs" />
+    <Compile Include="Mensagens\SalvarSistemaClienteRequest.cs" />
+    <Compile Include="Mensagens\SalvarSistemaClienteResponse.cs" />
+    <Compile Include="Mensagens\SalvarUsuarioGrupoRequest.cs" />
+    <Compile Include="Mensagens\SalvarUsuarioGrupoResponse.cs" />
+    <Compile Include="Mensagens\SalvarUsuarioRequest.cs" />
+    <Compile Include="Mensagens\SalvarUsuarioResponse.cs" />
+    <Compile Include="Mensagens\ValidarAssinaturaEletronicaRequest.cs" />
+    <Compile Include="Mensagens\ValidarAssinaturaEletronicaResponse.cs" />
+    <Compile Include="Mensagens\ValidarItemSegurancaRequest.cs" />
+    <Compile Include="Mensagens\ValidarItemSegurancaResponse.cs" />
+    <Compile Include="Mensagens\ValidarMensagemRequest.cs" />
+    <Compile Include="Mensagens\ValidarMensagemResponse.cs" />
+    <Compile Include="Mensagens\VerificarPermissaoRequest.cs" />
+    <Compile Include="Mensagens\VerificarPermissaoResponse.cs" />
+    <Compile Include="ModulosOMS.cs" />
+    <Compile Include="IPersistencia.cs" />
+    <Compile Include="IServicoMetadadoComum.cs" />
+    <Compile Include="IServicoMensageria.cs" />
+    <Compile Include="IServicoPersistencia.cs" />
+    <Compile Include="IServicoPersistenciaMensagens.cs" />
+    <Compile Include="MensagemAttribute.cs" />
+    <Compile Include="MensagemRequestAttribute.cs" />
+    <Compile Include="Mensagens\AtualizarMetadadosRequest.cs" />
+    <Compile Include="Mensagens\AtualizarMetadadosResponse.cs" />
+    <Compile Include="Mensagens\ConsultarObjetosRequest.cs" />
+    <Compile Include="Mensagens\ConsultarObjetosResponse.cs" />
+    <Compile Include="Mensagens\GerarDbMetadadoRequest.cs" />
+    <Compile Include="Mensagens\GerarDbMetadadoResponse.cs" />
+    <Compile Include="Mensagens\ListarMensagensRequest.cs" />
+    <Compile Include="Mensagens\ListarMensagensResponse.cs" />
+    <Compile Include="Mensagens\ListarTiposRequest.cs" />
+    <Compile Include="Mensagens\ListarTiposResponse.cs" />
+    <Compile Include="Mensagens\MensagemBase.cs" />
+    <Compile Include="Mensagens\MensagemErroResponse.cs" />
+    <Compile Include="Mensagens\MensagemRequestBase.cs" />
+    <Compile Include="Mensagens\MensagemResponseBase.cs" />
+    <Compile Include="Mensagens\MensagemResponseStatusEnum.cs" />
+    <Compile Include="Mensagens\MensagemSinalizacaoBase.cs" />
+    <Compile Include="Mensagens\ReceberMensagemRequest.cs" />
+    <Compile Include="Mensagens\ReceberMensagemResponse.cs" />
+    <Compile Include="Mensagens\ReceberObjetoMensagemRequest.cs" />
+    <Compile Include="Mensagens\ReceberObjetoRequest.cs" />
+    <Compile Include="Mensagens\ReceberObjetoResponse.cs" />
+    <Compile Include="Mensagens\RemoverObjetoRequest.cs" />
+    <Compile Include="Mensagens\RemoverObjetoResponse.cs" />
+    <Compile Include="Mensagens\SalvarMensagemRequest.cs" />
+    <Compile Include="Mensagens\SalvarMensagemResponse.cs" />
+    <Compile Include="Mensagens\SalvarObjetoRequest.cs" />
+    <Compile Include="Mensagens\SalvarObjetoResponse.cs" />
+    <Compile Include="Permissoes\PermissaoAttribute.cs" />
+    <Compile Include="Permissoes\PermissaoBase.cs" />
+    <Compile Include="Permissoes\PermissaoAcessarSistema.cs" />
+    <Compile Include="Permissoes\PermissaoAdministrador.cs" />
+    <Compile Include="Permissoes\PermissaoAssociarPerfil.cs" />
+    <Compile Include="Permissoes\PermissaoAssociarPermissao.cs" />
+    <Compile Include="Permissoes\PermissaoAssociarUsuarioGrupo.cs" />
+    <Compile Include="Permissoes\PermissaoListarPerfis.cs" />
+    <Compile Include="Permissoes\PermissaoListarUsuarioGrupos.cs" />
+    <Compile Include="Permissoes\PermissaoListarUsuarios.cs" />
+    <Compile Include="Permissoes\PermissaoReceberPerfil.cs" />
+    <Compile Include="Permissoes\PermissaoReceberUsuario.cs" />
+    <Compile Include="Permissoes\PermissaoReceberUsuarioGrupo.cs" />
+    <Compile Include="Permissoes\PermissaoRemoverPerfil.cs" />
+    <Compile Include="Permissoes\PermissaoRemoverUsuario.cs" />
+    <Compile Include="Permissoes\PermissaoRemoverUsuarioGrupo.cs" />
+    <Compile Include="Permissoes\PermissaoSalvarPerfil.cs" />
+    <Compile Include="Permissoes\PermissaoSalvarUsuario.cs" />
+    <Compile Include="Permissoes\PermissaoSalvarUsuarioGrupo.cs" />
+    <Compile Include="Permissoes\VerificarPermissaoAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegraAttribute.cs" />
+    <Compile Include="RegraBase.cs" />
+    <Compile Include="SegurancaAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.OMS.Library\Gradual.OMS.Library.csproj">
+      <Project>{A5E45264-237E-471B-9260-88552A1EF7F3}</Project>
+      <Name>Gradual.OMS.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>rem copy "$(TargetPath)" "$(SolutionDir)..\..\..\bin"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Gradual.OMS.Library.Servicos
+{
+    public class ServicoHostConfig 
+    {
+        public List<ServicoInfo> Servicos { get; set; }
+
+        public ServicoHostConfig()
+        {
+            this.Servicos = new List<ServicoInfo>();
+        }
+    }
+}

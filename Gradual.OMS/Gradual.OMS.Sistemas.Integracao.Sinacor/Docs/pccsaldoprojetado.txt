@@ -1,0 +1,62 @@
+﻿// Consulta liquidações futuras em V_TCCMOVTO
+// Neste momento o VL_LANCAMENTO ainda não tem calculo de emolumentos e corretagem. 
+// No fechamento do dia o Sinacor altera esse valor incluindo os calculos.
+// Parece que o Sinacor coloca o fator de ajuste do VL_LANCAMENTO em uma tabela separada.
+/* 
+ SELECT
+     CD_CLIENTE,
+     SUM(VL_LANCAMENTO) VL_LANCAMENTO,
+     DT_LIQUIDACAO
+ FROM
+     V_TCCMOVTO
+ WHERE
+     CD_CLIENTE = PCODCLIENTE
+ AND DT_LIQUIDACAO > DDATPREGAO
+ GROUP BY
+     CD_CLIENTE,
+     DT_LIQUIDACAO
+*/
+
+// Consulta liquidações de D0
+// Aqui já está incluso liquidações de proventos, dividendos, corretagem, etc
+/*
+ SELECT
+     A.CD_CLIENTE,
+     SUM(A.VL_LIQNOT) VL_LANCAMENTO,
+     A.PZ_PROJ_CC DT_LIQUIDACAO
+ FROM
+     V_TBOFINCL A
+ WHERE
+     A.CD_CLIENTE        = PCODCLIENTE
+ AND A.CD_CLIENTE_LIQFIN = A.CD_CLIENTE_CC
+ AND A.DT_NEGOCIO        = DDATPREGAO
+ GROUP BY
+     CD_CLIENTE,
+     PZ_PROJ_CC
+ ORDER BY
+     DT_LIQUIDACAO;
+*/
+
+// Faz a somatoria de todos os lancamentos do checkpoint de saldo anterior até hoje
+// Neste momento o VL_LANCAMENTO já possui os calculos de emolumentos e corretagem.
+/*
+ SELECT
+     SUM(VL_LANCAMENTO) VL_LANCAMENTO
+ FROM
+     V_TCCMOVTO
+ WHERE
+     CD_CLIENTE = PCODCLIENTE
+ AND DT_LIQUIDACAO BETWEEN DDATSALDO AND DDATPREGAO;             
+ */
+
+// Acha as próximas datas de liquidação
+/*
+ SELECT
+    ROWNUM D,
+    A.PZ_PROJ_CC DATA
+ FROM
+    (
+       SELECT DISTINCT PZ_PROJ_CC FROM TBOCALE A, TMFDATPRE B WHERE A.PZ_PROJ_CC > B.DT_MOV ORDER BY 1
+    ) A;            
+ */
+

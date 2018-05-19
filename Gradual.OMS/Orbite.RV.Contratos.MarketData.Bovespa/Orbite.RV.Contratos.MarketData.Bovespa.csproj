@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5CE7B62D-2E5A-4EE5-BA8C-3D236F68302E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Orbite.RV.Contratos.MarketData.Bovespa</RootNamespace>
+    <AssemblyName>Orbite.RV.Contratos.MarketData.Bovespa</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dados\CustoBovespaInfo.cs" />
+    <Compile Include="Dados\EventoBovespaInfo.cs" />
+    <Compile Include="Dados\InstrumentoBovespaAcaoInfo.cs" />
+    <Compile Include="Dados\InstrumentoBovespaInfo.cs" />
+    <Compile Include="Dados\InstrumentoBovespaOpcaoInfo.cs" />
+    <Compile Include="Dados\InstrumentoBovespaOpcaoTipoEnum.cs" />
+    <Compile Include="Dados\InstrumentoBovespaStatusEnum.cs" />
+    <Compile Include="Dados\InstrumentoBovespaTipoEnum.cs" />
+    <Compile Include="Dados\MarketDataBovespaParametrosInfo.cs" />
+    <Compile Include="Dados\SerieBovespaTipoEnum.cs" />
+    <Compile Include="Dados\SerieCustoBovespaInfo.cs" />
+    <Compile Include="Dados\CotacaoBovespaInfo.cs" />
+    <Compile Include="IServicoMarketDataBovespa.cs" />
+    <Compile Include="Mensagens\ReceberHistoricoCotacaoBovespaRequest.cs" />
+    <Compile Include="Mensagens\ReceberHistoricoCotacaoBovespaResponse.cs" />
+    <Compile Include="Mensagens\ReceberCustosBovespaRequest.cs" />
+    <Compile Include="Mensagens\ReceberCustosBovespaResponse.cs" />
+    <Compile Include="Mensagens\ReceberDetalheInstrumentoBovespaRequest.cs" />
+    <Compile Include="Mensagens\ReceberDetalheInstrumentoBovespaResponse.cs" />
+    <Compile Include="Mensagens\ListarInstrumentosBovespaRequest.cs" />
+    <Compile Include="Mensagens\ListarInstrumentosBovespaResponse.cs" />
+    <Compile Include="Mensagens\ListarInstrumentosBovespaTipoListaEnum.cs" />
+    <Compile Include="Mensagens\ReceberSerieBovespaRequest.cs" />
+    <Compile Include="Mensagens\ReceberSerieBovespaResponse.cs" />
+    <Compile Include="Mensagens\ReceberUltimaCotacaoBovespaRequest.cs" />
+    <Compile Include="Mensagens\ReceberUltimaCotacaoBovespaResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.OMS.Contratos.Comum\Gradual.OMS.Contratos.Comum.csproj">
+      <Project>{AE2DB70E-A19F-4EA4-8AD6-5441AE70A474}</Project>
+      <Name>Gradual.OMS.Contratos.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Library\Gradual.OMS.Library.csproj">
+      <Project>{A5E45264-237E-471B-9260-88552A1EF7F3}</Project>
+      <Name>Gradual.OMS.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Orbite.Comum\Orbite.Comum.csproj">
+      <Project>{C322F862-09CB-410A-946B-AF38B8A1E533}</Project>
+      <Name>Orbite.Comum</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,44 @@
+﻿set ANSI_NULLS ON
+set QUOTED_IDENTIFIER ON
+go
+
+
+ALTER PROCEDURE [dbo].[prc_TB_GRUPO_ins]
+	@DS_GRUPO varchar(250),
+	@CD_GRUPO VARCHAR(150),
+	@ID_GRUPO smallint OUTPUT
+AS
+/*
+DESCRIÇÃO:
+	Insere registro na tabela TB_GRUPO.
+CRIAÇÃO:
+	Desenvolvedor: Alex Kubo
+	Data: 04/05/2010
+*/
+SET NOCOUNT ON
+IF EXISTS(SELECT 1 FROM TB_GRUPO WHERE CD_GRUPO = @CD_GRUPO)
+BEGIN
+	UPDATE [dbo].[TB_GRUPO]
+	SET 
+		DS_GRUPO = @DS_GRUPO
+	WHERE 
+		CD_GRUPO = @CD_GRUPO
+		
+	SELECT @ID_GRUPO = ID_GRUPO FROM TB_GRUPO WHERE CD_GRUPO = @CD_GRUPO
+END
+ELSE
+BEGIN
+	INSERT [dbo].[TB_GRUPO]
+	(
+		[CD_GRUPO],
+		[DS_GRUPO]
+	)
+	VALUES
+	(
+		@CD_GRUPO,
+		@DS_GRUPO
+	)
+	-- Get the IDENTITY value for the row just inserted.
+	SELECT @ID_GRUPO=SCOPE_IDENTITY()
+END
+

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D3D64F6D-55DA-4307-8287-D748984570E2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.Contratos.Risco</RootNamespace>
+    <AssemblyName>Gradual.OMS.Contratos.Risco</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.OMS.Contratos.Comum">
+      <HintPath>..\..\Gradual.OMS.Contratos.Comum\bin\Debug\Gradual.OMS.Contratos.Comum.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Library">
+      <HintPath>..\..\Gradual.OMS.Contratos.Comum\bin\Debug\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dados\BolsaInfo.cs" />
+    <Compile Include="Dados\GrupoInfo.cs" />
+    <Compile Include="Dados\GrupoItemInfo.cs" />
+    <Compile Include="Dados\ParametroRiscoClienteInfo.cs" />
+    <Compile Include="Dados\ParametroRiscoClienteValorInfo.cs" />
+    <Compile Include="Dados\ParametroRiscoInfo.cs" />
+    <Compile Include="Dados\PermissaoRiscoAssociadaInfo.cs" />
+    <Compile Include="Dados\PermissaoRiscoInfo.cs" />
+    <Compile Include="IServicoRiscoPersistencia.cs" />
+    <Compile Include="IServicoValidacaoRisco.cs" />
+    <Compile Include="Mensagens\ListarGruposRequest.cs" />
+    <Compile Include="Mensagens\ListarGruposResponse.cs" />
+    <Compile Include="Mensagens\ListarParametrosRiscoClienteRequest.cs" />
+    <Compile Include="Mensagens\ListarParametrosRiscoClienteResponse.cs" />
+    <Compile Include="Mensagens\ListarParametrosRiscoRequest.cs" />
+    <Compile Include="Mensagens\ListarParametrosRiscoResponse.cs" />
+    <Compile Include="Mensagens\ListarPermissoesRiscoRequest.cs" />
+    <Compile Include="Mensagens\ListarPermissoesRiscoResponse.cs" />
+    <Compile Include="Mensagens\ProcessarOperacaoRequest.cs" />
+    <Compile Include="Mensagens\ProcessarOperacaoResponse.cs" />
+    <Compile Include="Mensagens\ReceberGrupoRequest.cs" />
+    <Compile Include="Mensagens\ReceberGrupoResponse.cs" />
+    <Compile Include="Mensagens\ReceberParametroRiscoClienteRequest.cs" />
+    <Compile Include="Mensagens\ReceberParametroRiscoClienteResponse.cs" />
+    <Compile Include="Mensagens\SalvarParametroRiscoClienteRequest.cs" />
+    <Compile Include="Mensagens\SalvarParametroRiscoClienteResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

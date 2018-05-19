@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Library", "..\..\Gradual.OMS.Library\Gradual.OMS.Library.csproj", "{A5E45264-237E-471B-9260-88552A1EF7F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Contratos.Interface", "..\..\Gradual.OMS.Contratos.Interface\Gradual.OMS.Contratos.Interface.csproj", "{E9F22E09-7819-4454-8FED-8B643BAC7771}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Sistemas.Interface", "..\..\Gradual.OMS.Sistemas.Interface\Gradual.OMS.Sistemas.Interface.csproj", "{63B7C302-6158-4B7F-98D7-F6F4EB1EFDCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Sistemas.Interface.SkinDevExpress", "..\..\Gradual.OMS.Sistemas.Interface.SkinDevExpress\Gradual.OMS.Sistemas.Interface.SkinDevExpress.csproj", "{ED6D0E77-FC51-4449-88ED-40F464EA5941}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Sistemas.Interface.Controles.Ronaldo", "..\..\Gradual.OMS.Sistemas.Interface.Controles.Ronaldo\Gradual.OMS.Sistemas.Interface.Controles.Ronaldo.csproj", "{1A47856F-F580-4A16-9C7D-7581FD48F0BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Host.Windows.Interface", "..\..\Gradual.OMS.Host.Windows.Interface\Gradual.OMS.Host.Windows.Interface.csproj", "{4C948645-1970-48A3-AF6E-87C4D964CF58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5E45264-237E-471B-9260-88552A1EF7F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5E45264-237E-471B-9260-88552A1EF7F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5E45264-237E-471B-9260-88552A1EF7F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5E45264-237E-471B-9260-88552A1EF7F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9F22E09-7819-4454-8FED-8B643BAC7771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9F22E09-7819-4454-8FED-8B643BAC7771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9F22E09-7819-4454-8FED-8B643BAC7771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9F22E09-7819-4454-8FED-8B643BAC7771}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63B7C302-6158-4B7F-98D7-F6F4EB1EFDCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63B7C302-6158-4B7F-98D7-F6F4EB1EFDCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63B7C302-6158-4B7F-98D7-F6F4EB1EFDCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63B7C302-6158-4B7F-98D7-F6F4EB1EFDCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED6D0E77-FC51-4449-88ED-40F464EA5941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED6D0E77-FC51-4449-88ED-40F464EA5941}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED6D0E77-FC51-4449-88ED-40F464EA5941}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED6D0E77-FC51-4449-88ED-40F464EA5941}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A47856F-F580-4A16-9C7D-7581FD48F0BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A47856F-F580-4A16-9C7D-7581FD48F0BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A47856F-F580-4A16-9C7D-7581FD48F0BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A47856F-F580-4A16-9C7D-7581FD48F0BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C948645-1970-48A3-AF6E-87C4D964CF58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C948645-1970-48A3-AF6E-87C4D964CF58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C948645-1970-48A3-AF6E-87C4D964CF58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C948645-1970-48A3-AF6E-87C4D964CF58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
