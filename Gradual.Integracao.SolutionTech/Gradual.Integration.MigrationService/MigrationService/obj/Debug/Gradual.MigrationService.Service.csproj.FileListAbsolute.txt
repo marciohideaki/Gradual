@@ -1,0 +1,14 @@
+D:\Gradual\Source\Gradual.Integracao.SolutionTech\Gradual.Integration.MigrationService\MigrationService\bin\Debug\Gradual.MigrationService.Service.dll
+D:\Gradual\Source\Gradual.Integracao.SolutionTech\Gradual.Integration.MigrationService\MigrationService\bin\Debug\Gradual.MigrationService.Service.pdb
+D:\Gradual\Source\Gradual.Integracao.SolutionTech\Gradual.Integration.MigrationService\MigrationService\bin\Debug\Gradual.Intranet.Oracle.dll
+D:\Gradual\Source\Gradual.Integracao.SolutionTech\Gradual.Integration.MigrationService\MigrationService\bin\Debug\Gradual.OMS.Library.dll
+D:\Gradual\Source\Gradual.Integracao.SolutionTech\Gradual.Integration.MigrationService\MigrationService\bin\Debug\Gradual.Utils.dll
+D:\Gradual\Source\Gradual.Integracao.SolutionTech\Gradual.Integration.MigrationService\MigrationService\bin\Debug\Gradual.Utils.Logger.dll
+D:\Gradual\Source\Gradual.Integracao.SolutionTech\Gradual.Integration.MigrationService\MigrationService\bin\Debug\log4net.dll
+D:\Gradual\Source\Gradual.Integracao.SolutionTech\Gradual.Integration.MigrationService\MigrationService\bin\Debug\Gradual.Intranet.Oracle.pdb
+D:\Gradual\Source\Gradual.Integracao.SolutionTech\Gradual.Integration.MigrationService\MigrationService\bin\Debug\Gradual.OMS.Library.pdb
+D:\Gradual\Source\Gradual.Integracao.SolutionTech\Gradual.Integration.MigrationService\MigrationService\bin\Debug\Gradual.Utils.Logger.pdb
+D:\Gradual\Source\Gradual.Integracao.SolutionTech\Gradual.Integration.MigrationService\MigrationService\bin\Debug\Gradual.Utils.pdb
+D:\Gradual\Source\Gradual.Integracao.SolutionTech\Gradual.Integration.MigrationService\MigrationService\obj\Debug\Gradual.MigrationService.Service.csprojResolveAssemblyReference.cache
+D:\Gradual\Source\Gradual.Integracao.SolutionTech\Gradual.Integration.MigrationService\MigrationService\obj\Debug\Gradual.MigrationService.Service.dll
+D:\Gradual\Source\Gradual.Integracao.SolutionTech\Gradual.Integration.MigrationService\MigrationService\obj\Debug\Gradual.MigrationService.Service.pdb

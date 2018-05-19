@@ -1,0 +1,9 @@
+D:\GDrive\Hideaki\Profiles\Projects\bccrypto-csharp-1.8.1-src\bccrypto-csharp-1.8.1\crypto\bin\Debug\lib\net20\BouncyCastle.dll
+D:\GDrive\Hideaki\Profiles\Projects\bccrypto-csharp-1.8.1-src\bccrypto-csharp-1.8.1\crypto\bin\Debug\lib\net20\BouncyCastle.pdb
+D:\GDrive\Hideaki\Profiles\Projects\bccrypto-csharp-1.8.1-src\bccrypto-csharp-1.8.1\crypto\obj\Debug\lib\net20\BouncyCastle.csprojResolveAssemblyReference.cache
+D:\GDrive\Hideaki\Profiles\Projects\bccrypto-csharp-1.8.1-src\bccrypto-csharp-1.8.1\crypto\obj\Debug\lib\net20\BouncyCastle.dll
+D:\GDrive\Hideaki\Profiles\Projects\bccrypto-csharp-1.8.1-src\bccrypto-csharp-1.8.1\crypto\obj\Debug\lib\net20\BouncyCastle.pdb
+D:\Profiles\Projects\bccrypto-csharp-1.8.1-src\bccrypto-csharp-1.8.1\crypto\bin\Debug\lib\net20\BouncyCastle.dll
+D:\Profiles\Projects\bccrypto-csharp-1.8.1-src\bccrypto-csharp-1.8.1\crypto\bin\Debug\lib\net20\BouncyCastle.pdb
+D:\Profiles\Projects\bccrypto-csharp-1.8.1-src\bccrypto-csharp-1.8.1\crypto\obj\Debug\lib\net20\BouncyCastle.dll
+D:\Profiles\Projects\bccrypto-csharp-1.8.1-src\bccrypto-csharp-1.8.1\crypto\obj\Debug\lib\net20\BouncyCastle.pdb

@@ -1,0 +1,7 @@
+D:\Gradual\Source\Gradual.Integracao.SolutionTech\Gradual.Integration.MigrationService\MigrationService\obj\Debug\MigrationService.csprojResolveAssemblyReference.cache
+D:\Gradual\Source\Gradual.Integracao.SolutionTech\Gradual.Integration.MigrationService\MigrationService\bin\Debug\MigrationService.dll
+D:\Gradual\Source\Gradual.Integracao.SolutionTech\Gradual.Integration.MigrationService\MigrationService\bin\Debug\MigrationService.pdb
+D:\Gradual\Source\Gradual.Integracao.SolutionTech\Gradual.Integration.MigrationService\MigrationService\bin\Debug\Gradual.Intranet.Oracle.dll
+D:\Gradual\Source\Gradual.Integracao.SolutionTech\Gradual.Integration.MigrationService\MigrationService\bin\Debug\Gradual.Intranet.Oracle.pdb
+D:\Gradual\Source\Gradual.Integracao.SolutionTech\Gradual.Integration.MigrationService\MigrationService\obj\Debug\MigrationService.dll
+D:\Gradual\Source\Gradual.Integracao.SolutionTech\Gradual.Integration.MigrationService\MigrationService\obj\Debug\MigrationService.pdb

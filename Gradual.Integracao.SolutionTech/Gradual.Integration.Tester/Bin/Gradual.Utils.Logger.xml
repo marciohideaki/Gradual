@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Gradual.Utils.Logger</name>
+    </assembly>
+    <members>
+        <member name="T:Gradual.Utils.InvalidLogException">
+            <summary>
+            Thrown when a user attempts to write to in an invalid log.
+            </summary>
+        </member>
+        <member name="M:Gradual.Utils.InvalidLogException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a new <see cref="T:Gradual.Utils.InvalidLogException"/> object.
+            </summary>
+            <param name="message">The error message.</param>
+            <param name="logName">The name of the log.</param>
+            <param name="innerException">The exception which caused this exception to be thrown.</param>
+        </member>
+        <member name="M:Gradual.Utils.InvalidLogException.#ctor(System.String,System.String)">
+            <summary>
+            Constructs a new <see cref="T:Gradual.Utils.InvalidLogException"/> object.
+            </summary>
+            <param name="message">The error message.</param>
+            <param name="logName">The name of the log.</param>
+        </member>
+        <member name="P:Gradual.Utils.InvalidLogException.LogName">
+            <summary>
+            The name of the log.
+            </summary>
+        </member>
+        <member name="T:Gradual.Utils.Logger">
+            <summary>
+            Provides methods for logging.
+            </summary>
+        </member>
+        <member name="M:Gradual.Utils.Logger.Initialize">
+            <summary>
+            Initializes the logger.
+            </summary>
+            <exception cref="T:Gradual.Utils.LoggingInitializationException">Thrown if logger is already initialized.</exception>
+        </member>
+        <member name="M:Gradual.Utils.Logger.Initialize(System.String)">
+            <summary>
+            Initializes the logger to use a specific config file.
+            </summary>
+            <param name="configFile">The path of the config file.</param>
+            <exception cref="T:Gradual.Utils.LoggingInitializationException">Thrown if logger is already initialized.</exception>
+        </member>
+        <member name="M:Gradual.Utils.Logger.Log(Gradual.Utils.LoggingLevel,System.String)">
+            <summary>
+            Logs an entry to all logs.
+            </summary>
+            <param name="loggingLevel">The logging level.</param>
+            <param name="message">The message.</param>
+            <exception cref="T:Gradual.Utils.LoggingInitializationException">Thrown if logger has not been initialized.</exception>
+        </member>
+        <member name="M:Gradual.Utils.Logger.Log(Gradual.Utils.LoggingLevel,System.String,System.Object)">
+            <summary>
+            Logs an entry to all logs.
+            </summary>
+            <param name="loggingLevel">The logging level.</param>
+            <param name="message">The message.</param>
+            <param name="loggingProperties">Any additional properties for the log as defined in the logging configuration.</param>
+            <exception cref="T:Gradual.Utils.LoggingInitializationException">Thrown if logger has not been initialized.</exception>
+        </member>
+        <member name="M:Gradual.Utils.Logger.Log(Gradual.Utils.LoggingLevel,System.String,System.Object,System.Exception)">
+            <summary>
+            Logs an entry to all logs.
+            </summary>
+            <param name="loggingLevel">The logging level.</param>
+            <param name="message">The message.</param>
+            <param name="loggingProperties">Any additional properties for the log as defined in the logging configuration.</param>
+            <param name="exception">Any exception to be logged.</param>
+        </member>
+        <member name="M:Gradual.Utils.Logger.Log(System.String,Gradual.Utils.LoggingLevel,System.String)">
+            <summary>
+            Logs an entry to the specified log.
+            </summary>
+            <param name="logName">The name of the log.</param>
+            <param name="loggingLevel">The logging level.</param>
+            <param name="message">The message.</param>
+            <exception cref="T:Gradual.Utils.InvalidLogException">Thrown if <paramref name="logName"/> does not exist.</exception>
+        </member>
+        <member name="M:Gradual.Utils.Logger.Log(System.String,Gradual.Utils.LoggingLevel,System.String,System.Object)">
+            <summary>
+            Logs an entry to the specified log.
+            </summary>
+            <param name="logName">The name of the log.</param>
+            <param name="loggingLevel">The logging level.</param>
+            <param name="message">The message.</param>
+            <param name="loggingProperties">Any additional properties for the log as defined in the logging configuration.</param>
+            <exception cref="T:Gradual.Utils.InvalidLogException">Thrown if <paramref name="logName"/> does not exist.</exception>
+        </member>
+        <member name="M:Gradual.Utils.Logger.Log(System.String,Gradual.Utils.LoggingLevel,System.String,System.Object,System.Exception)">
+            <summary>
+            Logs an entry to the specified log.
+            </summary>
+            <param name="logName">The name of the log.</param>
+            <param name="loggingLevel">The logging level.</param>
+            <param name="message">The message.</param>
+            <param name="loggingProperties">Any additional properties for the log as defined in the logging configuration.</param>
+            <param name="exception">Any exception to be logged.</param>
+            <exception cref="T:Gradual.Utils.InvalidLogException">Thrown if <paramref name="logName"/> does not exist.</exception>
+        </member>
+        <member name="T:Gradual.Utils.LoggingInitializationException">
+            <summary>
+            An exception that is thrown when there is a problem with logging initialization.
+            </summary>
+        </member>
+        <member name="M:Gradual.Utils.LoggingInitializationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructs a new <see cref="T:Gradual.Utils.LoggingInitializationException"/>.
+            </summary>
+            <param name="message">The error message.</param>
+            <param name="innerException">The exception which caused this exception to be thrown.</param>
+        </member>
+        <member name="M:Gradual.Utils.LoggingInitializationException.#ctor(System.String)">
+            <summary>
+            Constructs a new <see cref="T:Gradual.Utils.LoggingInitializationException"/>.
+            </summary>
+            <param name="message">The error message.</param>
+        </member>
+        <member name="T:Gradual.Utils.LoggingLevel">
+            <summary>
+            Represents different logging levels.
+            </summary>
+        </member>
+        <member name="F:Gradual.Utils.LoggingLevel.Debug">
+            <summary>
+            Used for debugging.
+            </summary>
+        </member>
+        <member name="F:Gradual.Utils.LoggingLevel.Info">
+            <summary>
+            Used for informational purposes.
+            </summary>
+        </member>
+        <member name="F:Gradual.Utils.LoggingLevel.Warning">
+            <summary>
+            Flag as a warning.
+            </summary>
+        </member>
+        <member name="F:Gradual.Utils.LoggingLevel.Error">
+            <summary>
+            Flag as an error.
+            </summary>
+        </member>
+        <member name="F:Gradual.Utils.LoggingLevel.Fatal">
+            <summary>
+            Flag as fatal.
+            </summary>
+        </member>
+    </members>
+</doc>

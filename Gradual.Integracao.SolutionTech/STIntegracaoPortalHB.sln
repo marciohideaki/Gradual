@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STIntegracaoPortalHB", "STIntegracaoPortalHB\STIntegracaoPortalHB.csproj", "{689BAF19-B4E4-46D5-BB4B-7E719656E61E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.Integration.HomeBroker", "Gradual.Integration.HomeBroker\Gradual.Integration.HomeBroker.csproj", "{6E2B8204-01D4-4887-8B89-9F24D7EC8F78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{689BAF19-B4E4-46D5-BB4B-7E719656E61E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{689BAF19-B4E4-46D5-BB4B-7E719656E61E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{689BAF19-B4E4-46D5-BB4B-7E719656E61E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{689BAF19-B4E4-46D5-BB4B-7E719656E61E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E2B8204-01D4-4887-8B89-9F24D7EC8F78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E2B8204-01D4-4887-8B89-9F24D7EC8F78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E2B8204-01D4-4887-8B89-9F24D7EC8F78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E2B8204-01D4-4887-8B89-9F24D7EC8F78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

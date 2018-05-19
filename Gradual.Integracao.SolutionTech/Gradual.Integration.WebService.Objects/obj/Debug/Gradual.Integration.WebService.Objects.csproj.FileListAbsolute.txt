@@ -1,0 +1,11 @@
+D:\GDrive\Hideaki\Profiles\Projects\Gradual.Integration.WebService.Objects\bin\Gradual.Integration.WebService.Objects.dll.config
+D:\GDrive\Hideaki\Profiles\Projects\Gradual.Integration.WebService.Objects\bin\Gradual.Integration.WebService.Objects.dll
+D:\GDrive\Hideaki\Profiles\Projects\Gradual.Integration.WebService.Objects\bin\Gradual.Integration.WebService.Objects.pdb
+D:\GDrive\Hideaki\Profiles\Projects\Gradual.Integration.WebService.Objects\bin\Gradual.Utils.dll
+D:\GDrive\Hideaki\Profiles\Projects\Gradual.Integration.WebService.Objects\bin\Gradual.Utils.Logger.dll
+D:\GDrive\Hideaki\Profiles\Projects\Gradual.Integration.WebService.Objects\bin\log4net.dll
+D:\GDrive\Hideaki\Profiles\Projects\Gradual.Integration.WebService.Objects\bin\Gradual.Utils.pdb
+D:\GDrive\Hideaki\Profiles\Projects\Gradual.Integration.WebService.Objects\bin\Gradual.Utils.Logger.pdb
+D:\GDrive\Hideaki\Profiles\Projects\Gradual.Integration.WebService.Objects\obj\Debug\Gradual.Integration.WebService.Objects.csprojResolveAssemblyReference.cache
+D:\GDrive\Hideaki\Profiles\Projects\Gradual.Integration.WebService.Objects\obj\Debug\Gradual.Integration.WebService.Objects.dll
+D:\GDrive\Hideaki\Profiles\Projects\Gradual.Integration.WebService.Objects\obj\Debug\Gradual.Integration.WebService.Objects.pdb

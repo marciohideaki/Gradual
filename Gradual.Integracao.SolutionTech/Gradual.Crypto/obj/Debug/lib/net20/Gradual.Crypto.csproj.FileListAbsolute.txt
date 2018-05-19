@@ -1,0 +1,13 @@
+D:\Profiles\Projects\bccrypto-csharp-1.8.1-src\bccrypto-csharp-1.8.1\crypto\bin\Debug\lib\net20\Gradual.Crypto.dll
+D:\Profiles\Projects\bccrypto-csharp-1.8.1-src\bccrypto-csharp-1.8.1\crypto\bin\Debug\lib\net20\Gradual.Crypto.pdb
+D:\Profiles\Projects\bccrypto-csharp-1.8.1-src\bccrypto-csharp-1.8.1\crypto\obj\Debug\lib\net20\Gradual.Crypto.dll
+D:\Profiles\Projects\bccrypto-csharp-1.8.1-src\bccrypto-csharp-1.8.1\crypto\obj\Debug\lib\net20\Gradual.Crypto.pdb
+D:\Profiles\Projects\Gradual\IntegracaoSolutionTech\Gradual.Crypto\obj\Debug\lib\net20\Gradual.Crypto.csprojResolveAssemblyReference.cache
+D:\Profiles\Projects\Gradual\IntegracaoSolutionTech\Gradual.Crypto\obj\Debug\lib\net20\Gradual.Crypto.dll
+D:\Profiles\Projects\Gradual\IntegracaoSolutionTech\Gradual.Crypto\obj\Debug\lib\net20\Gradual.Crypto.pdb
+D:\Profiles\Projects\Gradual\IntegracaoSolutionTech\Gradual.Crypto\bin\Debug\lib\net20\Gradual.Crypto.dll
+D:\Profiles\Projects\Gradual\IntegracaoSolutionTech\Gradual.Crypto\bin\Debug\lib\net20\Gradual.Crypto.pdb
+D:\GDrive\Hideaki\Profiles\Projects\IntegracaoSolutionTech\Gradual.Crypto\bin\Debug\lib\net20\Gradual.Crypto.dll
+D:\GDrive\Hideaki\Profiles\Projects\IntegracaoSolutionTech\Gradual.Crypto\bin\Debug\lib\net20\Gradual.Crypto.pdb
+D:\GDrive\Hideaki\Profiles\Projects\IntegracaoSolutionTech\Gradual.Crypto\obj\Debug\lib\net20\Gradual.Crypto.dll
+D:\GDrive\Hideaki\Profiles\Projects\IntegracaoSolutionTech\Gradual.Crypto\obj\Debug\lib\net20\Gradual.Crypto.pdb

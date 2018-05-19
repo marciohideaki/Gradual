@@ -1,0 +1,17 @@
+D:\GDrive\Hideaki\Profiles\Projects\IntegracaoSolutionTech\Gradual.Integration.WebService\bin\Gradual.Integration.WebService.dll.config
+D:\GDrive\Hideaki\Profiles\Projects\IntegracaoSolutionTech\Gradual.Integration.WebService\bin\Gradual.Integration.WebService.dll
+D:\GDrive\Hideaki\Profiles\Projects\IntegracaoSolutionTech\Gradual.Integration.WebService\bin\Gradual.Integration.WebService.pdb
+D:\GDrive\Hideaki\Profiles\Projects\IntegracaoSolutionTech\Gradual.Integration.WebService\bin\Gradual.Utils.dll
+D:\GDrive\Hideaki\Profiles\Projects\IntegracaoSolutionTech\Gradual.Integration.WebService\bin\Gradual.Utils.Logger.dll
+D:\GDrive\Hideaki\Profiles\Projects\IntegracaoSolutionTech\Gradual.Integration.WebService\bin\log4net.dll
+D:\GDrive\Hideaki\Profiles\Projects\IntegracaoSolutionTech\Gradual.Integration.WebService\bin\Gradual.Utils.pdb
+D:\GDrive\Hideaki\Profiles\Projects\IntegracaoSolutionTech\Gradual.Integration.WebService\obj\Release\Gradual.Integration.WebService.csprojResolveAssemblyReference.cache
+D:\GDrive\Hideaki\Profiles\Projects\IntegracaoSolutionTech\Gradual.Integration.WebService\obj\Release\Gradual.Integration.WebService.dll
+D:\GDrive\Hideaki\Profiles\Projects\IntegracaoSolutionTech\Gradual.Integration.WebService\obj\Release\Gradual.Integration.WebService.pdb
+D:\GDrive\Hideaki\Profiles\Projects\IntegracaoSolutionTech\Gradual.Integration.WebService\bin\Gradual.Integration.HomeBroker.dll
+D:\GDrive\Hideaki\Profiles\Projects\IntegracaoSolutionTech\Gradual.Integration.WebService\bin\Gradual.Crypto.dll
+D:\GDrive\Hideaki\Profiles\Projects\IntegracaoSolutionTech\Gradual.Integration.WebService\bin\Gradual.Integration.HomeBroker.pdb
+D:\GDrive\Hideaki\Profiles\Projects\IntegracaoSolutionTech\Gradual.Integration.WebService\bin\Gradual.Utils.Logger.pdb
+D:\GDrive\Hideaki\Profiles\Projects\IntegracaoSolutionTech\Gradual.Integration.WebService\bin\Gradual.Crypto.pdb
+D:\GDrive\Hideaki\Profiles\Projects\IntegracaoSolutionTech\Gradual.Integration.WebService\bin\Gradual.Integration.WebService.Objects.dll
+D:\GDrive\Hideaki\Profiles\Projects\IntegracaoSolutionTech\Gradual.Integration.WebService\bin\Gradual.Integration.WebService.Objects.pdb

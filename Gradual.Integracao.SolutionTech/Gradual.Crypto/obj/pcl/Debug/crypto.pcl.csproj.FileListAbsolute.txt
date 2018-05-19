@@ -1,0 +1,6 @@
+D:\GDrive\Hideaki\Profiles\Projects\bccrypto-csharp-1.8.1-src\bccrypto-csharp-1.8.1\Crypto\bin\pcl\Debug\crypto.dll
+D:\GDrive\Hideaki\Profiles\Projects\bccrypto-csharp-1.8.1-src\bccrypto-csharp-1.8.1\Crypto\bin\pcl\Debug\crypto.pdb
+D:\GDrive\Hideaki\Profiles\Projects\bccrypto-csharp-1.8.1-src\bccrypto-csharp-1.8.1\Crypto\bin\pcl\Debug\crypto.xml
+D:\GDrive\Hideaki\Profiles\Projects\bccrypto-csharp-1.8.1-src\bccrypto-csharp-1.8.1\Crypto\obj\pcl\Debug\crypto.pcl.csprojResolveAssemblyReference.cache
+D:\GDrive\Hideaki\Profiles\Projects\bccrypto-csharp-1.8.1-src\bccrypto-csharp-1.8.1\Crypto\obj\pcl\Debug\crypto.dll
+D:\GDrive\Hideaki\Profiles\Projects\bccrypto-csharp-1.8.1-src\bccrypto-csharp-1.8.1\Crypto\obj\pcl\Debug\crypto.pdb
