@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.StockMarket.Excel2003.AddIn", "Gradual.StockMarket.Excel2003.AddIn\Gradual.StockMarket.Excel2003.AddIn.csproj", "{072134F6-6D42-40B2-B1D3-4F77B0AB9A51}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Gradual.StockMarket.Excel2003", "Gradual.StockMarket.Excel2003.AddInSetup\Gradual.StockMarket.Excel2003.AddInSetup", "{C1D30E36-EE3A-4DFF-AFD8-C0A35C9844F4}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/Projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gradual.StockMarket.Excel2003.AddIn\\Gradual.StockMarket.Excel2003.AddIn.csproj
+		SccProjectName1 = Gradual.StockMarket.Excel2003.AddIn
+		SccLocalPath1 = Gradual.StockMarket.Excel2003.AddIn
+		SccProjectUniqueName2 = Gradual.StockMarket.Excel2003.AddInSetup\\Gradual.StockMarket.Excel2003.AddInSetup
+		SccProjectName2 = Gradual.StockMarket.Excel2003.AddInSetup
+		SccLocalPath2 = Gradual.StockMarket.Excel2003.AddInSetup
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{072134F6-6D42-40B2-B1D3-4F77B0AB9A51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{072134F6-6D42-40B2-B1D3-4F77B0AB9A51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{072134F6-6D42-40B2-B1D3-4F77B0AB9A51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{072134F6-6D42-40B2-B1D3-4F77B0AB9A51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1D30E36-EE3A-4DFF-AFD8-C0A35C9844F4}.Debug|Any CPU.ActiveCfg = Debug
+		{C1D30E36-EE3A-4DFF-AFD8-C0A35C9844F4}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

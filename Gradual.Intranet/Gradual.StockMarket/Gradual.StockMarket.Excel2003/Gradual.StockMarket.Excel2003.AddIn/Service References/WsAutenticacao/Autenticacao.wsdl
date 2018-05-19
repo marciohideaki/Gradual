@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="AutenticarUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pRequest" type="tns:AutenticarUsuarioRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AutenticarUsuarioRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoOuEmailDoUsuario" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Senha" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AutenticarUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AutenticarUsuarioResult" type="tns:AutenticarUsuarioResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AutenticarUsuarioResponse">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:RespostaBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="CodigoDaSessao" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CodigoCblcDoUsuario" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CodigoBmfDoUsuario" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="RespostaBase">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StatusResposta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DescricaoResposta" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AutenticarUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:AutenticarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="AutenticarUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:AutenticarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AutenticacaoSoap">
+    <wsdl:operation name="AutenticarUsuario">
+      <wsdl:input message="tns:AutenticarUsuarioSoapIn" />
+      <wsdl:output message="tns:AutenticarUsuarioSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AutenticacaoSoap" type="tns:AutenticacaoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AutenticarUsuario">
+      <soap:operation soapAction="http://tempuri.org/AutenticarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AutenticacaoSoap12" type="tns:AutenticacaoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AutenticarUsuario">
+      <soap12:operation soapAction="http://tempuri.org/AutenticarUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Autenticacao">
+    <wsdl:port name="AutenticacaoSoap" binding="tns:AutenticacaoSoap">
+      <soap:address location="http://localhost/Gradual.OMS.WsIntegracao/Autenticacao.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AutenticacaoSoap12" binding="tns:AutenticacaoSoap12">
+      <soap12:address location="http://localhost/Gradual.OMS.WsIntegracao/Autenticacao.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

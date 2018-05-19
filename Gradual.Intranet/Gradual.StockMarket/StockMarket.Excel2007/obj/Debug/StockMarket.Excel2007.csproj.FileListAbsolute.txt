@@ -1,0 +1,6 @@
+D:\Gradual\Source\Gradual.StockMarket\StockMarket.Excel2007\obj\Debug\StockMarket.Excel2007.csprojResolveAssemblyReference.cache
+D:\Gradual\Source\Gradual.StockMarket\StockMarket.Excel2007\obj\Debug\StockMarket.Excel2007.frmInputBox_Login.resources
+D:\Gradual\Source\Gradual.StockMarket\StockMarket.Excel2007\obj\Debug\StockMarket.Excel2007.frmInputBox_SelecionarEstilo.resources
+D:\Gradual\Source\Gradual.StockMarket\StockMarket.Excel2007\obj\Debug\StockMarket.Excel2007.Properties.Resources.resources
+D:\Gradual\Source\Gradual.StockMarket\StockMarket.Excel2007\obj\Debug\StockMarket.Excel2007.ribStockMarket.resources
+D:\Gradual\Source\Gradual.StockMarket\StockMarket.Excel2007\obj\Debug\StockMarket.Excel2007.csproj.GenerateResource.Cache
