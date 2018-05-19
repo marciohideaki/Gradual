@@ -1,0 +1,7 @@
+D:\Gradual\Source\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\obj\Release\Gradual.OMS.Library.dll
+D:\Gradual\Source\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\obj\Release\Gradual.OMS.Library.pdb
+D:\Gradual\Source\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Gradual.OMS.Library.dll
+D:\Gradual\Source\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Gradual.OMS.Library.pdb
+D:\Gradual\Source\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\log4net.dll
+D:\Gradual\Source\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\log4net.pdb
+D:\Gradual\Source\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\obj\Release\Gradual.OMS.Library.csprojResolveAssemblyReference.cache

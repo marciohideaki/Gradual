@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Email", "Gradual.OMS.Email\Gradual.OMS.Email.csproj", "{5C93D5B3-FD8D-4569-A8F5-9CA2CC3DEF81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Email.Teste", "Gradual.OMS.Email.Teste\Gradual.OMS.Email.Teste.csproj", "{BCD48015-2CB8-442A-AAB4-A067C0DB1BDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Email.Lib", "Gradual.OMS.Email.Lib\Gradual.OMS.Email.Lib.csproj", "{D9829151-704E-4D5F-9F92-96457E6EDB3D}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gradual.OMS.Email\\Gradual.OMS.Email.csproj
+		SccProjectName1 = Gradual.OMS.Email
+		SccLocalPath1 = Gradual.OMS.Email
+		SccProjectUniqueName2 = Gradual.OMS.Email.Teste\\Gradual.OMS.Email.Teste.csproj
+		SccProjectName2 = Gradual.OMS.Email.Teste
+		SccLocalPath2 = Gradual.OMS.Email.Teste
+		SccProjectUniqueName3 = Gradual.OMS.Email.Lib\\Gradual.OMS.Email.Lib.csproj
+		SccProjectName3 = Gradual.OMS.Email.Lib
+		SccLocalPath3 = Gradual.OMS.Email.Lib
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C93D5B3-FD8D-4569-A8F5-9CA2CC3DEF81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C93D5B3-FD8D-4569-A8F5-9CA2CC3DEF81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C93D5B3-FD8D-4569-A8F5-9CA2CC3DEF81}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5C93D5B3-FD8D-4569-A8F5-9CA2CC3DEF81}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5C93D5B3-FD8D-4569-A8F5-9CA2CC3DEF81}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5C93D5B3-FD8D-4569-A8F5-9CA2CC3DEF81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C93D5B3-FD8D-4569-A8F5-9CA2CC3DEF81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C93D5B3-FD8D-4569-A8F5-9CA2CC3DEF81}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5C93D5B3-FD8D-4569-A8F5-9CA2CC3DEF81}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5C93D5B3-FD8D-4569-A8F5-9CA2CC3DEF81}.Release|x86.ActiveCfg = Release|Any CPU
+		{BCD48015-2CB8-442A-AAB4-A067C0DB1BDB}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{BCD48015-2CB8-442A-AAB4-A067C0DB1BDB}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{BCD48015-2CB8-442A-AAB4-A067C0DB1BDB}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{BCD48015-2CB8-442A-AAB4-A067C0DB1BDB}.Debug|x86.ActiveCfg = Debug|x86
+		{BCD48015-2CB8-442A-AAB4-A067C0DB1BDB}.Debug|x86.Build.0 = Debug|x86
+		{BCD48015-2CB8-442A-AAB4-A067C0DB1BDB}.Release|Any CPU.ActiveCfg = Release|x86
+		{BCD48015-2CB8-442A-AAB4-A067C0DB1BDB}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{BCD48015-2CB8-442A-AAB4-A067C0DB1BDB}.Release|Mixed Platforms.Build.0 = Release|x86
+		{BCD48015-2CB8-442A-AAB4-A067C0DB1BDB}.Release|x86.ActiveCfg = Release|x86
+		{BCD48015-2CB8-442A-AAB4-A067C0DB1BDB}.Release|x86.Build.0 = Release|x86
+		{D9829151-704E-4D5F-9F92-96457E6EDB3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9829151-704E-4D5F-9F92-96457E6EDB3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9829151-704E-4D5F-9F92-96457E6EDB3D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D9829151-704E-4D5F-9F92-96457E6EDB3D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D9829151-704E-4D5F-9F92-96457E6EDB3D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D9829151-704E-4D5F-9F92-96457E6EDB3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9829151-704E-4D5F-9F92-96457E6EDB3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9829151-704E-4D5F-9F92-96457E6EDB3D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D9829151-704E-4D5F-9F92-96457E6EDB3D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D9829151-704E-4D5F-9F92-96457E6EDB3D}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

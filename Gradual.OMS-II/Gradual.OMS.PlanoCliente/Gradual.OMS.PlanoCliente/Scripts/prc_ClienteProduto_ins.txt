@@ -1,0 +1,16 @@
+-- =============================================
+-- Author:		Bruno Varandas Ribeiro
+-- Create date: 13/01/2011
+-- Description:	Insere na tabela de produtos o código 
+-- =============================================
+ALTER PROCEDURE prc_ClienteProduto_ins
+	@id_cliente int,
+	@dt_operacao datetime,
+	@st_ativo char,
+	@id_produto_plano int
+AS
+BEGIN
+	INSERT INTO tb_cliente_produto (id_produto_plano, id_cliente, st_ativo, dt_operacao)
+	VALUES (@id_produto_plano, @id_cliente, @st_ativo, @dt_operacao )
+END
+GO

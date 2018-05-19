@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.cblc.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.cblc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.cblc.com.br/">
+      <s:element name="ConsultasConsExtratMensal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="negociador_cpf" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultasConsExtratMensalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultasConsExtratMensalResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="hdSeguranca" type="tns:hdSeguranca" />
+      <s:complexType name="hdSeguranca">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="strContratoHash" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="strContratoSenha" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="strLoginNome" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="strLoginSenha" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="ConsultasConsExtratoRentabilidade">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="negociador_cpf" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cd_titulo_publico" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultasConsExtratoRentabilidadeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultasConsExtratoRentabilidadeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultasConsTaxaProtocolo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="codigo_titulo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigo_cesta" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultasConsTaxaProtocoloResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultasConsTaxaProtocoloResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultasConsCesta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="mercado" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="negociador_cpf" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="situacao" type="s:unsignedByte" />
+            <s:element minOccurs="1" maxOccurs="1" name="tipo" type="s:unsignedByte" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigo_cesta" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="data_compra" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigo_titulo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="cliente" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultasConsCestaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultasConsCestaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultasConsTipoTitulo">
+        <s:complexType />
+      </s:element>
+      <s:element name="ConsultasConsTipoTituloResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultasConsTipoTituloResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultasConsTipoIndexador">
+        <s:complexType />
+      </s:element>
+      <s:element name="ConsultasConsTipoIndexadorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultasConsTipoIndexadorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultasConsMercado">
+        <s:complexType />
+      </s:element>
+      <s:element name="ConsultasConsMercadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultasConsMercadoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConsultasConsExtratMensalSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultasConsExtratMensal" />
+  </wsdl:message>
+  <wsdl:message name="ConsultasConsExtratMensalSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultasConsExtratMensalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultasConsExtratMensalhdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:message name="ConsultasConsExtratoRentabilidadeSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultasConsExtratoRentabilidade" />
+  </wsdl:message>
+  <wsdl:message name="ConsultasConsExtratoRentabilidadeSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultasConsExtratoRentabilidadeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultasConsExtratoRentabilidadehdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:message name="ConsultasConsTaxaProtocoloSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultasConsTaxaProtocolo" />
+  </wsdl:message>
+  <wsdl:message name="ConsultasConsTaxaProtocoloSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultasConsTaxaProtocoloResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultasConsTaxaProtocolohdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:message name="ConsultasConsCestaSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultasConsCesta" />
+  </wsdl:message>
+  <wsdl:message name="ConsultasConsCestaSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultasConsCestaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultasConsCestahdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:message name="ConsultasConsTipoTituloSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultasConsTipoTitulo" />
+  </wsdl:message>
+  <wsdl:message name="ConsultasConsTipoTituloSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultasConsTipoTituloResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultasConsTipoTitulohdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:message name="ConsultasConsTipoIndexadorSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultasConsTipoIndexador" />
+  </wsdl:message>
+  <wsdl:message name="ConsultasConsTipoIndexadorSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultasConsTipoIndexadorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultasConsTipoIndexadorhdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:message name="ConsultasConsMercadoSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultasConsMercado" />
+  </wsdl:message>
+  <wsdl:message name="ConsultasConsMercadoSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultasConsMercadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultasConsMercadohdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:portType name="consultasSoap">
+    <wsdl:operation name="ConsultasConsExtratMensal">
+      <wsdl:input message="tns:ConsultasConsExtratMensalSoapIn" />
+      <wsdl:output message="tns:ConsultasConsExtratMensalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasConsExtratoRentabilidade">
+      <wsdl:input message="tns:ConsultasConsExtratoRentabilidadeSoapIn" />
+      <wsdl:output message="tns:ConsultasConsExtratoRentabilidadeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasConsTaxaProtocolo">
+      <wsdl:input message="tns:ConsultasConsTaxaProtocoloSoapIn" />
+      <wsdl:output message="tns:ConsultasConsTaxaProtocoloSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasConsCesta">
+      <wsdl:input message="tns:ConsultasConsCestaSoapIn" />
+      <wsdl:output message="tns:ConsultasConsCestaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasConsTipoTitulo">
+      <wsdl:input message="tns:ConsultasConsTipoTituloSoapIn" />
+      <wsdl:output message="tns:ConsultasConsTipoTituloSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasConsTipoIndexador">
+      <wsdl:input message="tns:ConsultasConsTipoIndexadorSoapIn" />
+      <wsdl:output message="tns:ConsultasConsTipoIndexadorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasConsMercado">
+      <wsdl:input message="tns:ConsultasConsMercadoSoapIn" />
+      <wsdl:output message="tns:ConsultasConsMercadoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="consultasSoap" type="tns:consultasSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsultasConsExtratMensal">
+      <soap:operation soapAction="http://www.cblc.com.br/ConsultasConsExtratMensal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ConsultasConsExtratMensalhdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasConsExtratoRentabilidade">
+      <soap:operation soapAction="http://www.cblc.com.br/ConsultasConsExtratoRentabilidade" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ConsultasConsExtratoRentabilidadehdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasConsTaxaProtocolo">
+      <soap:operation soapAction="http://www.cblc.com.br/ConsultasConsTaxaProtocolo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ConsultasConsTaxaProtocolohdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasConsCesta">
+      <soap:operation soapAction="http://www.cblc.com.br/ConsultasConsCesta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ConsultasConsCestahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasConsTipoTitulo">
+      <soap:operation soapAction="http://www.cblc.com.br/ConsultasConsTipoTitulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ConsultasConsTipoTitulohdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasConsTipoIndexador">
+      <soap:operation soapAction="http://www.cblc.com.br/ConsultasConsTipoIndexador" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ConsultasConsTipoIndexadorhdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasConsMercado">
+      <soap:operation soapAction="http://www.cblc.com.br/ConsultasConsMercado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ConsultasConsMercadohdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="consultasSoap12" type="tns:consultasSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsultasConsExtratMensal">
+      <soap12:operation soapAction="http://www.cblc.com.br/ConsultasConsExtratMensal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ConsultasConsExtratMensalhdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasConsExtratoRentabilidade">
+      <soap12:operation soapAction="http://www.cblc.com.br/ConsultasConsExtratoRentabilidade" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ConsultasConsExtratoRentabilidadehdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasConsTaxaProtocolo">
+      <soap12:operation soapAction="http://www.cblc.com.br/ConsultasConsTaxaProtocolo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ConsultasConsTaxaProtocolohdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasConsCesta">
+      <soap12:operation soapAction="http://www.cblc.com.br/ConsultasConsCesta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ConsultasConsCestahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasConsTipoTitulo">
+      <soap12:operation soapAction="http://www.cblc.com.br/ConsultasConsTipoTitulo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ConsultasConsTipoTitulohdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasConsTipoIndexador">
+      <soap12:operation soapAction="http://www.cblc.com.br/ConsultasConsTipoIndexador" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ConsultasConsTipoIndexadorhdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasConsMercado">
+      <soap12:operation soapAction="http://www.cblc.com.br/ConsultasConsMercado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ConsultasConsMercadohdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="consultas">
+    <wsdl:port name="consultasSoap" binding="tns:consultasSoap">
+      <soap:address location="http://125.255.60.72/consultas.asmx" />
+    </wsdl:port>
+    <wsdl:port name="consultasSoap12" binding="tns:consultasSoap12">
+      <soap12:address location="http://125.255.60.72/consultas.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

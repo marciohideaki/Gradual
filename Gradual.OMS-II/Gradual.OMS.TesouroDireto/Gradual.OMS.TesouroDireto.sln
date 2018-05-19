@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.TesouroDireto", "Gradual.OMS.TesouroDireto\Gradual.OMS.TesouroDireto.csproj", "{6B3420C7-E521-4036-A1C0-1BF4D861EBFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.TesouroDireto.Lib", "Gradual.OMS.TesouroDireto.Lib\Gradual.OMS.TesouroDireto.Lib.csproj", "{F0E48643-599E-442C-9BFB-7D0FC90AE629}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.TesouroDireto.Teste", "Gradual.OMS.TesouroDireto.Teste\Gradual.OMS.TesouroDireto.Teste.csproj", "{E09EC3BA-AF83-409B-BCD8-FA3EF0BC82ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DCD83271-8C4E-4279-A02C-D5454FB91421}"
+	ProjectSection(SolutionItems) = preProject
+		Gradual.OMS.TesouroDireto.vsmdi = Gradual.OMS.TesouroDireto.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gradual.OMS.TesouroDireto\\Gradual.OMS.TesouroDireto.csproj
+		SccProjectName1 = Gradual.OMS.TesouroDireto
+		SccLocalPath1 = Gradual.OMS.TesouroDireto
+		SccProjectUniqueName2 = Gradual.OMS.TesouroDireto.Lib\\Gradual.OMS.TesouroDireto.Lib.csproj
+		SccProjectName2 = Gradual.OMS.TesouroDireto.Lib
+		SccLocalPath2 = Gradual.OMS.TesouroDireto.Lib
+		SccProjectUniqueName3 = Gradual.OMS.TesouroDireto.Teste\\Gradual.OMS.TesouroDireto.Teste.csproj
+		SccProjectName3 = Gradual.OMS.TesouroDireto.Teste
+		SccLocalPath3 = Gradual.OMS.TesouroDireto.Teste
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Gradual.OMS.TesouroDireto.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B3420C7-E521-4036-A1C0-1BF4D861EBFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B3420C7-E521-4036-A1C0-1BF4D861EBFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B3420C7-E521-4036-A1C0-1BF4D861EBFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B3420C7-E521-4036-A1C0-1BF4D861EBFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0E48643-599E-442C-9BFB-7D0FC90AE629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0E48643-599E-442C-9BFB-7D0FC90AE629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0E48643-599E-442C-9BFB-7D0FC90AE629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0E48643-599E-442C-9BFB-7D0FC90AE629}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E09EC3BA-AF83-409B-BCD8-FA3EF0BC82ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E09EC3BA-AF83-409B-BCD8-FA3EF0BC82ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E09EC3BA-AF83-409B-BCD8-FA3EF0BC82ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E09EC3BA-AF83-409B-BCD8-FA3EF0BC82ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

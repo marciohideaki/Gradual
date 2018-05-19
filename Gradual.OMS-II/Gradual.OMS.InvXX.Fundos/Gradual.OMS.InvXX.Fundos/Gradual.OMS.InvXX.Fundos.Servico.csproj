@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4CD4BF3F-45DC-4399-930E-3A4676ACF739}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.InvXX.Fundos</RootNamespace>
+    <AssemblyName>Gradual.OMS.InvXX.Fundos</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.OMS.Email.Lib">
+      <HintPath>..\Gradual.OMS.InvXX.Fundos.References\Gradual.OMS.Email.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Library">
+      <HintPath>..\..\Gradual.OMS.References\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\Gradual.OMS.InvXX.Fundos.References\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\Gradual.OMS.References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ANBIMA\ImportacaoFundosServico.cs" />
+    <Compile Include="FINANCIAL\ImportacaoClientePosicaoServico.cs" />
+    <Compile Include="ITAUUNIBANCO\AplicacaoResgateServico.cs" />
+    <Compile Include="ITAUUNIBANCO\CotistaPosicaoItau.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CadastroCotista\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\HistoricoCota\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\OperacaoCotista\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PosicaoCotista\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.com.itaucustodia.www\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ContaCorrente\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\FundoCota\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\CadastroCotista\cadastrocotista.wsdl" />
+    <None Include="Service References\CadastroCotista\Gradual.OMS.InvXX.Fundos.CadastroCotista.Cotista.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HistoricoCota\Gradual.OMS.InvXX.Fundos.HistoricoCota.HistoricoCotaRetorno.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HistoricoCota\historicocota.wsdl" />
+    <None Include="Service References\OperacaoCotista\Gradual.OMS.InvXX.Fundos.OperacaoCotista.OperacaoCotista.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OperacaoCotista\Gradual.OMS.InvXX.Fundos.OperacaoCotista.OperacaoCotistaViewModel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OperacaoCotista\operacaocotista.wsdl" />
+    <None Include="Service References\PosicaoCotista\Gradual.OMS.InvXX.Fundos.PosicaoCotista.PosicaoCotista.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PosicaoCotista\posicaocotista.wsdl" />
+    <None Include="Web References\br.com.itaucustodia.www\DownloadArquivoService.wsdl" />
+    <None Include="Web References\br.com.itaucustodia.www\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ContaCorrente\contacorrente.wsdl" />
+    <None Include="Web References\ContaCorrente\ContaCorrenteViewModel.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ContaCorrente\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\FundoCota\CarteiraViewModel.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FundoCota\fundo.wsdl" />
+    <None Include="Web References\FundoCota\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.Generico.Dados\Gradual.Generico.Dados.csproj">
+      <Project>{8FBA9580-0722-4159-A91A-1DA79B58EB7A}</Project>
+      <Name>Gradual.Generico.Dados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Generico.Geral\Gradual.Generico.Geral.csproj">
+      <Project>{F40F5967-B017-439B-954C-BAD46168D7F1}</Project>
+      <Name>Gradual.Generico.Geral</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.InvXX.Fundos.DbLib\Gradual.OMS.InvXX.Fundos.DB.csproj">
+      <Project>{2BD9338F-C57A-43A1-8AA0-24DDC932C58C}</Project>
+      <Name>Gradual.OMS.InvXX.Fundos.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.InvXX.Fundos.Lib\Gradual.OMS.InvXX.Fundos.Lib.csproj">
+      <Project>{0614DD59-B226-447E-9198-2D25AA2C0AFC}</Project>
+      <Name>Gradual.OMS.InvXX.Fundos.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CadastroCotista\" />
+    <WCFMetadataStorage Include="Service References\HistoricoCota\" />
+    <WCFMetadataStorage Include="Service References\OperacaoCotista\" />
+    <WCFMetadataStorage Include="Service References\PosicaoCotista\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://financial.gradual.intra/webservices/contacorrente.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ContaCorrente\</RelPath>
+      <UpdateFromURL>http://financial.gradual.intra/webservices/contacorrente.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Gradual_OMS_InvXX_Fundos_ContaCorrente_ContaCorrenteWS</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://financial.gradual.intra/webservices/fundo.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FundoCota\</RelPath>
+      <UpdateFromURL>http://financial.gradual.intra/webservices/fundo.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Gradual_OMS_InvXX_Fundos_FundoCota_FundoWS</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://www.itaucustodia.com.br/PassivoWebServices/services/DownloadArquivoService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.com.itaucustodia.www\</RelPath>
+      <UpdateFromURL>http://www.itaucustodia.com.br/PassivoWebServices/services/DownloadArquivoService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Gradual_OMS_InvXX_Fundos_br_com_itaucustodia_www_DownloadArquivoServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CadastroCotista\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CadastroCotista\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CadastroCotista\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PosicaoCotista\posicaocotista.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PosicaoCotista\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PosicaoCotista\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PosicaoCotista\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\HistoricoCota\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\HistoricoCota\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\HistoricoCota\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\OperacaoCotista\operacaocotista.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\OperacaoCotista\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\OperacaoCotista\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\OperacaoCotista\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\FundoCota\fundo.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\ContaCorrente\contacorrente.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ITAUUNIBANCO\Email\AvisoAplicacaoResgate.htm" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

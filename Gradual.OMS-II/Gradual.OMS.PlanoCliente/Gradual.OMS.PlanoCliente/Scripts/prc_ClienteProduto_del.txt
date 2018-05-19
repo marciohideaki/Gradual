@@ -1,0 +1,12 @@
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE PROCEDURE prc_ClienteProduto_del
+	@id_cliente int
+AS
+BEGIN
+	DELETE FROM tb_cliente_produto WHERE id_cliente = @id_cliente
+END
+GO

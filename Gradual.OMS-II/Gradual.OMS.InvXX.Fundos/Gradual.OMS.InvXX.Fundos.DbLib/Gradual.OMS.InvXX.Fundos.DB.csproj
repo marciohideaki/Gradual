@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2BD9338F-C57A-43A1-8AA0-24DDC932C58C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.InvXX.Fundos.DbLib</RootNamespace>
+    <AssemblyName>Gradual.OMS.InvXX.Fundos.DbLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DiffieHellman">
+      <HintPath>..\Gradual.OMS.InvXX.Fundos.References\DiffieHellman.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\Gradual.OMS.References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Org.Mentalis.Security">
+      <HintPath>..\Gradual.OMS.InvXX.Fundos.References\Org.Mentalis.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ANBIMA\ImportacaoANBIMADbLib.cs" />
+    <Compile Include="ANBIMA\ImportacaoDbLib.cs" />
+    <Compile Include="ANBIMA\LeituraArquivos\Info\AplicacaoAgregadaInfo.cs" />
+    <Compile Include="ANBIMA\LeituraArquivos\Info\EspecieInfo.cs" />
+    <Compile Include="ANBIMA\LeituraArquivos\Info\FundosDiaInfo.cs" />
+    <Compile Include="ANBIMA\LeituraArquivos\Info\FundoNotaExplicativaInfo.cs" />
+    <Compile Include="ANBIMA\LeituraArquivos\Info\FundosConsolidadosDiarioInfo.cs" />
+    <Compile Include="ANBIMA\LeituraArquivos\Info\FundosConsolidadosMensalInfo.cs" />
+    <Compile Include="ANBIMA\LeituraArquivos\Info\FundosDia01Info.cs" />
+    <Compile Include="ANBIMA\LeituraArquivos\Info\FundosInfo.cs" />
+    <Compile Include="ANBIMA\LeituraArquivos\Info\FundosMesInfo.cs" />
+    <Compile Include="ANBIMA\LeituraArquivos\Info\FundosMovCotaInfo.cs" />
+    <Compile Include="ANBIMA\LeituraArquivos\Info\FundosStatusInfo.cs" />
+    <Compile Include="ANBIMA\LeituraArquivos\Info\FundosTipoInfo.cs" />
+    <Compile Include="ANBIMA\LeituraArquivos\Info\IndicadoresInfo.cs" />
+    <Compile Include="ANBIMA\LeituraArquivos\Info\IndicadorMensalInfo.cs" />
+    <Compile Include="ANBIMA\LeituraArquivos\Info\InstituicoesInfo.cs" />
+    <Compile Include="ANBIMA\LeituraArquivos\Info\NotaExplicativaInfo.cs" />
+    <Compile Include="ANBIMA\LeituraArquivos\Info\PLConsolidadoInstituicaoInfo.cs" />
+    <Compile Include="ANBIMA\LeituraArquivos\Info\ProdutosInfo.cs" />
+    <Compile Include="ANBIMA\LeituraArquivos\Info\TaxaAdministracaoInfo.cs" />
+    <Compile Include="ANBIMA\LeituraArquivos\LeituraArquivos.cs" />
+    <Compile Include="ANBIMA\SFTP\ITransferProtocol.cs" />
+    <Compile Include="ANBIMA\SFTP\java\Exception.cs" />
+    <Compile Include="ANBIMA\SFTP\java\io\File.cs" />
+    <Compile Include="ANBIMA\SFTP\java\io\FileInputStream.cs" />
+    <Compile Include="ANBIMA\SFTP\java\io\FileOutputStream.cs" />
+    <Compile Include="ANBIMA\SFTP\java\io\InputStream.cs" />
+    <Compile Include="ANBIMA\SFTP\java\io\InputStreamWrapper.cs" />
+    <Compile Include="ANBIMA\SFTP\java\io\JStream.cs" />
+    <Compile Include="ANBIMA\SFTP\java\io\OutputStream.cs" />
+    <Compile Include="ANBIMA\SFTP\java\lang\Class.cs" />
+    <Compile Include="ANBIMA\SFTP\java\lang\Integer.cs" />
+    <Compile Include="ANBIMA\SFTP\java\lang\Runnable.cs" />
+    <Compile Include="ANBIMA\SFTP\java\lang\StringBuffer.cs" />
+    <Compile Include="ANBIMA\SFTP\java\lang\Thread.cs" />
+    <Compile Include="ANBIMA\SFTP\java\net\InetAddress.cs" />
+    <Compile Include="ANBIMA\SFTP\java\net\ServerSocket.cs" />
+    <Compile Include="ANBIMA\SFTP\java\net\Socket.cs" />
+    <Compile Include="ANBIMA\SFTP\java\Platform.cs" />
+    <Compile Include="ANBIMA\SFTP\java\RuntimeException.cs" />
+    <Compile Include="ANBIMA\SFTP\java\String.cs" />
+    <Compile Include="ANBIMA\SFTP\java\System.cs" />
+    <Compile Include="ANBIMA\SFTP\java\util\Arrays.cs" />
+    <Compile Include="ANBIMA\SFTP\java\util\Enumeration.cs" />
+    <Compile Include="ANBIMA\SFTP\java\util\Hashtable.cs" />
+    <Compile Include="ANBIMA\SFTP\java\util\JavaString.cs" />
+    <Compile Include="ANBIMA\SFTP\java\util\Vector.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\Buffer.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\Channel.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\Channel.old.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\ChannelDirectTCPIP.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\ChannelExec.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\ChannelForwardedTCPIP.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\ChannelSession.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\ChannelSftp.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\ChannelSftpStreamGet.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\ChannelSftpStreamPut.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\ChannelShell.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\ChannelSubsystem.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\ChannelX11.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\Cipher.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\Compression.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\DH.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\DHG1.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\DHGEX.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\ForwardedTCPIPDaemon.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\HASH.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\HostKey.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\HostKeyRepository.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\Identity.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\IdentityFile.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\IO.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\jce\AES128CBC.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\jce\BlowfishCBC.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\jce\DH.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\jce\HMACMD5.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\jce\HMACMD596.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\jce\HMACSHA1.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\jce\HMACSHA196.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\jce\KeyPairGenDSA.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\jce\KeyPairGenRSA.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\jce\MD5.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\jce\Random.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\jce\SHA1.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\jce\SignatureDSA.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\jce\SignatureRSA.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\jce\TripleDESCBC.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\JSch.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\JSchAuthCancelException.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\JSchException.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\JSchPartialAuthException.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\KeyExchange.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\KeyPair.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\KeyPairDSA.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\KeyPairGenDSA.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\KeyPairGenRSA.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\KeyPairRSA.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\KnownHosts.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\MAC.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\Packet.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\PortWatcher.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\Proxy.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\ProxyHTTP.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\Random.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\Request.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\RequestExec.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\RequestPtyReq.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\RequestSftp.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\RequestShell.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\RequestSignal.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\RequestSubsystem.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\RequestWindowChange.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\RequestX11.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\ServerSocketFactory.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\Session.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\SftpATTRS.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\SftpException.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\SftpProgressMonitor.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\SignatureDSA.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\SignatureRSA.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\SocketFactory.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\UIKeyboardInteractive.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\UserAuth.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\UserAuthKeyboardInteractive.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\UserAuthNone.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\UserAuthPassword.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\UserAuthPublicKey.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\UserInfo.cs" />
+    <Compile Include="ANBIMA\SFTP\jsch\Util.cs" />
+    <Compile Include="ANBIMA\SFTP\Sftp.cs" />
+    <Compile Include="ANBIMA\SFTP\SharpSSH.cs" />
+    <Compile Include="ANBIMA\SqlANBIMA.Designer.cs">
+      <DependentUpon>SqlANBIMA.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Extensions.cs" />
+    <Compile Include="FINANCIAL\ImportacaoFinancialDbLib.cs" />
+    <Compile Include="ITAUUNIBANCO\ImportacaoItauDbLib.cs" />
+    <Compile Include="ITAUUNIBANCO\Info\PosicaoClienteItauInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ANBIMA\SFTP\SshBase.cs" />
+    <Compile Include="ANBIMA\SFTP\SshTransferProtocolBase.cs" />
+    <Compile Include="ANBIMA\SFTP\Streams\CombinedStream.cs" />
+    <Compile Include="ANBIMA\SFTP\Streams\InputStream.cs" />
+    <Compile Include="ANBIMA\SFTP\Streams\OutputStream.cs" />
+    <Compile Include="ANBIMA\SFTP\Streams\PipedInputStream.cs" />
+    <Compile Include="ANBIMA\SFTP\Streams\PipedOutputStream.cs" />
+    <Compile Include="ANBIMA\SFTP\Streams\PipedStream.cs" />
+    <Compile Include="ANBIMA\SFTP\Streams\ProtectedConsoleStream.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ANBIMA\Arquivos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ANBIMA\SFTP\java\CVS\Entries" />
+    <None Include="ANBIMA\SFTP\java\CVS\Repository" />
+    <None Include="ANBIMA\SFTP\java\CVS\Root" />
+    <None Include="ANBIMA\SFTP\java\io\CVS\Entries" />
+    <None Include="ANBIMA\SFTP\java\io\CVS\Repository" />
+    <None Include="ANBIMA\SFTP\java\io\CVS\Root" />
+    <None Include="ANBIMA\SFTP\java\lang\CVS\Entries" />
+    <None Include="ANBIMA\SFTP\java\lang\CVS\Repository" />
+    <None Include="ANBIMA\SFTP\java\lang\CVS\Root" />
+    <None Include="ANBIMA\SFTP\java\net\CVS\Entries" />
+    <None Include="ANBIMA\SFTP\java\net\CVS\Repository" />
+    <None Include="ANBIMA\SFTP\java\net\CVS\Root" />
+    <None Include="ANBIMA\SFTP\java\util\CVS\Entries" />
+    <None Include="ANBIMA\SFTP\java\util\CVS\Repository" />
+    <None Include="ANBIMA\SFTP\java\util\CVS\Root" />
+    <None Include="ANBIMA\SFTP\jsch\CVS\Entries" />
+    <None Include="ANBIMA\SFTP\jsch\CVS\Entries.Log" />
+    <None Include="ANBIMA\SFTP\jsch\CVS\Repository" />
+    <None Include="ANBIMA\SFTP\jsch\CVS\Root" />
+    <None Include="ANBIMA\SFTP\jsch\jce\CVS\Entries" />
+    <None Include="ANBIMA\SFTP\jsch\jce\CVS\Repository" />
+    <None Include="ANBIMA\SFTP\jsch\jce\CVS\Root" />
+    <None Include="ANBIMA\SFTP\Streams\CVS\Entries" />
+    <None Include="ANBIMA\SFTP\Streams\CVS\Repository" />
+    <None Include="ANBIMA\SFTP\Streams\CVS\Root" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.Generico.Dados\Gradual.Generico.Dados.csproj">
+      <Project>{8FBA9580-0722-4159-A91A-1DA79B58EB7A}</Project>
+      <Name>Gradual.Generico.Dados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Generico.Geral\Gradual.Generico.Geral.csproj">
+      <Project>{F40F5967-B017-439B-954C-BAD46168D7F1}</Project>
+      <Name>Gradual.Generico.Geral</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.InvXX.Fundos.Lib\Gradual.OMS.InvXX.Fundos.Lib.csproj">
+      <Project>{0614DD59-B226-447E-9198-2D25AA2C0AFC}</Project>
+      <Name>Gradual.OMS.InvXX.Fundos.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ANBIMA\SqlANBIMA.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SqlANBIMA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

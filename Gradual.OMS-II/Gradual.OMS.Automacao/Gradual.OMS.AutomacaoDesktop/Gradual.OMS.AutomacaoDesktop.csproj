@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B0023E57-3681-4A5E-A33B-35CAEDB6208E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.AutomacaoDesktop</RootNamespace>
+    <AssemblyName>Gradual.OMS.AutomacaoDesktop</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.OMS.Library">
+      <HintPath>..\..\Gradual.OMS.References\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\Gradual.OMS.References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NEsper">
+      <HintPath>..\..\Gradual.OMS.References\NEsper.dll</HintPath>
+    </Reference>
+    <Reference Include="NEsper.Runtime">
+      <HintPath>..\..\Gradual.OMS.References\NEsper.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="quickfix_net">
+      <HintPath>..\..\RoteadorOrdens\References\quickfix_net.dll</HintPath>
+    </Reference>
+    <Reference Include="quickfix_net_messages">
+      <HintPath>..\..\RoteadorOrdens\References\quickfix_net_messages.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adapters\GeradorEventosBMFRetransmissor.cs" />
+    <Compile Include="Adapters\GeradorEventosDump2Bovespa.cs" />
+    <Compile Include="Adapters\BovespaClientSinal.cs" />
+    <Compile Include="Adapters\SessaoFIX.cs" />
+    <Compile Include="Adapters\SessaoFIXIncremental.cs" />
+    <Compile Include="BMFLivroOfertas.cs" />
+    <Compile Include="BovespaEventArgs.cs" />
+    <Compile Include="BovespaLivroOfertas.cs" />
+    <Compile Include="ConstantesMDS.cs" />
+    <Compile Include="Consumer\BMFLivroOfertasConsumer.cs" />
+    <Compile Include="Consumer\BovespaLivroOfertasConsumer.cs" />
+    <Compile Include="DadosGlobais.cs" />
+    <Compile Include="DadosInstrumentosBMF.cs" />
+    <Compile Include="Events\EventoAtualizacaoLivroOfertas.cs" />
+    <Compile Include="Events\EventoBMF.cs" />
+    <Compile Include="Events\EventoBovespa.cs" />
+    <Compile Include="Adapters\GeradorEventosBovespa.cs" />
+    <Compile Include="Events\EventoLOFAgrupado.cs" />
+    <Compile Include="FixConfig.cs" />
+    <Compile Include="Listeners\BMFLivroOfertasListener.cs" />
+    <Compile Include="Listeners\GroupedLOFListenerClass1.cs" />
+    <Compile Include="Monitors\AutomacaoMonitorBase.cs" />
+    <Compile Include="Listeners\BovespaLivroOfertasListener.cs" />
+    <Compile Include="Monitors\BMFLivroOfertasMonitor.cs" />
+    <Compile Include="Monitors\BovespaLivroOfertasMonitor.cs" />
+    <Compile Include="AutomacaoConfig.cs" />
+    <Compile Include="Monitors\GroupedLOFMonitor.cs" />
+    <Compile Include="NormalizadorNumero.cs" />
+    <Compile Include="PersistenciaMarketData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Adapters\RetransmissorBMF.cs" />
+    <Compile Include="ServicoAutomacaoDesktop.cs" />
+    <Compile Include="Adapters\SessaoFIXInstantaneo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SINALCom">
+      <Guid>{33D7F1BE-6FE1-4645-81DE-B1F3B2FA0872}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.OMS.Automacao.Lib\Gradual.OMS.Automacao.Lib.csproj">
+      <Project>{877BEA42-A5FE-4BD8-A72F-1C88CFFF399A}</Project>
+      <Name>Gradual.OMS.Automacao.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

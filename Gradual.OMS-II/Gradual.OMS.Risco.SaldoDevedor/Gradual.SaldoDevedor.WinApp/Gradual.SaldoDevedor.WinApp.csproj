@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23079396-25D8-4211-990E-C12CC772D5C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.SaldoDevedor.WinApp</RootNamespace>
+    <AssemblyName>Gradual.SaldoDevedor.WinApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.OMS.CadastroCliente.Lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Gradual.OMS.References\Gradual.OMS.CadastroCliente.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Library">
+      <HintPath>..\..\Gradual.OMS.References\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Seguranca.Lib">
+      <HintPath>..\..\Gradual.OMS.References\Gradual.OMS.Seguranca.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Gradual.OMS.References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Outlook, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Aplicacao.cs" />
+    <Compile Include="Classes\AssemblyHelper.cs" />
+    <Compile Include="Classes\Cliente.cs" />
+    <Compile Include="Classes\Constantes.cs" />
+    <Compile Include="Classes\ContextoGlobal.cs" />
+    <Compile Include="Classes\Extensions.cs" />
+    <Compile Include="Classes\Preferencias.cs" />
+    <Compile Include="Classes\Seguranca.cs" />
+    <Compile Include="Classes\Usuario.cs" />
+    <Compile Include="Classes\UsuarioPadrao.cs" />
+    <Compile Include="frmConfigEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfigEmail.Designer.cs">
+      <DependentUpon>frmConfigEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfiguracao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguracao.Designer.cs">
+      <DependentUpon>frmConfiguracao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistorico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistorico.Designer.cs">
+      <DependentUpon>frmHistorico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistoricoTotais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistoricoTotais.Designer.cs">
+      <DependentUpon>frmHistoricoTotais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNotificarAssessores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotificarAssessores.Designer.cs">
+      <DependentUpon>frmNotificarAssessores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNotificarAtendimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotificarAtendimento.Designer.cs">
+      <DependentUpon>frmNotificarAtendimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNotificarTesouraria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotificarTesouraria.Designer.cs">
+      <DependentUpon>frmNotificarTesouraria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaldoDevedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaldoDevedor.Designer.cs">
+      <DependentUpon>frmSaldoDevedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\WsAutenticacao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmConfigEmail.resx">
+      <DependentUpon>frmConfigEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguracao.resx">
+      <DependentUpon>frmConfiguracao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistorico.resx">
+      <DependentUpon>frmHistorico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistoricoTotais.resx">
+      <DependentUpon>frmHistoricoTotais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotificarAssessores.resx">
+      <DependentUpon>frmNotificarAssessores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotificarAtendimento.resx">
+      <DependentUpon>frmNotificarAtendimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotificarTesouraria.resx">
+      <DependentUpon>frmNotificarTesouraria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSaldoDevedor.resx">
+      <DependentUpon>frmSaldoDevedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\WsAutenticacao\Autenticacao.wsdl" />
+    <None Include="Service References\WsAutenticacao\Gradual.SaldoDevedor.WinApp.WsAutenticacao.AutenticarUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WsAutenticacao\Gradual.SaldoDevedor.WinApp.WsAutenticacao.BuscarPermissoesDoUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WsAutenticacao\Gradual.SaldoDevedor.WinApp.WsAutenticacao.VerificarAutenticacaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.SaldoDevedor.lib\Gradual.SaldoDevedor.lib.csproj">
+      <Project>{C2822CA7-DBE1-4807-B5CE-397EB6921D3C}</Project>
+      <Name>Gradual.SaldoDevedor.lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.SaldoDevedor\Gradual.SaldoDevedor.csproj">
+      <Project>{3DA26EE5-6E36-46DF-B49F-CECA064AAFAE}</Project>
+      <Name>Gradual.SaldoDevedor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GradualForm\GradualForm.csproj">
+      <Project>{3B25656A-0A6B-4B68-BF41-9D3C50387EA2}</Project>
+      <Name>GradualForm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\Ico-Configuracoes-ce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\Ico-Excluir-ce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\Ico-Mensagens-ce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\Ico-Criar-ce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\Fundo_Login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\Loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\WsAutenticacao\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WsAutenticacao\Autenticacao.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WsAutenticacao\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WsAutenticacao\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WsAutenticacao\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

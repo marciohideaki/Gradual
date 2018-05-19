@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.cblc.com.br" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.cblc.com.br" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.cblc.com.br">
+      <s:element name="EnviarSinal">
+        <s:complexType />
+      </s:element>
+      <s:element name="EnviarSinalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EnviarSinalResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="EnviarSinalSoapIn">
+    <wsdl:part name="parameters" element="tns:EnviarSinal" />
+  </wsdl:message>
+  <wsdl:message name="EnviarSinalSoapOut">
+    <wsdl:part name="parameters" element="tns:EnviarSinalResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CTestaConectividadeSoap">
+    <wsdl:operation name="EnviarSinal">
+      <wsdl:input message="tns:EnviarSinalSoapIn" />
+      <wsdl:output message="tns:EnviarSinalSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CTestaConectividadeSoap" type="tns:CTestaConectividadeSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EnviarSinal">
+      <soap:operation soapAction="http://www.cblc.com.br/EnviarSinal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CTestaConectividadeSoap12" type="tns:CTestaConectividadeSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EnviarSinal">
+      <soap12:operation soapAction="http://www.cblc.com.br/EnviarSinal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CTestaConectividade">
+    <wsdl:port name="CTestaConectividadeSoap" binding="tns:CTestaConectividadeSoap">
+      <soap:address location="http://125.255.60.72/INFRAConectividadeWS/INFRAConectividadeWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CTestaConectividadeSoap12" binding="tns:CTestaConectividadeSoap12">
+      <soap12:address location="http://125.255.60.72/INFRAConectividadeWS/INFRAConectividadeWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

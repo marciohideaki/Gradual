@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.PoupeDirect", "Gradual.OMS.PoupeDirect\Gradual.OMS.PoupeDirect.csproj", "{49A9BAA2-3443-4CC9-892A-E731E0365FAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.PoupeDirect.Lib", "Gradual.OMS.PoupeDirect.Lib\Gradual.OMS.PoupeDirect.Lib.csproj", "{4E18F331-CEB7-4DFE-9436-D1E697A19FE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.PoupeDirect.Test", "Gradual.OMS.PoupeDirect.Test\Gradual.OMS.PoupeDirect.Test.csproj", "{3C2D236B-2D75-4B58-B3D9-31EA49AB216D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D8C88FD0-C785-4115-8977-0BCED5832619}"
+	ProjectSection(SolutionItems) = preProject
+		Gradual.OMS.PoupeDirect.vsmdi = Gradual.OMS.PoupeDirect.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.Generico.Dados", "..\..\Gradual.Etc\Gradual.Generico.Dados\Gradual.Generico.Dados\Gradual.Generico.Dados.csproj", "{8FBA9580-0722-4159-A91A-1DA79B58EB7A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gradual.OMS.PoupeDirect.Lib\\Gradual.OMS.PoupeDirect.Lib.csproj
+		SccProjectName1 = Gradual.OMS.PoupeDirect.Lib
+		SccLocalPath1 = Gradual.OMS.PoupeDirect.Lib
+		SccProjectUniqueName2 = Gradual.OMS.PoupeDirect.Test\\Gradual.OMS.PoupeDirect.Test.csproj
+		SccProjectName2 = Gradual.OMS.PoupeDirect.Test
+		SccLocalPath2 = Gradual.OMS.PoupeDirect.Test
+		SccProjectUniqueName3 = Gradual.OMS.PoupeDirect\\Gradual.OMS.PoupeDirect.csproj
+		SccProjectName3 = Gradual.OMS.PoupeDirect
+		SccLocalPath3 = Gradual.OMS.PoupeDirect
+		SccProjectUniqueName4 = ..\\..\\Gradual.Etc\\Gradual.Generico.Dados\\Gradual.Generico.Dados\\Gradual.Generico.Dados.csproj
+		SccProjectName4 = ../../Gradual.Etc/Gradual.Generico.Dados/Gradual.Generico.Dados
+		SccLocalPath4 = ..\\..\\Gradual.Etc\\Gradual.Generico.Dados\\Gradual.Generico.Dados
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Gradual.OMS.PoupeDirect.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49A9BAA2-3443-4CC9-892A-E731E0365FAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49A9BAA2-3443-4CC9-892A-E731E0365FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49A9BAA2-3443-4CC9-892A-E731E0365FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49A9BAA2-3443-4CC9-892A-E731E0365FAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E18F331-CEB7-4DFE-9436-D1E697A19FE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E18F331-CEB7-4DFE-9436-D1E697A19FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E18F331-CEB7-4DFE-9436-D1E697A19FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E18F331-CEB7-4DFE-9436-D1E697A19FE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C2D236B-2D75-4B58-B3D9-31EA49AB216D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C2D236B-2D75-4B58-B3D9-31EA49AB216D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C2D236B-2D75-4B58-B3D9-31EA49AB216D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C2D236B-2D75-4B58-B3D9-31EA49AB216D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FBA9580-0722-4159-A91A-1DA79B58EB7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FBA9580-0722-4159-A91A-1DA79B58EB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FBA9580-0722-4159-A91A-1DA79B58EB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FBA9580-0722-4159-A91A-1DA79B58EB7A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

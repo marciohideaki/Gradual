@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Gradual.OMS.TesouroDireto.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Gradual_OMS_TesouroDireto_WSDTCompra_compra" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://oe161.trade.bvmf/compra.asmx</Value>
+    </Setting>
+    <Setting Name="Gradua_OMS_TesouroDireto_wsSuitability_Service1" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.gradualinvestimentos.com.br/suitabilityws/wssuitability.asmx</Value>
+    </Setting>
+    <Setting Name="Gradua_OMS_TesouroDireto_WSTDConectividade_CTestaConectividade" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://oe161.trade.bvmf/INFRAConectividadeWS/INFRAConectividadeWS.asmx</Value>
+    </Setting>
+    <Setting Name="Gradual_OMS_TesouroDireto_WSTDConsultas_consultas" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://oe161.trade.bvmf/consultas.asmx</Value>
+    </Setting>
+    <Setting Name="Gradua_OMS_TesouroDireto_WSTDInvestidor_Investidor" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://oe161.trade.bvmf/investidor/investidor.asmx</Value>
+    </Setting>
+    <Setting Name="Gradual_OMS_TesouroDireto_WSTDVenda_venda" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://oe161.trade.bvmf/venda.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

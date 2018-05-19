@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Gradual Investimentos</title>
+<style type="text/css">
+<!--
+.style1 {
+	color: #0E4891;
+	font-size: 16px;
+}
+.style9 {font-size: 14pt}
+-->
+</style></head>
+
+<body bgcolor="#E8E8E8">
+<table width="546" border="0" align="center" cellspacing="0" bordercolor="#DFDFDF">
+  <tr>
+	<td width="556"><table width="546" border="0" cellspacing="0">
+	  <tr>
+		<td colspan="3"><a href="http://www.gradualinvestimentos.com.br"><img src="http://www.gradualinvestimentos.com.br/portal/images/header_email_portal02.gif" width="546" height="72" alt="gradual" border="0"/></a></td>
+	  </tr>
+	  <tr>
+		<td width="15" bgcolor="#FFFFFF"><p>&nbsp;</p>          </td>
+		<td width="516" bgcolor="#FFFFFF"><p><span style="font-family:Calibri, Tahoma; font-size:14pt; color:#000000"><b><br />
+		  Tesouraria,</b></span><br />
+			<br />
+			<span style="font-family:Calibri, Tahoma; font-size:11pt; color:#000000">Segue em anexo o arquivo ##ARQUIVO## gerado pelo sistema pronto para ser Importado para o SINACOR.<br /></span>
+			 <p>
+			 </span>
+			 <br />
+			
+			  </span> <span style="font-family:Calibri, Tahoma; font-size:14pt; color:#000000"><b>Gradual  Investimentos</b></span><br />
+			  <br />
+			 </p>
+		  </td>
+		<td width="15" bgcolor="#FFFFFF">&nbsp;</td>
+		</tr>
+	 <tr>
+		<td colspan="3"><a href="http://www.gradualinvestimentos.com.br"><img src="http://www.gradualinvestimentos.com.br/portal/images/footer_email_portal04.gif" width="546" height="52" border="0" usemap="#Map" /></a></td>
+		</tr>
+	</table></td>
+  </tr>
+</table>
+<br />
+
+<map name="Map" id="Map"><area shape="rect" coords="320,6,421,27" href="http://naaltaounabaixa.wordpress.com/" target="_blank" />
+<area shape="rect" coords="467,6,528,26" href="http://twitter.com/gradualinvest" target="_blank" />
+<area shape="rect" coords="320,27,531,44" href="http://www.gradualinvestimentos.com.br/portal/home.aspx" target="_blank" />
+</map>
+</body>
+</html>

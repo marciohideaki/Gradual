@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.RelatoriosFinanc", "Gradual.OMS.RelatoriosFinanc\Gradual.OMS.RelatoriosFinanc.csproj", "{3C842F8F-0CE5-4DDE-94D4-4D82292D2504}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.RelatoriosFinanc.Lib", "Gradual.OMS.RelatoriosFinanc.Lib\Gradual.OMS.RelatoriosFinanc.Lib.csproj", "{E0B6F204-FD09-4CBC-9E57-84841575DB08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.RelatoriosFinanc.Teste", "Gradual.OMS.RelatoriosFinanc.Teste\Gradual.OMS.RelatoriosFinanc.Teste.csproj", "{8B804E6F-2559-4146-AF1E-7317882DCB3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D595F4A8-63E1-47E5-8FF5-5D329730ABB2}"
+	ProjectSection(SolutionItems) = preProject
+		Gradual.OMS.RelatoriosFinanc.vsmdi = Gradual.OMS.RelatoriosFinanc.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.RelFinanc.Teste", "Gradual.OMS.RelFinanc.Teste\Gradual.OMS.RelFinanc.Teste.csproj", "{3923FFD8-11DA-44C5-9DF5-968332ED409A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gradual.OMS.RelatoriosFinanc\\Gradual.OMS.RelatoriosFinanc.csproj
+		SccProjectName1 = Gradual.OMS.RelatoriosFinanc
+		SccLocalPath1 = Gradual.OMS.RelatoriosFinanc
+		SccProjectUniqueName2 = Gradual.OMS.RelatoriosFinanc.Lib\\Gradual.OMS.RelatoriosFinanc.Lib.csproj
+		SccProjectName2 = Gradual.OMS.RelatoriosFinanc.Lib
+		SccLocalPath2 = Gradual.OMS.RelatoriosFinanc.Lib
+		SccProjectUniqueName3 = Gradual.OMS.RelatoriosFinanc.Teste\\Gradual.OMS.RelatoriosFinanc.Teste.csproj
+		SccProjectName3 = Gradual.OMS.RelatoriosFinanc.Teste
+		SccLocalPath3 = Gradual.OMS.RelatoriosFinanc.Teste
+		SccProjectUniqueName4 = Gradual.OMS.RelFinanc.Teste\\Gradual.OMS.RelFinanc.Teste.csproj
+		SccProjectName4 = Gradual.OMS.RelFinanc.Teste
+		SccLocalPath4 = Gradual.OMS.RelFinanc.Teste
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Gradual.OMS.RelatoriosFinanc.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C842F8F-0CE5-4DDE-94D4-4D82292D2504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C842F8F-0CE5-4DDE-94D4-4D82292D2504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C842F8F-0CE5-4DDE-94D4-4D82292D2504}.Debug|x86.ActiveCfg = Debug|x86
+		{3C842F8F-0CE5-4DDE-94D4-4D82292D2504}.Debug|x86.Build.0 = Debug|x86
+		{3C842F8F-0CE5-4DDE-94D4-4D82292D2504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C842F8F-0CE5-4DDE-94D4-4D82292D2504}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C842F8F-0CE5-4DDE-94D4-4D82292D2504}.Release|x86.ActiveCfg = Release|x86
+		{3C842F8F-0CE5-4DDE-94D4-4D82292D2504}.Release|x86.Build.0 = Release|x86
+		{E0B6F204-FD09-4CBC-9E57-84841575DB08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0B6F204-FD09-4CBC-9E57-84841575DB08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0B6F204-FD09-4CBC-9E57-84841575DB08}.Debug|x86.ActiveCfg = Debug|x86
+		{E0B6F204-FD09-4CBC-9E57-84841575DB08}.Debug|x86.Build.0 = Debug|x86
+		{E0B6F204-FD09-4CBC-9E57-84841575DB08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0B6F204-FD09-4CBC-9E57-84841575DB08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0B6F204-FD09-4CBC-9E57-84841575DB08}.Release|x86.ActiveCfg = Release|x86
+		{E0B6F204-FD09-4CBC-9E57-84841575DB08}.Release|x86.Build.0 = Release|x86
+		{8B804E6F-2559-4146-AF1E-7317882DCB3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B804E6F-2559-4146-AF1E-7317882DCB3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B804E6F-2559-4146-AF1E-7317882DCB3E}.Debug|x86.ActiveCfg = Debug|x86
+		{8B804E6F-2559-4146-AF1E-7317882DCB3E}.Debug|x86.Build.0 = Debug|x86
+		{8B804E6F-2559-4146-AF1E-7317882DCB3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B804E6F-2559-4146-AF1E-7317882DCB3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B804E6F-2559-4146-AF1E-7317882DCB3E}.Release|x86.ActiveCfg = Release|x86
+		{8B804E6F-2559-4146-AF1E-7317882DCB3E}.Release|x86.Build.0 = Release|x86
+		{3923FFD8-11DA-44C5-9DF5-968332ED409A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{3923FFD8-11DA-44C5-9DF5-968332ED409A}.Debug|Any CPU.Build.0 = Debug|x86
+		{3923FFD8-11DA-44C5-9DF5-968332ED409A}.Debug|x86.ActiveCfg = Debug|x86
+		{3923FFD8-11DA-44C5-9DF5-968332ED409A}.Debug|x86.Build.0 = Debug|x86
+		{3923FFD8-11DA-44C5-9DF5-968332ED409A}.Release|Any CPU.ActiveCfg = Release|x86
+		{3923FFD8-11DA-44C5-9DF5-968332ED409A}.Release|x86.ActiveCfg = Release|x86
+		{3923FFD8-11DA-44C5-9DF5-968332ED409A}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

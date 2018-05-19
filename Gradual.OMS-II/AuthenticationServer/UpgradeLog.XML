@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="AuthenticationServer">
+</Property><Property Name="Solution File" Value="C:\AuthenticationServer\AuthenticationServer.sln">
+</Property><Property Name="User Options File" Value="C:\AuthenticationServer\AuthenticationServer.suo">
+</Property><Property Name="Date" Value="quarta-feira, 22 de dezembro de 2010">
+</Property><Property Name="Time" Value="17:09">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="AuthenticationServer.sln" Description="File successfully backed up as C:\AuthenticationServer\Backup\AuthenticationServer.sln">
+</Event><Event ErrorLevel="0" Project="" Source="AuthenticationServer.suo" Description="File successfully backed up as C:\AuthenticationServer\Backup\AuthenticationServer.suo">
+</Event><Event ErrorLevel="0" Project="AuthenticationServer" Source="AuthenticationServer\AuthenticationServer.csproj" Description="Project file successfully backed up as C:\AuthenticationServer\Backup\AuthenticationServer\AuthenticationServer.csproj">
+</Event><Event ErrorLevel="0" Project="AuthenticationServer" Source="AuthenticationServer\Gradual.AS.Dados\DAuthenticationServer.cs" Description="File successfully backed up as C:\AuthenticationServer\Backup\AuthenticationServer\Gradual.AS.Dados\DAuthenticationServer.cs">
+</Event><Event ErrorLevel="0" Project="AuthenticationServer" Source="AuthenticationServer\Gradual.AS.Negocio\BAuthenticationServer.cs" Description="File successfully backed up as C:\AuthenticationServer\Backup\AuthenticationServer\Gradual.AS.Negocio\BAuthenticationServer.cs">
+</Event><Event ErrorLevel="0" Project="AuthenticationServer" Source="AuthenticationServer\Message\GenericMessage.cs" Description="File successfully backed up as C:\AuthenticationServer\Backup\AuthenticationServer\Message\GenericMessage.cs">
+</Event><Event ErrorLevel="0" Project="AuthenticationServer" Source="AuthenticationServer\Message\Receive\Header.cs" Description="File successfully backed up as C:\AuthenticationServer\Backup\AuthenticationServer\Message\Receive\Header.cs">
+</Event><Event ErrorLevel="0" Project="AuthenticationServer" Source="AuthenticationServer\Message\Receive\SignIn.cs" Description="File successfully backed up as C:\AuthenticationServer\Backup\AuthenticationServer\Message\Receive\SignIn.cs">
+</Event><Event ErrorLevel="0" Project="AuthenticationServer" Source="AuthenticationServer\Message\Receive\SignOut.cs" Description="File successfully backed up as C:\AuthenticationServer\Backup\AuthenticationServer\Message\Receive\SignOut.cs">
+</Event><Event ErrorLevel="0" Project="AuthenticationServer" Source="AuthenticationServer\Message\Sender\MDSSignIn.cs" Description="File successfully backed up as C:\AuthenticationServer\Backup\AuthenticationServer\Message\Sender\MDSSignIn.cs">
+</Event><Event ErrorLevel="0" Project="AuthenticationServer" Source="AuthenticationServer\Message\Sender\Message.cs" Description="File successfully backed up as C:\AuthenticationServer\Backup\AuthenticationServer\Message\Sender\Message.cs">
+</Event><Event ErrorLevel="0" Project="AuthenticationServer" Source="AuthenticationServer\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\AuthenticationServer\Backup\AuthenticationServer\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="AuthenticationServer" Source="AuthenticationServer\Socket\SocketPackage.cs" Description="File successfully backed up as C:\AuthenticationServer\Backup\AuthenticationServer\Socket\SocketPackage.cs">
+</Event><Event ErrorLevel="0" Project="AuthenticationServer" Source="AuthenticationServer\AuthenticationServer.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="AuthenticationServer" Source="AuthenticationServer\AuthenticationServer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Hoster" Source="Hoster\Hoster.csproj" Description="Project file successfully backed up as C:\AuthenticationServer\Backup\Hoster\Hoster.csproj">
+</Event><Event ErrorLevel="0" Project="Hoster" Source="Hoster\Program.cs" Description="File successfully backed up as C:\AuthenticationServer\Backup\Hoster\Program.cs">
+</Event><Event ErrorLevel="0" Project="Hoster" Source="Hoster\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\AuthenticationServer\Backup\Hoster\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Hoster" Source="Hoster\App.config" Description="File successfully backed up as C:\AuthenticationServer\Backup\Hoster\App.config">
+</Event><Event ErrorLevel="0" Project="Hoster" Source="Hoster\Hoster.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Hoster" Source="Hoster\Hoster.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="AuthenticationServerHoster" Source="AuthenticationServerHoster\AuthenticationServerHoster.csproj" Description="Project file successfully backed up as C:\AuthenticationServer\Backup\AuthenticationServerHoster\AuthenticationServerHoster.csproj">
+</Event><Event ErrorLevel="0" Project="AuthenticationServerHoster" Source="AuthenticationServerHoster\ASHoster.cs" Description="File successfully backed up as C:\AuthenticationServer\Backup\AuthenticationServerHoster\ASHoster.cs">
+</Event><Event ErrorLevel="0" Project="AuthenticationServerHoster" Source="AuthenticationServerHoster\ASHoster.Designer.cs" Description="File successfully backed up as C:\AuthenticationServer\Backup\AuthenticationServerHoster\ASHoster.Designer.cs">
+</Event><Event ErrorLevel="0" Project="AuthenticationServerHoster" Source="AuthenticationServerHoster\Program.cs" Description="File successfully backed up as C:\AuthenticationServer\Backup\AuthenticationServerHoster\Program.cs">
+</Event><Event ErrorLevel="0" Project="AuthenticationServerHoster" Source="AuthenticationServerHoster\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\AuthenticationServer\Backup\AuthenticationServerHoster\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="AuthenticationServerHoster" Source="AuthenticationServerHoster\App.config" Description="File successfully backed up as C:\AuthenticationServer\Backup\AuthenticationServerHoster\App.config">
+</Event><Event ErrorLevel="0" Project="AuthenticationServerHoster" Source="AuthenticationServerHoster\ASHoster.resx" Description="File successfully backed up as C:\AuthenticationServer\Backup\AuthenticationServerHoster\ASHoster.resx">
+</Event><Event ErrorLevel="0" Project="AuthenticationServerHoster" Source="AuthenticationServerHoster\AuthenticationServerHoster.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="AuthenticationServerHoster" Source="AuthenticationServerHoster\AuthenticationServerHoster.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="AuthenticationServer.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="AuthenticationServer.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="AuthenticationServer" Source="AuthenticationServer\AuthenticationServer.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Hoster" Source="Hoster\Hoster.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="AuthenticationServerHoster" Source="AuthenticationServerHoster\AuthenticationServerHoster.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

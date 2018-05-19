@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Importa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IdCotista" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IdCarteira" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="DataOperacao" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="DataConversao" nillable="true" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="DataLiquidacao" nillable="true" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="TipoOperacao" type="s:unsignedByte" />
+            <s:element minOccurs="1" maxOccurs="1" name="TipoResgate" type="s:unsignedByte" />
+            <s:element minOccurs="1" maxOccurs="1" name="Quantidade" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="CotaOperacao" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="ValorBruto" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="ValorLiquido" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="ValorIR" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="ValorIOF" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="ValorPerformance" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="RendimentoResgate" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ImportaResult" type="tns:OperacaoCotistaViewModel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="OperacaoCotistaViewModel">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdOperacao" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdCotista" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdCarteira" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DataOperacao" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DataConversao" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DataLiquidacao" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DataAgendamento" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TipoOperacao" type="s:unsignedByte" />
+          <s:element minOccurs="1" maxOccurs="1" name="TipoResgate" nillable="true" type="s:unsignedByte" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdPosicaoResgatada" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdFormaLiquidacao" type="s:unsignedByte" />
+          <s:element minOccurs="1" maxOccurs="1" name="Quantidade" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="CotaOperacao" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorBruto" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorLiquido" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorIR" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorIOF" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorCPMF" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorPerformance" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="PrejuizoUsado" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="RendimentoResgate" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="VariacaoResgate" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Observacao" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DadosBancarios" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CpfcnpjCarteira" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CpfcnpjCotista" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Fonte" type="s:unsignedByte" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdConta" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CotaInformada" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdAgenda" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdOperacaoResgatada" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoAnbima" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ValidateLogin" type="tns:ValidateLogin" />
+      <s:complexType name="ValidateLogin">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="Exporta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IdOperacao" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IdCotista" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IdCarteira" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="DataOperacao" nillable="true" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExportaResult" type="tns:OperacaoCotistaCollection" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="OperacaoCotistaCollection">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OperacaoCotista" nillable="true" type="tns:OperacaoCotista" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OperacaoCotista">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:esOperacaoCotista" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="esOperacaoCotista" abstract="true">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdOperacao" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdCotista" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdCarteira" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DataOperacao" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DataConversao" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DataLiquidacao" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DataAgendamento" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TipoOperacao" nillable="true" type="s:unsignedByte" />
+          <s:element minOccurs="1" maxOccurs="1" name="TipoResgate" nillable="true" type="s:unsignedByte" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdPosicaoResgatada" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdFormaLiquidacao" nillable="true" type="s:unsignedByte" />
+          <s:element minOccurs="1" maxOccurs="1" name="Quantidade" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="CotaOperacao" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorBruto" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorLiquido" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorIR" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorIOF" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorCPMF" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorPerformance" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="PrejuizoUsado" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="RendimentoResgate" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="VariacaoResgate" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Observacao" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DadosBancarios" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Fonte" nillable="true" type="s:unsignedByte" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdConta" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CotaInformada" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdAgenda" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdOperacaoResgatada" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdOperacaoAuxiliar" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ImportaSoapIn">
+    <wsdl:part name="parameters" element="tns:Importa" />
+  </wsdl:message>
+  <wsdl:message name="ImportaSoapOut">
+    <wsdl:part name="parameters" element="tns:ImportaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ImportaValidateLogin">
+    <wsdl:part name="ValidateLogin" element="tns:ValidateLogin" />
+  </wsdl:message>
+  <wsdl:message name="ExportaSoapIn">
+    <wsdl:part name="parameters" element="tns:Exporta" />
+  </wsdl:message>
+  <wsdl:message name="ExportaSoapOut">
+    <wsdl:part name="parameters" element="tns:ExportaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExportaValidateLogin">
+    <wsdl:part name="ValidateLogin" element="tns:ValidateLogin" />
+  </wsdl:message>
+  <wsdl:portType name="OperacaoCotistaWSSoap">
+    <wsdl:operation name="Importa">
+      <wsdl:input message="tns:ImportaSoapIn" />
+      <wsdl:output message="tns:ImportaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Exporta">
+      <wsdl:input message="tns:ExportaSoapIn" />
+      <wsdl:output message="tns:ExportaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OperacaoCotistaWSSoap" type="tns:OperacaoCotistaWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Importa">
+      <soap:operation soapAction="http://tempuri.org/Importa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ImportaValidateLogin" part="ValidateLogin" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Exporta">
+      <soap:operation soapAction="http://tempuri.org/Exporta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ExportaValidateLogin" part="ValidateLogin" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="OperacaoCotistaWSSoap12" type="tns:OperacaoCotistaWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Importa">
+      <soap12:operation soapAction="http://tempuri.org/Importa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ImportaValidateLogin" part="ValidateLogin" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Exporta">
+      <soap12:operation soapAction="http://tempuri.org/Exporta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ExportaValidateLogin" part="ValidateLogin" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OperacaoCotistaWS">
+    <wsdl:port name="OperacaoCotistaWSSoap" binding="tns:OperacaoCotistaWSSoap">
+      <soap:address location="http://financial.gradual.intra/webservices/cotista/operacaocotista.asmx" />
+    </wsdl:port>
+    <wsdl:port name="OperacaoCotistaWSSoap12" binding="tns:OperacaoCotistaWSSoap12">
+      <soap12:address location="http://financial.gradual.intra/webservices/cotista/operacaocotista.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

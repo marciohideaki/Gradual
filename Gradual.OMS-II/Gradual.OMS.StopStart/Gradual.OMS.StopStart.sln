@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StopStartTestForms", "StopStartForms\StopStartTestForms.csproj", "{C8F0F230-F12F-413D-99D8-58CEBD3EF124}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ECC38ABE-FFFC-4755-9B81-7429B482583F} = {ECC38ABE-FFFC-4755-9B81-7429B482583F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Comunicacao.Automacao.Ordens", "Gradual.Ordens.Comunicacao\Gradual.OMS.Comunicacao.Automacao.Ordens.csproj", "{ECC38ABE-FFFC-4755-9B81-7429B482583F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Ordens.StartStop.Lib", "Gradual.Ordens.Contrato\Gradual.OMS.Ordens.StartStop.Lib.csproj", "{F6FD8B53-3848-44ED-8579-15AC86244569}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.StopStart", "Gradual.OMS.StopStart\Gradual.OMS.StopStart.csproj", "{205E9A09-B0E0-4958-8690-B968E7EC7D15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.StopStartAdm.Lib", "Gradual.OMS.StopStartAdm.Lib\Gradual.OMS.StopStartAdm.Lib.csproj", "{1EB1FAEC-05A5-467C-BFEF-8B0B76853D79}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gradual.Ordens.Comunicacao\\Gradual.OMS.Comunicacao.Automacao.Ordens.csproj
+		SccProjectName1 = Gradual.Ordens.Comunicacao
+		SccLocalPath1 = Gradual.Ordens.Comunicacao
+		SccProjectUniqueName2 = Gradual.Ordens.Contrato\\Gradual.OMS.Ordens.StartStop.Lib.csproj
+		SccProjectName2 = Gradual.Ordens.Contrato
+		SccLocalPath2 = Gradual.Ordens.Contrato
+		SccProjectUniqueName3 = StopStartForms\\StopStartTestForms.csproj
+		SccProjectName3 = StopStartForms
+		SccLocalPath3 = StopStartForms
+		SccProjectUniqueName4 = Gradual.OMS.StopStart\\Gradual.OMS.StopStart.csproj
+		SccProjectName4 = Gradual.OMS.StopStart
+		SccLocalPath4 = Gradual.OMS.StopStart
+		SccProjectUniqueName5 = Gradual.OMS.StopStartAdm.Lib\\Gradual.OMS.StopStartAdm.Lib.csproj
+		SccProjectName5 = Gradual.OMS.StopStartAdm.Lib
+		SccLocalPath5 = Gradual.OMS.StopStartAdm.Lib
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8F0F230-F12F-413D-99D8-58CEBD3EF124}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8F0F230-F12F-413D-99D8-58CEBD3EF124}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8F0F230-F12F-413D-99D8-58CEBD3EF124}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F0F230-F12F-413D-99D8-58CEBD3EF124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECC38ABE-FFFC-4755-9B81-7429B482583F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECC38ABE-FFFC-4755-9B81-7429B482583F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECC38ABE-FFFC-4755-9B81-7429B482583F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECC38ABE-FFFC-4755-9B81-7429B482583F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6FD8B53-3848-44ED-8579-15AC86244569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6FD8B53-3848-44ED-8579-15AC86244569}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6FD8B53-3848-44ED-8579-15AC86244569}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6FD8B53-3848-44ED-8579-15AC86244569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{205E9A09-B0E0-4958-8690-B968E7EC7D15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{205E9A09-B0E0-4958-8690-B968E7EC7D15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{205E9A09-B0E0-4958-8690-B968E7EC7D15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{205E9A09-B0E0-4958-8690-B968E7EC7D15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EB1FAEC-05A5-467C-BFEF-8B0B76853D79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EB1FAEC-05A5-467C-BFEF-8B0B76853D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EB1FAEC-05A5-467C-BFEF-8B0B76853D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EB1FAEC-05A5-467C-BFEF-8B0B76853D79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

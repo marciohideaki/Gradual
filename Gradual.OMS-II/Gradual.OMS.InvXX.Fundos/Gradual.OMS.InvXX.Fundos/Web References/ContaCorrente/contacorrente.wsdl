@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ExportaListaContaCorrente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IdPessoa" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportaListaContaCorrenteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExportaListaContaCorrenteResult" type="tns:ArrayOfContaCorrenteViewModel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfContaCorrenteViewModel">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ContaCorrenteViewModel" nillable="true" type="tns:ContaCorrenteViewModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ContaCorrenteViewModel">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdConta" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdBanco" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdAgencia" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdPessoa" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Numero" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TipoConta" nillable="true" type="s:unsignedByte" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContaDefault" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdMoeda" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ValidateLogin" type="tns:ValidateLogin" />
+      <s:complexType name="ValidateLogin">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="ExportaListaContaCorrentePorCpfcnpjPessoa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CpfcnpjPessoa" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportaListaContaCorrentePorCpfcnpjPessoaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExportaListaContaCorrentePorCpfcnpjPessoaResult" type="tns:ArrayOfContaCorrenteViewModel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ExportaListaContaCorrenteSoapIn">
+    <wsdl:part name="parameters" element="tns:ExportaListaContaCorrente" />
+  </wsdl:message>
+  <wsdl:message name="ExportaListaContaCorrenteSoapOut">
+    <wsdl:part name="parameters" element="tns:ExportaListaContaCorrenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExportaListaContaCorrenteValidateLogin">
+    <wsdl:part name="ValidateLogin" element="tns:ValidateLogin" />
+  </wsdl:message>
+  <wsdl:message name="ExportaListaContaCorrentePorCpfcnpjPessoaSoapIn">
+    <wsdl:part name="parameters" element="tns:ExportaListaContaCorrentePorCpfcnpjPessoa" />
+  </wsdl:message>
+  <wsdl:message name="ExportaListaContaCorrentePorCpfcnpjPessoaSoapOut">
+    <wsdl:part name="parameters" element="tns:ExportaListaContaCorrentePorCpfcnpjPessoaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExportaListaContaCorrentePorCpfcnpjPessoaValidateLogin">
+    <wsdl:part name="ValidateLogin" element="tns:ValidateLogin" />
+  </wsdl:message>
+  <wsdl:portType name="ContaCorrenteWSSoap">
+    <wsdl:operation name="ExportaListaContaCorrente">
+      <wsdl:input message="tns:ExportaListaContaCorrenteSoapIn" />
+      <wsdl:output message="tns:ExportaListaContaCorrenteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExportaListaContaCorrentePorCpfcnpjPessoa">
+      <wsdl:input message="tns:ExportaListaContaCorrentePorCpfcnpjPessoaSoapIn" />
+      <wsdl:output message="tns:ExportaListaContaCorrentePorCpfcnpjPessoaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ContaCorrenteWSSoap" type="tns:ContaCorrenteWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ExportaListaContaCorrente">
+      <soap:operation soapAction="http://tempuri.org/ExportaListaContaCorrente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ExportaListaContaCorrenteValidateLogin" part="ValidateLogin" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportaListaContaCorrentePorCpfcnpjPessoa">
+      <soap:operation soapAction="http://tempuri.org/ExportaListaContaCorrentePorCpfcnpjPessoa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ExportaListaContaCorrentePorCpfcnpjPessoaValidateLogin" part="ValidateLogin" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ContaCorrenteWSSoap12" type="tns:ContaCorrenteWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ExportaListaContaCorrente">
+      <soap12:operation soapAction="http://tempuri.org/ExportaListaContaCorrente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ExportaListaContaCorrenteValidateLogin" part="ValidateLogin" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportaListaContaCorrentePorCpfcnpjPessoa">
+      <soap12:operation soapAction="http://tempuri.org/ExportaListaContaCorrentePorCpfcnpjPessoa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ExportaListaContaCorrentePorCpfcnpjPessoaValidateLogin" part="ValidateLogin" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ContaCorrenteWS">
+    <wsdl:port name="ContaCorrenteWSSoap" binding="tns:ContaCorrenteWSSoap">
+      <soap:address location="http://financial.gradual.intra/webservices/contacorrente.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ContaCorrenteWSSoap12" binding="tns:ContaCorrenteWSSoap12">
+      <soap12:address location="http://financial.gradual.intra/webservices/contacorrente.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

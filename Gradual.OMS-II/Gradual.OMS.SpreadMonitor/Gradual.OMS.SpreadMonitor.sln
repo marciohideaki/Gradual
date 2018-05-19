@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.SpreadMonitor", "Gradual.OMS.SpreadMonitor\Gradual.OMS.SpreadMonitor.csproj", "{6E37B337-8E47-4E94-A320-F76B10136361}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.SpreadMonitor.Lib", "Gradual.OMS.SpreadMonitor.Lib\Gradual.OMS.SpreadMonitor.Lib.csproj", "{099D48AA-AD97-4067-AF0E-4378ABFB6E3F}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gradual.OMS.SpreadMonitor.Lib\\Gradual.OMS.SpreadMonitor.Lib.csproj
+		SccProjectName1 = Gradual.OMS.SpreadMonitor.Lib
+		SccLocalPath1 = Gradual.OMS.SpreadMonitor.Lib
+		SccProjectUniqueName2 = Gradual.OMS.SpreadMonitor\\Gradual.OMS.SpreadMonitor.csproj
+		SccProjectName2 = Gradual.OMS.SpreadMonitor
+		SccLocalPath2 = Gradual.OMS.SpreadMonitor
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E37B337-8E47-4E94-A320-F76B10136361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E37B337-8E47-4E94-A320-F76B10136361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E37B337-8E47-4E94-A320-F76B10136361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E37B337-8E47-4E94-A320-F76B10136361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{099D48AA-AD97-4067-AF0E-4378ABFB6E3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{099D48AA-AD97-4067-AF0E-4378ABFB6E3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{099D48AA-AD97-4067-AF0E-4378ABFB6E3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{099D48AA-AD97-4067-AF0E-4378ABFB6E3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

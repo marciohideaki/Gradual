@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DD32F262-058D-4B57-8F17-681D45782245}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.ServicoRoteador</RootNamespace>
+    <AssemblyName>Gradual.OMS.ServicoRoteador</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.OMS.Library, Version=1.0.5225.28223, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="quickfix_net">
+      <HintPath>..\..\References\quickfix_net.dll</HintPath>
+    </Reference>
+    <Reference Include="quickfix_net_messages">
+      <HintPath>..\..\References\quickfix_net_messages.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CanalInfo.cs" />
+    <Compile Include="CanalNegociacaoBase.cs" />
+    <Compile Include="CanalNegociacaoBMF.cs" />
+    <Compile Include="CanalNegociacaoBovespa.cs" />
+    <Compile Include="CanalNegociacaoConfig.cs" />
+    <Compile Include="OrderReportStore.cs" />
+    <Compile Include="PersistentQueue.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoteadorCanalComunic.cs" />
+    <Compile Include="RoteadorOrdensConfig.cs" />
+    <Compile Include="RoteadorOrdensUtil.cs" />
+    <Compile Include="ServicoRoteadorOrdens.cs" />
+    <Compile Include="TradutorFix.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.OMS.RoteadorOrdens.Lib\Gradual.OMS.RoteadorOrdens.Lib.csproj">
+      <Project>{672C3D1D-547D-45D4-A894-C269310485C0}</Project>
+      <Name>Gradual.OMS.RoteadorOrdens.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.RoteadorOrdensAdm.Lib\Gradual.OMS.RoteadorOrdensAdm.Lib.csproj">
+      <Project>{973F4423-D606-41D2-9E35-B0244ACB78F4}</Project>
+      <Name>Gradual.OMS.RoteadorOrdensAdm.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

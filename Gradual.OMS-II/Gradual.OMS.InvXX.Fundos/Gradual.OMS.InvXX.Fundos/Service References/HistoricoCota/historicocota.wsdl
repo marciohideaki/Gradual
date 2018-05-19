@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Exporta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DataInicio" nillable="true" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="DataFim" nillable="true" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="IdCarteira" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="calcularRetornos" nillable="true" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExportaResult" type="tns:ArrayOfHistoricoCotaRetorno" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfHistoricoCotaRetorno">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="HistoricoCotaRetorno" nillable="true" type="tns:HistoricoCotaRetorno" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="HistoricoCotaRetorno">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:HistoricoCota">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="RentabilidadeDia" type="s:decimal" />
+              <s:element minOccurs="1" maxOccurs="1" name="RentabilidadeMes" type="s:decimal" />
+              <s:element minOccurs="1" maxOccurs="1" name="RentabilidadeAno" type="s:decimal" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="HistoricoCota">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:esHistoricoCota" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="esHistoricoCota" abstract="true">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Data" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdCarteira" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CotaAbertura" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="CotaFechamento" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="CotaBruta" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="PLAbertura" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="PLFechamento" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="PatrimonioBruto" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="QuantidadeFechamento" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="AjustePL" nillable="true" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ExportaSoapIn">
+    <wsdl:part name="parameters" element="tns:Exporta" />
+  </wsdl:message>
+  <wsdl:message name="ExportaSoapOut">
+    <wsdl:part name="parameters" element="tns:ExportaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="HistoricoCotaWSSoap">
+    <wsdl:operation name="Exporta">
+      <wsdl:input message="tns:ExportaSoapIn" />
+      <wsdl:output message="tns:ExportaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HistoricoCotaWSSoap" type="tns:HistoricoCotaWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Exporta">
+      <soap:operation soapAction="http://tempuri.org/Exporta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="HistoricoCotaWSSoap12" type="tns:HistoricoCotaWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Exporta">
+      <soap12:operation soapAction="http://tempuri.org/Exporta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HistoricoCotaWS">
+    <wsdl:port name="HistoricoCotaWSSoap" binding="tns:HistoricoCotaWSSoap">
+      <soap:address location="http://financial.gradual.intra/webservices/fundo/historicocota.asmx" />
+    </wsdl:port>
+    <wsdl:port name="HistoricoCotaWSSoap12" binding="tns:HistoricoCotaWSSoap12">
+      <soap12:address location="http://financial.gradual.intra/webservices/fundo/historicocota.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Gradual.OMS.InvXX.Fundos.Teste.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Gradual_OMS_InvXX_Fundos_Teste_br_com_itaucustodia_www_DownloadArquivoServiceService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.itaucustodia.com.br/PassivoWebServices/services/DownloadArquivoService</Value>
+    </Setting>
+    <Setting Name="Gradual_OMS_InvXX_Fundos_Teste_FundoCota_FundoWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://financial.gradual.intra/webservices/fundo.asmx</Value>
+    </Setting>
+    <Setting Name="Gradual_OMS_InvXX_Fundos_Teste_ContaCorrente_ContaCorrenteWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://financial.gradual.intra/webservices/contacorrente.asmx</Value>
+    </Setting>
+    <Setting Name="Gradual_OMS_InvXX_Fundos_Teste_CotistaItau_CotistaServiceService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.itaucustodia.com.br/PassivoWebServices/services/CotistaService</Value>
+    </Setting>
+    <Setting Name="Gradual_OMS_InvXX_Fundos_Teste_WSVendaTD_venda" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://oe161.trade.bvmf/venda.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Gradual.OMS.Host.WindowsService.AtivadorServicos">
+</Property><Property Name="Solution File" Value="C:\Projetos2\Gradual\OMS\Src\Gradual.OMS.Host.WindowsService.AtivadorServicos\Gradual.OMS.Host.WindowsService.AtivadorServicos.sln">
+</Property><Property Name="Date" Value="quinta-feira, 15 de julho de 2010">
+</Property><Property Name="Time" Value="15:23:42">
+</Property></Properties><Event ErrorLevel="0" Project="Gradual.OMS.Host.WindowsService.AtivadorServicos" Source="Gradual.OMS.Host.WindowsService.AtivadorServicos.csproj" Description="Project file successfully backed up as C:\Projetos2\Gradual\OMS\Src\Gradual.OMS.Host.WindowsService.AtivadorServicos\Backup\Gradual.OMS.Host.WindowsService.AtivadorServicos.csproj">
+</Event><Event ErrorLevel="0" Project="Gradual.OMS.Host.WindowsService.AtivadorServicos" Source="ProjectInstaller.cs" Description="File successfully backed up as C:\Projetos2\Gradual\OMS\Src\Gradual.OMS.Host.WindowsService.AtivadorServicos\Backup\ProjectInstaller.cs">
+</Event><Event ErrorLevel="0" Project="Gradual.OMS.Host.WindowsService.AtivadorServicos" Source="ProjectInstaller.Designer.cs" Description="File successfully backed up as C:\Projetos2\Gradual\OMS\Src\Gradual.OMS.Host.WindowsService.AtivadorServicos\Backup\ProjectInstaller.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Gradual.OMS.Host.WindowsService.AtivadorServicos" Source="ServiceHost.cs" Description="File successfully backed up as C:\Projetos2\Gradual\OMS\Src\Gradual.OMS.Host.WindowsService.AtivadorServicos\Backup\ServiceHost.cs">
+</Event><Event ErrorLevel="0" Project="Gradual.OMS.Host.WindowsService.AtivadorServicos" Source="ServiceHost.Designer.cs" Description="File successfully backed up as C:\Projetos2\Gradual\OMS\Src\Gradual.OMS.Host.WindowsService.AtivadorServicos\Backup\ServiceHost.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Gradual.OMS.Host.WindowsService.AtivadorServicos" Source="Program.cs" Description="File successfully backed up as C:\Projetos2\Gradual\OMS\Src\Gradual.OMS.Host.WindowsService.AtivadorServicos\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="Gradual.OMS.Host.WindowsService.AtivadorServicos" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Projetos2\Gradual\OMS\Src\Gradual.OMS.Host.WindowsService.AtivadorServicos\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Gradual.OMS.Host.WindowsService.AtivadorServicos" Source="WindowsServiceHostConfig.cs" Description="File successfully backed up as C:\Projetos2\Gradual\OMS\Src\Gradual.OMS.Host.WindowsService.AtivadorServicos\Backup\WindowsServiceHostConfig.cs">
+</Event><Event ErrorLevel="0" Project="Gradual.OMS.Host.WindowsService.AtivadorServicos" Source="ProjectInstaller.resx" Description="File successfully backed up as C:\Projetos2\Gradual\OMS\Src\Gradual.OMS.Host.WindowsService.AtivadorServicos\Backup\ProjectInstaller.resx">
+</Event><Event ErrorLevel="0" Project="Gradual.OMS.Host.WindowsService.AtivadorServicos" Source="Gradual.OMS.Host.WindowsService.AtivadorServicos.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Gradual.OMS.Host.WindowsService.AtivadorServicos" Source="Gradual.OMS.Host.WindowsService.AtivadorServicos.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Gradual.OMS.Host.WindowsService.AtivadorServicos" Source="Gradual.OMS.Host.WindowsService.AtivadorServicos.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

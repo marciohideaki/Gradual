@@ -1,0 +1,22 @@
+-- =============================================
+-- Author:		Bruno Varandas Ribeiro
+-- Create date: 13/01/2011
+-- Description:	Lista os produtos do cliente enviado
+-- =============================================
+ALTER PROCEDURE prc_ClienteProduto_sel
+	@id_cliente int
+AS
+BEGIN
+	SELECT 
+		id_produto_plano, 
+		id_cliente,
+		st_ativo,
+		'' as ds_nomecliente,
+		'' as ds_cpfcnpj,
+		dt_operacao
+	FROM 
+		tb_cliente_produto 
+	Where
+		id_cliente = @id_cliente
+END
+GO

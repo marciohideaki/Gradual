@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{634D0694-07FB-4704-B0FC-B7F8534329FF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.Ordens</RootNamespace>
+    <AssemblyName>Gradual.OMS.Ordens</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.OMS.Library">
+      <HintPath>..\..\Gradual.OMS.References\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.RoteadorOrdens.Lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Gradual.OMS.References\Gradual.OMS.RoteadorOrdens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Gradual.OMS.References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ParserOrdemClienteRoteador.cs" />
+    <Compile Include="ServicoOrdens.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.OMS.CadastroPapeis.Lib\Gradual.OMS.CadastroPapeis.Lib.csproj">
+      <Project>{E3B45301-BCE2-4520-AF53-A4CC42414627}</Project>
+      <Name>Gradual.OMS.CadastroPapeis.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.CadastroPapeis\Gradual.OMS.CadastroPapeis.csproj">
+      <Project>{C38BF613-E5B5-48D2-B1EE-0703C7F8EF54}</Project>
+      <Name>Gradual.OMS.CadastroPapeis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Ordens.Lib\Gradual.OMS.Ordens.Lib.csproj">
+      <Project>{D3D64F6D-55DA-4307-8287-D748984570E2}</Project>
+      <Name>Gradual.OMS.Ordens.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Ordens.Persistencia.Lib\Gradual.OMS.Ordens.Persistencia.Lib.csproj">
+      <Project>{CF4CDDFB-A813-43C8-99FE-B97024C58B46}</Project>
+      <Name>Gradual.OMS.Ordens.Persistencia.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Risco.Lib\Gradual.OMS.Risco.Lib.csproj">
+      <Project>{AB29151B-115F-429B-823C-2BCC61B5200F}</Project>
+      <Name>Gradual.OMS.Risco.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Risco.Persistencia.Lib\Gradual.OMS.Risco.Persistencia.Lib.csproj">
+      <Project>{D6B800A7-A456-4CE2-9938-AE11BD29B658}</Project>
+      <Name>Gradual.OMS.Risco.Persistencia.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Risco\Gradual.OMS.Risco.csproj">
+      <Project>{A23EC28A-448C-41AD-9198-425C21A9803B}</Project>
+      <Name>Gradual.OMS.Risco</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

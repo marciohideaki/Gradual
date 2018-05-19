@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C8A8D73B-BC6C-4194-B7C6-9BC7BF614614}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HomeBrokerTest</RootNamespace>
+    <AssemblyName>HomeBrokerTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.OMS.Library">
+      <HintPath>..\..\Gradual.OMS.References\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.RoteadorOrdens.Lib">
+      <HintPath>..\..\Gradual.OMS.References\Gradual.OMS.RoteadorOrdens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\Gradual.OMS.References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTest1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.OMS.Basket.Lib\Gradual.OMS.Basket.Lib.csproj">
+      <Project>{C0B9A858-4B1B-4CB5-8A27-531E4C07F0D0}</Project>
+      <Name>Gradual.OMS.Basket.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Basket\Gradual.OMS.Basket.csproj">
+      <Project>{92A15E0F-88FE-4325-9FEC-42E16C88769F}</Project>
+      <Name>Gradual.OMS.Basket</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.CadastroPapeis.Lib\Gradual.OMS.CadastroPapeis.Lib.csproj">
+      <Project>{E3B45301-BCE2-4520-AF53-A4CC42414627}</Project>
+      <Name>Gradual.OMS.CadastroPapeis.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.CadastroPapeis\Gradual.OMS.CadastroPapeis.csproj">
+      <Project>{C38BF613-E5B5-48D2-B1EE-0703C7F8EF54}</Project>
+      <Name>Gradual.OMS.CadastroPapeis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.ContaCorrente.Lib\Gradual.OMS.ContaCorrente.Lib.csproj">
+      <Project>{FD4CA457-5219-4A01-872E-3EDAB292CD17}</Project>
+      <Name>Gradual.OMS.ContaCorrente.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.ContaCorrente\Gradual.OMS.ContaCorrente.csproj">
+      <Project>{7669736C-FFF5-4F0B-91A2-9A90A92AAECE}</Project>
+      <Name>Gradual.OMS.ContaCorrente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Cotacao.Lib\Gradual.OMS.Cotacao.Lib.csproj">
+      <Project>{C0F869B9-01D6-48EF-9CE9-CAE56F1E9C11}</Project>
+      <Name>Gradual.OMS.Cotacao.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Cotacao\Gradual.OMS.Cotacao.csproj">
+      <Project>{F93F38B4-9E4E-4F31-8C54-F126450B84F8}</Project>
+      <Name>Gradual.OMS.Cotacao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Custodia.Lib\Gradual.OMS.Custodia.Lib.csproj">
+      <Project>{41B0F94E-48B2-468D-902F-A1BCBA9EF4C9}</Project>
+      <Name>Gradual.OMS.Custodia.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Custodia\Gradual.OMS.Custodia.csproj">
+      <Project>{995202EB-414F-4A90-AC43-72458DAF781B}</Project>
+      <Name>Gradual.OMS.Custodia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Ordens.Lib\Gradual.OMS.Ordens.Lib.csproj">
+      <Project>{D3D64F6D-55DA-4307-8287-D748984570E2}</Project>
+      <Name>Gradual.OMS.Ordens.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Ordens.Persistencia.Lib\Gradual.OMS.Ordens.Persistencia.Lib.csproj">
+      <Project>{CF4CDDFB-A813-43C8-99FE-B97024C58B46}</Project>
+      <Name>Gradual.OMS.Ordens.Persistencia.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Ordens\Gradual.OMS.Ordens.csproj">
+      <Project>{634D0694-07FB-4704-B0FC-B7F8534329FF}</Project>
+      <Name>Gradual.OMS.Ordens</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Proventos\Gradual.OMS.Proventos.csproj">
+      <Project>{82AD44CD-0646-4A05-B52D-91D3E77D68A7}</Project>
+      <Name>Gradual.OMS.Proventos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Risco.Lib\Gradual.OMS.Risco.Lib.csproj">
+      <Project>{AB29151B-115F-429B-823C-2BCC61B5200F}</Project>
+      <Name>Gradual.OMS.Risco.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Risco.Persistencia.Lib\Gradual.OMS.Risco.Persistencia.Lib.csproj">
+      <Project>{D6B800A7-A456-4CE2-9938-AE11BD29B658}</Project>
+      <Name>Gradual.OMS.Risco.Persistencia.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Risco\Gradual.OMS.Risco.csproj">
+      <Project>{A23EC28A-448C-41AD-9198-425C21A9803B}</Project>
+      <Name>Gradual.OMS.Risco</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Termo.Lib\Gradual.OMS.Termo.Lib.csproj">
+      <Project>{1E388699-8AFB-47A1-A348-82B6CEF46CB4}</Project>
+      <Name>Gradual.OMS.Termo.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Termo\Gradual.OMS.Termo.csproj">
+      <Project>{7C34A243-2709-4CB3-B9AD-A0F4089C6272}</Project>
+      <Name>Gradual.OMS.Termo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

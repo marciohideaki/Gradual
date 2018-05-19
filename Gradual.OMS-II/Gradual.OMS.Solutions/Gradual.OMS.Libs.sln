@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.AcompanhamentoOrdensLib", "..\Gradual.OMS.AcompanhamentoOrdens\Gradual.OMS.AcompanhamentoOrdensLib\Gradual.OMS.AcompanhamentoOrdensLib.csproj", "{002438E5-741B-4158-8641-48BF79CC8DFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.EmaiLib", "..\Gradual.OMS.Email\Gradual.OMS.EmailLib\Gradual.OMS.EmaiLib.csproj", "{D9829151-704E-4D5F-9F92-96457E6EDB3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.InterfaceLib", "..\Gradual.OMS.Interface\Gradual.OMS.InterfaceLib\Gradual.OMS.InterfaceLib.csproj", "{0A118929-378C-437C-BCE6-F9ECA2E10A7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.CotacaoLib", "..\Gradual.OMS.Cotacao\Gradual.OMS.CotacaoLib\Gradual.OMS.CotacaoLib.csproj", "{E73EA4D5-2B36-44D8-B9F2-A90F3385DE8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.DepositosRetiradas.Lib", "..\Gradual.OMS.DepositosRetiradas\Gradual.OMS.DepositosRetiradas.Lib\Gradual.OMS.DepositosRetiradas.Lib.csproj", "{45D26C68-ECA8-496A-9EB3-3B08132BCD37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.CadastroPapeis.Lib", "..\Gradual.OMS.CadastroPapeis\Gradual.OMS.CadastroPapeis.Lib\Gradual.OMS.CadastroPapeis.Lib.csproj", "{4C99B095-929C-4982-80A6-CA32F2556D1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Seguranca.Lib", "..\Gradual.OMS.Seguranca\Gradual.OMS.Seguranca.Lib\Gradual.OMS.Seguranca.Lib.csproj", "{421A9509-5314-420F-80EA-10A7B4D7309B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\Gradual.OMS.AcompanhamentoOrdens\\Gradual.OMS.AcompanhamentoOrdensLib\\Gradual.OMS.AcompanhamentoOrdensLib.csproj
+		SccProjectName1 = ../Gradual.OMS.AcompanhamentoOrdens/Gradual.OMS.AcompanhamentoOrdensLib
+		SccLocalPath1 = ..\\Gradual.OMS.AcompanhamentoOrdens\\Gradual.OMS.AcompanhamentoOrdensLib
+		SccProjectUniqueName2 = ..\\Gradual.OMS.Email\\Gradual.OMS.EmailLib\\Gradual.OMS.EmaiLib.csproj
+		SccProjectName2 = ../Gradual.OMS.Email/Gradual.OMS.EmailLib
+		SccLocalPath2 = ..\\Gradual.OMS.Email\\Gradual.OMS.EmailLib
+		SccProjectUniqueName3 = ..\\Gradual.OMS.Interface\\Gradual.OMS.InterfaceLib\\Gradual.OMS.InterfaceLib.csproj
+		SccProjectName3 = ../Gradual.OMS.Interface/Gradual.OMS.InterfaceLib
+		SccLocalPath3 = ..\\Gradual.OMS.Interface\\Gradual.OMS.InterfaceLib
+		SccProjectUniqueName4 = ..\\Gradual.OMS.Cotacao\\Gradual.OMS.CotacaoLib\\Gradual.OMS.CotacaoLib.csproj
+		SccProjectName4 = ../Gradual.OMS.Cotacao/Gradual.OMS.CotacaoLib
+		SccLocalPath4 = ..\\Gradual.OMS.Cotacao\\Gradual.OMS.CotacaoLib
+		SccProjectUniqueName5 = ..\\Gradual.OMS.DepositosRetiradas\\Gradual.OMS.DepositosRetiradas.Lib\\Gradual.OMS.DepositosRetiradas.Lib.csproj
+		SccProjectName5 = ../Gradual.OMS.DepositosRetiradas/Gradual.OMS.DepositosRetiradas.Lib
+		SccLocalPath5 = ..\\Gradual.OMS.DepositosRetiradas\\Gradual.OMS.DepositosRetiradas.Lib
+		SccProjectUniqueName6 = ..\\Gradual.OMS.CadastroPapeis\\Gradual.OMS.CadastroPapeis.Lib\\Gradual.OMS.CadastroPapeis.Lib.csproj
+		SccProjectName6 = ../Gradual.OMS.CadastroPapeis/Gradual.OMS.CadastroPapeis.Lib
+		SccLocalPath6 = ..\\Gradual.OMS.CadastroPapeis\\Gradual.OMS.CadastroPapeis.Lib
+		SccProjectUniqueName7 = ..\\Gradual.OMS.Seguranca\\Gradual.OMS.Seguranca.Lib\\Gradual.OMS.Seguranca.Lib.csproj
+		SccProjectName7 = ../Gradual.OMS.Seguranca/Gradual.OMS.Seguranca.Lib
+		SccLocalPath7 = ..\\Gradual.OMS.Seguranca\\Gradual.OMS.Seguranca.Lib
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{002438E5-741B-4158-8641-48BF79CC8DFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{002438E5-741B-4158-8641-48BF79CC8DFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{002438E5-741B-4158-8641-48BF79CC8DFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{002438E5-741B-4158-8641-48BF79CC8DFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9829151-704E-4D5F-9F92-96457E6EDB3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9829151-704E-4D5F-9F92-96457E6EDB3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9829151-704E-4D5F-9F92-96457E6EDB3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9829151-704E-4D5F-9F92-96457E6EDB3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A118929-378C-437C-BCE6-F9ECA2E10A7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A118929-378C-437C-BCE6-F9ECA2E10A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A118929-378C-437C-BCE6-F9ECA2E10A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A118929-378C-437C-BCE6-F9ECA2E10A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E73EA4D5-2B36-44D8-B9F2-A90F3385DE8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E73EA4D5-2B36-44D8-B9F2-A90F3385DE8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E73EA4D5-2B36-44D8-B9F2-A90F3385DE8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E73EA4D5-2B36-44D8-B9F2-A90F3385DE8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45D26C68-ECA8-496A-9EB3-3B08132BCD37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45D26C68-ECA8-496A-9EB3-3B08132BCD37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45D26C68-ECA8-496A-9EB3-3B08132BCD37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45D26C68-ECA8-496A-9EB3-3B08132BCD37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C99B095-929C-4982-80A6-CA32F2556D1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C99B095-929C-4982-80A6-CA32F2556D1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C99B095-929C-4982-80A6-CA32F2556D1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C99B095-929C-4982-80A6-CA32F2556D1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{421A9509-5314-420F-80EA-10A7B4D7309B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{421A9509-5314-420F-80EA-10A7B4D7309B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{421A9509-5314-420F-80EA-10A7B4D7309B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{421A9509-5314-420F-80EA-10A7B4D7309B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

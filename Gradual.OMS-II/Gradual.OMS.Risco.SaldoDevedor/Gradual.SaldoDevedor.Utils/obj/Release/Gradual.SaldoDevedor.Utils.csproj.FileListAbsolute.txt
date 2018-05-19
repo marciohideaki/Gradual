@@ -1,0 +1,7 @@
+D:\Gradual\Source\Gradual.OMS-II\Gradual.OMS.Risco.SaldoDevedor\Gradual.SaldoDevedor.Utils\bin\Release\Gradual.SaldoDevedor.Utils.dll
+D:\Gradual\Source\Gradual.OMS-II\Gradual.OMS.Risco.SaldoDevedor\Gradual.SaldoDevedor.Utils\bin\Release\Gradual.SaldoDevedor.Utils.pdb
+D:\Gradual\Source\Gradual.OMS-II\Gradual.OMS.Risco.SaldoDevedor\Gradual.SaldoDevedor.Utils\bin\Release\log4net.dll
+D:\Gradual\Source\Gradual.OMS-II\Gradual.OMS.Risco.SaldoDevedor\Gradual.SaldoDevedor.Utils\bin\Release\log4net.pdb
+D:\Gradual\Source\Gradual.OMS-II\Gradual.OMS.Risco.SaldoDevedor\Gradual.SaldoDevedor.Utils\bin\Release\log4net.xml
+D:\Gradual\Source\Gradual.OMS-II\Gradual.OMS.Risco.SaldoDevedor\Gradual.SaldoDevedor.Utils\obj\Release\Gradual.SaldoDevedor.Utils.dll
+D:\Gradual\Source\Gradual.OMS-II\Gradual.OMS.Risco.SaldoDevedor\Gradual.SaldoDevedor.Utils\obj\Release\Gradual.SaldoDevedor.Utils.pdb

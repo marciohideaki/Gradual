@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.PlanoCliente", "Gradual.OMS.PlanoCliente\Gradual.OMS.PlanoCliente.csproj", "{B659CA32-2181-4C2C-8AB7-F0201DD05ADC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.PlanoCliente.Lib", "..\Gradual.OMS.PlanoCliente\Gradual.OMS.PlanoCliente.Lib\Gradual.OMS.PlanoCliente.Lib.csproj", "{0564C5C9-D7D5-4C9A-A862-DC70514FF736}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.PlanoCliente.Test", "..\Gradual.OMS.PlanoCliente\Gradual.OMS.PlanoCliente.Test\Gradual.OMS.PlanoCliente.Test.csproj", "{6F980AF0-FA92-412C-8668-12B3A6D971E1}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\Gradual.OMS.PlanoCliente\\Gradual.OMS.PlanoCliente.Lib\\Gradual.OMS.PlanoCliente.Lib.csproj
+		SccProjectName1 = ../Gradual.OMS.PlanoCliente.Lib
+		SccLocalPath1 = ..\\Gradual.OMS.PlanoCliente\\Gradual.OMS.PlanoCliente.Lib
+		SccProjectUniqueName2 = ..\\Gradual.OMS.PlanoCliente\\Gradual.OMS.PlanoCliente.Test\\Gradual.OMS.PlanoCliente.Test.csproj
+		SccProjectName2 = ../Gradual.OMS.PlanoCliente.Test
+		SccLocalPath2 = ..\\Gradual.OMS.PlanoCliente\\Gradual.OMS.PlanoCliente.Test
+		SccProjectUniqueName3 = Gradual.OMS.PlanoCliente\\Gradual.OMS.PlanoCliente.csproj
+		SccProjectName3 = Gradual.OMS.PlanoCliente
+		SccLocalPath3 = Gradual.OMS.PlanoCliente
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B659CA32-2181-4C2C-8AB7-F0201DD05ADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B659CA32-2181-4C2C-8AB7-F0201DD05ADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B659CA32-2181-4C2C-8AB7-F0201DD05ADC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B659CA32-2181-4C2C-8AB7-F0201DD05ADC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B659CA32-2181-4C2C-8AB7-F0201DD05ADC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B659CA32-2181-4C2C-8AB7-F0201DD05ADC}.Debug|x86.Build.0 = Debug|Any CPU
+		{B659CA32-2181-4C2C-8AB7-F0201DD05ADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B659CA32-2181-4C2C-8AB7-F0201DD05ADC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B659CA32-2181-4C2C-8AB7-F0201DD05ADC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B659CA32-2181-4C2C-8AB7-F0201DD05ADC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B659CA32-2181-4C2C-8AB7-F0201DD05ADC}.Release|x86.ActiveCfg = Release|Any CPU
+		{0564C5C9-D7D5-4C9A-A862-DC70514FF736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0564C5C9-D7D5-4C9A-A862-DC70514FF736}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0564C5C9-D7D5-4C9A-A862-DC70514FF736}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0564C5C9-D7D5-4C9A-A862-DC70514FF736}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0564C5C9-D7D5-4C9A-A862-DC70514FF736}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0564C5C9-D7D5-4C9A-A862-DC70514FF736}.Debug|x86.Build.0 = Debug|Any CPU
+		{0564C5C9-D7D5-4C9A-A862-DC70514FF736}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0564C5C9-D7D5-4C9A-A862-DC70514FF736}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0564C5C9-D7D5-4C9A-A862-DC70514FF736}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0564C5C9-D7D5-4C9A-A862-DC70514FF736}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0564C5C9-D7D5-4C9A-A862-DC70514FF736}.Release|x86.ActiveCfg = Release|Any CPU
+		{6F980AF0-FA92-412C-8668-12B3A6D971E1}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{6F980AF0-FA92-412C-8668-12B3A6D971E1}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{6F980AF0-FA92-412C-8668-12B3A6D971E1}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{6F980AF0-FA92-412C-8668-12B3A6D971E1}.Debug|x86.ActiveCfg = Debug|x86
+		{6F980AF0-FA92-412C-8668-12B3A6D971E1}.Debug|x86.Build.0 = Debug|x86
+		{6F980AF0-FA92-412C-8668-12B3A6D971E1}.Release|Any CPU.ActiveCfg = Release|x86
+		{6F980AF0-FA92-412C-8668-12B3A6D971E1}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{6F980AF0-FA92-412C-8668-12B3A6D971E1}.Release|Mixed Platforms.Build.0 = Release|x86
+		{6F980AF0-FA92-412C-8668-12B3A6D971E1}.Release|x86.ActiveCfg = Release|x86
+		{6F980AF0-FA92-412C-8668-12B3A6D971E1}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

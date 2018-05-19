@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.cblc.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.cblc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.cblc.com.br/">
+      <s:element name="VendaInsCesta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="mercado" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="negociador_cpf" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaInsCestaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VendaInsCestaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="hdSeguranca" type="tns:hdSeguranca" />
+      <s:complexType name="hdSeguranca">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="strContratoHash" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="strContratoSenha" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="strLoginNome" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="strLoginSenha" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="VendaInsItemCesta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="mercado" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="negociador_cpf" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigo_cesta" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="titulo_codigo_titulo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="titulo_quantidade_compra" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaInsItemCestaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VendaInsItemCestaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaAltItemCesta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="mercado" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="negociador_cpf" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigo_cesta" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="xml_titulos" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaAltItemCestaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VendaAltItemCestaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaFecharCesta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="mercado" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="negociador_cpf" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigo_cesta" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="xml_titulos" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaFecharCestaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VendaFecharCestaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaConsCesta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="mercado" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="negociador_cpf" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigo_cesta" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigo_titulo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="data_recompra" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaConsCestaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VendaConsCestaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaConsCestaItens">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="codigo_cesta" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigo_titulo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaConsCestaItensResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VendaConsCestaItensResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaVerifCondVenda">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="negociador_cpf" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mercado" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaVerifCondVendaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VendaVerifCondVendaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaVerifTitMercado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="mercado" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="cesta_codigo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaVerifTitMercadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VendaVerifTitMercadoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaConsTitMercado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="mercado" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigo_titulo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="tipo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="data_emissao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="data_vencimento" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="tipo_indexador" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="selic" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="isin" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="not_cesta" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaConsTitMercadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VendaConsTitMercadoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaConsTitVenda">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="negociador_cpf" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="data_emissao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="data_vencimento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="selic" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="isin" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigo_titulo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="mercado" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="not_cesta" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="tipo_indexador" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaConsTitVendaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VendaConsTitVendaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaConsValorTaxa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="codigo_titulo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigo_cesta" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="evento" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="negociador_cpf" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaConsValorTaxaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VendaConsValorTaxaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaConsValTxProvisoria">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="negociador_cpf" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigo_titulo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="quantidade" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaConsValTxProvisoriaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VendaConsValTxProvisoriaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaExclCesta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="mercado" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="negociador_cpf" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigo_cesta" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaExclCestaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VendaExclCestaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaExclItemCesta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="mercado" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="negociador_cpf" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigo_cesta" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="xml_titulos" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VendaExclItemCestaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VendaExclItemCestaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="VendaInsCestaSoapIn">
+    <wsdl:part name="parameters" element="tns:VendaInsCesta" />
+  </wsdl:message>
+  <wsdl:message name="VendaInsCestaSoapOut">
+    <wsdl:part name="parameters" element="tns:VendaInsCestaResponse" />
+  </wsdl:message>
+  <wsdl:message name="VendaInsCestahdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:message name="VendaInsItemCestaSoapIn">
+    <wsdl:part name="parameters" element="tns:VendaInsItemCesta" />
+  </wsdl:message>
+  <wsdl:message name="VendaInsItemCestaSoapOut">
+    <wsdl:part name="parameters" element="tns:VendaInsItemCestaResponse" />
+  </wsdl:message>
+  <wsdl:message name="VendaInsItemCestahdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:message name="VendaAltItemCestaSoapIn">
+    <wsdl:part name="parameters" element="tns:VendaAltItemCesta" />
+  </wsdl:message>
+  <wsdl:message name="VendaAltItemCestaSoapOut">
+    <wsdl:part name="parameters" element="tns:VendaAltItemCestaResponse" />
+  </wsdl:message>
+  <wsdl:message name="VendaAltItemCestahdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:message name="VendaFecharCestaSoapIn">
+    <wsdl:part name="parameters" element="tns:VendaFecharCesta" />
+  </wsdl:message>
+  <wsdl:message name="VendaFecharCestaSoapOut">
+    <wsdl:part name="parameters" element="tns:VendaFecharCestaResponse" />
+  </wsdl:message>
+  <wsdl:message name="VendaFecharCestahdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:message name="VendaConsCestaSoapIn">
+    <wsdl:part name="parameters" element="tns:VendaConsCesta" />
+  </wsdl:message>
+  <wsdl:message name="VendaConsCestaSoapOut">
+    <wsdl:part name="parameters" element="tns:VendaConsCestaResponse" />
+  </wsdl:message>
+  <wsdl:message name="VendaConsCestahdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:message name="VendaConsCestaItensSoapIn">
+    <wsdl:part name="parameters" element="tns:VendaConsCestaItens" />
+  </wsdl:message>
+  <wsdl:message name="VendaConsCestaItensSoapOut">
+    <wsdl:part name="parameters" element="tns:VendaConsCestaItensResponse" />
+  </wsdl:message>
+  <wsdl:message name="VendaConsCestaItenshdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:message name="VendaVerifCondVendaSoapIn">
+    <wsdl:part name="parameters" element="tns:VendaVerifCondVenda" />
+  </wsdl:message>
+  <wsdl:message name="VendaVerifCondVendaSoapOut">
+    <wsdl:part name="parameters" element="tns:VendaVerifCondVendaResponse" />
+  </wsdl:message>
+  <wsdl:message name="VendaVerifCondVendahdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:message name="VendaVerifTitMercadoSoapIn">
+    <wsdl:part name="parameters" element="tns:VendaVerifTitMercado" />
+  </wsdl:message>
+  <wsdl:message name="VendaVerifTitMercadoSoapOut">
+    <wsdl:part name="parameters" element="tns:VendaVerifTitMercadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="VendaVerifTitMercadohdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:message name="VendaConsTitMercadoSoapIn">
+    <wsdl:part name="parameters" element="tns:VendaConsTitMercado" />
+  </wsdl:message>
+  <wsdl:message name="VendaConsTitMercadoSoapOut">
+    <wsdl:part name="parameters" element="tns:VendaConsTitMercadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="VendaConsTitMercadohdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:message name="VendaConsTitVendaSoapIn">
+    <wsdl:part name="parameters" element="tns:VendaConsTitVenda" />
+  </wsdl:message>
+  <wsdl:message name="VendaConsTitVendaSoapOut">
+    <wsdl:part name="parameters" element="tns:VendaConsTitVendaResponse" />
+  </wsdl:message>
+  <wsdl:message name="VendaConsTitVendahdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:message name="VendaConsValorTaxaSoapIn">
+    <wsdl:part name="parameters" element="tns:VendaConsValorTaxa" />
+  </wsdl:message>
+  <wsdl:message name="VendaConsValorTaxaSoapOut">
+    <wsdl:part name="parameters" element="tns:VendaConsValorTaxaResponse" />
+  </wsdl:message>
+  <wsdl:message name="VendaConsValorTaxahdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:message name="VendaConsValTxProvisoriaSoapIn">
+    <wsdl:part name="parameters" element="tns:VendaConsValTxProvisoria" />
+  </wsdl:message>
+  <wsdl:message name="VendaConsValTxProvisoriaSoapOut">
+    <wsdl:part name="parameters" element="tns:VendaConsValTxProvisoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="VendaConsValTxProvisoriahdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:message name="VendaExclCestaSoapIn">
+    <wsdl:part name="parameters" element="tns:VendaExclCesta" />
+  </wsdl:message>
+  <wsdl:message name="VendaExclCestaSoapOut">
+    <wsdl:part name="parameters" element="tns:VendaExclCestaResponse" />
+  </wsdl:message>
+  <wsdl:message name="VendaExclCestahdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:message name="VendaExclItemCestaSoapIn">
+    <wsdl:part name="parameters" element="tns:VendaExclItemCesta" />
+  </wsdl:message>
+  <wsdl:message name="VendaExclItemCestaSoapOut">
+    <wsdl:part name="parameters" element="tns:VendaExclItemCestaResponse" />
+  </wsdl:message>
+  <wsdl:message name="VendaExclItemCestahdSeguranca">
+    <wsdl:part name="hdSeguranca" element="tns:hdSeguranca" />
+  </wsdl:message>
+  <wsdl:portType name="vendaSoap">
+    <wsdl:operation name="VendaInsCesta">
+      <wsdl:input message="tns:VendaInsCestaSoapIn" />
+      <wsdl:output message="tns:VendaInsCestaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VendaInsItemCesta">
+      <wsdl:input message="tns:VendaInsItemCestaSoapIn" />
+      <wsdl:output message="tns:VendaInsItemCestaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VendaAltItemCesta">
+      <wsdl:input message="tns:VendaAltItemCestaSoapIn" />
+      <wsdl:output message="tns:VendaAltItemCestaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VendaFecharCesta">
+      <wsdl:input message="tns:VendaFecharCestaSoapIn" />
+      <wsdl:output message="tns:VendaFecharCestaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VendaConsCesta">
+      <wsdl:input message="tns:VendaConsCestaSoapIn" />
+      <wsdl:output message="tns:VendaConsCestaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VendaConsCestaItens">
+      <wsdl:input message="tns:VendaConsCestaItensSoapIn" />
+      <wsdl:output message="tns:VendaConsCestaItensSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VendaVerifCondVenda">
+      <wsdl:input message="tns:VendaVerifCondVendaSoapIn" />
+      <wsdl:output message="tns:VendaVerifCondVendaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VendaVerifTitMercado">
+      <wsdl:input message="tns:VendaVerifTitMercadoSoapIn" />
+      <wsdl:output message="tns:VendaVerifTitMercadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VendaConsTitMercado">
+      <wsdl:input message="tns:VendaConsTitMercadoSoapIn" />
+      <wsdl:output message="tns:VendaConsTitMercadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VendaConsTitVenda">
+      <wsdl:input message="tns:VendaConsTitVendaSoapIn" />
+      <wsdl:output message="tns:VendaConsTitVendaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VendaConsValorTaxa">
+      <wsdl:input message="tns:VendaConsValorTaxaSoapIn" />
+      <wsdl:output message="tns:VendaConsValorTaxaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VendaConsValTxProvisoria">
+      <wsdl:input message="tns:VendaConsValTxProvisoriaSoapIn" />
+      <wsdl:output message="tns:VendaConsValTxProvisoriaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VendaExclCesta">
+      <wsdl:input message="tns:VendaExclCestaSoapIn" />
+      <wsdl:output message="tns:VendaExclCestaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VendaExclItemCesta">
+      <wsdl:input message="tns:VendaExclItemCestaSoapIn" />
+      <wsdl:output message="tns:VendaExclItemCestaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="vendaSoap" type="tns:vendaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VendaInsCesta">
+      <soap:operation soapAction="http://www.cblc.com.br/VendaInsCesta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:VendaInsCestahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaInsItemCesta">
+      <soap:operation soapAction="http://www.cblc.com.br/VendaInsItemCesta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:VendaInsItemCestahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaAltItemCesta">
+      <soap:operation soapAction="http://www.cblc.com.br/VendaAltItemCesta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:VendaAltItemCestahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaFecharCesta">
+      <soap:operation soapAction="http://www.cblc.com.br/VendaFecharCesta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:VendaFecharCestahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaConsCesta">
+      <soap:operation soapAction="http://www.cblc.com.br/VendaConsCesta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:VendaConsCestahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaConsCestaItens">
+      <soap:operation soapAction="http://www.cblc.com.br/VendaConsCestaItens" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:VendaConsCestaItenshdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaVerifCondVenda">
+      <soap:operation soapAction="http://www.cblc.com.br/VendaVerifCondVenda" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:VendaVerifCondVendahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaVerifTitMercado">
+      <soap:operation soapAction="http://www.cblc.com.br/VendaVerifTitMercado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:VendaVerifTitMercadohdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaConsTitMercado">
+      <soap:operation soapAction="http://www.cblc.com.br/VendaConsTitMercado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:VendaConsTitMercadohdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaConsTitVenda">
+      <soap:operation soapAction="http://www.cblc.com.br/VendaConsTitVenda" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:VendaConsTitVendahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaConsValorTaxa">
+      <soap:operation soapAction="http://www.cblc.com.br/VendaConsValorTaxa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:VendaConsValorTaxahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaConsValTxProvisoria">
+      <soap:operation soapAction="http://www.cblc.com.br/VendaConsValTxProvisoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:VendaConsValTxProvisoriahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaExclCesta">
+      <soap:operation soapAction="http://www.cblc.com.br/VendaExclCesta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:VendaExclCestahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaExclItemCesta">
+      <soap:operation soapAction="http://www.cblc.com.br/VendaExclItemCesta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:VendaExclItemCestahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="vendaSoap12" type="tns:vendaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VendaInsCesta">
+      <soap12:operation soapAction="http://www.cblc.com.br/VendaInsCesta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:VendaInsCestahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaInsItemCesta">
+      <soap12:operation soapAction="http://www.cblc.com.br/VendaInsItemCesta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:VendaInsItemCestahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaAltItemCesta">
+      <soap12:operation soapAction="http://www.cblc.com.br/VendaAltItemCesta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:VendaAltItemCestahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaFecharCesta">
+      <soap12:operation soapAction="http://www.cblc.com.br/VendaFecharCesta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:VendaFecharCestahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaConsCesta">
+      <soap12:operation soapAction="http://www.cblc.com.br/VendaConsCesta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:VendaConsCestahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaConsCestaItens">
+      <soap12:operation soapAction="http://www.cblc.com.br/VendaConsCestaItens" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:VendaConsCestaItenshdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaVerifCondVenda">
+      <soap12:operation soapAction="http://www.cblc.com.br/VendaVerifCondVenda" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:VendaVerifCondVendahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaVerifTitMercado">
+      <soap12:operation soapAction="http://www.cblc.com.br/VendaVerifTitMercado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:VendaVerifTitMercadohdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaConsTitMercado">
+      <soap12:operation soapAction="http://www.cblc.com.br/VendaConsTitMercado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:VendaConsTitMercadohdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaConsTitVenda">
+      <soap12:operation soapAction="http://www.cblc.com.br/VendaConsTitVenda" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:VendaConsTitVendahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaConsValorTaxa">
+      <soap12:operation soapAction="http://www.cblc.com.br/VendaConsValorTaxa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:VendaConsValorTaxahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaConsValTxProvisoria">
+      <soap12:operation soapAction="http://www.cblc.com.br/VendaConsValTxProvisoria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:VendaConsValTxProvisoriahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaExclCesta">
+      <soap12:operation soapAction="http://www.cblc.com.br/VendaExclCesta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:VendaExclCestahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VendaExclItemCesta">
+      <soap12:operation soapAction="http://www.cblc.com.br/VendaExclItemCesta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:VendaExclItemCestahdSeguranca" part="hdSeguranca" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="venda">
+    <wsdl:port name="vendaSoap" binding="tns:vendaSoap">
+      <soap:address location="http://oe161.trade.bvmf/venda.asmx" />
+    </wsdl:port>
+    <wsdl:port name="vendaSoap12" binding="tns:vendaSoap12">
+      <soap12:address location="http://oe161.trade.bvmf/venda.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

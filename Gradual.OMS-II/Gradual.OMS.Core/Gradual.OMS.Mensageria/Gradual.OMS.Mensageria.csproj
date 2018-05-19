@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{924129E9-B9EC-4473-9613-A2FEC782F153}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.Mensageria</RootNamespace>
+    <AssemblyName>Gradual.OMS.Mensageria</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Gradual.OMS.References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dados\ContextoValidacaoInfo.cs" />
+    <Compile Include="Dados\CriticaValidacaoInfo.cs" />
+    <Compile Include="Dados\GeradorRegraInfo.cs" />
+    <Compile Include="Dados\RegraAttribute.cs" />
+    <Compile Include="Dados\RegraBase.cs" />
+    <Compile Include="Dados\RegraInfo.cs" />
+    <Compile Include="Dados\RegrasPorTipoInfo.cs" />
+    <Compile Include="IGeradorRegra.cs" />
+    <Compile Include="IServicoEcho.cs" />
+    <Compile Include="IServicoMensageria.cs" />
+    <Compile Include="IServicoMensageriaComCallback.cs" />
+    <Compile Include="IServicoMetadadoComum.cs" />
+    <Compile Include="IServicoValidacao.cs" />
+    <Compile Include="Mensagens\AssinarEventoRequest.cs" />
+    <Compile Include="Mensagens\AssinarEventoResponse.cs" />
+    <Compile Include="Mensagens\ExecutarEchoRequest.cs" />
+    <Compile Include="Mensagens\ExecutarEchoResponse.cs" />
+    <Compile Include="Mensagens\ExecutarEchoTipoFuncaoEnum.cs" />
+    <Compile Include="Mensagens\GerarDbMetadadoRequest.cs" />
+    <Compile Include="Mensagens\GerarDbMetadadoResponse.cs" />
+    <Compile Include="Mensagens\MensagemErroResponse.cs" />
+    <Compile Include="Mensagens\MensagemErroValidacaoResponse.cs" />
+    <Compile Include="Mensagens\MensagemSinalizacaoBase.cs" />
+    <Compile Include="Mensagens\ValidarMensagemRequest.cs" />
+    <Compile Include="Mensagens\ValidarMensagemResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicoEcho.cs" />
+    <Compile Include="ServicoMensageria.cs" />
+    <Compile Include="ServicoMensageriaClienteHelper.cs" />
+    <Compile Include="ServicoMensageriaComCallback.cs" />
+    <Compile Include="ServicoMensageriaConfig.cs" />
+    <Compile Include="ServicoValidacao.cs" />
+    <Compile Include="ServicoValidacaoConfig.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.OMS.Library\Gradual.OMS.Library.csproj">
+      <Project>{A5E45264-237E-471B-9260-88552A1EF7F3}</Project>
+      <Name>Gradual.OMS.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

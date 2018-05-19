@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="afd1e41e-161a-4ad4-9b42-5ce62d5ee83b" name="arosario@GSP-WKS-562 2011-11-23 12:10:44" runUser="GRADUAL\arosario" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="d480edde-057b-43e5-aafa-de7aa24b60e9">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="arosario_GSP-WKS-562 2011-11-23 12_10_44">
+      <DeploymentItem filename="C:\Dev\Gradual\Gradual.OMS-II\Gradual.OMS.RelatoriosFinanc\Gradual.OMS.RelatoriosFinanc.Lib\bin\Debug\Gradual.OMS.RelatoriosFinanc.Lib.dll" />
+      <DeploymentItem filename="C:\Dev\Gradual\Gradual.OMS-II\Gradual.OMS.References\Gradual.OMS.Library.dll" />
+      <DeploymentItem filename="C:\Dev\Gradual\Gradual.OMS-II\Gradual.OMS.RelatoriosFinanc\Gradual.OMS.RelatoriosFinanc\bin\Debug\Gradual.OMS.RelatoriosFinanc.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-11-23T12:10:44.1629124-02:00" queuing="2011-11-23T12:10:44.9441574-02:00" start="2011-11-23T12:10:45.0535317-02:00" finish="2011-11-23T12:12:24.6622692-02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\dev\gradual\gradual.oms-ii\gradual.oms.relatoriosfinanc\gradual.oms.relatoriosfinanc.teste\bin\debug\gradual.oms.relatoriosfinanc.teste.dll" id="ce8af6be-509b-bd0c-bd3e-77e3d209106d">
+      <Execution id="40ba3cf6-d7c3-4c69-9929-5b338c2c53e1" />
+      <TestMethod codeBase="C:/Dev/Gradual/Gradual.OMS-II/Gradual.OMS.RelatoriosFinanc/Gradual.OMS.RelatoriosFinanc.Teste/bin/Debug/Gradual.OMS.RelatoriosFinanc.Teste.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Gradual.OMS.RelatoriosFinanc.Teste.UnitTest1, Gradual.OMS.RelatoriosFinanc.Teste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="ce8af6be-509b-bd0c-bd3e-77e3d209106d" executionId="40ba3cf6-d7c3-4c69-9929-5b338c2c53e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="40ba3cf6-d7c3-4c69-9929-5b338c2c53e1" testId="ce8af6be-509b-bd0c-bd3e-77e3d209106d" testName="TestMethod1" computerName="GSP-WKS-562" duration="00:01:38.5306819" startTime="2011-11-23T12:10:45.1472811-02:00" endTime="2011-11-23T12:12:24.3028965-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="40ba3cf6-d7c3-4c69-9929-5b338c2c53e1">
+      <Output>
+        <StdErr>log4net:ERROR XmlConfigurator: Failed to find configuration section 'log4net' in the application's .config file. Check your .config file for the &lt;log4net&gt; and &lt;configSections&gt; elements. The configuration section should look like: &lt;section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler,log4net" /&gt;</StdErr>
+        <DebugTrace>log4net:ERROR XmlConfigurator: Failed to find configuration section 'log4net' in the application's .config file. Check your .config file for the &lt;log4net&gt; and &lt;configSections&gt; elements. The configuration section should look like: &lt;section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler,log4net" /&gt;
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

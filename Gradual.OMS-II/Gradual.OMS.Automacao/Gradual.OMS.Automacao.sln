@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.AutomacaoDesktop", "Gradual.OMS.AutomacaoDesktop\Gradual.OMS.AutomacaoDesktop.csproj", "{B0023E57-3681-4A5E-A33B-35CAEDB6208E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTesteAutomacao", "AppTesteAutomacao\AppTesteAutomacao.csproj", "{D6316CE7-B986-4D2A-A8AF-C51202C8CBFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.Automacao.Lib", "Gradual.OMS.Automacao.Lib\Gradual.OMS.Automacao.Lib.csproj", "{877BEA42-A5FE-4BD8-A72F-1C88CFFF399A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AppTesteAutomacao\\AppTesteAutomacao.csproj
+		SccProjectName1 = AppTesteAutomacao
+		SccLocalPath1 = AppTesteAutomacao
+		SccProjectUniqueName2 = Gradual.OMS.Automacao.Lib\\Gradual.OMS.Automacao.Lib.csproj
+		SccProjectName2 = Gradual.OMS.Automacao.Lib
+		SccLocalPath2 = Gradual.OMS.Automacao.Lib
+		SccProjectUniqueName3 = Gradual.OMS.AutomacaoDesktop\\Gradual.OMS.AutomacaoDesktop.csproj
+		SccProjectName3 = Gradual.OMS.AutomacaoDesktop
+		SccLocalPath3 = Gradual.OMS.AutomacaoDesktop
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0023E57-3681-4A5E-A33B-35CAEDB6208E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0023E57-3681-4A5E-A33B-35CAEDB6208E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0023E57-3681-4A5E-A33B-35CAEDB6208E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B0023E57-3681-4A5E-A33B-35CAEDB6208E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B0023E57-3681-4A5E-A33B-35CAEDB6208E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B0023E57-3681-4A5E-A33B-35CAEDB6208E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0023E57-3681-4A5E-A33B-35CAEDB6208E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0023E57-3681-4A5E-A33B-35CAEDB6208E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B0023E57-3681-4A5E-A33B-35CAEDB6208E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B0023E57-3681-4A5E-A33B-35CAEDB6208E}.Release|x86.ActiveCfg = Release|Any CPU
+		{D6316CE7-B986-4D2A-A8AF-C51202C8CBFF}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D6316CE7-B986-4D2A-A8AF-C51202C8CBFF}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{D6316CE7-B986-4D2A-A8AF-C51202C8CBFF}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{D6316CE7-B986-4D2A-A8AF-C51202C8CBFF}.Debug|x86.ActiveCfg = Debug|x86
+		{D6316CE7-B986-4D2A-A8AF-C51202C8CBFF}.Debug|x86.Build.0 = Debug|x86
+		{D6316CE7-B986-4D2A-A8AF-C51202C8CBFF}.Release|Any CPU.ActiveCfg = Release|x86
+		{D6316CE7-B986-4D2A-A8AF-C51202C8CBFF}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{D6316CE7-B986-4D2A-A8AF-C51202C8CBFF}.Release|Mixed Platforms.Build.0 = Release|x86
+		{D6316CE7-B986-4D2A-A8AF-C51202C8CBFF}.Release|x86.ActiveCfg = Release|x86
+		{D6316CE7-B986-4D2A-A8AF-C51202C8CBFF}.Release|x86.Build.0 = Release|x86
+		{877BEA42-A5FE-4BD8-A72F-1C88CFFF399A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{877BEA42-A5FE-4BD8-A72F-1C88CFFF399A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{877BEA42-A5FE-4BD8-A72F-1C88CFFF399A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{877BEA42-A5FE-4BD8-A72F-1C88CFFF399A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{877BEA42-A5FE-4BD8-A72F-1C88CFFF399A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{877BEA42-A5FE-4BD8-A72F-1C88CFFF399A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{877BEA42-A5FE-4BD8-A72F-1C88CFFF399A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{877BEA42-A5FE-4BD8-A72F-1C88CFFF399A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{877BEA42-A5FE-4BD8-A72F-1C88CFFF399A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{877BEA42-A5FE-4BD8-A72F-1C88CFFF399A}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

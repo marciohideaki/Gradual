@@ -1,0 +1,114 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.ServicoRoteador", "Gradual.OMS.ServicoRoteador\Gradual.OMS.ServicoRoteador.csproj", "{DD32F262-058D-4B57-8F17-681D45782245}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTesteRoteadorOrdens", "AppTesteRoteadorOrdens\AppTesteRoteadorOrdens.csproj", "{78EA3E43-8B7B-4D5A-B3CA-5689D30D7DAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.RoteadorOrdensAdm.Lib", "Gradual.OMS.RoteadorOrdensAdm.Lib\Gradual.OMS.RoteadorOrdensAdm.Lib.csproj", "{973F4423-D606-41D2-9E35-B0244ACB78F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.RoteadorOrdens.Lib", "Gradual.OMS.RoteadorOrdens.Lib\Gradual.OMS.RoteadorOrdens.Lib.csproj", "{672C3D1D-547D-45D4-A894-C269310485C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.AutomacaoOrdensTeste", "Gradual.OMS.AutomacaoOrdensTeste\Gradual.OMS.AutomacaoOrdensTeste.csproj", "{96077954-F7CB-4ED2-AA5A-B9735E66532F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickFixLogRotator", "QuickFixLogRotator\QuickFixLogRotator.csproj", "{0B819A03-D0AD-4221-813D-B41C0176716D}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gradual.OMS.ServicoRoteador\\Gradual.OMS.ServicoRoteador.csproj
+		SccProjectName1 = Gradual.OMS.ServicoRoteador
+		SccLocalPath1 = Gradual.OMS.ServicoRoteador
+		SccProjectUniqueName2 = AppTesteRoteadorOrdens\\AppTesteRoteadorOrdens.csproj
+		SccProjectName2 = AppTesteRoteadorOrdens
+		SccLocalPath2 = AppTesteRoteadorOrdens
+		SccProjectUniqueName3 = Gradual.OMS.RoteadorOrdensAdm.Lib\\Gradual.OMS.RoteadorOrdensAdm.Lib.csproj
+		SccProjectName3 = Gradual.OMS.RoteadorOrdensAdm.Lib
+		SccLocalPath3 = Gradual.OMS.RoteadorOrdensAdm.Lib
+		SccProjectUniqueName4 = Gradual.OMS.RoteadorOrdens.Lib\\Gradual.OMS.RoteadorOrdens.Lib.csproj
+		SccProjectName4 = Gradual.OMS.RoteadorOrdens.Lib
+		SccLocalPath4 = Gradual.OMS.RoteadorOrdens.Lib
+		SccProjectUniqueName5 = Gradual.OMS.AutomacaoOrdensTeste\\Gradual.OMS.AutomacaoOrdensTeste.csproj
+		SccProjectName5 = Gradual.OMS.AutomacaoOrdensTeste
+		SccLocalPath5 = Gradual.OMS.AutomacaoOrdensTeste
+		SccProjectUniqueName6 = QuickFixLogRotator\\QuickFixLogRotator.csproj
+		SccProjectName6 = QuickFixLogRotator
+		SccLocalPath6 = QuickFixLogRotator
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD32F262-058D-4B57-8F17-681D45782245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD32F262-058D-4B57-8F17-681D45782245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD32F262-058D-4B57-8F17-681D45782245}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DD32F262-058D-4B57-8F17-681D45782245}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DD32F262-058D-4B57-8F17-681D45782245}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DD32F262-058D-4B57-8F17-681D45782245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD32F262-058D-4B57-8F17-681D45782245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD32F262-058D-4B57-8F17-681D45782245}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DD32F262-058D-4B57-8F17-681D45782245}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DD32F262-058D-4B57-8F17-681D45782245}.Release|x86.ActiveCfg = Release|Any CPU
+		{78EA3E43-8B7B-4D5A-B3CA-5689D30D7DAB}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{78EA3E43-8B7B-4D5A-B3CA-5689D30D7DAB}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{78EA3E43-8B7B-4D5A-B3CA-5689D30D7DAB}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{78EA3E43-8B7B-4D5A-B3CA-5689D30D7DAB}.Debug|x86.ActiveCfg = Debug|x86
+		{78EA3E43-8B7B-4D5A-B3CA-5689D30D7DAB}.Debug|x86.Build.0 = Debug|x86
+		{78EA3E43-8B7B-4D5A-B3CA-5689D30D7DAB}.Release|Any CPU.ActiveCfg = Release|x86
+		{78EA3E43-8B7B-4D5A-B3CA-5689D30D7DAB}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{78EA3E43-8B7B-4D5A-B3CA-5689D30D7DAB}.Release|Mixed Platforms.Build.0 = Release|x86
+		{78EA3E43-8B7B-4D5A-B3CA-5689D30D7DAB}.Release|x86.ActiveCfg = Release|x86
+		{78EA3E43-8B7B-4D5A-B3CA-5689D30D7DAB}.Release|x86.Build.0 = Release|x86
+		{973F4423-D606-41D2-9E35-B0244ACB78F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{973F4423-D606-41D2-9E35-B0244ACB78F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{973F4423-D606-41D2-9E35-B0244ACB78F4}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{973F4423-D606-41D2-9E35-B0244ACB78F4}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{973F4423-D606-41D2-9E35-B0244ACB78F4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{973F4423-D606-41D2-9E35-B0244ACB78F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{973F4423-D606-41D2-9E35-B0244ACB78F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{973F4423-D606-41D2-9E35-B0244ACB78F4}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{973F4423-D606-41D2-9E35-B0244ACB78F4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{973F4423-D606-41D2-9E35-B0244ACB78F4}.Release|x86.ActiveCfg = Release|Any CPU
+		{672C3D1D-547D-45D4-A894-C269310485C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{672C3D1D-547D-45D4-A894-C269310485C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{672C3D1D-547D-45D4-A894-C269310485C0}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{672C3D1D-547D-45D4-A894-C269310485C0}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{672C3D1D-547D-45D4-A894-C269310485C0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{672C3D1D-547D-45D4-A894-C269310485C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{672C3D1D-547D-45D4-A894-C269310485C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{672C3D1D-547D-45D4-A894-C269310485C0}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{672C3D1D-547D-45D4-A894-C269310485C0}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{672C3D1D-547D-45D4-A894-C269310485C0}.Release|x86.ActiveCfg = Release|Any CPU
+		{96077954-F7CB-4ED2-AA5A-B9735E66532F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96077954-F7CB-4ED2-AA5A-B9735E66532F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96077954-F7CB-4ED2-AA5A-B9735E66532F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{96077954-F7CB-4ED2-AA5A-B9735E66532F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{96077954-F7CB-4ED2-AA5A-B9735E66532F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{96077954-F7CB-4ED2-AA5A-B9735E66532F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96077954-F7CB-4ED2-AA5A-B9735E66532F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96077954-F7CB-4ED2-AA5A-B9735E66532F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{96077954-F7CB-4ED2-AA5A-B9735E66532F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{96077954-F7CB-4ED2-AA5A-B9735E66532F}.Release|x86.ActiveCfg = Release|Any CPU
+		{0B819A03-D0AD-4221-813D-B41C0176716D}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{0B819A03-D0AD-4221-813D-B41C0176716D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{0B819A03-D0AD-4221-813D-B41C0176716D}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{0B819A03-D0AD-4221-813D-B41C0176716D}.Debug|x86.ActiveCfg = Debug|x86
+		{0B819A03-D0AD-4221-813D-B41C0176716D}.Debug|x86.Build.0 = Debug|x86
+		{0B819A03-D0AD-4221-813D-B41C0176716D}.Release|Any CPU.ActiveCfg = Release|x86
+		{0B819A03-D0AD-4221-813D-B41C0176716D}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{0B819A03-D0AD-4221-813D-B41C0176716D}.Release|Mixed Platforms.Build.0 = Release|x86
+		{0B819A03-D0AD-4221-813D-B41C0176716D}.Release|x86.ActiveCfg = Release|x86
+		{0B819A03-D0AD-4221-813D-B41C0176716D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

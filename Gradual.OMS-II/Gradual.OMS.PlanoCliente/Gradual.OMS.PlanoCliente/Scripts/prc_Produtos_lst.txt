@@ -1,0 +1,11 @@
+-- =============================================
+-- Author:		Bruno Varandas Ribeiro
+-- Create date: 13/11/2011
+-- Description:	Lista os Produtos do Gradual
+-- =============================================
+ALTER PROCEDURE prc_Produtos_lst
+AS
+BEGIN
+	SELECT * FRom tb_produto
+END
+GO

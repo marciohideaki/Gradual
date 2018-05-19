@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:intf="http://service.passivo.itau.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns2="http://axis.apache.org" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns1="http://bean.passivo.itau.com" xmlns:impl="http://service.passivo.itau.com" targetNamespace="http://service.passivo.itau.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://bean.passivo.itau.com">
+      <xsd:import namespace="http://axis.apache.org" />
+      <xsd:import namespace="http://service.passivo.itau.com" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:complexType name="CreditosAplicacaoBean">
+        <xsd:sequence>
+          <xsd:element name="contaCaptacao" nillable="true" type="xsd:string" />
+          <xsd:element name="cpfCnpjCotista" nillable="true" type="xsd:string" />
+          <xsd:element name="cpfCnpjCotitular" nillable="true" type="xsd:string" />
+          <xsd:element name="dataCredito" nillable="true" type="xsd:string" />
+          <xsd:element name="horaCredito" nillable="true" type="xsd:string" />
+          <xsd:element name="nomeCotista" nillable="true" type="xsd:string" />
+          <xsd:element name="tipoEnvio" nillable="true" type="xsd:string" />
+          <xsd:element name="valorCredito" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="MovimentoDiaBean">
+        <xsd:sequence>
+          <xsd:element name="codigoBanco" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoCotista" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoFundo" nillable="true" type="xsd:string" />
+          <xsd:element name="contaCorrente" nillable="true" type="xsd:string" />
+          <xsd:element name="dataConversao" nillable="true" type="xsd:string" />
+          <xsd:element name="dataPagamento" nillable="true" type="xsd:string" />
+          <xsd:element name="horaOperacao" nillable="true" type="xsd:string" />
+          <xsd:element name="nomeCotista" nillable="true" type="xsd:string" />
+          <xsd:element name="nomeFantasia" nillable="true" type="xsd:string" />
+          <xsd:element name="operacao" nillable="true" type="xsd:string" />
+          <xsd:element name="quantidadeCotas" nillable="true" type="xsd:string" />
+          <xsd:element name="status" nillable="true" type="xsd:string" />
+          <xsd:element name="tipoContaCredito" nillable="true" type="xsd:string" />
+          <xsd:element name="tipoOperacao" nillable="true" type="xsd:string" />
+          <xsd:element name="tipoResgate" nillable="true" type="xsd:string" />
+          <xsd:element name="usuario" nillable="true" type="xsd:string" />
+          <xsd:element name="valorOperacao" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="SituacaoCotistaBean">
+        <xsd:sequence>
+          <xsd:element name="bairroEnderecoCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="cepEnderecoCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="cidadeEnderecoCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="cnpjCorretora1" nillable="true" type="xsd:string" />
+          <xsd:element name="cnpjCorretora10" nillable="true" type="xsd:string" />
+          <xsd:element name="cnpjCorretora2" nillable="true" type="xsd:string" />
+          <xsd:element name="cnpjCorretora3" nillable="true" type="xsd:string" />
+          <xsd:element name="cnpjCorretora4" nillable="true" type="xsd:string" />
+          <xsd:element name="cnpjCorretora5" nillable="true" type="xsd:string" />
+          <xsd:element name="cnpjCorretora6" nillable="true" type="xsd:string" />
+          <xsd:element name="cnpjCorretora7" nillable="true" type="xsd:string" />
+          <xsd:element name="cnpjCorretora8" nillable="true" type="xsd:string" />
+          <xsd:element name="cnpjCorretora9" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoAgenciaCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoAssessor" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoCategoriaContaCorrente" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoClassificacaoCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoClienteGestor" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoConta" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoDistribuicaoGestor" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoEstadoCivil" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoFormaConstituicaoEmpresa" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoGestorCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoIncidenciaImposto" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoInvestidor1" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoInvestidor10" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoInvestidor2" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoInvestidor3" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoInvestidor4" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoInvestidor5" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoInvestidor6" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoInvestidor7" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoInvestidor8" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoInvestidor9" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoProfissao" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoRamoAtividadeEmpresa" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoSexo" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoSituacaoConta" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoSituacaoLegal" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoTipoConta" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoTipoPessoa" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoTipoRemessa" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoUsuarioCadastro" nillable="true" type="xsd:string" />
+          <xsd:element name="complementoEnderecoCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="contaCredito1" nillable="true" type="xsd:string" />
+          <xsd:element name="contaCredito10" nillable="true" type="xsd:string" />
+          <xsd:element name="contaCredito2" nillable="true" type="xsd:string" />
+          <xsd:element name="contaCredito3" nillable="true" type="xsd:string" />
+          <xsd:element name="contaCredito4" nillable="true" type="xsd:string" />
+          <xsd:element name="contaCredito5" nillable="true" type="xsd:string" />
+          <xsd:element name="contaCredito6" nillable="true" type="xsd:string" />
+          <xsd:element name="contaCredito7" nillable="true" type="xsd:string" />
+          <xsd:element name="contaCredito8" nillable="true" type="xsd:string" />
+          <xsd:element name="contaCredito9" nillable="true" type="xsd:string" />
+          <xsd:element name="dataAlteracaoSistema" nillable="true" type="xsd:string" />
+          <xsd:element name="dataCadastroSistema" nillable="true" type="xsd:string" />
+          <xsd:element name="dataExpedicaoDocumento" nillable="true" type="xsd:string" />
+          <xsd:element name="dataNascimento" nillable="true" type="xsd:string" />
+          <xsd:element name="dddTelefoneCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="digitoAutoConferecia" nillable="true" type="xsd:string" />
+          <xsd:element name="emailCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="emissorDocumentoId" nillable="true" type="xsd:string" />
+          <xsd:element name="horaUltimaAlteracao" nillable="true" type="xsd:string" />
+          <xsd:element name="idClienteAtivo" nillable="true" type="xsd:string" />
+          <xsd:element name="idClienteFundoIinvestimentoCustodia" nillable="true" type="xsd:string" />
+          <xsd:element name="idClienteReceita" nillable="true" type="xsd:string" />
+          <xsd:element name="idEnderecoRequisicaoServico" nillable="true" type="xsd:string" />
+          <xsd:element name="idTipoContaDestino1" nillable="true" type="xsd:string" />
+          <xsd:element name="idTipoContaDestino10" nillable="true" type="xsd:string" />
+          <xsd:element name="idTipoContaDestino2" nillable="true" type="xsd:string" />
+          <xsd:element name="idTipoContaDestino3" nillable="true" type="xsd:string" />
+          <xsd:element name="idTipoContaDestino4" nillable="true" type="xsd:string" />
+          <xsd:element name="idTipoContaDestino5" nillable="true" type="xsd:string" />
+          <xsd:element name="idTipoContaDestino6" nillable="true" type="xsd:string" />
+          <xsd:element name="idTipoContaDestino7" nillable="true" type="xsd:string" />
+          <xsd:element name="idTipoContaDestino8" nillable="true" type="xsd:string" />
+          <xsd:element name="idTipoContaDestino9" nillable="true" type="xsd:string" />
+          <xsd:element name="idUsuarioRespAlterar" nillable="true" type="xsd:string" />
+          <xsd:element name="indicadorContaBloqueada" nillable="true" type="xsd:string" />
+          <xsd:element name="indicadorTipoConta1" nillable="true" type="xsd:string" />
+          <xsd:element name="indicadorTipoConta10" nillable="true" type="xsd:string" />
+          <xsd:element name="indicadorTipoConta2" nillable="true" type="xsd:string" />
+          <xsd:element name="indicadorTipoConta3" nillable="true" type="xsd:string" />
+          <xsd:element name="indicadorTipoConta4" nillable="true" type="xsd:string" />
+          <xsd:element name="indicadorTipoConta5" nillable="true" type="xsd:string" />
+          <xsd:element name="indicadorTipoConta6" nillable="true" type="xsd:string" />
+          <xsd:element name="indicadorTipoConta7" nillable="true" type="xsd:string" />
+          <xsd:element name="indicadorTipoConta8" nillable="true" type="xsd:string" />
+          <xsd:element name="indicadorTipoConta9" nillable="true" type="xsd:string" />
+          <xsd:element name="logradouroEnderecoCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="nomeCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="numeroDocumentoId" nillable="true" type="xsd:string" />
+          <xsd:element name="numeroEnderecoCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="numeroRamalCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="numeroTelefoneCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="opcaoAvisoMovimento" nillable="true" type="xsd:string" />
+          <xsd:element name="opcaoExtratoMensal" nillable="true" type="xsd:string" />
+          <xsd:element name="tipoDocumentoId" nillable="true" type="xsd:string" />
+          <xsd:element name="titularidadeConta1" nillable="true" type="xsd:string" />
+          <xsd:element name="titularidadeConta10" nillable="true" type="xsd:string" />
+          <xsd:element name="titularidadeConta2" nillable="true" type="xsd:string" />
+          <xsd:element name="titularidadeConta3" nillable="true" type="xsd:string" />
+          <xsd:element name="titularidadeConta4" nillable="true" type="xsd:string" />
+          <xsd:element name="titularidadeConta5" nillable="true" type="xsd:string" />
+          <xsd:element name="titularidadeConta6" nillable="true" type="xsd:string" />
+          <xsd:element name="titularidadeConta7" nillable="true" type="xsd:string" />
+          <xsd:element name="titularidadeConta8" nillable="true" type="xsd:string" />
+          <xsd:element name="titularidadeConta9" nillable="true" type="xsd:string" />
+          <xsd:element name="ufEmissorDocumentoId" nillable="true" type="xsd:string" />
+          <xsd:element name="ufEnderecoCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="valorPatrimonio" nillable="true" type="xsd:string" />
+          <xsd:element name="valorRendaFamiliar" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://service.passivo.itau.com">
+      <xsd:import namespace="http://axis.apache.org" />
+      <xsd:import namespace="http://bean.passivo.itau.com" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:complexType name="ArrayOf_tns1_CreditosAplicacaoBean">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="tns1:CreditosAplicacaoBean[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOf_tns1_MovimentoDiaBean">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="tns1:MovimentoDiaBean[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOf_tns1_SituacaoCotistaBean">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="tns1:SituacaoCotistaBean[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="SituacaoCotistaBean">
+        <xsd:sequence>
+          <xsd:element name="bairroEnderecoCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="cepEnderecoCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="cidadeEnderecoCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="cnpjCorretora1" nillable="true" type="xsd:string" />
+          <xsd:element name="cnpjCorretora10" nillable="true" type="xsd:string" />
+          <xsd:element name="cnpjCorretora2" nillable="true" type="xsd:string" />
+          <xsd:element name="cnpjCorretora3" nillable="true" type="xsd:string" />
+          <xsd:element name="cnpjCorretora4" nillable="true" type="xsd:string" />
+          <xsd:element name="cnpjCorretora5" nillable="true" type="xsd:string" />
+          <xsd:element name="cnpjCorretora6" nillable="true" type="xsd:string" />
+          <xsd:element name="cnpjCorretora7" nillable="true" type="xsd:string" />
+          <xsd:element name="cnpjCorretora8" nillable="true" type="xsd:string" />
+          <xsd:element name="cnpjCorretora9" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoAgenciaCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoAssessor" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoCategoriaContaCorrente" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoClassificacaoCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoClienteGestor" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoConta" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoDistribuicaoGestor" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoEstadoCivil" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoFormaConstituicaoEmpresa" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoGestorCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoIncidenciaImposto" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoInvestidor1" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoInvestidor10" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoInvestidor2" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoInvestidor3" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoInvestidor4" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoInvestidor5" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoInvestidor6" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoInvestidor7" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoInvestidor8" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoInvestidor9" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoProfissao" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoRamoAtividadeEmpresa" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoSexo" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoSituacaoConta" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoSituacaoLegal" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoTipoConta" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoTipoPessoa" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoTipoRemessa" nillable="true" type="xsd:string" />
+          <xsd:element name="codigoUsuarioCadastro" nillable="true" type="xsd:string" />
+          <xsd:element name="complementoEnderecoCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="contaCredito1" nillable="true" type="xsd:string" />
+          <xsd:element name="contaCredito10" nillable="true" type="xsd:string" />
+          <xsd:element name="contaCredito2" nillable="true" type="xsd:string" />
+          <xsd:element name="contaCredito3" nillable="true" type="xsd:string" />
+          <xsd:element name="contaCredito4" nillable="true" type="xsd:string" />
+          <xsd:element name="contaCredito5" nillable="true" type="xsd:string" />
+          <xsd:element name="contaCredito6" nillable="true" type="xsd:string" />
+          <xsd:element name="contaCredito7" nillable="true" type="xsd:string" />
+          <xsd:element name="contaCredito8" nillable="true" type="xsd:string" />
+          <xsd:element name="contaCredito9" nillable="true" type="xsd:string" />
+          <xsd:element name="dataAlteracaoSistema" nillable="true" type="xsd:string" />
+          <xsd:element name="dataCadastroSistema" nillable="true" type="xsd:string" />
+          <xsd:element name="dataExpedicaoDocumento" nillable="true" type="xsd:string" />
+          <xsd:element name="dataNascimento" nillable="true" type="xsd:string" />
+          <xsd:element name="dddTelefoneCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="digitoAutoConferecia" nillable="true" type="xsd:string" />
+          <xsd:element name="emailCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="emissorDocumentoId" nillable="true" type="xsd:string" />
+          <xsd:element name="horaUltimaAlteracao" nillable="true" type="xsd:string" />
+          <xsd:element name="idClienteAtivo" nillable="true" type="xsd:string" />
+          <xsd:element name="idClienteFundoIinvestimentoCustodia" nillable="true" type="xsd:string" />
+          <xsd:element name="idClienteReceita" nillable="true" type="xsd:string" />
+          <xsd:element name="idEnderecoRequisicaoServico" nillable="true" type="xsd:string" />
+          <xsd:element name="idTipoContaDestino1" nillable="true" type="xsd:string" />
+          <xsd:element name="idTipoContaDestino10" nillable="true" type="xsd:string" />
+          <xsd:element name="idTipoContaDestino2" nillable="true" type="xsd:string" />
+          <xsd:element name="idTipoContaDestino3" nillable="true" type="xsd:string" />
+          <xsd:element name="idTipoContaDestino4" nillable="true" type="xsd:string" />
+          <xsd:element name="idTipoContaDestino5" nillable="true" type="xsd:string" />
+          <xsd:element name="idTipoContaDestino6" nillable="true" type="xsd:string" />
+          <xsd:element name="idTipoContaDestino7" nillable="true" type="xsd:string" />
+          <xsd:element name="idTipoContaDestino8" nillable="true" type="xsd:string" />
+          <xsd:element name="idTipoContaDestino9" nillable="true" type="xsd:string" />
+          <xsd:element name="idUsuarioRespAlterar" nillable="true" type="xsd:string" />
+          <xsd:element name="indicadorContaBloqueada" nillable="true" type="xsd:string" />
+          <xsd:element name="indicadorTipoConta1" nillable="true" type="xsd:string" />
+          <xsd:element name="indicadorTipoConta10" nillable="true" type="xsd:string" />
+          <xsd:element name="indicadorTipoConta2" nillable="true" type="xsd:string" />
+          <xsd:element name="indicadorTipoConta3" nillable="true" type="xsd:string" />
+          <xsd:element name="indicadorTipoConta4" nillable="true" type="xsd:string" />
+          <xsd:element name="indicadorTipoConta5" nillable="true" type="xsd:string" />
+          <xsd:element name="indicadorTipoConta6" nillable="true" type="xsd:string" />
+          <xsd:element name="indicadorTipoConta7" nillable="true" type="xsd:string" />
+          <xsd:element name="indicadorTipoConta8" nillable="true" type="xsd:string" />
+          <xsd:element name="indicadorTipoConta9" nillable="true" type="xsd:string" />
+          <xsd:element name="logradouroEnderecoCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="nomeCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="numeroDocumentoId" nillable="true" type="xsd:string" />
+          <xsd:element name="numeroEnderecoCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="numeroRamalCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="numeroTelefoneCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="opcaoAvisoMovimento" nillable="true" type="xsd:string" />
+          <xsd:element name="opcaoExtratoMensal" nillable="true" type="xsd:string" />
+          <xsd:element name="tipoDocumentoId" nillable="true" type="xsd:string" />
+          <xsd:element name="titularidadeConta1" nillable="true" type="xsd:string" />
+          <xsd:element name="titularidadeConta10" nillable="true" type="xsd:string" />
+          <xsd:element name="titularidadeConta2" nillable="true" type="xsd:string" />
+          <xsd:element name="titularidadeConta3" nillable="true" type="xsd:string" />
+          <xsd:element name="titularidadeConta4" nillable="true" type="xsd:string" />
+          <xsd:element name="titularidadeConta5" nillable="true" type="xsd:string" />
+          <xsd:element name="titularidadeConta6" nillable="true" type="xsd:string" />
+          <xsd:element name="titularidadeConta7" nillable="true" type="xsd:string" />
+          <xsd:element name="titularidadeConta8" nillable="true" type="xsd:string" />
+          <xsd:element name="titularidadeConta9" nillable="true" type="xsd:string" />
+          <xsd:element name="ufEmissorDocumentoId" nillable="true" type="xsd:string" />
+          <xsd:element name="ufEnderecoCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="valorPatrimonio" nillable="true" type="xsd:string" />
+          <xsd:element name="valorRendaFamiliar" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="consultarCotistaXMLResponse">
+    <wsdl:part name="consultarCotistaXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="InternalException" />
+  <wsdl:message name="consultarMovimentosDiaResponse">
+    <wsdl:part name="consultarMovimentosDiaReturn" type="impl:ArrayOf_tns1_MovimentoDiaBean" />
+  </wsdl:message>
+  <wsdl:message name="consultarMovimentosDiaRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="consultarSituacaoCotistasResponse">
+    <wsdl:part name="consultarSituacaoCotistasReturn" type="impl:ArrayOf_tns1_SituacaoCotistaBean" />
+  </wsdl:message>
+  <wsdl:message name="consultarCreditosAplicacaoGestorRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+    <wsdl:part name="codigoFundo" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="InternalException1">
+    <wsdl:part name="fault" type="xsd:anyType" />
+  </wsdl:message>
+  <wsdl:message name="consultarMovimentosDiaXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="consultarCotistaXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+    <wsdl:part name="codigoCotista" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="consultarCreditosAplicacaoGestorXMLResponse">
+    <wsdl:part name="consultarCreditosAplicacaoGestorXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="consultarCotistaRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+    <wsdl:part name="codigoCotista" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="consultarSituacaoCotistasXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="consultarMovimentosDiaXMLResponse">
+    <wsdl:part name="consultarMovimentosDiaXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="consultarSituacaoCotistasXMLResponse">
+    <wsdl:part name="consultarMovimentosDiaXMLReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="consultarCotistaResponse">
+    <wsdl:part name="consultarCotistaReturn" type="impl:SituacaoCotistaBean" />
+  </wsdl:message>
+  <wsdl:message name="consultarSituacaoCotistasRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="consultarCreditosAplicacaoGestorXMLRequest">
+    <wsdl:part name="ebusiness" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="codigoGestor" type="xsd:string" />
+    <wsdl:part name="codigoFundo" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="consultarCreditosAplicacaoGestorResponse">
+    <wsdl:part name="consultarCreditosAplicacaoGestorReturn" type="impl:ArrayOf_tns1_CreditosAplicacaoBean" />
+  </wsdl:message>
+  <wsdl:portType name="PosicaoGerencialService">
+    <wsdl:operation name="consultarCreditosAplicacaoGestor" parameterOrder="ebusiness senha codigoGestor codigoFundo">
+      <wsdl:input name="consultarCreditosAplicacaoGestorRequest" message="impl:consultarCreditosAplicacaoGestorRequest" />
+      <wsdl:output name="consultarCreditosAplicacaoGestorResponse" message="impl:consultarCreditosAplicacaoGestorResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarCreditosAplicacaoGestorXML" parameterOrder="ebusiness senha codigoGestor codigoFundo">
+      <wsdl:input name="consultarCreditosAplicacaoGestorXMLRequest" message="impl:consultarCreditosAplicacaoGestorXMLRequest" />
+      <wsdl:output name="consultarCreditosAplicacaoGestorXMLResponse" message="impl:consultarCreditosAplicacaoGestorXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarMovimentosDia" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="consultarMovimentosDiaRequest" message="impl:consultarMovimentosDiaRequest" />
+      <wsdl:output name="consultarMovimentosDiaResponse" message="impl:consultarMovimentosDiaResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarMovimentosDiaXML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="consultarMovimentosDiaXMLRequest" message="impl:consultarMovimentosDiaXMLRequest" />
+      <wsdl:output name="consultarMovimentosDiaXMLResponse" message="impl:consultarMovimentosDiaXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException1" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarSituacaoCotistasXML" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="consultarSituacaoCotistasXMLRequest" message="impl:consultarSituacaoCotistasXMLRequest" />
+      <wsdl:output name="consultarSituacaoCotistasXMLResponse" message="impl:consultarSituacaoCotistasXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarCotistaXML" parameterOrder="ebusiness senha codigoGestor codigoCotista">
+      <wsdl:input name="consultarCotistaXMLRequest" message="impl:consultarCotistaXMLRequest" />
+      <wsdl:output name="consultarCotistaXMLResponse" message="impl:consultarCotistaXMLResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarSituacaoCotistas" parameterOrder="ebusiness senha codigoGestor">
+      <wsdl:input name="consultarSituacaoCotistasRequest" message="impl:consultarSituacaoCotistasRequest" />
+      <wsdl:output name="consultarSituacaoCotistasResponse" message="impl:consultarSituacaoCotistasResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarCotista" parameterOrder="ebusiness senha codigoGestor codigoCotista">
+      <wsdl:input name="consultarCotistaRequest" message="impl:consultarCotistaRequest" />
+      <wsdl:output name="consultarCotistaResponse" message="impl:consultarCotistaResponse" />
+      <wsdl:fault name="InternalException" message="impl:InternalException" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PosicaoGerencialServiceSoapBinding" type="impl:PosicaoGerencialService">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="consultarCreditosAplicacaoGestor">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="consultarCreditosAplicacaoGestorRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="consultarCreditosAplicacaoGestorResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="consultarCreditosAplicacaoGestorXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="consultarCreditosAplicacaoGestorXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="consultarCreditosAplicacaoGestorXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="consultarMovimentosDia">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="consultarMovimentosDiaRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="consultarMovimentosDiaResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="consultarMovimentosDiaXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="consultarMovimentosDiaXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="consultarMovimentosDiaXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="consultarSituacaoCotistasXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="consultarSituacaoCotistasXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="consultarSituacaoCotistasXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="consultarCotistaXML">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="consultarCotistaXMLRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="consultarCotistaXMLResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="consultarSituacaoCotistas">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="consultarSituacaoCotistasRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="consultarSituacaoCotistasResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="consultarCotista">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="consultarCotistaRequest">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="consultarCotistaResponse">
+        <wsdlsoap:body use="encoded" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+      <wsdl:fault name="InternalException">
+        <wsdlsoap:fault use="encoded" name="InternalException" namespace="http://service.passivo.itau.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PosicaoGerencialServiceService">
+    <wsdl:port name="PosicaoGerencialService" binding="impl:PosicaoGerencialServiceSoapBinding">
+      <wsdlsoap:address location="https://www.itaucustodia.com.br/PassivoWebServices/services/PosicaoGerencialService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

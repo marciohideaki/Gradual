@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FD8E0DF0-FCA3-486A-8457-DA5938083531}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.OMS.Seguranca</RootNamespace>
+    <AssemblyName>Gradual.OMS.Seguranca</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.Generico.Dados">
+      <HintPath>..\..\Gradual.OMS.References\Gradual.Generico.Dados.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Generico.Geral">
+      <HintPath>..\..\Gradual.OMS.References\Gradual.Generico.Geral.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Library">
+      <HintPath>..\..\Gradual.OMS.References\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\Gradual.OMS.References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entidades\DbLib.cs" />
+    <Compile Include="Entidades\IEntidadeDbLib.cs" />
+    <Compile Include="Entidades\ItemGrupoDbLibBase.cs" />
+    <Compile Include="Entidades\ItemPerfilDbLibBase.cs" />
+    <Compile Include="Entidades\ItemPermissaoDbLibBase.cs" />
+    <Compile Include="Entidades\PerfilDbLib.cs" />
+    <Compile Include="Entidades\PerfilPermissaoDbLib.cs" />
+    <Compile Include="Entidades\PermissaoDbLib.cs" />
+    <Compile Include="Entidades\UsuarioDbLib.cs" />
+    <Compile Include="Entidades\UsuarioGrupoDbLib.cs" />
+    <Compile Include="Entidades\UsuarioGrupoPerfilDbLib.cs" />
+    <Compile Include="Entidades\UsuarioGrupoPermissaoDbLib.cs" />
+    <Compile Include="Entidades\UsuarioPerfilDbLib.cs" />
+    <Compile Include="Entidades\UsuarioPermissaoDbLib.cs" />
+    <Compile Include="Entidades\UsuarioUsuarioGrupoDbLib.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="PersistenciaControleAcesso.cs" />
+    <Compile Include="PersistenciaSegurancaDb.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicoSeguranca.cs" />
+    <Compile Include="ServicoSegurancaConfig.cs" />
+    <Compile Include="ServicoSegurancaPersistencia.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Gradual.OMS.Core\Gradual.OMS.Persistencia\Gradual.OMS.Persistencia.csproj">
+      <Project>{01BFE534-741D-44B0-BDFF-7461D1AC66EC}</Project>
+      <Name>Gradual.OMS.Persistencia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.Seguranca.Lib\Gradual.OMS.Seguranca.Lib.csproj">
+      <Project>{421A9509-5314-420F-80EA-10A7B4D7309B}</Project>
+      <Name>Gradual.OMS.Seguranca.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.OMS.SegurancaADM.Lib\Gradual.OMS.SegurancaADM.Lib.csproj">
+      <Project>{B96F4EBB-762F-4FEB-A282-6DA1BEE581FE}</Project>
+      <Name>Gradual.OMS.SegurancaADM.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
