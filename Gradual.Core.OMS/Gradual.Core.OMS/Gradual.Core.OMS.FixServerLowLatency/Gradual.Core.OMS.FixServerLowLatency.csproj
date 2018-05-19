@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A17D380F-DE7B-4B78-AF89-D22B90B39DCF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.Core.OMS.FixServerLowLatency</RootNamespace>
+    <AssemblyName>Gradual.Core.OMS.FixServerLowLatency</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_CQUEUE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.OMS.Library">
+      <HintPath>..\..\Gradual.Core.References\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.RoteadorOrdens.Lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Gradual.OMS-II\Gradual.OMS.References\Gradual.OMS.RoteadorOrdens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\Gradual.Core.References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="QuickFix, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Gradual.Core.References\QuickFix.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Memory\OrderSessionManager.cs" />
+    <Compile Include="Rede\FixDropCopy.cs" />
+    <Compile Include="Rede\SessionAcceptor.cs" />
+    <Compile Include="Database\DbFix.cs" />
+    <Compile Include="FixServer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rede\FixAcceptor.cs" />
+    <Compile Include="Rede\FixInitiator.cs" />
+    <Compile Include="Rede\SessionDropCopy.cs" />
+    <Compile Include="Regras\OrdensConsistencia.cs" />
+    <Compile Include="Regras\OrdensTransicao.cs" />
+    <Compile Include="Util\CronStyleScheduler.cs" />
+    <Compile Include="Util\Fix42TranslatorBBG.cs" />
+    <Compile Include="Util\Fix44Translator.cs" />
+    <Compile Include="Util\GeneralFunctions.cs" />
+    <Compile Include="Util\GeneralTasks.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cortex.OMS.FixUtilities.Lib\Cortex.OMS.FixUtilities.Lib.csproj">
+      <Project>{C8C512A1-50A4-42CD-B6CD-1C3A9E899593}</Project>
+      <Name>Cortex.OMS.FixUtilities.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cortex.OMS.ServidorFIXAdm.Lib\Cortex.OMS.ServidorFIXAdm.Lib.csproj">
+      <Project>{E4AB1F4A-7B5F-4F47-B4CD-CA7FB3A6FDBB}</Project>
+      <Name>Cortex.OMS.ServidorFIXAdm.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cortex.OMS.ServidorFIX\Cortex.OMS.ServidorFIX.csproj">
+      <Project>{4CAC3646-2DF7-4E31-BEBF-267887ECD96C}</Project>
+      <Name>Cortex.OMS.ServidorFIX</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Core.OMS.DropCopy.Lib\Gradual.Core.OMS.DropCopy.Lib.csproj">
+      <Project>{79862A82-950A-4136-951F-5BCD1991B066}</Project>
+      <Name>Gradual.Core.OMS.DropCopy.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Core.OMS.FixServerLowLatency.Lib\Gradual.Core.OMS.FixServerLowLatency.Lib.csproj">
+      <Project>{59556DC7-238A-401A-A0DA-9A39BD3D6C88}</Project>
+      <Name>Gradual.Core.OMS.FixServerLowLatency.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Core.OMS.LimiteManager.Lib\Gradual.Core.OMS.LimiteManager.Lib.csproj">
+      <Project>{4550E3AE-6FBD-46DF-A169-D57781C5B7F3}</Project>
+      <Name>Gradual.Core.OMS.LimiteManager.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Core.OMS.LimiteManager\Gradual.Core.OMS.LimiteManager.csproj">
+      <Project>{AC9C032A-4975-497F-A02C-A370775B028B}</Project>
+      <Name>Gradual.Core.OMS.LimiteManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Core.OrdensMonitoracao.ADM.Lib\Gradual.Core.OrdensMonitoracao.ADM.Lib.csproj">
+      <Project>{FAE38C78-2756-4A6C-9573-DBEA50856AC9}</Project>
+      <Name>Gradual.Core.OrdensMonitoracao.ADM.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangeLog.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,6 @@
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\BoletadorFIX\obj\x86\Debug\BoletadorFIX.csprojResolveAssemblyReference.cache
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\BoletadorFIX\obj\x86\Debug\BoletadorFIX.Form1.resources
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\BoletadorFIX\obj\x86\Debug\BoletadorFIX.frmOfertasEnviadas.resources
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\BoletadorFIX\obj\x86\Debug\BoletadorFIX.frmPontaVenda.resources
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\BoletadorFIX\obj\x86\Debug\BoletadorFIX.Properties.Resources.resources
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\BoletadorFIX\obj\x86\Debug\BoletadorFIX.csproj.GenerateResource.Cache

@@ -1,0 +1,13 @@
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Gradual.Core.OMS.LimiteManager.Db\bin\Debug\Gradual.Core.OMS.LimiteManager.Db.dll
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Gradual.Core.OMS.LimiteManager.Db\bin\Debug\Gradual.Core.OMS.LimiteManager.Db.pdb
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Gradual.Core.OMS.LimiteManager.Db\bin\Debug\Gradual.Core.OMS.LimiteManager.Lib.dll
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Gradual.Core.OMS.LimiteManager.Db\bin\Debug\log4net.dll
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Gradual.Core.OMS.LimiteManager.Db\bin\Debug\MdsBayeuxClient.dll
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Gradual.Core.OMS.LimiteManager.Db\bin\Debug\BayeuxClient.dll
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Gradual.Core.OMS.LimiteManager.Db\bin\Debug\Gradual.OMS.RoteadorOrdens.Lib.dll
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Gradual.Core.OMS.LimiteManager.Db\bin\Debug\Gradual.Core.OMS.LimiteManager.Lib.pdb
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Gradual.Core.OMS.LimiteManager.Db\bin\Debug\log4net.pdb
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Gradual.Core.OMS.LimiteManager.Db\bin\Debug\Gradual.OMS.RoteadorOrdens.Lib.pdb
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Gradual.Core.OMS.LimiteManager.Db\obj\Debug\Gradual.Core.OMS.LimiteManager.Db.csprojResolveAssemblyReference.cache
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Gradual.Core.OMS.LimiteManager.Db\obj\Debug\Gradual.Core.OMS.LimiteManager.Db.dll
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Gradual.Core.OMS.LimiteManager.Db\obj\Debug\Gradual.Core.OMS.LimiteManager.Db.pdb

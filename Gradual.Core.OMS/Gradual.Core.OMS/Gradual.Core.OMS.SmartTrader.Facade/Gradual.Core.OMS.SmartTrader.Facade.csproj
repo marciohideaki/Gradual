@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E1984C61-92AB-4CBF-87ED-DBA83ADE5405}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.Core.OMS.SmartTrader.Facade</RootNamespace>
+    <AssemblyName>Gradual.Core.OMS.SmartTrader.Facade</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.Core.Ordens.Lib">
+      <HintPath>..\..\Gradual.Core.References\Gradual.Core.Ordens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.AcompanhamentoOrdens.Lib">
+      <HintPath>..\..\Gradual.Core.References\Gradual.OMS.AcompanhamentoOrdens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Library">
+      <HintPath>..\..\Gradual.Core.References\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.RoteadorOrdens.Lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Gradual.Core.References\Gradual.OMS.RoteadorOrdens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.ServicoRoteador">
+      <HintPath>..\..\Gradual.Core.References\Gradual.OMS.ServicoRoteador.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\Gradual.Core.References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SmartTraderCallback.cs" />
+    <Compile Include="SmartTraderObserver.cs" />
+    <Compile Include="SmartTraderOrderProcessor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gradual.Core.OMS.SmartTrader.Lib\Gradual.Core.OMS.SmartTrader.Lib.csproj">
+      <Project>{7532DD24-09F3-4E7A-8957-C46063C5FFB6}</Project>
+      <Name>Gradual.Core.OMS.SmartTrader.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Core.OrdensMonitoracao.ADM.Lib\Gradual.Core.OrdensMonitoracao.ADM.Lib.csproj">
+      <Project>{FAE38C78-2756-4A6C-9573-DBEA50856AC9}</Project>
+      <Name>Gradual.Core.OrdensMonitoracao.ADM.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Core.Ordens\Gradual.Core.Ordens.csproj">
+      <Project>{A00C3EE4-2358-4421-A9EF-2B80D2A41542}</Project>
+      <Name>Gradual.Core.Ordens</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Core.SmartTrader.Persistencia\Gradual.Core.SmartTrader.Persistencia.csproj">
+      <Project>{08C847BE-490B-4178-8945-1185209C4831}</Project>
+      <Name>Gradual.Core.SmartTrader.Persistencia</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

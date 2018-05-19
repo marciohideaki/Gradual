@@ -1,0 +1,4 @@
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\WindowsFormOMSTest\obj\x86\Debug\WindowsFormOMSTest.csprojResolveAssemblyReference.cache
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\WindowsFormOMSTest\obj\x86\Debug\WindowsFormOMSTest.Form1.resources
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\WindowsFormOMSTest\obj\x86\Debug\WindowsFormOMSTest.Properties.Resources.resources
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\WindowsFormOMSTest\obj\x86\Debug\WindowsFormOMSTest.csproj.GenerateResource.Cache

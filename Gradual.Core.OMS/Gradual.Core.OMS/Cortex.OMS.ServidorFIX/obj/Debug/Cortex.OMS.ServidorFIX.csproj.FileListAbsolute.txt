@@ -1,0 +1,16 @@
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Cortex.OMS.ServidorFIX\bin\Debug\Cortex.OMS.ServidorFIX.dll
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Cortex.OMS.ServidorFIX\bin\Debug\Cortex.OMS.ServidorFIX.pdb
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Cortex.OMS.ServidorFIX\bin\Debug\Cortex.OMS.FixUtilities.Lib.dll
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Cortex.OMS.ServidorFIX\bin\Debug\Cortex.OMS.ServidorFIXAdm.Lib.dll
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Cortex.OMS.ServidorFIX\bin\Debug\Gradual.OMS.Library.dll
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Cortex.OMS.ServidorFIX\bin\Debug\Gradual.OMS.RoteadorOrdens.Lib.dll
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Cortex.OMS.ServidorFIX\bin\Debug\log4net.dll
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Cortex.OMS.ServidorFIX\bin\Debug\QuickFixN.1.3.0.dll
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Cortex.OMS.ServidorFIX\bin\Debug\Cortex.OMS.FixUtilities.Lib.pdb
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Cortex.OMS.ServidorFIX\bin\Debug\Cortex.OMS.ServidorFIXAdm.Lib.pdb
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Cortex.OMS.ServidorFIX\bin\Debug\Gradual.OMS.Library.pdb
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Cortex.OMS.ServidorFIX\bin\Debug\Gradual.OMS.RoteadorOrdens.Lib.pdb
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Cortex.OMS.ServidorFIX\bin\Debug\log4net.pdb
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Cortex.OMS.ServidorFIX\obj\Debug\Cortex.OMS.ServidorFIX.csprojResolveAssemblyReference.cache
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Cortex.OMS.ServidorFIX\obj\Debug\Cortex.OMS.ServidorFIX.dll
+D:\Gradual\Source\Gradual.Core.OMS\Gradual.Core.OMS\Cortex.OMS.ServidorFIX\obj\Debug\Cortex.OMS.ServidorFIX.pdb

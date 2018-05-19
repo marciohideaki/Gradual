@@ -1,0 +1,30 @@
+﻿Turing.OMS.DropCopyProcessor.exe
+================================
+================================
+
+v.1.2.0.2
+=========
+- Melhorias no processamento das mensagens;
+
+v.1.2.0.1
+=========
+- Suporte a gravacao da tag HandlInst;
+- Suporte a gravacao da Msg42Base64;
+
+v.1.2.0.0
+=========
+- Insercao de campos da sessao de origem (Sessao, ID, Mensagem) - suporte a cancelamento de trade;
+- Alteracao do dicionario para suporte a tags customizadas;
+
+v.1.1.0.0
+=========
+- Integração para descida do Acompanhamento de Ordens GTI;
+- Correções no processo de gravação em alta freqüência;
+- Adaptação das filas de processamento de mensagem;
+- Correção dos tratamentos de rejeição;
+
+v.1.0.0.0
+=========
+- Criação da estrutura de conexao fix para recebimento das mensagens;
+- Criaçao do tratamento de mensageria para gravacao do acompanhamento de ordens;
+- Criação da camada de banco de dados para montagem do acompanhamento;

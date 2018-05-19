@@ -1,0 +1,83 @@
+﻿Turing.OMS.FixServerLowLatency.exe
+==================================
+==================================
+
+v.1.3.0.8
+=========
+- Gravacao da Tag HandlInst (ordem administrada) - Drop Copy;
+- Suporte a traducao de mnemonico (alteracao da ordem de envio da mensagem para sessao DropCopy;
+- Correção de serializacao / deserializacao dos componentes TO's (problemas de SessionID)
+- Correçao de geracao de PartyIDs em caso de ExecutionReport na camada do Initiator;
+- Alteracao da persistencia de OrderSession para banco de dados;
+
+v.1.3.0.7
+=========
+- Tratamento de papeis de teste para testes matinais (ignorar calculo de limite);
+- Melhorias no gerenciamento da memoria CLR (recarga de limite);
+
+
+v.1.3.0.6
+=========
+- Desalocação de mensagens de Drop Copy (possivel acumulo de mmemoria);
+- Correção de validacao do campo DataEnvio para expiracao de ordens;
+- Correcao campo Text para geracao de rejeicao;
+
+v.1.3.0.5
+=========
+- Insercao de campo de integracao, definindo origem da oferta;
+- Alteracao dos controles de integracao, separando tradutores fix
+
+v.1.3.0.4
+=========
+- Correção de tag inválida para cancelamento;
+- Alteracao da mensagem de cancelamento pela bolsa (correção de tag faltando);
+- Gravacao de origem da mensagem (integracao dropcopy);
+- Tratamento de trade cancel para repasse da mensagem (alteracao banco de dados, consulta das ordens, transicao de ordens);
+
+v.1.3.0.3
+=========
+- Suporte a cancelamento via Ativador (para intranet);
+- Mudanca gerenciamento de filas de mensagens;
+- Correcao de tratamento para ordem expirada (conversão para "done for day" em fix 4.2); 
+
+v.1.3.0.2
+=========
+- Correçao do proecsso de logon das sessoes acceptor e drop copy;
+- Alteração da desalocação dos componentes de limite;
+- Tratamento de Ordem Manual (Administrada) para Fix 4.2; 
+- Gerenciamento das informacoes de Security para envio de mensagens;
+
+
+v.1.3.0.1
+=========
+- Correção de validacao da ordem, eliminando obrigatoriedade do campo SecurityID;
+- Correção de envio de ER para sessão DropCopy
+- Composicao de PartyIDs na conversão de mensagens Fix 4.2 => Fix 4.4;
+
+
+v.1.3.0.0
+=========
+- Alteração do controle de filas;
+- Correções do Controrle de limites;
+- Suporte inicial a mensageria fix 4.2, contendo as conversões para ser roteada em sessões v. 4.4;
+- Integrações iniciais: Bloomberg e Extol;
+
+v.1.2.0.0
+=========
+- Correções de campos de mensageria;
+- Novo controle de limites, persistencia em memoria;
+- Inclusão de sessão drop copy para rotear mensagens fix para Acompanhamento de Ordens
+ 
+
+v.1.1.0.0
+=========
+- Inclusão de controle de limites;
+- Integrações iniciais vendor InvestFlex;
+- Historico de ordens;
+- Correções de tratamento de retornso e situações de rejeição;
+- Correções de campos de mensageria;
+
+v.1.0.0.0
+=========
+- Versão inicial;
+- Conexões fix e roteamento das mensagens 4.4 entre acceptor e initiator;
