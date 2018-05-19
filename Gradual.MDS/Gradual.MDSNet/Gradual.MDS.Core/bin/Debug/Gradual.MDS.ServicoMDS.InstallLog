@@ -1,0 +1,131 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.MDSNet\ClassLibrary1\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.MDSNet\ClassLibrary1\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.MDSNet\ClassLibrary1\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe
+Installing service Gradual_MDS_Core...
+Service Gradual_MDS_Core has been successfully installed.
+Creating EventLog source Gradual_MDS_Core in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.MDSNet\ClassLibrary1\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.MDSNet\ClassLibrary1\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.MDSNet\ClassLibrary1\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe
+Uninstalling assembly 'C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe
+Unable to create an instance of the Gradual.OMS.Host.WindowsService.AtivadorServicos.ProjectInstaller installer type.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+The inner exception System.IO.FileNotFoundException was thrown with the following error message: Could not load file or assembly 'log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821' or one of its dependencies. O sistema não pode encontrar o arquivo especificado..
+Installing assembly 'C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe
+Unable to create an instance of the Gradual.OMS.Host.WindowsService.AtivadorServicos.ProjectInstaller installer type.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+The inner exception System.IO.FileNotFoundException was thrown with the following error message: Could not load file or assembly 'log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821' or one of its dependencies. O sistema não pode encontrar o arquivo especificado..
+Rolling back assembly 'C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe
+Unable to create an instance of the Gradual.OMS.Host.WindowsService.AtivadorServicos.ProjectInstaller installer type.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+The inner exception System.IO.FileNotFoundException was thrown with the following error message: Could not load file or assembly 'log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821' or one of its dependencies. O sistema não pode encontrar o arquivo especificado..
+Installing assembly 'C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe
+Installing service Gradual_MDS_Core...
+Creating EventLog source Gradual_MDS_Core in log Application...
+Rolling back assembly 'C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe
+Restoring event log to previous state for source Gradual_MDS_Core.
+Installing assembly 'C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe'.
+Affected parameters are:
+   f = 
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe
+Installing service Gradual_MDS_Core...
+Creating EventLog source Gradual_MDS_Core in log Application...
+Rolling back assembly 'C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe'.
+Affected parameters are:
+   f = 
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe
+Restoring event log to previous state for source Gradual_MDS_Core.
+Installing assembly 'C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe
+Installing service Gradual_MDS_Core1...
+Creating EventLog source Gradual_MDS_Core1 in log Application...
+Rolling back assembly 'C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe
+Restoring event log to previous state for source Gradual_MDS_Core1.
+Installing assembly 'C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe
+Installing service Gradual_MDS_Core1...
+Service Gradual_MDS_Core1 has been successfully installed.
+Creating EventLog source Gradual_MDS_Core1 in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe
+Uninstalling assembly 'C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe
+Removing EventLog source Gradual_MDS_Core1.
+Service Gradual_MDS_Core1 is being removed from the system...
+Service Gradual_MDS_Core1 was successfully removed from the system.
+Uninstalling assembly 'C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe
+Removing EventLog source Gradual_MDS_Core1.
+Warning: The source Gradual_MDS_Core1 is not registered on the local machine.
+Service Gradual_MDS_Core1 is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: O serviço especificado não existe como serviço instalado
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Uninstalling assembly 'C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe
+Removing EventLog source Gradual_MDS_Core.
+Service Gradual_MDS_Core is being removed from the system...
+Service Gradual_MDS_Core was successfully removed from the system.
+Installing assembly 'C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe
+Installing service Gradual_MDS_Core...
+Service Gradual_MDS_Core has been successfully installed.
+Creating EventLog source Gradual_MDS_Core in log Application...
+Committing assembly 'C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe

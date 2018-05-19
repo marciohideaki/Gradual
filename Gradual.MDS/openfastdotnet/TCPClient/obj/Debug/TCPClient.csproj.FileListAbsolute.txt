@@ -1,0 +1,8 @@
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\TCPClient\bin\Debug\TCPClient.exe
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\TCPClient\bin\Debug\TCPClient.pdb
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\TCPClient\bin\Debug\openfast.dll
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\TCPClient\bin\Debug\openfast.pdb
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\TCPClient\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\TCPClient\obj\Debug\TCPClient.exe
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\TCPClient\obj\Debug\TCPClient.pdb
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\TCPClient\bin\Debug\TCPClient.exe.config

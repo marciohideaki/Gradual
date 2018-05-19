@@ -1,0 +1,12 @@
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\UnitTest\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\UnitTest\bin\Debug\UnitTest.dll
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\UnitTest\bin\Debug\UnitTest.pdb
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\UnitTest\bin\Debug\nunit.framework.dll
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\UnitTest\bin\Debug\nunit.util.dll
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\UnitTest\bin\Debug\openfast.dll
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\UnitTest\bin\Debug\nunit.core.interfaces.dll
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\UnitTest\bin\Debug\nunit.core.dll
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\UnitTest\bin\Debug\openfast.pdb
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\UnitTest\bin\Debug\nunit.framework.xml
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\UnitTest\obj\Debug\UnitTest.dll
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\UnitTest\obj\Debug\UnitTest.pdb

@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickFix", "QuickFIXn\QuickFix.csproj", "{D67079DA-6C49-48B2-93AB-1C3E879F5A0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{186A72D8-5A70-4DD0-BABF-E3BB3BA9F419}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D67079DA-6C49-48B2-93AB-1C3E879F5A0B} = {D67079DA-6C49-48B2-93AB-1C3E879F5A0B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcceptanceTest", "AcceptanceTest\AcceptanceTest.csproj", "{B02EAF78-6335-4996-BB98-3121A4B6B0B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.TradeClient", "Examples\TradeClient\Examples.TradeClient.csproj", "{592C4909-1D3E-41C9-B6F9-505C770533A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.Executor", "Examples\Executor\Examples.Executor.csproj", "{ADF1BD8E-6149-4D77-89E0-B2B775248139}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.SimpleAcceptor", "Examples\SimpleAcceptor\Examples.SimpleAcceptor.csproj", "{59FC3768-2D8E-4CD2-88B8-C3972BA3ACA8}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AcceptanceTest\\AcceptanceTest.csproj
+		SccProjectName1 = AcceptanceTest
+		SccLocalPath1 = AcceptanceTest
+		SccProjectUniqueName2 = Examples\\Executor\\Examples.Executor.csproj
+		SccProjectName2 = Examples/Executor
+		SccLocalPath2 = Examples\\Executor
+		SccProjectUniqueName3 = Examples\\SimpleAcceptor\\Examples.SimpleAcceptor.csproj
+		SccProjectName3 = Examples/SimpleAcceptor
+		SccLocalPath3 = Examples\\SimpleAcceptor
+		SccProjectUniqueName4 = Examples\\TradeClient\\Examples.TradeClient.csproj
+		SccProjectName4 = Examples/TradeClient
+		SccLocalPath4 = Examples\\TradeClient
+		SccProjectUniqueName5 = QuickFIXn\\QuickFix.csproj
+		SccProjectName5 = QuickFIXn
+		SccLocalPath5 = QuickFIXn
+		SccProjectUniqueName6 = UnitTests\\UnitTests.csproj
+		SccProjectName6 = UnitTests
+		SccLocalPath6 = UnitTests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D67079DA-6C49-48B2-93AB-1C3E879F5A0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D67079DA-6C49-48B2-93AB-1C3E879F5A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D67079DA-6C49-48B2-93AB-1C3E879F5A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D67079DA-6C49-48B2-93AB-1C3E879F5A0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{186A72D8-5A70-4DD0-BABF-E3BB3BA9F419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{186A72D8-5A70-4DD0-BABF-E3BB3BA9F419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{186A72D8-5A70-4DD0-BABF-E3BB3BA9F419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B02EAF78-6335-4996-BB98-3121A4B6B0B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B02EAF78-6335-4996-BB98-3121A4B6B0B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B02EAF78-6335-4996-BB98-3121A4B6B0B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{592C4909-1D3E-41C9-B6F9-505C770533A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{592C4909-1D3E-41C9-B6F9-505C770533A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{592C4909-1D3E-41C9-B6F9-505C770533A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADF1BD8E-6149-4D77-89E0-B2B775248139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADF1BD8E-6149-4D77-89E0-B2B775248139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADF1BD8E-6149-4D77-89E0-B2B775248139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59FC3768-2D8E-4CD2-88B8-C3972BA3ACA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59FC3768-2D8E-4CD2-88B8-C3972BA3ACA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59FC3768-2D8E-4CD2-88B8-C3972BA3ACA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

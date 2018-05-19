@@ -1,0 +1,171 @@
+﻿
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\aponso\desenv\Gradual.MDSNet\ClassLibrary1\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe assembly's progress.
+The file is located at C:\aponso\desenv\Gradual.MDSNet\ClassLibrary1\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog.
+
+The Install phase completed successfully, and the Commit phase is beginning.
+See the contents of the log file for the C:\aponso\desenv\Gradual.MDSNet\ClassLibrary1\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe assembly's progress.
+The file is located at C:\aponso\desenv\Gradual.MDSNet\ClassLibrary1\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog.
+
+The Commit phase completed successfully.
+
+The transacted install has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe assembly's progress.
+The file is located at C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog.
+An exception occurred during the uninstallation of the System.Configuration.Install.AssemblyInstaller installer.
+System.InvalidOperationException: Unable to create an instance of the Gradual.OMS.Host.WindowsService.AtivadorServicos.ProjectInstaller installer type.
+The inner exception System.Reflection.TargetInvocationException was thrown with the following error message: Exception has been thrown by the target of an invocation..
+The inner exception System.IO.FileNotFoundException was thrown with the following error message: Could not load file or assembly 'log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821' or one of its dependencies. O sistema não pode encontrar o arquivo especificado..
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+
+The uninstall has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe assembly's progress.
+The file is located at C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog.
+
+An exception occurred during the Install phase.
+System.InvalidOperationException: Unable to create an instance of the Gradual.OMS.Host.WindowsService.AtivadorServicos.ProjectInstaller installer type.
+The inner exception System.Reflection.TargetInvocationException was thrown with the following error message: Exception has been thrown by the target of an invocation..
+The inner exception System.IO.FileNotFoundException was thrown with the following error message: Could not load file or assembly 'log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821' or one of its dependencies. O sistema não pode encontrar o arquivo especificado..
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe assembly's progress.
+The file is located at C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog.
+An exception occurred during the Rollback phase of the System.Configuration.Install.AssemblyInstaller installer.
+System.InvalidOperationException: Unable to create an instance of the Gradual.OMS.Host.WindowsService.AtivadorServicos.ProjectInstaller installer type.
+The inner exception System.Reflection.TargetInvocationException was thrown with the following error message: Exception has been thrown by the target of an invocation..
+The inner exception System.IO.FileNotFoundException was thrown with the following error message: Could not load file or assembly 'log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821' or one of its dependencies. O sistema não pode encontrar o arquivo especificado..
+An exception occurred during the Rollback phase of the installation. This exception will be ignored and the rollback will continue. However, the machine might not fully revert to its initial state after the rollback is complete.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe assembly's progress.
+The file is located at C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog.
+
+An exception occurred during the Install phase.
+System.ComponentModel.Win32Exception: O serviço especificado já existe
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe assembly's progress.
+The file is located at C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe assembly's progress.
+The file is located at C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog.
+
+An exception occurred during the Install phase.
+System.ComponentModel.Win32Exception: O serviço especificado já existe
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe assembly's progress.
+The file is located at C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe assembly's progress.
+The file is located at C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog.
+
+An exception occurred during the Install phase.
+System.ComponentModel.Win32Exception: O nome já está sendo usado como nome de serviço ou como nome de apresentação de serviços
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe assembly's progress.
+The file is located at C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe assembly's progress.
+The file is located at C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog.
+
+The Install phase completed successfully, and the Commit phase is beginning.
+See the contents of the log file for the C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe assembly's progress.
+The file is located at C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog.
+
+The Commit phase completed successfully.
+
+The transacted install has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe assembly's progress.
+The file is located at C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog.
+
+The uninstall has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\CGLib.dll assembly's progress.
+The file is located at C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\CGLib.InstallLog.
+
+The Install phase completed successfully, and the Commit phase is beginning.
+See the contents of the log file for the C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\CGLib.dll assembly's progress.
+The file is located at C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\CGLib.InstallLog.
+
+The Commit phase completed successfully.
+
+The transacted install has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe assembly's progress.
+The file is located at C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog.
+
+The uninstall has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe assembly's progress.
+The file is located at C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog.
+
+The uninstall has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\CGLib.dll assembly's progress.
+The file is located at C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\CGLib.InstallLog.
+
+The uninstall has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe assembly's progress.
+The file is located at C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog.
+
+The Install phase completed successfully, and the Commit phase is beginning.
+See the contents of the log file for the C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.exe assembly's progress.
+The file is located at C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\Gradual.MDS.ServicoMDS.InstallLog.
+
+The Commit phase completed successfully.
+
+The transacted install has completed.

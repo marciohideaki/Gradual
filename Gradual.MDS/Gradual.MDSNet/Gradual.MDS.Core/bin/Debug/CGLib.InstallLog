@@ -1,0 +1,19 @@
+﻿Installing assembly 'C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\CGLib.dll'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\CGLib.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\CGLib.dll
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\CGLib.dll assembly.
+Committing assembly 'C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\CGLib.dll'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\CGLib.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\CGLib.dll
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\CGLib.dll assembly.
+Remove InstallState file because there are no installers.
+Uninstalling assembly 'C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\CGLib.dll'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\CGLib.InstallLog
+   assemblypath = C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\CGLib.dll
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\aponso\desenv\Gradual.MDS\Gradual.MDSNet\Gradual.MDS.Core\bin\Debug\CGLib.dll assembly.

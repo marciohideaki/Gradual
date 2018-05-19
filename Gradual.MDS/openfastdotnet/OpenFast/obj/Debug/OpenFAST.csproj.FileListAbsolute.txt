@@ -1,0 +1,5 @@
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\OpenFast\obj\Debug\ResolveAssemblyReference.cache
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\OpenFast\obj\Debug\openfast.dll
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\OpenFast\obj\Debug\openfast.pdb
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\OpenFast\openfast.dll
+C:\aponso\desenv\openfastnet\openfastdotnet-read-only\OpenFast\openfast.pdb
