@@ -1,0 +1,15 @@
+﻿
+div.pnlRelatorio 
+{
+    font-size:0.7em;
+}
+
+div.CabecalhoRelatorio h1
+{
+    padding:8px 0px 7px 8px;
+}
+
+div.CabecalhoRelatorio img
+{
+    margin-top:-40px;
+}

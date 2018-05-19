@@ -1,0 +1,1863 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <Body>
+    <ReportItems>
+      <Textbox Name="Textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>CONTRATO DE INTERMEDIAÇÃO DE OPERAÇÕES NOS MERCADOS ADMINISTRADOS 
+PELA BM&amp;FBOVESPA S.A. - BOLSA DE VALORES, MERCADORIAS E FUTUROS E OUTRAS 
+AVENÇAS</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> 
+ 
+Pelo presente instrumento particular, as partes abaixo (em conjunto 
+denominadas </Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>“Partes”</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> e, individualmente, a “Parte”): 
+ 
+a) </Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>GRADUAL CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A, </Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>
+sociedade com sede na cidade de São Paulo, Estado de São Paulo, na Av. 
+Juscelino Kubitscheck, nº 50, 6º e 7º andares, na cidade de São Paulo, 
+Estado de São Paulo, inscrita no CNPJ/MF sob o nº 33.918.160/0001-73, neste 
+ato representada na forma do seu estatuto social (“Corretora”); e 
+ 
+b) _____________________________________________________________________
+</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>[NOME COMPLETO DO CLIENTE],</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> com residência na cidade de 
+_____________________________________, no Estado de 
+______________________________, no________________________________________ 
+__________________________________________________________________________
+[endereço completo], inscrito(a) no CPF/MF] sob o nº 
+____________________________ (</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>“Cliente”</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>), devidamente cadastrado(a) na 
+Corretora; 
+RESOLVEM firmar o presente Contrato de Intermediação de Operações nos 
+Mercados Administrados pela BM&amp;FBOVESPA S.A. - Bolsa de Valores, 
+Mercadorias e Futuros e Outras Avenças (o “Contrato”), que se regerá pelas 
+seguintes cláusulas e condições: 
+ 
+</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>CAPÍTULO I - Serviços de Sub-custódia de Ativos </Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>
+ 
+1.1 O Cliente por este ato contrata a Corretora para a prestação de 
+serviços de sub-custódia fungível de títulos, valores mobiliários, mercadorias 
+e ativos financeiros, os quais se vinculam às operações de intermediação 
+realizadas pelo Cliente, por intermédio da Corretora, nos mercados à vista, 
+a termo, de opções e futuros administrados pela BM&amp;FBOVESPA S.A. - Bolsa 
+de Valores, Mercadorias e Futuros (a “Bolsa”), inclusive WebTrading (WTR), 
+Banco de Títulos CBLC, Tesouro Direto e mercado de balcão organizado e 
+não organizado. 
+ 
+1.2 O Cliente por este ato declara ter pleno conhecimento das 
+disposições do “Contrato de Intermediação de Operações nos Mercados 
+Administrados pela BM&amp;FBOVESPA S.A. - Bolsa de Valores, Mercadorias e 
+Futuros”, do qual são signatários a Corretora e a Bolsa, bem como das 
+demais normas e procedimentos de liquidação e custódia das câmaras dos 
+mercados nos quais a Corretora venha a atuar por conta e ordem do 
+Cliente, aceitando expressamente todas as referidas disposições, normas e 
+procedimentos, e a eles se sujeitando em todos os aspectos. 
+ 
+1.3 Estabelecem as Partes que a custódia dos títulos, valores mobiliários, 
+mercadorias e ativos financeiros pertencentes ao Cliente ficará a cargo das 
+câmaras de liquidação e custódia da Bolsa de Mercadorias &amp; Futuros 
+(“</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>BM&amp;F</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>”), da Companhia Brasileira de Liquidação e Custódia – CBLC 
+(“</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>CBLC</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>”) e das demais câmaras de liquidação e custódia em que a 
+Corretora atue por conta e ordem do Cliente (“</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>Câmaras de Liquidação e 
+Custódia</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>”). 
+ 
+1.3.1 A Corretora é titular de contas principais de custódia fungível de ações 
+nominativas e de custódia de ativos financeiros e mercadorias, cadastradas 
+em seu nome junto a cada uma das Câmaras de Liquidação e Custódia. 
+ 
+1.3.2 Para a prestação dos serviços de sub-custódia fungível de títulos, 
+valores mobiliários, mercadorias e ativos financeiros estabelecidos neste 
+Capítulo I, bem como para a sua movimentação, a Corretora abrirá uma 
+sub-conta dentro de cada conta principal mantida junto às Câmaras de 
+Liquidação e Custódia, de forma a identificar o Cliente, utilizando-se, para 
+tanto, de um código específico por ela gerado. 
+ 
+1.3.3 O Cliente tem pleno conhecimento de que as sub-contas referidas na 
+Cláusula 1.3.2 acima, abertas em seu nome junto às Câmaras de 
+Liquidação e Custódia, serão movimentadas exclusivamente pela 
+Corretora. 
+ 
+1.4 A Corretora ficará obrigada a manter o controle das posições 
+custodiadas, relativamente aos títulos, valores mobiliários, mercadorias e 
+ativos financeiros componentes da carteira do Cliente. 
+ 
+1.5 O Cliente assume total responsabilidade perante a Corretora em tudo o 
+que concerne aos títulos, valores mobiliários, mercadorias e ativos 
+financeiros sub-custodiados na Corretora, inclusive por toda e qualquer 
+demanda incidente sobre estes.</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>0.14464cm</Top>
+        <Height>27.2609cm</Height>
+        <Width>9.32625cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>1.6 A Corretora não será responsável por quaisquer danos sofridos pelo Cliente 
+decorrentes da falta de entrega de documentação em tempo hábil para o 
+exercício de direitos ou cumprimento de obrigações relativas aos títulos, 
+valores mobiliários e ativos financeiros sub-custodiados. 
+ 
+</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>CAPÍTULO II- Serviços de Intermediação de Compra e Venda de Ativos </Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>
+ 
+2.1 Todas as operações envolvendo ordens de compra e venda de títulos, 
+valores mobiliários, mercadorias e ativos financeiros negociados na Bolsa, junto 
+aos mercados à vista, a termo, de opções e futuro, bem como no mercado 
+de balcão, serão realizadas de acordo com as normas e regulamentos 
+aplicáveis, expedidos pelas autoridades competentes, notadamente a Bolsa, 
+o Banco Central do Brasil, a Comissão de Valores Mobiliários, como também os 
+usos, práticas e costumes adotados e geralmente aceitos no mercado 
+financeiro e de capitais brasileiro, especialmente no que diz respeito ao 
+recebimento, registro, prazo de validade, prioridade, execução, distribuição e 
+cancelamento de ordens. 
+ 
+2.2 O Cliente declara ter pleno conhecimento das leis, regulamentos, normas 
+e procedimentos aplicáveis à prestação dos serviços objeto do presente 
+Contrato, incluindo, mas não se limitando ao disposto na Instrução CVM nº 
+387, de 28 de abril de 2003, e suas alterações posteriores (“</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>Instrução CVM 
+387</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>”), e nas Regras e Parâmetros de Conduta e Atuação da Corretora junto à 
+Bolsa, ao Mercado e aos seus Clientes, estando estes documentos disponíveis 
+para consulta no site da Corretora (www.gradualinvestimentos.com.br) e da 
+Bolsa (</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>www.bmfbovespa.com.br</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <TextDecoration>Underline</TextDecoration>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>). 
+ 
+2.3 A Corretora manterá em seu poder cadastro em nome do Cliente, 
+conforme determina a Instrução CVM nº 301, de 16 de abril de 1999, e suas 
+alterações posteriores, e a Instrução CVM 387. 
+ 
+2.4 A Corretora e a Bolsa poderão, em conjunto ou separadamente, a 
+qualquer tempo e a seu exclusivo critério, exigir do Cliente a prestação de 
+garantias que julgarem adequadas, sejam elas iniciais, adicionais ou de 
+reforço, em qualquer valor e prazo, para assegurar o fiel, integral e pontual 
+cumprimento das obrigações assumidas pelo Cliente, obrigando-se o Cliente a 
+prontamente atender as requisições neste sentido formuladas pela Corretora 
+e/ou pela Bolsa. 
+ 
+2.5 A Corretora e a Bolsa poderão ainda, em conjunto ou separadamente, a 
+qualquer tempo e a seu exclusivo critério, exigir que o Cliente: 
+ 
+(a) substitua os títulos, valores mobiliários, mercadorias e ativos financeiros 
+entregues em garantia por outros ativos, de livre escolha da Corretora e/ou da 
+Bolsa; e 
+ 
+(b) substitua a garantia prestada em moeda corrente por títulos e valores 
+mobiliários, de livre escolha da Corretora e/ou da Bolsa; 
+ 
+2.6 O Cliente compromete-se a efetuar a substituição da garantia, na forma 
+prevista na Cláusula anterior, dentro dos prazos e condições estabelecidos 
+pela Corretora e/ou pela Bolsa. 
+ 
+2.7 Constitui prerrogativa da Corretora e/ou da Bolsa acatar, ou não, o pedido 
+do Cliente referente à substituição dos títulos e valores mobiliários integrantes 
+da margem de garantia por outros ativos. 
+ 
+2.8 Obriga-se o Cliente a recompor sua conta quando ocorrerem insuficiências 
+de garantias exigidas pela Corretora e/ou pela Bolsa, nos prazos e formas por 
+elas estabelecidos. A Corretora e a Bolsa, por seu turno, não estão obrigadas a 
+restituir ao Cliente eventuais excedentes de margem de garantia percebidos 
+na vigência das operações efetuadas no âmbito do presente Contrato. 
+ 
+2.9 A Corretora, em hipótese alguma, estará obrigada a liberar garantias antes 
+do integral cumprimento pelo Cliente de suas obrigações no âmbito do 
+presente Contrato. 
+ 
+2.10 O Cliente, por este ato, concorda e declara ter plena ciência de que, em 
+todas as operações, à exceção daquelas realizadas à vista, a Corretora e/ou 
+a Bolsa poderão, a seu exclusivo critério, solicitar margem de garantia, alterar 
+o nível de margem requerido, sua composição e formas de cálculo, bem 
+como limitar a movimentação dos valores dados em garantia até a plena 
+satisfação das obrigações contraídas pelo Cliente. 
+ 
+2.11 Caberá ao Cliente providenciar saldo necessário e suficiente para 
+atender ao estipulado neste Contrato, sendo certo que, caso não o faça, 
+arcará o Cliente com os ônus oriundos dos saldos devedores porventura 
+detectados, ficando a Corretora desde já autorizada a cobrar juros de 4% 
+(quatro por cento) ao mês sobre o saldo devedor, calculado pro rata temporis 
+durante todo o prazo em que assim permanecer a conta do Cliente, sem 
+prejuízo da correção monetária e demais encargos incidentes no período. </Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>0.14464cm</Top>
+        <Left>9.565cm</Left>
+        <Height>26.15876cm</Height>
+        <Width>9.32625cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Line Name="Line1">
+        <Top>27.58193cm</Top>
+        <Height>0cm</Height>
+        <Width>19.09445cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
+      <Textbox Name="Textbox4">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>2.12 A Corretora informará ao Cliente, caso este assim solicite, todas as 
+operações por ele negociadas, para a especificação por parte deste nos 
+seus controles, ressalvadas as operações realizadas através do site 
+www.gradualinvestimentos.com.br. 
+ 
+2.13 A Corretora reserva-se o direito de, a qualquer momento durante a 
+vigência deste Contrato, a seu exclusivo critério, limitar a atuação do 
+Cliente ou estabelecer mecanismos preventivos de riscos ao Cliente, por 
+força de variação nas cotações, oscilações bruscas do mercado, dentre 
+outros fatores. 
+ 
+2.14 O Cliente por este ato outorga à Corretora todos os poderes 
+necessários para que esta venda e/ou transfira, no todo ou em parte, ativos 
+de titularidade do Cliente, caso este incorra ou esteja na iminência de 
+incorrer em perdas superiores às garantias depositadas. 
+ 
+2.15 Caso o Cliente se torne inadimplente com relação a quaisquer 
+obrigações, pecuniárias ou não, assumidas no âmbito do presente 
+Contrato, a Corretora fica desde já autorizada a, independentemente de 
+qualquer aviso prévio, proceder à notificação judicial ou extrajudicial ou 
+qualquer outra providência: 
+ 
+(a) executar, reter e efetuar transferência de importâncias em moeda 
+corrente que se encontrem depositadas em contas de garantia ou a 
+qualquer título, em favor do Cliente; 
+ 
+(b) compensar créditos ou importâncias depositadas pelo Cliente; 
+ 
+(c) liquidar antecipadamente contratos a prazo, bem como vender, a 
+preços de mercado, quaisquer títulos, valores mobiliários, mercadorias e 
+outros bens e ativos financeiros de titularidade do Cliente que se encontrem 
+sob a sub-custódia da Corretora, necessários à quitação plena ou parcial 
+dos débitos existentes, inclusive aqueles objeto das operações inadimplidas, 
+aplicando o produto da venda na quitação do saldo devedor; 
+ 
+(d) efetuar a compra, a preço de mercado, dos títulos, valores mobiliários e 
+ativos financeiros, assim como de quaisquer outros bens necessários à 
+liquidação de operações contratadas por conta e ordem do Cliente; e 
+ 
+(e) proceder ao encerramento e/ou liquidação antecipada, total ou 
+parcialmente, das posições registradas em nome do Cliente. 
+ 
+2.16 Na hipótese estabelecida na Cláusula 2.15 acima, a Corretora estará 
+isenta de qualquer responsabilidade por danos sofridos pelo Cliente, 
+incluindo eventuais lucros que o Cliente deixar de auferir, correndo ainda 
+por conta deste as indenizações, multas, e/ou despesas decorrentes da 
+impontualidade da liquidação, subsistindo, ainda, a responsabilidade por 
+eventual saldo devedor remanescente. 
+ 
+2.17 Realizadas as medidas previstas na Cláusula 2.15, e não tendo sido elas 
+suficientes para quitar as obrigações inadimplidas pelo Cliente, a Corretora 
+notificará a Bolsa, constituindo o Cliente em mora. 
+ 
+2.18 Nas hipóteses previstas nas Cláusulas 2.15 a 2.17 acima envolvendo 
+inadimplemento de obrigação pecuniária, a Corretora cobrará do Cliente 
+multa no valor correspondente a 10% (dez por cento) do valor inadimplido, 
+bem como custos direta e indiretamente incorridos pela Corretora com os 
+procedimentos de notificação e cobrança dos valores inadimplidos, 
+incluindo honorários advocatícios, sem prejuízo de juros e atualização 
+monetária calculados na forma da Cláusula 2.11 acima. 
+ 
+2.19 O Cliente por este ato expressamente autoriza a Corretora a debitar de 
+suas contas mantidas na Corretora quaisquer valores devidos na forma da 
+Cláusula 2.18 acima. 
+ 
+2.20 A Corretora poderá recusar-se, a seu exclusivo critério, a receber ou 
+executar, total ou parcialmente, ordens para realização de operações no 
+âmbito do presente Contrato, bem como poderá cancelar as ordens 
+pendentes, inclusive nas hipóteses previstas na Cláusula 2.15 acima, mas 
+não se limitando a tais hipóteses, bem como quando houver, de acordo 
+com o exclusivo critério da Corretora, incompatibilidade entre as operações 
+ordenadas e a capacidade financeira do Cliente, tomando por base os 
+dados cadastrais deste, sendo que, neste caso, a Corretora comunicará tal 
+fato ao Cliente na maior brevidade possível. 
+ 
+2.20.1 A Corretora não será responsável por quaisquer prejuízos decorrentes 
+da não execução de ordens a que se refere esta Cláusula 2.20, incluindo 
+lucros cessantes. 
+ 
+2.21 A Corretora fica obrigada, dentro dos prazos regulamentares previstos, 
+a providenciar, junto à Bolsa e à respectiva contraparte, a correção das 
+operações executadas com erro ou omissão em relação às ordens</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox4</rd:DefaultName>
+        <Top>27.94cm</Top>
+        <Height>26.26458cm</Height>
+        <Width>9.32625cm</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox5">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>recebidas do Cliente, sem nenhum ônus ou responsabilidade para o Cliente. 
+ 
+2.22 As Partes por este ato reconhecem que a Bolsa e as autoridades 
+competentes podem, a qualquer tempo, instituir novas regras e/ou alterar as 
+regras básicas das operações nos mercados à vista, a termo, futuros e de 
+opções, inclusive em relação ao encerramento e liquidação dessas 
+operações, bem como o nível de margem requerido, sua composição, as 
+formas de cálculo, as normas de movimentação de seus valores, as taxas 
+aplicáveis, sendo que, neste caso, tais alterações serão aplicadas às 
+operações em curso no âmbito do presente Contrato. 
+ 
+</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>CAPÍTULO III - Poderes </Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>
+ 
+3.1 O Cliente, pelo presente Contrato, outorga à Corretora, pelo prazo de 
+duração deste Contrato, todos os poderes necessários para representá-lo 
+junto à Bolsa e às Câmaras de Liquidação e Custódia, estando a Corretora 
+autorizada a praticar todos os atos necessários e suficientes ao pleno 
+atendimento dos objetivos deste Contrato, assumindo, em nome do Cliente, 
+todas as obrigações e exercendo todos os direitos decorrentes das normas e 
+regulamentos das referidas instituições. Em especial, o Cliente autoriza, neste 
+ato, a Corretora a: 
+ 
+(a) abrir em seus registros uma conta corrente de depósito, para liquidação de 
+operações, não movimentável por cheques, com os dados discriminados na 
+Ficha Cadastral, na forma do Anexo I do presente Contrato, a ser 
+administrada pela Corretora de acordo com as disposições legais e 
+regulamentares aplicáveis e que será movimentada conforme autorizações, 
+declarações e/ou procurações por ele emitidas (“</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>Conta de Depósito</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>”); 
+ 
+(b) creditar em sua Conta de Depósito ou em sua conta de investimento, 
+conforme o caso, as quantias originárias da venda de títulos, valores 
+mobiliários e ativos financeiros e também decorrentes de proventos, tais como 
+dividendos, juros sobre capital próprio e outros rendimentos; 
+ 
+(c)lançar a débito de sua Conta de Depósito ou da sua conta de 
+investimento, conforme o caso, os valores oriundos da compra de títulos e 
+valores mobiliários e ativos financeiros, despesas, comissões, atualização 
+monetária, inclusive os impostos, taxas, tarifas, emolumentos, custos, ágios, 
+diferenças de custos e taxas de administração dos títulos em sub-custódia em 
+outra instituição financeira, se houver; 
+ 
+(d) transferir, como acréscimos ou reduções, em seu nome, os títulos e valores 
+mobiliários e ativos financeiros pertencentes à sua carteira para as adequadas 
+contas de custódia mantidas junto a outras instituições aptas; 
+ 
+(e) lançar a débito de sua Conta de Depósito ou de sua conta de 
+investimento, conforme o caso, quaisquer despesas decorrentes do não 
+cumprimento, no devido tempo e por culpa do Cliente, de qualquer ato que 
+impeça a liquidação das operações, independentemente de aviso, 
+notificação judicial ou extrajudicial, vender em Bolsas títulos, valores 
+mobiliários, derivativos e demais ativos financeiros mantidos em poder da 
+Corretora, adquiridos por conta e ordem do Cliente ou oriundos de 
+transferência, aplicando o respectivo produto da venda no pagamento do 
+seu saldo devedor; 
+ 
+(f) movimentar quaisquer ativos registrados em nome do Cliente pela 
+Corretora; e 
+ 
+(g) movimentar as garantias que o Cliente possua junto às Câmaras de 
+Liquidação e Custódia sob a responsabilidade da Corretora. 
+ 
+</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>CAPÍTULO IV - Remessas de Valores e de Títulos </Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>
+ 
+4.1 Caso decida operar por meio de agente autônomo de investimento, o 
+Cliente deverá ler previamente as normas de conduta e vedações previstas 
+na Instrução CVM nº 434, de 22 de junho de 2006, e alterações posteriores, 
+especialmente o disposto em seu artigo 16, inciso I, que proíbe ao agente 
+autônomo de investimento a recepção e a entrega, direta ou indiretamente, 
+ao Cliente, por qualquer razão, de numerário, títulos ou valores mobiliários, ou 
+quaisquer outros valores, que devem ser movimentados através de instituições 
+financeiras ou outros integrantes do sistema de distribuição, sendo vedada a 
+entrega ao agente autônomo de investimento, ou a recepção por ele, por 
+qualquer razão, de bens das classes referidas nesta Cláusula. 
+ 
+4.2 As remessas de numerário, títulos e/ou valores mobiliários do Cliente para a 
+Corretora deverão ser sempre efetuadas, conforme o caso: (i) para Conta de 
+Depósito ou conta de investimento, conforme o caso, em nome da Corretora 
+através de DOC ou TED, (ii) por meio de Ordem de Transferência de Ações 
+(OTA) ou documento similar para outros títulos, no modelo e forma que a 
+Corretora indicar e obedecidas as normas da entidade custodiante; ou (iii) por 
+meio de cheque cruzado a ser entregue na tesouraria da Corretora, da matriz 
+ou das suas filiais, tendo a Corretora como beneficiária e o Cliente como</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox5</rd:DefaultName>
+        <Top>27.94cm</Top>
+        <Left>9.565cm</Left>
+        <Height>26.26458cm</Height>
+        <Width>9.32625cm</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox6">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>emitente, anulando-se a cláusula “ou à ordem”; ou (iv) por meio de boleto 
+eletrônico, sendo este disponível apenas para as operações realizadas 
+através do site da Corretora (www.gradualinvestimentos.com.br). 
+ 
+4.3 As remessas de numerário, títulos e/ou valores mobiliários da Corretora 
+para o Cliente deverão ser sempre efetuadas, conforme o caso: (i) para 
+Conta de Depósito ou conta de investimento, conforme o caso, em nome 
+do Cliente através de DOC, TED ou cheque cruzado tendo este como 
+beneficiário e a Corretora como emitente e com o dizer “exclusivamente 
+para crédito na conta do favorecido original”, anulando-se a cláusula “ou 
+à sua ordem”, e (ii) por meio de transferência de ativos, utilizando os 
+sistemas próprios e obedecidas as normas da entidade custodiante. O 
+Cliente deverá, ainda, observar os horários para aplicações e resgate de 
+valores que se encontram disponibilizados na sede e no site da Corretora 
+(www.gradualinvestimentos.com.br). 
+ 
+4.4 A Corretora se reserva o direito de alterar, mediante simples divulgação 
+ao Cliente, as condições previstas acima, quanto ao recebimento de 
+numerário do Cliente para a Corretora e/ou o envio de numerário da 
+Corretora ao Cliente. 
+ 
+4.5 O Cliente declara ter ciência de que a não observância de quaisquer 
+das disposições das Cláusulas 4.2 ou 4.3 acima poderá acarretar a não 
+liberação tempestiva dos fundos para aplicação ou resgate. Desta forma, a 
+Corretora não poderá, em hipótese alguma, ser responsabilizada por 
+qualquer conseqüência oriunda deste fato. 
+ 
+</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>CAPÍTULO V - Declaração</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> 
+ 
+5.1 O Cliente, neste ato, declara estar ciente dos riscos envolvendo 
+investimentos no mercado de títulos, valores mobiliários e ativos financeiros, 
+como também está ciente da possibilidade de decréscimo em seu 
+patrimônio e, até mesmo, da perda total do investimento e de quantias 
+adicionais, principalmente no que concerne ao mercado de opções, em 
+decorrência do risco elevado inerente a este tipo de aplicação financeira. 
+ 
+</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>CAPÍTULO VI - Ordens </Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>
+ 
+6.1 A Corretora fica autorizada a receber e executar as ordens emanadas 
+do Cliente ou de terceiros em seu nome e com poderes de representação, 
+devendo estas ordens serem verbais, transmitidas por telefone, 
+pessoalmente ou com auxílio de outros recursos eletrônicos; ou escritas, 
+transmitidas por meio de carta, e-mail, fac-simile, sistema de mensagem 
+eletrônica ou sistema de operações via internet, conforme previsto na ficha 
+cadastral, sendo que o cumprimento das instruções será formalizado 
+mediante registro e anotação em boletas eletrônicas. 
+ 
+6.2 O Cliente afirma estar ciente de que suas ordens poderão ser gravadas, 
+servindo essas gravações como provas válidas e irrefutáveis de sua 
+ordenação. 
+ 
+6.3 O Cliente reconhece e concorda que a Corretora é integralmente 
+isenta de responsabilidade inclusive perante terceiros, por prejuízos sofridos 
+em decorrência de: 
+ 
+(a) variações de preços inerentes às operações; 
+ 
+(b) atos culposos ou dolosos praticados por terceiros; 
+ 
+(c) interrupções nos sistemas de comunicação, problemas oriundos de 
+falhas e/ou intervenções de qualquer prestador de serviços de 
+comunicações ou de outra natureza, e, ainda falhas na disponibilidade e 
+acesso ao sistema de operações ou em sua rede; 
+ 
+d) prejuízos decorrentes das decisões de investimentos do Cliente, 
+baseadas em quaisquer informações; e 
+ 
+e) casos fortuitos e de força maior. 
+ 
+</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>CAPÍTULO VII - Prestação dos Serviços </Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>
+ 
+7.1 As operações a serem realizadas pelo Cliente poderão ocorrer por sua 
+própria conta ou por conta e ordem de seus clientes em qualquer dos 
+mercados administrados pela Bolsa, incluindo mercado de balcão 
+organizado e não organizado, através de ordens transmitidas, que poderão 
+ficar armazenadas em sistema de gravação próprio, sendo certo que: 
+ 
+(a) exceto conforme o estabelecido neste Contrato, ao Cliente não estará 
+disponível nenhum outro meio de comunicação de dados, ordens ou 
+boletas eletrônicas, restringindo-se a transmissão de ordens, portanto, 
+unicamente àquelas realizadas verbalmente ou por escrito (incluindo, neste 
+caso, a comunicação via internet, na forma do Capítulo IX abaixo);e</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>54.81638cm</Top>
+        <Height>26.18521cm</Height>
+        <Width>9.32625cm</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox7">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>(b) o Cliente declara ter ciência de que as operações de compra e venda 
+tratadas neste Contrato serão executadas e formalizadas tão somente pelos 
+critérios acima, razão pela qual concorda e reconhece que somente os 
+negócios assim efetivados serão considerados válidos. 
+ 
+</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>CAPÍTULO VIII - Remuneração </Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>
+ 
+8.1 A remuneração pelos serviços aqui pactuados será efetuada de acordo 
+com as tabelas de corretagem referentes às operações na Bolsa, ambas 
+individualmente divulgadas no site da Corretora 
+(www.gradualinvestimentos.com.br) e também disponíveis na sede da 
+Corretora. 
+ 
+8.2 Além da remuneração de que trata a Cláusula anterior, o Cliente 
+compromete-se a efetuar o pagamento das taxas, emolumentos e eventuais 
+penalidades, incidentes sobre as operações nos mercados à vista, a termo, 
+futuros e de opções cobradas pela Bolsa, dentre as quais: 
+ 
+(a) taxa de registro de operações; 
+ 
+(b) taxa de liquidação; 
+ 
+(c) taxa de aviso de negociação de ações; 
+ 
+(d) taxa de custódia; e 
+ 
+(e) multas. 
+ 
+8.3 A Bolsa, a qualquer tempo e em decorrência de novas regulamentações 
+a respeito, poderá estabelecer e/ou criar novas taxas e encargos que incidam 
+de forma direta e automática sobre as operações objeto deste Contrato, 
+comprometendo-se o Cliente a efetuar o pagamento do valor devido em 
+decorrência dessas novas regulamentações. 
+ 
+</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>CAPÍTULO IX - Ordens e Comunicações Via Internet </Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>
+ 
+9.1 As operações tratadas neste Contrato poderão ser ordenadas pelo Cliente 
+por intermédio de senha e assinatura eletrônicas fornecidas pela Corretora, 
+salientando-se que o cumprimento das instruções será formalizado mediante 
+registro e anotação em boletas eletrônicas. A senha mencionada nesta 
+Cláusula será enviada para o e-mail do Cliente indicado na Ficha Cadastral. 
+ 
+</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>9.2 O Cliente reconhece que a senha e a assinatura eletrônica referida na 
+Cláusula 9.1 são pessoais, intransferíveis e de seu conhecimento e uso 
+exclusivos, responsabilizando-se integralmente pela correta utilização e 
+manutenção de sua confidencialidade.</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> 
+ 
+9.3 O Cliente expressamente autoriza a Corretora a considerar como válida 
+toda e qualquer ordem e movimentação solicitada com a utilização da senha 
+e da assinatura eletrônica, sendo direito da Corretora bloqueá-las ao seu 
+exclusivo critério. 
+ 
+9.4 O Cliente transmitirá todas as ordens, requisitará operações e movimentará 
+sua Conta de Depósito na Corretora utilizando a senha e assinatura eletrônica 
+referida na Cláusula 9.1, sendo todas e quaisquer operações realizadas por 
+meio destas de total e absoluta responsabilidade do Cliente, razão pela qual 
+este se compromete a honrar todas as obrigações decorrentes dessas 
+operações. 
+ 
+9.5 As ordens e operações referidas neste Contrato serão remetidas pelo 
+Cliente por intermédio do site da Corretora 
+(www.gradualinvestimentos.com.br), no qual constam os termos e instruções 
+de sua utilização. 
+ 
+9.6 Na eventualidade de ocorrer uma impossibilidade de acesso ao site da 
+Corretora na Internet por problemas de ordem técnica da própria Corretora 
+ou da Bolsa, o Cliente poderá dirigir suas ordens diretamente à mesa de 
+operações da Corretora, não lhe sendo cobrado nenhum custo adicional 
+àqueles referentes às operações normalmente realizadas via Internet. A 
+Corretora não será, em hipótese alguma, responsável por qualquer ato ou fato 
+que decorra, direta ou indiretamente, da impossibilidade de acesso referida 
+nesta Cláusula. 
+ 
+9.7 Na eventualidade de ocorrer uma impossibilidade de acesso ao site da 
+Corretora na Internet, por problemas de qualquer ordem nos meios de acesso 
+ou equipamento utilizados pelo Cliente, ou se este, a seu exclusivo critério 
+assim optar, poderá igualmente dirigir suas ordens diretamente à mesa de 
+operações da Corretora, por meio do telefone, sendo-lhe cobrado como 
+custo de corretagem aquele utilizado pela Corretora para ordens 
+normalmente transmitidas à sua mesa de operações, disponível no site 
+www.gradualinvestimentos.com.br, respeitado o valor mínimo, nos termos das 
+Cláusulas 8.1 e 8.2 acima.</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox7</rd:DefaultName>
+        <Top>54.81638cm</Top>
+        <Left>9.565cm</Left>
+        <Height>26.18521cm</Height>
+        <Width>9.32625cm</Width>
+        <ZIndex>6</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox8">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>9.8 O Cliente declara ter ciência de que as ordens eventualmente 
+transmitidas por telefone ou outro meio eletrônico são válidas e serão 
+registradas, servindo estes registros como prova válida e irrefutável de sua 
+ordenação. 
+ 
+9.9 O Cliente declara ter ciência de que, por se tratar de um serviço 
+oferecido pela Corretora em caráter excepcional, o registro de ordens 
+encaminhadas à Corretora por meio de serviços de mensagem eletrônica, 
+a exemplo, mas não se limitando, às ordens enviadas por MSN e SMS, terão 
+sua execução sujeita a eventuais atrasos, e, em nenhuma hipótese, a 
+Corretora poderá ser responsabilizada por atrasos desta natureza. 
+ 
+9.10 Nas hipóteses de impossibilidade de acesso previstas nas Cláusulas 9.6 
+e 9.7 acima, caso o Cliente não tenha dirigido suas ordens diretamente à 
+mesa de operações da Corretora, compromete-se o Cliente a reenviá-las, 
+se ainda desejar a execução destas, para fins do disposto na Cláusula 6.2 
+das Regras de Conduta e Atuação da Corretora sobre a duplicidade de 
+ordens. 
+ 
+9.11 As ordens transmitidas à Corretora diretamente através do site 
+www.gradualinvestimentos.com.br somente serão consideradas 
+efetivamente executadas quando não se constatar nenhuma infração às 
+normas aplicáveis e depois de esgotados os prazos para realização dos 
+procedimentos especiais previstos na Instrução CVM nº 168, de 23 de 
+dezembro de 1991, e alterações posteriores. 
+ 
+9.12 Aplicam-se às ordens realizadas nos termos deste Capítulo IX nos 
+sistemas de negociação eletrônica da Bolsa as regras relativas às garantias, 
+conforme o estabelecido no regulamento destes sistemas e nas regras e 
+normas complementares. 
+ 
+</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>CAPÍTULO X - Direct Market Access (DMA)</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> 
+ 
+10.1 A Corretora disponibilizará ao Cliente o sistema de acesso direto ao 
+ambiente eletrônico de negociação na Bolsa, o Acesso Direto ao Mercado 
+(mais conhecido pela sigla em inglês “DMA”), fornecido pela Bolsa nos 
+termos do Ofício Circular nº 021/2008 e do Ofício Circular nº 033/2008, 
+emitidos em 08 de julho e 20 de agosto de 2008, respectivamente. O 
+sistema DMA é definido como o modelo de negociação em bolsa segundo 
+o qual a corretora, por meio de solução tecnológica específica, oferece a 
+um ou mais de seus clientes a possibilidade de: (a) visualizar, em tempo real, 
+o livro de ofertas do sistema eletrônico de negociação; e (b) enviar ordens 
+de compra e de venda, de forma eletrônica, que, enquadrando-se aos 
+limites e aos demais parâmetros estabelecidos pela corretora e/ou pelas 
+bolsas, são automaticamente transformadas em ofertas no livro do sistema 
+eletrônico de negociação. 
+ 
+10.2 Não obstante a disponibilização do sistema DMA, a Corretora 
+permanecerá responsável pela liquidação financeira das operações do 
+Cliente e pelo depósito de garantias. Por esse motivo, nas negociações 
+realizadas pelo Cliente por meio do sistema DMA, a Corretora reserva-se 
+todos os direitos e prerrogativas a ela atribuídos no âmbito do presente 
+Contrato, incluindo, mas não se limitando, aos direitos e prerrogativas 
+estabelecidos nos Capítulos II e III acima. 
+ 
+10.3 O Cliente desde já concorda que a Corretora exerça, no que tange às 
+atividades e operações realizadas pelo Cliente por meio do sistema DMA, 
+os mesmos tipos de controle que exerce sobre os modelos de acesso 
+indireto ao mercado, incluindo, mas não se limitando a medidas de 
+prevenção e combate à lavagem de dinheiro, operações fraudulentas e 
+manipulação de mercado. Como forma de viabilizar tais controles, o 
+Cliente desde já autoriza a Corretora a acompanhar sua atuação e 
+verificar a regularidade e adequação das suas atividades e operações, e 
+se compromete desde já a prontamente fornecer quaisquer 
+esclarecimentos solicitados pela Corretora. O Cliente se compromete ainda 
+a prontamente atender a todas as comunicações e solicitações de ajuste 
+de conduta formuladas pela Corretora. 
+ 
+10.4 A Corretora estabelecerá os limites operacionais e de risco que 
+entender serem adequados ao Cliente, conforme as regras e 
+procedimentos estabelecidos pela Bolsa e as melhores práticas de 
+administração de riscos. O Cliente desde já concorda em atuar 
+estritamente em conformidade com tais limites e autoriza a Corretora a 
+suspender ou cancelar a execução de quaisquer ordens e instruções 
+emitidas em desacordo com tais limites. 
+ 
+10.5 Com o objetivo de garantir a integridade de seus sistemas e dos 
+sistemas da Bolsa, além de permitir a adoção de medidas de ordem 
+prudencial, a Corretora reserva-se o direito de, a seu exclusivo critério, a 
+qualquer momento, sem aviso prévio: (i) suspender o acesso do Cliente ao 
+sistema DMA; (ii) alterar os limites operacionais e de risco atribuídos ao 
+Cliente, com base em critérios e procedimentos de administração de riscos</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox8</rd:DefaultName>
+        <Top>81.2218cm</Top>
+        <Height>26.15875cm</Height>
+        <Width>9.32625cm</Width>
+        <ZIndex>7</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox9">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>adotados pela Corretora; e (iii) alterar ou cancelar as ordens enviadas pelo 
+Cliente. 
+ 
+10.6 O Cliente reconhece que o seu acesso ao sistema DMA poderá ser 
+suspenso caso ocorra a suspensão de acesso de outro cliente da Corretora 
+que utilize o mesmo protocolo de comunicação (Financial Information 
+Exchange – FIX). 
+ 
+10.7 O Cliente por este ato isenta a Corretora de qualquer responsabilidade 
+por prejuízos sofridos ou custos incorridos em decorrência (a) do exercício, 
+pela Corretora, de quaisquer dos seus direitos e prerrogativas estabelecidos no 
+presente Capítulo, em especial aqueles elencados na Cláusula 10.5 acima e 
+(b) da ocorrência da hipótese disposta na Cláusula 10.6 acima. 
+ 
+10.8 O Cliente reconhece que suas atividades estão sujeitas à fiscalização e 
+acompanhamento pela Bolsa e pelos seus órgãos de auto-regulação, 
+aderindo expressamente às regras e aos procedimentos por eles estabelecidos 
+e comprometendo-se a: (a) observar tais regras e procedimentos; e (b) 
+submeter-se a todas as restrições e penalidades aplicáveis, nos termos 
+daquelas regras e procedimentos e da regulamentação em vigor. 
+ 
+</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>CAPÍTULO XI - Conta Margem</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> 
+ 
+11.1 A Corretora poderá abrir conta corrente especial (“Conta Margem”) em 
+nome do Cliente para a concessão de crédito, pela Corretora ao Cliente, no 
+valor equivalente a até 100% (cem por cento) de sua carteira de valores 
+mobiliários custodiados junto à Corretora, conforme os termos previstos no 
+presente instrumento, observadas as disposições da Instrução Normativa CVM 
+nº 51, de 09 de junho de 1986. 
+ 
+11.2 O montante do crédito a ser concedido pela Corretora ao Cliente será 
+definido exclusivamente pela Corretora de acordo com suas políticas de 
+concessão de crédito e de forma nenhuma poderá ultrapassar o percentual 
+estabelecido na Cláusula 11.1 acima. 
+ 
+11.3 O crédito previsto na Cláusula 11.1 deverá ser utilizado na aquisição, no 
+mercado à vista, de ações emitidas por companhias abertas e negociadas na 
+Bolsa. 
+ 
+11.4 O Cliente somente poderá utilizar o crédito previsto na Cláusula 11.1 para 
+adquirir ações que constem na relação de conta margem divulgada pela 
+Bolsa (“Relação de Conta Margem”), com deságio máximo de 20% (vinte por 
+cento), considerando a tabela de intervalo de margem divulgada 
+periodicamente pela CBLC. 
+ 
+11.5 As operações efetuadas com os recursos financiados somente poderão 
+ser executadas pela 
+Corretora, sendo vetado qualquer repasse das referidas operações. 
+ 
+11.6 O Cliente declara que será considerada como operação de 
+financiamento para compra de ações nos termos do presente Contrato toda 
+ordem, enviada pelo Cliente, de compra de ativos previstos na Relação de 
+Conta Margem, para cuja liquidação o Cliente não disponha de recursos 
+financeiros suficientes em sua conta corrente mantida pela Corretora, aberta 
+no momento da celebração do presente Contrato. 
+ 
+11.7 Em garantia do financiamento objeto do presente contrato, o Cliente 
+dará, em caução, à Corretora, no momento da aquisição, todas as ações 
+adquiridas em função do financiamento, acrescidos dos seguintes ativos 
+(“Ativos Complementares”), desde que de sua propriedade, livre e 
+desembaraçados de quaisquer ônus judicial ou extrajudicial, até o 
+cumprimento do limite previsto na Cláusula 11.10 abaixo: 
+ 
+(a) outras ações; 
+ 
+(b) títulos públicos; 
+ 
+(c) títulos privados; e 
+ 
+(d) outros títulos e/ou valores mobiliários que venham a ser autorizados pela 
+CBLC para este propósito. 
+ 
+11.8 Os Ativos Complementares a serem dados em caução pelo Cliente, 
+conforme a Cláusula 11.7 acima, deverão: a) estar listados na Bolsa, b) 
+integrar a Relação de Conta Margem, c) obedecer aos critérios previstos na 
+Relação de Conta Margem e, d) ter sua utilização como garantia aprovada 
+pela CBLC. 
+ 
+11.9 A Corretora poderá, a seu exclusivo critério, dentre os títulos e valores 
+mobiliários recebidos em caução do Cliente, selecionar aqueles que 
+integrarão a carteira de garantia das operações abrangidas pela Conta 
+Margem. </Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox9</rd:DefaultName>
+        <Top>81.2218cm</Top>
+        <Left>9.565cm</Left>
+        <Height>26.15875cm</Height>
+        <Width>9.32625cm</Width>
+        <ZIndex>8</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox10">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>11.10 O montante das garantias deverá representar, no mínimo, 140% 
+(cento e quarenta por cento) do valor do financiamento, conforme o 
+critério de avaliação definido na Cláusula 11.12 do presente Contrato. 
+ 
+11.11 A caução será exigida proporcionalmente ao montante dos recursos 
+financiados efetivamente utilizados pelo Cliente. 
+ 
+11.12 Os ativos caucionados serão avaliados de acordo com os critérios de 
+avaliação de garantias da CBLC. 
+ 
+11.13 Caso a (s) emissora (s) das ações adquiridas com os recursos do 
+financiamento (bem como das ações dadas em caução pelo Cliente), 
+determinar (em) a distribuição de proventos, os mesmos serão caucionados 
+junto à Corretora, como garantia, até o limite previsto na Cláusula 11.10 
+acima. 
+ 
+11.14 O Cliente compromete-se a transferir e caucionar, junto à Corretora, 
+anteriormente ao momento da ordem de financiamento para compra de 
+ações nos termos deste Capítulo, títulos e valores mobiliários suficientes para 
+garantir a operação, sob pena de ter a ordem recusada. 
+ 
+11.15 As ações adquiridas, juntamente com os demais títulos e valores 
+mobiliários caucionados à Corretora, ficarão, até a data da plena 
+liquidação da operação financiada, mantidos em conta de custódia 
+vinculada à Corretora, sendo vedada a sua transferência para outra 
+corretora ou sociedade membro do Sistema Financeiro Nacional, ou para 
+qualquer outra pessoa física ou jurídica. 
+ 
+11.16 É vedado ao Cliente, dar em garantia, gravar, prometer vender ou 
+ainda vender a termo, qualquer ativo dado em caução por intermédio 
+deste Capítulo, sem prévia e expressa autorização, por escrito, da 
+Corretora. 
+ 
+11.17 As cauções serão liberadas imediatamente após o pagamento do 
+saldo devedor por elas garantido. 
+ 
+11.18 A Corretora, com base em critérios próprios de avaliação de risco, em 
+especial o risco de liquidez, poderá recusar as garantias oferecidas, bem 
+como a substituição, solicitada pelo Cliente, de títulos e valores mobiliários 
+caucionados. 
+ 
+11.18.1 Na hipótese da Corretora aceitar a substituição, o valor total da 
+respectiva garantia não poderá sofrer diminuição em relação ao 
+percentual previsto na Cláusula 11.10 acima. 
+ 
+11.18.2 Em quaisquer das situações de recusa previstas na Cláusula 11.18, as 
+ordens do Cliente não serão executadas pela Corretora enquanto não 
+observadas as condições dispostas na Cláusula 11.10 acima. 
+ 
+11.19 Na hipótese dos ativos caucionados como garantia do financiamento 
+objeto do presente Capítulo sofrerem desvalorização ou deixarem de 
+constar da Relação de Conta Margem, ou caso ocorra qualquer outro 
+evento onde as respectivas garantias deixem de representar o percentual 
+mínimo de 140% (cento e quarenta por cento) do valor financiado, o 
+Cliente obriga-se a atender, no prazo máximo de 2 (dois) dias úteis 
+contados da ocorrência da desvalorização ou desenquadramento, a 
+reposição, reforço ou substituição das garantias mediante solicitação da 
+Corretora, que poderá ser por telefone ou via correio eletrônico, sob pena 
+de rescisão imediata do presente Contrato, sem prejuízo do disposto na 
+Cláusula 2.15 acima. 
+ 
+11.19.1 Caso qualquer ativo dado em garantia ao presente financiamento 
+deixar de constar da Relação de Conta Margem, este ativo será 
+integralmente desconsiderado do cálculo do valor das garantias prestadas 
+aos financiamentos objeto do presente Capítulo, obrigando-se o Cliente a 
+promover a substituição do ativo nos termos do disposto na Cláusula 11.19 
+acima. 
+ 
+11.20 O Cliente autoriza o registro, em sua Conta Margem, de todos os 
+eventos decorrentes das operações objeto do presente Capítulo, inclusive 
+de todos os encargos fiscais incidentes sobre a operação de 
+financiamento. 
+ 
+11.21 Sem prejuízo da possibilidade de rescisão do presente Contrato, o 
+crédito concedido ao Cliente será imediatamente suspenso sem a 
+necessidade de notificação prévia pela Corretora ao Cliente, nas hipóteses 
+de: 
+ 
+a) descumprimento de quaisquer das obrigações principais ou acessórias, 
+diretas ou indiretas, assumidas pelo Cliente neste Capítulo, especialmente o 
+inadimplemento das obrigações pecuniárias nos seus respectivos 
+vencimentos; ou</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox10</rd:DefaultName>
+        <Top>107.61941cm</Top>
+        <Height>26.10583cm</Height>
+        <Width>9.32625cm</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox11">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>b) interposição de protesto cambiário ou execução em face do Cliente. 
+ 
+11.22 Pelo financiamento objeto do presente contrato, a Corretora terá direito 
+ao recebimento de uma remuneração a título de juros, calculado sobre o 
+valor financiado de acordo com a taxa divulgada no site da Corretora 
+(www.gradualinvestimentos.com.br) e disponível na sede da Corretora. 
+ 
+11.23 O valor dos juros previsto na Cláusula 11.22 acima será debitado 
+diariamente na Conta Margem. 
+ 
+11.24 Considerando que o valor das garantias constituídas pelo Cliente em 
+função da utilização da Conta Margem pode ser apurado diariamente e/ou 
+mensalmente, o Cliente declara aceitar, neste ato, que o saldo da Conta 
+Margem, acrescidos dos reajustes, taxas e encargos aqui previstos, constitui 
+crédito líquido e certo, constituindo o presente Contrato, juntamente com o 
+extrato da Conta Margem, título executivo líquido, certo e exigível para todos 
+os efeitos de eventual ação de execução fundada em título executivo 
+extrajudicial. 
+ 
+</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>CAPÍTULO XII - Banco de Títulos CBLC</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> 
+ 
+12.1 O Cliente por meio deste Contrato autoriza a Corretora a representá-lo 
+em operações no Banco de Títulos CBLC, na forma do Regulamento de 
+Operações e dos Procedimentos Operacionais da CBLC (“Regulamento” e 
+“Procedimentos Operacionais”, respectivamente), que venham a ser 
+celebradas em seu nome, seja na posição doadora ou tomadora de títulos, 
+observadas as demais condições estabelecidas neste Contrato. 
+ 
+12.2 As ordens do Cliente, autorizando operações de empréstimo na 
+qualidade de tomador ou doador de ações conterão no mínimo a 
+identificação do emissor, da quantidade, espécie e classe dos títulos, o prazo 
+de vigência do contrato em uma das modalidades previstas no Capítulo VI, 
+item 2 dos Procedimentos Operacionais e se o caso, a taxa de remuneração 
+pactuada. 
+ 
+12.3 Quando o Cliente estiver atuando na posição tomadora de títulos, deverá 
+apresentar as garantias exigidas pela CBLC, nos termos do Regulamento, bem 
+como aquelas que possam ser exigidas pela Corretora a seu critério. 
+ 
+12.4 O Cliente compromete-se a liquidar as operações de empréstimo de 
+títulos, mediante a entrega de títulos da mesma espécie, emissor e classe, 
+ajustados aos proventos relativos aos mesmos no caso de ações, na forma 
+prevista no Regulamento e a pagar a taxa de remuneração do empréstimo 
+previamente pactuada em cada operação. Caso não seja possível proceder 
+à entrega dos títulos tomados em empréstimo, em razão da indisponibilidade 
+destes no mercado, poderá a CBLC determinar a liquidação financeira da 
+operação, conforme o disposto no Capítulo VI, item 6 dos Procedimentos 
+Operacionais. 
+ 
+12.5 A Corretora ficará isenta de qualquer responsabilidade no caso de 
+subscrição não realizada no curso da operação de empréstimo se o Cliente 
+for avisado por escrito e não colocar à disposição da Corretora os recursos 
+necessários dentro do prazo estabelecido. 
+ 
+12.6 Cliente declara neste ato que conhece e dá ciência do Regulamento e 
+dos Procedimentos Operacionais, à disposição no sítio da corretora na rede 
+mundial de computadores, para todos os efeitos legais aderindo 
+integralmente a ambos, visto que eles, notadamente o Capítulo VI dos 
+Procedimentos Operacionais, serão aplicáveis a todas as operações de 
+empréstimo de títulos que venham a ser contratadas em seu nome. 
+ 
+12.7 Cliente declara, ainda, ter conhecimento “Termo de Adesão ao Banco 
+de Títulos CBLC” subscrito pela CBLC e pela Corretora, cujas condições 
+contratuais serão aplicáveis, no que couber, ao Cliente. 
+ 
+12.8 remuneração devida à Corretora pela intermediação das operações 
+realizadas junto ao Banco de Títulos CBLC encontra-se disponível no site da 
+Corretora (www.gradualinvestimentos.com.br) e também na sede da 
+Corretora. 
+ 
+</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>CAPÍTULO XIII - Conta de Custódia de Títulos Públicos – Tesouro Direto</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> 
+ 
+13.1 or. meio da assinatura a este Contrato, o Cliente expressamente e sem 
+quaisquer ressalvas adere ao Contrato Padrão de Prestação de Serviços e de 
+Administração de Contas de Custódia de Títulos Públicos, os quais serão 
+prestados pela Corretora nos termos do mencionado Contrato Padrão, cujo 
+inteiro teor encontra-se disponível no site www.cblc.com.br. 
+ 
+13.2 remuneração devida à Corretora pela prestação dos serviços de 
+administração de conta de custódia de títulos públicos encontra-se 
+disponível no site da Corretora (www.gradualinvestimentos.com.br) e 
+também na sede da Corretora. </Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>107.61941cm</Top>
+        <Left>9.565cm</Left>
+        <Height>26.10583cm</Height>
+        <Width>9.32625cm</Width>
+        <ZIndex>10</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox12">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>CAPÍTULO XIV - Clubes e Fundos de Investimento </Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>
+ 
+14.1 As operações tratadas no presente Contrato poderão envolver 
+também quotas de clubes e fundos de investimentos administrados e/ou 
+geridos pela Corretora ou por terceiros, sendo que, neste caso, o Cliente 
+deverá previamente ler e aderir expressamente aos termos e condições do 
+regulamento de cada um dos clubes e fundos de investimento nos quais 
+vier a investir, nos termos da legislação e da regulamentação em vigor. 
+ 
+14.2 As operações de compra e venda de quotas de clubes e fundos de 
+investimentos poderão ser ordenadas por todas as formas previstas neste 
+Contrato, inclusive por intermédio de senha e assinatura eletrônicas, 
+conforme o estabelecido no Capítulo IX acima. 
+ 
+14.2.1 Caso se utilize da senha e assinatura eletrônicas previstas no Capítulo 
+IX acima, o Cliente deverá previamente seguir os procedimentos de leitura 
+e adesão aos termos e condições do regulamento do clube ou fundo de 
+investimento no qual deseja investir, disponíveis no site da Corretora 
+(www.gradualinvestimentos.com.br). 
+ 
+</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>14.2.2 O CLIENTE POR ESTE ATO CONCORDA QUE A SUA ADESÃO AO 
+REGULAMENTO DE CLUBES E FUNDOS DE INVESTIMENTO POR MEIO DE 
+UTILIZAÇÃO DE SENHA E ASSINATURA ELETRÔNICAS, DE ACORDO COM OS
+PROCEDIMENTOS ESTABELECIDOS NO SITE DA CORRETORA E NA FORMA 
+PREVISTA NO CAPÍTULO IX ACIMA, CONSTITUI UMA FORMA VÁLIDA E EFICAZ 
+DE ADESÃO AO REGULAMENTO DESSES CLUBES E FUNDOS DE INVESTIMENTO. </Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve">
+ 
+</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>CAPÍTULO XV - Comunicações</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> 
+ 
+15.1 Todas as comunicações da Corretora endereçadas ao Cliente 
+deverão ser remetidas preferencialmente por correio eletrônico, no 
+endereço constante da Ficha Cadastral. Serão consideradas plenamente 
+válidas para todos os efeitos legais e constituirão prova de sua remessa os 
+registros de mensagens corretamente enviadas. 
+ 
+</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>CAPÍTULO XVI - Disposições Gerais </Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>
+ 
+16.1 É facultado ao Cliente efetuar alterações de qualquer natureza em 
+seus dados cadastrais. No entanto, toda e qualquer alteração deverá vir 
+acompanhada de nova ficha cadastral, devidamente preenchida e 
+assinada e, após, enviada à sede da Corretora. 
+ 
+16.2 O presente Contrato não constitui obrigação de exclusividade para 
+qualquer das Partes, sendo celebrado por tempo indeterminado, obrigando 
+as Partes, seus herdeiros e/ou sucessores, sendo facultada às Partes sua 
+rescisão, a qualquer tempo, sem qualquer ônus, mediante comunicação 
+por escrito com antecedência mínima de 24 (vinte e quatro) horas, 
+mantendo-se a eficácia de suas cláusulas até que todas as obrigações 
+originadas sob a égide deste Contrato tenham sido plenamente satisfeitas 
+e/ou liquidadas. 
+ 
+16.3 Entende-se como comunicação por escrito a carta com aviso de 
+recebimento, e-mail, ou qualquer outra forma de notificação judicial ou 
+extrajudicial. Caso o Cliente não seja encontrado no endereço cadastral 
+e/ou não tenha e-mail cadastrado, a referida comunicação poderá ser 
+realizada mediante publicação em jornal de grande circulação. 
+ 
+16.4 Qualquer tolerância ou concessão de qualquer das Partes não 
+implicará novação, modificação ou alteração deste Contrato. 
+ 
+16.5 Correrão por conta do Cliente todos os impostos e taxas incidentes ou 
+que venham a incidir sobre a prestação de serviços ora contratada. 
+ 
+16.6 Este Contrato poderá ser alterado unilateralmente pela Corretora 
+sempre que tal alteração decorra exclusivamente da necessidade de 
+atender exigências legais ou regulamentares, surtindo as alterações efeitos 
+imediatos e independentes de comunicação ao Cliente. 
+ 
+</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>16.7 ESTE CONTRATO ESTÁ REGISTRADO NO 9º CARTÓRIO DE REGISTRO DE 
+TÍTULOS E DOCUMENTOS DA CIDADE DE SÃO PAULO, SOB O Nº 1044602, E 
+PERMANECERÁ DISPONÍVEL PARA ACESSO NO SITE DA CORRETORA 
+(www.gradualinvestimentos.com.br). A CORRETORA PODERÁ PROPOR 
+ALTERAÇÕES A ESTE CONTRATO, POR MEIO DE TERMO ADITIVO, QUE TAMBÉM 
+SERÁ LEVADO AO REGISTRO EM CARTÓRIO DE REGISTRO DE TÍTULOS E 
+DOCUMENTOS, SENDO QUE, NESTE CASO, A CORRETORA ENVIARÁ 
+NOTIFICAÇÃO POR ESCRITO AO CLIENTE ACERCA DA ALTERAÇÃO PROPOSTA, 
+CONTENDO CÓPIA DO TERMO ADITIVO. O CLIENTE PODERÁ MANIFESTAR SUA 
+DISCORDÂNCIA COM RELAÇÃO A QUALQUER ALTERAÇÃO AO PRESENTE 
+CONTRATO PROPOSTA PELA CORRETORA, POR MEIO DE CARTA COM AVISO 
+DE RECEBIMENTO OU FAC-SÍMILE ENVIADOS À CORRETORA NO ENDEREÇO E 
+NÚMERO CONSTANTES DO SITE DA CORRETORA 
+(www.gradualinvestimentos.com.br), NO PRAZO DE 5 (CINCO) DIAS ÚTEIS,</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve"> 
+</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox12</rd:DefaultName>
+        <Top>134.0697cm</Top>
+        <Height>29.06918cm</Height>
+        <Width>9.32625cm</Width>
+        <ZIndex>11</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox13">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>CONTADOS DO RECEBIMENTO DA NOTIFICAÇÃO ENVIADA PELA CORRETORA. 
+NESSE CASO, A ALTERAÇÃO PROPOSTA NÃO TERÁ QUALQUER EFEITO ENTRE O 
+CLIENTE E A CORRETORA. POR OUTRO LADO, A FALTA DE MANIFESTAÇÃO DO 
+CLIENTE COM RELAÇÃO AO TERMO ADITIVO, NO PRAZO DE 5 DIAS ÚTEIS 
+CONTADOS DO RECEBIMENTO DA NOTIFICAÇÃO ENVIADA PELA CORRETORA, 
+CONFIGURARÁ A ACEITAÇÃO TÁCITA DO CLIENTE À ALTERAÇÃO PROPOSTA, 
+PASSANDO O PRESENTE CONTRATO A VIGORAR, COM RELAÇÃO AO CLIENTE, 
+CONFORME ALTERADO PELO TERMO ADITIVO PROPOSTO PELA CORRETORA. </Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>
+ 
+16.7.1 O cliente por este ato reconhece como válidas e eficazes quaisquer 
+alterações ao presente contrato realizadas na forma estabelecida nesta 
+cláusula 16.7. 
+ 
+16.8 Caso pretenda realizar operações por meio do WebTrading (WTR) no 
+mercado BM&amp;F, o Cliente deverá providenciar, às suas expensas, o 
+reconhecimento de firma das suas assinaturas constantes deste Contrato (ou 
+do seu termo de adesão) e da Ficha Cadastral, junto ao cartório competente. 
+ 
+16.9 Este Contrato entra em vigor a partir da data da assinatura do seu Termo 
+de Adesão pelo Cliente, sendo certo que o contrato com o mesmo objeto do 
+presente, porventura firmado anteriormente entre as Partes, permanecerá 
+válido e eficaz no que tange às operações realizadas pelo Cliente à época 
+da sua vigência. 
+ 
+16.10 As Partes elegem o foro da Comarca da Capital do Estado de São 
+Paulo, com renúncia a qualquer outro, por mais privilegiado que seja, para 
+dirimir quaisquer dúvidas e conflitos que emanem deste Contrato. 
+ 
+E, por estarem assim, justas e contratadas, assinam as Partes o presente 
+Contrato, na presença das duas testemunhas abaixo, que também o assinam. 
+ 
+ 
+___________________________________,_____de ____________________ de 20______. 
+ [Local] [Data] 
+ 
+ 
+ 
+_______________________________________________ 
+ [Cliente] 
+ 
+ 
+ 
+_______________________________________________ 
+ [Gradual CCTVM S.A.] 
+ 
+ 
+Testemunhas: 
+ 
+ 
+ 
+ 
+____________________________________ ____________________________________ 
+Nome: Nome: 
+CPF: CPF: 
+</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox13</rd:DefaultName>
+        <Top>134.0697cm</Top>
+        <Left>9.565cm</Left>
+        <Height>29.06918cm</Height>
+        <Width>9.32625cm</Width>
+        <ZIndex>12</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Line Name="Line2">
+        <Top>54.53958cm</Top>
+        <Height>0cm</Height>
+        <Width>19.09445cm</Width>
+        <ZIndex>13</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
+      <Line Name="Line3">
+        <Top>81.09052cm</Top>
+        <Height>0cm</Height>
+        <Width>19.09445cm</Width>
+        <ZIndex>14</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
+      <Line Name="Line5">
+        <Top>133.79552cm</Top>
+        <Height>0cm</Height>
+        <Width>19.09445cm</Width>
+        <ZIndex>15</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
+      <Line Name="Line6">
+        <Top>107.44302cm</Top>
+        <Height>0cm</Height>
+        <Width>19.09445cm</Width>
+        <ZIndex>16</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
+    </ReportItems>
+    <Height>64.25873in</Height>
+    <Style />
+  </Body>
+  <Width>7.5175in</Width>
+  <Page>
+    <PageHeader>
+      <Height>1.26153cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Image Name="Image1">
+          <Source>Embedded</Source>
+          <Value>imgTituloReport</Value>
+          <Sizing>FitProportional</Sizing>
+          <Top>0.0635cm</Top>
+          <Height>1.00542cm</Height>
+          <Width>18.89125cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageHeader>
+    <PageFooter>
+      <Height>1.05833cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox3">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Matriz: Av. Juscelino Kubitschek, nº50 6º e 7º andares – V. N. Conceição - São Paulo - SP CEP: 04543-000 Tel: (11)3372-8300 
+Central de Atendimento: 0800 723 7444 
+</Value>
+                  <Style>
+                    <FontSize>7pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox3</rd:DefaultName>
+          <Top>0.03881cm</Top>
+          <Left>0.36195cm</Left>
+          <Height>0.94396cm</Height>
+          <Width>18.00458cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageFooter>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>2cm</TopMargin>
+    <BottomMargin>2cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <EmbeddedImages>
+    <EmbeddedImage Name="imgTituloReport">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportID>dca3ec2a-41be-421c-b29e-a99d3dfab819</rd:ReportID>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+</Report>

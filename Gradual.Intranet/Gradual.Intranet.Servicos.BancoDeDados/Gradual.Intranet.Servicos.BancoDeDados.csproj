@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{81DB2BB2-3A61-445F-9B8F-C1551D2B48D6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.Intranet.Servicos.BancoDeDados</RootNamespace>
+    <AssemblyName>Gradual.Intranet.Servicos.BancoDeDados</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.OMS.AcompanhamentoOrdens.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.AcompanhamentoOrdens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Custodia.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.Custodia.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Email.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.Email.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Mensageria">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.Mensageria.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Ordens.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.Ordens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Risco.Regra.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.Risco.Regra.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.RoteadorOrdens.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.RoteadorOrdens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Gradual.OMS-II\Gradual.OMS.Risco.SaldoDevedor\Gradual.SaldoDevedor.References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=4.112.3.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Gradual.Intranet.Referencias\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient">
+      <HintPath>..\Gradual.Intranet.Referencias\System.Data.OracleClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssessorSinacorDbLib.cs" />
+    <Compile Include="DefinicoesDeBanco\Procedures\IProcedure.cs" />
+    <Compile Include="DefinicoesDeBanco\Procedures\Parametro.cs" />
+    <Compile Include="DefinicoesDeBanco\Procedures\ProcClienteBuscar.cs" />
+    <Compile Include="DefinicoesDeBanco\Procedures\ProcClienteBanco.cs" />
+    <Compile Include="DefinicoesDeBanco\Procedures\ProcClienteDiretor.cs" />
+    <Compile Include="DefinicoesDeBanco\Procedures\ProcComboListar.cs" />
+    <Compile Include="DefinicoesDeBanco\Procedures\ProcComboSelecionar.cs" />
+    <Compile Include="DefinicoesDeBanco\Procedures\ProcedureBase.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="LogCadastro.cs" />
+    <Compile Include="Negocio\ConversaoSinacor.cs" />
+    <Compile Include="Negocio\Crypto.cs" />
+    <Compile Include="Negocio\GeradorSenhaAleatoria.cs" />
+    <Compile Include="Negocio\Validacao.cs" />
+    <Compile Include="ObjetosCompartilhados.cs" />
+    <Compile Include="Persistencias\Cadastro\ArquivoContratoDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\AssessorDoClienteDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\AssessorFilialDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\AtividadeIlicitaDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\AvisoHomeBrokerDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\BlackListDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClienteAlteracaoDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClienteAtivarInativarDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClienteAtivoInativoDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClienteAutorizacoesCadastraisDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClienteBancoDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClienteDocumentacaoEntregueDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClienteNaoOperaPorContaPropriaDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClienteValidacaoRocketDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\FichaCadastralDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClienteSuitabilityDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\InformeRendimentosDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\LoginAssinaturaEletronicaDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\LogIntranetDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\MensagemPortalDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\UsuarioPermissoesDbLib.cs" />
+    <Compile Include="Persistencias\Compliance\ChurningIntradayDbLib.cs" />
+    <Compile Include="Persistencias\ContratoDbLib.cs" />
+    <Compile Include="Persistencias\Financeiro\LancamentosTEDDbLib.cs" />
+    <Compile Include="Persistencias\Fundos\FundosDbLib.cs" />
+    <Compile Include="Persistencias\Monitoramento\MonitoramentoDesbloqueioCustodiaDbLib.cs" />
+    <Compile Include="Persistencias\Monitoramento\MonitoramentoOrdemDbLib.cs" />
+    <Compile Include="Persistencias\Monitoramento\MonitoramentoOrdemStopDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\PendenciaClienteAssessorDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\PessoaExpostaPoliticamenteDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Cliente\ClienteCadastradoPeriodoDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClienteContaDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClienteContratoDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClienteControladoraDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClienteDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClienteDiretorDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClienteEmitenteDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClienteEnderecoDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClienteFichaPessoaFisicaDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClienteInvestidorNaoResidenteDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClientePendenciaCadastralDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClienteProcuradorRepresentanteDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClienteRenovacaoCadastralDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClienteSituacaoFinanceiraPatrimonialDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ClienteTelefoneDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ConfiguracaoDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Cliente\ClienteDeParaDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Cliente\ClienteDirectDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Cliente\ClienteEmailDisparadoPeriodoDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Cliente\ClienteExportadoSinacorDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Cliente\ClienteInativoDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Cliente\ClienteIRLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Cliente\ClientePlanoPoupeDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Cliente\ClientePorAssessorDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Cliente\ClienteSemEmailDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Cliente\ClienteSuitabilityEfetuadoDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Cliente\ClienteSuspeitoDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Cliente\ClientePendenciaCadastralDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Cliente\PapelPorClienteDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Cliente\PosicaoConsolidadaPorPapelRelDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Cliente\PoupeDirectProdutoDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Cliente\ProventosClienteDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Cliente\TotalClienteCadastradoAssessorPeriodoDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\DBM\FilialDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\DBM\LTVDoClienteDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\DBM\MovimentoDeContaCorrenteDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\DBM\RessumoGerenteDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\DBM\RessumoGerenteMesAnterior.cs" />
+    <Compile Include="Persistencias\Relatorios\DBM\RessumoGerentePeriodo.cs" />
+    <Compile Include="Persistencias\Relatorios\DBM\ResumoDoAssessorDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\DBM\ResumoDoClienteDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\DBM\SaldoProjecoesEmContaCorrenteDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\DBM\TotalClientePorAssessorDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Financeiros\ClienteClubeDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Financeiros\ClienteCustodiaFinanceiroDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Financeiros\ClienteFundosDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Financeiros\UltimasNegociacoesCliente.cs" />
+    <Compile Include="Persistencias\Relatorios\Monitoramento\CustodiaDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Monitoramento\MonitoramentoClientePosicaoDeOpcaoRelDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Monitoramento\MonitoramentoClientePosicaoOpcoesExercidasRelDbLib.cs.cs" />
+    <Compile Include="Persistencias\Relatorios\Risco\RiscoClienteBloqueioGrupoRelDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Risco\RiscoClienteBloqueioInstrumentoRelDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Risco\RiscoClienteLimiteRelDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Risco\RiscoClienteMercadoVistaOpcaoRelDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Risco\RiscoClienteParametroRelDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Risco\RiscoClientePermissaoRelDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Risco\RiscoClienteSaldoBloqueadoRelDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Risco\RiscoMonitorPrejuizoGeralDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Risco\RiscoParametrosRelDbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Risco\RiscoPermissaoRelDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\ReservarIPODbLib.cs" />
+    <Compile Include="Persistencias\Relatorios\Sistema\SistemaControleLogIntranetRelDbLib.cs" />
+    <Compile Include="Persistencias\Risco\MonitoramentoIntradiarioDbLib.cs" />
+    <Compile Include="Persistencias\Risco\MonitoramentoRiscoLucroCustodiaDbLib.cs" />
+    <Compile Include="Persistencias\Risco\MonitoramentoLucroPrejuizoDadosCliente.cs" />
+    <Compile Include="Persistencias\Risco\MonitoramentoRiscoLucroPrejuizoParametrosDbLib.cs" />
+    <Compile Include="Persistencias\Risco\ParametroAlavancagemConsultaDbLib.cs" />
+    <Compile Include="Persistencias\Risco\RiscoClienteGrupoDbLib.cs" />
+    <Compile Include="Persistencias\Risco\RiscoGruposDbLib.cs" />
+    <Compile Include="Persistencias\Risco\RiscoLimiteAlocadoDbLib.cs" />
+    <Compile Include="Persistencias\Risco\RiscoParametrosDbLib.cs" />
+    <Compile Include="Persistencias\Risco\RiscoPermissaoDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\SinacorExportarDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\SinacorImportarDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\FraseDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\LoginDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\MigracaoClienteAssessorDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\PaisesBlackListDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\PessoaVinculadaDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\SinacorListaDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\TipoEnderecoDbLib.cs" />
+    <Compile Include="Persistencias\Cadastro\TipoPendenciaClienteDbLib.cs" />
+    <Compile Include="Persistencias\PersistenciaDbIntranet.cs" />
+    <Compile Include="Persistencias\Cadastro\TipoTelefoneDblib.cs" />
+    <Compile Include="Persistencias\Risco\SuitabilityLavagemDbLib.cs" />
+    <Compile Include="Persistencias\Vendas\ProdutoIPOClienteDbLib.cs" />
+    <Compile Include="Persistencias\Vendas\ProdutoIPODbLib.cs" />
+    <Compile Include="Persistencias\Vendas\ProdutosDbLib.cs" />
+    <Compile Include="Persistencias\Vendas\VendasDbLib.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ServicoPersistenciaCadastro.cs" />
+    <Compile Include="SinacorMigracaoLoginInfo.cs" />
+    <Compile Include="Web References\br.com.gradualinvestimentos.hb\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Gradual.OMS.Library.csproj">
+      <Project>{A5E45264-237E-471B-9260-88552A1EF7F3}</Project>
+      <Name>Gradual.OMS.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Persistencia\Gradual.OMS.Persistencia.csproj">
+      <Project>{01BFE534-741D-44B0-BDFF-7461D1AC66EC}</Project>
+      <Name>Gradual.OMS.Persistencia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.OMS-II\Gradual.OMS.Seguranca\Gradual.OMS.Seguranca.Lib\Gradual.OMS.Seguranca.Lib.csproj">
+      <Project>{421A9509-5314-420F-80EA-10A7B4D7309B}</Project>
+      <Name>Gradual.OMS.Seguranca.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Intranet.Contratos\Gradual.Intranet.Contratos.csproj">
+      <Project>{429DEE5D-7FC1-40CD-A72A-918B5831F0F8}</Project>
+      <Name>Gradual.Intranet.Contratos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Intranet.Oracle\Gradual.Intranet.Oracle.csproj">
+      <Project>{16BA99AA-F936-4FD5-8D66-B96163F5A577}</Project>
+      <Name>Gradual.Intranet.Oracle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Intranet.Servicos.RegrasDeNegocio\Gradual.Intranet.Servicos.RegrasDeNegocio.csproj">
+      <Project>{AF7F6F87-3E95-4D26-9B92-DF0329D275B5}</Project>
+      <Name>Gradual.Intranet.Servicos.RegrasDeNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://hb.gradualinvestimentos.com.br/cadastrohb.asmx%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.com.gradualinvestimentos.hb\</RelPath>
+      <UpdateFromURL>https://hb.gradualinvestimentos.com.br/cadastrohb.asmx%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Gradual_Intranet_Servicos_BancoDeDados_br_com_gradualinvestimentos_hb_CadastroHB</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\br.com.gradualinvestimentos.hb\cadastrohb.wsdl" />
+    <None Include="Web References\br.com.gradualinvestimentos.hb\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,702 @@
+﻿html, body, h1, h2, h3, h4, h5, h6, p, form, table, tr, td, ul, ol, li, fieldset
+{
+    margin:0; padding:0;
+}
+
+ul, ol, li
+{
+    list-style-type:none;
+}
+
+body, input, select, textarea
+{
+    font-family:Trebuchet MS, Arial, Sans-Serif;
+    font-size:11px;
+}
+
+input,
+select,
+textarea
+{
+    background:#e1e3e5;
+    border:1px solid #9b9d9e;
+    padding:1px 1px 1px 4px;
+    font-size:12px;
+}
+
+select
+{
+    padding:1px;
+    font-size:11px;
+    margin-top:2px;
+}
+
+
+input[type='button'],
+button
+{
+    padding:2px 6px 2px 6px;
+    margin-top:3px;
+
+    color:#f3f3f3;
+    font-size:0.9em;
+    
+    background:#8fb291 url(Img/Botao_Fundo_Verde.gif) no-repeat;
+    border:1px solid #567e58;
+    
+    text-shadow:1px 0px 1px #333;
+
+    cursor:pointer;
+    
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    
+    /*	    
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius:3px;
+    
+    -moz-border-radius-bottomleft:3px;
+    -moz-border-radius-bottomright:3px;
+            
+    -webkit-border-bottom-left-radius:3px;
+    -webkit-border-bottom-right-radius:3px;
+    */
+}
+
+input[type='button']:disabled
+{
+    padding:2px 6px 2px 6px;
+    margin-top:3px;
+
+    color:#B1B3B5;
+    font-size:0.9em;
+    
+    background:#5F6A76 url("Img/GradIntra_Textura_AzulIntermediario.gif");
+    border:1px solid #567e58;
+    border-color:#383F47;
+    
+    text-shadow:1px 0px 1px #333;
+
+    cursor:pointer;
+    
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    
+    /*	    
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius:3px;
+    
+    -moz-border-radius-bottomleft:3px;
+    -moz-border-radius-bottomright:3px;
+            
+    -webkit-border-bottom-left-radius:3px;
+    -webkit-border-bottom-right-radius:3px;
+    */
+}
+input[type='button'].Cancelar,
+button.Cancelar
+{
+    color:#f3f3f3;
+
+    background:#b8b486 url(Img/Botao_Fundo_Ocre.gif) no-repeat !important;
+    border:1px solid #757249;
+    
+    text-shadow:1px 0px 1px #333;
+}
+
+input[type='button']:hover,
+button:hover
+{
+    color:#fff;
+    text-shadow:1px 0px 1px #000;
+}
+
+button[disabled]
+{
+    background:#5F6A76 url("Img/GradIntra_Textura_AzulIntermediario.gif");
+    color:#B1B3B5;
+    border-color:#383F47;
+}
+
+input[type='checkbox']
+{
+    padding:0;
+    border:none;
+}
+
+
+input.IconButton,
+button.IconButton
+{
+    display:block;
+    float:left;
+    width:18px;
+    height:18px;
+    
+    margin:3px 4px 0px 4px;
+    
+    border:0px;
+    
+    background:transparent;
+    background-repeat:no-repeat;
+    
+    cursor:pointer;
+}
+
+button.IconButton span
+{
+    display:none;
+}
+
+input.Editar, button.Editar
+{
+    background:url(Img/Ico_Editar.png) no-repeat 0px 0px;
+}
+input.CancelarEdicao, button.CancelarEdicao
+{
+    background:url(Img/Ico_CancelarEdicao.png) no-repeat 0px 0px;
+}
+
+input.Cancelar, button.Cancelar
+{
+    background:url(Img/Ico_Cancelar.png) no-repeat 1px 1px;
+}
+
+input.Salvar, button.Salvar
+{
+    background:url(Img/Ico_Salvar.png) no-repeat 0px 0px;
+}
+
+input.Excluir, button.Excluir
+{
+    background:url(Img/Ico_Excluir.png) no-repeat 1px 1px;
+}
+
+input.Expandir, button.Expandir
+{
+    background:url(Img/Ico_Expandir.gif) no-repeat 1px -17px;
+}
+
+input.IconeCalendario,
+button.IconeCalendario
+{
+    background:url(Img/Ico_Calendario.gif) no-repeat 0px 0px;
+}
+
+input.IconePesquisar,
+button.IconePesquisar
+{
+    background:url(Img/Ico_Busca.png) no-repeat 0px 0px;
+}
+
+input.ValorMonetario
+{
+    text-align:right;
+    font-family:Consolas, Monospace;
+    
+    padding-top:4px !important;
+    padding-bottom:4px !important;
+}
+
+input.Picker_Data
+{
+    width:5.4em;
+}
+
+
+.bt-tooltip-arrow
+{
+    margin:-0.2em 0em 0em 0.1em;
+}
+
+
+
+/* customInput.jquery.css */
+
+/*	wrapper divs */
+.custom-checkbox, 
+.custom-radio 
+{ 
+    float:left;
+    /*background-color:Lime;*/
+}
+    
+/* input, label positioning */
+.custom-checkbox input, 
+.custom-radio input 
+{
+    float:left;
+    margin-right: -20px;
+    
+    z-index: 0;
+    /*visibility:hidden;*/
+}
+
+.custom-checkbox label, 
+.custom-radio label 
+{
+    display: block;
+    position: relative;
+    z-index: 1;
+    
+    padding-right: 1em;
+    
+    
+    padding: 2px 0 2px 22px;
+    
+    cursor: pointer;
+    
+    white-space:nowrap;
+}
+
+    
+/* states */
+.custom-checkbox label { background-image: url(Img/Gradual-Intranet-CheckBoxes.gif);   background-repeat: no-repeat; }
+
+.custom-radio label    { background-image: url(Img/Gradual-Intranet-RadioButtons.png); background-repeat: no-repeat; }
+
+.custom-checkbox label, 
+.custom-radio label 
+{
+    background-position: -13px -18px;
+    background-color:#B4B8BD;
+}
+
+table.GridIntranet td .custom-checkbox label,
+
+table.GridIntranet td .custom-radio label
+{
+    margin-top:2px;
+    width:18px;
+    padding-left:0px;
+    overflow:hidden;
+}
+
+table.GridIntranet thead td .custom-checkbox label,
+table.GridIntranet thead td .custom-radio label
+{
+    background-color:#c2c6c9;
+}
+
+table.GridIntranet tbody td .custom-checkbox label,
+table.GridIntranet tbody td .custom-radio label
+{
+    background-color:#ced0d3;
+}
+
+table.GridIntranetAlternado tr:nth-child(even) td
+{
+    background-color:#e1e1e1;
+}
+
+table.GridIntranetAlternado tbody tr:nth-child(even) td .custom-checkbox label, 
+table.GridIntranetAlternado tbody tr:nth-child(even) td .custom-radio label
+{
+    background-color:#e1e1e1;
+}
+
+
+table.GridIntranet tbody tr:hover td .custom-checkbox label,
+table.GridIntranet tbody td:hover td .custom-radio label
+{
+    background-color:#b7babe;
+}
+
+div.pnlFormulario .custom-checkbox label,
+div.pnlFormulario .custom-radio label
+{
+    background-color:#C5C8CD;
+}
+
+.custom-checkbox label.hover,
+.custom-checkbox label.focus,
+.custom-radio label.hover,
+.custom-radio label.focus {
+    background-position: -13px -118px;
+}
+
+.custom-checkbox label.checked, 
+.custom-radio label.checked {
+    background-position: -13px -218px;
+}
+
+.custom-checkbox label.checkedHover, 
+.custom-checkbox label.checkedFocus 
+{
+    background-position: -13px -318px;
+}
+
+.custom-checkbox label.focus, 
+.custom-radio label.focus 
+{
+    outline: 1px dotted #000;
+}
+
+.RiscoPosicaoCCOrdernarPorSelecionado
+{
+    text-decoration:underline;
+}
+
+
+/*
+
+Conta Corrente
+
+*/
+
+    div#pnlSaldoDeConta
+    {
+        /*
+        position:absolute;
+
+        left:136px;
+        top:-250px;
+*/
+
+
+    }
+
+    table#tblSaldoDeConta
+    {
+        margin:0.5% 1% 0.5% 0%;
+
+        width:98%;
+
+        color:#6B686A;
+    }
+
+    table#tblSaldoDeConta td
+    {
+        font-size:0.8em;
+    }
+
+    table#tblSaldoDeConta thead td
+    {
+        color:#6B686A;
+    }
+
+        table#tblSaldoDeConta thead td span
+        {
+            display:block;
+            float:right;
+            width:94%;
+
+            padding:0.4em 0em 0.4em 0em;
+            margin-bottom:0.6em;
+
+            text-align:center;
+
+            border-bottom:1px solid #8E9195;
+        }
+
+        table#tblSaldoDeConta td.tdLabel
+        {
+            text-align:right;
+            padding-right:4px;
+        }
+
+        td.ValorNumerico
+        {
+            font-family:Consolas, Monospace;
+            text-align:right;
+            font-size:1em !important;
+
+            padding:0.2em 0.4em 0.2em 0.2em;
+
+        }
+
+        td.ValorNumericoContaCorrente
+        {
+            font-family:Consolas, Monospace;
+            text-align:right;
+            font-size:1em !important;
+
+            padding:0.2em 0.4em 0.2em 0.2em;
+
+            color:#fff;
+            background:#989CA2;
+        }
+
+.MensagemAlertaDadosCliente
+{
+    cursor:pointer;
+    position: relative; 
+    left: 0pt; 
+    top: 0pt; 
+    width: 100%; 
+    height: 4em; 
+    background: none repeat scroll 0% 0% rgba(251, 249, 238, 0.8); 
+    text-align: center; 
+    -moz-border-radius:3px;
+}
+
+
+div.AlertaDeModoDeCompatibilidade
+{
+    position:absolute;
+
+    left:0px;
+    top:0px;
+
+    width:100%;
+    height:100%;
+
+    background:#e1e3e5 url(Img/GradIntra_Alerta_Modo_de_Compatibilidade.png) no-repeat center center;
+    
+    z-index:500;
+}
+
+.SemaforoVerde
+{
+    background-image: url(../../Skin/Default/gradintra-theme/images/ui-icons_42903b_256x240.png);
+    background-position: -80px 100px;
+    display: block;
+    float: left;
+    height: 16px;
+    margin-left: 15px;
+    margin-right: 4px;
+    /*margin-top: 4px;*/
+    padding-bottom: 0pt !important;
+    width: 14px;
+}
+
+.SemaforoAmarelo
+{
+    background-image: url(../../Skin/Default/gradintra-theme/images/ui-icons_bbcf28_256x240.png);
+    background-position: -80px 100px;
+    display: block;
+    float: left;
+    height: 16px;
+    margin-left: 15px;
+    margin-right: 4px;
+    /*margin-top: 4px;*/
+    padding-bottom: 0pt !important;
+    width: 14px;
+}
+
+.SemaforoVermelho
+{
+    background-image: url(../../Skin/Default/gradintra-theme/images/ui-icons_cd0a0a_256x240.png);
+    background-position: -80px 100px;
+    display: block;
+    float: left;
+    height: 16px;
+    margin-left: 15px;
+    margin-right: 4px;
+    /*margin-top: 4px;*/
+    padding-bottom: 0pt !important;
+    width: 14px;
+}
+
+.SemaforoVerdeMonitoramento
+{
+    background-image		: url(../../Skin/Default/gradintra-theme/images/ui-icons_42903b_256x240.png);
+    background-position		:  -78px 97px;
+    display					: block;
+    float					: left;
+    margin-right: 4px;
+    height					: 15px;
+    padding-bottom			: 0pt !important;
+    width					: 14px;
+}
+
+.SemaforoAmareloMonitoramento
+{
+    background-image: url(../../Skin/Default/gradintra-theme/images/ui-icons_bbcf28_256x240.png);
+    background-position: -78px 97px;
+    display: block;
+    float: left;
+    height: 12px;
+    margin-right: 4px;
+    /*margin-top: 1px;*/
+    padding-bottom: 0pt !important;
+    width: 14px;
+}
+
+.SemaforoVermelhoMonitoramento
+{
+    background-image: url(../../Skin/Default/gradintra-theme/images/ui-icons_cd0a0a_256x240.png);
+    background-position: -78px 97px;
+    display: block;
+    float: left;
+    height: 12px;
+    margin-right: 4px;
+    /*margin-top: 1px;*/
+    padding-bottom: 0pt !important;
+    width: 14px;
+}
+.SemaforoVerdePLD
+{
+    background-image: url(../../Skin/Default/gradintra-theme/images/ui-icons_42903b_256x240.png);
+    background-position: -80px 95px;
+    display: block;
+    float: left;
+    height: 12px;
+    margin-left: 12px;
+    /*margin-top: 1px;*/
+    padding-bottom: 0pt !important;
+    width: 14px;
+}
+
+.SemaforoAmareloPLD
+{
+    background-image: url(../../Skin/Default/gradintra-theme/images/ui-icons_bbcf28_256x240.png);
+    background-position: -80px 95px;
+    display: block;
+    float: left;
+    height: 12px;
+    margin-left: 12px;
+    /*margin-top: 1px;*/
+    padding-bottom: 0pt !important;
+    width: 14px;
+}
+
+.SemaforoVermelhoPLD
+{
+    background-image: url(../../Skin/Default/gradintra-theme/images/ui-icons_cd0a0a_256x240.png);
+    background-position: -80px 95px;
+    display: block;
+    float: left;
+    height: 12px;
+    margin-left: 12px;
+    /*margin-top: 1px;*/
+    padding-bottom: 0pt !important;
+    width: 14px;
+}
+
+.PadContaCorrente
+{
+    margin-left: 15em;
+}
+
+.FiltroLetrasRelatorioContaCorrente
+{
+    cursor: pointer;
+    margin-right: 7px;
+}
+
+.DestaqueLetraSelecaoRelatorioContaCorrente
+{
+    color: #EE0000;
+    font-size: 15px;
+}
+
+div.scrollTable
+{
+    background: #fff;
+    /*border: 1px solid #888;*/
+}
+
+div.scrollTable table.header, div.scrollTable div.scroller table
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+div.scrollTable table.header th, div.scrollTable div.scroller table td
+{
+    /*border: 1px solid #444;*/
+    padding: 3px 5px;
+}
+
+div.scrollTable table.header th
+{
+    background: #ddd;
+}
+
+div.scrollTable div.scroller
+{
+    height: 400px;
+    overflow: auto;
+}
+
+div.scrollTable .coluna35px
+{
+    width: 35px;
+}
+
+div.scrollTable .coluna75px
+{
+    width: 75px;
+}
+
+div.scrollTable .coluna100px
+{
+    width: 100px;
+}
+
+div.scrollTable .coluna150px{
+    width: 150px;
+}
+
+
+
+
+    div.pstrength-bar
+    {
+        display:block;
+        float:left;
+
+        width:172px !important;
+        height:5px;
+
+        margin:28px 0px 0px -174px;
+
+        background-image:url(Img/Fundo-Texto-ForcaDaSenha.png);
+        background-repeat:no-repeat;
+        background-position:center 10px;
+    }
+
+    div.pstrength-minchar,
+    div.pstrength-info
+    {
+        display:none;
+    }
+
+
+.PainelSemiOverlay
+{
+    display:block;
+    float:left;
+    position:absolute;
+
+    left:0px;
+    top:0px;
+
+    width:100%;
+    height:100%;
+
+    background:url(Img/Fundo-Opacidade-70.png);
+}
+
+
+    .PainelSemiOverlay fieldset
+    {
+        margin-top:16%;
+        margin-left:27%;
+
+        text-align:center;
+        background:#a8adb4;
+        border:1px solid #f5f5f5;
+
+        box-shadow:0px 0px 22px #000;
+    }
+    
+    .PainelSemiOverlay fieldset p
+    {
+        width:100%  !important;
+        height:auto !important;
+    }
+
+table.GridAutCadastro tbody tr td a
+{
+    color:#0000ff;
+    text-shadow:1px 1px 1px #fff;
+}
+
+#id_Cliente_Suitability_Resultado a
+{
+    margin-left:12px;
+}

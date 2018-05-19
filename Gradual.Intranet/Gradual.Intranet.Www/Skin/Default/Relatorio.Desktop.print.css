@@ -1,0 +1,165 @@
+﻿
+  h1
+, h2
+, #pnlMenuPrincipal
+, #pnlMensagem
+, #pnlMensagemAdicional
+, #pnlBusca_Clientes
+, #lstClientesSelecionados
+, #lstMenuCliente
+, #pnlFerramentas
+, .Busca_Container
+, .Busca_Formulario
+/*, .pnlFormulario*/
+, .Aguarde
+, .TdRelatorioLimitePorClienteRenovarLimite
+, .PosicaoConsolidadaCabecalhoConsulta
+, #pnlListaDeMensagens
+, .Fechar
+, .FecharRelatorios
+, BotaoPadrao
+, .Busca_Resultados
+{
+    display: none !important;
+}
+
+  #pnlMenuPrincipal
+, #pnlMensagem
+, #pnlMensagemAdicional
+, #pnlBusca_Clientes
+, #lstClientesSelecionados
+, #lstMenuCliente
+{
+    display:none !important;
+}
+
+#pnlClientes_Formularios_Acoes_VerFichaCadastral h4,
+#pnlClientes_Formularios_Acoes_VerFichaCadastral .BotoesSubmit
+{
+    display:none
+}
+
+    #pnlClientes_Formularios_Acoes_VerFichaCadastral .PainelScroll
+    {
+        border:none !important;
+    }
+
+table.FichaCadastral
+{
+    width:100%;
+}
+
+    table.FichaCadastral th,
+    table.FichaCadastral td
+    {
+        font-family:Arial;
+        font-size:0.7em;
+    }
+
+    table.FichaCadastral th
+    {
+        padding:0.4em;
+
+        text-align:center;
+        font-weight:bold;
+
+        background:#efefef;
+    }
+
+    table.FichaCadastral td
+    {
+        padding:0.4em 0.4em 0.3em 0.4em;
+        border-bottom:1px dotted #efefef;
+    }
+
+    table.FichaCadastral td.Label
+    {
+        width:40%;
+
+        padding-left:0.8em;
+
+        border-right:2px solid #ececec;
+        white-space:nowrap;
+    }
+
+.RelatorioImpressao
+{
+    padding-bottom: 20px;
+}
+
+.RelatorioImpressao > h1
+{
+    display: block !important;
+    margin: 8px 0px 10px 8px !important;
+}
+
+.RelatorioImpressao > h2
+{
+    background: #f5f5f5 !important;
+    color: #32404F !important;
+    display: block !important;
+    font-size: 1em !important;
+    height: 0px !important;
+    margin: 8px 0px 70px 8px !important;
+}
+
+.pnlRelatorio
+{
+    /*
+    position:absolute;
+    
+    left:2%;
+    top:2%;
+    
+    width:96;
+    height:96%;
+      */  
+    /*background:aqua;*/
+}
+
+.pnlRelatorio > div
+{
+    font-size:0.7em;
+    
+    border:none;
+}
+
+      .CabecalhoRelatorio h1
+    , .CabecalhoRelatorio h2
+    {
+        display:block;
+        font-family:Trebuchet MS;
+    }
+        
+    .CabecalhoRelatorio h1
+    {
+        font-size:1.2em;
+        color:#32404F;
+        
+        padding:8px 0px 7px 8px;
+        
+        background:#f5f5f5;
+    }
+    
+    .CabecalhoRelatorio img
+    {
+        margin-top:-41px;
+    }
+
+
+    /*
+    div.PainelDoRelatorio
+    {
+        border-top:0px solid transparent;
+    }
+
+        div.PainelDoRelatorio h1
+        {
+            display:block;
+        }
+
+        div.RodapeDoRelatorio p
+        {
+            color:#666;
+            padding:2em;
+        }*/

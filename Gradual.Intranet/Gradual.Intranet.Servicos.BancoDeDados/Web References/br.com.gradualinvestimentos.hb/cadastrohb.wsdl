@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://localhost/STWSCadCli" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" targetNamespace="http://localhost/STWSCadCli" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://localhost/STWSCadCli">
+      <s:element name="InsertClienteHB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_cadastro" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertClienteHBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertClienteHBResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertClienteHBCripto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_cadastro" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_cripto" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertClienteHBCriptoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertClienteHBCriptoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AtivarCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_login" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AtivarClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AtivarClienteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DesativarCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_login" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DesativarClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DesativarClienteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BloquearCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_login" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BloquearClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BloquearClienteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DesbloquearCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_login" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DesbloquearClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DesbloquearClienteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AlterarSenha">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_senha" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AlterarSenhaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AlterarSenhaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AlterarAssinaturaDigital">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_assDigital" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AlterarAssinaturaDigitalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AlterarAssinaturaDigitalResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AlterarSenhaInt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_senha" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_integrador" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AlterarSenhaIntResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AlterarSenhaIntResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AlterarAssinaturaDigitalInt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_assDigital" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_integrador" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AlterarAssinaturaDigitalIntResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AlterarAssinaturaDigitalIntResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CriptografarSenha">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_senha" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CriptografarSenhaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CriptografarSenhaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EqualsSenha">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_dado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EqualsSenhaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EqualsSenhaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EqualsAssinaturaDigital">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_dado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EqualsAssinaturaDigitalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EqualsAssinaturaDigitalResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExisteAssinaturaDigital">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p_login" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExisteAssinaturaDigitalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExisteAssinaturaDigitalResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InsertClienteHBSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertClienteHB" />
+  </wsdl:message>
+  <wsdl:message name="InsertClienteHBSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertClienteHBResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertClienteHBCriptoSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertClienteHBCripto" />
+  </wsdl:message>
+  <wsdl:message name="InsertClienteHBCriptoSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertClienteHBCriptoResponse" />
+  </wsdl:message>
+  <wsdl:message name="AtivarClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:AtivarCliente" />
+  </wsdl:message>
+  <wsdl:message name="AtivarClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:AtivarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="DesativarClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:DesativarCliente" />
+  </wsdl:message>
+  <wsdl:message name="DesativarClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:DesativarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="BloquearClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:BloquearCliente" />
+  </wsdl:message>
+  <wsdl:message name="BloquearClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:BloquearClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="DesbloquearClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:DesbloquearCliente" />
+  </wsdl:message>
+  <wsdl:message name="DesbloquearClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:DesbloquearClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="AlterarSenhaSoapIn">
+    <wsdl:part name="parameters" element="tns:AlterarSenha" />
+  </wsdl:message>
+  <wsdl:message name="AlterarSenhaSoapOut">
+    <wsdl:part name="parameters" element="tns:AlterarSenhaResponse" />
+  </wsdl:message>
+  <wsdl:message name="AlterarAssinaturaDigitalSoapIn">
+    <wsdl:part name="parameters" element="tns:AlterarAssinaturaDigital" />
+  </wsdl:message>
+  <wsdl:message name="AlterarAssinaturaDigitalSoapOut">
+    <wsdl:part name="parameters" element="tns:AlterarAssinaturaDigitalResponse" />
+  </wsdl:message>
+  <wsdl:message name="AlterarSenhaIntSoapIn">
+    <wsdl:part name="parameters" element="tns:AlterarSenhaInt" />
+  </wsdl:message>
+  <wsdl:message name="AlterarSenhaIntSoapOut">
+    <wsdl:part name="parameters" element="tns:AlterarSenhaIntResponse" />
+  </wsdl:message>
+  <wsdl:message name="AlterarAssinaturaDigitalIntSoapIn">
+    <wsdl:part name="parameters" element="tns:AlterarAssinaturaDigitalInt" />
+  </wsdl:message>
+  <wsdl:message name="AlterarAssinaturaDigitalIntSoapOut">
+    <wsdl:part name="parameters" element="tns:AlterarAssinaturaDigitalIntResponse" />
+  </wsdl:message>
+  <wsdl:message name="CriptografarSenhaSoapIn">
+    <wsdl:part name="parameters" element="tns:CriptografarSenha" />
+  </wsdl:message>
+  <wsdl:message name="CriptografarSenhaSoapOut">
+    <wsdl:part name="parameters" element="tns:CriptografarSenhaResponse" />
+  </wsdl:message>
+  <wsdl:message name="EqualsSenhaSoapIn">
+    <wsdl:part name="parameters" element="tns:EqualsSenha" />
+  </wsdl:message>
+  <wsdl:message name="EqualsSenhaSoapOut">
+    <wsdl:part name="parameters" element="tns:EqualsSenhaResponse" />
+  </wsdl:message>
+  <wsdl:message name="EqualsAssinaturaDigitalSoapIn">
+    <wsdl:part name="parameters" element="tns:EqualsAssinaturaDigital" />
+  </wsdl:message>
+  <wsdl:message name="EqualsAssinaturaDigitalSoapOut">
+    <wsdl:part name="parameters" element="tns:EqualsAssinaturaDigitalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExisteAssinaturaDigitalSoapIn">
+    <wsdl:part name="parameters" element="tns:ExisteAssinaturaDigital" />
+  </wsdl:message>
+  <wsdl:message name="ExisteAssinaturaDigitalSoapOut">
+    <wsdl:part name="parameters" element="tns:ExisteAssinaturaDigitalResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CadastroHBSoap">
+    <wsdl:operation name="InsertClienteHB">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Insere um Cadastro</documentation>
+      <wsdl:input message="tns:InsertClienteHBSoapIn" />
+      <wsdl:output message="tns:InsertClienteHBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertClienteHBCripto">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Insere um Cadastro permitindo escolher se a senha já será enviada criptografada ou não</documentation>
+      <wsdl:input message="tns:InsertClienteHBCriptoSoapIn" />
+      <wsdl:output message="tns:InsertClienteHBCriptoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AtivarCliente">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Ativa o cliente</documentation>
+      <wsdl:input message="tns:AtivarClienteSoapIn" />
+      <wsdl:output message="tns:AtivarClienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DesativarCliente">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Desativa o cliente</documentation>
+      <wsdl:input message="tns:DesativarClienteSoapIn" />
+      <wsdl:output message="tns:DesativarClienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BloquearCliente">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Bloquer acesso do cliente</documentation>
+      <wsdl:input message="tns:BloquearClienteSoapIn" />
+      <wsdl:output message="tns:BloquearClienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DesbloquearCliente">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">DesbloquearCliente acesso do cliente</documentation>
+      <wsdl:input message="tns:DesbloquearClienteSoapIn" />
+      <wsdl:output message="tns:DesbloquearClienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AlterarSenha">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Altera senha do cliente</documentation>
+      <wsdl:input message="tns:AlterarSenhaSoapIn" />
+      <wsdl:output message="tns:AlterarSenhaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AlterarAssinaturaDigital">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Altera assinatura digital do cliente</documentation>
+      <wsdl:input message="tns:AlterarAssinaturaDigitalSoapIn" />
+      <wsdl:output message="tns:AlterarAssinaturaDigitalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AlterarSenhaInt">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Altera senha do cliente e o 1ª interação</documentation>
+      <wsdl:input message="tns:AlterarSenhaIntSoapIn" />
+      <wsdl:output message="tns:AlterarSenhaIntSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AlterarAssinaturaDigitalInt">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Altera assinatura digital do cliente e o 1ª interação</documentation>
+      <wsdl:input message="tns:AlterarAssinaturaDigitalIntSoapIn" />
+      <wsdl:output message="tns:AlterarAssinaturaDigitalIntSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CriptografarSenha">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Criptografa senha do cliente</documentation>
+      <wsdl:input message="tns:CriptografarSenhaSoapIn" />
+      <wsdl:output message="tns:CriptografarSenhaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EqualsSenha">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Compara a senha com a já cadastrada.</documentation>
+      <wsdl:input message="tns:EqualsSenhaSoapIn" />
+      <wsdl:output message="tns:EqualsSenhaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EqualsAssinaturaDigital">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Compara a assinatura digital com a já cadastrada.</documentation>
+      <wsdl:input message="tns:EqualsAssinaturaDigitalSoapIn" />
+      <wsdl:output message="tns:EqualsAssinaturaDigitalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExisteAssinaturaDigital">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Compara a assinatura digital com a já cadastrada.</documentation>
+      <wsdl:input message="tns:ExisteAssinaturaDigitalSoapIn" />
+      <wsdl:output message="tns:ExisteAssinaturaDigitalSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CadastroHBSoap" type="tns:CadastroHBSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertClienteHB">
+      <soap:operation soapAction="http://localhost/STWSCadCli/InsertClienteHB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertClienteHBCripto">
+      <soap:operation soapAction="http://localhost/STWSCadCli/InsertClienteHBCripto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtivarCliente">
+      <soap:operation soapAction="http://localhost/STWSCadCli/AtivarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DesativarCliente">
+      <soap:operation soapAction="http://localhost/STWSCadCli/DesativarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BloquearCliente">
+      <soap:operation soapAction="http://localhost/STWSCadCli/BloquearCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DesbloquearCliente">
+      <soap:operation soapAction="http://localhost/STWSCadCli/DesbloquearCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AlterarSenha">
+      <soap:operation soapAction="http://localhost/STWSCadCli/AlterarSenha" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AlterarAssinaturaDigital">
+      <soap:operation soapAction="http://localhost/STWSCadCli/AlterarAssinaturaDigital" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AlterarSenhaInt">
+      <soap:operation soapAction="http://localhost/STWSCadCli/AlterarSenhaInt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AlterarAssinaturaDigitalInt">
+      <soap:operation soapAction="http://localhost/STWSCadCli/AlterarAssinaturaDigitalInt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CriptografarSenha">
+      <soap:operation soapAction="http://localhost/STWSCadCli/CriptografarSenha" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EqualsSenha">
+      <soap:operation soapAction="http://localhost/STWSCadCli/EqualsSenha" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EqualsAssinaturaDigital">
+      <soap:operation soapAction="http://localhost/STWSCadCli/EqualsAssinaturaDigital" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExisteAssinaturaDigital">
+      <soap:operation soapAction="http://localhost/STWSCadCli/ExisteAssinaturaDigital" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CadastroHB">
+    <documentation xmlns="http://schemas.xmlsoap.org/wsdl/" />
+    <wsdl:port name="CadastroHBSoap" binding="tns:CadastroHBSoap">
+      <soap:address location="https://hb.gradualinvestimentos.com.br/cadastrohb.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

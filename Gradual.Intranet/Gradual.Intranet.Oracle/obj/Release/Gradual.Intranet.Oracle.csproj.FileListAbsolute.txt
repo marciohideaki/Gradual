@@ -1,0 +1,7 @@
+D:\Gradual\Source\Gradual.Intranet\Gradual.Intranet.Oracle\bin\Release\Gradual.Intranet.Oracle.dll
+D:\Gradual\Source\Gradual.Intranet\Gradual.Intranet.Oracle\bin\Release\Gradual.Intranet.Oracle.pdb
+D:\Gradual\Source\Gradual.Intranet\Gradual.Intranet.Oracle\bin\Release\System.Data.OracleClient.dll
+D:\Gradual\Source\Gradual.Intranet\Gradual.Intranet.Oracle\bin\Release\System.Data.OracleClient.xml
+D:\Gradual\Source\Gradual.Intranet\Gradual.Intranet.Oracle\obj\Release\Gradual.Intranet.Oracle.dll
+D:\Gradual\Source\Gradual.Intranet\Gradual.Intranet.Oracle\obj\Release\Gradual.Intranet.Oracle.pdb
+D:\Gradual\Source\Gradual.Intranet\Gradual.Intranet.Oracle\obj\Release\Gradual.Intranet.Oracle.csprojResolveAssemblyReference.cache

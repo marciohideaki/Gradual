@@ -1,0 +1,6 @@
+D:\Gradual\Source\Gradual.Intranet\Gradual.Intranet.Oracle\bin\Debug\Gradual.Intranet.Oracle.dll
+D:\Gradual\Source\Gradual.Intranet\Gradual.Intranet.Oracle\bin\Debug\Gradual.Intranet.Oracle.pdb
+D:\Gradual\Source\Gradual.Intranet\Gradual.Intranet.Oracle\bin\Debug\System.Data.OracleClient.dll
+D:\Gradual\Source\Gradual.Intranet\Gradual.Intranet.Oracle\bin\Debug\System.Data.OracleClient.xml
+D:\Gradual\Source\Gradual.Intranet\Gradual.Intranet.Oracle\obj\Debug\Gradual.Intranet.Oracle.dll
+D:\Gradual\Source\Gradual.Intranet\Gradual.Intranet.Oracle\obj\Debug\Gradual.Intranet.Oracle.pdb

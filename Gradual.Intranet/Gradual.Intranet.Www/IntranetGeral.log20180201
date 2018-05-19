@@ -1,0 +1,194 @@
+2018-02-01 18:14:01,281 [89] DEBUG Gradual.OMS.Library.Servicos.ServicoHost - CarregarConfig(): Carregando configuracoes para (Desenvolvimento)
+2018-02-01 18:14:01,288 [89] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2018-02-01 18:14:01,399 [89] INFO  Gradual.OMS.Library.Servicos.ServicoHost - WCF Base Address: System.Collections.Generic.List`1[System.String]
+2018-02-01 18:14:01,400 [89] INFO  Gradual.OMS.Library.Servicos.ServicoHost - MEX Base Address: 
+2018-02-01 18:14:01,400 [89] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia]
+2018-02-01 18:14:01,401 [89] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia
+2018-02-01 18:14:01,406 [89] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia
+2018-02-01 18:14:01,406 [89] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia nao encontrada direto, usando Type.GetType()
+2018-02-01 18:14:01,485 [89] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:14:01,485 [89] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:14:01,485 [89] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia é controlavel.
+2018-02-01 18:14:01,485 [89] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Interface.ServicoInterfacePersistencia, Gradual.OMS.Interface]
+2018-02-01 18:14:01,486 [89] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Interface.ServicoInterfacePersistencia, Gradual.OMS.Interface
+2018-02-01 18:14:01,486 [89] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Interface.IServicoInterfacePersistencia, Gradual.OMS.Interface
+2018-02-01 18:14:01,486 [89] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Interface.IServicoInterfacePersistencia, Gradual.OMS.Interface nao encontrada direto, usando Type.GetType()
+2018-02-01 18:14:01,562 [89] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:14:01,562 [89] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:14:01,562 [89] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados]
+2018-02-01 18:14:01,562 [89] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados
+2018-02-01 18:14:01,562 [89] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos
+2018-02-01 18:14:01,562 [89] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos nao encontrada direto, usando Type.GetType()
+2018-02-01 18:14:01,563 [89] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:14:01,563 [89] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:14:01,563 [89] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Interface.ServicoInterface, Gradual.OMS.Interface]
+2018-02-01 18:14:01,563 [89] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Interface.ServicoInterface, Gradual.OMS.Interface
+2018-02-01 18:14:01,563 [89] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Interface.IServicoInterface, Gradual.OMS.Interface
+2018-02-01 18:14:01,563 [89] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Interface.IServicoInterface, Gradual.OMS.Interface nao encontrada direto, usando Type.GetType()
+2018-02-01 18:14:01,650 [89] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:14:01,650 [89] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:14:01,650 [89] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Risco.Regra.ServicoRegrasRisco, Gradual.OMS.Risco.Regra]
+2018-02-01 18:14:01,650 [89] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Risco.Regra.ServicoRegrasRisco, Gradual.OMS.Risco.Regra
+2018-02-01 18:14:01,650 [89] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Risco.Regra.Lib.IServicoRegrasRisco, Gradual.OMS.Risco.Regra.Lib
+2018-02-01 18:14:01,650 [89] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Risco.Regra.Lib.IServicoRegrasRisco, Gradual.OMS.Risco.Regra.Lib nao encontrada direto, usando Type.GetType()
+2018-02-01 18:14:01,654 [89] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:14:01,654 [89] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:14:01,654 [89] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Implementacoes.Servicos.ServicoRelatorio, Gradual.Implementacoes.Servicos]
+2018-02-01 18:14:01,654 [89] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Implementacoes.Servicos.ServicoRelatorio, Gradual.Implementacoes.Servicos
+2018-02-01 18:14:01,654 [89] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:HomeBroker.Contratos.IServicoRelatorio, HomeBroker.Contratos
+2018-02-01 18:14:01,654 [89] INFO  Gradual.OMS.Library.Servicos.Servico - Interface HomeBroker.Contratos.IServicoRelatorio, HomeBroker.Contratos nao encontrada direto, usando Type.GetType()
+2018-02-01 18:14:01,655 [89] ERROR Gradual.OMS.Library.Servicos.Servico - Interface HomeBroker.Contratos.IServicoRelatorio, HomeBroker.Contratos nao encontrada em nenhum dos assemblies.
+2018-02-01 18:14:01,655 [89] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia]
+2018-02-01 18:14:01,655 [89] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia
+2018-02-01 18:14:01,655 [89] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia
+2018-02-01 18:14:01,655 [89] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia nao encontrada direto, usando Type.GetType()
+2018-02-01 18:14:01,655 [89] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:14:01,655 [89] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:14:01,655 [89] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia é controlavel.
+2018-02-01 18:20:50,445 [89] ERROR Gradual.Intranet.PaginaBase - Autorizacoes.aspx: ResponderCarregarHtmlComDados
+2018-02-01 18:20:51,009 [89] ERROR Gradual.Intranet.PaginaBase - Autorizacoes.aspx: ResponderCarregarHtmlComDados -> B
+2018-02-01 18:21:27,374 [89] ERROR Gradual.Intranet.PaginaBase - Autorizacoes.aspx: ResponderCarregarHtmlComDados
+2018-02-01 18:21:27,789 [89] ERROR Gradual.Intranet.PaginaBase - Autorizacoes.aspx: ResponderCarregarHtmlComDados -> B
+2018-02-01 18:21:57,350 [99] ERROR Gradual.Intranet.PaginaBase - Autorizacoes.aspx: ResponderCarregarHtmlComDados
+2018-02-01 18:21:57,692 [99] ERROR Gradual.Intranet.PaginaBase - Autorizacoes.aspx: ResponderCarregarHtmlComDados -> B
+2018-02-01 18:33:33,099 [109] DEBUG Gradual.OMS.Library.Servicos.ServicoHost - CarregarConfig(): Carregando configuracoes para (Desenvolvimento)
+2018-02-01 18:33:33,106 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2018-02-01 18:33:33,216 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - WCF Base Address: System.Collections.Generic.List`1[System.String]
+2018-02-01 18:33:33,216 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - MEX Base Address: 
+2018-02-01 18:33:33,217 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia]
+2018-02-01 18:33:33,218 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia
+2018-02-01 18:33:33,221 [109] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia
+2018-02-01 18:33:33,221 [109] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia nao encontrada direto, usando Type.GetType()
+2018-02-01 18:33:33,300 [109] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:33:33,300 [109] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:33:33,300 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia é controlavel.
+2018-02-01 18:33:33,300 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Interface.ServicoInterfacePersistencia, Gradual.OMS.Interface]
+2018-02-01 18:33:33,300 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Interface.ServicoInterfacePersistencia, Gradual.OMS.Interface
+2018-02-01 18:33:33,300 [109] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Interface.IServicoInterfacePersistencia, Gradual.OMS.Interface
+2018-02-01 18:33:33,300 [109] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Interface.IServicoInterfacePersistencia, Gradual.OMS.Interface nao encontrada direto, usando Type.GetType()
+2018-02-01 18:33:33,377 [109] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:33:33,378 [109] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:33:33,378 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados]
+2018-02-01 18:33:33,378 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados
+2018-02-01 18:33:33,378 [109] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos
+2018-02-01 18:33:33,378 [109] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos nao encontrada direto, usando Type.GetType()
+2018-02-01 18:33:33,378 [109] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:33:33,378 [109] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:33:33,378 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Interface.ServicoInterface, Gradual.OMS.Interface]
+2018-02-01 18:33:33,378 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Interface.ServicoInterface, Gradual.OMS.Interface
+2018-02-01 18:33:33,378 [109] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Interface.IServicoInterface, Gradual.OMS.Interface
+2018-02-01 18:33:33,378 [109] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Interface.IServicoInterface, Gradual.OMS.Interface nao encontrada direto, usando Type.GetType()
+2018-02-01 18:33:33,467 [109] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:33:33,467 [109] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:33:33,467 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Risco.Regra.ServicoRegrasRisco, Gradual.OMS.Risco.Regra]
+2018-02-01 18:33:33,467 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Risco.Regra.ServicoRegrasRisco, Gradual.OMS.Risco.Regra
+2018-02-01 18:33:33,467 [109] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Risco.Regra.Lib.IServicoRegrasRisco, Gradual.OMS.Risco.Regra.Lib
+2018-02-01 18:33:33,467 [109] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Risco.Regra.Lib.IServicoRegrasRisco, Gradual.OMS.Risco.Regra.Lib nao encontrada direto, usando Type.GetType()
+2018-02-01 18:33:33,471 [109] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:33:33,471 [109] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:33:33,471 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Implementacoes.Servicos.ServicoRelatorio, Gradual.Implementacoes.Servicos]
+2018-02-01 18:33:33,471 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Implementacoes.Servicos.ServicoRelatorio, Gradual.Implementacoes.Servicos
+2018-02-01 18:33:33,471 [109] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:HomeBroker.Contratos.IServicoRelatorio, HomeBroker.Contratos
+2018-02-01 18:33:33,471 [109] INFO  Gradual.OMS.Library.Servicos.Servico - Interface HomeBroker.Contratos.IServicoRelatorio, HomeBroker.Contratos nao encontrada direto, usando Type.GetType()
+2018-02-01 18:33:33,472 [109] ERROR Gradual.OMS.Library.Servicos.Servico - Interface HomeBroker.Contratos.IServicoRelatorio, HomeBroker.Contratos nao encontrada em nenhum dos assemblies.
+2018-02-01 18:33:33,472 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia]
+2018-02-01 18:33:33,472 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia
+2018-02-01 18:33:33,472 [109] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia
+2018-02-01 18:33:33,472 [109] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia nao encontrada direto, usando Type.GetType()
+2018-02-01 18:33:33,472 [109] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:33:33,472 [109] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:33:33,472 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia é controlavel.
+2018-02-01 18:41:01,803 [109] DEBUG Gradual.OMS.Library.Servicos.ServicoHost - CarregarConfig(): Carregando configuracoes para (Desenvolvimento)
+2018-02-01 18:41:01,810 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2018-02-01 18:41:01,915 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - WCF Base Address: System.Collections.Generic.List`1[System.String]
+2018-02-01 18:41:01,916 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - MEX Base Address: 
+2018-02-01 18:41:01,916 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia]
+2018-02-01 18:41:01,917 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia
+2018-02-01 18:41:01,920 [109] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia
+2018-02-01 18:41:01,920 [109] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia nao encontrada direto, usando Type.GetType()
+2018-02-01 18:41:02,002 [109] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:41:02,002 [109] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:41:02,002 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia é controlavel.
+2018-02-01 18:41:02,002 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Interface.ServicoInterfacePersistencia, Gradual.OMS.Interface]
+2018-02-01 18:41:02,002 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Interface.ServicoInterfacePersistencia, Gradual.OMS.Interface
+2018-02-01 18:41:02,002 [109] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Interface.IServicoInterfacePersistencia, Gradual.OMS.Interface
+2018-02-01 18:41:02,002 [109] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Interface.IServicoInterfacePersistencia, Gradual.OMS.Interface nao encontrada direto, usando Type.GetType()
+2018-02-01 18:41:02,080 [109] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:41:02,080 [109] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:41:02,080 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados]
+2018-02-01 18:41:02,080 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados
+2018-02-01 18:41:02,080 [109] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos
+2018-02-01 18:41:02,080 [109] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos nao encontrada direto, usando Type.GetType()
+2018-02-01 18:41:02,080 [109] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:41:02,080 [109] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:41:02,080 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Interface.ServicoInterface, Gradual.OMS.Interface]
+2018-02-01 18:41:02,080 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Interface.ServicoInterface, Gradual.OMS.Interface
+2018-02-01 18:41:02,080 [109] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Interface.IServicoInterface, Gradual.OMS.Interface
+2018-02-01 18:41:02,080 [109] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Interface.IServicoInterface, Gradual.OMS.Interface nao encontrada direto, usando Type.GetType()
+2018-02-01 18:41:02,172 [109] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:41:02,172 [109] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:41:02,172 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Risco.Regra.ServicoRegrasRisco, Gradual.OMS.Risco.Regra]
+2018-02-01 18:41:02,172 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Risco.Regra.ServicoRegrasRisco, Gradual.OMS.Risco.Regra
+2018-02-01 18:41:02,172 [109] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Risco.Regra.Lib.IServicoRegrasRisco, Gradual.OMS.Risco.Regra.Lib
+2018-02-01 18:41:02,172 [109] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Risco.Regra.Lib.IServicoRegrasRisco, Gradual.OMS.Risco.Regra.Lib nao encontrada direto, usando Type.GetType()
+2018-02-01 18:41:02,176 [109] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:41:02,177 [109] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:41:02,177 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Implementacoes.Servicos.ServicoRelatorio, Gradual.Implementacoes.Servicos]
+2018-02-01 18:41:02,177 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Implementacoes.Servicos.ServicoRelatorio, Gradual.Implementacoes.Servicos
+2018-02-01 18:41:02,177 [109] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:HomeBroker.Contratos.IServicoRelatorio, HomeBroker.Contratos
+2018-02-01 18:41:02,177 [109] INFO  Gradual.OMS.Library.Servicos.Servico - Interface HomeBroker.Contratos.IServicoRelatorio, HomeBroker.Contratos nao encontrada direto, usando Type.GetType()
+2018-02-01 18:41:02,178 [109] ERROR Gradual.OMS.Library.Servicos.Servico - Interface HomeBroker.Contratos.IServicoRelatorio, HomeBroker.Contratos nao encontrada em nenhum dos assemblies.
+2018-02-01 18:41:02,178 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia]
+2018-02-01 18:41:02,178 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia
+2018-02-01 18:41:02,178 [109] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia
+2018-02-01 18:41:02,178 [109] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia nao encontrada direto, usando Type.GetType()
+2018-02-01 18:41:02,178 [109] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:41:02,178 [109] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:41:02,178 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia é controlavel.
+2018-02-01 18:50:36,484 [109] DEBUG Gradual.OMS.Library.Servicos.ServicoHost - CarregarConfig(): Carregando configuracoes para (Desenvolvimento)
+2018-02-01 18:50:36,491 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2018-02-01 18:50:36,597 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - WCF Base Address: System.Collections.Generic.List`1[System.String]
+2018-02-01 18:50:36,597 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - MEX Base Address: 
+2018-02-01 18:50:36,597 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia]
+2018-02-01 18:50:36,599 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia
+2018-02-01 18:50:36,602 [109] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia
+2018-02-01 18:50:36,602 [109] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia nao encontrada direto, usando Type.GetType()
+2018-02-01 18:50:36,684 [109] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:50:36,684 [109] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:50:36,684 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia é controlavel.
+2018-02-01 18:50:36,684 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Interface.ServicoInterfacePersistencia, Gradual.OMS.Interface]
+2018-02-01 18:50:36,684 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Interface.ServicoInterfacePersistencia, Gradual.OMS.Interface
+2018-02-01 18:50:36,684 [109] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Interface.IServicoInterfacePersistencia, Gradual.OMS.Interface
+2018-02-01 18:50:36,684 [109] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Interface.IServicoInterfacePersistencia, Gradual.OMS.Interface nao encontrada direto, usando Type.GetType()
+2018-02-01 18:50:36,784 [109] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:50:36,784 [109] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:50:36,784 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados]
+2018-02-01 18:50:36,784 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados
+2018-02-01 18:50:36,784 [109] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos
+2018-02-01 18:50:36,784 [109] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos nao encontrada direto, usando Type.GetType()
+2018-02-01 18:50:36,785 [109] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:50:36,785 [109] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:50:36,785 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Interface.ServicoInterface, Gradual.OMS.Interface]
+2018-02-01 18:50:36,785 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Interface.ServicoInterface, Gradual.OMS.Interface
+2018-02-01 18:50:36,785 [109] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Interface.IServicoInterface, Gradual.OMS.Interface
+2018-02-01 18:50:36,785 [109] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Interface.IServicoInterface, Gradual.OMS.Interface nao encontrada direto, usando Type.GetType()
+2018-02-01 18:50:36,872 [109] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:50:36,872 [109] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:50:36,872 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Risco.Regra.ServicoRegrasRisco, Gradual.OMS.Risco.Regra]
+2018-02-01 18:50:36,872 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Risco.Regra.ServicoRegrasRisco, Gradual.OMS.Risco.Regra
+2018-02-01 18:50:36,872 [109] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Risco.Regra.Lib.IServicoRegrasRisco, Gradual.OMS.Risco.Regra.Lib
+2018-02-01 18:50:36,872 [109] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Risco.Regra.Lib.IServicoRegrasRisco, Gradual.OMS.Risco.Regra.Lib nao encontrada direto, usando Type.GetType()
+2018-02-01 18:50:36,876 [109] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:50:36,876 [109] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:50:36,876 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Implementacoes.Servicos.ServicoRelatorio, Gradual.Implementacoes.Servicos]
+2018-02-01 18:50:36,876 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Implementacoes.Servicos.ServicoRelatorio, Gradual.Implementacoes.Servicos
+2018-02-01 18:50:36,876 [109] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:HomeBroker.Contratos.IServicoRelatorio, HomeBroker.Contratos
+2018-02-01 18:50:36,876 [109] INFO  Gradual.OMS.Library.Servicos.Servico - Interface HomeBroker.Contratos.IServicoRelatorio, HomeBroker.Contratos nao encontrada direto, usando Type.GetType()
+2018-02-01 18:50:36,877 [109] ERROR Gradual.OMS.Library.Servicos.Servico - Interface HomeBroker.Contratos.IServicoRelatorio, HomeBroker.Contratos nao encontrada em nenhum dos assemblies.
+2018-02-01 18:50:36,877 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia]
+2018-02-01 18:50:36,877 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia
+2018-02-01 18:50:36,877 [109] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia
+2018-02-01 18:50:36,877 [109] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia nao encontrada direto, usando Type.GetType()
+2018-02-01 18:50:36,877 [109] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-01 18:50:36,877 [109] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-01 18:50:36,877 [109] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia é controlavel.

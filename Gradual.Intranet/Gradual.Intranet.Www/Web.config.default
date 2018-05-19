@@ -1,0 +1,1389 @@
+<?xml version="1.0"?>
+<configuration>
+
+  <configSections>
+    <sectionGroup name="system.web.extensions" type="System.Web.Configuration.SystemWebExtensionsSectionGroup, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35">
+      <sectionGroup name="scripting" type="System.Web.Configuration.ScriptingSectionGroup, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35">
+        <sectionGroup name="webServices" type="System.Web.Configuration.ScriptingWebServicesSectionGroup, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35">
+        </sectionGroup>
+      </sectionGroup>
+    </sectionGroup>
+
+    <!--
+    <section name="Gradual.OMS.Library.LocalizadorTiposConfig"
+             type="Gradual.OMS.Library.ConfigurationHandler, Gradual.OMS.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+             allowLocation="true"
+             allowDefinition="Everywhere"/>
+
+    <section name="Gradual.OMS.Library.Servicos.LocalizadorClienteConfig"
+             type="Gradual.OMS.Library.ConfigurationHandler, Gradual.OMS.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+             allowLocation="true"
+             allowDefinition="Everywhere"/>
+
+    <section name="Gradual.OMS.Persistencia.ServicoPersistenciaConfig"
+             type="Gradual.OMS.Library.ConfigurationHandler, Gradual.OMS.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+             allowLocation="true"
+             allowDefinition="Everywhere"/>
+
+    <section name="Gradual.OMS.Library.LogConfig"
+             type="Gradual.OMS.Library.ConfigurationHandler, Gradual.OMS.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+             allowLocation="true"
+             allowDefinition="Everywhere"/>
+-->
+    <section name="Gradual.OMS.Interface.ServicoInterfaceConfig"
+             type="Gradual.OMS.Library.ConfigurationHandler, Gradual.OMS.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+             allowLocation="true"
+             allowDefinition="Everywhere"/>
+
+    <section name="Gradual.OMS.Library.Servicos.ServicoHostConfig-Producao"
+             type="Gradual.OMS.Library.ConfigurationHandler, Gradual.OMS.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+             allowLocation="true"
+             allowDefinition="Everywhere"/>
+
+    <section name="Gradual.OMS.Library.Servicos.ServicoHostConfig-Desenvolvimento"
+             type="Gradual.OMS.Library.ConfigurationHandler, Gradual.OMS.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+             allowLocation="true"
+             allowDefinition="Everywhere"/>
+
+    <section name="Gradual.OMS.Library.Servicos.ServicoHostConfig-Mock"
+             type="Gradual.OMS.Library.ConfigurationHandler, Gradual.OMS.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+             allowLocation="true"
+             allowDefinition="Everywhere"/>
+
+    <section name="Gradual.OMS.Library.Servicos.ServicoHostConfig-Default"
+             type="Gradual.OMS.Library.ConfigurationHandler, Gradual.OMS.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+             allowLocation="true"
+             allowDefinition="Everywhere"/>
+
+    <section name="Gradual.OMS.Library.Servicos.LocalizadorClienteConfig"
+             type="Gradual.OMS.Library.ConfigurationHandler, Gradual.OMS.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+             allowLocation="true"
+             allowDefinition="Everywhere"/>
+
+    <section name="Gradual.OMS.Persistencia.ServicoPersistenciaConfig"
+             type="Gradual.OMS.Library.ConfigurationHandler, Gradual.OMS.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+             allowLocation="true"
+             allowDefinition="Everywhere"/>
+    <!--
+    <section name="Gradual.OMS.Sistemas.Comum.ServicoSegurancaConfig" 
+                 type="Gradual.OMS.Library.ConfigurationHandler, Gradual.OMS.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" 
+                 allowLocation="true"
+                 allowDefinition="Everywhere"/>
+-->
+    <section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler, log4net"/>
+    <section name="Gradual.OMS.Library.Servicos.AtivadorConfig" type="Gradual.OMS.Library.ConfigurationHandler, Gradual.OMS.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" allowLocation="true" allowDefinition="Everywhere"/>
+  </configSections>
+
+  <!-- CLIENTE DO LOCALIZADOR -->
+  <Gradual.OMS.Library.Servicos.LocalizadorClienteConfig>
+    <AtivacaoTipo>WCF</AtivacaoTipo>
+    <EndPoint>
+      <!--10.0.11.156-->
+      <Endereco>net.tcp://10.0.11.152:8000/Gradual.OMS.Library.Servicos.IServicoLocalizador</Endereco>
+      <!--<Endereco>net.tcp://192.168.254.11:8000/Gradual.OMS.Library.Servicos.IServicoLocalizador</Endereco>-->
+      <!--Endereco>net.tcp://10.0.11.156:8000/Gradual.OMS.Library.Servicos.IServicoLocalizador</Endereco-->
+      <NomeBindingType>System.ServiceModel.NetTcpBinding</NomeBindingType>
+    </EndPoint>
+  </Gradual.OMS.Library.Servicos.LocalizadorClienteConfig>
+
+  <!-- SERVICOS A CARREGAR -->
+  <Gradual.OMS.Library.Servicos.ServicoHostConfig-Producao>
+    <Servicos>
+      <!-- Gradual.Intranet.Contratos.IServicoInterface -->
+
+
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia</NomeInterface>
+        <NomeInstancia>Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+      <!-- 210 -->
+      <!-- Gradual.OMS.Contratos.Interface.IServicoInterfacePersistencia -->
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.Interface.IServicoInterfacePersistencia, Gradual.OMS.Interface</NomeInterface>
+        <NomeInstancia>Gradual.OMS.Interface.ServicoInterfacePersistencia, Gradual.OMS.Interface</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+      <!-- Gradual.Intranet.Contratos.IServicoPersistenciaCadastro -->
+      <ServicoInfo>
+        <NomeInterface>Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos</NomeInterface>
+        <NomeInstancia>Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+      <!-- Gradual.Intranet.Contratos.IServicoInterface -->
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.Interface.IServicoInterface, Gradual.OMS.Interface</NomeInterface>
+        <NomeInstancia>Gradual.OMS.Interface.ServicoInterface, Gradual.OMS.Interface</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+      <!-- Gradual.OMS.Risco.Regra.Lib.IServicoRegrasRisco -->
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.Risco.Regra.Lib.IServicoRegrasRisco, Gradual.OMS.Risco.Regra.Lib</NomeInterface>
+        <NomeInstancia>Gradual.OMS.Risco.Regra.ServicoRegrasRisco, Gradual.OMS.Risco.Regra</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+      <!-- Gradual.OMS.Contratos.Interface.IServicoRelatorio-->
+      <ServicoInfo>
+        <NomeInterface>HomeBroker.Contratos.IServicoRelatorio, HomeBroker.Contratos</NomeInterface>
+        <NomeInstancia>Gradual.Implementacoes.Servicos.ServicoRelatorio, Gradual.Implementacoes.Servicos</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+      <!-- Gradual.OMS.Contratos.Comum.IServicoPersistencia-->
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia</NomeInterface>
+        <NomeInstancia>Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+    </Servicos>
+  </Gradual.OMS.Library.Servicos.ServicoHostConfig-Producao>
+
+  <Gradual.OMS.Library.Servicos.ServicoHostConfig-Desenvolvimento>
+    <Servicos>
+
+      <!-- Gradual.OMS.Contratos.Comum.IServicoPersistencia -->
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia</NomeInterface>
+        <NomeInstancia>Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+      <!-- 210 -->
+      <!-- Gradual.OMS.Contratos.Interface.IServicoInterfacePersistencia -->
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.Interface.IServicoInterfacePersistencia, Gradual.OMS.Interface</NomeInterface>
+        <NomeInstancia>Gradual.OMS.Interface.ServicoInterfacePersistencia, Gradual.OMS.Interface</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+      <!-- Gradual.Intranet.Contratos.IServicoPersistenciaCadastro -->
+      <ServicoInfo>
+        <NomeInterface>Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos</NomeInterface>
+        <NomeInstancia>Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+      <!-- Gradual.Intranet.Contratos.IServicoInterface -->
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.Interface.IServicoInterface, Gradual.OMS.Interface</NomeInterface>
+        <NomeInstancia>Gradual.OMS.Interface.ServicoInterface, Gradual.OMS.Interface</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+      <!-- Gradual.OMS.Risco.Regra.Lib.IServicoRegrasRisco -->
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.Risco.Regra.Lib.IServicoRegrasRisco, Gradual.OMS.Risco.Regra.Lib</NomeInterface>
+        <NomeInstancia>Gradual.OMS.Risco.Regra.ServicoRegrasRisco, Gradual.OMS.Risco.Regra</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+      <!-- Gradual.OMS.Contratos.Interface.IServicoRelatorio-->
+      <ServicoInfo>
+        <NomeInterface>HomeBroker.Contratos.IServicoRelatorio, HomeBroker.Contratos</NomeInterface>
+        <NomeInstancia>Gradual.Implementacoes.Servicos.ServicoRelatorio, Gradual.Implementacoes.Servicos</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+      <!-- Gradual.OMS.Contratos.Comum.IServicoPersistencia-->
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia</NomeInterface>
+        <NomeInstancia>Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+      <!-- Gradual.OMS.Contratos.Comum.IServicoInterface-->
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.Interface.IServicoInterface, Gradual.OMS.Interface</NomeInterface>
+        <NomeInstancia>Gradual.OMS.Interface.ServicoInterface, Gradual.OMS.Interface</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+      <!--  ATENÇÃO!!! IServicoSegurancaPersistencia tem que vir ANTES de IServicoSeguranca no web.config!!  -->
+
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.Seguranca.Lib.IServicoSegurancaPersistencia, Gradual.OMS.Seguranca.Lib</NomeInterface>
+        <NomeInstancia>Gradual.OMS.Seguranca.ServicoSegurancaPersistencia, Gradual.OMS.Seguranca</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+      <!-- Gradual.Site.Lib.IServicoSeguranca -->
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.Seguranca.Lib.IServicoSeguranca, Gradual.OMS.Seguranca.Lib</NomeInterface>
+        <NomeInstancia>Gradual.OMS.Seguranca.ServicoSeguranca, Gradual.OMS.Seguranca</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+
+
+    </Servicos>
+  </Gradual.OMS.Library.Servicos.ServicoHostConfig-Desenvolvimento>
+
+  <Gradual.OMS.Library.Servicos.ServicoHostConfig-Mock>
+    <Servicos>
+
+      <!-- Gradual.OMS.Contratos.Comum.IServicoPersistencia -->
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.Contratos.Comum.IServicoPersistencia, Gradual.OMS.Contratos.Comum</NomeInterface>
+        <NomeInstancia>Gradual.OMS.Sistemas.Comum.ServicoPersistencia, Gradual.OMS.Sistemas.Comum</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+      <!-- Gradual.Intranet.Contratos.IServicoPersistenciaCadastro -->
+      <ServicoInfo>
+        <NomeInterface>Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos</NomeInterface>
+        <NomeInstancia>Gradual.Intranet.Servicos.Mock.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.Mock</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+      <!-- Gradual.Intranet.Contratos.IServicoInterface -->
+      <!--<ServicoInfo>
+        <NomeInterface>Gradual.OMS.Contratos.Interface.IServicoInterface, Gradual.OMS.Contratos.Interface</NomeInterface>
+        <NomeInstancia>Gradual.Intranet.Servicos.Mock.ServicoInterface, Gradual.Intranet.Servicos.Mock</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>-->
+
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.Interface.IServicoInterfacePersistencia, Gradual.OMS.Interface</NomeInterface>
+        <NomeInstancia>Gradual.OMS.Interface.ServicoInterfacePersistencia, Gradual.OMS.Interface</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+      <!-- Gradual.OMS.Contratos.Interface.IServicoInterfacePersistencia -->
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.Contratos.Interface.IServicoInterfacePersistencia, Gradual.OMS.Contratos.Interface</NomeInterface>
+        <NomeInstancia>Gradual.OMS.Sistemas.Interface.ServicoInterfacePersistencia, Gradual.OMS.Sistemas.Interface</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+      <!--Gradual.OMS.Contratos.Interface.IServicoRelatorio-->
+      <ServicoInfo>
+        <NomeInterface>HomeBroker.Contratos.IServicoRelatorio, HomeBroker.Contratos</NomeInterface>
+        <NomeInstancia>HomeBroker.Implementacoes.Mock.ServicoRelatorio, HomeBroker.Implementacoes.Mock</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+      <!-- Gradual.Intranet.Contratos.IServicoMensageria -->
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.Contratos.Comum.IServicoMensageria, Gradual.OMS.Contratos.Comum</NomeInterface>
+        <NomeInstancia>Gradual.Intranet.Servicos.Mock.ServicoMensageria, Gradual.Intranet.Servicos.Mock</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+      <!-- Gradual.Intranet.Contratos.IServicoMarketDataBMF -->
+      <ServicoInfo>
+        <NomeInterface>Orbite.RV.Contratos.MarketData.BMF.IServicoMarketDataBMF, Orbite.RV.Contratos.MarketData.BMF</NomeInterface>
+        <NomeInstancia>Gradual.Intranet.Servicos.Mock.ServicoMarketDataBMF, Gradual.Intranet.Servicos.Mock</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+      <!-- Gradual.OMS.Risco.Regra.Lib.IServicoRegrasRisco -->
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.Risco.Regra.Lib.IServicoRegrasRisco, Gradual.OMS.Risco.Regra.Lib</NomeInterface>
+        <NomeInstancia>Gradual.Intranet.Servicos.Mock.ServicoRegrasRisco, Gradual.Intranet.Servicos.Mock</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>Local</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+      </ServicoInfo>
+
+    </Servicos>
+  </Gradual.OMS.Library.Servicos.ServicoHostConfig-Mock>
+
+  <!-- SERVICOS COMUNS - PERSISTENCIA DE OBJETOS -->
+  <Gradual.OMS.Persistencia.ServicoPersistenciaConfig>
+    <Persistencias>
+      <PersistenciaInfo>
+        <TipoPersistencia>Gradual.Intranet.Servicos.BancoDeDados.Persistencias.PersistenciaDbIntranet, Gradual.Intranet.Servicos.BancoDeDados</TipoPersistencia>
+        <Default>true</Default>
+      </PersistenciaInfo>
+      <!--<PersistenciaInfo>
+        <TipoPersistencia>Gradual.OMS.Risco.Regra.Persistencia.PersistenciaRegraDB, Gradual.OMS.Risco.Regra</TipoPersistencia>
+        <ListaTipoObjeto>
+          <string>Gradual.OMS.Risco.Regra.Lib.Dados.GrupoItemInfo, Gradual.OMS.Risco.Regra.Lib</string>
+          <string>Gradual.OMS.Risco.Regra.Lib.Dados.GrupoInfo, Gradual.OMS.Risco.Regra.Lib</string>
+          <string>Gradual.OMS.Risco.Regra.Lib.Dados.PermissaoRiscoInfo, Gradual.OMS.Risco.Regra.Lib</string>
+          <string>Gradual.OMS.Risco.Regra.Lib.Dados.ParametroRiscoInfo, Gradual.OMS.Risco.Regra.Lib</string>
+          <string>Gradual.OMS.Risco.Regra.Lib.Dados.ParametroRiscoClienteInfo, Gradual.OMS.Risco.Regra.Lib</string>
+          <string>Gradual.OMS.Risco.Regra.Lib.Dados.PermissaoRiscoAssociadaInfo, Gradual.OMS.Risco.Regra.Lib</string>
+          <string>Gradual.OMS.Risco.Regra.Lib.Dados.ParametroRiscoClienteValorInfo, Gradual.OMS.Risco.Regra.Lib</string>
+          <string>Gradual.OMS.Risco.Regra.Lib.Dados.BolsaBancoInfo, Gradual.OMS.Risco.Regra.Lib</string>
+        </ListaTipoObjeto>
+      </PersistenciaInfo>-->
+
+    </Persistencias>
+  </Gradual.OMS.Persistencia.ServicoPersistenciaConfig>
+
+  <!-- SERVICO DE INTERFACE -->
+  <Gradual.OMS.Interface.ServicoInterfaceConfig>
+    <TipoPersistenciaGrupoComandoInterface>ArquivoConfiguracao</TipoPersistenciaGrupoComandoInterface>
+    <GruposComandoInterface>
+
+      <!-- Menu Dados de clientes -->
+      <GrupoComandoInterfaceInfo>
+        <CodigoGrupoComandoInterface>Menu_Dados_Clientes</CodigoGrupoComandoInterface>
+        <ComandosInterfaceRaiz>
+          <!-- Dados do Cliente F31790A9-CBAD-43B2-8357-BAB02F47ED0D -->
+          <ComandoInterfaceInfo Nome="Dados do Cliente" Tag="Formularios/Dados/DadosCompletos.aspx;Tipo_A ExibirEmNovo Tipo_Condicional_Bloquear_Passo3;" CodigoComandoInterface="Cliente_PermissaoCliente">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="F31790A9-CBAD-43B2-8357-BAB02F47ED0D" />
+          </ComandoInterfaceInfo>
+
+          <!--  Endereços 906C31E7-F3E3-4978-A3EB-A56551E4EB9B -->
+          <ComandoInterfaceInfo Nome="Endereços" Tag="Formularios/Dados/Enderecos.aspx;Tipo_A Tipo_Condicional_Bloquear_Passo3;" CodigoComandoInterface="Cliente_PermissaoClienteEnderecos">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="906C31E7-F3E3-4978-A3EB-A56551E4EB9B" />
+          </ComandoInterfaceInfo>
+
+          <!-- Telefones EA426A24-0E8A-410A-8E70-1D502A86F987-->
+          <ComandoInterfaceInfo Nome="Telefones" Tag="Formularios/Dados/Telefones.aspx;Tipo_A Tipo_Condicional_Bloquear_Passo3;" CodigoComandoInterface="Cliente_PermissaoClienteTelefones">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="EA426A24-0E8A-410A-8E70-1D502A86F987" />
+          </ComandoInterfaceInfo>
+
+          <!-- Inf. Patrimoniais 268EAF54-320E-4959-8262-77D283A1A817 -->
+          <ComandoInterfaceInfo Nome="Inf. Patrimoniais" Tag="Formularios/Dados/InformacoesPatrimoniais.aspx;Tipo_F Tipo_Condicional_Bloquear_Passo3;" CodigoComandoInterface="Cliente_PermissaoClienteInfoPatrimoniais">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="268EAF54-320E-4959-8262-77D283A1A817" />
+          </ComandoInterfaceInfo>
+
+          <!-- Rendimentos / Sit. Financeira 200F9C7F-2C71-431E-A838-32F83C2B72D2 -->
+          <ComandoInterfaceInfo Nome="Rendimentos / Sit. Financeira" Tag="Formularios/Dados/RendimentosSituacaoFinanceira.aspx;Tipo_J Tipo_Condicional_Bloquear_Passo3;" CodigoComandoInterface="Cliente_PermissaoClienteRendimentosSitFinanceira">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="200F9C7F-2C71-431E-A838-32F83C2B72D2" />
+          </ComandoInterfaceInfo>
+
+          <!-- Inf. Bancárias 21BF79E2-534B-4afe-9F69-7A539E0B4201 -->
+          <ComandoInterfaceInfo Nome="Inf. Bancárias" Tag="Formularios/Dados/InformacoesBancarias.aspx;Tipo_A Tipo_Condicional_Bloquear_Passo3;" CodigoComandoInterface="Cliente_PermissaoClienteInfoBancarias">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="21BF79E2-534B-4afe-9F69-7A539E0B4201" />
+          </ComandoInterfaceInfo>
+
+          <!-- Procuradores / Representantes AE18C291-039B-4377-ADB7-A89EEC22632C -->
+          <ComandoInterfaceInfo Nome="Controladores / Adminstradores e Procuradores" Tag="Formularios/Dados/Procuradores.aspx;Tipo_J Tipo_Condicional_Bloquear_Passo3;" CodigoComandoInterface="Cliente_PermissaoClienteProcuradores">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="AE18C291-039B-4377-ADB7-A89EEC22632C" />
+          </ComandoInterfaceInfo>
+
+          <!-- Representantes Legais 09DFBFF1-D916-4267-B9E9-923B78BF01AB -->
+          <ComandoInterfaceInfo Nome="Representantes Legais" Tag="Formularios/Dados/RepresentantesLegais.aspx;Tipo_F Tipo_Condicional_Bloquear_Passo3;" CodigoComandoInterface="Cliente_PermissaoClienteRepresentantesLegais">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="09DFBFF1-D916-4267-B9E9-923B78BF01AB" />
+          </ComandoInterfaceInfo>
+
+          <!-- Pessoas Autorizadas A1617EC7-2292-45e4-B32E-48CC35A255E6 -->
+          <ComandoInterfaceInfo Nome="Emitentes" Tag="Formularios/Dados/PessoasAutorizadas.aspx;Tipo_A Tipo_Condicional_Bloquear_Passo3;" CodigoComandoInterface="Cliente_PermissaoClientePessoasAutorizadas">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="A1617EC7-2292-45e4-B32E-48CC35A255E6" />
+          </ComandoInterfaceInfo>
+
+          <!-- Rep. para Não-Residente CA4AB31B-9241-4140-AB3A-ECCB1B29DF56 -->
+          <ComandoInterfaceInfo Nome="Rep. para Não-Residente" Tag="Formularios/Dados/RepresentantesParaNaoResidente.aspx;Tipo_J Tipo_Condicional_Bloquear_Passo3;" CodigoComandoInterface="Cliente_PermissaoClienteRepresentanteNaoResidente">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="CA4AB31B-9241-4140-AB3A-ECCB1B29DF56" />
+          </ComandoInterfaceInfo>
+
+
+          <!-- Coligadas / Controladoras ABA0DCB9-CB77-4D55-BC11-8B8895D1A243-->
+          <ComandoInterfaceInfo Nome="Coligadas / Controladoras" Tag="Formularios/Dados/EmpresasColigadas.aspx;Tipo_J Tipo_Condicional_Bloquear_Passo3;" CodigoComandoInterface="Cliente_PermissaoClienteColigadasControladoras">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="ABA0DCB9-CB77-4D55-BC11-8B8895D1A243" />
+          </ComandoInterfaceInfo>
+
+          <!-- Diretores 4A091610-9DCE-4FE5-A0DE-568FA9430FD0 -->
+          <ComandoInterfaceInfo Nome="Diretores" Tag="Formularios/Dados/Diretores.aspx;Tipo_J Tipo_Condicional_Bloquear_Passo3;" CodigoComandoInterface="Cliente_PermissaoClienteDiretores">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="4A091610-9DCE-4FE5-A0DE-568FA9430FD0" />
+          </ComandoInterfaceInfo>
+
+          <!-- Contratos 4FBAB4B9-E003-4a9e-A476-7B1BFEE3B9C4 -->
+          <ComandoInterfaceInfo Nome="Legislação e Contratos" Tag="Formularios/Dados/Contratos.aspx;Tipo_A Tipo_Condicional_Bloquear_Passo3;" CodigoComandoInterface="Cliente_PermissaoClienteContratos">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="4FBAB4B9-E003-4a9e-A476-7B1BFEE3B9C4" />
+          </ComandoInterfaceInfo>
+
+          <!-- Contratos 4FBAB4B9-E003-4a9e-A476-7B1BFEE3B9C4 -->
+          <!--<ComandoInterfaceInfo Nome="Custódia" Tag="Formularios/Dados/Custodia.aspx;Tipo_A" CodigoComandoInterface="Cliente_PermissaoCustodia">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="4FBAB4B9-E003-4a9e-A476-7B1BFEE3B9C4" />
+          </ComandoInterfaceInfo>-->
+
+        </ComandosInterfaceRaiz>
+      </GrupoComandoInterfaceInfo>
+
+      <!-- Menu ações de clientes -->
+      <GrupoComandoInterfaceInfo>
+        <CodigoGrupoComandoInterface>Menu_Acoes_Clientes</CodigoGrupoComandoInterface>
+        <ComandosInterfaceRaiz>
+
+          <!-- Finalizar / Visualizar / Imprimir 13231720-65E0-4ECC-8669-74E8FED95760 -->
+          <ComandoInterfaceInfo Nome="Finalizar / Visualizar / Imprimir" Tag="Formularios/Acoes/VerFichaCadastral.aspx;Tipo_A Tipo_F Tipo_J" CodigoComandoInterface="Cliente_PermissaoCliente_Cliente">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="13231720-65E0-4ECC-8669-74E8FED95760" />
+          </ComandoInterfaceInfo>
+
+          <!-- Efetuar Suitability 6346025B-D61B-46ee-BD71-2BD862135B1B -->
+          <ComandoInterfaceInfo Nome="Perfil do Investidor (Suitability)" Tag="Formularios/Acoes/Suitability.aspx;Tipo_A Tipo_F Tipo_J" CodigoComandoInterface="Cliente_PermissaoClienteEfetuarSuitability">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="7142fa28-c0b1-4ef1-b619-99b71f4c0645;6346025B-D61B-46ee-BD71-2BD862135B1B" />
+          </ComandoInterfaceInfo>
+
+          <!-- Pendências Cadastrais A4C1EF79-CBFB-4a8f-8049-AFA5D2484077 -->
+          <ComandoInterfaceInfo Nome="Pendências Cadastrais" Tag="Formularios/Acoes/VerPendencias.aspx;Tipo_A Tipo_F Tipo_J" CodigoComandoInterface="Cliente_PermissaoClientePendenciasCadastrais">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="A4C1EF79-CBFB-4a8f-8049-AFA5D2484077" />
+          </ComandoInterfaceInfo>
+
+          <!-- Entrega de Documentação Cadastral 94A0D61F-4A2A-4AE0-9D9D-DC4B205D86BA -->
+          <ComandoInterfaceInfo Nome="Documentação Entregue" Tag="Formularios/Acoes/DocumentacaoEntregue.aspx;Tipo_A Tipo_F Tipo_J" CodigoComandoInterface="Cliente_HistoricoEntregaDeDocumentacao">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="94A0D61F-4A2A-4AE0-9D9D-DC4B205D86BA" />
+          </ComandoInterfaceInfo>
+
+          <!-- Solicitação de Alteração Cadastral 8FF22E1A-F4AB-4591-AFCA-0F686491FEE4 -->
+          <ComandoInterfaceInfo Nome="Alteração Cadastral" Tag="Formularios/Acoes/SolicitacaoAlteracaoCadastral.aspx;Tipo_A Tipo_F Tipo_J" CodigoComandoInterface="Cliente_SolicitacaoAlteracaoCadastral">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="8FF22E1A-F4AB-4591-AFCA-0F686491FEE4" />
+          </ComandoInterfaceInfo>
+
+          <!-- Sincronizar com Sinacor 22EDA2C0-8036-4833-A80A-0536F36889EA -->
+          <ComandoInterfaceInfo Nome="Sincronizar com Sinacor" Tag="Formularios/Acoes/SincronizarComSinacor.aspx;Tipo_A Tipo_F Tipo_J" CodigoComandoInterface="Cliente_PermissaoClienteSincronizarSinacor">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="22EDA2C0-8036-4833-A80A-0536F36889EA" />
+          </ComandoInterfaceInfo>
+
+          <!-- Ativar / Inativar FBCB16CD-A8AA-4eff-9EA8-844FEE2920C8 -->
+          <ComandoInterfaceInfo Nome="Ativar / Inativar" Tag="Formularios/Acoes/Inativar.aspx;Tipo_A Tipo_F Tipo_J Tipo_Condicional_Passo;" CodigoComandoInterface="Cliente_PermissaoClienteAtivarDesativar">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="FBCB16CD-A8AA-4eff-9EA8-844FEE2920C8" />
+          </ComandoInterfaceInfo>
+
+          <!-- Efetivar Renovação D671BE57-3B5A-48f0-9FC2-5412EEE0C850-->
+          <ComandoInterfaceInfo Nome="Efetivar Renovação" Tag="Formularios/Acoes/EfetivarRenovacao.aspx;Tipo_A Tipo_F Tipo_J Tipo_Condicional_Passo;" CodigoComandoInterface="Cliente_PermissaoClienteEfetivarRenovacao">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="D671BE57-3B5A-48f0-9FC2-5412EEE0C850" />
+          </ComandoInterfaceInfo>
+
+          <!-- Configurar Limites FBCB16CD-A8AA-4eff-9EA8-844FEE2920C8 -->
+          <!--<ComandoInterfaceInfo Nome="Limites Operacionais" Tag="Formularios/Acoes/ConfigurarLimites.aspx;Tipo_A Tipo_Condicional_Passo;" CodigoComandoInterface="Cliente_PermissaoConfigurarLimites">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="86914a78-b8bf-4547-82d8-0f08c7a7d6a3" />
+          </ComandoInterfaceInfo>-->
+
+          <ComandoInterfaceInfo Nome="Spider Limites  BMF" Tag="Formularios/Acoes/SpiderLimitesBMF.aspx;Tipo_A Tipo_Condicional_Passo;" CodigoComandoInterface="Cliente_PermissaoConfigurarSpiderLimitesBMF">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="86914a78-b8bf-4547-82d8-0f08c7a7d6a3" />
+          </ComandoInterfaceInfo>
+
+          <ComandoInterfaceInfo Nome="Spider Limites BVSP" Tag="Formularios/Acoes/SpiderLimitesBVSP.aspx;Tipo_A Tipo_F Tipo_J Tipo_Condicional_Passo;" CodigoComandoInterface="Cliente_PermissaoConfigurarSpiderLimitesBVSP">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="86914a78-b8bf-4547-82d8-0f08c7a7d6a0" />
+          </ComandoInterfaceInfo>
+
+          <!-- Configurar Limites FBCB16CD-A8AA-4eff-9EA8-844FEE2920C8 -->
+          <ComandoInterfaceInfo Nome="Limites Operacionais BMF" Tag="Formularios/Acoes/ConfigurarLimitesBMF.aspx;Tipo_A Tipo_Condicional_Passo;" CodigoComandoInterface="Cliente_PermissaoConfigurarLimitesBMF">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="86914a78-b8bf-4547-82d8-0f08c7a7d6a3" />
+          </ComandoInterfaceInfo>
+
+          <ComandoInterfaceInfo Nome="Limites Operacionais BVSP" Tag="Formularios/Acoes/ConfigurarLimitesNovoOMS.aspx;Tipo_A Tipo_F Tipo_J Tipo_Condicional_Passo;" CodigoComandoInterface="Cliente_PermissaoConfigurarLimitesNovoOms">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="86914a78-b8bf-4547-82d8-0f08c7a7d6a0" />
+          </ComandoInterfaceInfo>
+
+          <!-- Conta Corrente 94A93744-5818-40AA-B9A1-0AEE78A86DF7 -->
+          <ComandoInterfaceInfo Nome="Conta Corrente" Tag="Formularios/Dados/ContaCorrente.aspx;Tipo_A" CodigoComandoInterface="Cliente_PermissaoContaCorrente">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="94A93744-5818-40AA-B9A1-0AEE78A86DF7" />
+          </ComandoInterfaceInfo>
+
+          <!-- Clubes e fundos 4BAB8DD1-8A24-444E-B400-AE6485F797CE -->
+          <ComandoInterfaceInfo Nome="Clubes e Fundos/Renda Fixa" Tag="Formularios/Dados/ClubesEFundos.aspx;Tipo_A" CodigoComandoInterface="Cliente_ClubesEFundos">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="4BAB8DD1-8A24-444E-B400-AE6485F797CE" />
+          </ComandoInterfaceInfo>
+
+          <!-- Financeiro 0AD757C8-063E-4A34-88D3-F2D3E529B35D -->
+          <ComandoInterfaceInfo Nome="Financeiro" Tag="Formularios/Dados/Posicao.aspx;Tipo_A" CodigoComandoInterface="Cliente_PermissaoPosicao">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="0AD757C8-063E-4A34-88D3-F2D3E529B35D" />
+          </ComandoInterfaceInfo>
+
+          <!-- Produtos D5F17575-E3A5-44D8-ADF1-5D97814F8990 -->
+          <ComandoInterfaceInfo Nome="Produtos" Tag="Formularios/Dados/DadosPlanosCliente.aspx;Tipo_A" CodigoComandoInterface="Cliente_ProdutosCliente">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="D5F17575-E3A5-44D8-ADF1-5D97814F8990" />
+          </ComandoInterfaceInfo>
+
+          <!--<ComandoInterfaceInfo Nome="Associar Parâmetros de Risco" Tag="Formularios/Acoes/AssociarPermissoesParametros.aspx;Tipo_A Tipo_SomenteComCodBovespa Tipo_F Tipo_J" CodigoComandoInterface="Cliente_PermissaoAssociarPermissoesParametros">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="FBCB16CD-A8AA-4eff-9EA8-844FEE2920C8" />
+          </ComandoInterfaceInfo>-->
+
+        </ComandosInterfaceRaiz>
+      </GrupoComandoInterfaceInfo>
+
+      <!-- Menu dados de risco -->
+      <GrupoComandoInterfaceInfo>
+        <CodigoGrupoComandoInterface>Menu_Dados_Risco</CodigoGrupoComandoInterface>
+        <ComandosInterfaceRaiz>
+          <!-- Dados Completos 097C4E1E-8EE6-4C09-B4EA-E6CFC4592202 -->
+          <ComandoInterfaceInfo Nome="Grupos" Tag="Formularios/Dados/DadosCompletos.aspx;ExibirEmNovo Tipo_Grupo Tipo_Permissao Tipo_Parametro" CodigoComandoInterface="Risco_PermissaoRiscoPerfilGrupos">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="097C4E1E-8EE6-4C09-B4EA-E6CFC4592202;11105bfc-c224-4a50-8157-2405afe1c01f;" />
+          </ComandoInterfaceInfo>
+
+          <!-- Dados Completos 097C4E1E-8EE6-4C09-B4EA-E6CFC4592202 -->
+          <ComandoInterfaceInfo Nome="Itens do Grupo" Tag="Formularios/Dados/Itens.aspx;Tipo_Grupo" CodigoComandoInterface="Risco_PermissaoRiscoPerfilRegras">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="F69D1BF3-F240-46B4-B084-8F8AF86181DA;11105bfc-c224-4a50-8157-2405afe1c01f;" />
+          </ComandoInterfaceInfo>
+
+          <ComandoInterfaceInfo Nome="Grupo/Alavancagem" Tag="Formularios/Dados/GrupoAlavancagem.aspx;ExibirEmNovo Tipo_Grupo Tipo_Permissao Tipo_Parametro" CodigoComandoInterface="Risco_PermissaoRiscoPerfilGrupoAlavancagem">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="097C4E1E-8EE6-4C09-B4EA-E6CFC4592202;11105bfc-c224-4a50-8157-2405afe1c01f;" />
+          </ComandoInterfaceInfo>
+
+          <ComandoInterfaceInfo Nome="Parâmetro Alavancagem" Tag="Formularios/Dados/ParametroAlavancagem.aspx;ExibirEmNovo Tipo_Grupo Tipo_Permissao Tipo_Parametro" CodigoComandoInterface="Risco_PermissaoRiscoPerfilParametroAlanvacagem">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="097C4E1E-8EE6-4C09-B4EA-E6CFC4592202;11105bfc-c224-4a50-8157-2405afe1c01f;" />
+          </ComandoInterfaceInfo>
+
+          <ComandoInterfaceInfo Nome="Cliente/Grupo" Tag="Formularios/Dados/ClienteGrupo.aspx;ExibirEmNovo Tipo_Grupo Tipo_Permissao Tipo_Parametro" CodigoComandoInterface="Risco_PermissaoRiscoClienteGrupo">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="8419532D-322B-4CB3-B265-B86C480E1307;11105bfc-c224-4a50-8157-2405afe1c01f;" />
+          </ComandoInterfaceInfo>
+
+          <ComandoInterfaceInfo Nome="Manutenção Cliente" Tag="Formularios/Dados/ManutencaoCliente.aspx;ExibirEmNovo Tipo_Grupo Tipo_Permissao Tipo_Parametro" CodigoComandoInterface="Risco_PermissaoRiscoManutencaoCliente">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="CC58E1B9-B517-476C-AA50-DC718E4EF79D;11105bfc-c224-4a50-8157-2405afe1c01f;" />
+          </ComandoInterfaceInfo>
+
+        </ComandosInterfaceRaiz>
+      </GrupoComandoInterfaceInfo>
+
+      <!-- Menu ações de risco -->
+      <GrupoComandoInterfaceInfo>
+        <CodigoGrupoComandoInterface>Menu_Acoes_Risco</CodigoGrupoComandoInterface>
+        <ComandosInterfaceRaiz>
+          <!-- Dados Completos 097C4E1E-8EE6-4C09-B4EA-E6CFC4592202 -->
+          <ComandoInterfaceInfo Nome="Associar Permissões e Parametros" Tag="Formularios/Dados/AssociarPermissoesParametros.aspx;" CodigoComandoInterface="Risco_PermissaoRiscoPerfilParametros">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="097C4E1E-8EE6-4C09-B4EA-E6CFC4592202" />
+          </ComandoInterfaceInfo>
+          <!-- Dados Completos 097C4E1E-8EE6-4C09-B4EA-E6CFC4592202 -->
+          <ComandoInterfaceInfo Nome="Definir Valores dos Parametros" Tag="Formularios/Dados/ValoresParametros.aspx;" CodigoComandoInterface="Risco_PermissaoRiscoPerfilRegrasValores">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="F69D1BF3-F240-46B4-B084-8F8AF86181DA" />
+          </ComandoInterfaceInfo>
+        </ComandosInterfaceRaiz>
+      </GrupoComandoInterfaceInfo>
+
+      <!-- Menu dados de risco -->
+      <GrupoComandoInterfaceInfo>
+        <CodigoGrupoComandoInterface>Menu_Dados_Risco_Restricoes</CodigoGrupoComandoInterface>
+        <ComandosInterfaceRaiz>
+
+          <ComandoInterfaceInfo Nome="Grupo de Restrição" Tag="Formularios/Dados/DadosGrupoRestricao.aspx;ExibirEmNovo Tipo_Grupo Tipo_Permissao Tipo_Parametro" CodigoComandoInterface="Risco_PermissaoRiscoPerfilGrupos">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="097C4E1E-8EE6-4C09-B4EA-E6CFC4592202;11105bfc-c224-4a50-8157-2405afe1c01f;" />
+          </ComandoInterfaceInfo>
+
+          <ComandoInterfaceInfo Nome="Ativos / Grupo de restrições" Tag="Formularios/Dados/AtivosGruposRestricoes.aspx;Tipo_Grupo" CodigoComandoInterface="Risco_PermissaoRiscoPerfilRegras">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="F69D1BF3-F240-46B4-B084-8F8AF86181DA;11105bfc-c224-4a50-8157-2405afe1c01f;" />
+          </ComandoInterfaceInfo>
+
+          <ComandoInterfaceInfo Nome="Manutenção de Restrições" Tag="Formularios/Dados/ManutencaoRestricoes.aspx;ExibirEmNovo Tipo_Grupo Tipo_Permissao Tipo_Parametro" CodigoComandoInterface="Risco_PermissaoRiscoPerfilParametroAlanvacagem">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="097C4E1E-8EE6-4C09-B4EA-E6CFC4592202;11105bfc-c224-4a50-8157-2405afe1c01f;" />
+          </ComandoInterfaceInfo>
+
+          <ComandoInterfaceInfo Nome="Trava por Exposição" Tag="Formularios/Dados/TravaExposicao.aspx;ExibirEmNovo Tipo_Grupo Tipo_Permissao Tipo_Parametro" CodigoComandoInterface="Risco_PermissaoRiscoClienteGrupo">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="8419532D-322B-4CB3-B265-B86C480E1307;11105bfc-c224-4a50-8157-2405afe1c01f;" />
+          </ComandoInterfaceInfo>
+
+        </ComandosInterfaceRaiz>
+      </GrupoComandoInterfaceInfo>
+
+      <!-- Menu dados de risco -->
+      <GrupoComandoInterfaceInfo>
+        <CodigoGrupoComandoInterface>Menu_Dados_Risco_Restricoes_Spider</CodigoGrupoComandoInterface>
+        <ComandosInterfaceRaiz>
+
+          <ComandoInterfaceInfo Nome="Grupo de Restrição (Spider)" Tag="Formularios/Dados/DadosGrupoRestricaoSpider.aspx;ExibirEmNovo Tipo_Grupo Tipo_Permissao Tipo_Parametro" CodigoComandoInterface="Risco_PermissaoRiscoPerfilGrupos">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="097C4E1E-8EE6-4C09-B4EA-E6CFC4592202;11105bfc-c224-4a50-8157-2405afe1c01f;" />
+          </ComandoInterfaceInfo>
+
+          <ComandoInterfaceInfo Nome="Ativos / Grupo de restrições (Spider)" Tag="Formularios/Dados/AtivosGruposRestricoesSpider.aspx;Tipo_Grupo" CodigoComandoInterface="Risco_PermissaoRiscoPerfilRegras">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="F69D1BF3-F240-46B4-B084-8F8AF86181DA;11105bfc-c224-4a50-8157-2405afe1c01f;" />
+          </ComandoInterfaceInfo>
+
+          <ComandoInterfaceInfo Nome="Manutenção de Restrições (Spider)" Tag="Formularios/Dados/ManutencaoRestricoesSpider.aspx;ExibirEmNovo Tipo_Grupo Tipo_Permissao Tipo_Parametro" CodigoComandoInterface="Risco_PermissaoRiscoPerfilParametroAlanvacagem">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="097C4E1E-8EE6-4C09-B4EA-E6CFC4592202;11105bfc-c224-4a50-8157-2405afe1c01f;" />
+          </ComandoInterfaceInfo>
+
+          <ComandoInterfaceInfo Nome="Trava por Exposição (Spider)" Tag="Formularios/Dados/TravaExposicaoSpider.aspx;ExibirEmNovo Tipo_Grupo Tipo_Permissao Tipo_Parametro" CodigoComandoInterface="Risco_PermissaoRiscoClienteGrupo">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="8419532D-322B-4CB3-B265-B86C480E1307;11105bfc-c224-4a50-8157-2405afe1c01f;" />
+          </ComandoInterfaceInfo>
+
+        </ComandosInterfaceRaiz>
+      </GrupoComandoInterfaceInfo>
+
+
+      <!-- Menu Principal -->
+      <GrupoComandoInterfaceInfo>
+        <CodigoGrupoComandoInterface>default</CodigoGrupoComandoInterface>
+        <ComandosInterfaceRaiz>
+          <!-- MENU CLIENTES -->
+          <ComandoInterfaceInfo Nome="Clientes" Tag="lnkMenuPrincipal_Click(this);Clientes;SubMenu Sistema_Clientes" CodigoComandoInterface="Sistema_Clientes">
+            <Seguranca TipoAtivacao="QualquerCondicao" Perfis="4;2" Permissoes="9C5DA26B-8C30-4c1d-AA7A-B7A22CF2CA8F;F31790A9-CBAD-43B2-8357-BAB02F47ED0D" />
+            <Filhos>
+              <ComandoInterfaceInfo Nome="Busca" Tag="lnkMenuSecundario_Click(this);Busca" CodigoComandoInterface="Busca">
+                <Seguranca TipoAtivacao="QualquerCondicao" Perfis="4;2" Permissoes="9C5DA26B-8C30-4c1d-AA7A-B7A22CF2CA8F;F31790A9-CBAD-43B2-8357-BAB02F47ED0D" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Novo Cliente PF" Tag="lnkMenuSecundario_Click(this);Novo_PF;" CodigoComandoInterface="Novo_PF">
+                <Seguranca TipoAtivacao="QualquerCondicao" Perfis="4;2" Permissoes="9C5DA26B-8C30-4c1d-AA7A-B7A22CF2CA8F;8CBBCD25-D74D-4ef6-9646-28EB37679960;4239f749-5c0c-4fd0-abdd-281d94a11744" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Novo Cliente PJ" Tag="lnkMenuSecundario_Click(this);Novo_PJ;" CodigoComandoInterface="Novo_PJ" >
+                <Seguranca TipoAtivacao="QualquerCondicao" Perfis="4;2" Permissoes="9C5DA26B-8C30-4c1d-AA7A-B7A22CF2CA8F;8CBBCD25-D74D-4ef6-9646-28EB37679960;4239f749-5c0c-4fd0-abdd-281d94a11744" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Reserva de IPO" Tag="lnkMenuSecundario_Click(this);ReservaIPO;" CodigoComandoInterface="ReservaIPO">
+                <Seguranca TipoAtivacao="QualquerCondicao" Perfis="2" Permissoes="c04919a3-babb-4c53-ad6b-0bb42bd6b3b9" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Link para Prospect" Tag="lnkMenuSecundario_Click(this);LinkProspect;" CodigoComandoInterface="LinkProspect">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="22FF518C-C7D3-4ff0-A0CB-96F2476068BB" />
+              </ComandoInterfaceInfo>
+            </Filhos>
+          </ComandoInterfaceInfo>
+
+          <!-- MENU COMPLIANCE -->
+          <ComandoInterfaceInfo Nome="Compliance" Tag="lnkMenuPrincipal_Click(this);Compliance;SubMenu Sistema_Compliance;"       CodigoComandoInterface="Sistema_Compliance_Pai">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="B6DB5706-B7C0-4B3D-A338-2D33D0F729D4" />
+            <Filhos>
+              <ComandoInterfaceInfo Nome="Estatísticas e Daytrade" Tag="lnkMenuSecundario_Click(this);EstatisticaDayTrade;"         CodigoComandoInterface="Sistema_Compliance_EstatisticaDayTrade">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="B6DB5706-B7C0-4B3D-A338-2D33D0F729D4" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Ordens alteradas" Tag="lnkMenuSecundario_Click(this);OrdensAlteradasDayTrade;" CodigoComandoInterface="Sistema_Compliance_OrdensAlteradasDayTrade">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="B6DB5706-B7C0-4B3D-A338-2D33D0F729D4" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Negócios Diretos" Tag="lnkMenuSecundario_Click(this);NegociosDiretos;"                  CodigoComandoInterface="Sistema_Compliance_NegociosDiretos">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="B6DB5706-B7C0-4B3D-A338-2D33D0F729D4" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Churning" Tag="lnkMenuSecundario_Click(this);Churning;"                  CodigoComandoInterface="Sistema_Compliance_Churning">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="B6DB5706-B7C0-4B3D-A338-2D33D0F729D4" />
+              </ComandoInterfaceInfo>
+            </Filhos>
+          </ComandoInterfaceInfo>
+
+          <!-- MENU RISCO -->
+          <ComandoInterfaceInfo Nome="Risco" Tag="lnkMenuPrincipal_Click(this);Risco;SubMenu Sistema_Risco;" CodigoComandoInterface="Sistema_Risco_Pai">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="11105bfc-c224-4a50-8157-2405afe1c01f" />
+            <!--<Filhos>
+              <ComandoInterfaceInfo Nome="Alavancagem" Tag="lnkMenuSecundario_Click(this);GruposDeRisco;" CodigoComandoInterface="Sistema_Risco_Grupos">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="11105bfc-c224-4a50-8157-2405afe1c01f" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Relatórios" Tag="lnkMenuSecundario_Click(this);Relatorios;" CodigoComandoInterface="Sistema_Risco_Relatorios">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="11105bfc-c224-4a50-8157-2405afe1c01f" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Monitoramento de Risco" Tag="lnkMenuSecundario_Click(this);MonitoramentoDeRisco;" CodigoComandoInterface="Sistema_Risco_Monitoramento">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="11105bfc-c224-4a50-8157-2405afe1c01f" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Monitoramento de Risco Geral" Tag="lnkMenuSecundario_Click(this);MonitoramentoRiscoGeral;" CodigoComandoInterface="Sistema_Risco_MonitoramentoDeRiscoGeral">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="D788E179-29AA-44C4-9CE1-93E55A6DFC0C" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="PLD" Tag="lnkMenuSecundario_Click(this);PLD;" CodigoComandoInterface="Sistema_Risco_PLD">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="11105bfc-c224-4a50-8157-2405afe1c01f" />
+              </ComandoInterfaceInfo>
+            </Filhos>-->
+            <Filhos>
+              <ComandoInterfaceInfo Nome="Alavancagem" Tag="lnkMenuSecundario_Click(this);GruposDeRisco;" CodigoComandoInterface="Sistema_Risco_Grupos">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="8419532d-322b-4cb3-b265-b86c480e1307"  />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Restrições" Tag="lnkMenuSecundario_Click(this);GruposDeRiscoRestricoes;" CodigoComandoInterface="Sistema_Risco_Grupos_Restricoes">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="8419532d-322b-4cb3-b265-b86c480e1307"  />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Restrições Spider" Tag="lnkMenuSecundario_Click(this);GruposDeRiscoRestricoesSpider;" CodigoComandoInterface="Sistema_Risco_Grupos_Restricoes_Spider">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="8419532d-322b-4cb3-b265-b86c480e1307"  />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Relatórios" Tag="lnkMenuSecundario_Click(this);Relatorios;" CodigoComandoInterface="Sistema_Risco_Relatorios">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="81DD43F4-C6F4-4B94-8799-FEE9BA7A81B1" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Monitoramento Intradiário" Tag="lnkMenuSecundario_Click(this);MonitoramentoIntradiario;" CodigoComandoInterface="Sistema_Risco_Monitoramento_Intradiario">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="8419532d-322b-4cb3-b265-b86c480e1307"  />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Suitability/Lavagem" Tag="lnkMenuSecundario_Click(this);SuitabilityLavagem;" CodigoComandoInterface="Sistema_Risco_Suitability_Lavagem">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="8419532d-322b-4cb3-b265-b86c480e1307"  />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Monitoramento de Risco" Tag="lnkMenuSecundario_Click(this);MonitoramentoDeRisco;" CodigoComandoInterface="Sistema_Risco_Monitoramento">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="FB683E8B-18F3-4422-8AEF-B3CBE2D4F43B" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Monitoramento de Risco Geral" Tag="lnkMenuSecundario_Click(this);MonitoramentoRiscoGeral;" CodigoComandoInterface="Sistema_Risco_MonitoramentoDeRiscoGeral">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="D788E179-29AA-44C4-9CE1-93E55A6DFC0C" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="PLD" Tag="lnkMenuSecundario_Click(this);PLD;" CodigoComandoInterface="Sistema_Risco_PLD">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="49A2E0C6-EE7D-40CD-94BE-549D82559DDC" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Resumo Cliente" Tag="lnkMenuSecundario_Click(this);MonitoramentoRiscoGeralDetalhamento;" CodigoComandoInterface="Sistema_Risco_MonitoramentoRiscoGeralDetalhamento">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="ADFEA546-6925-4864-AF9A-20634F930D10" />
+              </ComandoInterfaceInfo>
+            </Filhos>
+          </ComandoInterfaceInfo>
+
+          <!-- MENU PAPÉIS
+          <ComandoInterfaceInfo Nome="Papéis" Tag="lnkMenuPrincipal_Click(this);Papeis;SubMenu Sistema_Papeis" CodigoComandoInterface="Sistema_Papeis">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="9C5DA26B-8C30-4c1d-AA7A-B7A22CF2CA8F" />
+            <Filhos>
+              <ComandoInterfaceInfo Nome="Busca" Tag="lnkMenuSecundario_Click(this);Busca;" CodigoComandoInterface="Sistema_Papeis_Busca">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="9C5DA26B-8C30-4c1d-AA7A-B7A22CF2CA8F" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Novo Papel" Tag="lnkMenuSecundario_Click(this);Novo_Papel;" CodigoComandoInterface="Novo_Papel">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="9C5DA26B-8C30-4c1d-AA7A-B7A22CF2CA8F" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Sincronização de Papéis" Tag="lnkMenuSecundario_Click(this);Sincronizacao;" CodigoComandoInterface="Sincronizacao">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="9C5DA26B-8C30-4c1d-AA7A-B7A22CF2CA8F" />
+              </ComandoInterfaceInfo>
+            </Filhos>
+          </ComandoInterfaceInfo> -->
+
+          <!-- MENU SEGURANÇA -->
+          <ComandoInterfaceInfo Nome="Segurança" Tag="lnkMenuPrincipal_Click(this);Seguranca;SubMenu Sistema_Seguranca" CodigoComandoInterface="Sistema_Seguranca">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="22FF518C-C7D3-4ff0-A0CB-96F2476068BB"/>
+            <Filhos>
+              <ComandoInterfaceInfo Nome="Busca" Tag="lnkMenuSecundario_Click(this);Busca;" CodigoComandoInterface="Sistema_Seguranca_Busca">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="9C5DA26B-8C30-4c1d-AA7A-B7A22CF2CA8F" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Novo Usuário" Tag="lnkMenuSecundario_Click(this);Novo_Usuario;" CodigoComandoInterface="Novo_Usuario">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="9C5DA26B-8C30-4c1d-AA7A-B7A22CF2CA8F" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Novo Perfil" Tag="lnkMenuSecundario_Click(this);Novo_Perfil;" CodigoComandoInterface="Novo_Perfil">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="9C5DA26B-8C30-4c1d-AA7A-B7A22CF2CA8F" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Nova Permissão" Tag="lnkMenuSecundario_Click(this);Novo_PermissaoSeguranca;" CodigoComandoInterface="Novo_PermissaoSeguranca">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="9C5DA26B-8C30-4c1d-AA7A-B7A22CF2CA8F" />
+              </ComandoInterfaceInfo>
+              <!--<ComandoInterfaceInfo Nome="Associar Permissões" Tag="lnkMenuSecundario_Click(this);AssociarPermissoes;" CodigoComandoInterface="AssociarPermissoes">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="9C5DA26B-8C30-4c1d-AA7A-B7A22CF2CA8F" />
+              </ComandoInterfaceInfo>-->
+              <ComandoInterfaceInfo Nome="Alterar Senha" Tag="lnkMenuSecundario_Click(this);AlterarSenha;" CodigoComandoInterface="Alterar Senha">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="22FF518C-C7D3-4ff0-A0CB-96F2476068BB"/>
+              </ComandoInterfaceInfo>
+              <!--ComandoInterfaceInfo Nome="Relatórios" Tag="lnkMenuSecundario_Click(this);Relatorios;" CodigoComandoInterface="Sistema_Seguranca_Relatorios">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="9C5DA26B-8C30-4c1d-AA7A-B7A22CF2CA8F" />
+              </ComandoInterfaceInfo-->
+            </Filhos>
+          </ComandoInterfaceInfo>
+
+          <!-- MENU MONITORAMENTO -->
+          <ComandoInterfaceInfo Nome="Monitoramento" Tag="lnkMenuPrincipal_Click(this);Monitoramento;SubMenu Sistema_Monitoramento" CodigoComandoInterface="Sistema_Monitoramento">
+            <Seguranca TipoAtivacao="QualquerCondicao" Perfis="2" Permissoes="3ac5458e-0f42-4cd6-bdc4-69824057faff" />
+            <Filhos>
+              <!--<ComandoInterfaceInfo Nome="Ordens" Tag="lnkMenuSecundario_Click(this);Ordens;" CodigoComandoInterface="Ordens">
+                <Seguranca TipoAtivacao="QualquerCondicao" Perfis="2" Permissoes="b8d66568-d0aa-4392-a4ba-b609a716139b" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Ordens Stop" Tag="lnkMenuSecundario_Click(this);OrdensStop;" CodigoComandoInterface="OrdensStop">
+                <Seguranca TipoAtivacao="QualquerCondicao" Perfis="2" Permissoes="69821668-8e7b-44f1-983d-758b7911547f" />
+              </ComandoInterfaceInfo>-->
+
+              <ComandoInterfaceInfo Nome="Ordens Novo OMS" Tag="lnkMenuSecundario_Click(this);OrdensNovoOMS;" CodigoComandoInterface="OrdensNovoOMS">
+                <Seguranca TipoAtivacao="QualquerCondicao" Perfis="2" Permissoes="69821668-8e7b-44f1-983d-758b7911547f" />
+              </ComandoInterfaceInfo>
+
+              <ComandoInterfaceInfo Nome="Ordens Spider" Tag="lnkMenuSecundario_Click(this);OrdensSpider;" CodigoComandoInterface="OrdensSpider">
+                <Seguranca TipoAtivacao="QualquerCondicao" Perfis="2" Permissoes="69821668-8e7b-44f1-983d-758b7911547f" />
+              </ComandoInterfaceInfo>
+
+              <ComandoInterfaceInfo Nome="Ordens Sinacor" Tag="lnkMenuSecundario_Click(this);Ordens;" CodigoComandoInterface="Ordens">
+                <Seguranca TipoAtivacao="QualquerCondicao" Perfis="2" Permissoes="b8d66568-d0aa-4392-a4ba-b609a716139b" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Termos" Tag="lnkMenuSecundario_Click(this);Termos;" CodigoComandoInterface="Termos">
+                <Seguranca TipoAtivacao="QualquerCondicao" Perfis="2" Permissoes="b8d66568-d0aa-4392-a4ba-b609a716139b" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Usuários Logados" Tag="lnkMenuSecundario_Click(this);UsuariosLogados;" CodigoComandoInterface="UsuariosLogados">
+                <Seguranca TipoAtivacao="QualquerCondicao" Perfis="2" Permissoes="b64ec043-eff9-4eaa-952a-995c882d6660" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Desbloqueio Custódia" Tag="lnkMenuSecundario_Click(this);DesbloqueioCustodia;" CodigoComandoInterface="DesbloqueioCustodia">
+                <Seguranca TipoAtivacao="QualquerCondicao" Perfis="2" Permissoes="9C5DA26B-8C30-4c1d-AA7A-B7A22CF2CA8F" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Relatórios" Tag="lnkMenuSecundario_Click(this);Relatorios;" CodigoComandoInterface="Relatorios">
+                <Seguranca TipoAtivacao="QualquerCondicao" Perfis="2" Permissoes="69821668-8e7b-44f1-983d-758b7911547f" />
+              </ComandoInterfaceInfo>
+            </Filhos>
+          </ComandoInterfaceInfo>
+
+          <!-- MENU ADMIN CADASTRO -->
+          <ComandoInterfaceInfo Nome="Admin Cadastro" Tag="lnkMenuPrincipal_Click(this);Sistema;SubMenu Sistema_Sistema" CodigoComandoInterface="Sistema_Sistema">
+            <Seguranca TipoAtivacao="QualquerCondicao"  Permissoes="7beaef45-0927-485d-b56a-f539c20511b8" />
+            <Filhos>
+              <ComandoInterfaceInfo Nome="Autorizações" Tag="lnkMenuSecundario_Click(this);AutorizacoesDeCadastro;" CodigoComandoInterface="AutorizacoesDeCadastro">
+                <Seguranca TipoAtivacao="QualquerCondicao"  Permissoes="A4E18E5F-99E0-4182-9945-6F270D61E329" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Cadastrar Listas" Tag="lnkMenuSecundario_Click(this);ObjetosDoSistema;" CodigoComandoInterface="ObjetosDoSistema">
+                <Seguranca TipoAtivacao="QualquerCondicao"  Permissoes="9932ce92-6359-4afb-8a0f-9db6e8c0f2b0" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Cadastrar Variáveis" Tag="lnkMenuSecundario_Click(this);VariaveisDoSistema;" CodigoComandoInterface="VariaveisDoSistema">
+                <Seguranca TipoAtivacao="QualquerCondicao"  Permissoes="0098c008-be31-46df-a982-129e0003b88c" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Migração entre Assessores" Tag="lnkMenuSecundario_Click(this);Migracao;" CodigoComandoInterface="Migracao">
+                <Seguranca TipoAtivacao="QualquerCondicao"  Permissoes="5773bac3-3502-478a-80cd-c00ce5664a8c" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Importar Cliente do Sinacor" Tag="lnkMenuSecundario_Click(this);Importacao;" CodigoComandoInterface="Importacao">
+                <Seguranca TipoAtivacao="QualquerCondicao"  Permissoes="9f4b5526-e001-499f-a54a-b4fa91cdf144" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Cadastro de Pessoas vinculadas" Tag="lnkMenuSecundario_Click(this);PessoasVinculadas;" CodigoComandoInterface="PessoasVinculadas">
+                <Seguranca TipoAtivacao="QualquerCondicao"  Permissoes="b06a40c9-7015-46c0-9a90-3130c4024e2d" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Pessoas Expostas Politicamente" Tag="lnkMenuSecundario_Click(this);PessoasExpostasPoliticamente;" CodigoComandoInterface="PessoasExpostasPoliticamente">
+                <Seguranca TipoAtivacao="QualquerCondicao"  Permissoes="d2ae9473-8b12-45a7-b86c-41604a665ca4" />
+              </ComandoInterfaceInfo>
+              <ComandoInterfaceInfo Nome="Relatórios" Tag="lnkMenuSecundario_Click(this);Relatorios;" CodigoComandoInterface="RelatoriosAdminCadastro">
+                <Seguranca TipoAtivacao="QualquerCondicao"  Permissoes="59b115f0-b454-4347-a36c-f85c893dcfe5" />
+              </ComandoInterfaceInfo>
+            </Filhos>
+          </ComandoInterfaceInfo>
+
+          <!-- MENU HOMEBROKER  -->
+          <ComandoInterfaceInfo Nome="Home Broker" Tag="lnkMenuPrincipal_Click(this);HomeBroker;SubMenu Sistema_HomeBroker" CodigoComandoInterface="Sistema_HomeBroker">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="7dc32c50-5785-4845-b32f-bb88a20cf89d" />
+            <Filhos>
+              <ComandoInterfaceInfo Nome="Avisos" Tag="lnkMenuSecundario_Click(this);Avisos;" CodigoComandoInterface="Avisos">
+                <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="7dc32c50-5785-4845-b32f-bb88a20cf89d" />
+              </ComandoInterfaceInfo>
+              <!--ComandoInterfaceInfo Nome="Ordens Stop" Tag="lnkMenuSecundario_Click(this);OrdensStop;" CodigoComandoInterface="OrdensStop">
+                        <Seguranca TipoAtivacao="QualquerCondicao" Perfis="2" Permissoes="9C5DA26B-8C30-4c1d-AA7A-B7A22CF2CA8F" />
+                    </ComandoInterfaceInfo>
+                    <ComandoInterfaceInfo Nome="Usuários Logados" Tag="lnkMenuSecundario_Click(this);UsuariosLogados;" CodigoComandoInterface="UsuariosLogados">
+                        <Seguranca TipoAtivacao="QualquerCondicao" Perfis="2" Permissoes="9C5DA26B-8C30-4c1d-AA7A-B7A22CF2CA8F" />
+                    </ComandoInterfaceInfo-->
+            </Filhos>
+          </ComandoInterfaceInfo>
+
+          <!-- MENU RELATORIOS -->
+          <ComandoInterfaceInfo Nome="Relatórios" Tag="lnkMenuPrincipal_Click(this);Relatorios;SubMenu Sistema_Relatorios" CodigoComandoInterface="Sistema_RelatoriosMonitoramento">
+            <Seguranca TipoAtivacao="QualquerCondicao" Perfis="4" Permissoes="2405ca49-03d9-48f1-a615-c2fca32677d4" />
+            <Filhos>
+              <ComandoInterfaceInfo Nome="Gerais" Tag="lnkMenuSecundario_Click(this);Gerais;" CodigoComandoInterface="Gerais">
+                <Seguranca TipoAtivacao="QualquerCondicao" Perfis="4" Permissoes="2405ca49-03d9-48f1-a615-c2fca32677d4" />
+              </ComandoInterfaceInfo>
+            </Filhos>
+          </ComandoInterfaceInfo>
+
+          <!-- Relatório DBM -->
+          <ComandoInterfaceInfo Nome="DBM" Tag="lnkMenuPrincipal_Click(this);DBM;SubMenu Sistema_DBM" CodigoComandoInterface="Sistema_DBM">
+            <Seguranca TipoAtivacao="QualquerCondicao" Permissoes="7646c975-9b2f-4040-9b74-67eb0964a2bb" />
+            <Filhos>
+              <ComandoInterfaceInfo Nome="Relatórios" Tag="lnkMenuSecundario_Click(this);RelatoriosDBM;" CodigoComandoInterface="RelatoriosDBM">
+                <Seguranca TipoAtivacao="QualquerCondicao"  Permissoes="7646c975-9b2f-4040-9b74-67eb0964a2bb" />
+              </ComandoInterfaceInfo>
+            </Filhos>
+          </ComandoInterfaceInfo>
+
+          <!-- MENU SOLICITAÇÕES -->
+          <ComandoInterfaceInfo Nome="Solicitações" Tag="lnkMenuPrincipal_Click(this);Solicitacoes;SubMenu Sistema_Solicitacoes" CodigoComandoInterface="Sistema_Solicitacoes">
+            <Seguranca TipoAtivacao="QualquerCondicao" Perfis="4;2" Permissoes="1fdb023f-9c1e-4478-9646-1ba55a4677c8" />
+            <Filhos>
+              <ComandoInterfaceInfo Nome="Vendas de Ferramentas" Tag="lnkMenuSecundario_Click(this);VendasDeFerramentas;" CodigoComandoInterface="VendasDeFerramentas">
+                <Seguranca TipoAtivacao="QualquerCondicao" Perfis="4" Permissoes="266787cf-7afe-4983-8a4d-44500e660320" />
+              </ComandoInterfaceInfo>
+
+              <ComandoInterfaceInfo Nome="PoupeDirect" Tag="lnkMenuSecundario_Click(this);PoupeDirect;" CodigoComandoInterface="PoupeDirect">
+                <Seguranca TipoAtivacao="QualquerCondicao" Perfis="4" Permissoes="266787cf-7afe-4983-8a4d-44500e660320" />
+              </ComandoInterfaceInfo>
+
+              <ComandoInterfaceInfo Nome="PoupeOperacoes" Tag="lnkMenuSecundario_Click(this);PoupeOperacoes;" CodigoComandoInterface="PoupeOperacoes">
+                <Seguranca TipoAtivacao="QualquerCondicao" Perfis="4" Permissoes="266787cf-7afe-4983-8a4d-44500e660320" />
+              </ComandoInterfaceInfo>
+
+              <ComandoInterfaceInfo Nome="Câmbio" Tag="lnkMenuSecundario_Click(this);CadastroDeCambio;" CodigoComandoInterface="CadastroDeCambio">
+                <Seguranca TipoAtivacao="QualquerCondicao" Perfis="4" Permissoes="346289B6-FFD8-4A8D-9F3A-786917612ECD" />
+              </ComandoInterfaceInfo>
+
+            </Filhos>
+          </ComandoInterfaceInfo>
+
+        </ComandosInterfaceRaiz>
+      </GrupoComandoInterfaceInfo>
+
+    </GruposComandoInterface>
+  </Gradual.OMS.Interface.ServicoInterfaceConfig>
+
+  <!-- SERVICO DE SEGURANCA -->
+  <!--<Gradual.OMS.Sistemas.Comum.ServicoSegurancaConfig/>-->
+
+  <Gradual.OMS.Library.Servicos.AtivadorConfig>
+    <BaseAddress>net.tcp://localhost:8000</BaseAddress>
+    <MexBaseAddress>http://localhost:8008/MEX</MexBaseAddress>
+
+    <Servicos>
+      <ServicoInfo>
+        <NomeInterface>Gradual.Monitores.Risco.Lib.IServicoMonitorRisco, Gradual.Monitores.Risco.Lib</NomeInterface>
+        <NomeInstancia>Gradual.Monitores.Risco.ServerMonitor, Gradual.Monitores.Risco</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>WCF</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+        <EndPoints>
+          <!--<ServicoEndPointInfo>
+            <Endereco>net.tcp://192.168.254.11:8083/Gradual.OMS.Monitor.Custodia.Lib.IServicoMonitorCustodia</Endereco>
+            <NomeBindingType>System.ServiceModel.NetTcpBinding</NomeBindingType>
+          </ServicoEndPointInfo>-->
+          <ServicoEndPointInfo>
+            <Endereco>net.tcp://10.0.11.156:18089/Gradual.Monitores.Risco.Lib.IServicoMonitorRisco</Endereco>
+            <NomeBindingType>System.ServiceModel.NetTcpBinding</NomeBindingType>
+          </ServicoEndPointInfo>
+        </EndPoints>
+      </ServicoInfo>
+    </Servicos>
+
+    <Servicos>
+      <!--<ServicoInfo>
+        <NomeInterface>Gradual.Core.Ordens.Lib.IServicoOrdens, Gradual.Core.Ordens.Lib</NomeInterface>
+        <NomeInstancia>Gradual.Core.Ordens.ServicoOrdens, Gradual.Core.Ordens</NomeInstancia>
+        -->
+      <!--<NomeInstancia>Gradual.OMS.ServicoRoteador.ServicoRoteadorOrdens, Gradual.OMS.ServicoRoteador</NomeInstancia>-->
+      <!--
+        <AtivarWCF>true</AtivarWCF>
+        <AtivacaoDefaultTipo>WCF</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+        <EndPoints>
+          <ServicoEndPointInfo>
+            <Endereco>net.tcp://10.0.11.152:8068/Gradual.Core.Ordens.Lib.IServicoOrdens</Endereco>
+            <NomeBindingType>System.ServiceModel.NetTcpBinding</NomeBindingType>
+          </ServicoEndPointInfo>
+        </EndPoints>
+      </ServicoInfo>-->
+      <ServicoInfo>
+        <NomeInterface>Gradual.Core.Ordens.Lib.IServicoOrdens, Gradual.Core.Ordens.Lib</NomeInterface>
+        <NomeInstancia>Gradual.Core.Ordens.ServicoOrdens, Gradual.Core.Ordens</NomeInstancia>
+        <!--<NomeInstancia>Gradual.OMS.ServicoRoteador.ServicoRoteadorOrdens, Gradual.OMS.ServicoRoteador</NomeInstancia>-->
+        <AtivarWCF>true</AtivarWCF>
+        <AtivacaoDefaultTipo>WCF</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+        <EndPoints>
+          <ServicoEndPointInfo>
+            <Endereco>net.tcp://10.0.11.157:18068/Gradual.Core.Ordens.Lib.IServicoOrdens</Endereco>
+            <NomeBindingType>System.ServiceModel.NetTcpBinding</NomeBindingType>
+          </ServicoEndPointInfo>
+        </EndPoints>
+      </ServicoInfo>
+      <ServicoInfo>
+        <NomeInterface>Gradual.Core.OMS.FixServerLowLatency.Lib.IFixServerLowLatencyAdm, Gradual.Core.OMS.FixServerLowLatency.Lib</NomeInterface>
+        <!--<NomeInterface>Gradual.Core.OrdensMonitoracao.ADM.Lib.IServicoOrdensMonitoracaoADM, Gradual.Core.OrdensMonitoracao.ADM.Lib</NomeInterface>-->
+        <NomeInstancia>Gradual.Core.OMS.FixServerLowLatency.FixServer, Gradual.Core.OMS.FixServerLowLatency</NomeInstancia>
+        <AtivarWCF>true</AtivarWCF>
+        <AtivacaoDefaultTipo>WCF</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+
+        <EndPoints>
+          <ServicoEndPointInfo>
+            <Endereco>net.tcp://10.0.11.152:18100/Gradual.Core.OMS.FixServerLowLatency.Lib.IFixServerLowLatencyAdm</Endereco>
+            <NomeBindingType>System.ServiceModel.NetTcpBinding</NomeBindingType>
+          </ServicoEndPointInfo>
+          <!--
+          <ServicoEndPointInfo>
+            <Endereco>net.tcp://192.168.254.200:18000/Gradual.OMS.RoteadorOrdens.Lib.IAssinaturasRoteadorOrdensCallback</Endereco>
+            <NomeBindingType>System.ServiceModel.NetTcpBinding</NomeBindingType>
+          </ServicoEndPointInfo>
+          -->
+        </EndPoints>
+      </ServicoInfo>
+
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.Cotacao.Lib.IServicoCotacao, Gradual.OMS.Cotacao.Lib</NomeInterface>
+        <NomeInstancia>Gradual.OMS.Cotacao.ServicoCotacao, Gradual.OMS.Cotacao</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>WCF</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+        <EndPoints>
+          <ServicoEndPointInfo>
+            <Endereco>net.tcp://10.0.11.100:8044/Gradual.OMS.Cotacao.Lib.IServicoCotacao</Endereco>
+            <!--Endereco>net.tcp://10.0.11.100:8044/Gradual.OMS.Cotacao.Lib.IServicoCotacao</Endereco-->
+            <!--Endereco>net.tcp://92.168.254.13:8044/Gradual.OMS.Cotacao.Lib.IServicoCotacao</Endereco-->
+            <!--Endereco>net.tcp://192.168.254.109:8044/Gradual.OMS.Cotacao.Lib.IServicoCotacao</Endereco-->
+            <NomeBindingType>System.ServiceModel.NetTcpBinding</NomeBindingType>
+          </ServicoEndPointInfo>
+        </EndPoints>
+      </ServicoInfo>
+
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.Monitor.Custodia.Lib.IServicoMonitorCustodia, Gradual.OMS.Monitor.Custodia.Lib</NomeInterface>
+        <NomeInstancia>Gradual.OMS.Monitor.Custodia.Servico.MonitorCustodiaServico, Gradual.OMS.Monitor.Custodia.Servico</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>WCF</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+        <EndPoints>
+          <!--<ServicoEndPointInfo>
+            <Endereco>net.tcp://192.168.254.11:8083/Gradual.OMS.Monitor.Custodia.Lib.IServicoMonitorCustodia</Endereco>
+            <NomeBindingType>System.ServiceModel.NetTcpBinding</NomeBindingType>
+          </ServicoEndPointInfo>-->
+          <ServicoEndPointInfo>
+            <Endereco>net.tcp://10.0.11.157:18083/Gradual.OMS.Monitor.Custodia.Lib.IServicoMonitorCustodia</Endereco>
+            <NomeBindingType>System.ServiceModel.NetTcpBinding</NomeBindingType>
+          </ServicoEndPointInfo>
+        </EndPoints>
+      </ServicoInfo>
+
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.AcompanhamentoOrdens.Lib.IServicoAcompanhamentoOrdens, Gradual.OMS.AcompanhamentoOrdens.Lib</NomeInterface>
+        <NomeInstancia>Gradual.OMS.AcompanhamentoOrdens.ServicoAcompanhamentoOrdens, Gradual.OMS.AcompanhamentoOrdens</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>WCF</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+        <EndPoints>
+          <ServicoEndPointInfo>
+            <Endereco>net.pipe://localhost/Global/Gradual.OMS.AcompanhamentoOrdens.Lib.IServicoAcompanhamentoOrdens</Endereco>
+            <NomeBindingType>System.ServiceModel.NetNamedPipeBinding</NomeBindingType>
+          </ServicoEndPointInfo>
+        </EndPoints>
+      </ServicoInfo>
+
+      <ServicoInfo>
+        <NomeInterface>Gradual.Servico.FichaCadastral.Lib.IServicoFichaCadastral, Gradual.Servico.FichaCadastral.Lib</NomeInterface>
+        <NomeInstancia> Gradual.Servico.FichaCadastral.ServicoFichaCadastral,  Gradual.Servico.FichaCadastral</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>WCF</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+        <EndPoints>
+          <ServicoEndPointInfo>
+            <Endereco>net.pipe://localhost/Global/Gradual.Servico.FichaCadastral.Lib.IServicoFichaCadastral</Endereco>
+            <NomeBindingType>System.ServiceModel.NetNamedPipeBinding</NomeBindingType>
+          </ServicoEndPointInfo>
+        </EndPoints>
+      </ServicoInfo>
+
+      <ServicoInfo>
+        <NomeInterface>Gradual.Servico.Email.Lib.IServicoEmail, Gradual.Servico.Email.Lib</NomeInterface>
+        <NomeInstancia> Gradual.Servico.Email.ServicoEmail,  Gradual.Servico.Email</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>WCF</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+        <EndPoints>
+          <ServicoEndPointInfo>
+            <Endereco>net.pipe://localhost/Global/Gradual.Servico.FichaCadastral.Lib.IServicoEmail</Endereco>
+            <NomeBindingType>System.ServiceModel.NetNamedPipeBinding</NomeBindingType>
+          </ServicoEndPointInfo>
+        </EndPoints>
+      </ServicoInfo>
+
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.PoupeDirect.Lib.IServicoPoupeDirect, Gradual.OMS.PoupeDirect.Lib</NomeInterface>
+        <NomeInstancia>Gradual.OMS.PoupeDirect.ServicoPoupeDirect,  Gradual.OMS.PoupeDirect</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>WCF</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+        <EndPoints>
+          <ServicoEndPointInfo>
+            <Endereco>net.tcp://10.0.11.156:9242/Gradual.OMS.PoupeDirect.Lib.IServicoPoupeDirect</Endereco>
+            <!--<Endereco>net.tcp://192.168.254.11:9242/Gradual.OMS.PoupeDirect.Lib.IServicoPoupeDirect</Endereco>-->
+            <NomeBindingType>System.ServiceModel.NetTcpBinding</NomeBindingType>
+          </ServicoEndPointInfo>
+        </EndPoints>
+      </ServicoInfo>
+      <!--Gradual.Core.OMS.LimiteManager.Lib.ILimiteManager-->
+
+      <ServicoInfo>
+        <NomeInterface>Gradual.Core.OMS.LimiteManager.Lib.ILimiteManager, Gradual.Core.OMS.LimiteManager.Lib</NomeInterface>
+        <NomeInstancia>Gradual.Core.OMS.LimiteManager.LimitAdm, Gradual.Core.OMS.LimiteManager</NomeInstancia>
+        <AtivarWCF>true</AtivarWCF>
+        <AtivacaoDefaultTipo>WCF</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+        <EndPoints>
+          <ServicoEndPointInfo>
+            <Endereco>net.tcp://10.0.11.152:18100/Gradual.Core.OMS.LimiteManager.Lib.ILimiteManager</Endereco>
+            <NomeBindingType>System.ServiceModel.NetTcpBinding</NomeBindingType>
+          </ServicoEndPointInfo>
+        </EndPoints>
+      </ServicoInfo>
+
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.ContaCorrente.Lib.IServicoExtratos, Gradual.OMS.ContaCorrente.Lib</NomeInterface>
+        <NomeInstancia>Gradual.OMS.ContaCorrente.ServicoExtratos, Gradual.OMS.ContaCorrente</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>WCF</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+        <EndPoints>
+          <ServicoEndPointInfo>
+            <Endereco>net.tcp://10.0.11.157:18089/Gradual.OMS.ContaCorrente.Lib.IServicoExtratos</Endereco>
+            <NomeBindingType>System.ServiceModel.NetTcpBinding</NomeBindingType>
+          </ServicoEndPointInfo>
+        </EndPoints>
+      </ServicoInfo>
+
+      <ServicoInfo>
+        <NomeInterface>Gradual.OMS.ContaCorrente.Lib.IServicoContaCorrente, Gradual.OMS.ContaCorrente.Lib</NomeInterface>
+        <NomeInstancia>Gradual.OMS.ContaCorrente.ServicoContaCorrente, Gradual.OMS.ContaCorrente</NomeInstancia>
+        <AtivarWCF>false</AtivarWCF>
+        <AtivacaoDefaultTipo>WCF</AtivacaoDefaultTipo>
+        <RegistrarLocalizador>false</RegistrarLocalizador>
+        <EndPoints>
+          <ServicoEndPointInfo>
+            <Endereco>net.tcp://10.0.11.157:18089/Gradual.OMS.ContaCorrente.Lib.IServicoContaCorrente</Endereco>
+            <NomeBindingType>System.ServiceModel.NetTcpBinding</NomeBindingType>
+          </ServicoEndPointInfo>
+        </EndPoints>
+      </ServicoInfo>
+
+    </Servicos>
+
+  </Gradual.OMS.Library.Servicos.AtivadorConfig>
+
+  <appSettings>
+
+    <add key="SkinEmUso"                    value="Default"/>
+
+    <!--<add key="TipoDeObjetoAtivador"         value="Producao" />-->
+    <add key="TipoDeObjetoAtivador"         value="Desenvolvimento" />
+
+    <add key="SenhaMigracao"                value="yxwasxza123456" />
+
+    <add key="DiaCobrancaCustodia"          value="20" />
+
+    <add key="VersaoDoSite"                 value="14-10-30-1111" />
+
+    <add key="CD_USUARIO_SINACOR"           value="1" />
+
+    <!--Para PerfiisComPermissaoDeAlterarClientesPasso3e4, colocar o value separado por virgula, caso exista mais de 1-->
+    <!--1 - Administrador-->
+    <!--4 - Cadastro-->
+    <!--6 - Assessor-->
+    <add key="PerfiisComPermissaoDeAlterarClientesPasso3e4" value="1,4,6,2" />
+
+    <!-- Este email será o destinatário que receberá o Codigo do cliente ao exportá-lo para o Sinacor -->
+    <!-- Em produção o value deve ficar vazio para o sistema enviar para o assessor do cliente -->
+    <add key="EmailAssessorAoExportarDesenvolvimento" value="" />
+
+    <add key="EmailRemetenteGradual"        value="atendimento@gradualinvestimentos.com.br"/>
+
+    <add key="EmailRemetenteGradualDisplay" value="Gradual Investimentos"/>
+
+    <add key="EmailCompliance"              value="compliance@gradualinvestimentos.com.br"/>
+
+    <add key="SFPTotOutrosRendimentos"      value="11"/>
+    <add key="SFPTotBensImoveis"            value="23"/>
+    <add key="SFPTotBensMoveis"             value="24"/>
+    <add key="SFPTotAplicacoesFinanceiras"  value="15"/>
+    <add key="SFPTotSalarioProLabore"       value="10"/>
+    <add key="SFPTotCapitalSocial"          value="25"/>
+    <add key="SFPTotPatrimonioLiquido"      value="18"/>
+    <add key="ChannelIdBovespa"             value="302"/>
+
+    <add key="PermissaoDeAcessoAoSistema"   value="22FF518C-C7D3-4ff0-A0CB-96F2476068BB"/>
+
+    <add key ="TipoClientePF"               value="1,2,3"/>
+
+    <add key ="TipoClientePJ"               value="4,6,8,9,11,13,15,17,18,20,21,23,25,26,29,99"/>
+
+    <add key="UrlReservaIPO"                value="http://homologa.gradualinvestimentos.com.br/reservapapel/default.aspx?COD="/>
+
+
+    <add key="ExportacaoGrupoAlavancagem"   value="2"/>
+
+    <add key="ChannelIdBovespaGTICliente"   value="302"/>
+
+    <add key="ChannelIdBovespaGTIAssessor"  value="316"/>
+
+    <add key="ChannelIdBovespaGTI2Cliente"  value="317"/>
+
+    <add key="ChannelIdBovespaGTI2Assessor" value="362"/>
+
+    <add key="ChannelIdBovespaGTI3Cliente"  value="370"/>
+
+    <add key="ChannelIdBovespaGTI4Cliente"  value="372"/>
+
+    <add key="ChannelIdBovespaHB"           value="371"/>
+
+    <add key="pathEvoInternal"              value="C:\Inetpub\wwwroot\Interno\Gradual.Intranet\bin\evointernal.dat" />
+
+    <add key="UsuarioFinancial"             value="brocha"/>
+
+    <add key="SenhaFinancial"               value="gradual12345*"/>
+
+    <add key="ID_TERMO_ALAVANCAGEM"         value="80"/>
+  </appSettings>
+
+  <connectionStrings>
+    <!--
+    <add providerName="System.Data.SqlClient"    name="GradualSpider"     connectionString="Data Source=125.227.220.95; User Id=directtrade; Password=directtrade!1985; Initial Catalog=GradualSpider;" />
+    <add providerName="System.Data.SqlClient"    name="Risco"             connectionString="Data Source=125.227.220.95; User Id=directtrade; Password=directtrade!1985; Initial Catalog=DirectTradeRisco;" />
+    <add providerName="System.Data.SqlClient"    name="RISCO_GRADUALOMS"  connectionString="Data Source=125.227.220.95; User Id=directtrade; Password=directtrade!1985; Initial Catalog=GradualOMS;" />
+    <add providerName="System.Data.SqlClient"    name="RiscoOMS"          connectionString="Data Source=125.227.220.95; User Id=directtrade; Password=directtrade!1985; Initial Catalog=GradualOMS;" />
+    <add providerName="System.Data.SqlClient"    name="Educacional"       connectionString="Data Source=125.227.220.95; User Id=directtrade; Password=directtrade!1985; Initial Catalog=Educacional;" />
+    <add providerName="System.Data.SqlClient"    name="OMS"               connectionString="Data Source=125.227.220.95; User Id=directtrade; Password=directtrade!1985; Initial Catalog=OMS;User Id=oms;Password=gradual123*;" />
+    <add providerName="System.Data.SqlClient"    name="Filial"            connectionString="Data Source=125.227.220.95; User Id=directtrade; Password=directtrade!1985; Initial Catalog=DirectTradeCadastro;" />
+    <add providerName="System.Data.SqlClient"    name="RendaFixa"         connectionString="Data Source=125.227.220.95; User Id=directtrade; Password=directtrade!1985; Initial Catalog=DirectTradeRendaFixa;" />
+    <add providerName="System.Data.SqlClient"    name="FundosItau"        connectionString="Data Source=125.227.220.95; User Id=directtrade; Password=directtrade!1985; Initial Catalog=GRADUAL_CLUBES_FUNDOS;" />
+    <add providerName="System.Data.SqlClient"    name="Config"            connectionString="Data Source=125.227.220.95; User Id=directtrade; Password=directtrade!1985; Initial Catalog=DirectTradeConfiguracoes;" />
+    <add providerName="System.Data.SqlClient"    name="PlataformaInviXX"  connectionString="Data Source=125.227.220.95; User Id=directtrade; Password=directtrade!1985; Initial Catalog=CortexPlataformaProdutos;" />
+    <add providerName="System.Data.SqlClient"    name="Cadastro"          connectionString="Data Source=125.227.220.95; User Id=directtrade; Password=directtrade!1985; Initial Catalog=DirectTradeCadastro;" />
+    <add providerName="System.Data.SqlClient"    name="Seguranca"         connectionString="Data Source=125.227.220.95; User Id=directtrade; Password=directtrade!1985; Initial Catalog=DirectTradeControleAcesso;" />
+    <add providerName="System.Data.SqlClient"    name="ControleAcesso"    connectionString="Data Source=125.227.220.95; User Id=directtrade; Password=directtrade!1985; Initial Catalog=DirectTradeControleAcesso;" />
+    -->
+
+    <add providerName="System.Data.SqlClient"    name="GradualSpider"     connectionString="Data Source=192.168.254.14; User Id=sa; Password=gradual123*; Initial Catalog=GradualSpider;" />
+    <add providerName="System.Data.SqlClient"    name="Risco"             connectionString="Data Source=192.168.254.14; User Id=sa; Password=gradual123*; Initial Catalog=DirectTradeRisco;" />
+    <add providerName="System.Data.SqlClient"    name="RISCO_GRADUALOMS"  connectionString="Data Source=125.227.220.95; User Id=directtrade; Password=directtrade!1985; Initial Catalog=GradualOMS;" />
+    <add providerName="System.Data.SqlClient"    name="RiscoOMS"          connectionString="Data Source=192.168.254.14; User Id=sa; Password=gradual123*; Initial Catalog=GradualOMS;" />
+    <add providerName="System.Data.SqlClient"    name="Educacional"       connectionString="Data Source=192.168.254.14; User Id=sa; Password=gradual123*; Initial Catalog=Educacional;" />
+    <add providerName="System.Data.SqlClient"    name="OMS"               connectionString="Data Source=192.168.254.14; User Id=sa; Password=gradual123*; Initial Catalog=OMS;User Id=oms;Password=gradual123*;" />
+    <add providerName="System.Data.SqlClient"    name="Filial"            connectionString="Data Source=192.168.254.14; User Id=sa; Password=gradual123*; Initial Catalog=DirectTradeCadastro;" />
+    <add providerName="System.Data.SqlClient"    name="RendaFixa"         connectionString="Data Source=192.168.254.14; User Id=sa; Password=gradual123*; Initial Catalog=DirectTradeRendaFixa;" />
+    <add providerName="System.Data.SqlClient"    name="FundosItau"        connectionString="Data Source=192.168.254.14; User Id=sa; Password=gradual123*; Initial Catalog=GRADUAL_CLUBES_FUNDOS;" />
+    <add providerName="System.Data.SqlClient"    name="Config"            connectionString="Data Source=192.168.254.14; User Id=sa; Password=gradual123*; Initial Catalog=DirectTradeConfiguracoes;" />
+    <add providerName="System.Data.SqlClient"    name="PlataformaInviXX"  connectionString="Data Source=192.168.254.14; User Id=sa; Password=gradual123*; Initial Catalog=CortexPlataformaProdutos;" />
+    <add providerName="System.Data.SqlClient"    name="Cadastro"          connectionString="Data Source=192.168.254.14; User Id=sa; Password=gradual123*; Initial Catalog=DirectTradeCadastro;" />
+    <add providerName="System.Data.SqlClient"    name="Seguranca"         connectionString="Data Source=192.168.254.14; User Id=sa; Password=gradual123*; Initial Catalog=DirectTradeControleAcesso;" />
+    <add providerName="System.Data.SqlClient"    name="ControleAcesso"    connectionString="Data Source=192.168.254.14; User Id=sa; Password=gradual123*; Initial Catalog=DirectTradeControleAcesso;" />
+
+
+    <add providerName="System.Data.SqlClient"    name="Clubes"            connectionString="Data Source=gsp-srv-bcdrive;Initial Catalog=sim_cvgra;User Id=simgra;Password=sisfinance;" />
+
+    <add providerName="System.Data.OracleClient" name="SinacorExportacao" connectionString="Data Source=ODA_GRDBDEV;Persist Security Info=True;User ID=corrwin;Password=gradual200877" />
+    <add providerName="System.Data.OracleClient" name="SINACOR"           connectionString="Data Source=ODA_GRDBDEV;Persist Security Info=True;User ID=trade;Password=PROD_TRADE" />
+    <add providerName="System.Data.OracleClient" name="SinacorConsulta"   connectionString="Data Source=ODA_GRDBDEV;Persist Security Info=True;User ID=cadastrosinacor;Password=cadastrosinacor" />
+    <add providerName="System.Data.OracleClient" name="CONTAMARGEM"       connectionString="Data Source=ODA_GRDBDEV;Persist Security Info=True;User ID=CONTA_MARGEM_NEW;Password=CONTA_MARGEM_NEW" />
+    <add providerName="System.Data.SqlClient"    name="Financial"         connectionString="Data Source=gsp-srv-atatika\SQLATATIKA;Initial Catalog=FIN_GRADUAL;Persist Security Info=True;User ID=FINANCIAL;Password=fin#123**;"/>
+
+  </connectionStrings>
+
+  <system.web>
+    <!--<sessionState mode="InProc" timeout="1440"></sessionState>-->
+
+    <globalization culture="pt-BR" uiCulture="pt-BR" />
+    <compilation debug="true" defaultLanguage="c#">
+      <assemblies>
+        <add assembly="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+        <add assembly="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+        <add assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+        <add assembly="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+      </assemblies>
+    </compilation>
+
+    <authentication mode="None" />
+    <identity impersonate="false" />
+
+    <customErrors mode="Off" />
+
+    <pages>
+      <controls>
+        <add tagPrefix="asp" namespace="System.Web.UI" assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+        <add tagPrefix="asp" namespace="System.Web.UI.WebControls" assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+      </controls>
+    </pages>
+    <httpHandlers>
+      <remove verb="*" path="*.asmx"/>
+      <add verb="*" path="*.asmx" validate="false" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+      <add verb="*" path="*_AppService.axd" validate="false" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+      <add verb="GET,HEAD" path="ScriptResource.axd" type="System.Web.Handlers.ScriptResourceHandler, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" validate="false"/>
+    </httpHandlers>
+    <httpModules>
+      <add name="ScriptModule" type="System.Web.Handlers.ScriptModule, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+    </httpModules>
+  </system.web>
+
+  <system.codedom>
+    <compilers>
+      <compiler language="c#;cs;csharp" extension=".cs" warningLevel="4" type="Microsoft.CSharp.CSharpCodeProvider, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <providerOption name="CompilerVersion" value="v3.5"/>
+        <providerOption name="WarnAsError" value="false"/>
+      </compiler>
+    </compilers>
+  </system.codedom>
+
+  <system.webServer>
+    <validation validateIntegratedModeConfiguration="false"/>
+    <modules>
+      <remove name="ScriptModule"/>
+      <add name="ScriptModule" preCondition="managedHandler" type="System.Web.Handlers.ScriptModule, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+    </modules>
+    <handlers>
+      <remove name="WebServiceHandlerFactory-Integrated"/>
+      <remove name="ScriptHandlerFactory"/>
+      <remove name="ScriptHandlerFactoryAppServices"/>
+      <remove name="ScriptResource"/>
+      <add name="ScriptHandlerFactory" verb="*" path="*.asmx" preCondition="integratedMode" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+      <add name="ScriptHandlerFactoryAppServices" verb="*" path="*_AppService.axd" preCondition="integratedMode" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+      <add name="ScriptResource" preCondition="integratedMode" verb="GET,HEAD" path="ScriptResource.axd" type="System.Web.Handlers.ScriptResourceHandler, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+    </handlers>
+  </system.webServer>
+
+
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Extensions" publicKeyToken="31bf3856ad364e35"/>
+        <bindingRedirect oldVersion="1.0.0.0-1.1.0.0" newVersion="3.5.0.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Extensions.Design" publicKeyToken="31bf3856ad364e35"/>
+        <bindingRedirect oldVersion="1.0.0.0-1.1.0.0" newVersion="3.5.0.0"/>
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+
+  <log4net>
+    <appender name="LogFileAppender" type="log4net.Appender.RollingFileAppender" >
+      <file value="IntranetGeral.log" />
+      <appendToFile value="true" />
+      <rollingStyle value="Date" />
+      <datePattern value="yyyyMMdd" />
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%date [%thread] %-5level %logger - %message%newline" />
+      </layout>
+    </appender>
+    <appender name="LogCadastro" type="log4net.Appender.RollingFileAppender">
+      <file value="IntranetCadastro.log"/>
+      <appendToFile value="true" />
+      <rollingStyle value="Date" />
+      <datePattern value="yyyyMMdd" />
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%date [%thread] %-5level - %message%newline" />
+      </layout>
+    </appender>
+    <appender name="LogRisco" type="log4net.Appender.RollingFileAppender">
+      <file value="IntranetRisco.log"/>
+      <appendToFile value="true" />
+      <rollingStyle value="Date" />
+      <datePattern value="yyyyMMdd" />
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%date [%thread] %-5level - %message%newline" />
+      </layout>
+    </appender>
+    <root>
+      <level value="DEBUG" />    <!-- Mudar para INFO ou menor em producao -->
+      <appender-ref ref="LogFileAppender" />               
+    </root>
+    <logger name="Gradual.Intranet.Servicos.BancoDeDados.LogCadastro">
+      <level value="DEBUG" />
+      <appender-ref ref="LogCadastro" />
+    </logger>
+    <logger name="Gradual.OMS.Risco.Regra.LogRisco">
+      <level value="DEBUG" />
+      <appender-ref ref="LogRisco" />
+    </logger>
+  </log4net>
+  <system.serviceModel>
+    <bindings>
+      <basicHttpBinding>
+        <binding name="OperacaoCotistaWSSoap" />
+        <binding name="PosicaoCotistaWSSoap" />
+      </basicHttpBinding>
+    </bindings>
+    <client>
+      <endpoint address="http://financial.gradual.intra/webservices/cotista/operacaocotista.asmx"
+        binding="basicHttpBinding" bindingConfiguration="OperacaoCotistaWSSoap"
+        contract="OperacaoCotistaWS.OperacaoCotistaWSSoap" name="OperacaoCotistaWSSoap" />
+      <endpoint address="http://financial.gradual.intra/WebServicesCustom/Gradual/PosicaoCotista.asmx"
+        binding="basicHttpBinding" bindingConfiguration="PosicaoCotistaWSSoap"
+        contract="PosicaoCotista.PosicaoCotistaWSSoap" name="PosicaoCotistaWSSoap" />
+    </client>
+  </system.serviceModel>
+</configuration>

@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CCB08450-2ECE-4537-9F53-8CC0D91DF8B0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.Cadastro.Importacao</RootNamespace>
+    <AssemblyName>Gradual.Cadastro.Importacao</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.OMS.Interface">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Mensageria, Version=1.0.3891.27500, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.Mensageria.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient">
+      <HintPath>..\Gradual.Intranet.Referencias\System.Data.OracleClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Gradual.Cadastro.Entidades\AcessaDados.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\Conexao.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\Conversao.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\EAlteracao.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\EAssessor.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\EAssessorFilial.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\EBensImoveis.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\EBensOutros.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\ECliente.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\EClienteSistema.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\EConta.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\EDiretor.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\EEmitente.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\EEndereco.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\EFilial.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\ELogAlteracao.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\ELogin.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\EPendencia.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\ERepresentante.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\ESistema.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\ETelefone.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\ETipoConta.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\NAlteracao.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\NAssessor.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\NAssessorFilial.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\NBensImoveis.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\NBensOutros.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\NCliente.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\NClienteSistema.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\NConta.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\NDiretor.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\NEmitente.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\NEndereco.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\NFilial.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\NLogin.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\NMensagem.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\NPendencia.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\NRepresentante.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\NSistema.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\NTelefone.cs" />
+    <Compile Include="Gradual.Cadastro.Entidades\NTipoConta.cs" />
+    <Compile Include="ImportacaoDuc.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Gradual.OMS.Library.csproj">
+      <Project>{A5E45264-237E-471B-9260-88552A1EF7F3}</Project>
+      <Name>Gradual.OMS.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Persistencia\Gradual.OMS.Persistencia.csproj">
+      <Project>{01BFE534-741D-44B0-BDFF-7461D1AC66EC}</Project>
+      <Name>Gradual.OMS.Persistencia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Intranet.Contratos\Gradual.Intranet.Contratos.csproj">
+      <Project>{429DEE5D-7FC1-40CD-A72A-918B5831F0F8}</Project>
+      <Name>Gradual.Intranet.Contratos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Intranet.Oracle\Gradual.Intranet.Oracle.csproj">
+      <Project>{16BA99AA-F936-4FD5-8D66-B96163F5A577}</Project>
+      <Name>Gradual.Intranet.Oracle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Intranet.Servicos.BancoDeDados\Gradual.Intranet.Servicos.BancoDeDados.csproj">
+      <Project>{81DB2BB2-3A61-445F-9B8F-C1551D2B48D6}</Project>
+      <Name>Gradual.Intranet.Servicos.BancoDeDados</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

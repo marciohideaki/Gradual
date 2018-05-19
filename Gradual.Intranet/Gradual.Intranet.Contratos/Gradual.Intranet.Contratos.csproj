@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{429DEE5D-7FC1-40CD-A72A-918B5831F0F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.Intranet.Contratos</RootNamespace>
+    <AssemblyName>Gradual.Intranet.Contratos</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.OMS.AcompanhamentoOrdens.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.AcompanhamentoOrdens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Custodia.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.Custodia.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Email.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.Email.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Ordens.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.Ordens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Ordens.StartStop.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.Ordens.StartStop.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Risco.Regra.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.Risco.Regra.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.RoteadorOrdens.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.RoteadorOrdens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dados\Cadastro\ArquivoContratoInfo.cs" />
+    <Compile Include="Dados\Cadastro\AssessorDoClienteInfo.cs" />
+    <Compile Include="Dados\Cadastro\AssessorFilialInfo.cs" />
+    <Compile Include="Dados\Cadastro\AssessorSinacorInfo.cs" />
+    <Compile Include="Dados\Cadastro\AtividadeIlicitaInfo.cs" />
+    <Compile Include="Dados\Cadastro\AvisoHomeBrokerInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteAutorizacaoInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteDesejaAplicarInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteDocumentacaoEntregueInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteEnderecoDeCustodiaInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteNaoOperaPorContaPropriaInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteResumidoMigracaoInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteValidacaoRocketInfo.cs" />
+    <Compile Include="Dados\Cadastro\InformeRendimentosInfo.cs" />
+    <Compile Include="Dados\Cadastro\InformeRendimentosTesouroDiretoInfo.cs" />
+    <Compile Include="Dados\Cadastro\ListaAssessoresVinculadosInfo.cs" />
+    <Compile Include="Dados\Cadastro\LogIntranetInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteAlteracaoInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteAtivarInativarContasInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteAtivarInativarInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteAtivoInativoInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteBancoInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteBuscaInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteContaInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteContratoInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteEnderecoInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteFichaPessoaFisicaInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteInvestidorNaoResidenteInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClientePassoContaInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClientePendenciaCadastralInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteControladoraInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClientePessoaVinculadaPorClienteInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteRenovacaoCadastralInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteResumidoInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteDiretorInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteEmitenteInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteSituacaoFinanceiraPatrimonialInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteSuitabilityInfo.cs" />
+    <Compile Include="Dados\Cadastro\ConfiguracaoInfo.cs" />
+    <Compile Include="Dados\Cadastro\ContratoInfo.cs" />
+    <Compile Include="Dados\Cadastro\FichaCadastralInfo.cs" />
+    <Compile Include="Dados\Cadastro\ListaEmailAssessorInfo.cs" />
+    <Compile Include="Dados\Cadastro\LoginAssinaturaEletronicaInfo.cs" />
+    <Compile Include="Dados\Cadastro\PendenciaClienteAssessorInfo.cs" />
+    <Compile Include="Dados\Cadastro\PessoaExpostaPoliticamenteImportacaoInfo.cs" />
+    <Compile Include="Dados\Cadastro\PessoaExpostaPoliticamenteInfo.cs" />
+    <Compile Include="Dados\Cadastro\PoupeDirectProdutoInfo.cs" />
+    <Compile Include="Dados\Cadastro\ReservaIPOInfo.cs" />
+    <Compile Include="Dados\Cadastro\SinacorListaComboInfo.cs" />
+    <Compile Include="Dados\Cadastro\TipoDePendenciaCadastralInfo.cs" />
+    <Compile Include="Dados\Cadastro\TipoEnderecoInfo.cs" />
+    <Compile Include="Dados\Cadastro\UsuarioPermissaoInfo.cs" />
+    <Compile Include="Dados\Compliance\ChurningIntradayInfo.cs" />
+    <Compile Include="Dados\Compliance\ClienteCustodiaFinanceiroInfo.cs" />
+    <Compile Include="Dados\Fundos\FundosInfo.cs" />
+    <Compile Include="Dados\Fundos\IntegracaoFundosCategoriaInfo.cs" />
+    <Compile Include="Dados\Fundos\IntegracaoFundosIndexadorInfo.cs" />
+    <Compile Include="Dados\Fundos\IntegracaoFundosInfo.cs" />
+    <Compile Include="Dados\Fundos\IntegracaoFundosMovimentoInfo.cs" />
+    <Compile Include="Dados\Fundos\IntegracaoFundosRentabilidadeInfo.cs" />
+    <Compile Include="Dados\Portal\SolicitacaoNovaSenhaInfo.cs" />
+    <Compile Include="Dados\Relatorios\Cliente\ClienteDeParaInfo.cs" />
+    <Compile Include="Dados\Relatorios\Cliente\PapelPorClienteInfo.cs" />
+    <Compile Include="Dados\Relatorios\Cliente\ProventosClienteInfo.cs" />
+    <Compile Include="Dados\Relatorios\Cliente\TotalClienteCadastradoAssessorPeriodoInfo.cs" />
+    <Compile Include="Dados\Relatorios\Financeiros\LancamentoTEDInfo.cs" />
+    <Compile Include="Dados\Relatorios\Financeiros\RendaFixaInfo.cs" />
+    <Compile Include="Dados\Relatorios\Monitoramento\ClientePosicaoOpcaoExercidaRelInfo.cs" />
+    <Compile Include="Dados\Relatorios\Monitoramento\CustodiaInfo.cs" />
+    <Compile Include="Dados\Relatorios\Risco\RiscoClienteMercadoVistaOpcaoRelInfo.cs" />
+    <Compile Include="Dados\Risco\ContratoBmfInfo.cs" />
+    <Compile Include="Dados\Risco\MonitoramentoIntradiarioInfo.cs" />
+    <Compile Include="Dados\Risco\MonitoramentoRiscoLucroCustodiaInfo.cs" />
+    <Compile Include="Dados\Risco\MonitoramentoRiscoLucroPrejuizoParametrosInfo.cs" />
+    <Compile Include="Dados\Risco\MonitorRiscoInfo.cs" />
+    <Compile Include="Dados\Risco\SuitabilityLavagemInfo.cs" />
+    <Compile Include="Dados\Vendas\AlteracaoDeVendaInfo.cs" />
+    <Compile Include="Dados\Vendas\IPOClienteInfo.cs" />
+    <Compile Include="Dados\Vendas\IPOInfo.cs" />
+    <Compile Include="Dados\Vendas\PagamentoLogInfo.cs" />
+    <Compile Include="Dados\Vendas\ProdutoInfo.cs" />
+    <Compile Include="Dados\Vendas\VendaDeFerramentaInfo.cs" />
+    <Compile Include="Dados\Monitoramento\MonitoramentoDesbloqueioCustodiaInfo.cs" />
+    <Compile Include="Dados\Portal\AlterarAssinaturaEletronicaInfo.cs" />
+    <Compile Include="Dados\Portal\AlterarSenhaInfo.cs" />
+    <Compile Include="Dados\Portal\ClienteEducacionalInfo.cs" />
+    <Compile Include="Dados\Portal\EfetuarLoginInfo.cs" />
+    <Compile Include="Dados\Portal\EsqueciAssinaturaEletronicaInfo.cs" />
+    <Compile Include="Dados\Portal\EsqueciSenhaInfo.cs" />
+    <Compile Include="Dados\Portal\HistoricoSenhaInfo.cs" />
+    <Compile Include="Dados\Portal\LoginIncrementarTentativasErradasInfo.cs" />
+    <Compile Include="Dados\Portal\LoginLiberarAcesoTentativasErradasInfo.cs" />
+    <Compile Include="Dados\Portal\LoginReceberQuantidadeTentativasErradasInfo.cs" />
+    <Compile Include="Dados\Portal\MensagemAjudaInfo.cs" />
+    <Compile Include="Dados\Portal\Paaso1Info.cs" />
+    <Compile Include="Dados\Portal\PrimeiroAcessoAtualizaInfo.cs" />
+    <Compile Include="Dados\Portal\PrimeiroAcessoValidaCpfInfo.cs" />
+    <Compile Include="Dados\Portal\PrimeiroAcessoValidaInfo.cs" />
+    <Compile Include="Dados\ControleDeOrdens\CancelarOrdemInfo.cs" />
+    <Compile Include="Dados\ControleDeOrdens\CancelarOrdemStartStopInfo.cs" />
+    <Compile Include="Dados\ControleDeOrdens\ClienteContaConsultaInfo.cs" />
+    <Compile Include="Dados\ControleDeOrdens\ListarOrdemStartStopInfo.cs" />
+    <Compile Include="Dados\ControleDeOrdens\ListarOrdensInfo.cs" />
+    <Compile Include="Dados\Enumeradores\Enums.cs" />
+    <Compile Include="Dados\Cadastro\Erro.cs" />
+    <Compile Include="Dados\Cadastro\FrasesInfo.cs" />
+    <Compile Include="Dados\Cadastro\IEntidadeFilha.cs" />
+    <Compile Include="Dados\Cadastro\LoginInfo.cs" />
+    <Compile Include="Dados\Cadastro\MigracaoClienteAssessorInfo.cs" />
+    <Compile Include="Dados\Cadastro\PaisesBlack2ListInfo.cs" />
+    <Compile Include="Dados\Cadastro\PaisesBlackListInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClientePessoaVinculadaInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteProcuradorRepresentanteInfo.cs" />
+    <Compile Include="Dados\Portal\SessaoPortalInfo.cs" />
+    <Compile Include="Dados\Portal\VerificaNomeInfo.cs" />
+    <Compile Include="Dados\Relatorios\Cliente\ClienteCadastradoPeriodoInfo.cs" />
+    <Compile Include="Dados\Relatorios\Cliente\ClienteDirectInfo.cs" />
+    <Compile Include="Dados\Relatorios\Cliente\ClienteDistribuicaoRegionalInfo.cs" />
+    <Compile Include="Dados\Relatorios\Cliente\ClienteExportadoSinacorInfo.cs" />
+    <Compile Include="Dados\Relatorios\Cliente\ClienteInativoInfo.cs" />
+    <Compile Include="Dados\Relatorios\Cliente\ClienteMigradoCorretagemAnualInfo.cs" />
+    <Compile Include="Dados\Relatorios\Cliente\ClientePlanoPoupeInfo.cs" />
+    <Compile Include="Dados\Relatorios\Cliente\ClientePorAssessorInfo.cs" />
+    <Compile Include="Dados\Relatorios\Cliente\ClienteProdutoInfo.cs" />
+    <Compile Include="Dados\Relatorios\Cliente\ClienteSemEmailInfo.cs" />
+    <Compile Include="Dados\Relatorios\Cliente\ClienteSolicitacaoAlteracaoCadastralInfo.cs" />
+    <Compile Include="Dados\Relatorios\Cliente\ClienteSuitabilityEfetuadoInfo.cs" />
+    <Compile Include="Dados\Relatorios\Cliente\ClienteSuspeitoInfo.cs" />
+    <Compile Include="Dados\Relatorios\Cliente\PosicaoConsolidadaPorPapelRelInfo.cs" />
+    <Compile Include="Dados\Relatorios\DBM\DBMClienteInfo.cs" />
+    <Compile Include="Dados\Relatorios\DBM\FilialAssessorInfo.cs" />
+    <Compile Include="Dados\Relatorios\DBM\FilialInfo.cs" />
+    <Compile Include="Dados\Relatorios\DBM\LTVDoClienteInfo.cs" />
+    <Compile Include="Dados\Relatorios\DBM\MovimentoDeContaCorrenteInfo.cs" />
+    <Compile Include="Dados\Relatorios\DBM\ResumoDoAssessorCadastroInfo.cs" />
+    <Compile Include="Dados\Relatorios\DBM\ResumoDoAssessorCanalInfo.cs" />
+    <Compile Include="Dados\Relatorios\DBM\ResumoDoAssessorMetricasInfo.cs" />
+    <Compile Include="Dados\Relatorios\DBM\ResumoDoAssessorReceitaInfo.cs" />
+    <Compile Include="Dados\Relatorios\DBM\ResumoDoAssessorTop10Info.cs" />
+    <Compile Include="Dados\Relatorios\DBM\ResumoDoClienteCarteiraInfo.cs" />
+    <Compile Include="Dados\Relatorios\DBM\ResumoDoClienteCorretagemInfo.cs" />
+    <Compile Include="Dados\Relatorios\DBM\ResumoAssessorInfo.cs" />
+    <Compile Include="Dados\Relatorios\DBM\ResumoGerenteClienteInfo.cs" />
+    <Compile Include="Dados\Relatorios\DBM\ResumoGerenteinfo.cs" />
+    <Compile Include="Dados\Relatorios\DBM\ResumoGerenteMesAnteriorInfo.cs" />
+    <Compile Include="Dados\Relatorios\DBM\ResumoGerentePeriodoinfo.cs" />
+    <Compile Include="Dados\Relatorios\DBM\ResumoDoClienteDadosCadastraisInfo.cs" />
+    <Compile Include="Dados\Relatorios\DBM\SaldoProjecoesEmContaCorrenteInfo.cs" />
+    <Compile Include="Dados\Relatorios\DBM\TotalClientePorAssessorInfo.cs" />
+    <Compile Include="Dados\Relatorios\Email\EmailDisparadoPeriodoInfo.cs" />
+    <Compile Include="Dados\Relatorios\Cliente\ClientePendenciaCadastralInfo.cs" />
+    <Compile Include="Dados\Cadastro\SinacorListaInfo.cs" />
+    <Compile Include="Dados\Cadastro\ClienteTelefoneInfo.cs" />
+    <Compile Include="Dados\Relatorios\Financeiros\ClienteClubes.cs" />
+    <Compile Include="Dados\Relatorios\Financeiros\ClienteFundosInfo.cs" />
+    <Compile Include="Dados\Relatorios\Email\LogEmailInfo.cs" />
+    <Compile Include="Dados\Relatorios\Financeiros\UltimasNegociacoesInfo.cs" />
+    <Compile Include="Dados\Relatorios\Monitoramento\ClientePosiçãoDeOpcaoRelInfo.cs" />
+    <Compile Include="Dados\Relatorios\Risco\RiscoClienteBloqueioGrupoRelInfo.cs" />
+    <Compile Include="Dados\Relatorios\Risco\RiscoClienteBloqueioInstrumentoRelInfo.cs" />
+    <Compile Include="Dados\Relatorios\Risco\RiscoClienteLimiteMovimentoRelInfo.cs" />
+    <Compile Include="Dados\Relatorios\Risco\RiscoClienteLimiteRelInfo.cs" />
+    <Compile Include="Dados\Relatorios\Risco\RiscoClienteParametroRelInfo.cs" />
+    <Compile Include="Dados\Relatorios\Risco\RiscoClientePermissaoRelInfo.cs" />
+    <Compile Include="Dados\Relatorios\Risco\RiscoClienteSaldoBloqueadoRelInfo.cs" />
+    <Compile Include="Dados\Relatorios\Risco\RiscoParametrosRelInfo.cs" />
+    <Compile Include="Dados\Relatorios\Risco\RiscoPermissaoRelInfo.cs" />
+    <Compile Include="Dados\Relatorios\Sistema\SistemaControleLogIntranetRelInfo.cs" />
+    <Compile Include="Dados\Risco\ParametroAlavancagemConsultaInfo.cs" />
+    <Compile Include="Dados\Risco\RiscoClienteGrupoInfo.cs" />
+    <Compile Include="Dados\Risco\RiscoGrupoInfo.cs" />
+    <Compile Include="Dados\Risco\RiscoLimiteAlocadoInfo.cs" />
+    <Compile Include="Dados\Risco\RiscoParametrosInfo.cs" />
+    <Compile Include="Dados\Risco\RiscoPermissaoInfo.cs" />
+    <Compile Include="Dados\Sinacor\Exportacao\SinacorExportacaoEntradaInfo.cs" />
+    <Compile Include="Dados\Sinacor\Exportacao\SinacorExportacaoRetornoInfo.cs" />
+    <Compile Include="Dados\Sinacor\Exportacao\SinacorExportarDadosClienteInfo.cs" />
+    <Compile Include="Dados\Sinacor\Exportacao\SinacorExportarEnderecoInfo.cs" />
+    <Compile Include="Dados\Sinacor\Exportacao\SinacorExportarInfo.cs" />
+    <Compile Include="Dados\Sinacor\Importacao\SinacorAtividadeCcInfo.cs" />
+    <Compile Include="Dados\Sinacor\Importacao\SinacorAtividadeCustodiaInfo.cs" />
+    <Compile Include="Dados\Sinacor\Importacao\SinacorBmfInfo.cs" />
+    <Compile Include="Dados\Sinacor\Importacao\SinacorBovespaInfo.cs" />
+    <Compile Include="Dados\Sinacor\Importacao\SinacorCcInfo.cs" />
+    <Compile Include="Dados\Sinacor\Importacao\SinacorChaveClienteInfo.cs" />
+    <Compile Include="Dados\Sinacor\Importacao\SinacorCienteInfo.cs" />
+    <Compile Include="Dados\Sinacor\Importacao\SinacorClienteComplementoInfo.cs" />
+    <Compile Include="Dados\Sinacor\Importacao\SinacorClienteGeralInfo.cs" />
+    <Compile Include="Dados\Sinacor\Importacao\SinacorClienteSinacorInfo.cs" />
+    <Compile Include="Dados\Sinacor\Importacao\SinacorContaBancariaInfo.cs" />
+    <Compile Include="Dados\Sinacor\Importacao\SinacorDiretorInfo.cs" />
+    <Compile Include="Dados\Sinacor\Importacao\SinacorEmitenteInfo.cs" />
+    <Compile Include="Dados\Sinacor\Importacao\SinacorEnderecoInfo.cs" />
+    <Compile Include="Dados\Sinacor\Importacao\SinacorSituacaoFinanceiraPatrimonialInfo.cs" />
+    <Compile Include="Dados\Sinacor\Importacao\SinacorTelefoneInfo.cs" />
+    <Compile Include="Dados\Cadastro\TipoTelefoneInfo.cs" />
+    <Compile Include="Dados\Views\ViewAtividadesIlicitasInfo.cs" />
+    <Compile Include="Dados\Views\ViewFichaCadastralCompletaInfo.cs" />
+    <Compile Include="Dados\Views\ViewPaisesEmBlackListInfo.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="ICodigoEntidadeControleDeOrdens.cs" />
+    <Compile Include="IServicoPersistenciaCadastro.cs" />
+    <Compile Include="Mensagens\ConsultarEntidadeCadastroRequest.cs" />
+    <Compile Include="Mensagens\ConsultarEntidadeCadastroResponse.cs" />
+    <Compile Include="Mensagens\FundosRequest.cs" />
+    <Compile Include="Mensagens\FundosResponse.cs" />
+    <Compile Include="Mensagens\IServicoCliente\CadastrarClienteCompletoRequest.cs" />
+    <Compile Include="Mensagens\IServicoCliente\CadastrarClienteCompletoResponse.cs" />
+    <Compile Include="Mensagens\IServicoCliente\CadastrarClienteRequest.cs" />
+    <Compile Include="Mensagens\IServicoCliente\CadastrarClienteResponse.cs" />
+    <Compile Include="Mensagens\IServicoCliente\CadastrarEntidadeFilhaRequest.cs" />
+    <Compile Include="Mensagens\IServicoCliente\CadastrarEntidadeFilhaResponse.cs" />
+    <Compile Include="Mensagens\IServicoCliente\CadastrarTelefoneRequest.cs" />
+    <Compile Include="Mensagens\IServicoCliente\CadastrarTelefoneResponse.cs" />
+    <Compile Include="Mensagens\BaseRequest.cs" />
+    <Compile Include="IServicoCliente.cs" />
+    <Compile Include="Mensagens\BaseResponse.cs" />
+    <Compile Include="Mensagens\IServicoCliente\BuscarClientesRequest.cs" />
+    <Compile Include="Mensagens\IServicoCliente\BuscarClientesResponse.cs" />
+    <Compile Include="Mensagens\BaseEntidades.cs" />
+    <Compile Include="Mensagens\IServicoCliente\ExcluirEntidadeFilhaRequest.cs" />
+    <Compile Include="Mensagens\IServicoCliente\ExcluirEntidadeFilhaResponse.cs" />
+    <Compile Include="Mensagens\IServicoCliente\BuscarEntidadeFilhaRequest.cs" />
+    <Compile Include="Mensagens\IServicoCliente\BuscarEntidadeFilhaResponse.cs" />
+    <Compile Include="Mensagens\IServicoCliente\ListarEntidadeFilhaRequest.cs" />
+    <Compile Include="Mensagens\IServicoCliente\ListarEntidadeFilhaResponse.cs" />
+    <Compile Include="Mensagens\IServicoCliente\SelecionarEntidadeFilhaRequest.cs" />
+    <Compile Include="Mensagens\IServicoCliente\SelecionarEntidadeFilhaResponse.cs" />
+    <Compile Include="Mensagens\IServicoCliente\SinacorComboRequest.cs" />
+    <Compile Include="Mensagens\IServicoCliente\SinacorComboResponse.cs" />
+    <Compile Include="Mensagens\ListarOrdemStarStopRequest.cs" />
+    <Compile Include="Mensagens\ListarOrdemStarStopResponse.cs" />
+    <Compile Include="Mensagens\ReceberEntidadeCadastroRequest.cs" />
+    <Compile Include="Mensagens\ReceberEntidadeCadastroResponse.cs" />
+    <Compile Include="Mensagens\RemoverEntidadeCadastroRequest.cs" />
+    <Compile Include="Mensagens\RemoverEntidadeCadastroResponse.cs" />
+    <Compile Include="Mensagens\SalvarEntidadeCadastroRequest.cs" />
+    <Compile Include="Mensagens\SalvarEntidadeCadastroResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Propriedades\Request\ConsultarEntidadeRequest.cs" />
+    <Compile Include="Propriedades\Request\ReceberEntidadeRequest.cs" />
+    <Compile Include="Propriedades\Request\RemoverEntidadeRequest.cs" />
+    <Compile Include="Propriedades\Request\SalvarEntidadeRequest.cs" />
+    <Compile Include="Propriedades\Response\ConsultarEntidadeResponse.cs" />
+    <Compile Include="Propriedades\Response\RemoverEntidadeResponse.cs" />
+    <Compile Include="Propriedades\Response\SalvarEntidadeResponse.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Gradual.OMS.Library.csproj">
+      <Project>{A5E45264-237E-471B-9260-88552A1EF7F3}</Project>
+      <Name>Gradual.OMS.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Persistencia\Gradual.OMS.Persistencia.csproj">
+      <Project>{01BFE534-741D-44B0-BDFF-7461D1AC66EC}</Project>
+      <Name>Gradual.OMS.Persistencia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.OMS-II\Gradual.OMS.Seguranca\Gradual.OMS.Seguranca.Lib\Gradual.OMS.Seguranca.Lib.csproj">
+      <Project>{421A9509-5314-420F-80EA-10A7B4D7309B}</Project>
+      <Name>Gradual.OMS.Seguranca.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1 @@
+WebDev.WebServer40.exe /port:60010 /path:D:\Gradual\Source\Gradual.Intranet\Gradual.Intranet.Www\

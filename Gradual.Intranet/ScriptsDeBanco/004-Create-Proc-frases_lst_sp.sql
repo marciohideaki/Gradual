@@ -1,0 +1,6 @@
+CREATE PROCEDURE frases_lst_sp
+AS
+    SELECT TB_FRASES.ID_FRASE
+         , TB_FRASES.DS_FRASE
+    FROM   TB_FRASES
+ 
