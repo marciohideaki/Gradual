@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{774E4DBF-F94A-4F63-881D-FE70B7DC0EFB}"
 	ProjectSection(SolutionItems) = preProject
 		Gradual.Intranet.vsmdi = Gradual.Intranet.vsmdi
@@ -51,69 +53,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.OMS.SegurancaADM.Lib", "..\Gradual.OMS-II\Gradual.OMS.Seguranca\Gradual.OMS.SegurancaADM.Lib\Gradual.OMS.SegurancaADM.Lib.csproj", "{B96F4EBB-762F-4FEB-A282-6DA1BEE581FE}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 20
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Gradual.Cadastro.Importacao\\Gradual.Cadastro.Importacao.csproj
-		SccProjectName1 = Gradual.Cadastro.Importacao
-		SccLocalPath1 = Gradual.Cadastro.Importacao
-		SccProjectUniqueName2 = Gradual.Intranet.Contratos\\Gradual.Intranet.Contratos.csproj
-		SccProjectName2 = Gradual.Intranet.Contratos
-		SccLocalPath2 = Gradual.Intranet.Contratos
-		SccProjectUniqueName3 = Gradual.Intranet.Servicos.BancoDeDados.Teste\\Gradual.Intranet.Servicos.BancoDeDados.Teste.csproj
-		SccProjectName3 = Gradual.Intranet.Servicos.BancoDeDados.Teste
-		SccLocalPath3 = Gradual.Intranet.Servicos.BancoDeDados.Teste
-		SccProjectUniqueName4 = Gradual.Intranet.Servicos.BancoDeDados\\Gradual.Intranet.Servicos.BancoDeDados.csproj
-		SccProjectName4 = Gradual.Intranet.Servicos.BancoDeDados
-		SccLocalPath4 = Gradual.Intranet.Servicos.BancoDeDados
-		SccProjectUniqueName5 = Gradual.Intranet.Servicos.Mock\\Gradual.Intranet.Servicos.Mock.csproj
-		SccProjectName5 = Gradual.Intranet.Servicos.Mock
-		SccLocalPath5 = Gradual.Intranet.Servicos.Mock
-		SccProjectUniqueName6 = Gradual.Intranet.Servicos.RegrasDeNegocio\\Gradual.Intranet.Servicos.RegrasDeNegocio.csproj
-		SccProjectName6 = Gradual.Intranet.Servicos.RegrasDeNegocio
-		SccLocalPath6 = Gradual.Intranet.Servicos.RegrasDeNegocio
-		SccProjectUniqueName7 = Gradual.Intranet.Www\\Gradual.Intranet.Www.csproj
-		SccProjectName7 = Gradual.Intranet.Www
-		SccLocalPath7 = Gradual.Intranet.Www
-		SccProjectUniqueName8 = Gradual.Intranet.Oracle\\Gradual.Intranet.Oracle.csproj
-		SccProjectName8 = Gradual.Intranet.Oracle
-		SccLocalPath8 = Gradual.Intranet.Oracle
-		SccProjectUniqueName9 = ..\\Gradual.Etc\\Gradual.Servico.FichaCadastral\\Gradual.Servico.FichaCadastral.Lib\\Gradual.Servico.FichaCadastral.Lib.csproj
-		SccProjectName9 = ../Gradual.Etc/Gradual.Servico.FichaCadastral/Gradual.Servico.FichaCadastral.Lib
-		SccLocalPath9 = ..\\Gradual.Etc\\Gradual.Servico.FichaCadastral\\Gradual.Servico.FichaCadastral.Lib
-		SccProjectUniqueName10 = ..\\Gradual.Etc\\Gradual.Servico.FichaCadastral\\Gradual.Servico.FichaCadastral\\Gradual.Servico.FichaCadastral.csproj
-		SccProjectName10 = ../Gradual.Etc/Gradual.Servico.FichaCadastral/Gradual.Servico.FichaCadastral
-		SccLocalPath10 = ..\\Gradual.Etc\\Gradual.Servico.FichaCadastral\\Gradual.Servico.FichaCadastral
-		SccProjectUniqueName11 = ..\\Gradual.OMS-II\\Gradual.OMS.Core\\Gradual.OMS.Persistencia\\Gradual.OMS.Persistencia.csproj
-		SccProjectName11 = ../Gradual.OMS-II/Gradual.OMS.Core/Gradual.OMS.Persistencia
-		SccLocalPath11 = ..\\Gradual.OMS-II\\Gradual.OMS.Core\\Gradual.OMS.Persistencia
-		SccProjectUniqueName12 = ..\\Gradual.OMS-II\\Gradual.OMS.Core\\Gradual.OMS.Library\\Gradual.OMS.Library.csproj
-		SccProjectName12 = ../Gradual.OMS-II/Gradual.OMS.Core/Gradual.OMS.Library
-		SccLocalPath12 = ..\\Gradual.OMS-II\\Gradual.OMS.Core\\Gradual.OMS.Library
-		SccProjectUniqueName13 = ..\\Gradual.OMS-II\\Gradual.OMS.Risco.Regra\\Gradual.OMS.Risco.Regra\\Gradual.OMS.Risco.Regra.csproj
-		SccProjectName13 = ../Gradual.OMS-II/Gradual.OMS.Risco.Regra/Gradual.OMS.Risco.Regra
-		SccLocalPath13 = ..\\Gradual.OMS-II\\Gradual.OMS.Risco.Regra\\Gradual.OMS.Risco.Regra
-		SccProjectUniqueName14 = ..\\Gradual.OMS-II\\Gradual.OMS.Risco.Regra\\Gradual.OMS.Risco.Regra.Lib\\Gradual.OMS.Risco.Regra.Lib.csproj
-		SccProjectName14 = ../Gradual.OMS-II/Gradual.OMS.Risco.Regra/Gradual.OMS.Risco.Regra.Lib
-		SccLocalPath14 = ..\\Gradual.OMS-II\\Gradual.OMS.Risco.Regra\\Gradual.OMS.Risco.Regra.Lib
-		SccProjectUniqueName15 = ..\\Gradual.Portal\\Gradual.Generico.Dados\\Gradual.Generico.Dados.csproj
-		SccProjectName15 = ../Gradual.Portal/Gradual.Generico.Dados
-		SccLocalPath15 = ..\\Gradual.Portal\\Gradual.Generico.Dados
-		SccProjectUniqueName16 = ..\\Gradual.Portal\\Gradual.Generico.Geral\\Gradual.Generico.Geral.csproj
-		SccProjectName16 = ../Gradual.Portal/Gradual.Generico.Geral
-		SccLocalPath16 = ..\\Gradual.Portal\\Gradual.Generico.Geral
-		SccProjectUniqueName17 = ..\\Gradual.OMS-II\\Gradual.OMS.Seguranca\\Gradual.OMS.Seguranca\\Gradual.OMS.Seguranca.csproj
-		SccProjectName17 = ../Gradual.OMS-II/Gradual.OMS.Seguranca/Gradual.OMS.Seguranca
-		SccLocalPath17 = ..\\Gradual.OMS-II\\Gradual.OMS.Seguranca\\Gradual.OMS.Seguranca
-		SccProjectUniqueName18 = ..\\Gradual.OMS-II\\Gradual.OMS.Seguranca\\Gradual.OMS.Seguranca.Lib\\Gradual.OMS.Seguranca.Lib.csproj
-		SccProjectName18 = ../Gradual.OMS-II/Gradual.OMS.Seguranca/Gradual.OMS.Seguranca.Lib
-		SccLocalPath18 = ..\\Gradual.OMS-II\\Gradual.OMS.Seguranca\\Gradual.OMS.Seguranca.Lib
-		SccProjectUniqueName19 = ..\\Gradual.OMS-II\\Gradual.OMS.Seguranca\\Gradual.OMS.SegurancaADM.Lib\\Gradual.OMS.SegurancaADM.Lib.csproj
-		SccProjectName19 = ../Gradual.OMS-II/Gradual.OMS.Seguranca/Gradual.OMS.SegurancaADM.Lib
-		SccLocalPath19 = ..\\Gradual.OMS-II\\Gradual.OMS.Seguranca\\Gradual.OMS.SegurancaADM.Lib
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -271,20 +210,20 @@ Global
 		{01BFE534-741D-44B0-BDFF-7461D1AC66EC}.Release|x86.ActiveCfg = Release|Any CPU
 		{A5E45264-237E-471B-9260-88552A1EF7F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A5E45264-237E-471B-9260-88552A1EF7F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A5E45264-237E-471B-9260-88552A1EF7F3}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
-		{A5E45264-237E-471B-9260-88552A1EF7F3}.Debug|Mixed Platforms.Build.0 = Debug|x64
-		{A5E45264-237E-471B-9260-88552A1EF7F3}.Debug|x64.ActiveCfg = Debug|x64
-		{A5E45264-237E-471B-9260-88552A1EF7F3}.Debug|x64.Build.0 = Debug|x64
+		{A5E45264-237E-471B-9260-88552A1EF7F3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A5E45264-237E-471B-9260-88552A1EF7F3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A5E45264-237E-471B-9260-88552A1EF7F3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A5E45264-237E-471B-9260-88552A1EF7F3}.Debug|x64.Build.0 = Debug|Any CPU
 		{A5E45264-237E-471B-9260-88552A1EF7F3}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{A5E45264-237E-471B-9260-88552A1EF7F3}.Debug|x86.Build.0 = Debug|Any CPU
 		{A5E45264-237E-471B-9260-88552A1EF7F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5E45264-237E-471B-9260-88552A1EF7F3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A5E45264-237E-471B-9260-88552A1EF7F3}.Release|Mixed Platforms.ActiveCfg = Release|x64
-		{A5E45264-237E-471B-9260-88552A1EF7F3}.Release|Mixed Platforms.Build.0 = Release|x64
-		{A5E45264-237E-471B-9260-88552A1EF7F3}.Release|x64.ActiveCfg = Release|x64
-		{A5E45264-237E-471B-9260-88552A1EF7F3}.Release|x64.Build.0 = Release|x64
-		{A5E45264-237E-471B-9260-88552A1EF7F3}.Release|x86.ActiveCfg = Release|x86
-		{A5E45264-237E-471B-9260-88552A1EF7F3}.Release|x86.Build.0 = Release|x86
+		{A5E45264-237E-471B-9260-88552A1EF7F3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A5E45264-237E-471B-9260-88552A1EF7F3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{A5E45264-237E-471B-9260-88552A1EF7F3}.Release|x64.ActiveCfg = Release|Any CPU
+		{A5E45264-237E-471B-9260-88552A1EF7F3}.Release|x64.Build.0 = Release|Any CPU
+		{A5E45264-237E-471B-9260-88552A1EF7F3}.Release|x86.ActiveCfg = Release|Any CPU
+		{A5E45264-237E-471B-9260-88552A1EF7F3}.Release|x86.Build.0 = Release|Any CPU
 		{BC60FD67-2DF2-48B4-917B-3BFF7DD98D28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BC60FD67-2DF2-48B4-917B-3BFF7DD98D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC60FD67-2DF2-48B4-917B-3BFF7DD98D28}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -380,5 +319,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F92A914-002A-41D9-9356-DC16865B51C5}
 	EndGlobalSection
 EndGlobal

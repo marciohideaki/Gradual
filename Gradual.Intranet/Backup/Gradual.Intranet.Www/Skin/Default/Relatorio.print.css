@@ -1,0 +1,232 @@
+﻿
+  h1
+, h2
+, #TitSistemaDeAdministracaoDeCadastro
+, #pnlMenuPrincipal
+, #pnlMensagem
+, #pnlMensagemAdicional
+, #pnlBusca_Clientes
+, #lstClientesSelecionados
+, #lstMenuCliente
+, #pnlFerramentas
+, .Busca_Formulario
+, .Aguarde
+, .TdRelatorioLimitePorClienteRenovarLimite
+, #pnlListaDeMensagens
+, .Fechar
+, .FecharRelatorios
+, BotaoPadrao
+{
+    display: none !important;
+}
+
+  #pnlMenuPrincipal
+, #pnlMensagem
+, #pnlMensagemAdicional
+, #pnlBusca_Clientes
+, #lstClientesSelecionados
+, #lstMenuCliente
+, #spanPaginacao
+{
+    display: none !important;
+}
+
+#pnlClientes_Formularios_Acoes_VerFichaCadastral h4,
+#pnlClientes_Formularios_Acoes_VerFichaCadastral .BotoesSubmit
+{
+    display: none
+}
+
+    #pnlClientes_Formularios_Acoes_VerFichaCadastral .PainelScroll
+    {
+        border: none !important;
+    }
+
+  .Busca_Container
+, .PosicaoConsolidadaCabecalhoConsulta
+, .Busca_Resultados
+, .pnlFormulario
+, #pnlCliente_Posicao_Relatorio
+{ 
+    display: block !important;
+    height: 100% !important;
+    width: 100% !important;
+    border: none !important;
+}
+/*
+#divExtratoDeConta
+{
+    display: block !important;
+    height: 100% !important;
+    width: 100% !important;
+    border: none !important;
+}
+*/
+table.FichaCadastral
+{
+    width:100%;
+}
+
+    table.FichaCadastral th,
+    table.FichaCadastral td
+    {
+        font-family:Arial;
+        font-size:0.7em;
+    }
+
+    table.FichaCadastral th
+    {
+        padding:0.4em;
+
+        text-align:center;
+        font-weight:bold;
+
+        background:#efefef;
+    }
+
+    table.FichaCadastral td
+    {
+        padding:0.4em 0.4em 0.3em 0.4em;
+        border-bottom:1px dotted #efefef;
+    }
+
+    table.FichaCadastral td.Label
+    {
+        width:40%;
+
+        padding-left:0.8em;
+
+        border-right:2px solid #ececec;
+        white-space:nowrap;
+    }
+
+.RelatorioImpressao
+{
+    display: block !important;
+    padding-bottom: 20px;
+}
+
+.RelatorioImpressao > h1
+{
+    display: block !important;
+    margin: 8px 0px 10px 8px !important;
+}
+
+.RelatorioImpressao > h2
+{
+    background: #f5f5f5 !important;
+    color: #32404F !important;
+    display: block !important;
+    font-size: 1em !important;
+    height: 0px !important;
+    margin: 8px 0px 70px 8px !important;
+}
+
+.pnlRelatorio
+{
+    /*
+    position:absolute;
+    
+    left:2%;
+    top:2%;
+    
+    width:96;
+    height:96%;
+      */  
+    /*background:aqua;*/
+}
+
+div.pnlRelatorio > div
+{
+    font-size:0.7em;
+    
+    border:none;
+}
+
+      div.CabecalhoRelatorio h1
+    , div.CabecalhoRelatorio h2
+    {
+        display:block;
+        font-family:Trebuchet MS;
+    }
+        
+    div.CabecalhoRelatorio h1
+    {
+        font-size:1.2em;
+        color:#32404F;
+        
+        padding:8px 0px 7px 8px;
+        
+        background:#f5f5f5;
+    }
+    
+    div.CabecalhoRelatorio img
+    {
+        margin-top:-41px;
+    }
+
+
+    /*
+    div.PainelDoRelatorio
+    {
+        border-top:0px solid transparent;
+    }
+
+        div.PainelDoRelatorio h1
+        {
+            display:block;
+        }
+
+        div.RodapeDoRelatorio p
+        {
+            color:#666;
+            padding:2em;
+        }*/
+
+.CamposRelatorioDBMDadosCadastrais
+{
+    float:left;
+    margin-bottom: 8px;
+    width: 26em;
+}
+
+.CamposRelatorioDBMDadosCadastrais input
+{
+    width: auto;
+    color: Black;   
+}
+
+.CamposRelatorioDBMDadosCadastrais #txtDBM_ResumoDoCliente_Corretagem
+{
+    margin: 0px 150px 0px 60px;
+}
+
+.CamposRelatorioDBMResumoDoCliente
+{
+    float: left;
+    text-align: right;
+    padding: 3px 8px 0px 0px;
+    width: 65px;
+}
+
+.CamposRelatorioDBMResumoDoClienteCorretagem
+{
+    margin-right: 70px;
+    text-align: right;
+}
+
+.RelatorioDBMImpressao
+{
+    font-size: 1.5em !important;
+}
+
+.Relatorio
+{
+    display: block !important;
+}
+
+.ExtratoDeConta
+{
+    height: 100%;    
+    float:left;
+}

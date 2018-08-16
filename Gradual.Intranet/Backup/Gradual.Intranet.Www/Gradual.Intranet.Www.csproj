@@ -1,0 +1,2517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1999D4D9-960F-4DBE-B22F-02257E3826F4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.Intranet.Www</RootNamespace>
+    <AssemblyName>Gradual.Intranet.Www</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <PublishDatabases>false</PublishDatabases>
+    <PackageAsSingleFile>true</PackageAsSingleFile>
+    <DeployIisAppPath>Default Web Site/Gradual.Intranet</DeployIisAppPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="evohtmltopdf">
+      <HintPath>..\Gradual.Intranet.Referencias\evohtmltopdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Core.OMS.FixServerLowLatency.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.Core.OMS.FixServerLowLatency.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Core.OMS.LimiteBMF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.Core.OMS.LimiteBMF.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Core.OMS.LimiteBMF.Lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.Core.OMS.LimiteBMF.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Core.OMS.LimiteManager">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.Core.OMS.LimiteManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Core.OMS.LimiteManager.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.Core.OMS.LimiteManager.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Core.Ordens.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.Core.Ordens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Core.Ordens.Persistencia, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.Core.Ordens.Persistencia.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.HomeBroker.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.HomeBroker.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.IntegracaoCMRocket.Lib">
+      <HintPath>..\..\Gradual.Integracao\Gradual.IntegracaoRocket\Gradual.IntegracaoCMRocket\bin\Debug\Gradual.IntegracaoCMRocket.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Monitores.Compliance.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.Monitores.Compliance.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Monitores.Risco.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.Monitores.Risco.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.AcompanhamentoOrdens.Lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.AcompanhamentoOrdens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.ConsolidadorRelatorioCCLib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.ConsolidadorRelatorioCCLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.ContaCorrente.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.ContaCorrente.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Cotacao.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.Cotacao.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Custodia.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.Custodia.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Email.Lib, Version=10.8.28.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.Email.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Mensageria">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.Mensageria.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Monitor.Custodia.Lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.Monitor.Custodia.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Ordens.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.Ordens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Ordens.StartStop.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.Ordens.StartStop.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.PlanoCliente">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.PlanoCliente.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.PlanoCliente.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.PlanoCliente.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.PoupeDirect.Lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.PoupeDirect.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.RelatoriosFinanc.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.RelatoriosFinanc.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.RoteadorOrdens.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.RoteadorOrdens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Termo.Lib">
+      <HintPath>..\Gradual.Intranet.Referencias\Gradual.OMS.Termo.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Gradual.OMS-II\Gradual.OMS.Risco.SaldoDevedor\Gradual.SaldoDevedor.References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Gradual.Intranet.Referencias\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="extbin\jsmin.exe" />
+    <Content Include="Extras\Emails\AvisoReservaIPOCancelada.htm" />
+    <Content Include="Extras\Emails\AvisoReservaIPOExecutada.htm" />
+    <Content Include="Extras\Emails\CadastroAlteracaoDeAssinaturaEletronica.htm" />
+    <Content Include="Extras\Emails\CadastroAlteracaoDeEndereco.htm" />
+    <Content Include="Extras\Emails\CadastroAlteracaoDeSenha.htm" />
+    <Content Include="Extras\Emails\CadastroAlteracaoDeSenhaDeFuncionario.htm" />
+    <Content Include="Extras\Emails\CadastroClienteMaior65.htm" />
+    <Content Include="Extras\Emails\CadastroClienteMenor18.htm" />
+    <Content Include="Extras\Emails\CadastroNotificarRenovacaoCadastral.htm" />
+    <Content Include="Extras\Emails\CadastroPasso1.htm" />
+    <Content Include="Extras\Emails\CadastroPasso3.htm" />
+    <Content Include="Extras\Emails\CadastroPasso4-PrimeiraExportacao.htm" />
+    <Content Include="Extras\Emails\CadastroPendenciaCadastral.htm" />
+    <Content Include="Extras\Emails\CadastroPendenciaClienteAssessor.htm" />
+    <Content Include="Extras\Emails\CadastroPrimeiraExportacaoAssessor.htm" />
+    <Content Include="Extras\Emails\EmailAlertaPEPCompliance.htm" />
+    <Content Include="Global.asax" />
+    <Content Include="Intranet\Buscas\Clientes.aspx" />
+    <Content Include="Intranet\Buscas\Clientes_Assessores.aspx" />
+    <Content Include="Intranet\Buscas\Compliance_Churning.aspx" />
+    <Content Include="Intranet\Buscas\Compliance_EstatisticaDayTrade.aspx" />
+    <Content Include="Intranet\Buscas\Compliance_NegociosDiretos.aspx" />
+    <Content Include="Intranet\Buscas\Compliance_OrdensAlteradasDayTrade.aspx" />
+    <Content Include="Intranet\Buscas\Monitoramento_OrdensSpider.aspx" />
+    <Content Include="Intranet\Buscas\Monitoramento_OrdensNovoOMS.aspx" />
+    <Content Include="Intranet\Buscas\Monitoramento_Termos.aspx" />
+    <Content Include="Intranet\Buscas\Monitoramento_UsuariosLogados.aspx" />
+    <Content Include="Intranet\Buscas\Relatorios.aspx" />
+    <Content Include="Intranet\Buscas\Risco.aspx" />
+    <Content Include="Intranet\Buscas\Risco_MonitoramentoIntradiario.aspx" />
+    <Content Include="Intranet\Buscas\Risco_MonitoramentoRiscoGeral.aspx" />
+    <Content Include="Intranet\Buscas\Risco_SuitabilityLavagem.aspx" />
+    <Content Include="Intranet\Buscas\Sistema_ObjetosDoSistema.aspx" />
+    <Content Include="Intranet\Buscas\Sistema_ValidacaoCadastralRocket.aspx" />
+    <Content Include="Intranet\Buscas\Solicitacoes_IPO.aspx" />
+    <Content Include="Intranet\Buscas\Solicitacoes_VendasDeFerramentas.aspx" />
+    <Content Include="Intranet\Clientes\Default.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Acoes\ConfigurarLimites.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Acoes\ConfigurarLimitesBMF.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Acoes\ConfigurarLimitesNovoOMS.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Acoes\FileLoader.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Acoes\IntegracaoRocket\css\integracaoRocket.css" />
+    <Content Include="Intranet\Clientes\Formularios\Acoes\IntegracaoRocket\Sumario.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Acoes\Resgate.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Acoes\SpiderLimitesBMF.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Acoes\SpiderLimitesBVSP.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Acoes\DocumentacaoEntregue.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Acoes\EfetivarRenovacao.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Dados\DadosCompletos_CB.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Dados\ImpostoDeRenda.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Dados\DadosPlanosCliente.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\ImportarClienteDoSinacor.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Acoes\Inativar.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Acoes\SincronizarComSinacor.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Acoes\SolicitacaoAlteracaoCadastral.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Acoes\Suitability.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Acoes\VerFichaCadastral.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Acoes\VerPendencias.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Dados\ClubesEFundos.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Dados\ContaCorrente.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Dados\Contratos.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Dados\Custodia.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Dados\EmpresasColigadas.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Dados\DadosCompletos_PF.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Dados\DadosCompletos_PJ.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Dados\Enderecos.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Dados\InformacoesBancarias.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Dados\InformacoesPatrimoniais.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Dados\PessoasAutorizadas.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Dados\Posicao.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Dados\Procuradores.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Dados\Diretores.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Dados\RendimentosSituacaoFinanceira.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Dados\RepresentantesLegais.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Dados\RepresentantesParaNaoResidente.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Dados\Telefones.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\LinkParaProspect.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\MigracaoEntreAssessores.aspx" />
+    <Content Include="Intranet\Buscas\Clientes_Reserva_IPO.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\ReservarIPO.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R029.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R028.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R027.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R023.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R010.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R011.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R012.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R013.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R014.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R015.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R016.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R017.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R018.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R019.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R020.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R021.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R022.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R024.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R025.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R026.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\RelImpressao.aspx" />
+    <Content Include="Intranet\Compliance\Default.aspx" />
+    <Content Include="Intranet\Compliance\Formularios\Dados\Churning.aspx" />
+    <Content Include="Intranet\Compliance\Formularios\EstatisticaDayTrade.aspx" />
+    <Content Include="Intranet\Compliance\Formularios\NegociosDiretos.aspx" />
+    <Content Include="Intranet\Compliance\Formularios\OrdensAlteradasDayTrade.aspx" />
+    <Content Include="Intranet\DBM\Relatorios\Filtros.aspx" />
+    <Content Include="Intranet\DBM\Relatorios\R001.aspx" />
+    <Content Include="Intranet\DBM\Relatorios\R002.aspx" />
+    <Content Include="Intranet\DBM\Relatorios\R003.aspx" />
+    <Content Include="Intranet\DBM\Relatorios\R004.aspx" />
+    <Content Include="Intranet\DBM\Relatorios\R005.aspx" />
+    <Content Include="Intranet\DBM\Relatorios\R006.aspx" />
+    <Content Include="Intranet\DBM\Relatorios\R007.aspx" />
+    <Content Include="Intranet\Default.aspx" />
+    <Content Include="Intranet\HomeBroker\Avisos.aspx" />
+    <Content Include="Intranet\HomeBroker\Default.aspx" />
+    <Content Include="Intranet\Monitoramento\ResultadoOrdensSpider.aspx" />
+    <Content Include="Intranet\Monitoramento\Default.aspx" />
+    <Content Include="Intranet\Monitoramento\Relatorios\Filtros.aspx" />
+    <Content Include="Intranet\Monitoramento\Relatorios\R001.aspx" />
+    <Content Include="Intranet\Monitoramento\ResultadoOrdens.aspx" />
+    <Content Include="Intranet\Monitoramento\ResultadoOrdensNovoOMS.aspx" />
+    <Content Include="Intranet\Monitoramento\ResultadoOrdensStop.aspx" />
+    <Content Include="Intranet\Monitoramento\ResultadoTermos.aspx" />
+    <Content Include="Intranet\Monitoramento\ResultadoUsuariosLogados.aspx" />
+    <Content Include="Intranet\Posicao\ExtratoOperacoesBovespa.aspx" />
+    <Content Include="Intranet\Posicao\FaxBmfEN.aspx" />
+    <Content Include="Intranet\Posicao\FaxBmfVolatilidade.aspx" />
+    <Content Include="Intranet\Posicao\FaxBmfBR.aspx" />
+    <Content Include="Intranet\Posicao\FaxBovespaEN.aspx" />
+    <Content Include="Intranet\Posicao\FaxBovespaResumido.aspx" />
+    <Content Include="Intranet\Posicao\FaxBovespaBR.aspx" />
+    <Content Include="Intranet\Posicao\NotaDeCorretagemBmf_ImpressaoEmLote.aspx" />
+    <Content Include="Intranet\Posicao\Custodia.aspx" />
+    <Content Include="Intranet\Posicao\ExtratoDeConta.aspx" />
+    <Content Include="Intranet\Posicao\Financeiro.aspx" />
+    <Content Include="Intranet\Posicao\NotaDeCorretagemBmf.aspx" />
+    <Content Include="Intranet\Posicao\NotaDeCorretagem.aspx" />
+    <Content Include="Intranet\Posicao\NotaDeCorretagem_ImpressaoEmLote.aspx" />
+    <Content Include="Intranet\Posicao\RelImpressao.aspx" />
+    <Content Include="Intranet\Relatorios\Default.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\ItensSpider.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\MonitoramentoCustodia.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\MonitoramentoIntradiario.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\SuitabilityLavagem.aspx" />
+    <Content Include="Intranet\Risco\Relatorios\R010.aspx" />
+    <Content Include="Intranet\Risco\RestricoesSpider.aspx" />
+    <Content Include="Intranet\Risco\Default.aspx" />
+    <Content Include="Intranet\Clientes\Formularios\Acoes\AssociarPermissoesParametros.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\AtivosGruposRestricoesSpider.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\DadosGrupoRestricaoSpider.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\ManutencaoRestricoesSpider.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\TravaExposicaoSpider.aspx" />
+    <Content Include="Intranet\Risco\Restricoes.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\AtivosGruposRestricoes.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\ClienteGrupo.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\DadosCompletos_Grupo.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\DadosCompletos_Permissao.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\DadosCompletos_Parametro.aspx" />
+    <Content Include="Intranet\Monitoramento\DesbloqueioCustodia.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\DadosGrupoRestricao.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\GrupoAlavancagem.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\Itens.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\ManutencaoCliente.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\ManutencaoRestricoes.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\MonitoramentoRiscoGeral.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\MonitoramentoRisco.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\MonitoramentoRiscoGeralDetalhamento.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\ParametroAlavancagem.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\PLD.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\TravaExposicao.aspx" />
+    <Content Include="Intranet\Risco\Formularios\Dados\ValoresParametros.aspx" />
+    <Content Include="Intranet\Risco\Relatorios\Filtros.aspx" />
+    <Content Include="Intranet\Risco\Relatorios\R001.aspx" />
+    <Content Include="Intranet\Risco\Relatorios\R002.aspx" />
+    <Content Include="Intranet\Risco\Relatorios\R003.aspx" />
+    <Content Include="Intranet\Risco\Relatorios\R004.aspx" />
+    <Content Include="Intranet\Risco\Relatorios\R005.aspx" />
+    <Content Include="Intranet\Risco\Relatorios\R006.aspx" />
+    <Content Include="Intranet\Risco\Relatorios\R007.aspx" />
+    <Content Include="Intranet\Risco\Relatorios\R008.aspx" />
+    <Content Include="Intranet\Risco\Relatorios\R009.aspx" />
+    <Content Include="Intranet\Seguranca\Default.aspx" />
+    <Content Include="Intranet\Seguranca\Formularios\Dados\AlterarSenha.aspx" />
+    <Content Include="Intranet\Seguranca\Formularios\Dados\AssociarPermissoes.aspx" />
+    <Content Include="Intranet\Seguranca\Formularios\Dados\DadosCompletos_PermissaoSeguranca.aspx" />
+    <Content Include="Intranet\Seguranca\Formularios\Dados\DadosCompletos_Grupo.aspx" />
+    <Content Include="Intranet\Seguranca\Formularios\Dados\DadosCompletos_Perfil.aspx" />
+    <Content Include="Intranet\Seguranca\Formularios\Dados\DadosCompletos_Usuario.aspx" />
+    <Content Include="Intranet\Seguranca\Formularios\Dados\Desbloqueio.aspx" />
+    <Content Include="Intranet\Seguranca\Formularios\Dados\Grupos.aspx" />
+    <Content Include="Intranet\Seguranca\Formularios\Dados\ParametrosGlobais.aspx" />
+    <Content Include="Intranet\Seguranca\Formularios\Dados\Perfis.aspx" />
+    <Content Include="Intranet\Seguranca\Formularios\Dados\Permissoes.aspx" />
+    <Content Include="Intranet\Seguranca\Formularios\Dados\Usuarios.aspx" />
+    <Content Include="Intranet\Sistema\Autorizacoes.aspx" />
+    <Content Include="Intranet\Sistema\ClienteValidacaoRocket.aspx" />
+    <Content Include="Intranet\Sistema\Default.aspx" />
+    <Content Include="Intranet\Sistema\ImportarClientesDoSinacor.aspx" />
+    <Content Include="Intranet\Sistema\MigracaoDeClientes.aspx" />
+    <Content Include="Intranet\Sistema\ObjetosDoSistema.aspx" />
+    <Content Include="Intranet\Sistema\PessoasExpostasPoliticamente.aspx" />
+    <Content Include="Intranet\Sistema\PessoasVinculadas.aspx" />
+    <Content Include="Intranet\Sistema\Relatorios\Filtros.aspx" />
+    <Content Include="Intranet\Sistema\Relatorios\R001.aspx" />
+    <Content Include="Intranet\Monitoramento\Relatorios\R002.aspx" />
+    <Content Include="Intranet\Sistema\Relatorios\R002.aspx" />
+    <Content Include="Intranet\Sistema\VariaveisDoSistema.aspx" />
+    <Content Include="Intranet\Solicitacoes\Formularios\Acoes\AlterarVenda.aspx" />
+    <Content Include="Intranet\Solicitacoes\Formularios\Dados\CadastroDeCambio.aspx" />
+    <Content Include="Intranet\Solicitacoes\Formularios\Dados\DadosDeVenda.aspx" />
+    <Content Include="Intranet\Solicitacoes\Formularios\Dados\GerenciamentoIPO.aspx" />
+    <Content Include="Intranet\Solicitacoes\Formularios\Dados\LogsDePagamento.aspx" />
+    <Content Include="Intranet\Solicitacoes\PoupeDirect\PoupeAplicacaoResgate.aspx" />
+    <Content Include="Intranet\Solicitacoes\PoupeDirect\PoupeOperacoes.aspx" />
+    <Content Include="Intranet\Solicitacoes\PoupeDirect\PoupeOperacoesResultado.aspx" />
+    <Content Include="Intranet\Solicitacoes\Default.aspx" />
+    <Content Include="Intranet\Solicitacoes\Formularios\Dados\SolicitacoesResgate.aspx" />
+    <Content Include="Js\Lib\Etc\Dev\excanvas.js" />
+    <Content Include="Js\Lib\Etc\Dev\g.pie.js" />
+    <Content Include="Js\Lib\Etc\Dev\g.raphael-min.js" />
+    <Content Include="Js\Lib\Etc\Dev\moment-with-locales.js" />
+    <Content Include="Js\Lib\Etc\Dev\raphael.js" />
+    <Content Include="Js\Lib\Etc\Dev\waitingDialog.js" />
+    <Content Include="Js\Lib\Etc\Min\g.pie-min.js" />
+    <Content Include="Js\Lib\Etc\Min\g.raphael-min.js" />
+    <Content Include="Js\Lib\Etc\Min\raphael-min.js" />
+    <Content Include="Js\Lib\Gradual\Dev\00-GradAuxiliares.js" />
+    <Content Include="Js\Lib\Gradual\Dev\01-GradSettings.js" />
+    <Content Include="Js\Lib\jQuery\Dev\dataTables.bootstrap.min.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\jquery-1.11.0.min.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\jquery.jqGrid.min.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jquery.maskedinput.min.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jquery.validationEngine-ptBR.default.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jquery.validationEngine.default.js" />
+    <Content Include="Js\Lib\jQuery\Dev\dataTables.jqueryui.min.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\grid.base.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\grid.celledit.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\grid.common.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\grid.custom.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\grid.formedit.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\grid.import.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\grid.inlinedit.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\grid.jqueryui.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\grid.postext.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\grid.setcolumns.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\grid.subgrid.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\grid.tbltogrid.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\grid.treegrid.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\i18n\grid.locale-en.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\i18n\grid.locale-pt-br.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\jqDnR.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\jqModal.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\jquery.fmatter.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\jquery.jqGrid.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\jquery.jqGrid.MonitoramentoRisco.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\jquery.layout.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\jquery.searchFilter.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jqgrid\JsonXml.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jquery-1.7.1.min.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jquery-3.2.1.min.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jquery.ajaxfileupload.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jquery.bt.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jquery.customInput.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jquery.fileupload.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jquery.maskedinput-1.2.2.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jquery.password.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jquery.validationEngine-ptBR.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jquery-1.4.2.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jquery.cookie.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jquery.format-1.0.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jquery.json-2.2.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jquery.validationEngine-en.js" />
+    <Content Include="Js\Lib\jQuery\Dev\jquery.validationEngine.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.ui.datepicker-pt-BR.default.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery-ui-1.8rc3.custom.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery-ui.min.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.effects.blind.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.effects.bounce.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.effects.clip.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.effects.core.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.effects.drop.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.effects.explode.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.effects.fold.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.effects.highlight.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.effects.pulsate.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.effects.scale.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.effects.shake.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.effects.slide.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.effects.transfer.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.ui.accordion.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.ui.autocomplete.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.ui.button.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.ui.core.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.ui.datepicker-pt-BR.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.ui.datepicker.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.ui.dialog.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.ui.draggable.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.ui.droppable.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.ui.mouse.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.ui.position.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.ui.progressbar.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.ui.resizable.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.ui.selectable.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.ui.slider.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.ui.sortable.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.ui.tabs.js" />
+    <Content Include="Js\Lib\jQuery\Dev\ui\jquery.ui.widget.js" />
+    <Content Include="Js\Paginas\Dev\01-GradIntra-Principal.js" />
+    <Content Include="Js\Paginas\Dev\02-GradIntra-Navegacao.js" />
+    <Content Include="Js\Paginas\Dev\04-GradIntra-Cadastro.js" />
+    <Content Include="Js\Paginas\Dev\10-Login.aspx.js" />
+    <Content Include="Js\Paginas\Dev\12-Risco.js" />
+    <Content Include="Js\Paginas\Dev\15-Monitoramento.js" />
+    <Content Include="Js\Paginas\Dev\16-Sistema.js" />
+    <Content Include="Js\Paginas\Dev\11-Clientes.js" />
+    <Content Include="Js\Paginas\Dev\03-GradIntra-Busca.js" />
+    <Content Include="Js\Paginas\Dev\17-Relatorios.js" />
+    <Content Include="Js\Paginas\Dev\18-Homebroker.js" />
+    <Content Include="Js\Paginas\Dev\19-Solicitacoes.js" />
+    <Content Include="Js\Paginas\Dev\42-Default.aspx.js" />
+    <Content Include="Js\Paginas\Dev\43-PoupeOperacoes.js" />
+    <Content Include="Js\Paginas\Dev\44-Compliance.js" />
+    <Content Include="Js\Paginas\Dev\45-TED.js" />
+    <Content Include="Js\Paginas\Dev\46-IntegracaoRocket.js" />
+    <Content Include="Js\readme-javascript.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="AppSettings.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Extras\Contratos\ContratoPJ-1501.pdf" />
+    <None Include="Extras\Contratos\Ficha Gradual PF Cambio.pdf" />
+    <None Include="Extras\Contratos\Ficha Gradual PF Cambio.xlsx" />
+    <Content Include="Extras\Contratos\Fichas Gradual PF Cambio.zip" />
+    <None Include="Extras\Files\Adesao_Contrato_Intermediacao_20jun13.doc" />
+    <Content Include="Intranet\Clientes\Formularios\Acoes\IntegracaoRocket\IntegracaoRocket.Master" />
+    <None Include="Service References\OperacaoCotistaWS\Gradual.Intranet.Www.OperacaoCotistaWS.OperacaoCotista.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OperacaoCotistaWS\Gradual.Intranet.Www.OperacaoCotistaWS.OperacaoCotistaViewModel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OperacaoCotistaWS\operacaocotista.wsdl" />
+    <None Include="Service References\OperacaoCotistaWS\configuration91.svcinfo" />
+    <None Include="Service References\OperacaoCotistaWS\configuration.svcinfo" />
+    <None Include="Service References\OperacaoCotistaWS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PosicaoCotista\Gradual.Intranet.Www.PosicaoCotista.PosicaoCotistaViewModel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PosicaoCotista\PosicaoCotista.disco" />
+    <None Include="Service References\PosicaoCotista\configuration91.svcinfo" />
+    <None Include="Service References\PosicaoCotista\configuration.svcinfo" />
+    <None Include="Service References\PosicaoCotista\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Skin\Default\dataTables.bootstrap.min.css" />
+    <Content Include="Skin\Default\dataTables.jqueryui.min.css" />
+    <Content Include="Skin\Default\gradintra-theme\images\ui-icons_42903b_256x240.png" />
+    <Content Include="Skin\Default\gradintra-theme\images\ui-icons_bbcf28_256x240.png" />
+    <Content Include="Skin\Default\Img\Botao_Fundo_Ocre.gif" />
+    <Content Include="Skin\Default\Img\Fundo-Texto-ForcaDaSenha.png" />
+    <Content Include="Skin\Default\Img\Gradual-Intranet-Icones-Solicitacoes-Montado.gif" />
+    <Content Include="Skin\Default\Img\Imagem-Suitability-Arrojado.jpg" />
+    <Content Include="Skin\Default\Img\Imagem-Suitability-Conservador.jpg" />
+    <Content Include="Skin\Default\Img\Imagem-Suitability-Moderado.jpg" />
+    <Content Include="Skin\Default\jquery-ui.css" />
+    <Content Include="Skin\Default\jquery.dataTables.min.css" />
+    <Content Include="Skin\Default\Relatorio.Desktop.css" />
+    <Content Include="Skin\Default\Relatorio.Desktop.print.css" />
+    <Content Include="Skin\Default\gradintra-theme\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Skin\Default\gradintra-theme\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Skin\Default\gradintra-theme\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Skin\Default\gradintra-theme\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Skin\Default\gradintra-theme\images\ui-bg_highlight-soft_75_b7babd_1x100.png" />
+    <Content Include="Skin\Default\gradintra-theme\images\ui-bg_highlight-soft_75_bec1c5_1x100.png" />
+    <Content Include="Skin\Default\gradintra-theme\images\ui-bg_highlight-soft_75_c6cacd_1x100.png" />
+    <Content Include="Skin\Default\gradintra-theme\images\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="Skin\Default\gradintra-theme\images\ui-icons_222222_256x240.png" />
+    <Content Include="Skin\Default\gradintra-theme\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Skin\Default\gradintra-theme\images\ui-icons_32404f_256x240.png" />
+    <Content Include="Skin\Default\gradintra-theme\images\ui-icons_454545_256x240.png" />
+    <Content Include="Skin\Default\gradintra-theme\images\ui-icons_888888_256x240.png" />
+    <Content Include="Skin\Default\gradintra-theme\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Skin\Default\gradintra-theme\jquery-ui-1.8.1.custom.css" />
+    <Content Include="Skin\Default\IE.css" />
+    <Content Include="Skin\Default\Img\Botao_Fundo_Verde.gif" />
+    <Content Include="Skin\Default\Img\checbox_full.jpg" />
+    <Content Include="Skin\Default\Img\checbox_none.jpg" />
+    <Content Include="Skin\Default\Img\Fundo-Opacidade-50.png" />
+    <Content Include="Skin\Default\Img\Fundo-Opacidade-70.png" />
+    <Content Include="Skin\Default\Img\GradIntra_Alerta_Modo_de_Compatibilidade.png" />
+    <Content Include="Skin\Default\Img\GradIntra_Arvore_Conector.gif" />
+    <Content Include="Skin\Default\Img\GradIntra_BotaoInformacao.png" />
+    <Content Include="Skin\Default\Img\GradIntra_Busca_ExpandirAbaixoAcima.gif" />
+    <Content Include="Skin\Default\Img\GradIntra_Cadastro_FormNovoItem_Abinha.gif" />
+    <Content Include="Skin\Default\Img\GradIntra_Cadastro_FormNovoItem_Fundo.png" />
+    <Content Include="Skin\Default\Img\GradIntra_CartaoCliente_IconeFechar.gif" />
+    <Content Include="Skin\Default\Img\GradIntra_Cliente_Limites_Separador.gif" />
+    <Content Include="Skin\Default\Img\GradIntra_Cliente_Limites_Separador_AVista.GIF" />
+    <Content Include="Skin\Default\Img\GradIntra_Cliente_Limites_Separador_Opcao.GIF" />
+    <Content Include="Skin\Default\Img\GradIntra_Grid_Monitoramento_TexturaCancelado.gif" />
+    <Content Include="Skin\Default\Img\GradIntra_Grid_Monitoramento_TexturaRejeitado.gif" />
+    <Content Include="Skin\Default\Img\GradIntra_Grid_THead_Fundo.gif" />
+    <Content Include="Skin\Default\Img\GradIntra_ListaDeMensagens_Setinha.png" />
+    <Content Include="Skin\Default\Img\GradIntra_ListaDeMensagens_SetinhaItem.gif" />
+    <Content Include="Skin\Default\Img\GradIntra_Mensagem_BotaoFechar.gif" />
+    <Content Include="Skin\Default\Img\GradIntra_MenuCliente_SetaMenuPersonalizado.gif" />
+    <Content Include="Skin\Default\Img\GradIntra_MenuFerramentas_SetaExpandir.png" />
+    <Content Include="Skin\Default\Img\GradIntra_Relatorio_TexturaNenhumItem.gif" />
+    <Content Include="Skin\Default\Img\GradIntra_Risco_IconesDeItens.gif" />
+    <Content Include="Skin\Default\Img\GradIntra_Risco_IconesDeItensResumidos.png" />
+    <Content Include="Skin\Default\Img\GradIntra_SubMenu_ScrollSetaPraDireita.gif" />
+    <Content Include="Skin\Default\Img\GradIntra_SubMenu_ScrollSetaPraEsquerda.gif" />
+    <Content Include="Skin\Default\Img\GradIntra_Suitability_Resultado_1.png" />
+    <Content Include="Skin\Default\Img\GradIntra_Suitability_Resultado_2.png" />
+    <Content Include="Skin\Default\Img\GradIntra_Suitability_Resultado_3.png" />
+    <Content Include="Skin\Default\Img\GradIntra_Suitability_Resultado_4.png" />
+    <Content Include="Skin\Default\Img\GradIntra_Textura_AzulIntermediario.gif" />
+    <Content Include="Skin\Default\Img\Gradual-Intranet-CheckBoxes.gif" />
+    <Content Include="Skin\Default\Img\Gradual-Intranet-RadioButtons.png" />
+    <Content Include="Skin\Default\Img\Gradual_Intranet_botao_ajuda.gif" />
+    <Content Include="Skin\Default\Img\GridIntranet_THead_Fundo.gif" />
+    <Content Include="Skin\Default\Img\HB01_Icones_EstadoDoPapel.png" />
+    <Content Include="Skin\Default\Img\HB01_Relatorio_Titulo_FundoGradual.png" />
+    <Content Include="Skin\Default\Img\Icone_UsuariosEGrupos_18x18.png" />
+    <Content Include="Skin\Default\Img\Icone_UsuariosEGrupos_Resumidos.png" />
+    <Content Include="Skin\Default\Img\Ico_Ajuda.gif" />
+    <Content Include="Skin\Default\Img\Ico_Cancelar.png" />
+    <Content Include="Skin\Default\Img\Ico_CancelarEdicao.png" />
+    <Content Include="Skin\Default\Img\Ico_Editar-2.png" />
+    <Content Include="Skin\Default\Img\Ico_Editar.png" />
+    <Content Include="Skin\Default\Img\Ico_Excluir-2.png" />
+    <Content Include="Skin\Default\Img\Ico_Excluir.png" />
+    <Content Include="Skin\Default\Img\Ico_Expandir.gif" />
+    <Content Include="Skin\Default\Img\Ico_Expandir_AbaixoAcima.gif" />
+    <Content Include="Skin\Default\Img\Ico_Expandir_AbaixoAcima.png" />
+    <Content Include="Skin\Default\Img\Ico_Mini_AlertaTriangulo.gif" />
+    <Content Include="Skin\Default\Img\Ico_Novo.png" />
+    <Content Include="Skin\Default\Img\Ico_Salvar.png" />
+    <Content Include="Skin\Default\Img\Login_FundoDaPagina.gif" />
+    <Content Include="Skin\Default\Img\Login_Splash.jpg" />
+    <Content Include="Skin\Default\Img\logo_gradual.jpg" />
+    <Content Include="Skin\Default\Img\pixel_blue.jpg" />
+    <Content Include="Skin\Default\Img\SAC_CartaoCliente_Expandido_Cliente_MFJ.gif" />
+    <Content Include="Skin\Default\Img\SAC_CartaoCliente_Expandido_Fundo.png" />
+    <Content Include="Skin\Default\Img\SAC_CartaoCliente_Fundo.gif" />
+    <Content Include="Skin\Default\Img\SAC_Formulario_Loader.gif" />
+    <Content Include="Skin\Default\Img\SAC_H1_Fundo.png" />
+    <Content Include="Skin\Default\Img\SAC_Ico_UsuarioLogado.gif" />
+    <Content Include="Skin\Default\Img\SAC_MenuCliente_Fundo.gif" />
+    <Content Include="Skin\Default\Img\SAC_MenuCliente_ItemSelecionado_Fundo.gif" />
+    <Content Include="Skin\Default\Img\SAC_MenuCliente_Topo_Fundo.gif" />
+    <Content Include="Skin\Default\Img\SAC_SubMenu_Textura.gif" />
+    <Content Include="Skin\Default\Img\SAC_Suitability_TituloPergunta_Fundo.gif" />
+    <Content Include="Skin\Default\Img\Setas_SubiuDesceu.png" />
+    <Content Include="Skin\Default\Intranet\Clientes.css" />
+    <Content Include="Skin\Default\Intranet\Default.aspx.css" />
+    <Content Include="Skin\Default\Login.aspx.css" />
+    <Content Include="Skin\Default\Principal.css" />
+    <Content Include="Skin\Default\ui.autocomplete.css" />
+    <Content Include="Skin\Default\ui.jqgrid.css" />
+    <Content Include="Skin\Default\ValidationEngine.jquery.css" />
+    <Content Include="TesteDevCodeBehind.aspx" />
+    <Content Include="TesteDevRelatorios.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Service References\PosicaoCotista\PosicaoCotista.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Codigo\ChamadaAjaxResponse.cs" />
+    <Compile Include="App_Codigo\ConfiguracoesValidadas.cs" />
+    <Compile Include="App_Codigo\PosicaoFundo.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Posicao\TransporteNotaDeCorretagemBmf.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_029.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_028.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_021.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_022.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_023.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_027.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Financeiro\TansportePosicaoCustodiaFinanceiro.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Financeiro\TransporteExtratoOperacoesBovespa.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Financeiro\TransporteFaxBmf.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Financeiro\TransporteFaxBovespa.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Financeiro\TransporteNotaDeCorretagemExtratoBmf.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Financeiro\TransporteRelatorioRendaFixa.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Risco\TransporteRelatorio_010.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteChurningIntraday.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Ordens\TransporteOrdemDetalhe.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Ordens\TransporteOrdemStopDetalhe.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Posicao\TransporteNotaDeCorretagem.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_010.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_011.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_013.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_014.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_015.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_016.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_017.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_018.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_019.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_020.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\DBM\TransporteRelatorio_001.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\DBM\TransporteRelatorio_002.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\DBM\TransporteRelatorio_003.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\DBM\TransporteRelatorio_004.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\DBM\TransporteRelatorio_005.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\DBM\TransporteRelatorio_006.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\DBM\TransporteRelatorio_007.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Monitoramento\TransporteRelatorio_001.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Risco\TransporteRelatorio_007.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Risco\TransporteRelatorio_008.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Risco\TransporteRelatorio_009.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Sistema\TransporteRelatorio_001.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Solicitacoes\TransporteAplicacaoResgate.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteAcompanhamentoDeTermo.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteAvisoHomeBroker.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteBloqueioInstrumento.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteClienteAssessor.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteClienteAutorizacaoCadastral.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteClienteParametroGrupo.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteCompliance.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteCustodia.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteDadosIPO.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteDadosIPOInfo.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteDocumentacaoEntregue.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteGrupoDeAlavancagem.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteImportacao.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteImpostoDeRenda.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteManutencaoCliente.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteMonitoramentoIntradiario.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteParametrosMonitoramentoRisco.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteProdutoInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="App_Codigo\TransporteJson\TransporteRiscoMonitoramento.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteRiscoMonitoramentoLucrosPrejuizos.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteSegurancaPermissaoSeguranca.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Ordens\TransporteResultadoOrdens.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Ordens\TransporteResultadoOrdensStop.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Financeiro\CustodiaExtratoInfo.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Financeiro\TransporteNotaDeCorretagem.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Financeiro\TransporteRelatorioContaCorrente.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Financeiro\TransporteRelatorioCustodia.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Risco\TransporteRelatorio_001.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Risco\TransporteRelatorio_002.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Risco\TransporteRelatorio_003.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Risco\TransporteRelatorio_004.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Risco\TransporteRelatorio_005.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Risco\TransporteRelatorio_006.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteConfigurarLimites.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteCustodiaInfo.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteRiscoGrupoItem.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteRiscoParametro.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteRiscoParametroCliente.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteRiscoPermissao.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Excessoes\ExcessaoConverterParaClienteEnderecoInfo.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Excessoes\ExcessaoConverterParaClienteInfo.cs" />
+    <Compile Include="App_Codigo\Extensions.cs" />
+    <Compile Include="App_Codigo\PaginaBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Codigo\PaginaBaseAutenticada.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Codigo\TransporteJson\ITransporteJSON.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Financeiro\TransporteRelatorioClubes.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Financeiro\TransporteRelatorioClubesEFundos.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Financeiro\TransporteRelatorioFundos.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteAlterarSenhaUsuario.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteAtivarInativarCliente.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteContrato.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteContratoInstrumentos.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteDadosBancarios.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_009.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_008.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_007.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_006.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_005.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_004.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_003.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_002.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Relatorios\Cliente\TransporteRelatorio_001.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteDadosCompletosClienteBase.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteDadosCompletosPF.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteDadosCompletosPJ.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteDadosResumidosCliente.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteDeListaPaginada.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteDiretor.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteEmitente.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteEmpresaColigada.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteEnderecos.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteImportacaoPEP.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteInformacoesPatrimoniais.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteInvestidorNaoResidente.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteLimiteBMF.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteLimiteBovespa.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteLimites.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteMensagemDeNegocio.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteObjetoDoSistema.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransportePerfilDeRisco.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransportePessoaExpostaPoliticamente.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransportePessoaVinculada.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteProcuradores.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteRegraDeRisco.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteRepresentantesBase.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteResultadoOrdensStop.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteRetornoDeCadastro.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteRiscoAssociacaoPermissoes.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteRiscoGrupo.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteSaldoDeConta.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteSegurancaDadosAssociados.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteSegurancaGrupo.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteSegurancaInterfaces.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteSegurancaItemFilho.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteSegurancaPerfil.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteSegurancaPermissao.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteSegurancaUsuario.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteSincronizacaoComSinacor.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteSolicitacaoAlteracaoCadastral.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteSuitability.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteSuitabilityLavagem.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteTelefone.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransportePendenciaCadastral.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteUsuariosLogados.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteVariavelDoSistema.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteVendaDeFerramentaInfo.cs" />
+    <Compile Include="App_Codigo\TransporteJson\Transporte_PosicaoCotistaRebate.cs" />
+    <Compile Include="App_Codigo\TransporteJson\TransporteDadosIPOCliente.cs" />
+    <Compile Include="App_Codigo\TransporteRiscoAssociacaoCliente.cs" />
+    <Compile Include="App_Codigo\Transporte_PosicaoCotista.cs" />
+    <Compile Include="App_Codigo\Usuario.cs" />
+    <Compile Include="App_Codigo\ValidarSegurancaAttribute.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GerarDocumetosPDF.ashx.cs">
+      <DependentUpon>GerarDocumetosPDF.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Clientes.aspx.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Clientes.aspx.designer.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Clientes_Assessores.aspx.cs">
+      <DependentUpon>Clientes_Assessores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Clientes_Assessores.aspx.designer.cs">
+      <DependentUpon>Clientes_Assessores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Compliance_Churning.aspx.cs">
+      <DependentUpon>Compliance_Churning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Compliance_Churning.aspx.designer.cs">
+      <DependentUpon>Compliance_Churning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Compliance_EstatisticaDayTrade.aspx.cs">
+      <DependentUpon>Compliance_EstatisticaDayTrade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Compliance_EstatisticaDayTrade.aspx.designer.cs">
+      <DependentUpon>Compliance_EstatisticaDayTrade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Compliance_NegociosDiretos.aspx.cs">
+      <DependentUpon>Compliance_NegociosDiretos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Compliance_NegociosDiretos.aspx.designer.cs">
+      <DependentUpon>Compliance_NegociosDiretos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Compliance_OrdensAlteradasDayTrade.aspx.cs">
+      <DependentUpon>Compliance_OrdensAlteradasDayTrade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Compliance_OrdensAlteradasDayTrade.aspx.designer.cs">
+      <DependentUpon>Compliance_OrdensAlteradasDayTrade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Monitoramento_OrdensSpider.aspx.cs">
+      <DependentUpon>Monitoramento_OrdensSpider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Monitoramento_OrdensSpider.aspx.designer.cs">
+      <DependentUpon>Monitoramento_OrdensSpider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Monitoramento_Ordens.aspx.cs">
+      <DependentUpon>Monitoramento_Ordens.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Monitoramento_Ordens.aspx.designer.cs">
+      <DependentUpon>Monitoramento_Ordens.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Monitoramento_OrdensNovoOMS.aspx.cs">
+      <DependentUpon>Monitoramento_OrdensNovoOMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Monitoramento_OrdensNovoOMS.aspx.designer.cs">
+      <DependentUpon>Monitoramento_OrdensNovoOMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Monitoramento_OrdensStop.aspx.cs">
+      <DependentUpon>Monitoramento_OrdensStop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Monitoramento_OrdensStop.aspx.designer.cs">
+      <DependentUpon>Monitoramento_OrdensStop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Monitoramento_Termos.aspx.cs">
+      <DependentUpon>Monitoramento_Termos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Monitoramento_Termos.aspx.designer.cs">
+      <DependentUpon>Monitoramento_Termos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Monitoramento_UsuariosLogados.aspx.cs">
+      <DependentUpon>Monitoramento_UsuariosLogados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Monitoramento_UsuariosLogados.aspx.designer.cs">
+      <DependentUpon>Monitoramento_UsuariosLogados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Relatorios.aspx.cs">
+      <DependentUpon>Relatorios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Relatorios.aspx.designer.cs">
+      <DependentUpon>Relatorios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Risco.aspx.cs">
+      <DependentUpon>Risco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Risco.aspx.designer.cs">
+      <DependentUpon>Risco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Risco_MonitoramentoIntradiario.aspx.cs">
+      <DependentUpon>Risco_MonitoramentoIntradiario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Risco_MonitoramentoIntradiario.aspx.designer.cs">
+      <DependentUpon>Risco_MonitoramentoIntradiario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Risco_MonitoramentoRiscoGeral.aspx.cs">
+      <DependentUpon>Risco_MonitoramentoRiscoGeral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Risco_MonitoramentoRiscoGeral.aspx.designer.cs">
+      <DependentUpon>Risco_MonitoramentoRiscoGeral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Risco_SuitabilityLavagem.aspx.cs">
+      <DependentUpon>Risco_SuitabilityLavagem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Risco_SuitabilityLavagem.aspx.designer.cs">
+      <DependentUpon>Risco_SuitabilityLavagem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Seguranca.aspx.cs">
+      <DependentUpon>Seguranca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Seguranca.aspx.designer.cs">
+      <DependentUpon>Seguranca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Sistema_ObjetosDoSistema.aspx.cs">
+      <DependentUpon>Sistema_ObjetosDoSistema.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Sistema_ObjetosDoSistema.aspx.designer.cs">
+      <DependentUpon>Sistema_ObjetosDoSistema.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Sistema_ValidacaoCadastralRocket.aspx.cs">
+      <DependentUpon>Sistema_ValidacaoCadastralRocket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Sistema_ValidacaoCadastralRocket.aspx.designer.cs">
+      <DependentUpon>Sistema_ValidacaoCadastralRocket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Solicitacoes_IPO.aspx.cs">
+      <DependentUpon>Solicitacoes_IPO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Solicitacoes_IPO.aspx.designer.cs">
+      <DependentUpon>Solicitacoes_IPO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Solicitacoes_VendasDeFerramentas.aspx.cs">
+      <DependentUpon>Solicitacoes_VendasDeFerramentas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Solicitacoes_VendasDeFerramentas.aspx.designer.cs">
+      <DependentUpon>Solicitacoes_VendasDeFerramentas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\ConfigurarLimites.aspx.cs">
+      <DependentUpon>ConfigurarLimites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\ConfigurarLimites.aspx.designer.cs">
+      <DependentUpon>ConfigurarLimites.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\ConfigurarLimitesBMF.aspx.cs">
+      <DependentUpon>ConfigurarLimitesBMF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\ConfigurarLimitesBMF.aspx.designer.cs">
+      <DependentUpon>ConfigurarLimitesBMF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\ConfigurarLimitesNovoOMS.aspx.cs">
+      <DependentUpon>ConfigurarLimitesNovoOMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\ConfigurarLimitesNovoOMS.aspx.designer.cs">
+      <DependentUpon>ConfigurarLimitesNovoOMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\FileLoader.aspx.cs">
+      <DependentUpon>FileLoader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\IntegracaoRocket\IntegracaoRocket.Master.cs">
+      <DependentUpon>IntegracaoRocket.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\IntegracaoRocket\IntegracaoRocket.Master.designer.cs">
+      <DependentUpon>IntegracaoRocket.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\IntegracaoRocket\Sumario.aspx.cs">
+      <DependentUpon>Sumario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\IntegracaoRocket\Sumario.aspx.designer.cs">
+      <DependentUpon>Sumario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\Resgate.aspx.cs">
+      <DependentUpon>Resgate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\Resgate.aspx.designer.cs">
+      <DependentUpon>Resgate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\SpiderLimitesBMF.aspx.cs">
+      <DependentUpon>SpiderLimitesBMF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\SpiderLimitesBMF.aspx.designer.cs">
+      <DependentUpon>SpiderLimitesBMF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\SpiderLimitesBVSP.aspx.cs">
+      <DependentUpon>SpiderLimitesBVSP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\SpiderLimitesBVSP.aspx.designer.cs">
+      <DependentUpon>SpiderLimitesBVSP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\DocumentacaoEntregue.aspx.cs">
+      <DependentUpon>DocumentacaoEntregue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\DocumentacaoEntregue.aspx.designer.cs">
+      <DependentUpon>DocumentacaoEntregue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\EfetivarRenovacao.aspx.cs">
+      <DependentUpon>EfetivarRenovacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\EfetivarRenovacao.aspx.designer.cs">
+      <DependentUpon>EfetivarRenovacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\DadosCompletos_CB.aspx.cs">
+      <DependentUpon>DadosCompletos_CB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\DadosCompletos_CB.aspx.designer.cs">
+      <DependentUpon>DadosCompletos_CB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\ImpostoDeRenda.aspx.cs">
+      <DependentUpon>ImpostoDeRenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\ImpostoDeRenda.aspx.designer.cs">
+      <DependentUpon>ImpostoDeRenda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\DadosPlanosCliente.aspx.cs">
+      <DependentUpon>DadosPlanosCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\DadosPlanosCliente.aspx.designer.cs">
+      <DependentUpon>DadosPlanosCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\ImportarClienteDoSinacor.aspx.cs">
+      <DependentUpon>ImportarClienteDoSinacor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\ImportarClienteDoSinacor.aspx.designer.cs">
+      <DependentUpon>ImportarClienteDoSinacor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\Inativar.aspx.cs">
+      <DependentUpon>Inativar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\Inativar.aspx.designer.cs">
+      <DependentUpon>Inativar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\SincronizarComSinacor.aspx.cs">
+      <DependentUpon>SincronizarComSinacor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\SincronizarComSinacor.aspx.designer.cs">
+      <DependentUpon>SincronizarComSinacor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\SolicitacaoAlteracaoCadastral.aspx.cs">
+      <DependentUpon>SolicitacaoAlteracaoCadastral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\SolicitacaoAlteracaoCadastral.aspx.designer.cs">
+      <DependentUpon>SolicitacaoAlteracaoCadastral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\Suitability.aspx.cs">
+      <DependentUpon>Suitability.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\Suitability.aspx.designer.cs">
+      <DependentUpon>Suitability.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\VerFichaCadastral.aspx.cs">
+      <DependentUpon>VerFichaCadastral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\VerFichaCadastral.aspx.designer.cs">
+      <DependentUpon>VerFichaCadastral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\VerPendencias.aspx.cs">
+      <DependentUpon>VerPendencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\VerPendencias.aspx.designer.cs">
+      <DependentUpon>VerPendencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\ClubesEFundos.aspx.cs">
+      <DependentUpon>ClubesEFundos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\ClubesEFundos.aspx.designer.cs">
+      <DependentUpon>ClubesEFundos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\ContaCorrente.aspx.cs">
+      <DependentUpon>ContaCorrente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\ContaCorrente.aspx.designer.cs">
+      <DependentUpon>ContaCorrente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\Contratos.aspx.cs">
+      <DependentUpon>Contratos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\Contratos.aspx.designer.cs">
+      <DependentUpon>Contratos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\Custodia.aspx.cs">
+      <DependentUpon>Custodia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\Custodia.aspx.designer.cs">
+      <DependentUpon>Custodia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\EmpresasColigadas.aspx.cs">
+      <DependentUpon>EmpresasColigadas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\EmpresasColigadas.aspx.designer.cs">
+      <DependentUpon>EmpresasColigadas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\DadosCompletos_PF.aspx.cs">
+      <DependentUpon>DadosCompletos_PF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\DadosCompletos_PF.aspx.designer.cs">
+      <DependentUpon>DadosCompletos_PF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\DadosCompletos_PJ.aspx.cs">
+      <DependentUpon>DadosCompletos_PJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\DadosCompletos_PJ.aspx.designer.cs">
+      <DependentUpon>DadosCompletos_PJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\Enderecos.aspx.cs">
+      <DependentUpon>Enderecos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\Enderecos.aspx.designer.cs">
+      <DependentUpon>Enderecos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\InformacoesBancarias.aspx.cs">
+      <DependentUpon>InformacoesBancarias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\InformacoesBancarias.aspx.designer.cs">
+      <DependentUpon>InformacoesBancarias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\InformacoesPatrimoniais.aspx.cs">
+      <DependentUpon>InformacoesPatrimoniais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\InformacoesPatrimoniais.aspx.designer.cs">
+      <DependentUpon>InformacoesPatrimoniais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\PessoasAutorizadas.aspx.cs">
+      <DependentUpon>PessoasAutorizadas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\PessoasAutorizadas.aspx.designer.cs">
+      <DependentUpon>PessoasAutorizadas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\Posicao.aspx.cs">
+      <DependentUpon>Posicao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\Posicao.aspx.designer.cs">
+      <DependentUpon>Posicao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\Procuradores.aspx.cs">
+      <DependentUpon>Procuradores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\Procuradores.aspx.designer.cs">
+      <DependentUpon>Procuradores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\Diretores.aspx.cs">
+      <DependentUpon>Diretores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\Diretores.aspx.designer.cs">
+      <DependentUpon>Diretores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\RendimentosSituacaoFinanceira.aspx.cs">
+      <DependentUpon>RendimentosSituacaoFinanceira.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\RendimentosSituacaoFinanceira.aspx.designer.cs">
+      <DependentUpon>RendimentosSituacaoFinanceira.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\RepresentantesLegais.aspx.cs">
+      <DependentUpon>RepresentantesLegais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\RepresentantesLegais.aspx.designer.cs">
+      <DependentUpon>RepresentantesLegais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\RepresentantesParaNaoResidente.aspx.cs">
+      <DependentUpon>RepresentantesParaNaoResidente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\RepresentantesParaNaoResidente.aspx.designer.cs">
+      <DependentUpon>RepresentantesParaNaoResidente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\Telefones.aspx.cs">
+      <DependentUpon>Telefones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Dados\Telefones.aspx.designer.cs">
+      <DependentUpon>Telefones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\LinkParaProspect.aspx.cs">
+      <DependentUpon>LinkParaProspect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\LinkParaProspect.aspx.designer.cs">
+      <DependentUpon>LinkParaProspect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\MigracaoEntreAssessores.aspx.cs">
+      <DependentUpon>MigracaoEntreAssessores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\MigracaoEntreAssessores.aspx.designer.cs">
+      <DependentUpon>MigracaoEntreAssessores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Clientes_Reserva_IPO.aspx.cs">
+      <DependentUpon>Clientes_Reserva_IPO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Buscas\Clientes_Reserva_IPO.aspx.designer.cs">
+      <DependentUpon>Clientes_Reserva_IPO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\ReservarIPO.aspx.cs">
+      <DependentUpon>ReservarIPO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\ReservarIPO.aspx.designer.cs">
+      <DependentUpon>ReservarIPO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R029.aspx.cs">
+      <DependentUpon>R029.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R029.aspx.designer.cs">
+      <DependentUpon>R029.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R028.aspx.cs">
+      <DependentUpon>R028.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R028.aspx.designer.cs">
+      <DependentUpon>R028.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R027.aspx.cs">
+      <DependentUpon>R027.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R027.aspx.designer.cs">
+      <DependentUpon>R027.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R023.aspx.cs">
+      <DependentUpon>R023.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R023.aspx.designer.cs">
+      <DependentUpon>R023.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\Filtros.aspx.cs">
+      <DependentUpon>Filtros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\Filtros.aspx.designer.cs">
+      <DependentUpon>Filtros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R001.aspx.cs">
+      <DependentUpon>R001.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R001.aspx.designer.cs">
+      <DependentUpon>R001.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R002.aspx.cs">
+      <DependentUpon>R002.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R002.aspx.designer.cs">
+      <DependentUpon>R002.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R003.aspx.cs">
+      <DependentUpon>R003.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R003.aspx.designer.cs">
+      <DependentUpon>R003.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R004.aspx.cs">
+      <DependentUpon>R004.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R004.aspx.designer.cs">
+      <DependentUpon>R004.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R005.aspx.cs">
+      <DependentUpon>R005.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R005.aspx.designer.cs">
+      <DependentUpon>R005.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R006.aspx.cs">
+      <DependentUpon>R006.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R006.aspx.designer.cs">
+      <DependentUpon>R006.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R007.aspx.cs">
+      <DependentUpon>R007.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R007.aspx.designer.cs">
+      <DependentUpon>R007.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R008.aspx.cs">
+      <DependentUpon>R008.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R008.aspx.designer.cs">
+      <DependentUpon>R008.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R009.aspx.cs">
+      <DependentUpon>R009.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R009.aspx.designer.cs">
+      <DependentUpon>R009.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R010.aspx.cs">
+      <DependentUpon>R010.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R010.aspx.designer.cs">
+      <DependentUpon>R010.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R011.aspx.cs">
+      <DependentUpon>R011.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R011.aspx.designer.cs">
+      <DependentUpon>R011.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R012.aspx.cs">
+      <DependentUpon>R012.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R012.aspx.designer.cs">
+      <DependentUpon>R012.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R013.aspx.cs">
+      <DependentUpon>R013.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R013.aspx.designer.cs">
+      <DependentUpon>R013.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R014.aspx.cs">
+      <DependentUpon>R014.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R014.aspx.designer.cs">
+      <DependentUpon>R014.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R015.aspx.cs">
+      <DependentUpon>R015.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R015.aspx.designer.cs">
+      <DependentUpon>R015.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R016.aspx.cs">
+      <DependentUpon>R016.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R016.aspx.designer.cs">
+      <DependentUpon>R016.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R017.aspx.cs">
+      <DependentUpon>R017.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R017.aspx.designer.cs">
+      <DependentUpon>R017.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R018.aspx.cs">
+      <DependentUpon>R018.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R018.aspx.designer.cs">
+      <DependentUpon>R018.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R019.aspx.cs">
+      <DependentUpon>R019.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R019.aspx.designer.cs">
+      <DependentUpon>R019.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R020.aspx.cs">
+      <DependentUpon>R020.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R020.aspx.designer.cs">
+      <DependentUpon>R020.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R021.aspx.cs">
+      <DependentUpon>R021.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R021.aspx.designer.cs">
+      <DependentUpon>R021.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R022.aspx.cs">
+      <DependentUpon>R022.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R022.aspx.designer.cs">
+      <DependentUpon>R022.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R024.aspx.cs">
+      <DependentUpon>R024.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R024.aspx.designer.cs">
+      <DependentUpon>R024.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R025.aspx.cs">
+      <DependentUpon>R025.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R025.aspx.designer.cs">
+      <DependentUpon>R025.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R026.aspx.cs">
+      <DependentUpon>R026.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\R026.aspx.designer.cs">
+      <DependentUpon>R026.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\RelImpressao.aspx.cs">
+      <DependentUpon>RelImpressao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Relatorios\RelImpressao.aspx.designer.cs">
+      <DependentUpon>RelImpressao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Compliance\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Compliance\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Compliance\Formularios\Dados\Churning.aspx.cs">
+      <DependentUpon>Churning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Compliance\Formularios\Dados\Churning.aspx.designer.cs">
+      <DependentUpon>Churning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Compliance\Formularios\EstatisticaDayTrade.aspx.cs">
+      <DependentUpon>EstatisticaDayTrade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Compliance\Formularios\EstatisticaDayTrade.aspx.designer.cs">
+      <DependentUpon>EstatisticaDayTrade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Compliance\Formularios\NegociosDiretos.aspx.cs">
+      <DependentUpon>NegociosDiretos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Compliance\Formularios\NegociosDiretos.aspx.designer.cs">
+      <DependentUpon>NegociosDiretos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Compliance\Formularios\OrdensAlteradasDayTrade.aspx.cs">
+      <DependentUpon>OrdensAlteradasDayTrade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Compliance\Formularios\OrdensAlteradasDayTrade.aspx.designer.cs">
+      <DependentUpon>OrdensAlteradasDayTrade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\DBM\Relatorios\Filtros.aspx.cs">
+      <DependentUpon>Filtros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\DBM\Relatorios\Filtros.aspx.designer.cs">
+      <DependentUpon>Filtros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\DBM\Relatorios\R001.aspx.cs">
+      <DependentUpon>R001.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\DBM\Relatorios\R001.aspx.designer.cs">
+      <DependentUpon>R001.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\DBM\Relatorios\R002.aspx.cs">
+      <DependentUpon>R002.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\DBM\Relatorios\R002.aspx.designer.cs">
+      <DependentUpon>R002.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\DBM\Relatorios\R003.aspx.cs">
+      <DependentUpon>R003.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\DBM\Relatorios\R003.aspx.designer.cs">
+      <DependentUpon>R003.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\DBM\Relatorios\R004.aspx.cs">
+      <DependentUpon>R004.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\DBM\Relatorios\R004.aspx.designer.cs">
+      <DependentUpon>R004.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\DBM\Relatorios\R005.aspx.cs">
+      <DependentUpon>R005.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\DBM\Relatorios\R005.aspx.designer.cs">
+      <DependentUpon>R005.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\DBM\Relatorios\R006.aspx.cs">
+      <DependentUpon>R006.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\DBM\Relatorios\R006.aspx.designer.cs">
+      <DependentUpon>R006.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\DBM\Relatorios\R007.aspx.cs">
+      <DependentUpon>R007.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\DBM\Relatorios\R007.aspx.designer.cs">
+      <DependentUpon>R007.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\HomeBroker\Avisos.aspx.cs">
+      <DependentUpon>Avisos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\HomeBroker\Avisos.aspx.designer.cs">
+      <DependentUpon>Avisos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\HomeBroker\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\HomeBroker\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Monitoramento\ResultadoOrdensSpider.aspx.cs">
+      <DependentUpon>ResultadoOrdensSpider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Monitoramento\ResultadoOrdensSpider.aspx.designer.cs">
+      <DependentUpon>ResultadoOrdensSpider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Monitoramento\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Monitoramento\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Monitoramento\Relatorios\Filtros.aspx.cs">
+      <DependentUpon>Filtros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Monitoramento\Relatorios\Filtros.aspx.designer.cs">
+      <DependentUpon>Filtros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Monitoramento\Relatorios\R001.aspx.cs">
+      <DependentUpon>R001.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Monitoramento\Relatorios\R001.aspx.designer.cs">
+      <DependentUpon>R001.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Monitoramento\ResultadoOrdens.aspx.cs">
+      <DependentUpon>ResultadoOrdens.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Monitoramento\ResultadoOrdens.aspx.designer.cs">
+      <DependentUpon>ResultadoOrdens.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Monitoramento\ResultadoOrdensNovoOMS.aspx.cs">
+      <DependentUpon>ResultadoOrdensNovoOMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Monitoramento\ResultadoOrdensNovoOMS.aspx.designer.cs">
+      <DependentUpon>ResultadoOrdensNovoOMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Monitoramento\ResultadoOrdensStop.aspx.cs">
+      <DependentUpon>ResultadoOrdensStop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Monitoramento\ResultadoOrdensStop.aspx.designer.cs">
+      <DependentUpon>ResultadoOrdensStop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Monitoramento\ResultadoTermos.aspx.cs">
+      <DependentUpon>ResultadoTermos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Monitoramento\ResultadoTermos.aspx.designer.cs">
+      <DependentUpon>ResultadoTermos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Monitoramento\ResultadoUsuariosLogados.aspx.cs">
+      <DependentUpon>ResultadoUsuariosLogados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Monitoramento\ResultadoUsuariosLogados.aspx.designer.cs">
+      <DependentUpon>ResultadoUsuariosLogados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Posicao\ExtratoOperacoesBovespa.aspx.cs">
+      <DependentUpon>ExtratoOperacoesBovespa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Posicao\ExtratoOperacoesBovespa.aspx.designer.cs">
+      <DependentUpon>ExtratoOperacoesBovespa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Posicao\FaxBmfEN.aspx.cs">
+      <DependentUpon>FaxBmfEN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Posicao\FaxBmfEN.aspx.designer.cs">
+      <DependentUpon>FaxBmfEN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Posicao\FaxBmfVolatilidade.aspx.cs">
+      <DependentUpon>FaxBmfVolatilidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Posicao\FaxBmfVolatilidade.aspx.designer.cs">
+      <DependentUpon>FaxBmfVolatilidade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Posicao\FaxBmfBR.aspx.cs">
+      <DependentUpon>FaxBmfBR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Posicao\FaxBmfBR.aspx.designer.cs">
+      <DependentUpon>FaxBmfBR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Posicao\FaxBovespaEN.aspx.cs">
+      <DependentUpon>FaxBovespaEN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Posicao\FaxBovespaEN.aspx.designer.cs">
+      <DependentUpon>FaxBovespaEN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Posicao\FaxBovespaResumido.aspx.cs">
+      <DependentUpon>FaxBovespaResumido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Posicao\FaxBovespaResumido.aspx.designer.cs">
+      <DependentUpon>FaxBovespaResumido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Posicao\FaxBovespaBR.aspx.cs">
+      <DependentUpon>FaxBovespaBR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Posicao\FaxBovespaBR.aspx.designer.cs">
+      <DependentUpon>FaxBovespaBR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Posicao\NotaDeCorretagemBmf_ImpressaoEmLote.aspx.cs">
+      <DependentUpon>NotaDeCorretagemBmf_ImpressaoEmLote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Posicao\NotaDeCorretagemBmf_ImpressaoEmLote.aspx.designer.cs">
+      <DependentUpon>NotaDeCorretagemBmf_ImpressaoEmLote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Posicao\Custodia.aspx.cs">
+      <DependentUpon>Custodia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Posicao\Custodia.aspx.designer.cs">
+      <DependentUpon>Custodia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Posicao\ExtratoDeConta.aspx.cs">
+      <DependentUpon>ExtratoDeConta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Posicao\ExtratoDeConta.aspx.designer.cs">
+      <DependentUpon>ExtratoDeConta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Posicao\Financeiro.aspx.cs">
+      <DependentUpon>Financeiro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Posicao\Financeiro.aspx.designer.cs">
+      <DependentUpon>Financeiro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Posicao\NotaDeCorretagemBmf.aspx.cs">
+      <DependentUpon>NotaDeCorretagemBmf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Posicao\NotaDeCorretagemBmf.aspx.designer.cs">
+      <DependentUpon>NotaDeCorretagemBmf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Posicao\NotaDeCorretagem.aspx.cs">
+      <DependentUpon>NotaDeCorretagem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Posicao\NotaDeCorretagem.aspx.designer.cs">
+      <DependentUpon>NotaDeCorretagem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Posicao\NotaDeCorretagem_ImpressaoEmLote.aspx.cs">
+      <DependentUpon>NotaDeCorretagem_ImpressaoEmLote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Posicao\NotaDeCorretagem_ImpressaoEmLote.aspx.designer.cs">
+      <DependentUpon>NotaDeCorretagem_ImpressaoEmLote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Posicao\RelImpressao.aspx.cs">
+      <DependentUpon>RelImpressao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Posicao\RelImpressao.aspx.designer.cs">
+      <DependentUpon>RelImpressao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Relatorios\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Relatorios\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\ItensSpider.aspx.cs">
+      <DependentUpon>ItensSpider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\ItensSpider.aspx.designer.cs">
+      <DependentUpon>ItensSpider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\MonitoramentoCustodia.aspx.cs">
+      <DependentUpon>MonitoramentoCustodia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\MonitoramentoCustodia.aspx.designer.cs">
+      <DependentUpon>MonitoramentoCustodia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\MonitoramentoIntradiario.aspx.cs">
+      <DependentUpon>MonitoramentoIntradiario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\MonitoramentoIntradiario.aspx.designer.cs">
+      <DependentUpon>MonitoramentoIntradiario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\SuitabilityLavagem.aspx.cs">
+      <DependentUpon>SuitabilityLavagem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\SuitabilityLavagem.aspx.designer.cs">
+      <DependentUpon>SuitabilityLavagem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Relatorios\R010.aspx.cs">
+      <DependentUpon>R010.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Relatorios\R010.aspx.designer.cs">
+      <DependentUpon>R010.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\RestricoesSpider.aspx.cs">
+      <DependentUpon>RestricoesSpider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\RestricoesSpider.aspx.designer.cs">
+      <DependentUpon>RestricoesSpider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\AssociarPermissoesParametros.aspx.cs">
+      <DependentUpon>AssociarPermissoesParametros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Clientes\Formularios\Acoes\AssociarPermissoesParametros.aspx.designer.cs">
+      <DependentUpon>AssociarPermissoesParametros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\AtivosGruposRestricoesSpider.aspx.cs">
+      <DependentUpon>AtivosGruposRestricoesSpider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\AtivosGruposRestricoesSpider.aspx.designer.cs">
+      <DependentUpon>AtivosGruposRestricoesSpider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\DadosGrupoRestricaoSpider.aspx.cs">
+      <DependentUpon>DadosGrupoRestricaoSpider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\DadosGrupoRestricaoSpider.aspx.designer.cs">
+      <DependentUpon>DadosGrupoRestricaoSpider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\ManutencaoRestricoesSpider.aspx.cs">
+      <DependentUpon>ManutencaoRestricoesSpider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\ManutencaoRestricoesSpider.aspx.designer.cs">
+      <DependentUpon>ManutencaoRestricoesSpider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\TravaExposicaoSpider.aspx.cs">
+      <DependentUpon>TravaExposicaoSpider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\TravaExposicaoSpider.aspx.designer.cs">
+      <DependentUpon>TravaExposicaoSpider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Restricoes.aspx.cs">
+      <DependentUpon>Restricoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Restricoes.aspx.designer.cs">
+      <DependentUpon>Restricoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\AtivosGruposRestricoes.aspx.cs">
+      <DependentUpon>AtivosGruposRestricoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\AtivosGruposRestricoes.aspx.designer.cs">
+      <DependentUpon>AtivosGruposRestricoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\ClienteGrupo.aspx.cs">
+      <DependentUpon>ClienteGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\ClienteGrupo.aspx.designer.cs">
+      <DependentUpon>ClienteGrupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\DadosCompletos_Grupo.aspx.cs">
+      <DependentUpon>DadosCompletos_Grupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\DadosCompletos_Grupo.aspx.designer.cs">
+      <DependentUpon>DadosCompletos_Grupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\DadosCompletos_Permissao.aspx.cs">
+      <DependentUpon>DadosCompletos_Permissao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\DadosCompletos_Permissao.aspx.designer.cs">
+      <DependentUpon>DadosCompletos_Permissao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\DadosCompletos_Parametro.aspx.cs">
+      <DependentUpon>DadosCompletos_Parametro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\DadosCompletos_Parametro.aspx.designer.cs">
+      <DependentUpon>DadosCompletos_Parametro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Monitoramento\DesbloqueioCustodia.aspx.cs">
+      <DependentUpon>DesbloqueioCustodia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Monitoramento\DesbloqueioCustodia.aspx.designer.cs">
+      <DependentUpon>DesbloqueioCustodia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\DadosGrupoRestricao.aspx.cs">
+      <DependentUpon>DadosGrupoRestricao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\DadosGrupoRestricao.aspx.designer.cs">
+      <DependentUpon>DadosGrupoRestricao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\GrupoAlavancagem.aspx.cs">
+      <DependentUpon>GrupoAlavancagem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\GrupoAlavancagem.aspx.designer.cs">
+      <DependentUpon>GrupoAlavancagem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\Itens.aspx.cs">
+      <DependentUpon>Itens.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\Itens.aspx.designer.cs">
+      <DependentUpon>Itens.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\ManutencaoCliente.aspx.cs">
+      <DependentUpon>ManutencaoCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\ManutencaoCliente.aspx.designer.cs">
+      <DependentUpon>ManutencaoCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\ManutencaoRestricoes.aspx.cs">
+      <DependentUpon>ManutencaoRestricoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\ManutencaoRestricoes.aspx.designer.cs">
+      <DependentUpon>ManutencaoRestricoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\MonitoramentoRiscoGeral.aspx.cs">
+      <DependentUpon>MonitoramentoRiscoGeral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\MonitoramentoRiscoGeral.aspx.designer.cs">
+      <DependentUpon>MonitoramentoRiscoGeral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\MonitoramentoRisco.aspx.cs">
+      <DependentUpon>MonitoramentoRisco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\MonitoramentoRisco.aspx.designer.cs">
+      <DependentUpon>MonitoramentoRisco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\MonitoramentoRiscoGeralDetalhamento.aspx.cs">
+      <DependentUpon>MonitoramentoRiscoGeralDetalhamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\MonitoramentoRiscoGeralDetalhamento.aspx.designer.cs">
+      <DependentUpon>MonitoramentoRiscoGeralDetalhamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\ParametroAlavancagem.aspx.cs">
+      <DependentUpon>ParametroAlavancagem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\ParametroAlavancagem.aspx.designer.cs">
+      <DependentUpon>ParametroAlavancagem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\PLD.aspx.cs">
+      <DependentUpon>PLD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\PLD.aspx.designer.cs">
+      <DependentUpon>PLD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\TravaExposicao.aspx.cs">
+      <DependentUpon>TravaExposicao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\TravaExposicao.aspx.designer.cs">
+      <DependentUpon>TravaExposicao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\ValoresParametros.aspx.cs">
+      <DependentUpon>ValoresParametros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Formularios\Dados\ValoresParametros.aspx.designer.cs">
+      <DependentUpon>ValoresParametros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Relatorios\Filtros.aspx.cs">
+      <DependentUpon>Filtros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Relatorios\Filtros.aspx.designer.cs">
+      <DependentUpon>Filtros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Relatorios\R001.aspx.cs">
+      <DependentUpon>R001.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Relatorios\R001.aspx.designer.cs">
+      <DependentUpon>R001.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Relatorios\R002.aspx.cs">
+      <DependentUpon>R002.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Relatorios\R002.aspx.designer.cs">
+      <DependentUpon>R002.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Relatorios\R003.aspx.cs">
+      <DependentUpon>R003.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Relatorios\R003.aspx.designer.cs">
+      <DependentUpon>R003.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Relatorios\R004.aspx.cs">
+      <DependentUpon>R004.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Relatorios\R004.aspx.designer.cs">
+      <DependentUpon>R004.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Relatorios\R005.aspx.cs">
+      <DependentUpon>R005.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Relatorios\R005.aspx.designer.cs">
+      <DependentUpon>R005.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Relatorios\R006.aspx.cs">
+      <DependentUpon>R006.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Relatorios\R006.aspx.designer.cs">
+      <DependentUpon>R006.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Relatorios\R007.aspx.cs">
+      <DependentUpon>R007.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Relatorios\R007.aspx.designer.cs">
+      <DependentUpon>R007.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Relatorios\R008.aspx.cs">
+      <DependentUpon>R008.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Relatorios\R008.aspx.designer.cs">
+      <DependentUpon>R008.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Risco\Relatorios\R009.aspx.cs">
+      <DependentUpon>R009.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Risco\Relatorios\R009.aspx.designer.cs">
+      <DependentUpon>R009.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\AlterarSenha.aspx.cs">
+      <DependentUpon>AlterarSenha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\AlterarSenha.aspx.designer.cs">
+      <DependentUpon>AlterarSenha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\AssociarPermissoes.aspx.cs">
+      <DependentUpon>AssociarPermissoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\AssociarPermissoes.aspx.designer.cs">
+      <DependentUpon>AssociarPermissoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\DadosCompletos_PermissaoSeguranca.aspx.cs">
+      <DependentUpon>DadosCompletos_PermissaoSeguranca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\DadosCompletos_PermissaoSeguranca.aspx.designer.cs">
+      <DependentUpon>DadosCompletos_PermissaoSeguranca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\DadosCompletos_Grupo.aspx.cs">
+      <DependentUpon>DadosCompletos_Grupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\DadosCompletos_Grupo.aspx.designer.cs">
+      <DependentUpon>DadosCompletos_Grupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\DadosCompletos_Perfil.aspx.cs">
+      <DependentUpon>DadosCompletos_Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\DadosCompletos_Perfil.aspx.designer.cs">
+      <DependentUpon>DadosCompletos_Perfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\DadosCompletos_Usuario.aspx.cs">
+      <DependentUpon>DadosCompletos_Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\DadosCompletos_Usuario.aspx.designer.cs">
+      <DependentUpon>DadosCompletos_Usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\Desbloqueio.aspx.cs">
+      <DependentUpon>Desbloqueio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\Desbloqueio.aspx.designer.cs">
+      <DependentUpon>Desbloqueio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\Grupos.aspx.cs">
+      <DependentUpon>Grupos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\Grupos.aspx.designer.cs">
+      <DependentUpon>Grupos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\ParametrosGlobais.aspx.cs">
+      <DependentUpon>ParametrosGlobais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\ParametrosGlobais.aspx.designer.cs">
+      <DependentUpon>ParametrosGlobais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\Perfis.aspx.cs">
+      <DependentUpon>Perfis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\Perfis.aspx.designer.cs">
+      <DependentUpon>Perfis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\Permissoes.aspx.cs">
+      <DependentUpon>Permissoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\Permissoes.aspx.designer.cs">
+      <DependentUpon>Permissoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Seguranca\Formularios\Dados\Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Sistema\Autorizacoes.aspx.cs">
+      <DependentUpon>Autorizacoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Sistema\Autorizacoes.aspx.designer.cs">
+      <DependentUpon>Autorizacoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Sistema\ClienteValidacaoRocket.aspx.cs">
+      <DependentUpon>ClienteValidacaoRocket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Sistema\ClienteValidacaoRocket.aspx.designer.cs">
+      <DependentUpon>ClienteValidacaoRocket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Sistema\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Sistema\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Sistema\ImportarClientesDoSinacor.aspx.cs">
+      <DependentUpon>ImportarClientesDoSinacor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Sistema\ImportarClientesDoSinacor.aspx.designer.cs">
+      <DependentUpon>ImportarClientesDoSinacor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Sistema\MigracaoDeClientes.aspx.cs">
+      <DependentUpon>MigracaoDeClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Sistema\MigracaoDeClientes.aspx.designer.cs">
+      <DependentUpon>MigracaoDeClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Sistema\ObjetosDoSistema.aspx.cs">
+      <DependentUpon>ObjetosDoSistema.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Sistema\ObjetosDoSistema.aspx.designer.cs">
+      <DependentUpon>ObjetosDoSistema.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Sistema\PessoasExpostasPoliticamente.aspx.cs">
+      <DependentUpon>PessoasExpostasPoliticamente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Sistema\PessoasExpostasPoliticamente.aspx.designer.cs">
+      <DependentUpon>PessoasExpostasPoliticamente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Sistema\PessoasVinculadas.aspx.cs">
+      <DependentUpon>PessoasVinculadas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Sistema\PessoasVinculadas.aspx.designer.cs">
+      <DependentUpon>PessoasVinculadas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Sistema\Relatorios\Filtros.aspx.cs">
+      <DependentUpon>Filtros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Sistema\Relatorios\Filtros.aspx.designer.cs">
+      <DependentUpon>Filtros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Sistema\Relatorios\R001.aspx.cs">
+      <DependentUpon>R001.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Sistema\Relatorios\R001.aspx.designer.cs">
+      <DependentUpon>R001.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Monitoramento\Relatorios\R002.aspx.cs">
+      <DependentUpon>R002.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Monitoramento\Relatorios\R002.aspx.designer.cs">
+      <DependentUpon>R002.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Sistema\Relatorios\R002.aspx.cs">
+      <DependentUpon>R002.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Sistema\Relatorios\R002.aspx.designer.cs">
+      <DependentUpon>R002.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Sistema\VariaveisDoSistema.aspx.cs">
+      <DependentUpon>VariaveisDoSistema.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Sistema\VariaveisDoSistema.aspx.designer.cs">
+      <DependentUpon>VariaveisDoSistema.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Solicitacoes\Formularios\Acoes\AlterarVenda.aspx.cs">
+      <DependentUpon>AlterarVenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Solicitacoes\Formularios\Acoes\AlterarVenda.aspx.designer.cs">
+      <DependentUpon>AlterarVenda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Solicitacoes\Formularios\Dados\CadastroDeCambio.aspx.cs">
+      <DependentUpon>CadastroDeCambio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Solicitacoes\Formularios\Dados\CadastroDeCambio.aspx.designer.cs">
+      <DependentUpon>CadastroDeCambio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Solicitacoes\Formularios\Dados\DadosDeVenda.aspx.cs">
+      <DependentUpon>DadosDeVenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Solicitacoes\Formularios\Dados\DadosDeVenda.aspx.designer.cs">
+      <DependentUpon>DadosDeVenda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Solicitacoes\Formularios\Dados\GerenciamentoIPO.aspx.cs">
+      <DependentUpon>GerenciamentoIPO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Solicitacoes\Formularios\Dados\GerenciamentoIPO.aspx.designer.cs">
+      <DependentUpon>GerenciamentoIPO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Solicitacoes\Formularios\Dados\LogsDePagamento.aspx.cs">
+      <DependentUpon>LogsDePagamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Solicitacoes\Formularios\Dados\LogsDePagamento.aspx.designer.cs">
+      <DependentUpon>LogsDePagamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Solicitacoes\PoupeDirect\PoupeAplicacaoResgate.aspx.cs">
+      <DependentUpon>PoupeAplicacaoResgate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Solicitacoes\PoupeDirect\PoupeAplicacaoResgate.aspx.designer.cs">
+      <DependentUpon>PoupeAplicacaoResgate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Solicitacoes\PoupeDirect\PoupeOperacoes.aspx.cs">
+      <DependentUpon>PoupeOperacoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Solicitacoes\PoupeDirect\PoupeOperacoes.aspx.designer.cs">
+      <DependentUpon>PoupeOperacoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Solicitacoes\PoupeDirect\PoupeOperacoesResultado.aspx.cs">
+      <DependentUpon>PoupeOperacoesResultado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Solicitacoes\PoupeDirect\PoupeOperacoesResultado.aspx.designer.cs">
+      <DependentUpon>PoupeOperacoesResultado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Solicitacoes\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Solicitacoes\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intranet\Solicitacoes\Formularios\Dados\SolicitacoesResgate.aspx.cs">
+      <DependentUpon>SolicitacoesResgate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intranet\Solicitacoes\Formularios\Dados\SolicitacoesResgate.aspx.designer.cs">
+      <DependentUpon>SolicitacoesResgate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RetornarArquivo.ashx.cs">
+      <DependentUpon>RetornarArquivo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\OperacaoCotistaWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PosicaoCotista\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="TesteDevCodeBehind.aspx.cs">
+      <DependentUpon>TesteDevCodeBehind.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TesteDevCodeBehind.aspx.designer.cs">
+      <DependentUpon>TesteDevCodeBehind.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TesteDevRelatorios.aspx.cs">
+      <DependentUpon>TesteDevRelatorios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TesteDevRelatorios.aspx.designer.cs">
+      <DependentUpon>TesteDevRelatorios.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Gradual.Etc\Gradual.Servico.FichaCadastral\Gradual.Servico.FichaCadastral.Lib\Gradual.Servico.FichaCadastral.Lib.csproj">
+      <Project>{07910909-ACD3-4335-84A9-E182CBE0BB30}</Project>
+      <Name>Gradual.Servico.FichaCadastral.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Gradual.OMS.Library.csproj">
+      <Project>{A5E45264-237E-471B-9260-88552A1EF7F3}</Project>
+      <Name>Gradual.OMS.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Persistencia\Gradual.OMS.Persistencia.csproj">
+      <Project>{01BFE534-741D-44B0-BDFF-7461D1AC66EC}</Project>
+      <Name>Gradual.OMS.Persistencia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.OMS-II\Gradual.OMS.Risco.Regra\Gradual.OMS.Risco.Regra.Lib\Gradual.OMS.Risco.Regra.Lib.csproj">
+      <Project>{A63D6BCE-E1DF-4454-8AB3-BC2C5EF7047B}</Project>
+      <Name>Gradual.OMS.Risco.Regra.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.OMS-II\Gradual.OMS.Risco.Regra\Gradual.OMS.Risco.Regra\Gradual.OMS.Risco.Regra.csproj">
+      <Project>{BC60FD67-2DF2-48B4-917B-3BFF7DD98D28}</Project>
+      <Name>Gradual.OMS.Risco.Regra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.OMS-II\Gradual.OMS.Seguranca\Gradual.OMS.Seguranca.Lib\Gradual.OMS.Seguranca.Lib.csproj">
+      <Project>{421A9509-5314-420F-80EA-10A7B4D7309B}</Project>
+      <Name>Gradual.OMS.Seguranca.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.OMS-II\Gradual.OMS.Seguranca\Gradual.OMS.SegurancaADM.Lib\Gradual.OMS.SegurancaADM.Lib.csproj">
+      <Project>{B96F4EBB-762F-4FEB-A282-6DA1BEE581FE}</Project>
+      <Name>Gradual.OMS.SegurancaADM.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.OMS-II\Gradual.OMS.Seguranca\Gradual.OMS.Seguranca\Gradual.OMS.Seguranca.csproj">
+      <Project>{FD8E0DF0-FCA3-486A-8457-DA5938083531}</Project>
+      <Name>Gradual.OMS.Seguranca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.Portal\Gradual.Generico.Dados\Gradual.Generico.Dados.csproj">
+      <Project>{6B3FC247-392B-4DD0-A6BE-9E19E200D522}</Project>
+      <Name>Gradual.Generico.Dados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Intranet.Contratos\Gradual.Intranet.Contratos.csproj">
+      <Project>{429DEE5D-7FC1-40CD-A72A-918B5831F0F8}</Project>
+      <Name>Gradual.Intranet.Contratos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Intranet.Servicos.BancoDeDados\Gradual.Intranet.Servicos.BancoDeDados.csproj">
+      <Project>{81DB2BB2-3A61-445F-9B8F-C1551D2B48D6}</Project>
+      <Name>Gradual.Intranet.Servicos.BancoDeDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Intranet.Servicos.Mock\Gradual.Intranet.Servicos.Mock.csproj">
+      <Project>{1DCF9C87-5E84-4C94-AC97-D9334B8C77E9}</Project>
+      <Name>Gradual.Intranet.Servicos.Mock</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Intranet\Buscas\Monitoramento_Ordens.aspx" />
+    <Content Include="Intranet\Buscas\Monitoramento_OrdensStop.aspx" />
+    <Content Include="Intranet\Buscas\Seguranca.aspx" />
+    <Content Include="Intranet\Clientes\App_LocalResources\Default.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Intranet\Clientes\Relatorios\Filtros.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R001.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R002.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R003.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R004.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R005.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R006.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R007.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R008.aspx" />
+    <Content Include="Intranet\Clientes\Relatorios\R009.aspx" />
+    <Content Include="Js\Paginas\Dev\05-GradIntra-Relatorio.js" />
+    <Content Include="Js\Paginas\Dev\14-Seguranca.js" />
+    <Content Include="Skin\Default\IE.print.css" />
+    <Content Include="Skin\Default\Relatorio.print.css" />
+    <Content Include="Skin\Default\Img\GradIntra_Calendario_Fundo.gif" />
+    <Content Include="Skin\Default\Img\GradIntra_Calendario_FundoMes.gif" />
+    <Content Include="Skin\Default\Img\GradIntra_Calendario_Setas.gif" />
+    <Content Include="Skin\Default\Img\GradIntra_Relatorio_Titulo_FundoGradual.png" />
+    <Content Include="Skin\Default\Img\GradIntra_Seguranca_IconesDeItens.gif" />
+    <Content Include="Skin\Default\Img\GradIntra_Seguranca_IconesDeItensResumidos.png" />
+    <Content Include="Skin\Default\Img\Ico_Busca.png" />
+    <Content Include="Skin\Default\Img\Ico_Calendario.gif" />
+    <Content Include="Skin\Default\Img\Ico_Calendario.png" />
+    <Content Include="Skin\Default\Relatorio.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RetornarArquivo.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Extras\Contratos\ContratoPF.pdf" />
+    <None Include="Extras\Contratos\ContratoPJ.pdf" />
+    <None Include="Extras\Contratos\DeclaracaoPPE.pdf" />
+    <Content Include="GerarDocumetosPDF.ashx" />
+    <Content Include="Extras\Perfil_Arrojado.pdf" />
+    <Content Include="Extras\Perfil_Conservador.pdf" />
+    <Content Include="Extras\Perfil_Moderado.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_GlobalResources\" />
+    <Folder Include="Extras\FichaDuc\" />
+    <Folder Include="Intranet\TEDs\" />
+    <Folder Include="Intranet\Upload\DeclaracoesSuitability\" />
+    <Folder Include="Js\Lib\Gradual\Min\" />
+    <Folder Include="Js\Paginas\Min\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Extras\RelatoriosIR\IRPF5557.rdlc" />
+    <EmbeddedResource Include="Extras\RelatoriosIR\IRPF8053.rdlc" />
+    <EmbeddedResource Include="Extras\RelatoriosIR\IRPF8468.rdlc" />
+    <EmbeddedResource Include="Intranet\Reports\ContratoPF.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\OperacaoCotistaWS\" />
+    <WCFMetadataStorage Include="Service References\PosicaoCotista\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Target Name="AfterPublish">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>mkdir $(TargetDir)Extras\
+copy $(ProjectDir)Extras\*.* $(TargetDir)Extras\</PostBuildEvent>
+  </PropertyGroup>
+</Project>

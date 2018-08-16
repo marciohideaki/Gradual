@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="IntegracaoRocket.master.cs" Inherits="Gradual.Intranet.Www.Intranet.Clientes.Formularios.Acoes.IntegracaoRocket.IntegracaoRocket" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title></title>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!-- Folhas de estilo -->
+    <link href="Clientes/Formularios/Acoes/IntegracaoRocket/css/integracaoRocket.css?v=<%= this.VersaoDoSite %>" rel="stylesheet" type="text/css" />
+    
+</head>
+
+<body>
+    <form id="frmIntegracaoRocket" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="Conteudo" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function ()
+    {
+        CarregamentoPagina();
+    });
+</script>
