@@ -1,0 +1,169 @@
+
+  CREATE OR REPLACE FORCE VIEW "TRADE"."V_MCONTA_OPERACOES_BMF" ("CD_CLIENTE", "CD_NEGOCIO", "QT_CASADA", "VL_PRECO", "LUCROCOMPRA", "LUCROVENDA", "RESULTADO") AS 
+  select cd_cliente as CD_CLIENTE, cd_negocio AS CD_NEGOCIO, sum(qt_casada) as QT_CASADA, vl_preco as VL_PRECO, Sum(LucroCompra) AS LucroCompra, sum(LucroVenda) as LucroVenda, sum(LucroCompra) + sum(lucroVenda) as Resultado from (
+select
+    cd_cliente
+    , cd_natope
+    , cd_negocio
+    , qt_casada
+    , b.vl_preco as vl_preco
+    , (corrwin.Conta_dias_uteis_di(TO_CHAR (sysdate, 'DD/MM/YYYY'), TO_CHAR(c.dt_venc, 'DD/MM/YYYY')))/252
+    , (100000/POWER(((1+(a.pr_negocio / 100))),(corrwin.Conta_dias_uteis_di(TO_CHAR (sysdate, 'DD/MM/YYYY'), TO_CHAR(c.dt_venc, 'DD/MM/YYYY')))/252)) As PUInicial
+    , (100000/POWER(((1+(b.vl_preco / 100))),(corrwin.Conta_dias_uteis_di(TO_CHAR (sysdate, 'DD/MM/YYYY'), TO_CHAR(c.dt_venc, 'DD/MM/YYYY')))/252)) As PuFinal
+    , (100000/POWER(((1+(b.vl_preco / 100))),(corrwin.Conta_dias_uteis_di(TO_CHAR (sysdate, 'DD/MM/YYYY'), TO_CHAR(c.dt_venc, 'DD/MM/YYYY')))/252)) - (100000/POWER(((1+(a.pr_negocio / 100))),(corrwin.Conta_dias_uteis_di(TO_CHAR (sysdate, 'DD/MM/YYYY'), TO_CHAR(c.dt_venc, 'DD/MM/YYYY')))/252))
+    , ((100000/POWER(((1+(b.vl_preco / 100))),(corrwin.Conta_dias_uteis_di(TO_CHAR (sysdate, 'DD/MM/YYYY'), TO_CHAR(c.dt_venc, 'DD/MM/YYYY')))/252)) - (100000/POWER(((1+(a.pr_negocio / 100))),(corrwin.Conta_dias_uteis_di(TO_CHAR (sysdate, 'DD/MM/YYYY'), TO_CHAR(c.dt_venc, 'DD/MM/YYYY')))/252)))*a.qt_casada as LucroVenda
+    , 0 as LucroCompra
+from 
+    tmfnegos A 
+    inner join tb_cotacao b on b.ds_ativo = a.cd_negocio
+    inner join tmfserie c on c.cd_codneg = a.cd_negocio
+where 
+    a.cd_cliente = 57738 and dt_pregao = trunc(sysdate) and a.CD_NATOPE ='V' and a.cd_commod = 'DI1'
+union all
+select 
+    cd_cliente
+    , cd_natope
+    , cd_negocio
+    , qt_casada
+    , b.vl_preco as vl_preco
+    , (corrwin.Conta_dias_uteis_di(TO_CHAR (sysdate, 'DD/MM/YYYY'), TO_CHAR(c.dt_venc, 'DD/MM/YYYY')))/252
+    , (100000/POWER(((1+(a.pr_negocio / 100))),(corrwin.Conta_dias_uteis_di(TO_CHAR (sysdate, 'DD/MM/YYYY'), TO_CHAR(c.dt_venc, 'DD/MM/YYYY')))/252)) As PUInicial
+    , (100000/POWER(((1+(b.vl_preco / 100))),(corrwin.Conta_dias_uteis_di(TO_CHAR (sysdate, 'DD/MM/YYYY'), TO_CHAR(c.dt_venc, 'DD/MM/YYYY')))/252)) As PUFinal
+    , (100000/POWER(((1+(b.vl_preco / 100))),(corrwin.Conta_dias_uteis_di(TO_CHAR (sysdate, 'DD/MM/YYYY'), TO_CHAR(c.dt_venc, 'DD/MM/YYYY')))/252)) - (100000/POWER(((1+(a.pr_negocio / 100))),(corrwin.Conta_dias_uteis_di(TO_CHAR (sysdate, 'DD/MM/YYYY'), TO_CHAR(c.dt_venc, 'DD/MM/YYYY')))/252)) as Ajuste
+    , 0 as LucroVenda
+    , ((100000/POWER(((1+(b.vl_preco / 100))),(corrwin.Conta_dias_uteis_di(TO_CHAR (sysdate, 'DD/MM/YYYY'), TO_CHAR(c.dt_venc, 'DD/MM/YYYY')))/252)) - (100000/POWER(((1+(a.pr_negocio / 100))),(corrwin.Conta_dias_uteis_di(TO_CHAR (sysdate, 'DD/MM/YYYY'), TO_CHAR(c.dt_venc, 'DD/MM/YYYY')))/252)))*a.qt_casada*-1 as LucroCompra
+from 
+    tmfnegos A 
+    inner join tb_cotacao b on b.ds_ativo = a.cd_negocio
+    inner join tmfserie c on c.cd_codneg = a.cd_negocio
+where 
+    a.cd_cliente = 57738 and dt_pregao = trunc(sysdate) and a.CD_NATOPE ='C' and a.cd_commod = 'DI1'
+    ) group by cd_cliente, cd_negocio, vl_preco
+union all
+select cd_cliente as cd_cliente, cd_negocio as cd_negocio, sum(qt_casada) as qt_casada, vl_preco as vl_preco, Sum(LucroPrejuizoCompra) as LucroCompra, sum(LucroPrejuizoVenda) as LucroVenda, Sum(LucroPrejuizoCompra) + sum(LucroPrejuizoVenda) as Resultado from (
+select 
+    cd_cliente,
+    cd_negocio,
+    CD_NATOPE, 
+    QT_CASADA,
+    vl_preco,
+    (a.pr_negocio - b.vl_preco) as DiferencialVenda,
+    0 as DiferencialCompra, 
+CASE CD_COMMOD WHEN 'DI1' THEN
+(((a.pr_negocio - b.vl_preco) * 1) * a.qt_casada)
+WHEN 'DOL' THEN 
+(((a.pr_negocio - b.vl_preco) * 50) * a.qt_casada)
+WHEN 'IND' THEN 
+(((a.pr_negocio - b.vl_preco) * 1) * a.qt_casada)
+WHEN 'WIN' THEN 
+(((a.pr_negocio - b.vl_preco) * 0.20) * a.qt_casada)
+WHEN 'WDO' THEN 
+(((a.pr_negocio - b.vl_preco) * 1) * a.qt_casada)
+WHEN 'WDO' THEN 
+(((a.pr_negocio - b.vl_preco) * 1) * a.qt_casada)
+WHEN 'BGI' THEN 
+(((a.pr_negocio - b.vl_preco) * 330) * a.qt_casada)
+WHEN 'WBG' THEN 
+(((a.pr_negocio - b.vl_preco) * 33) * a.qt_casada)
+WHEN 'EUR' THEN 
+(((a.pr_negocio - b.vl_preco) * 50) * a.qt_casada)
+WHEN 'WEU' THEN
+(((a.pr_negocio - b.vl_preco) * 10) * a.qt_casada)
+WHEN 'ICF' THEN -- Cafe (TaxaPtax)
+(((a.pr_negocio - b.vl_preco) * FN_MCONTA_PTAX) * a.qt_casada)
+WHEN 'WCF' THEN -- MiniCafe 9TaxaPtax)
+(((a.pr_negocio - b.vl_preco) * FN_MCONTA_PTAX) * a.qt_casada)
+WHEN 'ISU' THEN -- Acucar (TaxaPtax)
+(((a.pr_negocio - b.vl_preco) * FN_MCONTA_PTAX) * a.qt_casada)
+WHEN 'ETH' THEN 
+(((a.pr_negocio - b.vl_preco) * 30) * a.qt_casada)
+WHEN 'ETN' THEN 
+(((a.pr_negocio - b.vl_preco) * 30) * a.qt_casada)
+WHEN 'CCM' THEN
+(((a.pr_negocio - b.vl_preco) * 450) * a.qt_casada)
+WHEN 'SFI' THEN -- Soja (TaxaPtax)
+(((a.pr_negocio - b.vl_preco) * FN_MCONTA_PTAX) * a.qt_casada)
+WHEN 'OZ1' THEN
+(((a.pr_negocio - b.vl_preco) * 249.75) * a.qt_casada)
+WHEN 'DR1' THEN
+(((a.pr_negocio - b.vl_preco) * 50) * a.qt_casada)
+WHEN 'IR1' THEN
+(((a.pr_negocio - b.vl_preco) * 1) * a.qt_casada)
+WHEN 'BR1' THEN
+(((a.pr_negocio - b.vl_preco) * 330) * a.qt_casada)
+WHEN 'CR1' THEN
+(((a.pr_negocio - b.vl_preco) * 100) * a.qt_casada)
+WHEN 'MR1' THEN
+(((a.pr_negocio - b.vl_preco) * 450) * a.qt_casada)
+WHEN 'SR1' THEN -- RolagemSoja (TaxaPtax)
+(((a.pr_negocio - b.vl_preco) * FN_MCONTA_PTAX) * a.qt_casada)
+END as LucroPrejuizoVenda, 0 as LucroPrejuizoCompra
+from tmfnegos A 
+inner join tb_cotacao b on b.ds_ativo = a.cd_negocio
+where 
+--cd_cliente = 59263 and 
+dt_pregao = trunc(sysdate) and CD_NATOPE ='V' and CD_COMMOD <> 'DI1'
+union all
+select 
+    cd_cliente,
+    cd_negocio,
+    CD_NATOPE, 
+    QT_CASADA, 
+    vl_preco,
+    0 as DiferencialCompra, 
+    (b.vl_preco - a.pr_negocio) as DiferencialVenda, 
+    0 as LucroPrejuizoVenda, 
+CASE CD_COMMOD WHEN 'DI1' THEN
+(((b.vl_preco - a.pr_negocio) * 1) * a.qt_casada)
+WHEN 'DOL' THEN 
+(((b.vl_preco - a.pr_negocio) * 50) * a.qt_casada)
+WHEN 'IND' THEN 
+(((b.vl_preco - a.pr_negocio) * 1) * a.qt_casada)
+WHEN 'WIN' THEN 
+(((b.vl_preco - a.pr_negocio) * 0.20) * a.qt_casada)
+WHEN 'WDO' THEN 
+(((b.vl_preco - a.pr_negocio) * 1) * a.qt_casada)
+WHEN 'WDO' THEN 
+(((b.vl_preco - a.pr_negocio) * 1) * a.qt_casada)
+WHEN 'BGI' THEN 
+(((b.vl_preco - a.pr_negocio) * 330) * a.qt_casada)
+WHEN 'WBG' THEN 
+(((b.vl_preco - a.pr_negocio) * 33) * a.qt_casada)
+WHEN 'EUR' THEN 
+(((b.vl_preco - a.pr_negocio) * 50) * a.qt_casada)
+WHEN 'WEU' THEN
+(((b.vl_preco - a.pr_negocio) * 10) * a.qt_casada)
+WHEN 'ICF' THEN -- Cafe(TaxaPtax)
+(((b.vl_preco - a.pr_negocio) * FN_MCONTA_PTAX) * a.qt_casada)
+WHEN 'WCF' THEN -- MiniCafe (TaxaPtax)
+(((b.vl_preco - a.pr_negocio) * FN_MCONTA_PTAX) * a.qt_casada)
+WHEN 'ISU' THEN -- FuturoAcucar (TaxaPtax
+(((b.vl_preco - a.pr_negocio) * FN_MCONTA_PTAX) * a.qt_casada)
+WHEN 'ETH' THEN 
+(((b.vl_preco - a.pr_negocio) * 30) * a.qt_casada)
+WHEN 'ETN' THEN 
+(((b.vl_preco - a.pr_negocio) * 30) * a.qt_casada)
+WHEN 'CCM' THEN
+(((b.vl_preco - a.pr_negocio) * 450) * a.qt_casada)
+WHEN 'SFI' THEN -- Soja (TaxaPTax)
+(((b.vl_preco - a.pr_negocio) * FN_MCONTA_PTAX) * a.qt_casada)
+WHEN 'OZ1' THEN
+(((b.vl_preco - a.pr_negocio) * 249.75) * a.qt_casada)
+WHEN 'DR1' THEN
+(((b.vl_preco - a.pr_negocio) * 50) * a.qt_casada)
+WHEN 'IR1' THEN
+(((b.vl_preco - a.pr_negocio) * 1) * a.qt_casada)
+WHEN 'BR1' THEN
+(((b.vl_preco - a.pr_negocio) * 330) * a.qt_casada)
+WHEN 'CR1' THEN
+(((b.vl_preco - a.pr_negocio) * 100) * a.qt_casada)
+WHEN 'MR1' THEN
+(((b.vl_preco - a.pr_negocio) * 450) * a.qt_casada)
+WHEN 'SR1' THEN -- RolagemSoja (TaxaPtax)
+(((b.vl_preco - a.pr_negocio) * FN_MCONTA_PTAX) * a.qt_casada)
+END as LucroPrejuizoCompra
+from tmfnegos A 
+inner join tb_cotacao b on b.ds_ativo = a.cd_negocio
+where 
+dt_pregao = trunc(sysdate) and CD_NATOPE ='C' and cd_commod <> 'DI1'
+) group by cd_cliente, cd_negocio, vl_preco;
