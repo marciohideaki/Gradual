@@ -1,0 +1,512 @@
+﻿
+#pnlTVDestaques
+{
+    width:100%;
+    height:325px;
+
+    color:#fff;
+
+    background:url(Img/Fundo-TVGradual-Subsecao.gif) repeat-x bottom left;
+}
+
+    div.MensagemCarregando
+    {
+        display:block;
+
+        padding:12em 1em 0.6em 1em;
+        text-align:center;
+
+        background:url(Img/Imagem-TVGradual-AjaxLoader.gif) no-repeat center 10em;
+    }
+
+#pnlTVDestaques_Video
+{
+    float:left;
+    
+    width:400px;
+    height:309px;
+    
+    margin:0px 0px 0px 0px;
+    padding:4px;
+}
+
+    #pnlTVDestaques_Video video
+    {
+        box-shadow:0px 3px 6px 1px #000;
+    }
+    
+#pnlTVDestaques_Informacoes
+{
+    float:right;
+    
+    width:430px;
+    height:300px;
+    
+    margin:0px 0px 0px 0px;
+}
+
+    div.AnuncioAssistindo
+    {
+        height:2em;
+    }
+    
+    div.AnuncioAssistindo > span
+    {
+        float:left;
+    }
+
+    #lblTVDestaques_ProximoVideo
+    {
+        float:right;
+        margin:0px 38px 0px 0px;
+    }
+    
+    
+    #pnlTVDestaques_Informacoes h1
+    {
+        width:92%;
+        height:2em;
+        
+        font-family:'Nunito', Tahoma, Sans-Serif;
+        font-weight:normal;
+        font-size:1.7em;
+        color:#fff !important;
+        
+        text-shadow:0px 1px 2px #435d6b;
+        
+        margin:4px 0px 4px 0px !important;
+        padding:2px !important;
+        
+        /*background:lime;*/
+    }
+    
+        #pnlTVDestaques_Informacoes h1 span
+        {
+            float:left;
+        }
+    
+        #pnlTVDestaques_Informacoes h1 button
+        {
+            float:left;
+            margin:2px 0px 0px 6px;
+        }
+
+            .IconeLink
+            {
+                background:url(Img/Icones-TVGradual.png) no-repeat -4px 2px;
+            }
+
+            .IconeAumentarPlayer
+            {
+                background:url(Img/Icones-TVGradual.png) no-repeat -4px -193px;
+            }
+
+            .IconeDiminuirPlayer
+            {
+                background:url(Img/Icones-TVGradual.png) no-repeat -4px -220px;
+            }
+
+            .IconeDestaqueAnterior
+            {
+                float:left;
+                background:url(Img/Icones-TVGradual.png) no-repeat -1px -30px;
+            }
+            
+            .IconeDestaqueProximo
+            {
+                float:right !important;
+                background:url(Img/Icones-TVGradual.png) no-repeat -1px -54px;
+            }
+            
+            #navArquivoDeVideos a.IconeDestaqueAnterior
+            {
+                background-position:14px -247px 
+            }
+            
+            #navArquivoDeVideos a.IconeDestaqueProximo
+            {
+                background-position:-14px -247px 
+            }
+            
+        #pnlTVDestaques_Informacoes h1 button.Selecionado
+        {
+            background-color:#b1b1b1;
+        }
+
+    #pnlTVDestaques_Informacoes h2
+    {
+        width:424px !important;
+
+        margin:11px 0px 0px 0px !important;
+
+        text-align:center;
+        font-weight:normal;
+        font-size:0.9em !important;
+
+        background:url(Img/Divisoria-CinzaClara-1pxComBuraco.gif) no-repeat center 6px !important;
+        border:none !important;
+    }
+
+    #pnlDestaques_Container
+    {
+        position:relative;
+        
+        left:0px;
+        top:0px;
+        
+        width:424px;
+        height:232px;
+
+        margin:10px 0px 0px 0px;
+
+        background:url(Img/Fundo-TVGradual-Destaques.png) no-repeat top center;
+    }
+
+    div.VideoDestaque_ThumbEsquerdo,
+    div.VideoDestaque_ThumbDireito
+    {
+        position:absolute;
+
+        left:6px;
+        top:42px;
+
+        width: 100px;
+        height: 76px;
+
+        box-shadow:0px 3px 8px #31393c;
+    }
+
+    div.VideoDestaque_ThumbDireito
+    {
+        left:318px;
+        top:42px;
+    }
+
+        div.VideoDestaque_ThumbEsquerdo img,
+        div.VideoDestaque_ThumbDireito  img
+        {
+            width:100px;
+            height:76px;
+        }
+
+    div.VideoEmDestaque_Central
+    {
+        position:absolute;
+
+        left:134px;
+        top:16px;
+
+        width: 156px;
+        height:120px;
+
+        box-shadow:0px 2px 4px 1px #161719;
+    }
+
+        div.VideoEmDestaque_Central img
+        {
+            width: 156px;
+            height:120px;
+        }
+    
+    #lstVideosEmDestaque
+    {
+        display:none;
+    }
+
+    #pnlDestaques_BotoesDescricao
+    {
+        position:absolute;
+
+        left:4px;
+        top:145px;
+
+        width:98%;
+        height:48px;
+        text-align:center;
+    }
+
+        #pnlDestaques_BotoesDescricao h3
+        {
+            font-size:1em;
+            color:#fff;
+            font-weight:normal;
+            text-shadow:1px 1px 2px #161719;
+
+            padding:8px 0px 12px 0px !important;
+            border:none !important;
+        }
+        
+        #pnlDestaques_BotoesDescricao span
+        {
+            padding:0px 0px 0px 6px;
+            font-size:0.8em;
+        }
+
+    #btnDestaques_Assistir
+    {
+        position:relative;
+        display:block;
+        float:left;
+
+        left:0px;
+        top:0px;
+
+        width: 156px;
+        height:120px;
+
+        margin:0px 0px -120px 0px;
+
+        border:none;
+        background:transparent url(Img/Icone-Play-Grande.png) no-repeat -200px -200px;
+
+        cursor:pointer;
+        z-index:200;
+    }
+
+    #btnDestaques_Assistir:hover
+    {
+        background-position:center center;
+    }
+
+
+
+#navArquivoDeVideos
+{
+    display:block;
+    float:left;
+
+    width:93%;
+    height:30px;
+
+    margin:32px 0px 0px 0px;
+    /*background:lime;*/
+
+    overflow:hidden;
+}
+
+    #navArquivoDeVideos a
+    {
+        display:block;
+        float:left;
+
+        margin:0px 0px 0px 17px;
+        padding:12px 12px 6px 12px;
+
+        color:#838383;
+        font-size:0.9em;
+        text-decoration:none;
+    }
+
+    #navArquivoDeVideos a:hover
+    {
+    }
+
+    #navArquivoDeVideos a.Selecionado
+    {
+        color:#373737;
+        text-shadow:1px 1px 1px #fff;
+
+        background:#d8d8d8 url(Img/Fundo-LinhaBranca-TopoCinza.gif) repeat-x top left;
+    }
+
+    button.AbaArquivo
+    {
+        margin:32px 0px 0px 0px;
+    
+        display:block;
+        float:left;
+
+        width:10px;
+        height:30px;
+
+        cursor:pointer;
+
+        border:none;
+        background:#fafafa url(Img/Icones-TVGradual.png) no-repeat 2px -236px;
+    }
+
+    button.AbaArquivo span{ display: none }
+
+        button.SetaPraEsquerda
+        {
+            margin:32px 0px 0px 2%;
+        }
+
+        button.SetaPraDireita
+        {
+            background-position:-23px -236px;
+        }
+
+#lstArquivoDeVideos
+{
+    display:block;
+    float:left;
+
+    width:96% !important;
+    height:672px;
+
+    margin:0px 0px 0px 2% !important;
+
+    background:#d8d8d8;
+    border-bottom:4px solid #c0c0c0;
+
+    list-style-type:none;
+
+    overflow:scroll;
+}
+
+
+    #lstArquivoDeVideos li
+    {
+        display:block;
+        float:left;
+
+        list-style-type:none !important;
+    
+        width: 370px !important;
+        height:112px !important;
+
+        margin:16px 0px 0px 16px !important;
+
+        background:#fff;
+        border-bottom:1px solid #d8d8d8;
+    }
+    
+    #lstArquivoDeVideos li img
+    {
+        display:block;
+        float:right;
+
+        width:100px;
+        height:76px;
+
+        margin:6px 6px 0px 0px;
+
+        border:1px solid #424242;
+    }
+
+    #lstArquivoDeVideos li span
+    {
+        display:block;
+        float:left;
+
+        width: 240px;
+        height:auto;
+    }
+    
+    #lstArquivoDeVideos li span.f2
+    {
+        margin:6px 0px 0px 10px;
+
+        font-size:1em;
+        color:#004072;
+    }
+    
+    #lstArquivoDeVideos li span.f3
+    {
+        margin:12px 0px 0px 16px;
+        height:54px;
+        
+        font-size:0.8em;
+    }
+    
+    #lstArquivoDeVideos li div
+    {
+        display:block;
+        float:left;
+        
+        width:370px;
+        height:22px;
+        
+        margin:0px 0px -24px 0px;
+        
+        background:#ebebeb url(Img/Divisoria-Cinza-Bevel.gif) repeat-x 0px -1px;
+        
+        border-top:1px solid #d8d8d8;
+        border-bottom:1px solid #bfbfbf;
+    }
+
+        #lstArquivoDeVideos li div button,
+        #lstArquivoDeVideos li div a
+        {
+            display:block;
+            float:right;
+
+            width:78px;
+            margin:1px 2px 0px 12px;
+            padding:3px 0px 2px 3px;
+
+            font-size:0.8em;
+            font-family:Tahoma;
+            text-align:left;
+            text-decoration:none;
+            color:#424242;
+
+            border:none;
+            background:transparent url(Img/Icones-TVGradual.png) no-repeat 48px -170px;
+            cursor:pointer;
+        }
+        
+        #lstArquivoDeVideos li div button
+        {
+            width:68px;
+            background-position:38px -146px;
+        }
+        
+        #lstArquivoDeVideos li div a
+        {
+            float:left;
+            width:46px;
+            background-position:23px -124px;
+            margin-top:2px;
+            padding:3px 0 3px 6px;
+        }
+        
+        #lstArquivoDeVideos li div a.Selecionado
+        {
+            background-color:#d8d8d8;
+        }
+
+
+#pnlTVGradual_LinkParaVideo
+{
+    display:block;
+    position:absolute;
+
+    left:582px;
+    top:429px;
+
+    width:418px;
+    height:20px;
+
+    padding:4px;
+
+    background:#b1b1b1;
+}
+
+    #pnlTVGradual_LinkParaVideo input
+    {
+        width:100%;
+
+        color:#fff;
+
+        background:#919597;
+        border:1px solid #46545d;
+    }
+    
+    #pnlTVGradual_LinkParaVideo.NaLista
+    {
+        width:360px;
+        
+        background-color:#d8d8d8;
+        
+        border:1px solid #bfbfbf;
+        border-top:none;
+    }
+    
+        #pnlTVGradual_LinkParaVideo.NaLista input
+        {
+            color:#2b2c2d;
+            border-color:#a7a7a7;
+            background-color:#ebebeb;
+        }

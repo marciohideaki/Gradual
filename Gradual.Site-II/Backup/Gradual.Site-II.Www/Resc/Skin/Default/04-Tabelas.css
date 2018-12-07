@@ -1,0 +1,47 @@
+﻿
+
+
+
+
+
+
+
+/*  03-Minhaconta   */
+
+
+
+
+
+
+
+
+
+
+
+    div.JanelaHome table.HomeMinhaConta
+    {
+        width:100%;
+
+        background: #fff;
+        border:8px solid #fff;
+    }
+    
+    div.JanelaHome table.HomeMinhaConta tfoot td
+    {
+        text-align:left;
+        font-size:0.9em;
+
+        vertical-align:top;
+    }
+
+
+
+
+
+
+
+
+
+
+/*  43-PaginaInterna   */
+

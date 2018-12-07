@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD0F794E-4BC1-4750-9503-4387DDC5658D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.Site.Lib</RootNamespace>
+    <AssemblyName>Gradual.Site.Lib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gradual.OMS.ContaCorrente.Lib">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.ContaCorrente.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Library">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Gradual.Site-II.Referencias\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dados\ConteudoInfo.cs" />
+    <Compile Include="Dados\CustodiaInfo.cs" />
+    <Compile Include="Dados\EstruturaInfo.cs" />
+    <Compile Include="Dados\MinhaConta\AtivoInfo.cs" />
+    <Compile Include="Dados\MinhaConta\ClubeInfo.cs" />
+    <Compile Include="Dados\MinhaConta\Comercial\ClienteProdutoInfo.cs" />
+    <Compile Include="Dados\MinhaConta\Comercial\CompraInfo.cs" />
+    <Compile Include="Dados\MinhaConta\Comercial\PagamentoInfo.cs" />
+    <Compile Include="Dados\MinhaConta\Comercial\PagamentoLogInfo.cs" />
+    <Compile Include="Dados\MinhaConta\Comercial\ProdutoCompradoInfo.cs" />
+    <Compile Include="Dados\MinhaConta\Comercial\ProdutoInfo.cs" />
+    <Compile Include="Dados\MinhaConta\Comercial\TransacaoInfo.cs" />
+    <Compile Include="Dados\MinhaConta\Comercial\VendaInfo.cs" />
+    <Compile Include="Dados\MinhaConta\Comercial\VendaProdutoInfo.cs" />
+    <Compile Include="Dados\MinhaConta\ContaBancariaInfo.cs" />
+    <Compile Include="Dados\MinhaConta\FundoInfo.cs" />
+    <Compile Include="Dados\MinhaConta\InformeRendimentosInfo.cs" />
+    <Compile Include="Dados\MinhaConta\InformeRendimentosTesouroInfo.cs" />
+    <Compile Include="Dados\MinhaConta\IntegracaoIRInfo.cs" />
+    <Compile Include="Dados\MinhaConta\Suitability\FichaPerfilInfo.cs" />
+    <Compile Include="Dados\ListaConteudoInfo.cs" />
+    <Compile Include="Dados\MinhaConta\UltimasNegociacoesInfo.cs" />
+    <Compile Include="Dados\PaginaConteudoInfo.cs" />
+    <Compile Include="Dados\PaginaInfo.cs" />
+    <Compile Include="Dados\MinhaConta\SinacorEnderecoInfo.cs" />
+    <Compile Include="Dados\TipoDeConteudoInfo.cs" />
+    <Compile Include="Dados\WidgetInfo.cs" />
+    <Compile Include="IServicoSite.cs" />
+    <Compile Include="Mensagens\AtivoRequest.cs" />
+    <Compile Include="Mensagens\AtivoResponse.cs" />
+    <Compile Include="Mensagens\AtualizarOrdemDoWidgetNaPaginaRequest.cs" />
+    <Compile Include="Mensagens\AtualizarOrdemDoWidgetNaPaginaResponse.cs" />
+    <Compile Include="Mensagens\BuscarItensDaListaRequest.cs" />
+    <Compile Include="Mensagens\BuscarItensDaListaResponse.cs" />
+    <Compile Include="Mensagens\ClubeRequest.cs" />
+    <Compile Include="Mensagens\ClubeResponse.cs" />
+    <Compile Include="Mensagens\Comercial\BuscarComprasDoClienteRequest.cs" />
+    <Compile Include="Mensagens\Comercial\BuscarComprasDoClienteResponse.cs" />
+    <Compile Include="Mensagens\Comercial\BuscarDadosDosProdutosRequest.cs" />
+    <Compile Include="Mensagens\Comercial\BuscarDadosDosProdutosResponse.cs" />
+    <Compile Include="Mensagens\Comercial\BuscarProdutosDoClienteRequest.cs" />
+    <Compile Include="Mensagens\Comercial\BuscarProdutosDoClienteResponse.cs" />
+    <Compile Include="Mensagens\Comercial\InserirProdutoPorTransacaoRequest.cs" />
+    <Compile Include="Mensagens\Comercial\InserirProdutoPorTransacaoResponse.cs" />
+    <Compile Include="Mensagens\Comercial\InserirPagamentoRequest.cs" />
+    <Compile Include="Mensagens\Comercial\InserirPagamentoResponse.cs" />
+    <Compile Include="Mensagens\Comercial\InserirLogDePagamentoRequest.cs" />
+    <Compile Include="Mensagens\Comercial\InserirLogDePagamentoResponse.cs" />
+    <Compile Include="Mensagens\Comercial\InserirTransacaoRequest.cs" />
+    <Compile Include="Mensagens\Comercial\InserirTransacaoResponse.cs" />
+    <Compile Include="Mensagens\Comercial\InserirVendaRequest.cs" />
+    <Compile Include="Mensagens\Comercial\InserirVendaResponse.cs" />
+    <Compile Include="Mensagens\ContaBancariaRequest.cs" />
+    <Compile Include="Mensagens\ContaBancariaResponse.cs" />
+    <Compile Include="Mensagens\ContaCorrenteRequest.cs" />
+    <Compile Include="Mensagens\ContaCorrenteResponse.cs" />
+    <Compile Include="Mensagens\ConteudoRequest.cs" />
+    <Compile Include="Mensagens\ConteudoResponse.cs" />
+    <Compile Include="Mensagens\CustodiaRequest.cs" />
+    <Compile Include="Mensagens\CustodiaResponse.cs" />
+    <Compile Include="Mensagens\DataContract.cs" />
+    <Compile Include="Mensagens\DataMember.cs" />
+    <Compile Include="Mensagens\EstruturaRequest.cs" />
+    <Compile Include="Mensagens\EstruturaResponse.cs" />
+    <Compile Include="Mensagens\FichaPerfilRequest.cs" />
+    <Compile Include="Mensagens\FichaPerfilResponse.cs" />
+    <Compile Include="Mensagens\FundoRequest.cs" />
+    <Compile Include="Mensagens\FundoResponse.cs" />
+    <Compile Include="Mensagens\InserirLogRocketRequest.cs" />
+    <Compile Include="Mensagens\InserirLogRocketResponse.cs" />
+    <Compile Include="Mensagens\InformeRendimentosRequest.cs" />
+    <Compile Include="Mensagens\InformeRendimentosResponse.cs" />
+    <Compile Include="Mensagens\InformeRendimentosTesouroRequest.cs" />
+    <Compile Include="Mensagens\InformeRendimentosTesouroResponse.cs" />
+    <Compile Include="Mensagens\IntegracaoIRRequest.cs" />
+    <Compile Include="Mensagens\IntegracaoIRResponse.cs" />
+    <Compile Include="Mensagens\ListaConteudoRequest.cs" />
+    <Compile Include="Mensagens\ListaConteudoResponse.cs" />
+    <Compile Include="Mensagens\PaginaConteudoRequest.cs" />
+    <Compile Include="Mensagens\PaginaConteudoResponse.cs" />
+    <Compile Include="Mensagens\PaginaRequest.cs" />
+    <Compile Include="Mensagens\PaginaResponse.cs" />
+    <Compile Include="Mensagens\SinacorEnderecoRequest.cs" />
+    <Compile Include="Mensagens\SinacorEnderecoResponse.cs" />
+    <Compile Include="Mensagens\TipoConteudoRequest.cs" />
+    <Compile Include="Mensagens\TipoConteudoResponse.cs" />
+    <Compile Include="Mensagens\UltimasNegociacoesRequest.cs" />
+    <Compile Include="Mensagens\UltimasNegociacoesResponse.cs" />
+    <Compile Include="Mensagens\WidgetRequest.cs" />
+    <Compile Include="Mensagens\WidgetResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Widgets\Extensions.cs" />
+    <Compile Include="Widgets\widAbas.cs" />
+    <Compile Include="Widgets\widEmbed.cs" />
+    <Compile Include="Widgets\WidgetBase.cs" />
+    <Compile Include="Widgets\widImagem.cs" />
+    <Compile Include="Widgets\widLista.cs" />
+    <Compile Include="Widgets\widListaDeDefinicao.cs" />
+    <Compile Include="Widgets\widRepetidor.cs" />
+    <Compile Include="Widgets\widTabela.cs" />
+    <Compile Include="Widgets\widTexto.cs" />
+    <Compile Include="Widgets\widTitulo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

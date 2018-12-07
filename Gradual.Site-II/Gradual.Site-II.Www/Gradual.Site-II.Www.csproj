@@ -1,0 +1,2198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C1349B8-B9A9-402E-A834-ED93D704201D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gradual.Site.Www</RootNamespace>
+    <AssemblyName>Gradual.Site.Www</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BayeuxClient">
+      <HintPath>..\Gradual.Site-II.Referencias\BayeuxClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Core.Ordens.Lib">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.Core.Ordens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Crypto">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Educacional.Dados">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.Educacional.Dados.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Educacional.Entidade">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.Educacional.Entidade.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Educacional.Negocio">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.Educacional.Negocio.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Generico.Geral">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.Generico.Geral.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Intranet.Oracle">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.Intranet.Oracle.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Intranet.Servicos.RegrasDeNegocio">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.Intranet.Servicos.RegrasDeNegocio.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.Monitores.Risco.Lib">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.Monitores.Risco.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.AcompanhamentoOrdens.Lib">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.AcompanhamentoOrdens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.CadastroPapeis.Lib">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.CadastroPapeis.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.ContaCorrente.Lib">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.ContaCorrente.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Cotacao.Lib">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.Cotacao.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Custodia.Lib">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.Custodia.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.DepositosRetiradas">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.DepositosRetiradas.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.DepositosRetiradas.Lib">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.DepositosRetiradas.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Email.Lib">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.Email.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Monitor.Custodia.Lib">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.Monitor.Custodia.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Ordens.Lib">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.Ordens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Ordens.StartStop.Lib">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.Ordens.StartStop.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.PlanoCliente.Lib">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.PlanoCliente.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.PosicaoBTC.Lib">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.PosicaoBTC.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.PoupeDirect.Lib">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.PoupeDirect.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.RelatoriosFinanc.Lib">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.RelatoriosFinanc.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Risco.Lib">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.Risco.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Risco.Regra">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.Risco.Regra.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.Risco.Regra.Lib">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.Risco.Regra.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.RoteadorOrdens.Lib">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.RoteadorOrdens.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.SegurancaADM.Lib">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.SegurancaADM.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gradual.OMS.TesouroDireto.Lib">
+      <HintPath>..\Gradual.Site-II.Referencias\Gradual.OMS.TesouroDireto.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Intelligencia.UrlRewriter">
+      <HintPath>..\Gradual.Site-II.Referencias\Intelligencia.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\Gradual.Site-II.Referencias\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\Gradual.OMS-II\Gradual.OMS.Risco.SaldoDevedor\Gradual.SaldoDevedor.References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MdsBayeuxClient">
+      <HintPath>..\Gradual.Site-II.Referencias\MdsBayeuxClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Gradual.Site-II.Referencias\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Reports">
+      <HintPath>..\Gradual.Site-II.Referencias\Reports.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IO, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.IO.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Threading.Tasks, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.Threading.Tasks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404.aspx" />
+    <Content Include="Async\Geral.aspx" />
+    <Content Include="Async\Login.aspx" />
+    <Content Include="Async\ModuloCMS.aspx" />
+    <Content Include="Async\NotificacoesExternas.aspx" />
+    <Content Include="Busca.aspx" />
+    <Content Include="CadastroNovo\app\app.js" />
+    <Content Include="CadastroNovo\app\controllers\app.js" />
+    <Content Include="CadastroNovo\app\controllers\controllers.js" />
+    <Content Include="CadastroNovo\app\controllers\main.js" />
+    <Content Include="CadastroNovo\app\controllers\passoapassocontroller.js" />
+    <Content Include="CadastroNovo\app\controllers\script.js" />
+    <Content Include="CadastroNovo\app\Index.html" />
+    <Content Include="CadastroNovo\app\Index2.html" />
+    <Content Include="CadastroNovo\app\views\contato.html" />
+    <Content Include="CadastroNovo\app\views\home.html" />
+    <Content Include="CadastroNovo\app\views\sobre.html" />
+    <Content Include="CadastroNovo\app\views\ValidateExample.html" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\css\fileinput.css" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\css\fileinput.min.css" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\img\loading-sm.gif" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\img\loading.gif" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\fileinput.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\fileinput.min.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\ar.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\bg.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\ca.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\cr.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\cz.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\da.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\de.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\el.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\es.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\fa.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\fi.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\fr.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\gl.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\hu.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\id.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\it.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\ja.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\kr.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\kz.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\LANG.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\nl.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\no.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\pl.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\pt-BR.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\pt.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\ro.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\ru.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\sk.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\sl.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\sv.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\th.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\tr.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\uk.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\vi.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\zh-TW.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\locales\zh.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\plugins\canvas-to-blob.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\plugins\canvas-to-blob.min.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\plugins\purify.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\plugins\purify.min.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\plugins\sortable.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\js\plugins\sortable.min.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\css\fileinput.css" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\css\fileinput.min.css" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\examples\index.html" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\img\loading-sm.gif" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\img\loading.gif" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\fileinput.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\fileinput.min.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\ar.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\bg.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\ca.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\cr.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\cz.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\da.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\de.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\el.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\es.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\fa.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\fi.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\fr.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\gl.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\hu.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\id.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\it.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\ja.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\kr.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\kz.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\LANG.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\nl.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\no.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\pl.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\pt-BR.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\pt.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\ro.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\ru.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\sk.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\sl.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\sv.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\th.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\tr.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\uk.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\vi.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\zh-TW.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\zh.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\plugins\canvas-to-blob.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\plugins\canvas-to-blob.min.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\plugins\purify.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\plugins\purify.min.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\plugins\sortable.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\plugins\sortable.min.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\themes\explorer\theme.css" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\themes\explorer\theme.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\themes\explorer\theme.min.css" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\themes\explorer\theme.min.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\themes\fa\theme.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\themes\fa\theme.min.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\themes\gly\theme.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\themes\gly\theme.min.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\themes\explorer\theme.css" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\themes\explorer\theme.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\themes\explorer\theme.min.css" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\themes\explorer\theme.min.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\themes\fa\theme.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\themes\fa\theme.min.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\themes\gly\theme.js" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\themes\gly\theme.min.js" />
+    <Content Include="CadastroNovo\css\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="CadastroNovo\css\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="CadastroNovo\css\bootstrap\css\bootstrap.css" />
+    <Content Include="CadastroNovo\css\bootstrap\css\bootstrap.min.css" />
+    <Content Include="CadastroNovo\css\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="CadastroNovo\css\bootstrap\js\bootstrap.js" />
+    <Content Include="CadastroNovo\css\bootstrap\js\bootstrap.min.js" />
+    <Content Include="CadastroNovo\css\bootstrap\js\npm.js" />
+    <Content Include="CadastroNovo\js\angular-animate.min.js" />
+    <Content Include="CadastroNovo\js\angular-file-upload.js" />
+    <Content Include="CadastroNovo\js\angular.js" />
+    <Content Include="CadastroNovo\js\angular.min.js" />
+    <Content Include="CadastroNovo\js\Content\themes\base\accordion.css" />
+    <Content Include="CadastroNovo\js\Content\themes\base\all.css" />
+    <Content Include="CadastroNovo\js\Content\themes\base\autocomplete.css" />
+    <Content Include="CadastroNovo\js\Content\themes\base\base.css" />
+    <Content Include="CadastroNovo\js\Content\themes\base\button.css" />
+    <Content Include="CadastroNovo\js\Content\themes\base\core.css" />
+    <Content Include="CadastroNovo\js\Content\themes\base\datepicker.css" />
+    <Content Include="CadastroNovo\js\Content\themes\base\dialog.css" />
+    <Content Include="CadastroNovo\js\Content\themes\base\draggable.css" />
+    <Content Include="CadastroNovo\js\Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="CadastroNovo\js\Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="CadastroNovo\js\Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="CadastroNovo\js\Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="CadastroNovo\js\Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="CadastroNovo\js\Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="CadastroNovo\js\Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="CadastroNovo\js\Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="CadastroNovo\js\Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="CadastroNovo\js\Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="CadastroNovo\js\Content\themes\base\images\ui-icons_444444_256x240.png" />
+    <Content Include="CadastroNovo\js\Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="CadastroNovo\js\Content\themes\base\images\ui-icons_555555_256x240.png" />
+    <Content Include="CadastroNovo\js\Content\themes\base\images\ui-icons_777620_256x240.png" />
+    <Content Include="CadastroNovo\js\Content\themes\base\images\ui-icons_777777_256x240.png" />
+    <Content Include="CadastroNovo\js\Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="CadastroNovo\js\Content\themes\base\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="CadastroNovo\js\Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="CadastroNovo\js\Content\themes\base\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="CadastroNovo\js\Content\themes\base\jquery-ui.css" />
+    <Content Include="CadastroNovo\js\Content\themes\base\jquery-ui.min.css" />
+    <Content Include="CadastroNovo\js\Content\themes\base\menu.css" />
+    <Content Include="CadastroNovo\js\Content\themes\base\progressbar.css" />
+    <Content Include="CadastroNovo\js\Content\themes\base\resizable.css" />
+    <Content Include="CadastroNovo\js\Content\themes\base\selectable.css" />
+    <Content Include="CadastroNovo\js\Content\themes\base\selectmenu.css" />
+    <Content Include="CadastroNovo\js\Content\themes\base\slider.css" />
+    <Content Include="CadastroNovo\js\Content\themes\base\sortable.css" />
+    <Content Include="CadastroNovo\js\Content\themes\base\spinner.css" />
+    <Content Include="CadastroNovo\js\Content\themes\base\tabs.css" />
+    <Content Include="CadastroNovo\js\Content\themes\base\theme.css" />
+    <Content Include="CadastroNovo\js\Content\themes\base\tooltip.css" />
+    <Content Include="CadastroNovo\js\controllers.js" />
+    <Content Include="CadastroNovo\js\jquery.maskMoney.js" />
+    <Content Include="CadastroNovo\js\moment-with-locales.js" />
+    <Content Include="CadastroNovo\js\Moment.js" />
+    <Content Include="CadastroNovo\js\Momentjs\pt-br.js" />
+    <None Include="CadastroNovo\js\Scripts\jquery-1.12.4.intellisense.js" />
+    <Content Include="CadastroNovo\js\Scripts\jquery-1.12.4.js" />
+    <Content Include="CadastroNovo\js\Scripts\jquery-1.12.4.min.js" />
+    <Content Include="CadastroNovo\js\Scripts\jquery-ui-1.12.1.js" />
+    <Content Include="CadastroNovo\js\Scripts\jquery-ui-1.12.1.min.js" />
+    <Content Include="CadastroNovo\js\Scripts\jquery.inputmask.bundle.js" />
+    <Content Include="CadastroNovo\NovoLayout\app\Cadastro.aspx" />
+    <Content Include="CadastroNovo\NovoLayout\app\cnh_cd_seguranca.html" />
+    <Content Include="CadastroNovo\NovoLayout\app\cnh_dt_emissao.html" />
+    <Content Include="CadastroNovo\NovoLayout\app\cnh_hover.html" />
+    <Content Include="CadastroNovo\NovoLayout\app\Controllers\app.js" />
+    <Content Include="CadastroNovo\NovoLayout\app\Controllers\cadastrocontroller.js" />
+    <Content Include="CadastroNovo\NovoLayout\app\Controllers\indexcontroller.js" />
+    <Content Include="CadastroNovo\NovoLayout\app\Controllers\precadastrocontroller.js" />
+    <Content Include="CadastroNovo\NovoLayout\app\Controllers\redefinesenhacontroller.js" />
+    <Content Include="CadastroNovo\NovoLayout\app\favicon.ico" />
+    <Content Include="CadastroNovo\NovoLayout\app\Index.aspx" />
+    <Content Include="CadastroNovo\NovoLayout\css\angular-hovercard.min.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap-3.3.7-dist\css\bootstrap-theme.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap-3.3.7-dist\css\bootstrap.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap-3.3.7-dist\css\bootstrap.min.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap-3.3.7-dist\js\bootstrap.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap-3.3.7-dist\js\bootstrap.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap-3.3.7-dist\js\npm.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\css\fileinput.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\css\fileinput.min.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\img\loading-sm.gif" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\img\loading.gif" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\fileinput.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\fileinput.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\ar.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\bg.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\ca.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\cr.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\cz.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\da.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\de.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\el.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\es.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\fa.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\fi.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\fr.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\gl.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\hu.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\id.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\it.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\ja.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\kr.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\kz.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\LANG.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\nl.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\no.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\pl.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\pt-BR.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\pt.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\ro.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\ru.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\sk.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\sl.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\sv.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\th.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\tr.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\uk.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\vi.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\zh-TW.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\locales\zh.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\plugins\canvas-to-blob.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\plugins\canvas-to-blob.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\plugins\purify.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\plugins\purify.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\plugins\sortable.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\js\plugins\sortable.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\css\fileinput.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\css\fileinput.min.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\examples\index.html" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\img\loading-sm.gif" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\img\loading.gif" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\fileinput.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\fileinput.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\ar.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\bg.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\ca.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\cr.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\cz.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\da.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\de.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\el.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\es.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\fa.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\fi.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\fr.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\gl.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\hu.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\id.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\it.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\ja.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\kr.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\kz.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\LANG.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\nl.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\no.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\pl.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\pt-BR.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\pt.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\ro.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\ru.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\sk.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\sl.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\sv.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\th.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\tr.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\uk.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\vi.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\zh-TW.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\locales\zh.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\plugins\canvas-to-blob.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\plugins\canvas-to-blob.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\plugins\purify.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\plugins\purify.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\plugins\sortable.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\js\plugins\sortable.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\themes\explorer\theme.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\themes\explorer\theme.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\themes\explorer\theme.min.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\themes\explorer\theme.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\themes\fa\theme.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\themes\fa\theme.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\themes\gly\theme.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\themes\gly\theme.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\themes\explorer\theme.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\themes\explorer\theme.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\themes\explorer\theme.min.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\themes\explorer\theme.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\themes\fa\theme.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\themes\fa\theme.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\themes\gly\theme.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\themes\gly\theme.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\css\bootstrap.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\css\bootstrap.min.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\js\bootstrap.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\js\bootstrap.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\js\npm.js" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\accordion.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\all.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\autocomplete.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\base.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\button.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\core.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\datepicker.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\dialog.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\draggable.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\images\ui-icons_444444_256x240.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\images\ui-icons_555555_256x240.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\images\ui-icons_777620_256x240.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\images\ui-icons_777777_256x240.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\jquery-ui.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\jquery-ui.min.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\menu.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\progressbar.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\resizable.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\selectable.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\selectmenu.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\slider.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\sortable.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\spinner.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\tabs.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\theme.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\content\themes\base\tooltip.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="CadastroNovo\NovoLayout\css\gradual.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\hopscotch.min.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\img\ajax-loading.gif" />
+    <Content Include="CadastroNovo\NovoLayout\css\img\campos-cadastro.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\img\campos-formato-exemplo.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\img\cnh.jpg" />
+    <Content Include="CadastroNovo\NovoLayout\css\img\cnh_cd_seguranca.jpg" />
+    <Content Include="CadastroNovo\NovoLayout\css\img\cnh_sinalizada_sm.jpg" />
+    <Content Include="CadastroNovo\NovoLayout\css\img\gradual-logo-branco-marrom-50.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\img\gradual-logo-branco-marrom-60.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\img\gradual-logo-branco-marrom.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\img\header-.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\img\logo-small.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\img\mockup_login.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\img\mockup_plataforma_02.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\img\sprite-green.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\img\sprite-orange.png" />
+    <Content Include="CadastroNovo\NovoLayout\css\login.css" />
+    <Content Include="CadastroNovo\NovoLayout\css\principal.css" />
+    <Content Include="CadastroNovo\NovoLayout\js\angucomplete-alt.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\js\angular-animate.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\js\angular-eonasdan-datetimepicker.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\js\angular-eonasdan-datetimepicker.min23.js" />
+    <Content Include="CadastroNovo\NovoLayout\js\angular-file-upload.js" />
+    <Content Include="CadastroNovo\NovoLayout\js\angular-file-upload.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\js\angular-hovercard.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\js\angular.js" />
+    <Content Include="CadastroNovo\NovoLayout\js\angular.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\js\app.js" />
+    <Content Include="CadastroNovo\NovoLayout\js\blockUI.js" />
+    <Content Include="CadastroNovo\NovoLayout\js\blockUI.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\js\controllers.js" />
+    <Content Include="CadastroNovo\NovoLayout\js\dynamic-bootstrap-modal.js" />
+    <Content Include="CadastroNovo\NovoLayout\js\hopscotch.js" />
+    <Content Include="CadastroNovo\NovoLayout\js\hopscotch.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\js\hopscotch_amd.js" />
+    <Content Include="CadastroNovo\NovoLayout\js\hopscotch_amd.min.js" />
+    <Content Include="CadastroNovo\NovoLayout\js\jquery.maskMoney.js" />
+    <Content Include="CadastroNovo\NovoLayout\js\moment-with-locales.js" />
+    <Content Include="CadastroNovo\NovoLayout\js\moment-with-locales.min.js" />
+    <Content Include="CadastroNovo\PassoAPasso\AcesseSuaConta.aspx" />
+    <Content Include="CadastroNovo\PassoAPasso\CadastroTriagem.aspx" />
+    <Content Include="CadastroNovo\PassoAPasso\Passo1.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Integracao\Default.aspx" />
+    <Content Include="Investimentos\Cambio.aspx" />
+    <Content Include="Investimentos\OfertaPublica.aspx" />
+    <Content Include="MinhaConta\Cadastro\EsqueciAssinatura.aspx" />
+    <Content Include="MinhaConta\Cadastro\EsqueciSenha.aspx" />
+    <Content Include="MinhaConta\Cadastro\MeuPerfil.aspx" />
+    <Content Include="MinhaConta\Cadastro\MeuCadastro.aspx" />
+    <Content Include="MinhaConta\Cadastro\MeusProdutos.aspx" />
+    <Content Include="MinhaConta\Cadastro\NovaSenha.aspx" />
+    <Content Include="MinhaConta\Cadastro\Seguranca.aspx" />
+    <Content Include="MinhaConta\Cadastro\SolicitarAlteracao.aspx" />
+    <Content Include="MinhaConta\Default.aspx" />
+    <Content Include="MinhaConta\FileLoader.aspx" />
+    <Content Include="MinhaConta\Financeiro\Extrato.aspx" />
+    <Content Include="MinhaConta\Financeiro\Informe\Custodia.aspx" />
+    <Content Include="MinhaConta\Financeiro\Informe\DayTrade.aspx" />
+    <Content Include="MinhaConta\Financeiro\Informe\Fundos.aspx" />
+    <Content Include="MinhaConta\Financeiro\Informe\Operacoes.aspx" />
+    <Content Include="MinhaConta\Financeiro\Informe\SaldoFinanceiro.aspx" />
+    <Content Include="MinhaConta\Financeiro\Informe\TesouroDireto.aspx" />
+    <Content Include="MinhaConta\Financeiro\MinhaConta.aspx" />
+    <Content Include="MinhaConta\Financeiro\NotasDeCorretagem.aspx" />
+    <Content Include="MinhaConta\Financeiro\Retiradas.aspx" />
+    <Content Include="MinhaConta\Financeiro\SaldosELimites.aspx" />
+    <Content Include="MinhaConta\Login.aspx" />
+    <Content Include="MinhaConta\NovoCadastro.aspx" />
+    <Content Include="MinhaConta\Operacoes\AcompanhamentoOrdens.aspx" />
+    <Content Include="MinhaConta\Operacoes\Operacoes.aspx" />
+    <Content Include="MinhaConta\Posicao\Fundos.aspx" />
+    <Content Include="MinhaConta\Posicao\RendaFixa.aspx" />
+    <Content Include="MinhaConta\Posicao\RendaVariavel.aspx" />
+    <Content Include="MinhaConta\Produtos\Fundos\Acoes.aspx" />
+    <Content Include="MinhaConta\Produtos\Fundos\Aplicar.aspx" />
+    <Content Include="MinhaConta\Produtos\Fundos\Cambial.aspx" />
+    <Content Include="MinhaConta\Produtos\Fundos\Detalhes.aspx" />
+    <Content Include="MinhaConta\Produtos\Fundos\Exterior.aspx" />
+    <Content Include="MinhaConta\Produtos\Fundos\Multimercados.aspx" />
+    <Content Include="MinhaConta\Produtos\Fundos\Operacoes.aspx" />
+    <Content Include="MinhaConta\Produtos\Fundos\Recomendados.aspx" />
+    <Content Include="MinhaConta\Produtos\Fundos\ReferenciadoDI.aspx" />
+    <Content Include="MinhaConta\Produtos\Fundos\RendaFixa.aspx" />
+    <Content Include="MinhaConta\Produtos\Fundos\Resgate.aspx" />
+    <Content Include="MinhaConta\Produtos\Fundos\Simular.aspx" />
+    <Content Include="MinhaConta\Produtos\IPO\ReservaIPO.aspx" />
+    <Content Include="MinhaConta\Produtos\Produtos.aspx" />
+    <Content Include="MinhaConta\Ouvidoria.aspx" />
+    <Content Include="PaginaDinamica.aspx" />
+    <Content Include="PlataformasDeNegociacao\PlataformaDeFundos.aspx" />
+    <Content Include="Resc\Emails\AcompanhamentoOrdens.htm" />
+    <Content Include="Resc\Emails\AlteraEndereco.html" />
+    <Content Include="Resc\Emails\AvisoAplicacaoResgate.htm" />
+    <Content Include="Resc\Emails\AvisoReservaIPO.htm" />
+    <Content Include="Resc\Emails\CadastroClienteMaior65.htm" />
+    <Content Include="Resc\Emails\CadastroClienteMenor18.htm" />
+    <Content Include="Resc\Emails\CadastroGenericoRealizado.html" />
+    <Content Include="Resc\Emails\CadastroPasso1Completo_Padrao.html" />
+    <Content Include="Resc\Emails\CadastroPasso3ConclusaoCadastro.html" />
+    <Content Include="Resc\Emails\EmailCompraCambio.html" />
+    <Content Include="Resc\Emails\EmailCompraOffline.html" />
+    <Content Include="Resc\Emails\EmailCompraPaga.html" />
+    <Content Include="Resc\Emails\EmailCompraRealizada.html" />
+    <Content Include="Resc\Emails\EmailEsqueciAssinatura.html" />
+    <Content Include="Resc\Emails\EmailEsqueciSenha.html" />
+    <Content Include="Resc\Emails\EmailEsqueciSenhaNovoCadastro.html" />
+    <Content Include="Resc\Emails\EmailNovaAssiEletronica.html" />
+    <Content Include="Resc\Emails\EmailNovaSenha.html" />
+    <Content Include="Resc\Emails\EmailSuitability-Arrojado.html" />
+    <Content Include="Resc\Emails\EmailSuitability-Conservador.html" />
+    <Content Include="Resc\Emails\EmailSuitability-Fundos-Arrojado.html" />
+    <Content Include="Resc\Emails\EmailSuitability-Fundos-Conservador.html" />
+    <Content Include="Resc\Emails\EmailSuitability-Fundos-Moderado.html" />
+    <Content Include="Resc\Emails\EmailSuitability-Moderado.html" />
+    <Content Include="Resc\Emails\EmailSuitability.html" />
+    <Content Include="Resc\Emails\Extrato.htm" />
+    <Content Include="Resc\Emails\InformeRendimentos.htm" />
+    <Content Include="Resc\Emails\InvestimentosOuvidoriaInterno.html" />
+    <Content Include="Resc\Emails\NotaCorretagem.htm" />
+    <Content Include="Resc\Emails\NotificacaoCompra-GTI.html" />
+    <Content Include="Resc\Emails\NotificacaoCompra-StockMarket.html" />
+    <Content Include="Resc\Emails\NotificacaoDeposito.html" />
+    <Content Include="Resc\Emails\NotificacaoRetirada.html" />
+    <Content Include="Resc\Emails\RendaFixa.htm" />
+    <Content Include="Resc\Emails\RendaVariavel.htm" />
+    <Content Include="Resc\Emails\SaldosELimites.htm" />
+    <Content Include="Resc\Js\Lib\bootstrap.custom.js" />
+    <Content Include="Resc\Js\Lib\bootstrap.js" />
+    <Content Include="Resc\Js\Lib\GradValidacao.js" />
+    <Content Include="Resc\Js\Lib\jHtmlArea-0.8.min.js" />
+    <Content Include="Resc\Js\Lib\Jplayer.swf" />
+    <Content Include="Resc\Js\Lib\jquery-1.7.1.min.js" />
+    <Content Include="Resc\Js\Lib\jquery-latest.min.js" />
+    <Content Include="Resc\Js\Lib\jquery-ui-1.10.4.custom.min.js" />
+    <Content Include="Resc\Js\Lib\jquery-ui-1.10.js" />
+    <Content Include="Resc\Js\Lib\jquery-ui-1.8.17.custom.min.js" />
+    <Content Include="Resc\Js\Lib\jquery.caret.1.02.js" />
+    <Content Include="Resc\Js\Lib\jquery.fileupload.js" />
+    <Content Include="Resc\Js\Lib\jquery.flot.canvas.js" />
+    <Content Include="Resc\Js\Lib\jquery.flot.js" />
+    <Content Include="Resc\Js\Lib\jquery.flot.orderBars.js" />
+    <Content Include="Resc\Js\Lib\jquery.flot.pie.js" />
+    <Content Include="Resc\Js\Lib\jquery.flot.resize.js" />
+    <Content Include="Resc\Js\Lib\jquery.flot.selection.js" />
+    <Content Include="Resc\Js\Lib\jquery.flot.time.js" />
+    <Content Include="Resc\Js\Lib\jquery.flot.tooltip.js" />
+    <Content Include="Resc\Js\Lib\jquery.iframe-transport.js" />
+    <Content Include="Resc\Js\Lib\jquery.jplayer.min.js" />
+    <Content Include="Resc\Js\Lib\jquery.json-2.2.js" />
+    <Content Include="Resc\Js\Lib\jquery.keyboard.js" />
+    <Content Include="Resc\Js\Lib\jquery.keyboard.min.js" />
+    <Content Include="Resc\Js\Lib\jquery.maskedinput-1.2.2.js" />
+    <Content Include="Resc\Js\Lib\jquery.maskedinput.min.js" />
+    <Content Include="Resc\Js\Lib\jquery.maskMoney.js" />
+    <Content Include="Resc\Js\Lib\jquery.numberformatter.js" />
+    <Content Include="Resc\Js\Lib\jquery.password-min.js" />
+    <Content Include="Resc\Js\Lib\jquery.ui.datepicker-pt-BR.js" />
+    <Content Include="Resc\Js\Lib\jquery.validationEngine-en.js" />
+    <Content Include="Resc\Js\Lib\jquery.validationEngine-ptBR.js" />
+    <Content Include="Resc\Js\Lib\jquery.validationEngine.js" />
+    <Content Include="Resc\Js\Lib\jshashtable-2.1.js" />
+    <Content Include="Resc\Js\Lib\Raphael\g.pie.js" />
+    <Content Include="Resc\Js\Lib\Raphael\g.raphael-min.js" />
+    <Content Include="Resc\Js\Lib\Raphael\raphael.js" />
+    <Content Include="Resc\Js\Lib\ScrollableTablePlugin_1.0_min.js" />
+    <Content Include="Resc\Js\Lib\unslider.min.js" />
+    <Content Include="Resc\Js\Site\00-Base.js" />
+    <Content Include="Resc\Js\Site\01-Principal.js" />
+    <Content Include="Resc\Js\Site\02-ModuloCMS-Base.js" />
+    <Content Include="Resc\Js\Site\02-ModuloCMS-ConteudoDinamico.js" />
+    <Content Include="Resc\Js\Site\02-ModuloCMS-Widgets.js" />
+    <Content Include="Resc\Js\Site\03-MinhaConta.js" />
+    <Content Include="Resc\Js\Site\04-MinhaConta-Ordens.js" />
+    <Content Include="Resc\Js\Site\05-Carrinho.js" />
+    <Content Include="Resc\Js\Site\42-PaginaInicial.js" />
+    <Content Include="Resc\Js\Site\43-Cadastro.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resc\Js\Site\44-TVGradual.js" />
+    <Content Include="Resc\Js\Site\46-TesouroDireto.js" />
+    <Content Include="Resc\Js\Lib\icheck.js" />
+    <Content Include="Resc\Js\Lib\jcaroul.js" />
+    <Content Include="Resc\Js\Site\99-Teclado.js" />
+    <Content Include="Resc\Mailing\EmailSuitability-Metodologia.html" />
+    <Content Include="Resc\Mailing\EmailSuitability-Arrojado.html" />
+    <Content Include="Resc\Mailing\EmailSuitability-Conservador.html" />
+    <Content Include="Resc\Mailing\EmailSuitability-Erro.html" />
+    <Content Include="Resc\Mailing\EmailSuitability-Fundos-Arrojado.html" />
+    <Content Include="Resc\Mailing\EmailSuitability-Fundos-Conservador.html" />
+    <Content Include="Resc\Mailing\EmailSuitability-Fundos-Moderado.html" />
+    <Content Include="Resc\Mailing\EmailSuitability-Moderado.html" />
+    <Content Include="Resc\Mailing\EmailSuitability.html" />
+    <Content Include="Resc\Skin\Default\01-Principal.css" />
+    <Content Include="Resc\Skin\Default\01-Principal.print.css" />
+    <Content Include="Resc\Skin\Default\02-ModuloCMS.css" />
+    <Content Include="Resc\Skin\Default\03-MinhaConta.css" />
+    <Content Include="Resc\Skin\Default\04-Tabelas.css" />
+    <Content Include="Resc\Skin\Default\42-PaginaInicial.css" />
+    <Content Include="Resc\Skin\Default\43-PaginaInterna.css" />
+    <Content Include="Resc\Skin\Default\44-TVGradual.css" />
+    <Content Include="Resc\Skin\Default\45-keyboard.css" />
+    <Content Include="Resc\Skin\Default\47-OfertaPublica.css" />
+    <Content Include="Resc\Skin\Default\48-keyboard-New.css" />
+    <Content Include="Resc\Skin\Default\99-IE.css" />
+    <Content Include="Resc\Skin\Default\bootstrap.css" />
+    <Content Include="Resc\Skin\Default\bootstrap.custom.css" />
+    <Content Include="Resc\Skin\Default\Img\abertura_menor.png" />
+    <Content Include="Resc\Skin\Default\Img\admin_icon.png" />
+    <Content Include="Resc\Skin\Default\Img\Ajax-Loader-Cadastro.gif" />
+    <Content Include="Resc\Skin\Default\Img\ajuda.png" />
+    <Content Include="Resc\Skin\Default\Img\alemanha.png" />
+    <Content Include="Resc\Skin\Default\Img\alerta.png" />
+    <Content Include="Resc\Skin\Default\Img\asset.png" />
+    <Content Include="Resc\Skin\Default\Img\bandeira_eua.png" />
+    <Content Include="Resc\Skin\Default\Img\Banner-Minhaconta-Produtos.jpg" />
+    <Content Include="Resc\Skin\Default\Img\banner-placeholder.jpg" />
+    <Content Include="Resc\Skin\Default\Img\banner-teste.jpg" />
+    <Content Include="Resc\Skin\Default\Img\bannerzinho-GTI-op2.jpg" />
+    <Content Include="Resc\Skin\Default\Img\banner_bg.png" />
+    <Content Include="Resc\Skin\Default\Img\banner_interno_cambio.jpg" />
+    <Content Include="Resc\Skin\Default\Img\barra-cotacao.png" />
+    <Content Include="Resc\Skin\Default\Img\barra_menu.jpg" />
+    <Content Include="Resc\Skin\Default\Img\botao-seja-correspondente.gif" />
+    <Content Include="Resc\Skin\Default\Img\box-pattern.png" />
+    <Content Include="Resc\Skin\Default\Img\brasil.png" />
+    <Content Include="Resc\Skin\Default\Img\btn-alterar.png" />
+    <Content Include="Resc\Skin\Default\Img\btn-asset.png" />
+    <Content Include="Resc\Skin\Default\Img\btn-cancelar.png" />
+    <Content Include="Resc\Skin\Default\Img\btn-collapse.png" />
+    <Content Include="Resc\Skin\Default\Img\btn-conta-grande.png" />
+    <Content Include="Resc\Skin\Default\Img\btn-corretora.png" />
+    <Content Include="Resc\Skin\Default\Img\btn-expand.png" />
+    <Content Include="Resc\Skin\Default\Img\btn-financial.png" />
+    <Content Include="Resc\Skin\Default\Img\btn-saiba-mais.png" />
+    <Content Include="Resc\Skin\Default\Img\btn-wealth.png" />
+    <Content Include="Resc\Skin\Default\Img\btn_acesso.png" />
+    <Content Include="Resc\Skin\Default\Img\cambio-master.jpg" />
+    <Content Include="Resc\Skin\Default\Img\cambio-money.jpg" />
+    <Content Include="Resc\Skin\Default\Img\cambio-visa.jpg" />
+    <Content Include="Resc\Skin\Default\Img\carimbo_cadastro_final.jpg" />
+    <Content Include="Resc\Skin\Default\Img\Carimbo_cadastro_novo.jpg" />
+    <Content Include="Resc\Skin\Default\Img\carta.png" />
+    <Content Include="Resc\Skin\Default\Img\cetip.png" />
+    <Content Include="Resc\Skin\Default\Img\chave.png" />
+    <Content Include="Resc\Skin\Default\Img\check-acordeon.png" />
+    <Content Include="Resc\Skin\Default\Img\check.png" />
+    <Content Include="Resc\Skin\Default\Img\checkbox_sprite.png" />
+    <Content Include="Resc\Skin\Default\Img\china.png" />
+    <Content Include="Resc\Skin\Default\Img\como-investir.jpg" />
+    <Content Include="Resc\Skin\Default\Img\corretora.png" />
+    <Content Include="Resc\Skin\Default\Img\corretora_marcadagua.png" />
+    <Content Include="Resc\Skin\Default\Img\destaques-chat.jpg" />
+    <Content Include="Resc\Skin\Default\Img\destaques-homebroker.jpg" />
+    <Content Include="Resc\Skin\Default\Img\destaques-igb30.jpg" />
+    <Content Include="Resc\Skin\Default\Img\destaques-profitchart.jpg" />
+    <Content Include="Resc\Skin\Default\Img\divisoria-ladob.png" />
+    <Content Include="Resc\Skin\Default\Img\divisoria_ball.png" />
+    <Content Include="Resc\Skin\Default\Img\email-cambio-header.jpg" />
+    <Content Include="Resc\Skin\Default\Img\empresa.jpg" />
+    <Content Include="Resc\Skin\Default\Img\espanha.png" />
+    <Content Include="Resc\Skin\Default\Img\eua.png" />
+    <Content Include="Resc\Skin\Default\Img\euro.png" />
+    <Content Include="Resc\Skin\Default\Img\execution-broker.jpg" />
+    <Content Include="Resc\Skin\Default\Img\f1.png" />
+    <Content Include="Resc\Skin\Default\Img\f10.png" />
+    <Content Include="Resc\Skin\Default\Img\f11.png" />
+    <Content Include="Resc\Skin\Default\Img\f12.png" />
+    <Content Include="Resc\Skin\Default\Img\f2.png" />
+    <Content Include="Resc\Skin\Default\Img\f3.png" />
+    <Content Include="Resc\Skin\Default\Img\f4.png" />
+    <Content Include="Resc\Skin\Default\Img\f5.png" />
+    <Content Include="Resc\Skin\Default\Img\f6.png" />
+    <Content Include="Resc\Skin\Default\Img\f7.png" />
+    <Content Include="Resc\Skin\Default\Img\f8.png" />
+    <Content Include="Resc\Skin\Default\Img\f9.png" />
+    <Content Include="Resc\Skin\Default\Img\facebook.png" />
+    <Content Include="Resc\Skin\Default\Img\financial.png" />
+    <Content Include="Resc\Skin\Default\Img\follow-curtir-compartilhar.png" />
+    <Content Include="Resc\Skin\Default\Img\footer-bg.jpg" />
+    <Content Include="Resc\Skin\Default\Img\Fundo-Pattern-Transparencia.gif" />
+    <Content Include="Resc\Skin\Default\Img\Fundo-Preto80pct-Pattern.png" />
+    <Content Include="Resc\Skin\Default\Img\Fundo-Texto-ForcaDaSenha.png" />
+    <Content Include="Resc\Skin\Default\Img\gradual-corretora.png" />
+    <Content Include="Resc\Skin\Default\Img\gradual_logo.png" />
+    <Content Include="Resc\Skin\Default\Img\grafico-tabela.png" />
+    <Content Include="Resc\Skin\Default\Img\grafico.png" />
+    <Content Include="Resc\Skin\Default\Img\grafico1.png" />
+    <Content Include="Resc\Skin\Default\Img\hb_cor_horizontal_pequeno.png" />
+    <Content Include="Resc\Skin\Default\Img\icon-excel.png" />
+    <Content Include="Resc\Skin\Default\Img\icon-pdf.png" />
+    <Content Include="Resc\Skin\Default\Img\icone-banco-gd-2.png" />
+    <Content Include="Resc\Skin\Default\Img\icone-banco-gd.png" />
+    <Content Include="Resc\Skin\Default\Img\icone-banco.png" />
+    <Content Include="Resc\Skin\Default\Img\icone-carrinho-top.png" />
+    <Content Include="Resc\Skin\Default\Img\icone-carrinho.png" />
+    <Content Include="Resc\Skin\Default\Img\icone-carta.png" />
+    <Content Include="Resc\Skin\Default\Img\icone-email.png" />
+    <Content Include="Resc\Skin\Default\Img\icone-exportar.png" />
+    <Content Include="Resc\Skin\Default\Img\icone-interrogacao.gif" />
+    <Content Include="Resc\Skin\Default\Img\icone-interrogacao.png" />
+    <Content Include="Resc\Skin\Default\Img\Icone-PDF.gif" />
+    <Content Include="Resc\Skin\Default\Img\Icones-CMS.png" />
+    <Content Include="Resc\Skin\Default\Img\Icones-Gerais.png" />
+    <Content Include="Resc\Skin\Default\Img\Imagem-PagSeguro-BandeirasDePagamento.gif" />
+    <Content Include="Resc\Skin\Default\Img\Imagem-Suitability-Arrojado.jpg" />
+    <Content Include="Resc\Skin\Default\Img\Imagem-Suitability-Conservador.jpg" />
+    <Content Include="Resc\Skin\Default\Img\Imagem-Suitability-Moderado.jpg" />
+    <Content Include="Resc\Skin\Default\Img\Imagem-TipoDeArquivo-DOC.jpg" />
+    <Content Include="Resc\Skin\Default\Img\Imagem-TipoDeArquivo-Outro.jpg" />
+    <Content Include="Resc\Skin\Default\Img\Imagem-TipoDeArquivo-PDF.jpg" />
+    <Content Include="Resc\Skin\Default\Img\Imagem-TipoDeArquivo-PPT.jpg" />
+    <Content Include="Resc\Skin\Default\Img\Imagem-TipoDeArquivo-XLS.jpg" />
+    <Content Include="Resc\Skin\Default\Img\Imagem-TipoDeArquivo-ZIP.jpg" />
+    <Content Include="Resc\Skin\Default\Img\img-contato-telefones.gif" />
+    <Content Include="Resc\Skin\Default\Img\imgTituloPopupIPO.png" />
+    <Content Include="Resc\Skin\Default\Img\jHtmlArea.png" />
+    <Content Include="Resc\Skin\Default\Img\jHtmlArea_Toolbar_Group_BG.png" />
+    <Content Include="Resc\Skin\Default\Img\jHtmlArea_Toolbar_Group__Btn_Select_BG.png" />
+    <Content Include="Resc\Skin\Default\Img\linkedin.png" />
+    <Content Include="Resc\Skin\Default\Img\lupa.png" />
+    <Content Include="Resc\Skin\Default\Img\mailing-header.jpg" />
+    <Content Include="Resc\Skin\Default\Img\mailing-icone-cadeado.jpg" />
+    <Content Include="Resc\Skin\Default\Img\mailing-icone-email.jpg" />
+    <Content Include="Resc\Skin\Default\Img\mais-add.png" />
+    <Content Include="Resc\Skin\Default\Img\menos-minus.png" />
+    <Content Include="Resc\Skin\Default\Img\minus.png" />
+    <Content Include="Resc\Skin\Default\Img\obrigatorio.png" />
+    <Content Include="Resc\Skin\Default\Img\pdf.jpg" />
+    <Content Include="Resc\Skin\Default\Img\perfil-amarelo.png" />
+    <Content Include="Resc\Skin\Default\Img\perfil-verde.png" />
+    <Content Include="Resc\Skin\Default\Img\perfil-vermelho.png" />
+    <Content Include="Resc\Skin\Default\Img\plus.png" />
+    <Content Include="Resc\Skin\Default\Img\preloader.gif" />
+    <Content Include="Resc\Skin\Default\Img\printer.png" />
+    <Content Include="Resc\Skin\Default\Img\produto_corretora_bg.png" />
+    <Content Include="Resc\Skin\Default\Img\quadrado-cinza.jpg" />
+    <Content Include="Resc\Skin\Default\Img\radio_sprite.png" />
+    <Content Include="Resc\Skin\Default\Img\rapaz.png" />
+    <Content Include="Resc\Skin\Default\Img\scanner.png" />
+    <Content Include="Resc\Skin\Default\Img\Selo_publicidade_fundos%28POR%29.gif" />
+    <Content Include="Resc\Skin\Default\Img\senha.png" />
+    <Content Include="Resc\Skin\Default\Img\seta-amarela.png" />
+    <Content Include="Resc\Skin\Default\Img\seta-direita.png" />
+    <Content Include="Resc\Skin\Default\Img\seta-download.png" />
+    <Content Include="Resc\Skin\Default\Img\seta-esquerda.png" />
+    <Content Include="Resc\Skin\Default\Img\seta-select.png" />
+    <Content Include="Resc\Skin\Default\Img\seta-verde.png" />
+    <Content Include="Resc\Skin\Default\Img\seta-vermelha.png" />
+    <Content Include="Resc\Skin\Default\Img\simbolo-mais-menos.png" />
+    <Content Include="Resc\Skin\Default\Img\simbolo_mais.png" />
+    <Content Include="Resc\Skin\Default\Img\simbolo_mais_produto.png" />
+    <Content Include="Resc\Skin\Default\Img\simbolo_menos.png" />
+    <Content Include="Resc\Skin\Default\Img\simbolo_menos_produto.png" />
+    <Content Include="Resc\Skin\Default\Img\sinal-azul.png" />
+    <Content Include="Resc\Skin\Default\Img\sombra-banner.png" />
+    <Content Include="Resc\Skin\Default\Img\teclado.png" />
+    <Content Include="Resc\Skin\Default\Img\twitter.png" />
+    <Content Include="Resc\Skin\Default\Img\v.png" />
+    <Content Include="Resc\Skin\Default\Img\vimeo.png" />
+    <Content Include="Resc\Skin\Default\Img\wealth.png" />
+    <Content Include="Resc\Skin\Default\Img\x.png" />
+    <Content Include="Resc\Skin\Default\Img\youtube.png" />
+    <Content Include="Resc\Skin\Default\Img\_facebook.png" />
+    <Content Include="Resc\Skin\Default\Img\_linkedin.png" />
+    <Content Include="Resc\Skin\Default\Img\_twitter.png" />
+    <Content Include="Resc\Skin\Default\Img\_youtube.png" />
+    <Content Include="Resc\Skin\Default\TemaJQueryUI\Gradual-JQueryUI.custom.css" />
+    <Content Include="Resc\Skin\Default\TemaJQueryUI\images\ui-bg_flat_0_000000_40x100.png" />
+    <Content Include="Resc\Skin\Default\TemaJQueryUI\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Resc\Skin\Default\TemaJQueryUI\images\ui-bg_flat_55_c0402a_40x100.png" />
+    <Content Include="Resc\Skin\Default\TemaJQueryUI\images\ui-bg_flat_55_eeeeee_40x100.png" />
+    <Content Include="Resc\Skin\Default\TemaJQueryUI\images\ui-bg_glass_100_f8f8f8_1x400.png" />
+    <Content Include="Resc\Skin\Default\TemaJQueryUI\images\ui-bg_glass_60_eeeeee_1x400.png" />
+    <Content Include="Resc\Skin\Default\TemaJQueryUI\images\ui-bg_highlight-soft_35_a7a7a7_1x100.png" />
+    <Content Include="Resc\Skin\Default\TemaJQueryUI\images\ui-bg_inset-hard_75_999999_1x100.png" />
+    <Content Include="Resc\Skin\Default\TemaJQueryUI\images\ui-bg_inset-soft_50_c7c7c7_1x100.png" />
+    <Content Include="Resc\Skin\Default\TemaJQueryUI\images\ui-icons_3383bb_256x240.png" />
+    <Content Include="Resc\Skin\Default\TemaJQueryUI\images\ui-icons_454545_256x240.png" />
+    <Content Include="Resc\Skin\Default\TemaJQueryUI\images\ui-icons_666666_256x240.png" />
+    <Content Include="Resc\Skin\Default\TemaJQueryUI\images\ui-icons_70b2e1_256x240.png" />
+    <Content Include="Resc\Skin\Default\TemaJQueryUI\images\ui-icons_fbc856_256x240.png" />
+    <Content Include="Resc\Upload\nao_apagar.txt" />
+    <Content Include="Resc\UserControls\AbasFinanceiro.ascx" />
+    <Content Include="Resc\UserControls\AbasMeuCadastro.ascx" />
+    <Content Include="Resc\UserControls\AbasPosicao.ascx" />
+    <Content Include="Resc\UserControls\BannerLateral.ascx" />
+    <Content Include="CanalDenuncias\Default.html" />
+    <Content Include="Resc\UserControls\ItemCambio.ascx" />
+    <Content Include="Resc\UserControls\MapaDoSite.ascx" />
+    <Content Include="Resc\UserControls\MenuPrincipal.ascx" />
+    <Content Include="Resc\UserControls\MenuTesouro.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\AbasFundosInvestimentos.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\AbasMenuTD.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\AbasOperacoes.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\CompraTD.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\ConsultarProtocolo.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\ConsultaTD.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\ExtratoTD.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\Fundos\OperacoesAplicar.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\Fundos\OperacoesExtrato.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\Fundos\OperacoesPosicaoConsolidada.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\Fundos\OperacoesRelatorio.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\Fundos\OperacoesResgate.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\Fundos\OperacoesSaldo.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\Fundos\OperacoesSimular.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\MinhaConta\Patrimonio_Dinheiro.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\MinhaConta\Patrimonio_FundosInvestimentos.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\MinhaConta\Patrimonio_RendaFixa.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\MinhaConta\Patrimonio_RendaVariavel.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\MinhaConta\ucMinhaContaBase.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\Produtos\GTI.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\Produtos\Previdencia.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\Produtos\ProfitChart.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\Produtos\SeguroVida.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\Produtos\StockMarket.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\Produtos\TravelCard.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\UCTesouroDireto.ascx" />
+    <Content Include="Resc\UserControls\MinhaConta\VendaTD.ascx" />
+    <Content Include="Resc\UserControls\ModuloCMS.ascx" />
+    <Content Include="Resc\UserControls\PainelDeBusca.ascx" />
+    <Content Include="Resc\UserControls\PainelDeCarrinho.ascx" />
+    <Content Include="Resc\UserControls\PainelDeLogin.ascx" />
+    <Content Include="Resc\UserControls\RenderizadorDeWidgets.ascx" />
+    <Content Include="Resc\UserControls\RodapeDoSite.ascx" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Ao - Termo-de-adesao-Ibiuna-Hedge-Fic-Fimc100.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\BNYM WEST ASSET US INDEX 500 FC FI MULTI-c109.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\BTG TA PERFIN LONG SHORT PLUS FIC DE FIMc88.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\BTGPactualFIRFIMABc49.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Cambial20Dólar0FIC.pdf - Termo-de-adesao-Votorantim-FIC-FI-Cambial-Dolarc74.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\FI DI Master TA - TA-CREDIT-AGRICOLE-DI-MASTER-FI-REF-LPc107.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\SAFRA-ABSOLUTO-30-termoc91.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\SAFRA-GALILEO-termoc43.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\SPARTA-TOP-PF-GRADUAL-termoc104.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TA-BNP-PARIBAS-MATCH-DI-FI-REFERENCIADO-CPc55.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TA-BTG-PACTUAL-CAMBIAL-FUNDO-DE-INVESTIMENTO-CAMBIALc48.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TA-BTG-PACTUAL-FUNDO-DE-INVESTIMENTO-MULTIMERCADO-LOCAL-INSTITUCIONAL5112262000161c94.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TA-BTG-PACTUAL-HEDGE-FUNDO-DE-INVESTIMENTO-MULTIMERCADO-00888897000131-1c95.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TA-BTG-PACTUAL-HEDGE-PLUS-FIMc71.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TA-BTG-PACTUAL-HIGH YIELD-FUNDO-DE-INVESTIMENTO-MULTIMERCADO-01414891000195c96.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TA-BTG-PACTUAL-YIELD-DI-FUNDO-DE-INVESTIMENTO-REFERENCIADO-CREDITO-PRIVADO-00840011000180c41.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TA-KONDOR-MAX-FIQ-FUNDO-DE-INVESTIMENTO-MULTIMERCADO-08921000000136c87.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TA-QUEST-SMALL-CAPS-FUNDO-DE-INVESTIMENTO-EM-COTAS-DE-FUNDOS-DE-INVESTIMENTO-DE-ACOES-11392165000172c83.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TA-QUEST-TOTAL-RETURN-FUNDO-DE-INVESTIMENTO-DE-ACOES-14812722000155c90.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TA-SAO-PAULO-PORTOc72.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TA-SPX-FALCON - TA-SPX-FALCONc84.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TA-XP-DIVIDENDOS-PFc85.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TAClaritas-PF-01.2013c46.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TAClaritasPJc46.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo de Adesao PF GAP%28versao 01 2013%29c99.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TERMO DE ADESÃO Bes Fix Triple A - 12.01.2011 - TA-BES-Triple-Ac106.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo de adesão e Declaração de IQ_MULTISTRATEGY - Termo-de-Adesao-Termo-de-adesao-e-Declaracao-de-IQ_MULTISTRATEGYc98.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo-adesao_PF-opusc60.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo-de-Adesao-Pessoa-Fisica-capitaniac103.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo-de-Adesao-Pessoa-Fisica-equitasc97.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo-de-Adesao-Pessoa-Fisica-Selection 60c80.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo-de-Adesao-PF-Brasil-Plural-1208.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo-de-Adesao-PJ-Brasil-Plural-1208.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo-de-adesao-TA-BTG-PACTUAL-ABSOLUTO-LS-FUNDO-DE-INVESTIMENTO-EM-COTAS-DE-FUNDOS-DE-INVESTIMENTO-DE-AcoES-14799785000119c77.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo-de-adesao-TA-BTG-PACTUAL-ALPHA-FUNDO-DE-INVESTIMENTO-DE-AcoES-15912241000184c78.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo-de-adesao-TA-BTG-PACTUAL-DIVIDENDOS-FUNDO-DE-INVESTIMENTO-DE-AcoES-09290813000138c79.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo-de-adesao-TA-INDIE-FIC-FIAc82.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo-de-adesao-TA-SPX-NIMITZ-FEEDERc108.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo-de-adesao-Termo-PF-Quest-top-long-biasec44.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo-de-AdesaoBNYMELLONCSHGGLOBALEQTFCFIMULT-PFc69.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo-de-AdesaoBNYMELLONCSHGGLOBALEQTFCFIMULTIEc69.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo-de-Adesão-PF-Azulc39.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo-de-Adesão-PJ-Azulc39.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo-PF-DLM-Hedgec67.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo-PF-Opportunity-Equity-Hedge-FIC-FIMc42.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo-PF-Opportunity-SelectionFIC-FIAc50.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo-PF-QuestC89.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo-PJ-Oportunity-Equity-Hedgec42.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TermoAdesao BES FIM CP_PFc101.PDF" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TermoAdesao BES FIM CP_PJc101.PDF" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TermoAdesaoQuestYieldFicc38.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TermoAdesao_FIAIGB30_Alteradoc81.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TermobozanoPFc102.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TermodeAdesaoInflationFICc105.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TermodeadesaoKondorLXfundodeinvestimentoemquotasdefundos-13429264000107c86.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TermodeadesãoLeganlowvolfi-10320188000109c36.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\TermosVotorantimVintagec51.pdf" />
+    <Content Include="Resc\PDFs\AdesaoFundos\Termo_de_Adesao_Gradual_FIRendaFixa_Alteradoc57.pdf" />
+    <Content Include="Resc\PDFs\Termo Adesao StockMarket.pdf" />
+    <Content Include="Resc\PDFs\Codigo_de_Conduta_Etica _2_.pdf" />
+    <Content Include="Resc\PDFs\Contrato Unificado PF_05abr13_alteradoLayout-ajustado _3_.pdf" />
+    <Content Include="Resc\PDFs\TERMO-DE-ADESÃO-DE-TRADER-INTERFACE_0213-n.pdf" />
+    <Content Include="Resc\PDFs\Codigo_de_Conduta_Etica_1501.pdf" />
+    <Content Include="Resc\PDFs\Contrato_de_Intermediacao_1501.pdf" />
+    <Content Include="Resc\PDFs\Regras_e_Parametros_1501.pdf" />
+    <Content Include="packages.config" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\.github\CONTRIBUTING.md" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\.github\ISSUE_TEMPLATE.md" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\.github\PULL_REQUEST_TEMPLATE.md" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\.gitignore" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\bower.json" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\CHANGE.md" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\composer.json" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\LICENSE.md" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\nuget\build.bat" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\nuget\Package.nuspec" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\package.json" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\README.md" />
+    <Content Include="CadastroNovo\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\sass\fileinput.scss" />
+    <Content Include="CadastroNovo\css\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="CadastroNovo\css\bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="CadastroNovo\css\bootstrap\css\bootstrap.css.map" />
+    <Content Include="CadastroNovo\css\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="CadastroNovo\css\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="CadastroNovo\css\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="CadastroNovo\css\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="CadastroNovo\css\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="CadastroNovo\js\Scripts\jquery-1.12.4.min.map" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap-3.3.7-dist\css\bootstrap-theme.css.map" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap-3.3.7-dist\css\bootstrap.css.map" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap-3.3.7-dist\css\bootstrap.min.css.map" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\.github\CONTRIBUTING.md" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\.github\ISSUE_TEMPLATE.md" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\.github\PULL_REQUEST_TEMPLATE.md" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\.gitignore" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\bower.json" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\CHANGE.md" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\composer.json" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\LICENSE.md" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\nuget\build.bat" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\nuget\Package.nuspec" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\package.json" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\README.md" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\BootstrapFileinput\kartik-v-bootstrap-fileinput-v4.3.9-33-gd7ce80d\kartik-v-bootstrap-fileinput-d7ce80d\sass\fileinput.scss" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\css\bootstrap.css.map" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="CadastroNovo\NovoLayout\css\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\less\core.less" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\less\list.less" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\less\path.less" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="CadastroNovo\NovoLayout\css\font-awesome-4.7.0\scss\_variables.scss" />
+    <None Include="Resc\PDFs\Contrato_de_Intermediacao_201606.pdf" />
+    <None Include="Resc\PDFs\Regras_e_Parametros_201606.pdf" />
+    <None Include="Resc\Skin\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Resc\Skin\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Resc\Skin\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Service References\CadastroCotista\cadastrocotista.wsdl" />
+    <None Include="Service References\CadastroCotista\Gradual.Site.Www.CadastroCotista.Cotista.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OperacaoCotista\Gradual.Site.Www.OperacaoCotista.OperacaoCotista.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OperacaoCotista\Gradual.Site.Www.OperacaoCotista.OperacaoCotistaViewModel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OperacaoCotista\operacaocotista.wsdl" />
+    <None Include="Service References\PosicaoCotista\Gradual.Site.Www.PosicaoCotista.PosicaoCotistaViewModel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PosicaoCotista\PosicaoCotista.wsdl" />
+    <None Include="Service References\WsCadastro\Cadastro.disco" />
+    <None Include="Service References\WsCadastro\configuration91.svcinfo" />
+    <None Include="Service References\WsCadastro\configuration.svcinfo" />
+    <None Include="Service References\WsCadastro\Gradual.Site_II.Www.WsCadastro.BuscarContratoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WsCadastro\Gradual.Site_II.Www.WsCadastro.BuscarLimitesDoClienteResposta.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WsCadastro\Gradual.Site_II.Www.WsCadastro.BuscarListaDeContratosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WsCadastro\Gradual.Site_II.Www.WsCadastro.CadastrarAdesaoAoContratoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WsCadastro\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PosicaoCotista\PosicaoCotista.disco" />
+    <None Include="Service References\PosicaoCotista\configuration91.svcinfo" />
+    <None Include="Service References\PosicaoCotista\configuration.svcinfo" />
+    <None Include="Service References\PosicaoCotista\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\CadastroCotista\cadastrocotista.disco" />
+    <None Include="Service References\CadastroCotista\configuration91.svcinfo" />
+    <None Include="Service References\CadastroCotista\configuration.svcinfo" />
+    <None Include="Service References\CadastroCotista\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\OperacaoCotista\operacaocotista.disco" />
+    <None Include="Service References\OperacaoCotista\configuration91.svcinfo">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OperacaoCotista\configuration.svcinfo" />
+    <None Include="Service References\OperacaoCotista\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Resc\UserControls\Sauron.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Codigo\CepLivreConnector.cs" />
+    <Compile Include="App_Codigo\ConfiguracoesValidadas.cs" />
+    <Compile Include="App_Codigo\DadosDeAplicacao.cs" />
+    <Compile Include="App_Codigo\Extensions.cs" />
+    <Compile Include="App_Codigo\ObjetoComLogger.cs" />
+    <Compile Include="App_Codigo\PaginaBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Codigo\PaginaFundos.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Codigo\PaginaIPO.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Codigo\PaginaMasterBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Codigo\PaginaTesouroDireto.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Codigo\PerfMon.cs" />
+    <Compile Include="App_Codigo\RespostaAjax.cs" />
+    <Compile Include="App_Codigo\SecaoDoSite.cs" />
+    <Compile Include="App_Codigo\Transporte\Dictionary.cs" />
+    <Compile Include="App_Codigo\Transporte\ProdutoTransporte.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteBannerLateral.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteCadastro.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteCadastroContaBancaria.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteCadastroDadosRedirecionamento.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteCadastroDocumento.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteCadastroEndereco.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteCadastroPasso2.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteCadastroRepresentante.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteCadastroSituacaoFinanceira.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteCadastroSuitability.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteCadastroTelefone.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteCadastroTelefones.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteCarteiraRecomendada.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteComBuscaDoSinacor.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteConfigurarLimites.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteConsultaProtocolo.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteConteudoInfo_BannerDaHome.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteConteudoInfo_BannerDoRodape.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteConteudoInfo_Chat.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteConteudoInfo_DestaqueDaHome.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteConteudoInfo_OfertaPublica.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteCotacaoWsIndiceGradual.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteCustodiaInfo.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteDadosCadastraisDoAtivo.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteDadosCadastraisDoCliente.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteDadosCarrinho.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteDadosDoAtivo.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteEndereco.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteExtratoNotaDeCorretagem.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteExtratoNotaDeCorretagemBmf.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteISIN.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteLivroDeOferta.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteMensagemDeLivroDeOferta.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteMensagemDeNegocio.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteMovimentoOperacoes.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteOrdemCriticas.cs" />
+    <Compile Include="App_Codigo\Transporte\TransportePaginaConteudoInfo_Busca.cs" />
+    <Compile Include="App_Codigo\Transporte\TransportePosicaoAtual.cs" />
+    <Compile Include="App_Codigo\Transporte\TransportePosicaoConsolidada.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteProduto.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteRentabilidadeFundo.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteSaldoDeConta.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteSessaoClienteLogado.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteStartStop.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteTelefone.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteTickerDeDestaques.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteTickerDeDestaquesMensagem.cs" />
+    <Compile Include="App_Codigo\Transporte\TransporteVideoTV.cs" />
+    <Compile Include="App_Codigo\Transporte\Transporte_IntegracaoFundos.cs" />
+    <Compile Include="App_Codigo\Transporte\Transporte_Ordens.cs" />
+    <Compile Include="App_Codigo\Transporte\Transporte_PosicaoCotista.cs" />
+    <Compile Include="App_Codigo\Transporte\Transporte_RentabilidadeFundo.cs" />
+    <Compile Include="App_Codigo\Transporte\Transporte_Termo.cs" />
+    <Compile Include="App_Codigo\Transporte\Transporte_TesouroDireto.cs" />
+    <Compile Include="App_Codigo\Transporte\Transporte_TesouroDireto_Compra.cs" />
+    <Compile Include="App_Codigo\Transporte\Transporte_TesouroDireto_Extrato.cs" />
+    <Compile Include="App_Codigo\Transporte\Transporte_BTC.cs" />
+    <Compile Include="App_Codigo\UserControlBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Async\Geral.aspx.cs">
+      <DependentUpon>Geral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Async\Geral.aspx.designer.cs">
+      <DependentUpon>Geral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Async\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Async\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Async\ModuloCMS.aspx.cs">
+      <DependentUpon>ModuloCMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Async\ModuloCMS.aspx.designer.cs">
+      <DependentUpon>ModuloCMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Async\NotificacoesExternas.aspx.cs">
+      <DependentUpon>NotificacoesExternas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Async\NotificacoesExternas.aspx.designer.cs">
+      <DependentUpon>NotificacoesExternas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Busca.aspx.cs">
+      <DependentUpon>Busca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Busca.aspx.designer.cs">
+      <DependentUpon>Busca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroNovo\Cryptography.cs" />
+    <Compile Include="CadastroNovo\NovoLayout\app\Cadastro.aspx.cs">
+      <DependentUpon>Cadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastroNovo\NovoLayout\app\Cadastro.aspx.designer.cs">
+      <DependentUpon>Cadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroNovo\NovoLayout\app\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastroNovo\NovoLayout\app\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroNovo\PassoAPasso\AcesseSuaConta.aspx.cs">
+      <DependentUpon>AcesseSuaConta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastroNovo\PassoAPasso\AcesseSuaConta.aspx.designer.cs">
+      <DependentUpon>AcesseSuaConta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroNovo\PassoAPasso\CadastroTriagem.aspx.cs">
+      <DependentUpon>CadastroTriagem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastroNovo\PassoAPasso\CadastroTriagem.aspx.designer.cs">
+      <DependentUpon>CadastroTriagem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroNovo\PassoAPasso\Passo1.aspx.cs">
+      <DependentUpon>Passo1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastroNovo\PassoAPasso\Passo1.aspx.designer.cs">
+      <DependentUpon>Passo1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Integracao\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Integracao\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Investimentos\Cambio.aspx.cs">
+      <DependentUpon>Cambio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Investimentos\Cambio.aspx.designer.cs">
+      <DependentUpon>Cambio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Investimentos\OfertaPublica.aspx.cs">
+      <DependentUpon>OfertaPublica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Investimentos\OfertaPublica.aspx.designer.cs">
+      <DependentUpon>OfertaPublica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Cadastro\EsqueciAssinatura.aspx.cs">
+      <DependentUpon>EsqueciAssinatura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Cadastro\EsqueciAssinatura.aspx.designer.cs">
+      <DependentUpon>EsqueciAssinatura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Cadastro\EsqueciSenha.aspx.cs">
+      <DependentUpon>EsqueciSenha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Cadastro\EsqueciSenha.aspx.designer.cs">
+      <DependentUpon>EsqueciSenha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Cadastro\MeuPerfil.aspx.cs">
+      <DependentUpon>MeuPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Cadastro\MeuPerfil.aspx.designer.cs">
+      <DependentUpon>MeuPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Cadastro\MeuCadastro.aspx.cs">
+      <DependentUpon>MeuCadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Cadastro\MeuCadastro.aspx.designer.cs">
+      <DependentUpon>MeuCadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Cadastro\MeusProdutos.aspx.cs">
+      <DependentUpon>MeusProdutos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Cadastro\MeusProdutos.aspx.designer.cs">
+      <DependentUpon>MeusProdutos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Cadastro\NovaSenha.aspx.cs">
+      <DependentUpon>NovaSenha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Cadastro\NovaSenha.aspx.designer.cs">
+      <DependentUpon>NovaSenha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Cadastro\Seguranca.aspx.cs">
+      <DependentUpon>Seguranca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Cadastro\Seguranca.aspx.designer.cs">
+      <DependentUpon>Seguranca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Cadastro\SolicitarAlteracao.aspx.cs">
+      <DependentUpon>SolicitarAlteracao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Cadastro\SolicitarAlteracao.aspx.designer.cs">
+      <DependentUpon>SolicitarAlteracao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\FileLoader.aspx.cs">
+      <DependentUpon>FileLoader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Financeiro\Extrato.aspx.cs">
+      <DependentUpon>Extrato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Financeiro\Extrato.aspx.designer.cs">
+      <DependentUpon>Extrato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Financeiro\Informe\Custodia.aspx.cs">
+      <DependentUpon>Custodia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Financeiro\Informe\Custodia.aspx.designer.cs">
+      <DependentUpon>Custodia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Financeiro\Informe\DayTrade.aspx.cs">
+      <DependentUpon>DayTrade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Financeiro\Informe\DayTrade.aspx.designer.cs">
+      <DependentUpon>DayTrade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Financeiro\Informe\Fundos.aspx.cs">
+      <DependentUpon>Fundos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Financeiro\Informe\Fundos.aspx.designer.cs">
+      <DependentUpon>Fundos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Financeiro\Informe\Operacoes.aspx.cs">
+      <DependentUpon>Operacoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Financeiro\Informe\Operacoes.aspx.designer.cs">
+      <DependentUpon>Operacoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Financeiro\Informe\SaldoFinanceiro.aspx.cs">
+      <DependentUpon>SaldoFinanceiro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Financeiro\Informe\SaldoFinanceiro.aspx.designer.cs">
+      <DependentUpon>SaldoFinanceiro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Financeiro\Informe\TesouroDireto.aspx.cs">
+      <DependentUpon>TesouroDireto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Financeiro\Informe\TesouroDireto.aspx.designer.cs">
+      <DependentUpon>TesouroDireto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Financeiro\MinhaConta.aspx.cs">
+      <DependentUpon>MinhaConta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Financeiro\MinhaConta.aspx.designer.cs">
+      <DependentUpon>MinhaConta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Financeiro\NotasDeCorretagem.aspx.cs">
+      <DependentUpon>NotasDeCorretagem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Financeiro\NotasDeCorretagem.aspx.designer.cs">
+      <DependentUpon>NotasDeCorretagem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Financeiro\Retiradas.aspx.cs">
+      <DependentUpon>Retiradas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Financeiro\Retiradas.aspx.designer.cs">
+      <DependentUpon>Retiradas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Financeiro\SaldosELimites.aspx.cs">
+      <DependentUpon>SaldosELimites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Financeiro\SaldosELimites.aspx.designer.cs">
+      <DependentUpon>SaldosELimites.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\NovoCadastro.aspx.cs">
+      <DependentUpon>NovoCadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\NovoCadastro.aspx.designer.cs">
+      <DependentUpon>NovoCadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Operacoes\AcompanhamentoOrdens.aspx.cs">
+      <DependentUpon>AcompanhamentoOrdens.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Operacoes\AcompanhamentoOrdens.aspx.designer.cs">
+      <DependentUpon>AcompanhamentoOrdens.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Operacoes\Operacoes.aspx.cs">
+      <DependentUpon>Operacoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Operacoes\Operacoes.aspx.designer.cs">
+      <DependentUpon>Operacoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Posicao\Fundos.aspx.cs">
+      <DependentUpon>Fundos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Posicao\Fundos.aspx.designer.cs">
+      <DependentUpon>Fundos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Posicao\RendaFixa.aspx.cs">
+      <DependentUpon>RendaFixa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Posicao\RendaFixa.aspx.designer.cs">
+      <DependentUpon>RendaFixa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Posicao\RendaVariavel.aspx.cs">
+      <DependentUpon>RendaVariavel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Posicao\RendaVariavel.aspx.designer.cs">
+      <DependentUpon>RendaVariavel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\Acoes.aspx.cs">
+      <DependentUpon>Acoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\Acoes.aspx.designer.cs">
+      <DependentUpon>Acoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\Aplicar.aspx.cs">
+      <DependentUpon>Aplicar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\Aplicar.aspx.designer.cs">
+      <DependentUpon>Aplicar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\Cambial.aspx.cs">
+      <DependentUpon>Cambial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\Cambial.aspx.designer.cs">
+      <DependentUpon>Cambial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\Detalhes.aspx.cs">
+      <DependentUpon>Detalhes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\Detalhes.aspx.designer.cs">
+      <DependentUpon>Detalhes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\Exterior.aspx.cs">
+      <DependentUpon>Exterior.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\Exterior.aspx.designer.cs">
+      <DependentUpon>Exterior.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\Multimercados.aspx.cs">
+      <DependentUpon>Multimercados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\Multimercados.aspx.designer.cs">
+      <DependentUpon>Multimercados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\Operacoes.aspx.cs">
+      <DependentUpon>Operacoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\Operacoes.aspx.designer.cs">
+      <DependentUpon>Operacoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\Recomendados.aspx.cs">
+      <DependentUpon>Recomendados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\Recomendados.aspx.designer.cs">
+      <DependentUpon>Recomendados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\ReferenciadoDI.aspx.cs">
+      <DependentUpon>ReferenciadoDI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\ReferenciadoDI.aspx.designer.cs">
+      <DependentUpon>ReferenciadoDI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\RendaFixa.aspx.cs">
+      <DependentUpon>RendaFixa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\RendaFixa.aspx.designer.cs">
+      <DependentUpon>RendaFixa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\Resgate.aspx.cs">
+      <DependentUpon>Resgate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\Resgate.aspx.designer.cs">
+      <DependentUpon>Resgate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\Simular.aspx.cs">
+      <DependentUpon>Simular.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Fundos\Simular.aspx.designer.cs">
+      <DependentUpon>Simular.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\IPO\ReservaIPO.aspx.cs">
+      <DependentUpon>ReservaIPO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\IPO\ReservaIPO.aspx.designer.cs">
+      <DependentUpon>ReservaIPO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Produtos.aspx.cs">
+      <DependentUpon>Produtos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Produtos\Produtos.aspx.designer.cs">
+      <DependentUpon>Produtos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaConta\Ouvidoria.aspx.cs">
+      <DependentUpon>Ouvidoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MinhaConta\Ouvidoria.aspx.designer.cs">
+      <DependentUpon>Ouvidoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaDinamica.aspx.cs">
+      <DependentUpon>PaginaDinamica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaDinamica.aspx.designer.cs">
+      <DependentUpon>PaginaDinamica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaInterna.Master.cs">
+      <DependentUpon>PaginaInterna.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaInterna.Master.designer.cs">
+      <DependentUpon>PaginaInterna.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PlataformasDeNegociacao\PlataformaDeFundos.aspx.cs">
+      <DependentUpon>PlataformaDeFundos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlataformasDeNegociacao\PlataformaDeFundos.aspx.designer.cs">
+      <DependentUpon>PlataformaDeFundos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resc\UserControls\AbasFinanceiro.ascx.cs">
+      <DependentUpon>AbasFinanceiro.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\AbasFinanceiro.ascx.designer.cs">
+      <DependentUpon>AbasFinanceiro.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\AbasMeuCadastro.ascx.cs">
+      <DependentUpon>AbasMeuCadastro.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\AbasMeuCadastro.ascx.designer.cs">
+      <DependentUpon>AbasMeuCadastro.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\AbasPosicao.ascx.cs">
+      <DependentUpon>AbasPosicao.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\AbasPosicao.ascx.designer.cs">
+      <DependentUpon>AbasPosicao.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\BannerLateral.ascx.cs">
+      <DependentUpon>BannerLateral.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\BannerLateral.ascx.designer.cs">
+      <DependentUpon>BannerLateral.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\ItemCambio.ascx.cs">
+      <DependentUpon>ItemCambio.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\ItemCambio.ascx.designer.cs">
+      <DependentUpon>ItemCambio.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MapaDoSite.ascx.cs">
+      <DependentUpon>MapaDoSite.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MapaDoSite.ascx.designer.cs">
+      <DependentUpon>MapaDoSite.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MenuPrincipal.ascx.cs">
+      <DependentUpon>MenuPrincipal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MenuPrincipal.ascx.designer.cs">
+      <DependentUpon>MenuPrincipal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MenuTesouro.ascx.cs">
+      <DependentUpon>MenuTesouro.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MenuTesouro.ascx.designer.cs">
+      <DependentUpon>MenuTesouro.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\AbasFundosInvestimentos.ascx.cs">
+      <DependentUpon>AbasFundosInvestimentos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\AbasFundosInvestimentos.ascx.designer.cs">
+      <DependentUpon>AbasFundosInvestimentos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\AbasMenuTD.ascx.cs">
+      <DependentUpon>AbasMenuTD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\AbasMenuTD.ascx.designer.cs">
+      <DependentUpon>AbasMenuTD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\AbasOperacoes.ascx.cs">
+      <DependentUpon>AbasOperacoes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\AbasOperacoes.ascx.designer.cs">
+      <DependentUpon>AbasOperacoes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\CompraTD.ascx.cs">
+      <DependentUpon>CompraTD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\CompraTD.ascx.designer.cs">
+      <DependentUpon>CompraTD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\ConsultarProtocolo.ascx.cs">
+      <DependentUpon>ConsultarProtocolo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\ConsultarProtocolo.ascx.designer.cs">
+      <DependentUpon>ConsultarProtocolo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\ConsultaTD.ascx.cs">
+      <DependentUpon>ConsultaTD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\ConsultaTD.ascx.designer.cs">
+      <DependentUpon>ConsultaTD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\ExtratoTD.ascx.cs">
+      <DependentUpon>ExtratoTD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\ExtratoTD.ascx.designer.cs">
+      <DependentUpon>ExtratoTD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Fundos\OperacoesAplicar.ascx.cs">
+      <DependentUpon>OperacoesAplicar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Fundos\OperacoesAplicar.ascx.designer.cs">
+      <DependentUpon>OperacoesAplicar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Fundos\OperacoesExtrato.ascx.cs">
+      <DependentUpon>OperacoesExtrato.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Fundos\OperacoesExtrato.ascx.designer.cs">
+      <DependentUpon>OperacoesExtrato.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Fundos\OperacoesPosicaoConsolidada.ascx.cs">
+      <DependentUpon>OperacoesPosicaoConsolidada.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Fundos\OperacoesPosicaoConsolidada.ascx.designer.cs">
+      <DependentUpon>OperacoesPosicaoConsolidada.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Fundos\OperacoesRelatorio.ascx.cs">
+      <DependentUpon>OperacoesRelatorio.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Fundos\OperacoesRelatorio.ascx.designer.cs">
+      <DependentUpon>OperacoesRelatorio.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Fundos\OperacoesResgate.ascx.cs">
+      <DependentUpon>OperacoesResgate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Fundos\OperacoesResgate.ascx.designer.cs">
+      <DependentUpon>OperacoesResgate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Fundos\OperacoesSaldo.ascx.cs">
+      <DependentUpon>OperacoesSaldo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Fundos\OperacoesSaldo.ascx.designer.cs">
+      <DependentUpon>OperacoesSaldo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Fundos\OperacoesSimular.ascx.cs">
+      <DependentUpon>OperacoesSimular.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Fundos\OperacoesSimular.ascx.designer.cs">
+      <DependentUpon>OperacoesSimular.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\MinhaConta\Patrimonio_Dinheiro.ascx.cs">
+      <DependentUpon>Patrimonio_Dinheiro.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\MinhaConta\Patrimonio_Dinheiro.ascx.designer.cs">
+      <DependentUpon>Patrimonio_Dinheiro.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\MinhaConta\Patrimonio_FundosInvestimentos.ascx.cs">
+      <DependentUpon>Patrimonio_FundosInvestimentos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\MinhaConta\Patrimonio_FundosInvestimentos.ascx.designer.cs">
+      <DependentUpon>Patrimonio_FundosInvestimentos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\MinhaConta\Patrimonio_RendaFixa.ascx.cs">
+      <DependentUpon>Patrimonio_RendaFixa.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\MinhaConta\Patrimonio_RendaFixa.ascx.designer.cs">
+      <DependentUpon>Patrimonio_RendaFixa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\MinhaConta\Patrimonio_RendaVariavel.ascx.cs">
+      <DependentUpon>Patrimonio_RendaVariavel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\MinhaConta\Patrimonio_RendaVariavel.ascx.designer.cs">
+      <DependentUpon>Patrimonio_RendaVariavel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\MinhaConta\ucMinhaContaBase.ascx.cs">
+      <DependentUpon>ucMinhaContaBase.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\MinhaConta\ucMinhaContaBase.ascx.designer.cs">
+      <DependentUpon>ucMinhaContaBase.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Produtos\GTI.ascx.cs">
+      <DependentUpon>GTI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Produtos\GTI.ascx.designer.cs">
+      <DependentUpon>GTI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Produtos\Previdencia.ascx.cs">
+      <DependentUpon>Previdencia.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Produtos\Previdencia.ascx.designer.cs">
+      <DependentUpon>Previdencia.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Produtos\ProfitChart.ascx.cs">
+      <DependentUpon>ProfitChart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Produtos\ProfitChart.ascx.designer.cs">
+      <DependentUpon>ProfitChart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Produtos\SeguroVida.ascx.cs">
+      <DependentUpon>SeguroVida.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Produtos\SeguroVida.ascx.designer.cs">
+      <DependentUpon>SeguroVida.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Produtos\StockMarket.ascx.cs">
+      <DependentUpon>StockMarket.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Produtos\StockMarket.ascx.designer.cs">
+      <DependentUpon>StockMarket.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Produtos\TravelCard.ascx.cs">
+      <DependentUpon>TravelCard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\Produtos\TravelCard.ascx.designer.cs">
+      <DependentUpon>TravelCard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\UCTesouroDireto.ascx.cs">
+      <DependentUpon>UCTesouroDireto.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\UCTesouroDireto.ascx.designer.cs">
+      <DependentUpon>UCTesouroDireto.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\VendaTD.ascx.cs">
+      <DependentUpon>VendaTD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\MinhaConta\VendaTD.ascx.designer.cs">
+      <DependentUpon>VendaTD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\ModuloCMS.ascx.cs">
+      <DependentUpon>ModuloCMS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\ModuloCMS.ascx.designer.cs">
+      <DependentUpon>ModuloCMS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\PainelDeBusca.ascx.cs">
+      <DependentUpon>PainelDeBusca.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\PainelDeBusca.ascx.designer.cs">
+      <DependentUpon>PainelDeBusca.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\PainelDeCarrinho.ascx.cs">
+      <DependentUpon>PainelDeCarrinho.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\PainelDeCarrinho.ascx.designer.cs">
+      <DependentUpon>PainelDeCarrinho.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\PainelDeLogin.ascx.cs">
+      <DependentUpon>PainelDeLogin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\PainelDeLogin.ascx.designer.cs">
+      <DependentUpon>PainelDeLogin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\RenderizadorDeWidgets.ascx.cs">
+      <DependentUpon>RenderizadorDeWidgets.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\RenderizadorDeWidgets.ascx.designer.cs">
+      <DependentUpon>RenderizadorDeWidgets.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\RodapeDoSite.ascx.cs">
+      <DependentUpon>RodapeDoSite.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\RodapeDoSite.ascx.designer.cs">
+      <DependentUpon>RodapeDoSite.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resc\UserControls\Sauron.ascx.cs">
+      <DependentUpon>Sauron.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resc\UserControls\Sauron.ascx.designer.cs">
+      <DependentUpon>Sauron.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Service References\CadastroCotista\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\OperacaoCotista\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PosicaoCotista\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\WsCadastro\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppSettings.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PaginaInterna.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Gradual.Etc\Gradual.Servico.FichaCadastral\Gradual.Servico.FichaCadastral.Lib\Gradual.Servico.FichaCadastral.Lib.csproj">
+      <Project>{07910909-ACD3-4335-84A9-E182CBE0BB30}</Project>
+      <Name>Gradual.Servico.FichaCadastral.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.Etc\Gradual.Servico.FichaCadastral\Gradual.Servico.FichaCadastral\Gradual.Servico.FichaCadastral.csproj">
+      <Project>{1FD1AED3-91F8-49C0-A1FE-D87CF5753521}</Project>
+      <Name>Gradual.Servico.FichaCadastral</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.Integracao.SolutionTech\Gradual.Integration.HomeBroker\Gradual.Integration.HomeBroker.csproj">
+      <Project>{6E2B8204-01D4-4887-8B89-9F24D7EC8F78}</Project>
+      <Name>Gradual.Integration.HomeBroker</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.Intranet\Gradual.Intranet.Contratos\Gradual.Intranet.Contratos.csproj">
+      <Project>{429DEE5D-7FC1-40CD-A72A-918B5831F0F8}</Project>
+      <Name>Gradual.Intranet.Contratos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.Intranet\Gradual.Intranet.Servicos.BancoDeDados\Gradual.Intranet.Servicos.BancoDeDados.csproj">
+      <Project>{81DB2BB2-3A61-445F-9B8F-C1551D2B48D6}</Project>
+      <Name>Gradual.Intranet.Servicos.BancoDeDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Library\Gradual.OMS.Library.csproj">
+      <Project>{A5E45264-237E-471B-9260-88552A1EF7F3}</Project>
+      <Name>Gradual.OMS.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.OMS-II\Gradual.OMS.Core\Gradual.OMS.Persistencia\Gradual.OMS.Persistencia.csproj">
+      <Project>{01BFE534-741D-44B0-BDFF-7461D1AC66EC}</Project>
+      <Name>Gradual.OMS.Persistencia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.OMS-II\Gradual.OMS.PlanoCliente\Gradual.OMS.PlanoCliente\Gradual.OMS.PlanoCliente.csproj">
+      <Project>{B659CA32-2181-4C2C-8AB7-F0201DD05ADC}</Project>
+      <Name>Gradual.OMS.PlanoCliente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.OMS-II\Gradual.OMS.PosicaoBTC\Gradual.OMS.PosicaoBTC\Gradual.OMS.PosicaoBTC.csproj">
+      <Project>{608AAF5B-73B9-488C-9920-C04666824104}</Project>
+      <Name>Gradual.OMS.PosicaoBTC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.OMS-II\Gradual.OMS.Seguranca\Gradual.OMS.Seguranca.Lib\Gradual.OMS.Seguranca.Lib.csproj">
+      <Project>{421A9509-5314-420F-80EA-10A7B4D7309B}</Project>
+      <Name>Gradual.OMS.Seguranca.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gradual.OMS-II\Gradual.OMS.Seguranca\Gradual.OMS.Seguranca\Gradual.OMS.Seguranca.csproj">
+      <Project>{FD8E0DF0-FCA3-486A-8457-DA5938083531}</Project>
+      <Name>Gradual.OMS.Seguranca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gradual.Site.DbLib\Gradual.Site.DbLib.csproj">
+      <Project>{A257ADAA-81A8-466E-910C-A0821DAD2408}</Project>
+      <Name>Gradual.Site.DbLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resc\PDFs\Contrato PS_Poupe Gradual_10out11vfinal.pdf" />
+    <Content Include="Resc\PDFs\Contrato Unificado PF_20jun13_registrado.pdf" />
+    <Content Include="Resc\PDFs\Perfil_Arrojado.pdf" />
+    <Content Include="Resc\PDFs\Perfil_Conservador.pdf" />
+    <Content Include="Resc\PDFs\Perfil_Moderado.pdf" />
+    <Content Include="Resc\PDFs\TermoAdesao.pdf" />
+    <Content Include="Resc\PDFs\Termo_de_Adesão_Calculadora_v4.pdf" />
+    <None Include="Service References\WsCadastro\Cadastro.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resc\PDFs\FichaCadastral\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CadastroCotista\" />
+    <WCFMetadataStorage Include="Service References\OperacaoCotista\" />
+    <WCFMetadataStorage Include="Service References\PosicaoCotista\" />
+    <WCFMetadataStorage Include="Service References\WsCadastro\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MinhaConta\Reports\AcompanhamentoOrdens.rdlc" />
+    <Content Include="MinhaConta\Reports\NCBmf.rdlc" />
+    <Content Include="MinhaConta\Reports\RendaVariavel.rdlc" />
+    <Content Include="MinhaConta\Reports\RendaFixa.rdlc" />
+    <Content Include="MinhaConta\Reports\Extrato.rdlc" />
+    <Content Include="MinhaConta\Reports\SaldosLimites.rdlc" />
+    <Content Include="MinhaConta\Reports\IRPF5557.rdlc" />
+    <Content Include="MinhaConta\Reports\IRPF8053.rdlc" />
+    <Content Include="MinhaConta\Reports\IRPF8468.rdlc" />
+    <Content Include="MinhaConta\Reports\NCBovespa.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MinhaConta\Reports\Fundos.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1262 @@
+﻿
+
+
+#pnlCabecalhoPagina
+{
+    display:block;
+
+    width: 888px;
+    height:204px;
+
+    margin:0px 0px 0px 0px;
+
+    background: url(Img/Fundo-Section-CabecalhoPagina.gif) no-repeat left -36px;
+}
+
+    #pnlCabecalhoPagina #navBreadCrumb
+    {
+        display:block;
+        position:relative;
+
+        left:24px;
+        top:0px;
+
+        margin:0px 0px -204px 0px;
+
+        width: 840px;
+        height:204px;
+    }
+
+        #pnlCabecalhoPagina #navBreadCrumb a
+        {
+            position:absolute;
+
+            left:22px;
+            top: 82px;
+
+            font-family:'Nunito', Tahoma, Sans-Serif;
+            font-size:1.5em;
+            color:#575757;
+            text-decoration:none;
+            text-shadow:0px 0px 3px #fff;
+        }
+
+        #pnlCabecalhoPagina #navBreadCrumb a.f2
+        {
+            top:116px;
+
+            font-size:1.7em;
+        }
+
+        #pnlCabecalhoPagina #navBreadCrumb a.f3
+        {
+            top:152px;
+
+            font-size:2.2em;
+            color:#000;
+        }
+
+        #pnlCabecalhoPagina #navBreadCrumb a:hover
+        {
+            color:#293fdf;
+            text-decoration:underline;
+        }
+
+    #pnlCabecalhoPagina div.ImagemDeFundo
+    {
+        display:block;
+        position:relative;
+
+        left:24px;
+        top:0px;
+
+        width: 840px;
+        height:204px;
+        z-index:-100;
+        
+        background: url(Img/Fundo-Cabecalho-Generico.gif) no-repeat left top;
+    }
+
+    .Home-MinhaConta-               div.ImagemDeFundo,
+    .Home-MinhaConta-Financeiro     div.ImagemDeFundo,
+    .Home-MinhaConta-Bolsa-BMF      div.ImagemDeFundo,
+    .Home-MinhaConta-ClubesFundos   div.ImagemDeFundo,
+    .Home-MinhaConta-Operacoes      div.ImagemDeFundo,
+    .Home-MinhaConta-PoupeGradual   div.ImagemDeFundo,
+    .Home-MinhaConta-ImpostoDeRenda div.ImagemDeFundo,
+    .Home-MinhaConta-TesouroDireto  div.ImagemDeFundo,
+    .Home-MinhaConta-Compras        div.ImagemDeFundo,
+    .Home-MinhaConta-Cadastro       div.ImagemDeFundo {  background: url(Img/Fundo-Cabecalho-MinhaConta.jpg) 0 -3px no-repeat !important; }
+    
+    .Home-MinhaConta-AbraConta      div.ImagemDeFundo {  background: url(Img/Imagem-Cab-MinhaConta-Abra.jpg) 0 -3px no-repeat !important; }
+    .Home-MinhaConta-Login          div.ImagemDeFundo {  background: url(Img/Imagem-Cab-MinhaConta-Login.jpg) 0 -3px no-repeat !important; }
+    
+    .Home-TVGradual-                div.ImagemDeFundo {  background: url(Img/Imagem-CabecalhoPagina-TVGradual.jpg) no-repeat !important; }
+
+
+    .Home-Busca-                                        div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Busca.jpg) no-repeat !important; }
+    
+    .Home-Ferramentas-                                  div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Ferramentas-.jpg) no-repeat !important; }
+    .Home-Ferramentas-HomeBroker                        div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Ferramentas-HomeBroker.jpg) no-repeat !important; }
+    .Home-Ferramentas-GradualTraderInterface            div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Ferramentas-GTI.jpg) no-repeat !important; }
+    .Home-Ferramentas-FastBroker                        div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Ferramentas-FastBroker.jpg) no-repeat !important; }
+    .Home-Ferramentas-Gráficos                          div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Ferramentas-Graficos.jpg) no-repeat !important; }
+    .Home-Ferramentas-CalculadoraIR                     div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Ferramentas-CalculadoraIR.jpg) no-repeat !important; }
+    .Home-Ferramentas-StockMarket                       div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Ferramentas-StockMarket.jpg) no-repeat !important; }
+    
+    .Home-Produtos-                                     div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Produtos-.jpg) no-repeat !important; }
+    .Home-Produtos-PoupeGradual                         div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Produtos-PoupeGradual.jpg) no-repeat !important; }
+    .Home-Produtos-FundosdeInvestimento                 div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Produtos-FundosDeInvestimento.jpg) no-repeat !important; }
+    .Home-Produtos-ClubesdeInvestimento                 div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Produtos-ClubesDeInvestimento.jpg) no-repeat !important; }
+    .Home-Produtos-GradualTravelCard                    div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Produtos-GradualTravelCard.jpg) no-repeat !important; }
+    .Home-Produtos-SeguroDeVida                         div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Produtos-SeguroDeVida.jpg) no-repeat !important; }
+    .Home-Produtos-GradualEducacional                   div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Produtos-Educacional.jpg) no-repeat !important; }
+    .Home-Produtos-Cursos                               div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Produtos-Cursos.jpg) no-repeat !important; }
+    .Home-Produtos-Previdência                          div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Produtos-Previdencia.jpg) no-repeat !important; }
+    
+    .Home-Investimentos-                                div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Investimentos-.jpg) no-repeat !important; }
+    .Home-Investimentos-Ações                           div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Investimentos-AcoesCtaMargem.jpg) no-repeat !important; }
+    .Home-Investimentos-Opções                          div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Investimentos-Opcoes.jpg) no-repeat !important; }
+    .Home-Investimentos-OfertaPública                   div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Investimentos-OfertaPublica.jpg) no-repeat !important; }
+    .Home-Investimentos-Termo                           div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Investimentos-Termo.jpg) no-repeat !important; }
+    .Home-Investimentos-AlugueldeAções                  div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Investimentos-AluguelDeAcoes.jpg) no-repeat !important; }
+    .Home-Investimentos-MercadoriaseFuturos             div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Investimentos-MercadoriasFuturos.jpg) no-repeat !important; }
+    .Home-Investimentos-TesouroDireto                   div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Investimentos-TesouroDireto.jpg) no-repeat !important; }
+    .Home-Investimentos-FundosImobiliários              div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Investimentos-FundosImobiliarios.jpg) no-repeat !important; }
+    .Home-Investimentos-RendaFixa                       div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Investimentos-FDIC.jpg) no-repeat !important; }
+    
+    .Home-Institucional-Atendimento                     div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Institucional-Atendimento.jpg) no-repeat !important; }
+    .Home-Institucional-ForeignInvestors                div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Institucional-ForeignInvestors.jpg) no-repeat !important; }
+    .Home-Institucional-GradiusGestao                   div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Institucional-GradiusGestao.jpg) no-repeat !important; }
+    .Home-Institucional-NikkeiDesk                      div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Institucional-NikkeiDesk-II.jpg) no-repeat !important; }
+    .Home-Institucional-Ouvidoria                       div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Institucional-Ouvidoria.jpg) no-repeat !important; }
+    .Home-Institucional-SalaDeImprensa                  div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Institucional-SalaDeImprensa.jpg) no-repeat !important; }
+    .Home-Institucional-SejaUmDistribuidor              div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Institucional-SejaUmDistribuidor.jpg) no-repeat !important; }
+    .Home-Institucional-TrabalheConosco                 div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Institucional-TrabalheConosco.jpg) no-repeat !important; }
+    
+    .Home-Produtos-ContaMargem                          div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Investimentos-ETF.jpg) no-repeat !important; }
+    
+    .Home-ComoInvestir-                                  div.ImagemDeFundo {  background: url(Img/Imagem-Cab-ComoInvestir-.jpg) no-repeat !important; }
+    .Home-ComoInvestir-ConheçaaGradual                  div.ImagemDeFundo {  background: url(Img/Imagem-Cab-ComoInvestir-ConhecaAGradual.jpg) no-repeat !important; }
+    .Home-ComoInvestir-NossosEndereços                  div.ImagemDeFundo {  background: url(Img/Imagem-Cab-ComoInvestir-NossosEnderecos.jpg) no-repeat !important; }
+    .Home-ComoInvestir-NossosDistribuidores             div.ImagemDeFundo {  background: url(Img/Imagem-Cab-ComoInvestir-NossosDistribuidores.jpg) no-repeat !important; }
+    .Home-ComoInvestir-MesasEspecializadas              div.ImagemDeFundo {  background: url(Img/Imagem-Cab-ComoInvestir-MesasEspecializadas.jpg) no-repeat !important; }
+    .Home-ComoInvestir-InvestidorInstitucional          div.ImagemDeFundo {  background: url(Img/Imagem-Cab-ComoInvestir-InvestidorIntitucional.jpg) no-repeat !important; }
+    .Home-ComoInvestir-CustosOperacionais               div.ImagemDeFundo {  background: url(Img/Imagem-Cab-ComoInvestir-CustosOperacionais.jpg) no-repeat !important; }
+    
+    .Home-Aprendizado-                                  div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Aprendizado-.jpg) no-repeat !important; }
+    .Home-Aprendizado-Palestras                         div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Aprendizado-Palestras.jpg) no-repeat !important; }
+    .Home-Aprendizado-Planejamento                      div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Aprendizado-Planejamento.jpg) no-repeat !important; }
+    .Home-Aprendizado-LegislaçãoeRegras                 div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Aprendizado-LegislacaoERegras.jpg) no-repeat !important; }
+    .Home-Aprendizado-SegurançaeRiscos                  div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Aprendizado-SegurancaERiscos.jpg) no-repeat !important; }
+    .Home-Aprendizado-DúvidasFrequentes                 div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Aprendizado-DuvidasFrequentes.jpg) no-repeat !important; }
+    .Home-Aprendizado-Glossário                         div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Aprendizado-Glossario.jpg) no-repeat !important; }
+    .Home-Aprendizado-VídeosEducacionais                div.ImagemDeFundo {  background: url(Img/Imagem-Cab-Aprendizado-VideosEducacionais.jpg) no-repeat !important; }
+    
+    .Home-AnáliseseMercado-                             div.ImagemDeFundo {  background: url(Img/Imagem-Cab-AnaliseseMercado-.jpg) no-repeat !important; }
+    .Home-AnáliseseMercado-Chats                        div.ImagemDeFundo {  background: url(Img/Imagem-Cab-AnalisesEMercado-Chats.jpg) no-repeat !important; }
+    .Home-AnáliseseMercado-CarteirasRecomendadas        div.ImagemDeFundo {  background: url(Img/Imagem-Cab-AnalisesEMercado-CarteirasRecomendadas.jpg) no-repeat !important; }
+    .Home-AnáliseseMercado-ParceriaEmpiricus            div.ImagemDeFundo {  background: url(Img/Imagem-Cab-AnalisesEMercado-ParceriaEmpiricus.jpg) no-repeat !important; }
+    .Home-AnáliseseMercado-AnálisesGráficas             div.ImagemDeFundo {  background: url(Img/Imagem-Cab-AnalisesEMercado-AnalisesGraficas.jpg) no-repeat !important; }
+    .Home-AnáliseseMercado-AnálisesFundamentalistas     div.ImagemDeFundo {  background: url(Img/Imagem-Cab-AnalisesEMercado-AnalisesFundamentalistas.jpg) no-repeat !important; }
+    .Home-AnáliseseMercado-AnálisesEconômicas           div.ImagemDeFundo {  background: url(Img/Imagem-Cab-AnalisesEMercado-AnalisesEconomicas.jpg) no-repeat !important; }
+    .Home-AnáliseseMercado-FerramentasdeAnálises        div.ImagemDeFundo {  background: url(Img/Imagem-Cab-AnalisesEMercado-FerramentasDeAnalises.jpg) no-repeat !important; }
+    .Home-AnáliseseMercado-Simuladores                  div.ImagemDeFundo {  background: url(Img/Imagem-Cab-AnalisesEMercado-Simuladores.jpg) no-repeat !important; }
+    .Home-AnáliseseMercado-ÍndiceseCotações             div.ImagemDeFundo {  background: url(Img/Imagem-Cab-AnalisesEMercado-IndicesECotacoes.jpg) no-repeat !important; }
+    .Home-AnáliseseMercado-Notícias                     div.ImagemDeFundo {  background: url(Img/Imagem-Cab-AnalisesEMercado-Noticias.jpg) no-repeat !important; }
+    .Home-AnáliseseMercado-Avisos                       div.ImagemDeFundo {  background: url(Img/Imagem-Cab-AnalisesEMercado-Avisos.jpg) no-repeat !important; }
+
+
+
+    #pnlCabecalhoPagina.Home-TVGradual-    #navBreadCrumb a
+    {
+        color:#FFF;
+        text-shadow:0px 0px 3px #000;
+    }
+
+    #pnlCabecalhoPagina #navMinhaConta
+    {
+        display:block;
+        position:relative;
+
+        left:24px;
+        top:0px;
+
+        margin:0px 0px -204px 0px;
+
+        width: 840px;
+        height:204px;
+
+        /*background:aqua;*/
+    }
+
+    #pnlCabecalhoPagina #navMinhaConta ul
+    {
+        position:absolute;
+
+        left:3px;
+        top:0px;
+
+        width:114px;
+        height:160px;
+
+        /*background:lime;*/
+    }
+
+    #pnlCabecalhoPagina #navMinhaConta ul.f2 { left: 121px; }
+    #pnlCabecalhoPagina #navMinhaConta ul.f3 { left: 239px; }
+    #pnlCabecalhoPagina #navMinhaConta ul.f4 { left: 363px; }
+    #pnlCabecalhoPagina #navMinhaConta ul.f5 { left: 481px; }
+    #pnlCabecalhoPagina #navMinhaConta ul.f6 { left: 599px; }
+    #pnlCabecalhoPagina #navMinhaConta ul.f7 { left: 723px; }
+    #pnlCabecalhoPagina #navMinhaConta ul.f8 { left: 0px;  top:170px; }
+    #pnlCabecalhoPagina #navMinhaConta ul.f9 { left: 530px; top:170px; }
+    
+        #pnlCabecalhoPagina #navMinhaConta ul li
+        {
+            padding:4px 0px 4px 0px;
+
+            text-align:center;
+
+            /*background:yellow;*/
+        }
+
+            #pnlCabecalhoPagina #navMinhaConta ul li h4
+            {
+                padding:12px 0px 6px 0px;
+
+                color:#444;
+                font-weight:normal;
+                text-shadow:1px 1px 1px #fff;
+            }
+
+            #pnlCabecalhoPagina #navMinhaConta ul li a
+            {
+                color:#3c56dc;
+                font-size:0.9em;
+                text-decoration:none;
+            }
+
+            #pnlCabecalhoPagina #navMinhaConta ul li a:hover
+            {
+                color:#2039b7;
+                text-decoration:underline;
+            }
+    
+    #pnlCabecalhoPagina #navMinhaConta ul.MaisOpcoes
+    {
+        width:94%;
+        height:20px;
+    }
+    
+    #pnlCabecalhoPagina #navMinhaConta ul.MaisOpcoes li
+    {
+        display:block;
+        float:left;
+        
+        margin:0px 8px 0px 8px;
+        
+        width:auto;
+        height:auto;
+    }
+    
+        #pnlCabecalhoPagina #navMinhaConta ul.MaisOpcoes li h4
+        {
+            padding:0px 4px 0px 12px;
+        }
+
+    #pnlCabecalhoPagina #navMinhaConta.SemLinks ul
+    {
+        display:none;
+    }
+
+#pnlMapaDoSite
+{
+    top:156px;
+}
+
+
+
+/*     CONTEUDO     */
+
+
+
+
+    #pnlConteudo > section > h1,
+    #pnlConteudo section.f h1,
+    #pnlConteudo h1
+    {
+        margin:20px 42px 0em 0em;
+        padding:10px 12px 8px 24px;
+
+        font-size:1.4em;
+        font-weight:bold;
+
+        color:#0f4b96;
+
+    }
+
+
+    #pnlConteudo > section > p,
+    #pnlConteudo section.f p,
+    #pnlConteudo > p,
+    #pnlConteudo p.f
+    {
+        margin: 1em 16px 0px 12px;
+        padding:4px 42px 4px 26px; 
+
+        font-size:1.1em;
+        font-weight:normal;
+        color:#242424;
+        line-height:1.4em;
+        
+        /*background:lime;*/
+    }
+
+    #pnlConteudo > p,
+    #pnlConteudo p.f
+    {
+        margin: 1em 32px 0px 24px;
+    }
+
+    #pnlConteudo > p:nth-child(2),
+    #pnlConteudo p.f2
+    {
+        padding-top:0em;
+        margin-top:0;
+    }
+
+    #pnlConteudo > section > p.ChamadaDeOfertaPublica,
+    #pnlConteudo section.f p.ChamadaDeOfertaPublica 
+    {
+        margin:1em 32px 0 24px;
+        
+        font-size:1.7em;
+        font-weight:bold;
+        color:#555;
+
+        text-align:center;
+        
+    }
+    
+    #pnlConteudo > section > p.AbaixoDeH3,
+    #pnlConteudo   section.f p.AbaixoDeH3
+    {
+        margin:1em 32px 0 42px;
+    }
+    
+    #pnlConteudo > section > p.AbaixoDeH4,
+    #pnlConteudo   section.f p.AbaixoDeH4
+    {
+        margin:0.6em 32px 0 46px;
+    }
+
+    #pnlConteudo > section > p.Coluna,
+    #pnlConteudo   section.f p.Coluna,
+    #pnlConteudo > section > h3.Coluna,
+    #pnlConteudo   section.f h3.Coluna,
+    #pnlConteudo > section > h4.Coluna,
+    #pnlConteudo   section.f h4.Coluna
+    {
+        display:block;
+        float:left;
+
+        margin:0.6em 0.6em 0.6em 42px;
+        padding:0.6em;
+
+        width:40%;
+    }
+
+    #pnlConteudo > section > p.Atencao,
+    #pnlConteudo   section.f p.Atencao
+    {
+        margin:1em 3em 1em 3em;
+        padding:1em;
+
+        text-align:center;
+        color:#094405;
+        font-weight:bold;
+        text-shadow:1px 1px 1px #dbdfdb;
+
+        background:#c9e4c8;
+        border:1px solid #74936b;
+        line-height:2em;
+
+        border-top:2px solid #74936b;
+        border-bottom:2px solid #74936b;
+        
+        box-shadow:0px 3px 6px #c9e4c8;
+    }
+    
+    /*
+    #pnlConteudo > section > img,
+    #pnlConteudo > section > a.LinkDeImagem,
+    #pnlConteudo > section > a.ContainerDeZoom
+    {
+        display:block;
+        float:right;
+
+        margin:16px 36px 16px 16px;
+        box-shadow:0px 2px 8px #999;
+    }*/
+
+    a.ContainerDeZoom
+    {
+        display:block;
+        float:left;
+
+        width:auto;
+        height:auto;
+    }
+
+        a.ContainerDeZoom span.IconeDeZoom
+        {
+            display:block;
+            float:right;
+            position:relative;
+
+            margin:2px 2px 0px -18px;
+
+            width:16px;
+            height:16px;
+
+            background:url(Img/Icone-ZoomImagem-Pequeno.gif);
+        }
+
+        a.ContainerDeZoom:hover span.IconeDeZoom
+        {
+            width:34px;
+            height:34px;
+            
+            margin:2px 2px 0px -36px;
+
+            background:url(Img/Icone-ZoomImagem-Medio.png);
+        }
+        
+        a.ContainerDeZoom:hover img
+        {
+            opacity:0.3;
+        }
+
+    
+    
+    #pnlConteudo > section > h2,
+    #pnlConteudo   section.f h2
+    {
+        margin:20px 42px 0px 36px;
+        padding:3px 12px 3px 12px;
+
+        font-size:1.1em;
+        font-weight:normal;
+        color:#424242;
+
+        background:url(Img/Fundo-Conteudo-H2.png) no-repeat;
+        border-bottom:2px solid #e4e4e4;
+    }
+
+    
+    
+    #pnlConteudo > section > h3,
+    #pnlConteudo   section.f h3
+    {
+        margin:20px 42px 0px 40px;
+        padding:3px 12px 3px 6px;
+
+        font-size:1.1em;
+        font-weight:bold;
+        color:#555;
+
+        border-bottom:1px dotted #e4e4e4;
+    }
+    
+    
+    #pnlConteudo > section > h4,
+    #pnlConteudo   section.f h4
+    {
+        margin:12px 42px 0px 56px;
+        padding:3px 12px 3px 2px;
+
+        font-size:1em;
+        font-weight:bold;
+        color:#666;
+    }
+    
+    #pnlConteudo > section > ul,
+    #pnlConteudo   section.f ul
+    {
+        margin:1em 0em 0em 42px;
+
+        font-size:1.1em;
+        
+        /*background:lime;*/
+    }
+
+        .ItensExpansiveis dd ul,
+        .Acordeao         dd ul
+        {
+            margin:0.8em 0.8em 0.8em 2em;
+        }
+        
+        .ItensExpansiveis dd ul li,
+        .Acordeao         dd ul li
+        {
+            padding:0.4em 0.4em 0.4em 0em !important;
+            list-style-type:disc;
+        }
+        
+        #pnlConteudo > section > ul > li,
+        #pnlConteudo   section.f ul li
+        {
+            width:90%;
+            height:auto;
+
+            margin:0px 36px 16px 36px;
+            list-style-type:disc;
+
+            /*background:aqua;*/
+        }
+
+        #pnlConteudo > section > ul.ListaCom2Colunas li,
+        #pnlConteudo   section.f ul.ListaCom2Colunas li
+        {
+            float:left;
+            width:43%;
+
+            margin:0px 0px 8px 36px;
+        }
+        
+        #pnlConteudo > section > ul.IndicadorNumerico li,
+        #pnlConteudo   section.f ul.IndicadorNumerico li
+        {
+            list-style-type:decimal !important;
+        }
+        
+        #pnlConteudo > section > ul.SemIndicador li,
+        #pnlConteudo   section.f ul.SemIndicador li
+        {
+            list-style-type:none !important;
+        }
+
+        #pnlConteudo > section > ul.IconesPDF       li,
+        #pnlConteudo > section > ul.IconesPDFLinha  li,
+        #pnlConteudo   section.f ul.IconesPDF       li,
+        #pnlConteudo   section.f ul.IconesPDFLinha  li
+        {
+            list-style-type:none !important;
+            padding:0px 0px 0px 24px;
+
+            background:url(Img/Icone-PDF.gif) no-repeat 1px 1px;
+        }
+
+        #pnlConteudo > section > ul.IconesPDFLinha,
+        #pnlConteudo   section.f ul.IconesPDFLinha
+        {
+            width:100%;
+            height:2em;
+        }
+        
+        #pnlConteudo > section > ul.IconesPDFLinha li,
+        #pnlConteudo   section.f ul.IconesPDFLinha li
+        {
+            float:left;
+            width:auto;
+        }
+
+    #pnlConteudo > section > ul.SlideShowDeImagens,
+    #pnlConteudo   section.f ul.SlideShowDeImagens
+    {
+        width: 784px;
+        margin:0px 24px 12px 24px;
+
+        border:3px solid #a9a9a9;
+        box-shadow:0px 2px 8px #999;
+    }
+
+        #pnlConteudo > section > ul.SlideShowDeImagens > li,
+        #pnlConteudo   section.f ul.SlideShowDeImagens li
+        {
+            width:auto;
+
+            margin:0px;
+
+            list-style-type:none;
+        }
+        
+    
+    
+    
+        
+    #pnlConteudo > section > dl,
+    #pnlConteudo   section.f dl,
+    dl.ListaComoConteudo
+    {
+        margin:1em 42px 0 36px;
+
+        border:1px solid #b0b3ba;
+    }
+    
+        #pnlConteudo > section > dl > dt,
+        #pnlConteudo   section.f dl   dt,
+        dl.ListaComoConteudo dt
+        {
+            padding:0.8em;
+        
+            color:#3d5a74;
+            font-weight:bold;
+            font-size:0.9em;
+
+            background:#e5ebef;
+            border-bottom:1px solid #b0b3ba;
+        }
+    
+        #pnlConteudo > section > dl > dd,
+        #pnlConteudo   section.f dl   dd,
+        dl.ListaComoConteudo dd
+        {
+            padding:0.8em;
+            /*font-size:0.8em;*/
+
+            border-bottom:1px solid #b0b3ba;
+        }
+
+        #pnlConteudo > section > dl.ItensExpansiveis > dt,
+        #pnlConteudo > section > dl.Acordeao         > dt,
+        #pnlConteudo   section.f dl.ItensExpansiveis > dt,
+        #pnlConteudo   section.f dl.Acordeao         > dt,
+        dl.ListaComoConteudo dt
+        {
+            cursor:pointer;
+        }
+
+
+
+
+div.PainelResultadoSuitability
+{
+    margin:0px;
+    padding:18em 0em 0em 0em;
+
+    text-align:center;
+}
+ 
+     div.PainelResultadoSuitability img
+     {
+         margin:auto;
+
+         box-shadow:0 4px 10px 4px #7C786A;
+     }
+     
+     
+     
+
+#pnlConteudo table
+{
+    margin:auto;
+    margin-top:1em;
+
+    border-spacing:0;
+
+    border:1px solid #b0b3ba;
+}
+
+#pnlConteudo table td
+{
+    padding:4px;
+}
+    
+    #pnlConteudo table thead td,
+    #pnlConteudo table tbody td.Cabecalho
+    {
+        color:#3d5a74;
+        font-weight:bold;
+        /*font-size:0.8em;*/
+
+        background:#e5ebef;
+        border-bottom:1px solid #b0b3ba;
+        border-right:1px dotted #b0b3ba;
+    }
+        
+    #pnlConteudo table thead td:last-child
+    {
+        border-right:none;
+    }
+
+    #pnlConteudo table tbody td,
+    #pnlConteudo table tbody th
+    {
+        /*font-size:0.9em;*/
+
+        border-bottom:1px dotted #b0b3ba;
+        border-right:1px dotted #b0b3ba;
+    }
+        
+    #pnlConteudo table tbody td:last-child,
+    #pnlConteudo table tbody th:last-child
+    {
+        border-right:none;
+    }
+
+    #pnlConteudo table tbody tr:last-child td,
+    #pnlConteudo table tbody tr:last-child th
+    {
+        border-bottom:none;
+    }
+    
+    #pnlConteudo table tfoot tr:first-child td
+    {
+        border-top:1px solid #b0b3ba;
+    }
+        
+    #pnlConteudo table tbody tr th
+    {
+        font-weight:bold;
+        color:#555;
+        text-align:right;
+        /*font-size:0.7em;*/
+        padding-right:0.5em;
+
+        width:40%;
+    }
+
+
+    #pnlConteudo table.CabecalhoCentralizado thead td
+    {
+        text-align:center;
+    }
+
+    #pnlConteudo table.CorpoCentralizado tbody td
+    {
+        text-align:center;
+    }
+
+    #pnlConteudo table.TudoCentralizado td
+    {
+        text-align:center;
+    }
+
+    #pnlConteudo table.CabecalhoADireita thead td
+    {
+        text-align:right;
+    }
+
+    #pnlConteudo table.CorpoADireita tbody td
+    {
+        text-align:right;
+    }
+
+    #pnlConteudo table.TudoADireita td
+    {
+        text-align:right;
+    }
+    
+    table.ListaDeRadios
+    {
+        float:left;
+
+        margin:-4px 0px 0px 0px !important;
+        padding:0px;
+        
+        border:none !important;
+    }
+
+        table.ListaDeRadios td
+        {
+            border:none !important;
+        }
+
+        table.ListaDeRadios td label
+        {
+            width:auto !important;
+        }
+
+        table.ListaDeRadios td input
+        {
+            float:left !important;
+        }
+
+
+a.ItemLanding
+{
+    display:block;
+
+    margin:0em 0em 2em 0em;
+    padding:0.2em 0.4em 0.4em 0.4em;
+
+    text-decoration:none;
+    text-align:center;
+
+    background:url(Img/Fundo-Item-Landing.png) no-repeat -1000px -1000px;
+}
+
+a.ItemLanding:hover
+{
+    background-position:center center;
+}
+
+    a.ItemLanding span
+    {
+        font-size:1.3em;
+        font-family:'Nunito';
+        color:#0f4b96;
+        text-shadow:1px 1px 3px #fff;
+    }
+
+    a.ItemLanding div
+    {
+        padding-top:0.4em;
+        font-size:1em;
+        color:#50565e;
+    }
+
+
+#pnlConteudo table.HomeMinhaConta
+{
+    width:100%;
+    border:8px solid #fff;
+    margin:0;
+}
+
+#pnlConteudo > table.HomeMinhaConta
+{
+    margin:0px 48px 0px 48px;
+
+    width:89.3%;
+    border-spacing:0;
+}
+
+    #pnlConteudo table.HomeMinhaConta thead td
+    {
+        color:#15458A;
+        font-weight:bold;
+
+        padding:0.4em;
+        text-align:center;
+
+        background: #efefef;
+        border:1px solid #E2E2E2;
+    }
+
+    #pnlConteudo table.HomeMinhaConta thead tr.Informativo td,
+    #pnlConteudo table.HomeMinhaConta tfoot tr td,
+    #pnlConteudo table.HomeMinhaConta tfoot tr th
+    {
+        padding-top:1em;
+
+        color:#666;
+
+        font-weight:normal;
+        text-align:right;
+
+        background:transparent;
+        border:none;
+    }
+
+    #pnlConteudo table.HomeMinhaConta tfoot tr:first-child td,
+    #pnlConteudo table.HomeMinhaConta tfoot tr:first-child th
+    {
+        border-top:4px solid #E2E2E2;
+    }
+
+    #pnlConteudo table.HomeMinhaConta thead label,
+    #pnlConteudo table.HomeMinhaConta tfoot label
+    {
+        float:left;
+        text-align:right;
+    }
+    
+    #pnlConteudo table.HomeMinhaConta thead span,
+    #pnlConteudo table.HomeMinhaConta tfoot span
+    {
+        float:right;
+
+        padding:0.4em;
+
+        text-align:right;
+        /*font-size:1.1em;*/
+        font-family:Consolas, Monospace !important;
+    }
+
+
+    #pnlConteudo table.HomeMinhaConta tbody td,
+    #pnlConteudo table.HomeMinhaConta tbody th
+    {
+        padding:0.4em;
+
+        color:#444;
+        border-bottom:1px dotted #bababa;
+        border-bottom:1px dotted #bababa;
+        border-right:none;
+    }
+
+    #pnlConteudo table.HomeMinhaConta tbody td
+    {
+        /*font-size:0.9em;*/
+    }
+
+    #pnlConteudo table.HomeMinhaConta tbody td a
+    {
+        text-decoration:none;
+    }
+
+    #pnlConteudo table.HomeMinhaConta tbody td a:hover
+    {
+        text-decoration:underline;
+    }
+
+    #pnlConteudo table.HomeMinhaConta tbody tr:last-child td,
+    #pnlConteudo table.HomeMinhaConta tbody tr:last-child th
+    {
+        border-bottom:none;
+    }
+    
+    #pnlConteudo table.HomeMinhaConta tbody th,
+    #pnlConteudo table.HomeMinhaConta tbody td:first-child
+    {
+        border-left:1px solid #E2E2E2;
+    }
+    
+    #pnlConteudo table.HomeMinhaConta tbody td:last-child
+    {
+        border-right:1px solid #E2E2E2;
+    }
+    
+    #pnlConteudo table.HomeMinhaConta tbody tr.trA td,
+    #pnlConteudo table.HomeMinhaConta tbody tr.trA th
+    {
+        background:#FFF;
+    }
+    
+    #pnlConteudo table.HomeMinhaConta tbody tr.trB td,
+    #pnlConteudo table.HomeMinhaConta tbody tr.trB th
+    {
+        background:#F0F0F0;
+    }
+    
+    #pnlConteudo table.HomeMinhaConta tbody tr.trc td,
+    #pnlConteudo table.HomeMinhaConta tbody tr.trc th
+    {
+        background:#f1f3f6;
+    }
+
+    td.ValorNumerico
+    {
+        text-align:right !important;
+        /*font-size: 1.1em !important;*/
+
+        font-family:Consolas, Monospace !important;
+    }
+    
+    tr.FooterGrid
+    {
+        color:#15458A;
+        font-weight:bold;
+
+        padding:0.4em;
+        text-align:center;
+
+        background: #efefef;
+        border:1px solid #E2E2E2;
+    }
+    
+    
+    #pnlConteudo table.HomeMinhaConta tfoot tr td table
+    {
+        width:100%;
+    }
+    
+        #pnlConteudo table.HomeMinhaConta tfoot tr td table td
+        {
+            text-align:left;
+            border:none;
+        }
+    
+
+    #pnlConteudo table.HomeMinhaConta th
+    {
+        font-weight:bold !important;
+        text-align:left;
+        width:auto;
+    }
+
+    #pnlConteudo table.HomeMinhaConta th.SubTitulo
+    {
+        padding-left:1em;
+    }
+
+    #pnlConteudo table.HomeMinhaConta th.TituloCategoria
+    {
+        text-align:center;
+        color:#4b7bc1;
+        border-right:1px solid #E2E2E2;
+    }
+
+    #pnlConteudo table.HomeMinhaConta tbody tr:hover td,
+    #pnlConteudo table.HomeMinhaConta tbody tr:hover th
+    {
+        background-color:#f8edd3 !important;
+    }
+
+    #pnlConteudo table.HomeMinhaConta tbody.SemHover tr:hover td,
+    #pnlConteudo table.HomeMinhaConta tbody.SemHover tr:hover th
+    {
+        background-color:#fff !important;
+    }
+
+    #pnlConteudo table.HomeMinhaConta td.NoticiaExpandida
+    {
+        height:291px;
+    }
+
+
+#pnlConteudo table.HomeMinhaConta thead td,
+#pnlConteudo table.HomeMinhaConta tbody td,
+#pnlConteudo table.HomeMinhaConta th
+{
+    font-size:0.7em;
+}
+
+#pnlConteudo table.HomeMinhaConta tbody th span.Obs
+{
+    font-size:0.8em;
+}
+
+#pnlConteudo table.HomeMinhaConta tbody td.ValorNumerico
+{
+    font-size:0.8em;
+}
+
+
+
+#pnlConteudo table.DetalhesDaPalestra 
+{
+    margin-bottom:2em;
+
+    border:none;
+    width:98%;
+}
+
+    #pnlConteudo table.DetalhesDaPalestra td,
+    #pnlConteudo table.DetalhesDaPalestra th
+    {
+        border:none;
+    }
+
+    #pnlConteudo table.DetalhesDaPalestra tbody th
+    {
+        padding-top:1em;
+
+        height:10px;
+        text-align:center;
+
+        font-size:0.7em;
+
+        border-bottom:1px dotted #b0b3ba;
+    }
+
+    #pnlConteudo table.DetalhesDaPalestra tbody td.TdDados
+    {
+        vertical-align:top;
+        text-align:center;
+    }
+
+
+    #pnlConteudo table.DetalhesDaPalestra tbody td span.MensagemAguarde
+    {
+        display:block;
+        width:97%;
+        height:auto;
+        padding:0.4em;
+
+        color:#fff;
+        font-weight:bold;
+
+        background:#95b9cf;
+    }
+
+
+    .ContainerDadosDeCompra div h2.Preco
+    {
+        margin:1em 0px 1em 4.2em !important;
+
+        font-size:1em !important;
+        font-weight:normal !important;
+
+        background:transparent !important;
+        border:none  !important;
+    }
+
+        .ContainerDadosDeCompra div h2.Preco span
+        {
+            font-weight:bold;
+            color:#418e0c;
+        }
+        
+        .ContainerDadosDeCompra div > p
+        {
+            margin:1em 3.6em 1em 3.6em;
+            padding:0.6em;
+
+            background:#efefef;
+        }
+
+
+        /*
+        .ContainerDadosDeCompra div p,
+        .ContainerDadosDeCompra div fieldset
+        {
+            margin:1em 3.6em 1em 3.6em;
+            padding:0.6em;
+
+            background:#efefef;
+        }
+        */
+        
+        .ContainerDadosDeCompra div .Coluna
+        {
+            display:block;
+            float:left;
+            height:1.6em;
+            /*background:yellow;*/
+            margin-right:0px;
+        }
+
+        /*
+        .ContainerDadosDeCompra div fieldset 
+        {
+            border:none;
+        }
+
+            .ContainerDadosDeCompra div fieldset p
+            {
+                margin:0.2em;
+            }
+
+            .ContainerDadosDeCompra div fieldset p label
+            {
+                float:left;
+                width:39%;
+
+                padding:3px 0.6em 0px 0px;
+
+                text-align:right;
+            }
+
+        */
+
+            .ContainerDadosDeCompra div fieldset p.PagSeguro
+            {
+                padding:5em 0em 6em 0.6em !important;
+
+                background:url(Img/Imagem-PagSeguro-BandeirasDePagamento.gif) no-repeat bottom left;
+            }
+
+            .ContainerDadosDeCompra div fieldset p.PagSeguro span
+            {
+                display:block;
+                padding:0 9em 0 0;
+                line-height:1.6em;
+
+                background:url(Img/Imagem-Logo-PagSeguro.gif) no-repeat top right;
+            }
+            
+            .ContainerDadosDeCompra div div.MensagemDeProgresso
+            {
+                margin:3em 4em;
+
+                border:3px solid #7aad97;
+                background:#fafbe3;
+            }
+
+                .ContainerDadosDeCompra div div.MensagemDeProgresso p
+                {
+                    padding:1em 3em 2.2em 3em;
+
+                    text-align:center;
+
+                    background:transparent url(Img/Imagem-Pagamento-AjaxLoader.gif) no-repeat bottom center;
+                }
+
+
+            .ContainerDadosDeCompra div div.MensagemDeErro
+            {
+                margin:3em 4em;
+
+                border:3px solid #af615f;
+                background:#533534;
+                background:#fafbe3;
+            }
+
+                .ContainerDadosDeCompra div div.MensagemDeErro p
+                {
+                    padding:1em 3em 1em 3em;
+
+                    text-align:center;
+                    /*color:#fafbd1;*/
+                    background:transparent;
+                }
+
+
+.BandeirasIdiomas
+{
+    display:block;
+    float:right;
+
+    margin:3px 0px 0px 0px;
+
+    width:54px;
+    height:54px;
+
+    /*background:lime;*/
+}
+
+    .BandeirasIdiomas a
+    {
+        display:block;
+        float:left;
+
+        margin:0px 6px 0px 0px;
+
+        width:52px;
+        height:52px;
+    }
+
+        .BandeirasIdiomas a span { display:none; }
+
+    .BandeirasIdiomas a.br
+    {
+        background:url(Img/Icone-BandeiraGrande-Brasil.gif) no-repeat 0px 0px;
+    }
+
+    .BandeirasIdiomas a.jp
+    {
+        background:url(Img/Icone-BandeiraGrande-Japao.gif) no-repeat 0px 0px;
+    }
+
+
+p.AvisoSemPalestras
+{
+    padding:1em;
+    margin:2em 4em 2em 3em;
+
+    text-align:center;
+
+    background:#e7e7e7;
+}
+
+h4.PreRequisito
+{
+}
+
+    h4.PreRequisito span
+    {
+        padding:0.3em 0.6em;
+
+        color:#333;
+        text-shadow:1px 1px 2px #fff;
+        background:#F3BE5D;
+    }
+
+ul.PreRequisito
+{
+    line-height:1.8em;
+}

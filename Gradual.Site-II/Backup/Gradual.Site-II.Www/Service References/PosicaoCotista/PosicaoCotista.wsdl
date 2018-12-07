@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Exporta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IdPosicao" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IdCotista" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IdCarteira" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExportaResult" type="tns:ArrayOfPosicaoCotistaViewModel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPosicaoCotistaViewModel">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PosicaoCotistaViewModel" nillable="true" type="tns:PosicaoCotistaViewModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PosicaoCotistaViewModel">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdPosicao" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdOperacao" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdCotista" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdCarteira" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorAplicacao" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="DataAplicacao" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DataConversao" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="CotaAplicacao" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="CotaDia" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorBruto" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorLiquido" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="QuantidadeInicial" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Quantidade" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="QuantidadeBloqueada" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="DataUltimaCobrancaIR" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorIR" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorIOF" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorPerformance" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorIOFVirtual" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="QuantidadeAntesCortes" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorRendimento" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="DataUltimoCortePfee" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="PosicaoIncorporada" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoAnbima" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ValidateLogin" type="tns:ValidateLogin" />
+      <s:complexType name="ValidateLogin">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ExportaSoapIn">
+    <wsdl:part name="parameters" element="tns:Exporta" />
+  </wsdl:message>
+  <wsdl:message name="ExportaSoapOut">
+    <wsdl:part name="parameters" element="tns:ExportaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExportaValidateLogin">
+    <wsdl:part name="ValidateLogin" element="tns:ValidateLogin" />
+  </wsdl:message>
+  <wsdl:portType name="PosicaoCotistaWSSoap">
+    <wsdl:operation name="Exporta">
+      <wsdl:input message="tns:ExportaSoapIn" />
+      <wsdl:output message="tns:ExportaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PosicaoCotistaWSSoap" type="tns:PosicaoCotistaWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Exporta">
+      <soap:operation soapAction="http://tempuri.org/Exporta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ExportaValidateLogin" part="ValidateLogin" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PosicaoCotistaWSSoap12" type="tns:PosicaoCotistaWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Exporta">
+      <soap12:operation soapAction="http://tempuri.org/Exporta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ExportaValidateLogin" part="ValidateLogin" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PosicaoCotistaWS">
+    <wsdl:port name="PosicaoCotistaWSSoap" binding="tns:PosicaoCotistaWSSoap">
+      <soap:address location="http://financial.gradual.intra/WebServicesCustom/Gradual/PosicaoCotista.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PosicaoCotistaWSSoap12" binding="tns:PosicaoCotistaWSSoap12">
+      <soap12:address location="http://financial.gradual.intra/WebServicesCustom/Gradual/PosicaoCotista.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

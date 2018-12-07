@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="BuscarListaDeContratos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pRequest" type="tns:BuscarListaDeContratosRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BuscarListaDeContratosRequest">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoBovespaDoCliente" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BuscarListaDeContratosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarListaDeContratosResult" type="tns:BuscarListaDeContratosResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BuscarListaDeContratosResponse">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:RespostaBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Contratos" type="tns:ArrayOfClienteContratoInfo" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="RespostaBase">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StatusResposta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DescricaoResposta" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClienteContratoInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ClienteContratoInfo" nillable="true" type="tns:ClienteContratoInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClienteContratoInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdCliente" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoBovespaCliente" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdContrato" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DtAssinatura" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="LstIdContrato" type="tns:ArrayOfInt" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TestarBuscarListaDeContratos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCodigoBovespaDoCliente" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestarBuscarListaDeContratosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestarBuscarListaDeContratosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CadastrarAdesaoAoContrato">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pRequest" type="tns:CadastrarAdesaoAoContratoRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CadastrarAdesaoAoContratoRequest">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoBovespaDoCliente" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdDoContratoNoCadastro" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NomeDoCliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmailDoCliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdDoClienteNoBanco" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CadastrarAdesaoAoContratoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CadastrarAdesaoAoContratoResult" type="tns:CadastrarAdesaoAoContratoResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CadastrarAdesaoAoContratoResponse">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:RespostaBase" />
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="TestarCadastrarAdesaoAoContratoStop">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCodigoBovespaDoCliente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pIdDoContrato" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestarCadastrarAdesaoAoContratoStopResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestarCadastrarAdesaoAoContratoStopResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestarCadastrarAdesaoAoContrato">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pIdDoClienteNoBanco" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCodigoBovespaDoCliente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEmailDoCliente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pNomeDoCliente" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestarCadastrarAdesaoAoContratoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestarCadastrarAdesaoAoContratoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarContrato">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pRequest" type="tns:BuscarContratoRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BuscarContratoRequest">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdDoContrato" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BuscarContratoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarContratoResult" type="tns:BuscarContratoResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BuscarContratoResponse">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:RespostaBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="TextoDoContrato" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="BuscarLimitesDoCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pRequest" type="tns:BuscarLimitesDoClienteRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BuscarLimitesDoClienteRequest">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CodigoBovespaDoCliente" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BuscarLimitesDoClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarLimitesDoClienteResult" type="tns:BuscarLimitesDoClienteResposta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BuscarLimitesDoClienteResposta">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:RespostaBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="Limite_CompraAVista_Total" type="s:decimal" />
+              <s:element minOccurs="1" maxOccurs="1" name="Limite_CompraAVista_Utilizado" type="s:decimal" />
+              <s:element minOccurs="1" maxOccurs="1" name="Limite_CompraAVista_Disponivel" type="s:decimal" />
+              <s:element minOccurs="1" maxOccurs="1" name="Limite_VendaAVista_Total" type="s:decimal" />
+              <s:element minOccurs="1" maxOccurs="1" name="Limite_VendaAVista_Utilizado" type="s:decimal" />
+              <s:element minOccurs="1" maxOccurs="1" name="Limite_VendaAVista_Disponivel" type="s:decimal" />
+              <s:element minOccurs="1" maxOccurs="1" name="Limite_CompraOpcoes_Total" type="s:decimal" />
+              <s:element minOccurs="1" maxOccurs="1" name="Limite_CompraOpcoes_Utilizado" type="s:decimal" />
+              <s:element minOccurs="1" maxOccurs="1" name="Limite_CompraOpcoes_Disponivel" type="s:decimal" />
+              <s:element minOccurs="1" maxOccurs="1" name="Limite_VendaOpcoes_Total" type="s:decimal" />
+              <s:element minOccurs="1" maxOccurs="1" name="Limite_VendaOpcoes_Utilizado" type="s:decimal" />
+              <s:element minOccurs="1" maxOccurs="1" name="Limite_VendaOpcoes_Disponivel" type="s:decimal" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="BuscarListaDeContratosSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarListaDeContratos" />
+  </wsdl:message>
+  <wsdl:message name="BuscarListaDeContratosSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarListaDeContratosResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestarBuscarListaDeContratosSoapIn">
+    <wsdl:part name="parameters" element="tns:TestarBuscarListaDeContratos" />
+  </wsdl:message>
+  <wsdl:message name="TestarBuscarListaDeContratosSoapOut">
+    <wsdl:part name="parameters" element="tns:TestarBuscarListaDeContratosResponse" />
+  </wsdl:message>
+  <wsdl:message name="CadastrarAdesaoAoContratoSoapIn">
+    <wsdl:part name="parameters" element="tns:CadastrarAdesaoAoContrato" />
+  </wsdl:message>
+  <wsdl:message name="CadastrarAdesaoAoContratoSoapOut">
+    <wsdl:part name="parameters" element="tns:CadastrarAdesaoAoContratoResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestarCadastrarAdesaoAoContratoStopSoapIn">
+    <wsdl:part name="parameters" element="tns:TestarCadastrarAdesaoAoContratoStop" />
+  </wsdl:message>
+  <wsdl:message name="TestarCadastrarAdesaoAoContratoStopSoapOut">
+    <wsdl:part name="parameters" element="tns:TestarCadastrarAdesaoAoContratoStopResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestarCadastrarAdesaoAoContratoSoapIn">
+    <wsdl:part name="parameters" element="tns:TestarCadastrarAdesaoAoContrato" />
+  </wsdl:message>
+  <wsdl:message name="TestarCadastrarAdesaoAoContratoSoapOut">
+    <wsdl:part name="parameters" element="tns:TestarCadastrarAdesaoAoContratoResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarContratoSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarContrato" />
+  </wsdl:message>
+  <wsdl:message name="BuscarContratoSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarContratoResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarLimitesDoClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarLimitesDoCliente" />
+  </wsdl:message>
+  <wsdl:message name="BuscarLimitesDoClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarLimitesDoClienteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CadastroSoap">
+    <wsdl:operation name="BuscarListaDeContratos">
+      <wsdl:input message="tns:BuscarListaDeContratosSoapIn" />
+      <wsdl:output message="tns:BuscarListaDeContratosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestarBuscarListaDeContratos">
+      <wsdl:input message="tns:TestarBuscarListaDeContratosSoapIn" />
+      <wsdl:output message="tns:TestarBuscarListaDeContratosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CadastrarAdesaoAoContrato">
+      <wsdl:input message="tns:CadastrarAdesaoAoContratoSoapIn" />
+      <wsdl:output message="tns:CadastrarAdesaoAoContratoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestarCadastrarAdesaoAoContratoStop">
+      <wsdl:input message="tns:TestarCadastrarAdesaoAoContratoStopSoapIn" />
+      <wsdl:output message="tns:TestarCadastrarAdesaoAoContratoStopSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestarCadastrarAdesaoAoContrato">
+      <wsdl:input message="tns:TestarCadastrarAdesaoAoContratoSoapIn" />
+      <wsdl:output message="tns:TestarCadastrarAdesaoAoContratoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarContrato">
+      <wsdl:input message="tns:BuscarContratoSoapIn" />
+      <wsdl:output message="tns:BuscarContratoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarLimitesDoCliente">
+      <wsdl:input message="tns:BuscarLimitesDoClienteSoapIn" />
+      <wsdl:output message="tns:BuscarLimitesDoClienteSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CadastroSoap" type="tns:CadastroSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BuscarListaDeContratos">
+      <soap:operation soapAction="http://tempuri.org/BuscarListaDeContratos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestarBuscarListaDeContratos">
+      <soap:operation soapAction="http://tempuri.org/TestarBuscarListaDeContratos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CadastrarAdesaoAoContrato">
+      <soap:operation soapAction="http://tempuri.org/CadastrarAdesaoAoContrato" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestarCadastrarAdesaoAoContratoStop">
+      <soap:operation soapAction="http://tempuri.org/TestarCadastrarAdesaoAoContratoStop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestarCadastrarAdesaoAoContrato">
+      <soap:operation soapAction="http://tempuri.org/TestarCadastrarAdesaoAoContrato" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarContrato">
+      <soap:operation soapAction="http://tempuri.org/BuscarContrato" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarLimitesDoCliente">
+      <soap:operation soapAction="http://tempuri.org/BuscarLimitesDoCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CadastroSoap12" type="tns:CadastroSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BuscarListaDeContratos">
+      <soap12:operation soapAction="http://tempuri.org/BuscarListaDeContratos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestarBuscarListaDeContratos">
+      <soap12:operation soapAction="http://tempuri.org/TestarBuscarListaDeContratos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CadastrarAdesaoAoContrato">
+      <soap12:operation soapAction="http://tempuri.org/CadastrarAdesaoAoContrato" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestarCadastrarAdesaoAoContratoStop">
+      <soap12:operation soapAction="http://tempuri.org/TestarCadastrarAdesaoAoContratoStop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestarCadastrarAdesaoAoContrato">
+      <soap12:operation soapAction="http://tempuri.org/TestarCadastrarAdesaoAoContrato" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarContrato">
+      <soap12:operation soapAction="http://tempuri.org/BuscarContrato" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarLimitesDoCliente">
+      <soap12:operation soapAction="http://tempuri.org/BuscarLimitesDoCliente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Cadastro">
+    <wsdl:port name="CadastroSoap" binding="tns:CadastroSoap">
+      <soap:address location="http://localhost/Gradual.OMS.WsIntegracao/Cadastro.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CadastroSoap12" binding="tns:CadastroSoap12">
+      <soap12:address location="http://localhost/Gradual.OMS.WsIntegracao/Cadastro.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

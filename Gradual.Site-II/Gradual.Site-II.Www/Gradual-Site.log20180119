@@ -1,0 +1,102 @@
+2018-01-19 10:09:41,387 [82] INFO  Gradual.Site.Www.PaginaBase - Recebido PaginaDinamica.aspx?url=default.aspx?
+2018-01-19 10:09:41,422 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Parando Serviço: Gradual.OMS.Persistencia.ServicoPersistencia
+2018-01-19 10:09:41,422 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2018-01-19 10:09:41,422 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - WCF Base Address: System.Collections.Generic.List`1[System.String]
+2018-01-19 10:09:41,422 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - MEX Base Address: 
+2018-01-19 10:09:41,423 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia]
+2018-01-19 10:09:41,423 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia
+2018-01-19 10:09:41,423 [82] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia nao encontrada direto, usando Type.GetType()
+2018-01-19 10:09:41,423 [82] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-01-19 10:09:41,423 [82] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-01-19 10:09:41,423 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia é controlavel.
+2018-01-19 10:09:41,423 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados]
+2018-01-19 10:09:41,423 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados
+2018-01-19 10:09:41,423 [82] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos nao encontrada direto, usando Type.GetType()
+2018-01-19 10:09:41,423 [82] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-01-19 10:09:41,423 [82] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-01-19 10:09:41,423 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Site.DbLib.Persistencias.ServicoPersistenciaSite, Gradual.Site.DbLib]
+2018-01-19 10:09:41,423 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Site.DbLib.Persistencias.ServicoPersistenciaSite, Gradual.Site.DbLib
+2018-01-19 10:09:41,423 [82] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Site.DbLib.IServicoPersistenciaSite, Gradual.Site.DbLib nao encontrada direto, usando Type.GetType()
+2018-01-19 10:09:41,423 [82] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-01-19 10:09:41,423 [82] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-01-19 10:09:41,423 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC]
+2018-01-19 10:09:41,423 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC
+2018-01-19 10:09:41,423 [82] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.PosicaoBTC.Lib.IServicoPosicaoBTC, Gradual.OMS.PosicaoBTC.Lib nao encontrada direto, usando Type.GetType()
+2018-01-19 10:09:41,423 [82] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-01-19 10:09:41,423 [82] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-01-19 10:09:41,425 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Parando Serviço: Gradual.OMS.Persistencia.ServicoPersistencia
+2018-01-19 10:09:41,425 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2018-01-19 10:09:41,425 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - WCF Base Address: System.Collections.Generic.List`1[System.String]
+2018-01-19 10:09:41,425 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - MEX Base Address: 
+2018-01-19 10:09:41,425 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia]
+2018-01-19 10:09:41,426 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia
+2018-01-19 10:09:41,426 [82] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia nao encontrada direto, usando Type.GetType()
+2018-01-19 10:09:41,426 [82] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-01-19 10:09:41,426 [82] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-01-19 10:09:41,426 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia é controlavel.
+2018-01-19 10:09:41,426 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados]
+2018-01-19 10:09:41,426 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados
+2018-01-19 10:09:41,426 [82] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos nao encontrada direto, usando Type.GetType()
+2018-01-19 10:09:41,426 [82] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-01-19 10:09:41,426 [82] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-01-19 10:09:41,426 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Site.DbLib.Persistencias.ServicoPersistenciaSite, Gradual.Site.DbLib]
+2018-01-19 10:09:41,426 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Site.DbLib.Persistencias.ServicoPersistenciaSite, Gradual.Site.DbLib
+2018-01-19 10:09:41,426 [82] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Site.DbLib.IServicoPersistenciaSite, Gradual.Site.DbLib nao encontrada direto, usando Type.GetType()
+2018-01-19 10:09:41,426 [82] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-01-19 10:09:41,426 [82] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-01-19 10:09:41,426 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC]
+2018-01-19 10:09:41,426 [82] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC
+2018-01-19 10:09:41,426 [82] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.PosicaoBTC.Lib.IServicoPosicaoBTC, Gradual.OMS.PosicaoBTC.Lib nao encontrada direto, usando Type.GetType()
+2018-01-19 10:09:41,426 [82] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-01-19 10:09:41,426 [82] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-01-19 10:09:41,430 [82] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Cotacao.Lib.IServicoCotacao>()
+2018-01-19 10:09:41,494 [82] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Cotacao.Lib.IServicoCotacao na lista interna
+2018-01-19 10:09:41,494 [82] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.OMS.Cotacao.Lib.IServicoCotacao no cache
+2018-01-19 10:09:41,515 [82] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberLivroOferta
+2018-01-19 10:09:41,515 [82] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberLivroNegocios
+2018-01-19 10:09:41,515 [82] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberTickerCotacao
+2018-01-19 10:09:41,515 [82] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberTickerResumido
+2018-01-19 10:09:41,515 [82] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberTickerDestaques
+2018-01-19 10:09:41,515 [82] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberRankCorretora
+2018-01-19 10:09:41,515 [82] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberDadosAberturaFechamento
+2018-01-19 10:09:41,515 [82] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberAberturaFechamentoInstrumento
+2018-01-19 10:09:41,558 [82] ERROR Gradual.Site.Www.PaginaBase - Erro em CarregarCotacoes()
+System.ServiceModel.EndpointNotFoundException: Não havia um ponto de extremidade em escuta em net.pipe://localhost/Global/Gradual.OMS.Cotacao.Lib.IServicoCotacao capaz de aceitar a mensagem. Em geral, isso é causado por um endereço ou ação de SOAP incorreta. Consulte InnerException, se presente, para obter mais detalhes. ---> System.IO.PipeException: Não foi possível encontrar o ponto de extremidade do pipe 'net.pipe://localhost/Global/Gradual.OMS.Cotacao.Lib.IServicoCotacao' na máquina local. 
+   --- Fim do rastreamento de pilha de exceções internas ---
+
+Server stack trace: 
+   em System.ServiceModel.Channels.PipeConnectionInitiator.GetPipeName(Uri uri, IPipeTransportFactorySettings transportFactorySettings)
+   em System.ServiceModel.Channels.NamedPipeConnectionPoolRegistry.NamedPipeConnectionPool.GetPoolKey(EndpointAddress address, Uri via)
+   em System.ServiceModel.Channels.CommunicationPool`2.TakeConnection(EndpointAddress address, Uri via, TimeSpan timeout, TKey& key)
+   em System.ServiceModel.Channels.ConnectionPoolHelper.TakeConnection(TimeSpan timeout)
+   em System.ServiceModel.Channels.ConnectionPoolHelper.EstablishConnection(TimeSpan timeout)
+   em System.ServiceModel.Channels.ClientFramingDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   em System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.OnOpen(TimeSpan timeout)
+   em System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.CallOpenOnce.System.ServiceModel.Channels.ServiceChannel.ICallOnce.Call(ServiceChannel channel, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.CallOnceManager.CallOnce(TimeSpan timeout, CallOnceManager cascade)
+   em System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em Gradual.OMS.Cotacao.Lib.IServicoCotacao.ReceberTickerCotacao(String pInstrumento)
+   em Gradual.Site.Www.Default.CarregarCotacoes() na D:\Gradual\Source\Gradual.Site-II\Gradual.Site-II.Www\Default.aspx.cs:linha 80
+2018-01-19 10:09:41,563 [82] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-01-19 10:09:41,563 [82] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.Site.DbLib.IServicoPersistenciaSite na lista interna
+2018-01-19 10:09:41,563 [82] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.Site.DbLib.IServicoPersistenciaSite na lista de servicos do host
+2018-01-19 10:09:41,563 [82] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.Site.DbLib.IServicoPersistenciaSite no cache
+2018-01-19 10:09:41,678 [82] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-01-19 10:09:41,687 [82] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-01-19 10:09:41,695 [82] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-01-19 10:09:41,708 [82] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-01-19 10:09:42,586 [82] INFO  Gradual.Site.Www.PaginaBase - Recebido PaginaDinamica.aspx?url=favicon.ico
+2018-01-19 10:09:51,294 [82] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-01-19 10:09:59,539 [82] INFO  Gradual.Site.Www.PaginaBase - 
+2018-01-19 10:10:29,229 [82] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-01-19 10:10:29,268 [82] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()

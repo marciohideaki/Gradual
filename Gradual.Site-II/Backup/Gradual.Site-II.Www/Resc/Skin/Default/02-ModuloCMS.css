@@ -1,0 +1,1614 @@
+﻿
+#pnlModuloCMS
+{
+    position:fixed;
+
+    left:  0px;
+    bottom:0px;
+
+    background:#000;
+    z-index:200;
+}
+
+#pnlBotoesSecoes
+{
+    display:block;
+    float:left;
+
+    margin:4px;
+    padding:1px 0px 2px 0px;
+
+    width:44px;
+
+    background: #f5f5f5; /* Old browsers */
+    background: -moz-linear-gradient(left,  #cccccc 0%, #f5f5f5 40%); /* FF3.6+ */
+
+}
+
+    #pnlBotoesSecoes button li
+    {
+        background:aqua;
+    }
+
+    #pnlBotoesSecoes button
+    {
+        display:block; 
+
+        width: 36px;
+        height:36px;
+
+        margin:4px;
+
+        border:1px solid transparent;
+        background:transparent;
+
+        background-image:url(Img/Icones-CMS.png);
+        background-repeat:no-repeat;
+
+        cursor:pointer;
+    }
+
+    #pnlBotoesSecoes li:nth-child(1) button.Tipo_Todos         { background-position: -7px   -4px; }
+    #pnlBotoesSecoes li:nth-child(1) button.Tipo_Visitante     { background-position: -6px -100px; }
+    #pnlBotoesSecoes li:nth-child(1) button.Tipo_Cliente       { background-position: -8px -149px; }
+
+    #pnlBotoesSecoes li:nth-child(2) button { background-position: -8px  -336px; }
+    #pnlBotoesSecoes li:nth-child(3) button { background-position: -8px  -247px; }
+    #pnlBotoesSecoes li:nth-child(4) button { background-position: -8px  -199px; }
+    #pnlBotoesSecoes li:nth-child(5) button { background-position: -8px  -977px; }
+    #pnlBotoesSecoes li:nth-child(6) button { background-position: -7px -1284px; }
+
+    #pnlBotoesSecoes button:hover,
+    #pnlBotoesSecoes button.Selecionado
+    {
+        background-color:#fff;
+        border:1px solid #b3b3b3;
+    }
+
+        #pnlBotoesSecoes button span
+        {
+            display:none;
+        }
+
+#pnlModuloCMS.Expandido 
+{
+    width:100%;
+}
+
+    #pnlModuloCMS.Expandido #pnlBotoesSecoes 
+    {
+        height:312px;
+    }
+
+    /*
+    #pnlModuloCMS.Expandido #pnlBotoesSecoes li:nth-child(5)
+    {
+        display:block;
+        margin-top:6em;
+    }
+
+    #pnlModuloCMS.Expandido #pnlBotoesSecoes li:nth-child(6)
+    {
+        display:inline;
+    }
+    */
+
+#pnlTipoDeUsuario
+{
+    position:absolute;
+    left:52px;
+    bottom:90px;
+
+    width: 334px;
+    height:24px;
+
+    padding:4px 4px 4px 16px;
+
+    background:#e2e2e2;
+    border:2px solid #000;
+    border-left:none;
+}
+
+    #pnlTipoDeUsuario button
+    {
+        padding:4px 6px 3px 6px;
+
+        color:#666;
+        font-size:0.9em;
+
+        border:1px solid transparent;
+        background:transparent;
+
+        cursor:pointer;
+    }
+
+
+    #pnlTipoDeUsuario button.Copiar
+    {
+        opacity:0.5;
+        background:transparent url(Img/Icones-CMS.png) no-repeat -12px -1165px;
+    }
+
+    
+    #pnlTipoDeUsuario button.Selecionado,
+    #pnlTipoDeUsuario button:hover
+    {
+        color:#333;
+
+        border:1px solid #aaa;
+        background-color:#fff;
+        
+        opacity:1;
+    }
+
+    #pnlTipoDeUsuario button.Selecionado
+    {
+        border:1px solid #8b8b8b;
+        font-weight:bold;
+
+        box-shadow:0px 2px 3px #999;
+    }
+
+
+
+div.pnlFormulariosCMS
+{
+    display:none;
+    float:left;
+
+     width: 90%;
+    height:275px;
+
+    margin:4px 0px 4px 0px;
+
+    /*background:aqua;*/
+}
+
+    #pnlModuloCMS.Expandido div.pnlFormulariosCMS
+    {
+        display:block;
+    }
+
+    div.ContainerCMS_Painel
+    {
+        display:block;
+        float:left;
+
+        width:58%;
+
+        margin:2px 2px 2px 12px;
+
+        /*background:yellow;*/
+    }
+
+    div.ContainerCMS_Painel:nth-child(1) { width:38%; }
+
+        div.ContainerCMS_Painel h4
+        {
+            color:#fff;
+            font-size:1.2em;
+            font-weight:normal;
+            margin:0px;
+        }
+
+        div.ContainerCMS_Painel p
+        {
+            display:block;
+            float:left;
+
+            margin:4px 0px 0px 0px;
+            width:100%;
+
+            /*background:red;*/
+        }
+
+            div.ContainerCMS_Painel p label,
+            div.ContainerCMS_Painel p input,
+            div.ContainerCMS_Painel p button,
+            div.ContainerCMS_Painel p select
+            {
+                display:block;
+                float:left;
+                padding:2px;
+            }
+
+            div.ContainerCMS_Painel p label
+            {
+                padding:3px 4px 2px 0px;
+
+                width:30%;
+
+                color:#fff;
+                text-align:right;
+            }
+
+            div.ContainerCMS_Painel p select
+            {
+                margin-top:-2px;
+                min-width:12em;
+            }
+
+            div.ContainerCMS_Painel p button.BotaoIcone,
+            button.BotaoIcone
+            {
+                background-image:url(Img/Icones-CMS.png);
+            }
+
+            div.ContainerCMS_Painel p button.IconeMais,
+            button.IconeMais
+            {
+                background-position:-10px -446px;
+            }
+
+            div.ContainerCMS_Painel p button.IconeGo
+            {
+                background-position:-10px -542px;
+            }
+
+            div.ContainerCMS_Painel p button.IconeGoItens
+            {
+                background-position:-10px -829px;
+            }
+
+            div.ContainerCMS_Painel p button.IconeGoLista
+            {
+                background-position:-10px -863px;
+            }
+
+            div.ContainerCMS_Painel p button.IconeUpload
+            {
+                background-position:-10px -445px;
+            }
+
+            div.ContainerCMS_Painel p button.IconeFiltro
+            {
+                background-position:-10px -769px;
+            }
+
+            div.ContainerCMS_Painel p button.IconeLimparFiltro
+            {
+                background-position:-10px -798px;
+            }
+
+            div.ContainerCMS_Painel p button.IconeAtualizar
+            {
+                background-position:-16px -941px;
+            }
+
+            div.ContainerCMS_Painel p button.IconeExibirMiniaturas
+            {
+                background-position:-10px -1077px;
+            }
+
+            div.ContainerCMS_Painel p button.IconeExibirDetalhes
+            {
+                background-position:-10px -1100px;
+            }
+
+            button.IconeLixeira
+            {
+                width:24px;
+                height:24px;
+
+                background-image:url(Img/Icones-CMS.png);
+                background-position:-11px -896px;
+            }
+            
+            button.IconeCopiarLink
+            {
+                width:24px;
+                height:24px;
+
+                background-image:url(Img/Icones-CMS.png);
+                background-position:-11px -1019px;
+            }
+
+
+div.ContainerListaItens
+{
+    width:432px;
+    height:264px;
+
+    overflow:scroll;
+    background:#fff;
+}
+
+        ul.ListaDeItens,
+        ul.ListaDeItens li,
+        ul.ListaDeItens li > label,
+        ul.ListaDeItens li > div,
+        ul.ListaDeItens li > div button
+        {
+            display:block;
+            float:left;
+        }
+
+        ul.ListaDeItens
+        {
+            width: auto;
+            min-width:400px;
+
+            height:auto;
+
+            background:#fff;
+        }
+
+            ul.ListaDeItens li
+            {
+                 width:98%;
+                height:22px;
+
+                 margin:2px 2px 1px 2px;
+                padding:2px;
+
+                background:#d0d0d0;
+                border:1px solid #999;
+            }
+
+            ul.ListaDeItens li.NenhumItem
+            {
+                padding:9px 0px 2px 0px;
+                text-align:center;
+                font-style:italic;
+            }
+
+            ul.ListaDeItens li > label
+            {
+                margin:-1px 0px 0px -1px;
+                padding:5px 0px 0px 2px;
+
+                width:100%;
+                height:18px;
+
+                overflow:hidden;
+                white-space:nowrap;
+
+                /*background:lime;*/
+            }
+
+            ul.ListaDeItens li > label span:nth-child(1)
+            {
+                display:block;
+                float:left;
+                
+                width:6em;
+                
+                font-weight:bold;
+            }
+            
+            ul.ListaDeItens li > label span:nth-child(2)
+            {
+                padding-left:1em;
+                font-style:italic;
+                font-size:0.9em;
+            }
+
+            ul.ListaDeItens li:hover
+            {
+                background-color:#ffd372;
+            }
+
+            ul.ListaDeItens li.NenhumItem:hover
+            {
+                background-color:#d0d0d0;
+            }
+
+            ul.ListaDeItens li.Selecionado
+            {
+                color:#fff;
+
+                background-color:#545454;
+                border-color:#000;
+            }
+
+            ul.ListaDeItens li > div
+            {
+                display:none;
+                margin:-2px 0px 0px -80px;
+
+                width:80px;
+                height:26px;
+
+                float:right;
+                background:#fff;
+            }
+
+            ul.SomenteRemover li > div
+            {
+                margin:-2px 0px 0px -36px;
+
+                width:36px;
+            }
+
+            ul.RemoverVisitar li > div
+            {
+                margin:-2px -2px 0px -30px;
+
+                width:60px;
+            }
+
+            ul.ListaDeItens li:hover > div
+            {
+                display:block;
+            }
+
+                ul.ListaDeItens li > div button
+                {
+                    margin:5px 2px 0px 6px;
+
+                    width:16px;
+                    height:16px;
+
+                    border:1px solid transparent;
+                    cursor:pointer;
+
+                    /*background:lime;*/
+                    background: url(Img/Icones-CMS.png) no-repeat -16px -581px;
+                }
+
+                ul.ListaDeItens li > div button:nth-child(1) { background-position:-16px -603px }
+
+                ul.ListaDeItens li > div button:nth-child(2)
+                {
+                    margin:5px 6px 0px 2px;
+                }
+
+                ul.ListaDeItens   li > div button:nth-child(3),
+                ul.SomenteRemover li > div button:nth-child(1),
+                ul.RemoverVisitar li > div button:nth-child(2) { background-position:-15px -625px }
+
+                ul.RemoverVisitar li > div button:nth-child(1) { background-position:-15px -1024px; width:20px; height:20px; }
+
+                ul.ListaDeItens li > div button span
+                {
+                    display:none;
+                }
+
+                ul.ListaDeItens li > div button:hover
+                {
+                    /*border-color:#999;*/
+                }
+
+            ul.ListaDeItens li.GalhoPai,
+            #lstPaginas     li.GalhoPai
+            {
+                padding:2px 2px 2px 2px;
+
+                background:#efefef;
+                border-style:dotted;
+
+            }
+
+            ul.ListaDeItens li.GalhoPai > label,
+            #lstPaginas     li.GalhoPai > label
+            {
+                margin:-1px 0px 0px 0px;
+                padding:5px 0px 0px 22px;
+
+                cursor:pointer;
+
+                background:url(Img/simbolo-mais-menos.png) no-repeat 4px 8px;
+            }
+
+            #lstPaginas li.GalhoPai > div
+            {
+                margin-top:-2px;
+                 width:28px;
+                height:20px;
+                background:transparent;
+            }
+
+                #lstPaginas li.GalhoPai > div > button
+                {
+                    margin:0px;
+
+                    width:28px;
+                    height:27px;
+                    border:none;
+
+                    background:#000 url("Img/Icones-CMS.png") no-repeat scroll -9px -443px;
+                }
+
+            #lstPaginas li.GalhoPai ul
+            {
+                display:none;
+            }
+
+            #lstPaginas li.GalhoPai > li.GalhoPai
+            {
+                display:none;
+            }
+
+            #lstPaginas li.GalhoAberto
+            {
+                height:auto;
+            }
+
+            ul.ListaDeItens li.GalhoAberto > label,
+            #lstPaginas     li.GalhoAberto > label
+            {
+                background-position:4px -86px;
+            }
+
+            #lstPaginas li.GalhoAberto > ul
+            {
+                display:inline-block;
+                width:96%;
+                margin-left:4%
+            }
+
+            #lstPaginas li.GalhoAberto > li.GalhoPai
+            {
+                display:inline-block;
+            }
+
+            #lstPaginas li label   { width:88%; }
+
+            #lstPaginas > li         { margin-left: 2px; }
+
+            #lstPaginas > li.GalhoPai > li.GalhoPai { margin-left:18px; }
+            #lstPaginas > li.GalhoPai > li.GalhoPai > li.GalhoPai { margin-left:17px; }
+            #lstPaginas > li.GalhoPai > li.GalhoPai > li.GalhoPai > li.GalhoPai { margin-left:16px; }
+            
+            /*
+            #lstPaginas > li.GalhoN2 { width:366px; margin-left:40px; }
+            #lstPaginas > li.GalhoN3 { width:346px; margin-left:60px; }
+            #lstPaginas > li.GalhoN4 { width:326px; margin-left:80px; }
+            */
+
+    button.btnVisitarPaginaConteudo
+    {
+        position:relative;
+
+        left:0px;
+        top: 0px;
+
+        display:block;
+        float:left;
+        margin:0px 0px 0px -36px;
+
+        width:36px;
+        height:36px;
+
+        background:#fff url("Img/Icones-CMS.png") no-repeat scroll -8px -247px;
+        border:1px solid #fff;
+    }
+
+    li > button.btnVisitarPaginaConteudo
+    {
+        left:10px;
+        margin:-8px 0px 0px -40px;
+        z-index:100;
+    }
+
+    button.btnVisitarPaginaConteudo:hover
+    {
+        border-color:#9a9a9a;
+    }
+
+    div.ContainerCMS_PainelComTabs
+    {
+        height:286px;
+        /*background:red;*/
+    }
+
+        div.ContainerCMS_PainelComTabs_Tabs
+        {
+            padding:13px 0px 0px 0px;
+
+            text-align:right;
+            background:#000;
+        }
+
+            div.ContainerCMS_PainelComTabs_Tabs     button,
+            ContainerCMS_PainelComTabs_BotoesSalvar button
+            {
+                padding:2px 4px 2px 4px;
+
+                font-size:0.9em;
+                color:#c6c6c6;
+
+                background:transparent;
+                border:none;
+
+                cursor:pointer;
+            }
+
+            div.ContainerCMS_PainelComTabs_Tabs button.Selecionado
+            {
+                color:#fff;
+                background:#333;
+            }
+
+        div.ContainerCMS_PainelComTabs_Form
+        {
+            margin-top:28px;
+
+            width:100%;
+            height:92%;
+
+            background:#333;
+
+            overflow:hidden;
+            overflow-y:scroll;
+        }
+
+
+            div.ContainerCMS_PainelComTabs_Form p label
+            {
+                width:15%;
+            }
+
+            div.ContainerCMS_PainelComTabs_Form p input
+            {
+                width:75%;
+            }
+
+            div.ContainerCMS_PainelComTabs_Form p input.InputLargura,
+            div.ContainerCMS_PainelComTabs_Form p input.InputAltura
+            {
+                width:5em;
+                text-align:center;
+
+                background:#fff url(Img/Fundo-Input-LarguraAltura.gif) no-repeat 0px 1px;
+            }
+
+            div.ContainerCMS_PainelComTabs_Form p input.InputAltura
+            {
+                margin-left:0.5em;
+                background-position:-64px 0px;
+            }
+
+            div.ContainerCMS_PainelComTabs_Form p textarea
+            {
+                margin:0px 1% 4px 1%;
+
+                width:97%;
+                height:150px;
+
+                line-height:1.4em;
+                white-space:nowrap;
+                overflow:scroll;
+            }
+
+            div.ContainerCMS_PainelComTabs_Form p textarea.EdicaoDeCodigo
+            {
+                font-size:0.9em;
+                font-family:Consolas, Monospace;
+            }
+
+            div.ContainerCMS_PainelComTabs_Form p.MetadeDoTamanho
+            {
+                width:49%;
+            }
+
+                div.ContainerCMS_PainelComTabs_Form p.MetadeDoTamanho label
+                {
+                    width:25%;
+                }
+
+                div.ContainerCMS_PainelComTabs_Form p.MetadeDoTamanho input,
+                div.ContainerCMS_PainelComTabs_Form p.MetadeDoTamanho select
+                {
+                    width:58%;
+                }
+
+            div.ContainerCMS_PainelComTabs_Form p.DicaListas
+            {
+                font-family:Consolas, Monospace; 
+                font-size:0.9em; 
+                color:#fff; 
+
+                padding:1em 0em 0em 9.4em;
+                line-height:1.6em;
+            }
+
+        div.ContainerCMS_PainelComTabs_BotoesSalvar
+        {
+            position:absolute;
+
+            bottom:210px;
+            right:0px;
+
+            width: 90px;
+            height:60px;
+
+            background:#000;
+        }
+
+            div.ContainerCMS_PainelComTabs_BotoesSalvar button
+            {
+                display:block;
+                float:left;
+
+                margin:1px 0px 6px 0px;
+                padding:0px 0px 3px 18px;
+
+                width: 100%;
+                height:22px;
+
+                color:#fff;
+                font-size:0.8em;
+                text-align:left;
+
+                background: url(Img/Icones-CMS.png) no-repeat -14px -692px;
+                border:none;
+
+                cursor:pointer;
+            }
+
+            div.ContainerCMS_PainelComTabs_BotoesSalvar button.BotaoSalvar    { background-position:-14px  -668px; }
+
+            div.ContainerCMS_PainelComTabs_BotoesSalvar button.BotaoCancelar  { background-position:-14px  -689px; }
+
+            div.ContainerCMS_PainelComTabs_BotoesSalvar button.BotaoAjuda     { background-position:-15px -1053px; }
+
+            div.ContainerCMS_PainelComTabs_BotoesSalvar button:hover
+            {
+                text-decoration:underline;
+            }
+            
+            
+            div.ContainerCMS_PainelComTabs_PainelAjuda
+            {
+                display:block;
+                position:absolute;
+
+                right:0px;
+                bottom:0px;
+
+                width:600px;
+                height:auto;
+
+                background:#616161;
+                border-top:2px solid #282828;
+                border-left:2px solid #282828;
+            }
+            
+                div.ContainerCMS_PainelComTabs_PainelAjuda p
+                {
+                    color:#f1f1f1;
+                    line-height:1.4em;
+                    padding:0em 0.4em 0.2em 0.4em;
+                }
+
+div.pnlInformacoesDaPagina
+{
+    display:block;
+    float:left;
+
+    width:100%;
+    height:280px;
+
+    margin:4px;
+    padding:2px;
+
+    /*background:aqua;*/
+}
+
+    div.pnlInformacoesDaPagina p
+    {
+        display:block;
+        float:left;
+
+        padding:2px;
+        margin:2px;
+
+        width:98%;
+        height:auto;
+
+        text-shadow:1px 1px 1px #fff;
+        font-size:12px;
+
+        background:#dfdfdf;
+        border-radius:4px;
+        
+    }
+
+        div.pnlInformacoesDaPagina p label
+        {
+            display:block;
+            float:left;
+
+            width:30%;
+            height:auto;
+            color:#222;
+
+            padding:0px 4px 0px 0px;
+            text-align:right;
+        }
+
+        div.pnlInformacoesDaPagina p span
+        {
+            color:#222;
+            font-weight:bold;
+        }
+        
+        div.pnlInformacoesDaPagina p #lblInfoPag_Widgets
+        {
+            display: block;
+            float: right;
+            width: 68%;
+
+            max-height:210px;
+            overflow:scroll;
+        }
+        
+        div.pnlInformacoesDaPagina p button
+        {
+            width:auto; 
+            display:inline; 
+            float:none; 
+            font-size:11px; 
+            padding: 2px 6px; 
+            height: 30px;
+        }
+
+
+ul#pnlArquivosContainer_lstImagens
+{
+    display:block;
+    float:left;
+
+    margin:6px 0px 0px 0px;
+
+    height:262px;
+    width:100%;
+
+    background:#333;
+
+    overflow:hidden;
+    overflow-y:scroll;
+}
+
+    #pnlArquivosContainer_lstImagens li
+    {
+        display:block;
+        float:left;
+        
+        margin:6px;
+
+        width:64px;
+        height:64px;
+
+        background-repeat:no-repeat;
+        background-position:top center;
+    }
+
+        #pnlArquivosContainer_lstImagens li img
+        {
+            display:block;
+            float:left;
+
+            width:100%;
+            height:100%;
+
+            box-shadow:0 0 4px 3px #111;
+        }
+
+        #pnlArquivosContainer_lstImagens li input
+        {
+            display:block;
+            float:left;
+            
+            margin:-16px 0px 0px 0px;
+
+            width:100%;
+            height:auto;
+
+            font-size:0.8em;
+            color:#fff;
+
+            background:#000;
+            border:1px solid #000;
+        }
+        
+        
+        #pnlArquivosContainer_lstImagens li button
+        {
+            display:none;
+            margin:-26px 0px 0px 2px;
+        }
+        
+        #pnlArquivosContainer_lstImagens li button.IconeCopiarLink
+        {
+            margin:-26px -64px 0px 32px;
+        }
+
+    /*
+    #pnlArquivosContainer_lstImagens li:hover
+    {
+        width:auto;
+        height:auto;
+
+        background-image:none !important;
+    }
+
+            #pnlArquivosContainer_lstImagens li:hover img
+            {
+                display:block;
+                float:none;
+
+                width:auto;
+                height:auto;
+            }
+
+            #pnlArquivosContainer_lstImagens li:hover input
+            {
+                display:block;
+                float:left;
+
+                margin:0px;
+            }
+            
+            #pnlArquivosContainer_lstImagens li:hover button
+            {
+                position:relative;
+                display:block;
+            }
+    */
+
+ul#pnlArquivosContainer_lstImagens.Detalhes li
+{
+    margin:2px;
+    padding:2px;
+    
+    width:100%;
+    height:32px;
+    
+    background:#000;
+}
+
+    ul#pnlArquivosContainer_lstImagens.Detalhes li img
+    {
+        width:32px;
+        height:32px;
+    }
+    
+    ul#pnlArquivosContainer_lstImagens.Detalhes li:hover img
+    {
+        float:left;
+
+        width:32px;
+        height:32px;
+    }
+
+    ul#pnlArquivosContainer_lstImagens.Detalhes li button.IconeLixeira
+    {
+        margin:4px 0px 0px 6px;
+        display:block;
+        float:left;
+    }
+    
+    ul#pnlArquivosContainer_lstImagens.Detalhes li button.IconeCopiarLink
+    {
+        margin:4px 6px 0px 6px;
+        float:left;
+        display:block;
+    }
+    
+    ul#pnlArquivosContainer_lstImagens.Detalhes li input
+    {
+        float:left;
+        width:90%;
+        
+        font-size:1.1em;
+        
+        margin:6px 0px 0px 6px;
+    }
+
+    ul#pnlArquivosContainer_lstImagens.Detalhes li:hover button
+    {
+        position:inherit;
+    }
+
+div#pnlArquivosContainer_PreviewImagem
+{
+    position:absolute;
+    left:0px;
+    bottom:323px;
+
+    padding:0px;
+
+    width:auto;
+    height:auto;
+
+    background:transparent url(Img/Fundo-Pattern-Transparencia.gif);
+    border:4px solid #000;
+
+    z-index:1000;
+}
+
+
+
+#pnlArquivosContainer.DisplayComoPicker,
+#pnlArquivosContainer.DisplayComoPickerEdicaoHTML
+{
+    position:fixed;
+
+    left:0px;
+    bottom:324px;
+
+    width:100%;
+    height:230px;
+    background:#000;
+    border-bottom:2px solid #fff;
+}
+
+    #pnlArquivosContainer.DisplayComoPicker            #pnlArquivosContainer_lstImagens,
+    #pnlArquivosContainer.DisplayComoPickerEdicaoHTML  #pnlArquivosContainer_lstImagens
+    {
+        width:98%;
+        height:160px;
+    }
+
+#pnlArquivosContainer.DisplayComoPickerEdicaoHTML
+{
+    bottom:0px;
+    z-index:5000;
+
+    border-top:3px solid #c1c1c1;
+}
+
+#pnlEdicaoDeHTML
+{
+    display:block;
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:100%;
+
+    text-align:center;
+
+    background:#000;
+    z-index:200;
+}
+
+    #pnlEdicaoDeHTML div.BarraDeFerramentas
+    {
+        margin:auto;
+        margin-top:1%;
+        
+        text-align:left;
+        
+        background:#fff;
+    }
+
+        #pnlEdicaoDeHTML div.BarraDeFerramentas button.BotaoArquivos
+        {
+            margin:2px;
+
+            padding:5px 2px 4px 24px;
+
+            text-align:left;
+            font-size:0.9em;
+
+            background:transparent url(Img/Icones-CMS.png) no-repeat -12px -1128px;
+            border:1px solid #fff;
+            cursor:pointer;
+        }
+
+        #pnlEdicaoDeHTML div.BarraDeFerramentas button.Selecionado,
+        #pnlEdicaoDeHTML div.BarraDeFerramentas label.Selecionado
+        {
+            border-color:#ccc;
+            background-color:#f1f1f1;
+        }
+
+        .FakeComboBotaoDeExpansao
+        {
+            padding:6px 28px 5px 8px;
+
+            font-size:0.9em;
+
+            background:transparent url(Img/Icones-CMS.png) no-repeat 104px -573px;
+            border:1px solid #fff;
+            cursor:pointer;
+        }
+
+        .FakeComboBotaoDeExpansao:hover
+        {
+            border-color:#ccc;
+            background-color:#f1f1f1;
+        }
+
+        .FakeComboParaCopiar
+        {
+            display:block;
+            position:absolute;
+            
+            left:0px;
+            top:0px;
+            
+            width:300px;
+            height:260px;
+            
+            overflow:scroll;
+            background:#f1f1f1;
+            border:1px solid #ccc;
+        }
+
+            .FakeComboParaCopiar li
+            {
+                margin:1px;
+                padding:2px 2px 3px 6px;
+
+                font-size:0.9em;
+                border-bottom:1px dotted #e1e1e1;
+                /*background:lime;*/
+            }
+
+            .FakeComboParaCopiar li:hover
+            {
+            }
+
+            .FakeComboParaCopiar li.SubTitulo
+            {
+                padding:10px 2px 2px 2px;
+
+                color:#999;
+                font-style:italic;
+            }
+
+    #pnlEdicaoDeHTML textarea
+    {
+        margin:2% 10% 2% 10%;
+
+        width:80%;
+        height:82%;
+    }
+
+    div.jHtmlArea > textarea
+    {
+        margin:0 !important;
+        width:100% !important;
+        /*height:650px !important;*/
+    }
+
+    #pnlEdicaoDeHTML > p button
+    {
+        padding:2px 8px 2px 8px;
+
+        border:1px solid #fff;
+        background:#ccc;
+
+        cursor:pointer;
+    }
+
+    #pnlEdicaoDeHTML > p button:nth-child(2)
+    {
+        padding:2px 22px 2px 22px;
+
+        margin-left:3em;
+    }
+    
+#pnlEdicaoDeHTML_InserirTabela
+{
+    display:block;
+    position:absolute;
+
+    width:360px;
+    height:96px;
+
+    background:#f1f1f1;
+    border:1px solid #ccc;
+}
+
+    #pnlEdicaoDeHTML_InserirTabela p
+    {
+        float:left;
+        width:100%;
+        margin:6px 0px 0px 0px;
+    }
+    
+    #pnlEdicaoDeHTML_InserirTabela label
+    {
+        float:left;
+        padding:2px 4px 0px 0px;
+
+        width:6em;
+        text-align:right
+    }
+
+    #pnlEdicaoDeHTML_InserirTabela input
+    {
+        float:left;
+    }
+
+    #pnlEdicaoDeHTML_InserirTabela input.Numerico
+    { 
+        width:3em;
+        text-align:center
+    }
+
+
+/* para o widget repetidor e lista*/
+code.TemplateDoItem,
+code.dataTemplateDoItem,
+code.dataAtributosDoItem,
+code.dataTexto
+{
+    display:none;
+}
+
+
+
+div.jHtmlArea { display: inline block; background:#fff; margin:auto; margin-top:0; margin-bottom:1em }
+div.jHtmlArea div { padding: 0px; margin: 0px; }
+div.jHtmlArea iframe, div.jHtmlArea textarea { border:2px solid #c1c1c1 }
+div.jHtmlArea .ToolBar { }
+div.jHtmlArea .ToolBar ul { border: solid 1px #ccc; margin: 1px; padding: 1px; float: left; background: #fff url(Img/jHtmlArea_Toolbar_Group_BG.png) repeat-x;}
+div.jHtmlArea .ToolBar ul li { list-style-type: none; float: left; border: none; padding: 1px; margin: 1px; }
+div.jHtmlArea .ToolBar ul li:hover { border: solid 1px #ccc; background: #ddd url(Img/jHtmlArea_Toolbar_Group__Btn_Select_BG.png); padding: 0; }
+div.jHtmlArea .ToolBar ul li a { display: block; width: 16px; height: 16px; background: url(Img/jHtmlArea.png) no-repeat -16px -500px; border: none; cursor: pointer; padding: 0px; }
+div.jHtmlArea .ToolBar ul li a.highlighted { border: solid 1px #aaa; background-color: #bbb; padding: 0; }
+div.jHtmlArea .ToolBar ul li.separator {height: 16px; margin: 0 2px 0 3px; border-left: 1px solid #ccc;}
+div.jHtmlArea .ToolBar ul li.separator:hover { padding: 1px; background-color: #fff; border-top:none; border-bottom:none; border-right:none;}
+
+div.jHtmlArea .ToolBar ul li a:hover { }
+div.jHtmlArea .ToolBar ul li a.bold { background-position: 0 0; }
+div.jHtmlArea .ToolBar ul li a.italic { background-position: -16px 0; }
+div.jHtmlArea .ToolBar ul li a.underline { background-position: -32px 0; }
+div.jHtmlArea .ToolBar ul li a.strikethrough { background-position: -48px 0; }
+div.jHtmlArea .ToolBar ul li a.link { background-position: -64px 0; }
+div.jHtmlArea .ToolBar ul li a.unlink { background-position: -80px 0; }
+div.jHtmlArea .ToolBar ul li a.orderedlist { background-position: -96px 0; }
+div.jHtmlArea .ToolBar ul li a.unorderedlist { background-position: -112px 0; }
+div.jHtmlArea .ToolBar ul li a.image { background-position: -128px 0; }
+div.jHtmlArea .ToolBar ul li a.cut { background-position: -144px 0; }
+div.jHtmlArea .ToolBar ul li a.copy { background-position: -160px 0; }
+div.jHtmlArea .ToolBar ul li a.paste { background-position: -176px 0; }
+
+div.jHtmlArea .ToolBar ul li a.html { background-position: -192px 0; opacity:0.6; filter:alpha(opacity=60);}
+div.jHtmlArea .ToolBar ul li a.html.highlighted { opacity:1.0; filter:alpha(opacity=100);}
+
+div.jHtmlArea .ToolBar ul li a.h1 { background-position: 0 -16px;}
+div.jHtmlArea .ToolBar ul li a.h2 { background-position: -16px -16px;}
+div.jHtmlArea .ToolBar ul li a.h3 { background-position: -32px -16px;}
+div.jHtmlArea .ToolBar ul li a.h4 { background-position: -48px -16px;}
+div.jHtmlArea .ToolBar ul li a.h5 { background-position: -64px -16px;}
+div.jHtmlArea .ToolBar ul li a.h6 { background-position: -80px -16px;}
+div.jHtmlArea .ToolBar ul li a.subscript   { background-position: -96px -16px;}
+div.jHtmlArea .ToolBar ul li a.superscript { background-position: -112px -16px;}
+div.jHtmlArea .ToolBar ul li a.indent { background-position: -128px -16px;}
+div.jHtmlArea .ToolBar ul li a.outdent { background-position: -144px -16px;}
+div.jHtmlArea .ToolBar ul li a.horizontalrule { background-position: -160px -16px;}
+div.jHtmlArea .ToolBar ul li a.p { background-position: -176px -16px;}
+
+
+div.jHtmlArea .ToolBar ul li a.justifyleft { background-position: 0 -32px;}
+div.jHtmlArea .ToolBar ul li a.justifycenter { background-position: -16px -32px;}
+div.jHtmlArea .ToolBar ul li a.justifyright { background-position: -32px -32px;}
+div.jHtmlArea .ToolBar ul li a.increasefontsize { background-position: -48px -32px;}
+div.jHtmlArea .ToolBar ul li a.decreasefontsize { background-position: -64px -32px;}
+div.jHtmlArea .ToolBar ul li a.forecolor { background-position: -80px -32px;}
+
+div.jHtmlAreaColorPickerMenu {border: solid 1px #bbb; background-color: #ddd; width: 112px;}
+div.jHtmlAreaColorPickerMenu div {float: left; margin: 2px; width: 12px; height: 14px;}
+div.jHtmlAreaColorPickerMenu div:hover {margin: 0px; border: dotted 2px black;}
+
+div.jHtmlAreaColorPickerMenu div.automatic { width: 104px; height: auto; padding: 2px;}
+div.jHtmlAreaColorPickerMenu div.automatic div { margin: 2px; width: 12px; height: 14px;  border: solid 1px black;}
+
+
+
+.HoverElementoEdicao,
+#pnlConteudo > section > h1.HoverElementoEdicao
+{
+    background:#ffd372 !important;
+}
+
+img.HoverElementoEdicao
+{
+    border:3px dotted #ffd372;
+}
+
+
+table.EdicaoDeWidget_ListaTabelada
+{
+    width:96%;
+    height:220px;
+    border:1px solid #333;
+}
+
+table.EdicaoDeWidget_ListaTabelada thead,
+table.EdicaoDeWidget_ListaTabelada tfoot,
+table.EdicaoDeWidget_ListaTabelada tbody,
+table.EdicaoDeWidget_ListaTabelada tr
+{
+    height:auto;
+    width:100%;
+    display:block;
+    float:left;
+}
+
+table.EdicaoDeWidget_ListaTabelada thead td
+{
+    padding:4px 0px 2px 0px;
+}
+
+table.EdicaoDeWidget_ListaTabelada tbody
+{
+    height:160px;
+    overflow:scroll;
+    background:#f3f3f3;
+}
+
+table.EdicaoDeWidget_ListaTabelada td
+{
+    float:left;
+    width:50%;
+    height:auto;
+
+    font-size:0.9em;
+    color:#fff;
+}
+
+table.EdicaoDeWidget_ListaTabelada tbody td
+{
+    padding:6px 2px 0px 2px;
+    color:#222;
+
+    height:20px;
+
+    border-bottom:1px dotted #444;
+}
+
+table.EdicaoDeWidget_ListaTabelada tbody td:first-child
+{
+    width:51%;
+    padding-left:4px;
+}
+
+table.EdicaoDeWidget_ListaTabelada tbody tr.NenhumItem td
+{
+    padding-top:62px;
+
+    width:98%;
+
+    text-align:center;
+    font-style:italic;
+    color:#555;
+
+    border-bottom:none;
+}
+
+
+    button.ExcluirItem,
+    button.SubirItem,
+    button.DescerItem
+    {
+        float:left;
+        margin:0px 4px 0px 0px;
+
+        width:16px;
+        height:16px;
+
+        cursor:pointer;
+
+        /*background:lime;*/
+        background: url(Img/Icones-CMS.png) no-repeat -15px -625px;
+    }
+
+    button.SubirItem
+    {
+        background-position:-16px -603px;
+    }
+
+    button.DescerItem
+    {
+        background-position:-16px -581px;
+    }
+
+#pnlEstruturaContainer_PainelEdicaoWidget_Abas_NovaPagina,
+#pnlEstruturaContainer_PainelEdicaoWidget_Acordeon_NovaPagina
+{
+    display:block;
+    float:left;
+    
+    width:100%;
+    height:250px;
+    
+    margin:-240px 0px 0px 0px;
+    
+    background:#333;
+}
+
+
+
+
+#pnlBotoesMenu
+{
+    display:block;
+    position:absolute;
+
+    left:110px;
+    top:42px;
+
+     width:40px;
+    height:40px;
+
+    background:#fff;
+}
+
+    #pnlBotoesMenu button
+    {
+        display:block;
+        float:left;
+
+        width:32px;
+        height:32px;
+
+        background:url(Img/Icones-CMS.png) no-repeat -10px -1195px;
+    }
+
+#pnlEdicaoDoMenu
+{
+    display:none;
+
+    position:absolute;
+    left:152px;
+    top:96px;
+
+    width:960px;
+    height:auto;
+    padding:0px 0px 6px 0px;
+
+    background:#4e443c;
+
+    border-radius:6px;
+}
+
+    #pnlEdicaoDoMenuForm
+    {
+        width:100%;
+        height:32px;
+
+        background:#362f29;
+    }
+
+    #pnlEdicaoDoMenuForm p
+    {
+        display:block;
+        float:left;
+        padding:4px 0px 0px 8px;
+    }
+
+        #pnlEdicaoDoMenuForm p label
+        {
+            font-size:0.9em;
+            color:#fff;
+        }
+
+        #pnlEdicaoDoMenuForm p input
+        {
+            height:auto;
+            margin-top:2px;
+        }
+
+        #pnlEdicaoDoMenuForm p select
+        {
+            height:auto;
+        }
+
+.BotaoEscuro
+{
+    border: medium none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: block;
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    height: 24px;
+    margin: 1px 8px 0px 0px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 90px;
+    
+    background:#6E6965;
+}
+
+span.Trimmer
+{
+    display:block;
+    width:100%;
+    
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+
+ul.EdicaoDoMenu,
+ul.EdicaoDoMenu li,
+ul.EdicaoDoMenu li ul
+{
+    display:inline-block;
+    vertical-align:top;
+}
+
+ul.EdicaoDoMenu a
+{
+    display:inline-block;
+
+    padding:2px 0px;
+    width:100%;
+
+    color:#fff;
+    font-size:12px;
+    text-decoration:none;
+}
+
+ul.EdicaoDoMenu a button.btnEdicaoDeMenuExcluir
+{
+    display:block;
+    float:right;
+    margin:0px 0px 0px -16px;
+
+    width:16px;
+    height:16px;
+
+    background:url("Img/Icones-CMS.png") no-repeat scroll -15px -625px #000;
+}
+
+ul.EdicaoDoMenu li button.btnEdicaoDeMenuAdicionar
+{
+    display:inline-block;
+
+    width:20px;
+    height:20px;
+
+    background:url("Img/Icones-CMS.png") no-repeat -13px -446px;
+}
+
+ul.EdicaoDoMenu
+{
+    margin-left:130px;
+
+    width:auto;
+    height:auto;
+    padding:4px;
+
+    /*background:lime;*/
+}
+
+    ul.EdicaoDoMenu > li
+    {
+         width:142px;
+        height:100%;
+        text-align:center;
+
+        /*background:aqua;*/
+    }
+
+    ul.EdicaoDoMenu > li > ul
+    {
+        margin:6px 0px 6px 0px;
+
+        line-height:1.8em;
+        background:#443b34;
+        border-radius:4px;
+    }
+
+        ul.EdicaoDoMenu > li > ul > li
+        {
+            width:98%;
+            text-align:center;
+
+            /*background:grey;*/
+        }
+    
+#lblEdicaoPagina_Url
+{
+    display:none;
+}
+
+div.PreConfigurado #lblEdicaoPagina_Url
+{
+    display:block;
+}

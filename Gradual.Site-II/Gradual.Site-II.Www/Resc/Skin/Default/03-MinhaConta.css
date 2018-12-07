@@ -1,0 +1,2149 @@
+﻿
+
+input.IconButton,
+button.IconButton
+{
+    display:block;
+    float:left;
+    width:18px;
+    height:18px;
+
+    border:0px;
+
+    cursor:pointer;
+}
+
+
+input.IconCancelar,
+button.IconCancelar
+{
+    background:url('Img/Ico_Cancelar_ComBorda.gif') no-repeat center center;
+}
+
+    table.AcompanhamentoDeOrdem td button.IconCancelar
+    {
+        float:left;
+
+        margin:0px 4px 0px 0px;
+        background:url('Img/Ico_Cancelar_ComBorda.gif') no-repeat center center;
+    }
+    
+
+h1.MinhaConta
+{
+    padding:2.4em 2em 1em 3em;
+
+    color:#575757;
+    font-size:1.3em;
+    font-family:'Nunito', Tahoma, Sans-Serif;
+    font-weight:normal;
+
+    text-shadow:0px 1px 1px #fff;
+
+    background:none;
+}
+
+div.JanelaHomeMinhaConta
+{
+    float:left;
+
+    margin:1.6em -22px 1em 42px;
+
+    padding:0.4em;
+
+    height: 785px;
+    width:  300px;
+
+    border-radius:3px;
+    -moz-border-radius:3px;
+    
+    background:#efefef;
+    border:1px solid #d2d1d1;
+
+    box-shadow:0px 1px 6px 3px #e6e6e6;
+}
+
+
+
+.ValorNegavito
+{
+    color:#684245 !important;
+}
+
+.ValorPositivo
+{
+    color:#4E7645 !important;
+}
+.ValorPositivo_Azul
+{
+    color: #0000FF !important;
+}
+.ValorNegativo_Vermelho
+{
+    color:#FF0000 !important;
+}
+
+table.GridEmContainer td
+{
+    white-space:nowrap !important;
+}
+
+#pnlCotacaoRapida
+{
+    display:block;
+    float:right;
+
+    width:840px;
+    height:30px;
+
+    margin:0px 24px 0px 0px;
+
+    /*background:aqua;*/
+}
+
+    #pnlCotacaoRapida div.DadosDeCotacaoRapida
+    {
+        display:block;
+        float:right;
+
+        width:591px;
+        height:30px;
+
+        background:#597486;
+
+        overflow:hidden;
+    }
+
+        #pnlCotacaoRapida div.DadosDeCotacaoRapida table
+        {
+            margin:0px;
+            border:none;
+        }
+
+        #pnlCotacaoRapida div.DadosDeCotacaoRapida table td,
+        #pnlCotacaoRapida div.DadosDeCotacaoRapida table th
+        {
+            width:10px;
+
+            font-family:Consolas, Monospace;
+            padding:6px 2px 0px 4px;
+
+            border:none;
+        }
+
+        #pnlCotacaoRapida div.DadosDeCotacaoRapida table th
+        {
+            color:#b2b2b2;
+            text-shadow:1px 1px 1px #3a4e5c;
+        }
+
+
+        #pnlCotacaoRapida div.DadosDeCotacaoRapida table td
+        {
+            color:#fff;
+            font-size:0.7em;
+            padding-right:4px;
+        }
+
+    #pnlCotacaoRapida div.Carregando
+    {
+        background:#597486 url(Img/Imagem-CotacaoRapida-AjaxLoader.gif) no-repeat 7px center;
+    }
+    
+        #pnlCotacaoRapida div.Carregando table
+        {
+            display:none;
+        }
+
+
+    #pnlCotacaoRapida div.FormularioDeCotacaoRapida
+    {
+        display:block;
+        float:right;
+
+        width:240px;
+        height:20px;
+
+        margin:0px 0px 0px 0px;
+        padding:5px 4px 4px 4px;
+
+        background:url(Img/Fundo-FormularioCotacaoRapida-MinhaConta.gif);
+
+        border-left:  1px solid #aebac4;
+        border-bottom:1px solid #aebac4;
+
+        box-shadow:-1px 1px 3px #c7c7c7;
+    }
+
+        #pnlCotacaoRapida div.FormularioDeCotacaoRapida label 
+        {
+            padding:0px 0px 0px 12px;
+
+            font-size:0.8em;
+            color:#697c8b;
+        }
+
+        #pnlCotacaoRapida div.FormularioDeCotacaoRapida input
+        {
+            width:6em;
+            padding:1px 1px 2px 1px; 
+
+            text-align:center;
+            font-size:0.9em;
+
+            border:1px solid #92aabc;
+        }
+
+
+
+
+fieldset.PainelBusca
+{
+    margin:0px 48px 1.6em 48px;
+    padding:0.4em 0em 0.4em 0em;
+
+    width:89.3%;
+
+    border:1px solid #c0ceda;
+    box-shadow:0px 1px 3px 2px #fff;
+
+    background: #efefef; /* Old browsers */
+    background: -moz-linear-gradient(top,  #efefef 48%, #e3e3e3 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#efefef), color-stop(100%,#e3e3e3)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #efefef 48%,#e3e3e3 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #efefef 48%,#e3e3e3 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #efefef 48%,#e3e3e3 100%); /* IE10+ */
+    background: linear-gradient(top,  #efefef 48%,#e3e3e3 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#e3e3e3',GradientType=0 ); /* IE6-9 */
+
+}
+
+    fieldset.PainelBusca p
+    {
+        float:left;
+        width:97%;
+        height:1.6em;
+
+        padding:0.6em 0em 0.6em 0em;
+
+        text-align:left;
+    }
+    
+    fieldset.PainelBusca p label
+    {
+        font-size:0.9em;
+        
+        float:left;
+        width:30%;
+        margin:2px 4px 0px 0px;
+        text-align:right;
+    }
+    
+    fieldset.PainelBusca p label.Subtitulo
+    {
+        font-weight:bold;
+    }
+    
+    fieldset.PainelBusca p input,
+    fieldset.PainelBusca p textarea,
+    fieldset.PainelBusca p select
+    {
+        border:1px solid #92aabc;
+    }
+
+    fieldset.PainelBusca p.Ultimo
+    {
+        text-align:center;
+    }
+
+
+fieldset.PainelBuscaExtendido
+{
+    width:90%;
+}
+
+    fieldset.PainelBuscaExtendido p label
+    {
+        width:40%;
+    }
+
+
+fieldset.PainelBuscaFormulario
+{
+    height:auto !important;
+    background:#efefef !important;
+}
+
+    fieldset.PainelBuscaFormulario h4
+    {
+        color:#222;
+        margin:1.6em 1em 0.2em 1em;
+    }
+
+    fieldset.PainelBuscaFormulario h5
+    {
+        color:#666;
+        margin:1.6em 1em 0.2em 1.2em;
+    }
+    
+    fieldset.PainelBuscaFormulario p
+    {
+        float:none;
+
+        margin-left:12px;
+        width:99%;
+        height:2em;
+
+        text-align:left;
+
+        /*background:lime;*/
+    }
+
+    fieldset.PainelBuscaFormulario p:last-child
+    {
+        text-align:center;
+    }
+    
+    
+    
+    
+    
+    
+    
+p.Abas
+{
+    padding:0px !important;
+    margin:2em 0em 4px 42px !important;
+    line-height:1em !important;
+}
+
+    p.Abas a
+    {
+        margin:0px 12px 0px 0px;
+
+        padding:2px 6px 2px 6px;
+
+        color:#6c6c6c !important;
+        font-size:11px !important;
+
+        text-decoration:none !important;
+    }
+
+    p.Abas a.Selecionado
+    {
+        color:#373737;
+        font-weight:bold;
+        
+        text-shadow:1px 1px 1px #fff;
+
+        padding:7px 8px 5px 8px;
+
+        background:#D8D8D8 url("Img/Fundo-LinhaBranca-TopoCinza.gif") repeat-x top left;
+    }
+
+
+div.pnlOrdem
+{
+    margin: -1.2em 0 1em 0.4em;
+    padding:0.6em;
+
+    height: auto;
+    width:  94.5%;
+
+    background:#efefef;
+    border:1px solid #b1b1b1;
+}
+
+    p.BotoesDeEnvio
+    {
+        text-align:center;
+    }
+
+    p.BotoesDeEnvio input,
+    p.BotoesDeEnvio button
+    {
+        margin:0 1em 0 1em;
+        font-size:1em;
+        
+        float:none !important;
+    }
+
+    p.BotoesDeEnvio button
+    {
+        color:#fff;
+        text-align:center;
+
+        padding:0.1em 1em 0.3em 1em;
+
+        cursor:pointer;
+    }
+    
+    p.Mensagens
+    {
+        width:93% !important;
+        height:1.6em !important;
+        
+        margin:2em 0.6em 0.6em 0.6em;
+        padding:0.6em 0.4em 0.3em 0.4em;
+
+        font-size:1.1em;
+        text-align:center;
+        font-style:italic;
+        background-color:#f5f8ca;
+    }
+    
+    p.Alerta
+    {
+    }
+    
+    p.Erro
+    {
+        font-style:normal;
+        color:#f9fbda;
+        background-color:#de5555 !important;
+    }
+    
+    p.Informacao
+    {
+        font-style:normal;
+        color:#5a6884 !important;
+        background-color:#d7dbe3 !important;
+    }
+    
+    p.ExibirLoader
+    {
+    }
+    
+    input.FundoVerde,
+    button.FundoVerde
+    {
+        background:#63935a !important;
+        border:2px solid #4e7645 !important;
+    }
+
+    input.FundoVermelho,
+    button.FundoVermelho
+    {
+        background:#845c60 !important;
+        border:2px solid #684245 !important;
+    }
+
+    input.FundoVerde[disabled],
+    button.FundoVerde[disabled],
+    input.FundoVermelho[disabled],
+    button.FundoVermelho[disabled]
+    {
+        background-color:#9b9b9b !important;
+            border-color:#888888 !important;
+        
+        cursor:default;
+    }
+
+.lblOrdem_Valor
+{
+    float:left;
+    padding:0.2em 0 0 0;
+    font-size:1.1em;
+}
+
+
+
+/*------------------------------------------------------------------------------------------
+
+    Conteúdos de página
+
+-------------------------------------------------------------------------------------------*/
+
+
+#pnlConteudo h1
+{
+    margin:0px 48px 0px 48px !important;
+    padding:48px 0px 0px 0px !important;
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------
+
+Acompanhamento de Ordens:
+
+-------------------------------------------------------------------------------------------*/
+
+/*
+
+Gradual.OMS.AcompanhamentoOrdensLib.Dados.OrdemStatusEnum:
+
+        NOVA = 0,
+        PARCIALMENTEEXECUTADA = 1,
+        EXECUTADA = 2,
+        CANCELADA = 4,
+        SUBSTITUIDA = 5,
+        REJEITADA = 8,
+        SUSPENSA = 9,
+        ENVIADAPARAOROTEADORDEORDENS = 100,
+        ENVIADAPARAABOLSA = 101,
+        */
+
+div.ContainerDeTabelaComScroll
+{
+    display:block;
+
+    margin:0px 0px 0px 48px;
+
+    width:89.4%;
+    height:400px;
+
+    background:#fff;
+
+    overflow:scroll;
+}
+
+table.AcompanhamentoDeOrdem
+{
+    font-size:0.9em;
+}
+
+
+table.AcompanhamentoDeOrdem thead td
+{
+    color: #F3F3F3 !important;
+    font-size: 0.8em !important;
+    font-weight: bold !important;
+    white-space: nowrap !important;
+    
+    padding:4px !important;
+    
+    border-bottom: 2px solid #194b72 !important;
+    border-right: 1px solid #194b72 !important;
+    
+    background: none repeat scroll 0 0 #2B6593 !important;
+}
+
+table.AcompanhamentoDeOrdem thead td a,
+table.AcompanhamentoDeStop  thead td a
+{
+    color:#fff;
+    text-decoration:underline;
+}
+
+    table.AcompanhamentoDeStop tbody td
+    {
+        
+        border-top:1px solid #dce0e2;
+        border-bottom:1px solid #dce0e2;
+        
+        background-color:#ebebeb;
+    }
+    
+    table.AcompanhamentoDeOrdem tbody td
+    {
+        padding:1px 2px 2px 3px;
+        
+        border-top:1px solid #dce0e2;
+        border-bottom:1px solid #dce0e2;
+        
+        background-color:#ebebeb;
+    }
+    
+    table.AcompanhamentoDeOrdem tbody tr.NOVA                          td,
+    table.AcompanhamentoDeOrdem tbody tr.ENVIADAPARAOROTEADORDEORDENS  td,
+    table.AcompanhamentoDeOrdem tbody tr.ENVIADAPARAABOLSA             td
+    {
+        /*color: #FFFFFF;*/
+        background-color: #90cdb8 !important;
+        
+        border-top-color:#90cdb8;
+        border-bottom-color:#90cdb8;
+    }
+    
+    table.AcompanhamentoDeOrdem tbody tr.EXECUTADA             td, 
+    table.AcompanhamentoDeOrdem tbody tr.PARCIALMENTEEXECUTADA td
+    {
+        /*color: #FFFFFF;*/
+        background-color: #b9d3be !important;
+        
+        border-top-color:#b9d3be;
+        border-bottom-color:#b9d3be;
+    }
+    
+    table.AcompanhamentoDeOrdem tbody tr.CANCELADA   td,
+    table.AcompanhamentoDeOrdem tbody tr.REJEITADA   td, 
+    table.AcompanhamentoDeOrdem tbody tr.EXPIRADA    td,
+    table.AcompanhamentoDeOrdem tbody tr.DISPARADA   td
+    {
+        /*color: #FFFFFF;*/
+        background-color: #c9c9c9 !important;
+        background-image:url(Img/Fundo-Grid-AcompOrdem-TexturaCancelado.gif);
+        padding-top:3px !important;  /* pra alinhar as texturas */
+        padding-bottom:3px !important;  /* pra alinhar as texturas */
+
+        border-top-color:#c9c9c9;
+        border-bottom-color:#c9c9c9;
+    }
+
+
+
+    table.AcompanhamentoDeOrdem tbody tr.SUBSTITUIDA td, 
+    table.AcompanhamentoDeOrdem tbody tr.SUSPENSA    td
+    {
+        /*color: #FFFFFF;*/
+        background-color: #d2b4b4 !important;
+        background-image:url(Img/Fundo-Grid-AcompOrdem-TexturaRejeitado.gif);
+        padding-top:3px !important;  /* pra alinhar as texturas */
+        padding-bottom:3px !important;  /* pra alinhar as texturas */
+
+
+        border-top-color:#d2b4b4;
+        border-bottom-color:#d2b4b4;
+    }
+    
+    table.AcompanhamentoDeOrdem tbody tr.Historico td
+    {
+        border-top:1px solid #333;
+        border-bottom:1px solid #a6afba;
+        background:#efefef url(Img/Fundo-Grid-AcompOrdem-FundoDetalhe.gif) repeat-x;
+    }
+    
+    
+    table.AcompanhamentoDeOrdem tbody tr td[property='Solicitado'],
+    table.AcompanhamentoDeOrdem tbody tr td[property='Executado'],
+    table.AcompanhamentoDeOrdem tbody tr td[property='Preco']
+    {
+        text-align:right;
+    }
+    
+    table.AcompanhamentoDeOrdem_Historico 
+    {
+        margin:0px 0px 6px 26px;
+        width:94%;
+    }
+        
+        table.AcompanhamentoDeOrdem_Historico thead td
+        {
+            color:#67686a !important;
+            font-weight:normal !important;
+            
+            background:none !important;
+            border:none !important;
+            
+            padding:12px 8px 4px 6px !important;
+        }
+        
+        table.AcompanhamentoDeOrdem_Historico thead td:first-child
+        {
+            padding-left:16px !important;
+            
+            background:transparent url(Img/Fundo-Grid-AcompOrdem-TexturaTHeadTD.gif) no-repeat !important;
+        }
+        
+        table.AcompanhamentoDeOrdem_Historico tbody td
+        {
+            font-size:1em !important;
+            color:#222  !important;
+            
+            padding:3px !important;
+            
+            border-right:1px dotted #c4c4c5  !important;
+            border-bottom:0px solid #e7e7e8  !important;
+        }
+        
+        table.AcompanhamentoDeStop tbody tr.trA td
+        {
+            background-color:#dbdbdc  !important;
+            background-image:none;
+        }
+        
+        table.AcompanhamentoDeStop tbody tr.trB td
+        {
+            background-color:#dbdbdc  !important;
+            background-image:none;
+        }
+        
+        table.AcompanhamentoDeOrdem_Historico tbody tr.trA td
+        {
+            background-color:#f7f7f7  !important;
+            background-image:none;
+        }
+    
+        table.AcompanhamentoDeOrdem_Historico tbody tr.trB td
+        {
+            background-color:#eaeaeb  !important;
+            background-image:none;
+        }
+
+        table.AcompanhamentoDeStartStop_Historico tbody tr.trA td
+        {
+            background-color:#f7f7f7  !important;
+            background-image:none;
+        }
+        
+        table.AcompanhamentoDeStartStop_Historico tbody tr.trB td
+        {
+            background-color:#eaeaeb  !important;
+            background-image:none;
+        }
+        
+        
+        table.AcompanhamentoDeOrdem_Historico tbody tr.trA td:first-child
+        {
+            padding-left:22px !important;
+            
+            background-image:url(Img/Fundo-Grid-AcompOrdem-TexturaTBodyTDa.gif) !important;
+            background-repeat:repeat-y;
+            background-color:Transparent !important;
+        }
+        
+        table.AcompanhamentoDeOrdem_Historico tbody tr.trB td:first-child
+        {
+            padding-left:22px !important;
+            
+            background-image:url(Img/Fundo-Grid-AcompOrdem-TexturaTBodyTDb.gif) !important;
+            background-repeat:repeat-y;
+            background-color:Transparent !important;
+        }
+    
+    
+    table.AcompanhamentoDeOrdem tbody tr td
+    {
+        color:#444;
+        border-right: 1px dotted #d3d3d3;
+    }
+    
+    table.AcompanhamentoDeOrdem tbody tr:hover td
+    {
+        color:#000;
+        
+        border-top-color:#333;
+        border-bottom-color:#333;
+        
+        border-top-style:dashed !important;
+        border-bottom-style:dashed !important;
+    }
+    
+        table.AcompanhamentoDeOrdem_Historico tr td,
+        table.AcompanhamentoDeOrdem tbody tr:hover td table.AcompanhamentoDeOrdem_Historico tr td
+        {
+            border-top:none !important;
+            border-bottom:none !important;
+        }
+        
+        table.AcompanhamentoDeOrdem tbody tr.Historico:hover > td
+        {
+            border-top-style:solid !important;
+            border-bottom-style:solid !important;
+        }
+
+
+
+
+/* ----- Ordens ------------------------------------------------------ */
+
+
+
+    div.pnlOrdem_Formulario p,
+    div.pnlOrdem_Assinatura p
+    {
+        float:left;
+    
+        width:30%;
+        height:2.6em;
+    }
+    
+    div.pnlOrdem_Formulario p label,
+    div.pnlOrdem_Assinatura p label,
+    p.pnlAtivo label
+    {
+        float:left;
+        width:40%;
+
+        text-align:right;
+        font-size:0.9em;
+
+        padding:4px 4px 0px 0px;
+    }
+    
+    div.pnlOrdem_Formulario  p input,
+    div.pnlOrdem_Assinatura  p input,
+    p.pnlAtivo input
+    {
+        float:left;
+        width:50%;
+        
+        border:1px solid #92AABC;
+        color:#333;
+        font-family:Tahoma,Helvetica,sans-serif;
+    }
+    
+    div.pnlOrdem_Formulario  p input[disabled],
+    div.pnlOrdem_Assinatura  p input[disabled],
+    div.pnlOrdem_Assinatura  p select[disabled],
+    p.pnlAtivo input[disabled]
+    {
+        border-color:#aaa;
+    }
+    
+    div.pnlOrdem_Formulario  p select
+    {
+        float:left;
+        width:50%;
+        
+        border:1px solid #92AABC;
+        color:#333;
+        font-family:Tahoma,Helvetica,sans-serif;
+    }
+    
+/*
+    div.pnlOrdem_Formulario  p input.BotaoEnviar
+    {
+        float:right;
+        
+        width:auto;
+        
+        color:#fff;
+        text-align:center;
+        font-size:0.9em;
+
+        padding:0.2em 1em 0.2em 1em;
+        
+        border:1px solid #385225;
+        background:#7b8e72;
+
+        cursor:pointer;
+    }
+*/
+
+    div.pnlOrdem_Formulario a.BotaoAtualizarCotacao
+    {
+        float:right;
+        margin:1em;
+        font-size:0.8em;
+    }
+
+#pnlOrdem_LadoEsquerdo
+{
+    display:block;
+
+    float:left;
+
+    height:800px;
+
+    margin:19px 0px 0px 47px;
+}
+
+#pnlOrdem_LadoDireito
+{
+    display:block;
+
+    float:left;
+
+    width:400px;
+    height:800px;
+    margin:0px 0px 0px 22px;
+}
+
+
+.pnlOrdem_Formulario
+{
+    margin:0px 0px 1em 0px;
+
+    padding:0.4em;
+
+    height:   7em;
+    width:  97.3%;
+
+    background:#efefef;
+    border:1px solid #D8D8D8;
+}
+
+
+    div.pnlOrdem_Formulario p,
+    div.pnlOrdem_Assinatura p
+    {
+        width:98%;
+    }
+    
+    div.pnlOrdem_Formulario p label,
+    div.pnlOrdem_Assinatura p label,
+    p.pnlAtivo label
+    {
+        width:25%;
+    }
+    
+    div.pnlOrdem_Formulario p input,
+    p.pnlAtivo input
+    {
+        width:48.4%;
+    }
+
+.pnlOrdem_Assinatura
+{
+    margin:-14px 0px 1em 0px;
+
+    padding:0.4em 0.4em 0.8em 0.4em;
+
+    height:   7em;
+    width:  360px;
+
+    -moz-border-radius-bottomleft:3px;
+    -moz-border-radius-bottomright:3px;
+
+    background:#efefef;
+    border:1px solid #e2e2e2;
+    border-top:none;
+}
+
+input.txtOrdem_StopVenda_Loss_PrecoDisparo,
+input.txtOrdem_StopVenda_Loss_PrecoLancamento,
+input.txtOrdem_StopVenda_Gain_PrecoDisparo,
+input.txtOrdem_StopVenda_Gain_PrecoLancamento
+{
+    background:url("Img/Fundo-DisparoLancamento.gif") no-repeat scroll 0px 0px #fff;
+}
+
+input.txtOrdem_StopVenda_Loss_PrecoDisparo,
+input.txtOrdem_StopVenda_Gain_PrecoDisparo
+{
+    background-position:4px 2px;
+}
+
+input.txtOrdem_StopVenda_Loss_PrecoLancamento,
+input.txtOrdem_StopVenda_Gain_PrecoLancamento
+{
+    background-position:1px -16px;
+}
+
+p.Ordem_Tipo_2,
+p.Ordem_Tipo_3,
+p.Ordem_Tipo_4,
+p.Ordem_Tipo_5
+{
+    display:none;
+}
+
+
+div.Ordem_Tipo_2 p.Ordem_Tipo_2 { display:block; }
+div.Ordem_Tipo_3 p.Ordem_Tipo_3 { display:block; }
+div.Ordem_Tipo_4 p.Ordem_Tipo_4 { display:block; }
+div.Ordem_Tipo_5 p.Ordem_Tipo_5 { display:block; }
+
+div.Ordem_Tipo_5 p.BotoesDeEnvio button.FundoVermelho { display:none; }
+div.Ordem_Tipo_3 p.BotoesDeEnvio button.FundoVerde    { display:none; }
+div.Ordem_Tipo_4 p.BotoesDeEnvio button.FundoVerde    { display:none; }
+
+p.Destaque
+{
+    display:block;
+    float:left;
+
+    margin:0.6em 0em 0.6em 0.6em ;
+
+    width:23%    !important;
+    height:3.8em !important;
+    
+    background:#fff;
+}
+
+    p.Destaque label,
+    p.Destaque span
+    {
+        text-align:center !important;
+        
+        float:left !important;
+        width:99%  !important;
+    }
+
+    p.Destaque label
+    {
+        
+    }
+
+    p.Destaque span
+    {
+        font-weight:bold;
+        font-size:1.1em;
+
+        padding:0.4em 0.1em 0.4em 0.1em;
+    }
+
+
+
+
+
+/* -------------------------------------------------------------------- */
+
+
+    div#pnlMessageBox
+    {
+        position:relative;
+        display:block;
+
+        left:0px;
+        top: 0px;
+
+        width: 372px;
+        height:550px;
+
+        background:#222;
+    }
+
+        div.pnlMessageBox_Content
+        {
+            position:relative;
+            display:block;
+
+            left: 4.5%;
+            top:  5%;
+
+            width:  90%;
+            height: auto;
+
+            font-size:1.2em;
+            color:#111;
+
+            border:4px solid #8b95a1;
+            background:#E9E9E9;
+        }
+
+        div.pnlMessageBox_Content h5
+        {
+            padding:1.6em 0.4em 1em 0.4em;
+            text-align:center;
+        }
+
+        div.pnlMessageBox_Content_Criticas
+        {
+            display:block;
+            height: 7em;
+            overflow:auto;
+            text-align:center;
+        }
+        
+        div.pnlMessageBox_Content p
+        {
+            padding:2em 1em 0.4em 1em;
+
+            line-height:1.8em;
+
+            text-align:center;
+        }
+
+        div.pnlMessageBox_Content p em
+        {
+            font-style:normal;
+            font-weight:bold;
+        }
+
+        p.pnlOrdem_MensagemDeConfirmacao_BotoesDeConfirmacao
+        {
+            margin-top:0px;
+            padding-top:0.6em;
+        }
+
+        p.pnlOrdem_MensagemDeConfirmacao_BotoesDeConfirmacao button
+        {
+            padding:4px 8px 4px 8px;
+            margin:0px 12px 0px 12px;
+
+            text-shadow:0px 1px 1px #111;
+
+            cursor:pointer;
+        }
+            
+            p.pnlOrdem_MensagemDeConfirmacao_BotoesDeConfirmacao button.btnConfirmar
+            {
+                background:#4a9c4a;
+
+                color:#fff;
+                border:2px solid #fff;
+            }
+            
+            p.pnlOrdem_MensagemDeConfirmacao_BotoesDeConfirmacao button.btnCancelar
+            {
+                background:#854944;
+
+                color:#dcdcdc;
+                border:2px solid #e8e8e8;
+            }
+            
+            .pnlMessageBox_Content_Aguarde p
+            {
+                font-size:0.9em;
+                margin-top:5em;
+            }
+
+
+
+/*----------------------------------------------------------
+
+    Compras / Carrinho
+
+----------------------------------------------------------*/
+
+div.PainelCompras h2
+{
+    margin:1em 0px 1em 4em;
+
+    color:#424242;
+    font-weight:normal;
+    
+    font-size:1.2em;
+}
+
+div.PainelCompras h3
+{
+    margin:0em 0px 1em 7em;
+    padding:4px 4px 4px 0px;
+
+    color:#797979;
+    font-size:0.8em;
+
+    font-style:italic;
+    background:url(Img/Divisoria-Cinza-FinalGradiente.gif) no-repeat left bottom;
+}
+
+ul.ListaDeProdutos
+{
+    margin:0px 0px 0px 7em;
+    width:480px;
+    
+    /*background:lime;*/
+}
+
+    ul.ListaDeProdutos li
+    {
+        margin:0px 4px 12px 4px;
+        padding:10px 2px 0px 2px;
+
+        height:26px;
+        width:100%;
+
+        background:#fff;
+        box-shadow:1px 1px 3px #aaa;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    
+        ul.ListaDeProdutos li label
+        {
+            float:left;
+
+            margin:-10px 0px 0px -2px;
+            padding:10px 0px 10px 44px;
+
+            font-size:1.2em;
+            color:#424242;
+            
+            background:url(Img/Imagem-Logos-Produtos.gif) no-repeat 0px 0px;
+        }
+        
+        ul.ListaDeProdutos li.DesktopTraderInterface label  {   background-position:0px 0px;    }
+        
+        ul.ListaDeProdutos li.GradualGrafico label          {   background-position:0px -48px;  }
+        
+        ul.ListaDeProdutos li.PoupeGradual label            {   background-position:0px -96px;  }
+        
+        ul.ListaDeProdutos li.NenhumItem label
+        {
+            display:block;
+            width:98%;
+
+            padding-top:5px;
+            padding-left:10px;
+
+            background-position:-1000px -1000px;
+            text-align:center;
+        }
+
+        ul.ListaDeProdutos li span
+        {
+            float:right;
+
+            margin:0px;
+            padding:4px 4px 4px 0px;
+
+            font-size:0.8em;
+        }
+
+        ul.ListaDeProdutos li span a
+        {
+            padding-left:8px;
+        }
+
+/* 67   138  */
+
+
+        ul.ListaDeProdutos li.Status_1 span,
+        ul.ListaDeProdutos li.Status_2 span
+        {
+            padding:4px 32px 4px 0px;
+            background:url(Img/Icones-Gerais.png) no-repeat right -99px;
+        }
+
+        ul.ListaDeProdutos li.Status_3 span,
+        ul.ListaDeProdutos li.Status_4 span
+        {
+            padding:4px 32px 4px 0px;
+            background:url(Img/Icones-Gerais.png) no-repeat right -64px;
+        }
+
+
+        ul.ListaDeProdutos li.Status_5 span,
+        ul.ListaDeProdutos li.Status_6 span,
+        ul.ListaDeProdutos li.Status_7 span
+        {
+            padding:4px 32px 4px 0px;
+            background:url(Img/Icones-Gerais.png) no-repeat right -135px;
+        }
+
+div.PainelDireito
+{
+    display:block;
+    float:right;
+    
+    margin:0px 42px 0px 0px;
+    
+    width:220px;
+    height:auto;
+    
+    /*background:lime;*/
+}
+
+    div.PainelDireito p
+    {
+        text-align:center;
+        font-size:1.1em;
+
+        /*background:yellow;*/
+    }
+    
+    div.PainelDireito p a.BotaoInstalador
+    {
+        display:block;
+
+        margin:12px 0px 12px 0px;
+
+        padding:6px 18px 6px 16px;
+
+        color:#fff;
+        font-size:1.2em;
+        text-shadow:0px 0px 4px #333;
+
+        border-radius:6px;
+        border:2px solid #608925;
+        border-left-width:1px;
+        border-top-width:1px;
+
+        box-shadow:0px 2px 4px #aaa;
+
+        background: #8bc768; /* Old browsers */
+        background: -moz-linear-gradient(top,  #8bc768 0%, #3aaf2c 1%, #3aaf2c 50%, #329d22 51%, #326b0d 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8bc768), color-stop(1%,#3aaf2c), color-stop(50%,#3aaf2c), color-stop(51%,#329d22), color-stop(100%,#326b0d)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #8bc768 0%,#3aaf2c 1%,#3aaf2c 50%,#329d22 51%,#326b0d 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #8bc768 0%,#3aaf2c 1%,#3aaf2c 50%,#329d22 51%,#326b0d 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #8bc768 0%,#3aaf2c 1%,#3aaf2c 50%,#329d22 51%,#326b0d 100%); /* IE10+ */
+        background: linear-gradient(top,  #8bc768 0%,#3aaf2c 1%,#3aaf2c 50%,#329d22 51%,#326b0d 100%); /* W3C */
+        
+        cursor:pointer;
+    }
+    
+    
+    div.PainelDireito p a.BotaoInstalador span
+    {
+        padding:2px 0px 0px 32px;
+        background:url(Img/Icones-BaixarInstalador.png) no-repeat 0px 0px;
+    }
+    
+    
+      
+    
+    
+
+
+p.Continuar
+{
+    margin:32px 0px 52px 72px;
+
+    width:80%;
+    text-align:right;
+}
+
+p.Continuar button,
+p.Continuar input,
+div.PainelCarrinho p.CheckOutFinal input[type='submit']
+{
+    float:right;
+
+    margin:0px;
+
+    padding:6px 18px 6px 16px;
+        
+    color:#fff;
+    font-size:1.2em;
+    text-shadow:0px 0px 4px #333;
+        
+    border-radius:6px;
+    border:2px solid #608925;
+    border-left-width:1px;
+    border-top-width:1px;
+
+    box-shadow:0px 2px 4px #aaa;
+
+    background: #8bc768; /* Old browsers */
+    background: -moz-linear-gradient(top,  #8bc768 0%, #3aaf2c 1%, #3aaf2c 50%, #329d22 51%, #326b0d 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8bc768), color-stop(1%,#3aaf2c), color-stop(50%,#3aaf2c), color-stop(51%,#329d22), color-stop(100%,#326b0d)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #8bc768 0%,#3aaf2c 1%,#3aaf2c 50%,#329d22 51%,#326b0d 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #8bc768 0%,#3aaf2c 1%,#3aaf2c 50%,#329d22 51%,#326b0d 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #8bc768 0%,#3aaf2c 1%,#3aaf2c 50%,#329d22 51%,#326b0d 100%); /* IE10+ */
+    background: linear-gradient(top,  #8bc768 0%,#3aaf2c 1%,#3aaf2c 50%,#329d22 51%,#326b0d 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8bc768', endColorstr='#326b0d',GradientType=0 ); /* IE6-9 */
+        
+    cursor:pointer;
+}
+
+    p.Continuar button.Voltar,
+    p.Continuar input.Voltar
+    {
+        float:left;
+
+        margin:5px 0px 0px 0px;
+    
+        padding:4px 12px 4px 12px;
+        font-size:0.9em;
+
+        border-color:#666;
+        border-radius:3px;
+        border-width:1px;
+
+        background: #d1d1d1; /* Old browsers */
+        background: -moz-linear-gradient(top,  #d1d1d1 0%, #aaaaaa 4%, #a0a0a0 50%, #929292 51%, #737373 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d1d1d1), color-stop(4%,#aaaaaa), color-stop(50%,#a0a0a0), color-stop(51%,#929292), color-stop(100%,#737373)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #d1d1d1 0%,#aaaaaa 4%,#a0a0a0 50%,#929292 51%,#737373 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #d1d1d1 0%,#aaaaaa 4%,#a0a0a0 50%,#929292 51%,#737373 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #d1d1d1 0%,#aaaaaa 4%,#a0a0a0 50%,#929292 51%,#737373 100%); /* IE10+ */
+        background: linear-gradient(top,  #d1d1d1 0%,#aaaaaa 4%,#a0a0a0 50%,#929292 51%,#737373 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#737373',GradientType=0 ); /* IE6-9 */
+
+
+    }
+
+
+#pnlResumoDaCompra
+{
+    margin:32px 64px 0px 64px;
+    padding:24px;
+
+    border:1px solid #c4c4c4;
+    background:#fff;
+}
+
+
+div.PainelCarrinho p.CheckOutFinal
+{
+    display:block;
+    float:right;
+    
+    padding:12px 0px 0px 0px;
+    
+    width: 466px !important;
+    height:152px;
+    
+    margin:-12px 66px 64px 0px;
+    
+    text-align:center;
+    line-height:3em;
+    
+    background: #e5e5e5; /* Old browsers */
+    background: -moz-linear-gradient(top,  #e5e5e5 0%, #ffffff 70%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e5e5), color-stop(70%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #e5e5e5 0%,#ffffff 70%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #e5e5e5 0%,#ffffff 70%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #e5e5e5 0%,#ffffff 70%); /* IE10+ */
+    background: linear-gradient(top,  #e5e5e5 0%,#ffffff 70%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+    box-shadow:0px 4px 8px #ccc;
+}
+
+    div.PainelCarrinho p.CheckOutFinal input[type='password']
+    {
+        margin:12px 0px 16px 0px;
+        padding:0.2em;
+        font-size:1.4em;
+        
+        text-align:center;
+        color:#646464;
+        
+        background: #e2e2e2; /* Old browsers */
+        background: -moz-linear-gradient(top,  #e2e2e2 0%, #ffffff 43%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(43%,#ffffff)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #e2e2e2 0%,#ffffff 43%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #e2e2e2 0%,#ffffff 43%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #e2e2e2 0%,#ffffff 43%); /* IE10+ */
+        background: linear-gradient(top,  #e2e2e2 0%,#ffffff 43%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+        border:2px solid #8d8d8d;
+    }
+
+    div.PainelCarrinho p.CheckOutFinal input[type='submit']
+    {
+        float:none;
+    }
+    
+    
+    
+    
+    
+
+    
+
+p.CaptacaoDadosSuitability 
+{
+    margin-top: 12px;
+    padding:0em 2em 1em 0em !important;
+
+    line-height: 1.5em;
+    width: 95%;
+    float: left;
+
+    /*background:aqua;*/
+    border-bottom:1px dotted #E7E4D9;
+}
+
+p.CaptacaoDadosSuitability input
+{
+    float: left !important;
+    margin:8px 2px 0 40px;
+    border:none;
+}
+
+p.CaptacaoDadosSuitability label
+{
+    padding:4px 4px 4px 0px !important;
+    width: 90% !important;
+    float: left;
+
+    text-align:left !important;
+
+    /*background:lime;*/
+}
+
+p.CaptacaoDadosSuitability label:hover
+{
+    background-color:#CAD6E2;
+    text-shadow:1px 1px 1px #FFF;
+}
+
+p.CaptacaoDadosSuitability label:nth-child(1)
+{
+    width:100% !important;
+
+    margin-left: 4px;
+    padding-bottom:4px;
+
+    font-size:1.2em;
+    color:#827d74;
+    font-weight:bold;
+    text-shadow:1px 0px 1px #E7E4D9;
+}
+
+p.CaptacaoDadosSuitability label:nth-child(1):hover
+{
+    background-color:transparent;
+}
+
+/* Painel de ícones de ajuda, impressão, etc  */
+
+div.PainelToolBar
+{
+    display:block;
+    float:right;
+
+    width:340px;
+    height:20px;
+
+    margin:50px 24px 0px 0px;
+
+    /*background:yellow;*/
+}
+
+div.PainelToolBarMenor
+{
+    width:92px;
+}
+
+    div.PainelToolBar button,
+    div.PainelToolBar input,
+    div.PainelToolBar span,
+    .BotaoAtualizar
+    {
+        border:none;
+        width:22px;
+        height:22px;
+        
+        float:left;
+        
+        margin:0px 4px 0px 0px;
+        cursor:pointer;
+    }
+
+    div.PainelToolBar span
+    {
+        width:auto;
+        font-size:0.9em;
+        margin:2px 6px 0px 24px;
+    }
+
+    div.PainelToolBar .BotaoAjuda,
+    .BotaoAjuda
+    {
+        background: url("Img/Ico_Ajuda.png") no-repeat scroll 0 0px transparent;
+    }
+    
+    div.PainelToolBar .BotaoExcel
+    {
+        background: url("Img/bt_Excel.gif") no-repeat scroll 0px 0px transparent;
+    }
+    
+    div.PainelToolBar .BotaoImprimir
+    {
+        background: url("Img/Ico_Impressora.png") no-repeat scroll 0 0px transparent;
+    }
+
+    .BotaoAtualizar
+    {
+        background: url("Img/Ico_Atualizar.png") no-repeat scroll 0 0px transparent;
+    }
+}
+
+.PaginaConteudo .NavegacaoLogin
+{
+    display: none;
+}
+
+
+/*
+.tblVisCadastroCompleto
+{
+    width: 45em;
+}
+
+.tblVisCadastroCompleto thead tr td
+{
+    text-align: center;
+    font-weight: bold;    
+}
+
+.tblVisCadastroCompleto tbody tr td
+{
+    width: 50%;
+}
+*/
+
+
+/*------------------------------------------------------------------------------------------
+
+PainelBusca
+
+-------------------------------------------------------------------------------------------*/
+
+
+div.PainelBusca,
+fieldset.PainelBusca,
+div.JanelaHome
+{
+    margin:1em 0px 1em 3.3em;
+
+    padding:1em 0.4em 1em 0.4em;
+
+    height: auto;
+    width:  794px;
+
+    -moz-border-radius:3px;
+
+    background:#efefef;
+    border:1px solid #e2e2e2;
+}
+
+
+div.ComAbas,
+fieldset.ComAbas,
+div.ComAbas
+{
+    margin-top:0px;
+}
+
+ 
+ div.JanelaHomePrincipal01 { height: 785px; width: 300px; }
+ div.JanelaHomePrincipal02 { height: 785px; width: 160px; }
+ div.JanelaHomePrincipal03 { height: 785px; width: 240px; }
+ 
+    div.PainelBusca h4
+    {
+        margin:0 0 6px 0;
+        padding:4px 0 8px 0;
+
+        font-weight:normal;
+        /*font-family:Segoe UI,Arial-rounded-mt-bold,Arial,Helvetica,sans-serif;*/
+
+        color:#173866;
+        text-align:center;
+        font-size:1.1em;
+        
+        border-bottom:1px solid #bdc7d4;
+    }
+    
+    div.PainelBusca         p
+    {
+        float:left;
+    
+        width:30%;
+        height:3.6em;
+    }
+    
+    
+    div.PainelBusca         p label,
+    div.pnlOrdem_Formulario p label,
+    div.pnlOrdem_Assinatura p label,
+    p.pnlAtivo label
+    {
+        float:left;
+        width:30%;
+        
+        text-align:right;
+        padding:4px 11px 0px 0px;
+    }
+    
+    
+    div.PainelBusca          p input,
+    div.PainelBusca         td input,
+    div.pnlOrdem_Formulario  p input,
+    div.pnlOrdem_Assinatura  p input,
+    p.pnlAtivo input
+    {
+        float:left;
+        width:40%;
+
+        border:1px solid #92AABC;
+        color:#333;
+        font-family:Tahoma,Helvetica,sans-serif;
+    }
+    
+    div.PainelBusca          p select,
+    div.PainelBusca         td select,
+    div.pnlOrdem_Formulario  p select
+    {
+        float:left;
+        width:40%;
+
+        border:1px solid #92AABC;
+        color:#333;
+        font-family:Tahoma,Helvetica,sans-serif;
+    }
+
+
+
+    div.PainelBusca         p label
+    {
+        width:40%;
+    }
+
+    div.PainelBusca          p input,
+    div.PainelBusca          p select
+    {
+        width:50%;
+    }
+    
+    /*
+    div.PainelBusca          p input.BotaoEnviar,
+    div.PainelBusca         td input.BotaoEnviar,
+    div.pnlOrdem_Formulario  p input.BotaoEnviar,
+    input.BotaoEnviar,
+    button.BotaoEnviar
+    {
+        float:right;
+        
+        width:auto;
+        
+        color:#fff;
+        text-align:center;
+        font-size:0.9em;
+
+        padding:0.2em 1em 0.2em 1em;
+        
+        border:1px solid #385225;
+        background:#7b8e72;
+
+        cursor:pointer;
+    }
+*/
+
+div.PainelBuscaFormulario
+{
+    height:auto;
+}
+
+    div.PainelBuscaFormulario p
+    {
+        float:none;
+    }
+    
+    div.PainelBuscaFormulario p label
+    {
+        width:auto;
+    }
+
+div.PainelConteudo
+{
+    padding:1em;
+}
+
+    div.PainelConteudo h4
+    {
+        font-size:1.2em;
+        color:#18569b;
+    }
+    
+    div.PainelConteudo p
+    {
+        margin:0.5em;
+    }
+
+div.JanelaHome
+{
+    float:left;
+    margin:18px 8px 8px 8px;
+}
+
+    
+    div.LogoFundo
+    {
+        background-image:url(Img/Logo_Gradual.gif);
+        background-repeat:no-repeat;
+        background-position:center 552px;
+    }
+
+div.AlertaFiltro
+{
+    margin:-1.6em 48px 2em 48px;
+    padding:0.4em;
+    
+    color:#666;
+    
+    border:2px solid #cecd6c;
+    background:#FBF6AD;
+}
+
+div.PainelErros
+{
+    margin:0em 0em 1em 0em;
+    padding:0.4em;
+    
+    color:#666;
+    
+    border:2px solid #cecd6c;
+    background:#FBF6AD;
+}
+
+div.PainelDadosDoAtivo
+{
+    margin: 0px 0px 1em 0px;
+    padding:0 0 0.4em 0;
+
+    height:   3em;
+    width:  97.3%;
+
+    text-align: center;
+    font-size: 1.2em;
+
+    -moz-border-radius:3px;
+
+    background:#e0e0e0;
+    border:1px solid #999;
+}
+    
+    div.PainelDadosDoAtivo span
+    {
+        padding:0px 8px 0px 0px;
+    }
+    
+    div.PainelDadosDoAtivo span.Ativo
+    {
+        font-size:1.2em;
+        font-weight:bold;
+
+        color:#333;
+    }
+    
+    div.PainelDadosDoAtivo a
+    {
+        color:red;
+        text-decoration:underline;
+    }
+    
+    label.TamanhoFixo
+    {
+        float:left;
+        width:8em;
+
+        padding:0.4em 0.6em 0em 0em;
+
+        text-align:right;
+        
+    }
+    
+    input.ValorNumerico,
+    span.ValorNumerico
+    {
+        width:7em;
+        
+        text-align:right !important;
+        font-size: 1.1em !important;
+        padding:0.1em;
+        
+        font-family:Consolas, Monospace !important;
+    }
+    
+div.pnlOrdem
+{
+    margin: -1.2em 0 1em 0.4em;
+    padding:0.6em;
+
+    height: auto;
+    width:  94.5%;
+
+    background:#efefef;
+    border:1px solid #b1b1b1;
+}
+
+    p.BotoesDeEnvio
+    {
+        text-align:center;
+    }
+
+    p.BotoesDeEnvio input,
+    p.BotoesDeEnvio button
+    {
+        margin:0 1em 0 1em;
+        font-size:1em;
+        
+        float:none !important;
+    }
+
+    p.BotoesDeEnvio button
+    {
+        color:#fff;
+        text-align:center;
+
+        padding:0.1em 1em 0.2em 1em;
+
+        cursor:pointer;
+    }
+    
+    p.Mensagens
+    {
+        width:93% !important;
+        
+        margin:2em 0.6em 0.6em 0.6em;
+        padding:0.6em 0.4em 0.3em 0.4em;
+
+        font-size:1.1em;
+        text-align:center;
+        font-style:italic;
+        background-color:#f5f8ca;
+    }
+    
+    p.Alerta
+    {
+    }
+    
+    p.Erro
+    {
+        font-style:normal;
+        color:#f9fbda;
+        background-color:#de5555 !important;
+    }
+    
+    p.Informacao
+    {
+        font-style:normal;
+        color:#5a6884 !important;
+        font-size:0.9em;
+        background-color:#d7dbe3 !important;
+    }
+    
+    p.ExibirLoader
+    {
+    }
+    
+    input.FundoVerde,
+    button.FundoVerde
+    {
+        background:#63935a !important;
+        border:2px solid #4e7645 !important;
+    }
+
+    input.FundoVermelho,
+    button.FundoVermelho
+    {
+        background:#845c60 !important;
+        border:2px solid #684245 !important;
+    }
+
+    input.FundoVerde[disabled],
+    button.FundoVerde[disabled],
+    input.FundoVermelho[disabled],
+    button.FundoVermelho[disabled]
+    {
+        background-color:#9b9b9b !important;
+            border-color:#888888 !important;
+        
+        cursor:default;
+    }
+
+.lblOrdem_Valor
+{
+    float:left;
+    padding:0.2em 0 0 0;
+    font-size:1.1em;
+}
+
+
+div.pnlAjuda
+{
+    display:block;
+
+    position:absolute;
+
+    left:0px;
+     top:0px;
+
+     width:400px;
+    height:auto;
+
+    font-size:0.7em;
+    font-family:Tahoma, Arial, Helvetica, sans-serif;
+
+    background:#efefef;
+    border:1px solid #999;
+
+    z-index:300;
+
+    -moz-box-shadow:0px 2px 10px #999;
+         box-shadow:0px 2px 10px #999;
+}
+
+div.pnlAjuda
+{
+    left:580px;
+    top:391px;
+
+    font-size:1em;
+}
+
+    div.pnlAjuda span.Destaque
+    {
+        color:#145399;
+        font-weight:bold;
+        
+        padding-right:0.4em;
+    }
+
+    #pnlCotacao h4,
+    div.pnlAjuda h4
+    {
+        margin:0;
+        padding:0.4em;
+
+        font-size:1.1em;
+        font-weight:bold;
+
+        background:#e3e3e3;
+        border-bottom:1px solid #cbcbcb;
+    }
+
+        #pnlCotacao  h4 a,
+        div.pnlAjuda h4 a
+        {
+            float:right;
+            
+            width:12px;
+            height:12px;
+            
+            padding:2px;
+            text-align:center;
+            
+            font-size:0.8em;
+            text-decoration:none;
+        }
+        
+        div.pnlAjuda h4 a
+        {
+            color:#333;
+        }
+        
+        .lblCotacao_Codigo
+        {
+            padding:0.2em 28px 0.2em 0.4em;
+
+            background:url("Img/icones/Ico_Editar.png") no-repeat right 1px transparent;
+        }
+        
+        #pnlCotacao  h4 a:hover,
+        div.pnlAjuda h4 a:hover
+        {
+            background:#e0e0e0;
+        }
+    
+    div.pnlAjuda_Conteudo
+    {
+        padding:0.8em;
+    }
+    
+    
+    
+    
+
+div.JanelaHomeMinhaConta table.HomeMinhaConta
+{
+    width:100%;
+
+    background: #fff;
+    border:8px solid #fff;
+}
+    
+div.JanelaHomeMinhaConta table.HomeMinhaConta tfoot td
+{
+    text-align:left;
+    /*font-size:0.9em;*/
+
+    vertical-align:top;
+}
+
+
+
+
+
+/*  Envio de Ordens   */
+
+
+
+
+table.FinanceiroVariacao,
+table.OfertasDeCompraVenda
+{
+    width:40%;
+ 
+    font-size:1.1em;
+ 
+    margin:0.5em;
+    background:#fff;
+    border:none !important;
+}
+
+
+    table.FinanceiroVariacao   th,
+    table.OfertasDeCompraVenda th
+    {
+        text-align:left;
+        font-weight:normal;
+        
+        padding:0.2em;
+        
+        width:50%;
+    }
+    
+    table.FinanceiroVariacao   tbody th,
+    table.OfertasDeCompraVenda tbody th
+    {
+        padding:0.2em 0.4em 0.2em 0.4em;
+
+        border:none !important;
+        border-bottom:1px dotted #efefef !important;
+    }
+    
+    table.FinanceiroVariacao   thead tr td,
+    table.OfertasDeCompraVenda thead tr td
+    {
+        padding:0.3em;
+
+        background:transparent !important;
+        border-right:none !important;
+        border-bottom:none !important;
+    }
+    
+    table.OfertasDeCompraVenda.linhaA
+    {
+        padding:2px;
+    }
+
+        table.FinanceiroVariacao   thead td span,
+        table.OfertasDeCompraVenda thead td span
+        {
+            float:left;
+            width:100%;
+
+            padding:0.4em 0em 0.4em 0em;
+
+            text-align:center;
+            font-weight:bold;
+
+            color:#15458A;
+            background:#efefef;
+        }
+    
+    table.FinanceiroVariacao   tbody td,
+    table.OfertasDeCompraVenda tbody td
+    {
+        font-family:Consolas, Monospace;
+        text-align:right;
+        padding:0.3em;
+
+        border:none !important;
+        border-bottom:1px dotted #efefef !important;
+    }
+
+
+.ValorOfertaCompra,
+table.OfertasDeCompraVenda tbody td.ValorOfertaCompra
+{
+    padding-right:0.5em;
+    background-color:#fbe5e5;
+    color:#333;
+
+    text-shadow:1px 1px 1px #fff;
+    border-right:2px solid #fff !important;
+    border-bottom-color:#e7cccc !important;
+}
+
+.ValorOfertaVenda,
+table.OfertasDeCompraVenda tbody td.ValorOfertaVenda
+{
+    padding-left:0.5em;
+    background-color:#dbf1dc;
+    color:#333;
+    text-align:left !important;
+
+    text-shadow:1px 1px 1px #fff;
+    border-left:2px solid #fff !important;
+    border-bottom-color:#c4e0c5 !important;
+    
+}
+
+table.OfertasDeCompraVenda
+{
+    width:96.9%;
+}
+
+tr.SubTitulos td span
+{
+    padding:0em 0em 0.2em 0em !important;
+    font-weight:normal !important;
+    background:transparent !important;
+    border-bottom:2px solid #efefef;
+}
+
+
+
+

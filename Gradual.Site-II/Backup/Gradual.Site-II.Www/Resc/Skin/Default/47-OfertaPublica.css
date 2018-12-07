@@ -1,0 +1,8 @@
+﻿body {
+}
+
+.BotoesOfertaPublica input
+{
+    line-height: 1.em;
+    cursor:pointer;
+}

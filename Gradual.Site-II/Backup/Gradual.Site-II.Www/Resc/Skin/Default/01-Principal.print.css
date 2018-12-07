@@ -1,0 +1,19 @@
+﻿
+
+  html
+, body
+, #pnlConteudo
+{
+    background:#fff;
+}
+
+  #pnlCabecalho
+, #pnlCotacaoRapida
+, fieldset.PainelBusca
+, div.PainelToolBar
+, .LinksSelos
+, .LinksInstitucionais
+, .TextoRodape
+{
+    display:none !important;
+}

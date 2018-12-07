@@ -1,0 +1,284 @@
+2018-02-19 16:32:45,686 [5] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-02-19 16:32:45,745 [5] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.Site.DbLib.IServicoPersistenciaSite na lista interna
+2018-02-19 16:32:45,745 [5] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.Site.DbLib.IServicoPersistenciaSite na lista de servicos do host
+2018-02-19 16:32:45,745 [5] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.Site.DbLib.IServicoPersistenciaSite no cache
+2018-02-19 16:32:45,886 [5] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-02-19 16:32:46,311 [5] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-02-19 16:32:46,322 [5] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-02-19 16:32:54,741 [5] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-02-19 16:32:55,711 [11] INFO  Gradual.Site.Www.PaginaBase - Recebido PaginaDinamica.aspx?url=favicon.ico
+2018-02-19 16:32:55,716 [11] INFO  Gradual.Site.Www.PaginaBase - 
+2018-02-19 16:32:55,724 [11] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-02-20 07:56:21,390 [21] INFO  Gradual.Site.Www.PaginaBase - Recebido PaginaDinamica.aspx?url=default.aspx?
+2018-02-20 07:56:21,425 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Parando Serviço: Gradual.OMS.Persistencia.ServicoPersistencia
+2018-02-20 07:56:21,425 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2018-02-20 07:56:21,425 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - WCF Base Address: System.Collections.Generic.List`1[System.String]
+2018-02-20 07:56:21,425 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - MEX Base Address: 
+2018-02-20 07:56:21,425 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia]
+2018-02-20 07:56:21,425 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia
+2018-02-20 07:56:21,425 [21] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia nao encontrada direto, usando Type.GetType()
+2018-02-20 07:56:21,426 [21] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-20 07:56:21,426 [21] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-20 07:56:21,426 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia é controlavel.
+2018-02-20 07:56:21,426 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados]
+2018-02-20 07:56:21,426 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados
+2018-02-20 07:56:21,426 [21] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos nao encontrada direto, usando Type.GetType()
+2018-02-20 07:56:21,426 [21] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-20 07:56:21,426 [21] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-20 07:56:21,426 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Site.DbLib.Persistencias.ServicoPersistenciaSite, Gradual.Site.DbLib]
+2018-02-20 07:56:21,426 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Site.DbLib.Persistencias.ServicoPersistenciaSite, Gradual.Site.DbLib
+2018-02-20 07:56:21,426 [21] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Site.DbLib.IServicoPersistenciaSite, Gradual.Site.DbLib nao encontrada direto, usando Type.GetType()
+2018-02-20 07:56:21,426 [21] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-20 07:56:21,426 [21] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-20 07:56:21,426 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC]
+2018-02-20 07:56:21,426 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC
+2018-02-20 07:56:21,426 [21] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.PosicaoBTC.Lib.IServicoPosicaoBTC, Gradual.OMS.PosicaoBTC.Lib nao encontrada direto, usando Type.GetType()
+2018-02-20 07:56:21,426 [21] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-20 07:56:21,426 [21] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-20 07:56:21,428 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Parando Serviço: Gradual.OMS.Persistencia.ServicoPersistencia
+2018-02-20 07:56:21,428 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2018-02-20 07:56:21,428 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - WCF Base Address: System.Collections.Generic.List`1[System.String]
+2018-02-20 07:56:21,428 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - MEX Base Address: 
+2018-02-20 07:56:21,428 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia]
+2018-02-20 07:56:21,428 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia
+2018-02-20 07:56:21,428 [21] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia nao encontrada direto, usando Type.GetType()
+2018-02-20 07:56:21,428 [21] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-20 07:56:21,428 [21] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-20 07:56:21,428 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia é controlavel.
+2018-02-20 07:56:21,428 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados]
+2018-02-20 07:56:21,428 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados
+2018-02-20 07:56:21,428 [21] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos nao encontrada direto, usando Type.GetType()
+2018-02-20 07:56:21,428 [21] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-20 07:56:21,428 [21] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-20 07:56:21,428 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Site.DbLib.Persistencias.ServicoPersistenciaSite, Gradual.Site.DbLib]
+2018-02-20 07:56:21,428 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Site.DbLib.Persistencias.ServicoPersistenciaSite, Gradual.Site.DbLib
+2018-02-20 07:56:21,429 [21] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Site.DbLib.IServicoPersistenciaSite, Gradual.Site.DbLib nao encontrada direto, usando Type.GetType()
+2018-02-20 07:56:21,429 [21] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-20 07:56:21,429 [21] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-20 07:56:21,429 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC]
+2018-02-20 07:56:21,429 [21] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC
+2018-02-20 07:56:21,429 [21] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.PosicaoBTC.Lib.IServicoPosicaoBTC, Gradual.OMS.PosicaoBTC.Lib nao encontrada direto, usando Type.GetType()
+2018-02-20 07:56:21,429 [21] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2018-02-20 07:56:21,429 [21] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2018-02-20 07:56:21,432 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Cotacao.Lib.IServicoCotacao>()
+2018-02-20 07:56:21,492 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Cotacao.Lib.IServicoCotacao na lista interna
+2018-02-20 07:56:21,492 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.OMS.Cotacao.Lib.IServicoCotacao no cache
+2018-02-20 07:56:21,537 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberLivroOferta
+2018-02-20 07:56:21,537 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberLivroNegocios
+2018-02-20 07:56:21,537 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberTickerCotacao
+2018-02-20 07:56:21,537 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberTickerResumido
+2018-02-20 07:56:21,537 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberTickerDestaques
+2018-02-20 07:56:21,537 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberRankCorretora
+2018-02-20 07:56:21,537 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberDadosAberturaFechamento
+2018-02-20 07:56:21,537 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberAberturaFechamentoInstrumento
+2018-02-20 07:56:21,591 [21] ERROR Gradual.Site.Www.PaginaBase - Erro em CarregarCotacoes()
+System.ServiceModel.EndpointNotFoundException: Não havia um ponto de extremidade em escuta em net.pipe://localhost/Global/Gradual.OMS.Cotacao.Lib.IServicoCotacao capaz de aceitar a mensagem. Em geral, isso é causado por um endereço ou ação de SOAP incorreta. Consulte InnerException, se presente, para obter mais detalhes. ---> System.IO.PipeException: Não foi possível encontrar o ponto de extremidade do pipe 'net.pipe://localhost/Global/Gradual.OMS.Cotacao.Lib.IServicoCotacao' na máquina local. 
+   --- Fim do rastreamento de pilha de exceções internas ---
+
+Server stack trace: 
+   em System.ServiceModel.Channels.PipeConnectionInitiator.GetPipeName(Uri uri, IPipeTransportFactorySettings transportFactorySettings)
+   em System.ServiceModel.Channels.NamedPipeConnectionPoolRegistry.NamedPipeConnectionPool.GetPoolKey(EndpointAddress address, Uri via)
+   em System.ServiceModel.Channels.CommunicationPool`2.TakeConnection(EndpointAddress address, Uri via, TimeSpan timeout, TKey& key)
+   em System.ServiceModel.Channels.ConnectionPoolHelper.EstablishConnection(TimeSpan timeout)
+   em System.ServiceModel.Channels.ClientFramingDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   em System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.OnOpen(TimeSpan timeout)
+   em System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.CallOpenOnce.System.ServiceModel.Channels.ServiceChannel.ICallOnce.Call(ServiceChannel channel, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.CallOnceManager.CallOnce(TimeSpan timeout, CallOnceManager cascade)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em Gradual.OMS.Cotacao.Lib.IServicoCotacao.ReceberTickerCotacao(String pInstrumento)
+   em Gradual.Site.Www.Default.CarregarCotacoes() na D:\Gradual\Source\Gradual.Site-II\Gradual.Site-II.Www\Default.aspx.cs:linha 80
+2018-02-20 07:56:21,598 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-02-20 07:56:21,598 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.Site.DbLib.IServicoPersistenciaSite na lista interna
+2018-02-20 07:56:21,598 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.Site.DbLib.IServicoPersistenciaSite na lista de servicos do host
+2018-02-20 07:56:21,598 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.Site.DbLib.IServicoPersistenciaSite no cache
+2018-02-20 07:56:21,791 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-02-20 07:56:21,808 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-02-20 07:56:21,819 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-02-20 07:56:21,833 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-02-20 07:56:22,762 [29] INFO  Gradual.Site.Www.PaginaBase - Recebido PaginaDinamica.aspx?url=favicon.ico
+2018-02-20 07:56:22,766 [29] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-02-20 07:56:33,253 [29] INFO  Gradual.Site.Www.PaginaBase - 
+2018-02-20 07:56:33,311 [29] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-02-20 07:56:33,341 [29] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-02-20 07:56:37,507 [33] INFO  Gradual.Site.Www.PaginaBase - PainelDeLogin.ascx - LoginViaServicoSeguranca(DsEmail:[31940])
+2018-02-20 07:56:37,507 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2018-02-20 07:56:37,507 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca na lista interna
+2018-02-20 07:56:37,507 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca na lista de servicos do host
+2018-02-20 07:56:37,507 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no localizador
+2018-02-20 07:56:37,645 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.OMS.Seguranca.Lib.IServicoSeguranca no cache
+2018-02-20 07:56:38,483 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AutenticarUsuario
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AutenticarUsuarioDinamico
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: VerificarPermissao
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPermissoes
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPermissao
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarItemSeguranca
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissoes
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissao
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPermissao
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuario
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarios
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuario
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuario
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarAssinaturaEletronica
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarAssinaturaEletronica
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarSenha
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuarioGrupo
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarioGrupos
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarUsuarioGrupo
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuarioGrupo
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuarioGrupo
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPerfil
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPerfis
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPerfil
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPerfil
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPerfil
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberSessao
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarSessoes
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: EfetuarLogOut
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarPermissaoAcesso
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarAssessorCompartilhado
+2018-02-20 07:56:38,484 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPermissao
+2018-02-20 07:56:38,945 [33] INFO  Gradual.Site.Www.PaginaBase - PainelDeLogin.ascx - LoginViaServicoSeguranca(DsEmail:[31940]) Resposta: [OK] []
+2018-02-20 07:56:38,945 [33] INFO  Gradual.Site.Www.PaginaBase - PainelDeLogin.ascx - LoginViaServicoSeguranca - ReceberSessao([a3c0d8eb-a251-4f7d-85a2-a31af473c3ed])
+2018-02-20 07:56:38,945 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AutenticarUsuario
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AutenticarUsuarioDinamico
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: VerificarPermissao
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPermissoes
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPermissao
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarItemSeguranca
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissoes
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissao
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPermissao
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuario
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarios
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuario
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuario
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarAssinaturaEletronica
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarAssinaturaEletronica
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarSenha
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuarioGrupo
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarioGrupos
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarUsuarioGrupo
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuarioGrupo
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuarioGrupo
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPerfil
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPerfis
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPerfil
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPerfil
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPerfil
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberSessao
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarSessoes
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: EfetuarLogOut
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarPermissaoAcesso
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarAssessorCompartilhado
+2018-02-20 07:56:38,952 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPermissao
+2018-02-20 07:56:39,342 [33] INFO  Gradual.Site.Www.PaginaBase - PainelDeLogin.ascx - LoginViaServicoSeguranca - ReceberContexto()
+2018-02-20 07:56:39,346 [33] INFO  Gradual.Site.Www.PaginaBase - PainelDeLogin.ascx - Sessão para [31940]: [a3c0d8eb-a251-4f7d-85a2-a31af473c3ed]
+2018-02-20 07:56:39,347 [33] INFO  Gradual.Site.Www.PaginaBase - PaginaBase.cs - CarregarClienteEmSessao(pIdLogin: [138308])
+2018-02-20 07:56:39,349 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Intranet.Contratos.IServicoPersistenciaCadastro>()
+2018-02-20 07:56:39,349 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.Intranet.Contratos.IServicoPersistenciaCadastro na lista interna
+2018-02-20 07:56:39,349 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.Intranet.Contratos.IServicoPersistenciaCadastro na lista de servicos do host
+2018-02-20 07:56:39,349 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.Intranet.Contratos.IServicoPersistenciaCadastro no cache
+2018-02-20 07:56:39,349 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Persistencia.IServicoPersistencia>()
+2018-02-20 07:56:39,350 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Persistencia.IServicoPersistencia na lista interna
+2018-02-20 07:56:39,350 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Persistencia.IServicoPersistencia na lista de servicos do host
+2018-02-20 07:56:39,350 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.OMS.Persistencia.IServicoPersistencia no cache
+2018-02-20 07:56:42,764 [33] INFO  Gradual.Site.Www.PaginaBase - PaginaBase.cs - CarregarClienteEmSessao(pIdCliente: [62219]/[62219] | pIdLogin: [138308]/[138308]) OK! CpfCnpj: [33414115859], Email: [rgarcia@gradualinvestimentos.com.br], CodigoPrincipal: [31940]
+2018-02-20 07:56:42,767 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Intranet.Contratos.IServicoPersistenciaCadastro>()
+2018-02-20 07:56:42,769 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Persistencia.IServicoPersistencia>()
+2018-02-20 07:56:42,810 [33] ERROR Gradual.Site.Www.PaginaBase - PainelDeLogin.ascx > BuscarPermissoesDoUsuario(CodigoSessao [a3c0d8eb-a251-4f7d-85a2-a31af473c3ed], IdLogin [138308])
+2018-02-20 07:56:42,810 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Seguranca.Lib.IServicoSeguranca>()
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AutenticarUsuario
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AutenticarUsuarioDinamico
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: VerificarPermissao
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPermissoes
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPermissao
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarItemSeguranca
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissoes
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPermissao
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPermissao
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuario
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarios
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuario
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuario
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ValidarAssinaturaEletronica
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarAssinaturaEletronica
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarSenha
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarUsuarioGrupo
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarUsuarioGrupos
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarUsuarioGrupo
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberUsuarioGrupo
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverUsuarioGrupo
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: SalvarPerfil
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarPerfis
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AssociarPerfil
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberPerfil
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPerfil
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ReceberSessao
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarSessoes
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: EfetuarLogOut
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: AlterarPermissaoAcesso
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ListarAssessorCompartilhado
+2018-02-20 07:56:42,811 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: RemoverPermissao
+2018-02-20 07:56:42,909 [33] INFO  Gradual.Site.Www.PaginaBase - PainelDeLogin.ascx > Retorno OK do serviço: [4] permissões para [138308])
+2018-02-20 07:56:42,910 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Intranet.Contratos.IServicoPersistenciaCadastro>()
+2018-02-20 07:56:42,910 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Persistencia.IServicoPersistencia>()
+2018-02-20 07:56:42,917 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Intranet.Contratos.IServicoPersistenciaCadastro>()
+2018-02-20 07:56:42,917 [33] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Persistencia.IServicoPersistencia>()
+2018-02-20 07:56:46,814 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-02-20 07:56:48,935 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.ContaCorrente.Lib.IServicoContaCorrente>()
+2018-02-20 07:56:48,935 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.ContaCorrente.Lib.IServicoContaCorrente na lista interna
+2018-02-20 07:56:48,935 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.ContaCorrente.Lib.IServicoContaCorrente na lista de servicos do host
+2018-02-20 07:56:48,935 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.ContaCorrente.Lib.IServicoContaCorrente no localizador
+2018-02-20 07:56:48,962 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.OMS.ContaCorrente.Lib.IServicoContaCorrente no cache
+2018-02-20 07:56:49,108 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ObterSaldoContaCorrente
+2018-02-20 07:56:49,109 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ObterSaldoContaCorrenteBMF
+2018-02-20 07:56:49,468 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.ContaCorrente.Lib.IServicoContaCorrente>()
+2018-02-20 07:56:49,469 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ObterSaldoContaCorrente
+2018-02-20 07:56:49,469 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ObterSaldoContaCorrenteBMF
+2018-02-20 07:56:49,501 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Monitores.Risco.Lib.IServicoMonitorRisco>()
+2018-02-20 07:56:49,501 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.Monitores.Risco.Lib.IServicoMonitorRisco na lista interna
+2018-02-20 07:56:49,501 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.Monitores.Risco.Lib.IServicoMonitorRisco no cache
+2018-02-20 07:56:49,504 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ObterMonitorLucroPrejuizo
+2018-02-20 07:56:49,504 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ObterMonitorPLD
+2018-02-20 07:56:49,504 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ObterDadosCliente
+2018-02-20 07:56:49,504 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ObterPosicaoBTC
+2018-02-20 07:56:49,504 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ObterPosicaoTermo
+2018-02-20 07:56:50,073 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.Monitor.Custodia.Lib.IServicoMonitorCustodia>()
+2018-02-20 07:56:50,073 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Monitor.Custodia.Lib.IServicoMonitorCustodia na lista interna
+2018-02-20 07:56:50,073 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Monitor.Custodia.Lib.IServicoMonitorCustodia na lista de servicos do host
+2018-02-20 07:56:50,073 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Buscando informacoes do servico Gradual.OMS.Monitor.Custodia.Lib.IServicoMonitorCustodia no localizador
+2018-02-20 07:56:50,094 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Armazenando informacoes do servico Gradual.OMS.Monitor.Custodia.Lib.IServicoMonitorCustodia no cache
+2018-02-20 07:56:50,095 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ObterMonitorCustodiaMemoria
+2018-02-20 07:56:55,877 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-02-20 07:56:57,255 [34] INFO  Gradual.Site.Www.PaginaBase - Recebido PaginaDinamica.aspx?url=favicon.ico
+2018-02-20 07:56:57,255 [34] INFO  Gradual.Site.Www.PaginaBase - 
+2018-02-20 07:56:57,264 [34] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-02-20 07:58:35,311 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-02-20 07:58:36,262 [16] INFO  Gradual.Site.Www.PaginaBase - Recebido PaginaDinamica.aspx?url=favicon.ico
+2018-02-20 07:58:36,262 [16] INFO  Gradual.Site.Www.PaginaBase - 
+2018-02-20 07:58:36,270 [16] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-02-20 07:58:37,439 [21] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-02-20 07:58:37,955 [16] INFO  Gradual.Site.Www.PaginaBase - Recebido PaginaDinamica.aspx?url=favicon.ico
+2018-02-20 07:58:37,955 [16] INFO  Gradual.Site.Www.PaginaBase - 
+2018-02-20 07:58:37,967 [16] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-02-20 07:58:38,751 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.OMS.ContaCorrente.Lib.IServicoContaCorrente>()
+2018-02-20 07:58:38,751 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ObterSaldoContaCorrente
+2018-02-20 07:58:38,751 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Setando MaxItemsInObjectGraph para operacao: ObterSaldoContaCorrenteBMF
+2018-02-20 07:58:38,751 [14] INFO  Gradual.Site.Www.PaginaBase - Chamando Financeiro/Retirada.aspx: BuscarSaldoEmContaNoServico - Bovespa(pCodigo [31940])
+2018-02-20 07:58:38,817 [14] INFO  Gradual.Site.Www.PaginaBase - Resposta de Financeiro/Retirada.aspx: BuscarSaldoEmContaNoServico - Bovespa(pCodigo [31940]) > [OK] - [Saldo de conta corrente do cliente: 31940 carregado com sucesso] - []
+2018-02-20 07:58:38,817 [14] INFO  Gradual.Site.Www.PaginaBase - Chamando Financeiro/Retirada.aspx: BuscarSaldoEmContaNoServico - BMF(pCodigo [31217])
+2018-02-20 07:58:38,865 [14] INFO  Gradual.Site.Www.PaginaBase - Resposta de Financeiro/Retirada.aspx: BuscarSaldoEmContaNoServico - BMF(pCodigo [31217]) > [OK] - [Saldo de BMF carregado com sucesso]
+2018-02-20 07:58:38,874 [14] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()
+2018-02-20 07:58:39,419 [13] INFO  Gradual.Site.Www.PaginaBase - Recebido PaginaDinamica.aspx?url=favicon.ico
+2018-02-20 07:58:39,420 [13] INFO  Gradual.Site.Www.PaginaBase - 
+2018-02-20 07:58:39,430 [13] INFO  Gradual.OMS.Library.Servicos.Ativador - Ativador.Get<Gradual.Site.DbLib.IServicoPersistenciaSite>()

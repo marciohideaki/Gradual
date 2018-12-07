@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <div id="cabecalho">
+        
+        <a id="logo" href="https://www.gradualinvestimentos.com.br"><img src="https://denuncias.gradualinvestimentos.com.br/Resources/images/gradual_logo.png" /></a>
+
+    </div>
+
+    <iframe width="100%" frameborder="0" scrolling="NO" style="position: absolute;" height="100%" margin-top 20px; src="https://denuncias.gradualinvestimentos.com.br"></iframe>
+
+    <a class="ajuda" href="#" onclick="return lnkAbrirOChat_Click(this)"><img src="https://denuncias.gradualinvestimentos.com.br/Resources/images/ajuda.png" alt="Precisa de ajuda?" /></a>
+</body>
+
+
+
+</html>
+
+<style type="text/css">
+    #cabecalho 
+    {
+        background-color    : #4e443c;
+        color               : #ffffff;
+        border-radius       : 7px;
+        font-size           : 13px;
+        height              : 52px;
+        width               : 960px;
+        margin              : 0 auto;
+    }
+
+    #logo
+    {
+        float               : left;
+        margin-top          : 7px;
+        margin-left         : 9px;
+    }
+
+    .ajuda 
+    {
+        position            : fixed; 
+        top                 : 50%; 
+        left                : 0; 
+        margin-top          : -148px;
+    }
+
+    @media screen and (max-width: 1130px) 
+    {
+       .precisa-ajuda 
+       {
+           display: none;
+       } 
+    }
+
+</style>
+
+<script type="text/javascript">
+    function lnkAbrirOChat_Click(pSender)
+    {
+        AbrirOChat();
+
+        return false;
+    }
+
+    function AbrirOChat()
+    {
+        window.open("http://chat.gradualinvestimentos.com.br/default.aspx?chat=1&group=Origem&url=" + window.location
+                    , "chat"
+                    , "width=498,height=348,resizable=no,toolbar=0,location=0,directories=0,status=no,menubar=0,scrollbars=0"
+                   );
+
+        return false;
+    }
+</script>

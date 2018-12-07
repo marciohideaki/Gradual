@@ -1,0 +1,1068 @@
+﻿
+
+#pnlBanners
+{
+    display:block;
+
+    width: 888px;
+    height:208px;
+
+    margin:-4px 0px 0px 0px;
+
+    background: url(Img/Fundo-Section-Banners.gif) no-repeat 0px  -32px;
+}
+
+    #pnlBanners_Container
+    {
+        display:block;
+        float:left;
+
+        margin:0px 0px 0px 24px;
+
+        width:  840px;
+        height: 208px;
+
+        background:url("Img/Fundo-Site-Pattern.gif") repeat scroll 0 0 transparent;
+        overflow:hidden;
+    }
+    
+    #pnlBanners_Container div.Banner
+    {
+        display:none;
+        
+        /* importante pro overflow: hidden funcionar: */
+        position:absolute;
+        width:840px;
+        height:208px;
+        
+        overflow:hidden;
+        cursor:pointer;
+    }
+    
+    
+    #pnlBanners_Container div.Banner img
+    {
+        position:absolute;
+        z-index:200;
+        
+        cursor:pointer;
+    }
+    
+    #pnlBanners_Container nav
+    {
+        display:block;
+        float:right;
+        position:relative;
+
+        top:4px;
+        right:8px;
+        
+        width:auto;
+        height:20px;
+        
+        z-index:400;
+        /*background:aqua;*/
+    }
+    
+        #pnlBanners_Container nav button
+        {
+            margin:0px 0px 0px 4px;
+            padding:1px 2px 1px 2px;
+
+            color:#666;
+            text-align:center;
+            font-size:0.8em;
+
+            border:1px solid #999;
+            background:#d2d2d2;
+
+            cursor:pointer;
+        }
+        
+        #pnlBanners_Container nav button.Selecionado
+        {
+            font-weight:bold;
+            color:#fff;
+            background-color:#888;
+            border:1px solid #fff;
+        }
+
+
+
+#pnlFerramentasProdutos
+{
+    margin:0px 0px 0px -24px;
+
+    width:840px  !important;
+    height:305px !important;
+
+    min-height:0px  !important;
+
+    background:url(Img/Fundo-PaginaInicial-FerramentasEProdutos.jpg) no-repeat top left !important;
+    border-top:none !important;
+}
+
+    #pnlFerramentasProdutos h2
+    {
+        position:relative;
+        
+        left:24px;
+        top:16px;
+
+        width:790px;
+        height:44px;
+
+        background:url(Img/Imagem-PaginaInicial-TituloACorretora.jpg) no-repeat;
+    }
+
+        #pnlFerramentasProdutos h2 span
+        {
+            display:none;
+        }
+
+        ul.Ferramentas
+        {
+            float:left;
+        
+            display:block;
+            position:relative;
+
+            left:32px;
+            top:42px;
+
+            width:586px;
+            height:210px;
+
+            /*background:lime;*/
+        }
+
+            ul.Ferramentas li
+            {
+                display:block;
+                float:left;
+
+                margin:0px 26px 36px 0px;
+
+                width:264px;
+                height:72px;
+
+                background: url(Img/Imagem-PaginaInicial-Ferramentas-V.png) no-repeat;
+            }
+
+            ul.Ferramentas li.GTI               { background-position:    0px    0px; }
+            ul.Ferramentas li.GradualPremium    { background-position: -289px    0px; }
+            ul.Ferramentas li.GradualGraficos   { background-position:    0px -108px; }
+            ul.Ferramentas li.CalculadoraIR     { background-position: -289px -108px; }
+            ul.Ferramentas li.TVGradual         { background-position: -572px   -0px; }
+            ul.Ferramentas li.AnaliseGrafica    { background-position: -572px -108px; }
+            
+            
+            ul.Ferramentas li a
+            {
+                display:block;
+                float:left;
+
+                width:  264px;
+                height: 72px;
+
+                color:#333;
+                text-decoration:none;
+            }
+
+                ul.Ferramentas li span
+                {
+                    display:block;
+                    float:left;
+                    
+                    margin:28px 0px 0px 70px; 
+                    
+                    width:192px;
+                    height:32px;
+                    
+                    font-size:0.8em;
+                    line-height:1.6em;
+                }
+
+    ul.Produtos
+    {
+        float:right;
+        position:relative;
+
+        right:0px;
+        top:36px;
+
+        width:226px;
+        height:160px;
+
+        /*background:lime;*/
+    }
+    
+        ul.Produtos li
+        {
+            padding:2px;
+            margin:0px 0px 6px 0px;
+
+            text-align:center;
+
+            /*background:aqua;*/
+        }
+
+            ul.Produtos li a
+            {
+                font-size:1.1em;
+                font-weight:bold;
+
+                color:#0f4b96;
+                text-decoration:none;
+                text-shadow:0px 2px #fff;
+            }
+
+            ul.Produtos li a:hover
+            {
+                color:#293FDF;
+                text-decoration:underline;
+            }
+
+            ul.Produtos li.Conta a
+            {
+                display:block;
+
+                width:216px;
+                height:48px;
+
+                background:transparent url(Img/Imagem-Botao-Home-AbraSuaConta.png) no-repeat center -8px;
+                border:none;
+                cursor:pointer;
+            }
+
+            ul.Produtos li.Conta a.AbraConta
+            {
+                background-position:center -128px;
+            }
+
+            ul.Produtos li.Conta a.MinhaConta
+            {
+                background-position:center -8px;
+            }
+
+            ul.Produtos li.Conta a.CompleteCadastro
+            {
+                background-position:center -65px;
+            }
+
+                ul.Produtos li.Conta a span
+                {
+                    display:none;
+                }
+
+#pnlSecundario
+{
+    border-top:none !important;
+    background:none !important;
+}
+
+
+    
+    #lstOfertasPublicas
+    {
+        display:block;
+        float:left;
+
+        margin:  0px 0px 0px 0px !important;
+        padding: 0px 0px 0px 0px !important;
+
+        width:  116px !important;
+        height: 404px !important;
+
+        background-image:none !important;
+        background-color:#f3f3f3 !important;
+
+        overflow:hidden;
+        border-right:2px solid #c6c6c6;
+    }
+    
+    
+    #lstOfertasPublicas h3,
+    #pnlDestaques h3,
+    #pnlCotacaoRapida h3
+    {
+        padding:8px 0px 8px 0px;
+
+        text-align:center;
+        color:#0f4b96;
+        font-size:0.9em;
+        font-weight:bold;
+        text-shadow:0 2px #fff;
+
+        border-bottom:1px solid #c6c6c6;
+        
+        background: #efeeee; /* Old browsers */
+        background: -moz-linear-gradient(top,  #ffffff 0%, #efeeee 65%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(65%,#efeeee)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #ffffff 0%,#efeeee 65%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #ffffff 0%,#efeeee 65%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #ffffff 0%,#efeeee 65%); /* IE10+ */
+        background: linear-gradient(to bottom,  #ffffff 0%,#efeeee 65%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efeeee',GradientType=0 ); /* IE6-9 */
+
+    }
+    
+        #lstOfertasPublicas div.lstOfertasPublicas_Container
+        {
+            float:left;
+
+            width:100%;
+            height:363px;
+
+            /*background:lime;*/
+            overflow:hidden;
+        }
+    
+        #lstOfertasPublicas ul
+        {
+            float:left;
+
+            width:100%;
+            height:auto;
+        }
+    
+        #lstOfertasPublicas ul li
+        {
+            float:left;
+            padding:16px 4px 8px 4px;
+
+            width:108px;
+
+            text-align:center;
+
+            background-repeat:no-repeat;
+            background-position:center 10px;
+        }
+        
+        #lstOfertasPublicas ul li a
+        {
+            font-size:0.8em;
+            color:#5B6468;
+            text-decoration:none;
+        }
+        
+            #lstOfertasPublicas ul li a:hover
+            {
+                text-decoration:underline;
+            }
+
+        #lstOfertasPublicas ul li.NenhumItem
+        {
+            padding:7px 0px 0px 0px;
+            margin-left:3px;
+
+            font-size:0.8em;
+        }
+
+        #lstOfertasPublicas ul li.NenhumItem span a
+        {
+            color:#293fdf;
+        }
+
+    #btnScrollOfertasPublicas
+    {
+        display:block;
+        float:left;
+
+        margin:0px 0px 0px 0px;
+
+        width:116px;
+        height:10px;
+
+        background:#ebebeb url(Img/Icones-Setas-Scroll.gif) no-repeat -73px -3px;
+        border:none;
+        cursor:pointer;
+    }
+    
+    #btnScrollOfertasPublicas.SetaPraCima
+    {
+        background-position:53px -3px;
+    }
+
+    #btnScrollOfertasPublicas:hover
+    {
+        background-color:#ddd;
+    }
+    
+        #btnScrollOfertasPublicas span
+        {
+            display:none;
+        }
+        
+        
+#lstOfertasPublicas.Minimizado
+{
+    margin-top:298px !important;
+    height: 70px !important;
+}
+
+    #lstOfertasPublicas.Minimizado ul li
+    {
+        display:none;
+    }
+    
+    #lstOfertasPublicas.Minimizado ul li.NenhumItem
+    {
+        display:block !important;
+    }
+
+
+        
+#pnlDestaques
+{
+    display:block;
+    float:left;
+
+    width:430px;
+    height:334px;
+    
+    border-right:2px solid #c6c6c6;
+}
+
+    #pnlDestaques h3
+    {
+        color:#383838;
+        background-position:-117px 0px;
+    }
+
+
+    #pnlDestaques div.pnlDestaques_Container
+    {
+        display:block;
+        margin:0px 22px 0px 22px;
+
+        height:220px;
+        width:386px;
+
+        background:#fff url(Img/Divisoria-CinzaFade-Destaques.gif) no-repeat center bottom;
+        overflow:hidden;
+    }
+    
+    #pnlDestaques div.pnlDestaques_Container_Scroll
+    {
+        width:3000px;
+    }
+    
+    #pnlDestaques div.pnlDestaques_Container div.pnlDestaques_Container_Noticia
+    {
+        display:block;
+        float:left;
+
+        width: 164px;
+        height:190px;
+
+        margin:12px 0px 12px 20px;
+
+        /*background:lime;*/
+    }
+
+    div.pnlDestaques_Container_Noticia h5
+    {
+        display:block;
+
+        padding:2px 2px 16px 2px;
+
+        min-height:32px;
+
+        text-align:center;
+        font-size:1.1em;
+
+        background:url(Img/Divisoria-Titulo-Noticia.gif) no-repeat bottom center;
+    }
+    
+    div.pnlDestaques_Container_Noticia p
+    {
+        margin:6px 6px 4px 6px;
+
+        text-align:justify;
+        line-height:1.4em;
+
+        /*background:aqua;*/
+    }
+
+        div.pnlDestaques_Container_Noticia p a
+        {
+            text-decoration:none;
+            color:#424242;
+        }
+
+        div.pnlDestaques_Container_Noticia p a:hover
+        {
+            color:#293FDF;
+        }
+
+    #pnlDestaques ul.pnlDestaques_Paginas
+    {
+        display:block;
+        float:right;
+
+        margin:-16px 22px -20px 0px;
+        padding:2px 2px 2px 2px;
+
+        background:#e7e7e7;
+        border-bottom:1px solid #d5d5d5;
+    }
+
+        #pnlDestaques ul.pnlDestaques_Paginas li
+        {
+            display:block;
+            float:left;
+
+            margin: 1px 1px 2px 1px;
+
+            width:auto;
+            height:auto;
+        }
+
+            #pnlDestaques ul.pnlDestaques_Paginas li a
+            {
+                margin: 1px 1px 1px 1px;
+                padding:1px 3px 1px 3px;
+
+                text-align:center;
+                font-size:0.8em;
+                color:#fff;
+                font-weight:bold;
+
+                text-decoration:none;
+
+                background:#bfbfbf;
+                border:1px solid #fff;
+            }
+
+        #pnlDestaques ul.pnlDestaques_Paginas li.Selecionado a
+        {
+            background:#828282;
+        }
+
+    #pnlDestaques p.SaibaMais
+    {
+        margin:15px 0px 0px 30px;
+    }
+
+        #pnlDestaques p.SaibaMais a
+        {
+            margin:0px 0px 0px 8px;
+        }
+
+
+#pnlDestaques.Expandido
+{
+    width:548px;
+    margin-left:-118px;
+}
+
+    #pnlDestaques.Expandido div.pnlDestaques_Container_Noticia
+    {
+        margin:12px 0px 12px 8px !important;
+        width:156px !important;
+
+        overflow:hidden;
+    }
+
+
+#pnlCotacaoRapida
+{
+    display:block;
+    float:left;
+    
+    width: 290px;
+    height:334px;
+    
+    background:#f3f3f3 url(Img/Fundo-PaginaInicial-FormCotacaoRapida.gif) no-repeat 0px 31px;
+}
+
+
+    #pnlCotacaoRapida h3
+    {
+        background-position:-718px 0px;
+    }
+
+    #pnlCotacaoRapida fieldset
+    {
+        margin:0;
+        padding:0;
+
+        border:none;
+    }
+
+    #pnlCotacaoRapida fieldset p
+    {
+        height:32px;
+
+        text-align:center;
+        /*background:aqua;*/
+    }
+
+    #pnlCotacaoRapida fieldset p label
+    {
+        float:left;
+
+        margin:9px 0px 0px 50px;
+
+        color:#4e4e4e;
+    }
+
+
+    #pnlCotacaoRapida fieldset p input
+    {
+        float:left;
+
+        margin:  7px 0px 0px 4px;
+        padding: 1px 2px 2px 2px;
+
+        width:68px;
+        height:auto;
+
+        color:#4e4e4e;
+        font-weight:bold;
+        text-align:center;
+
+        border:1px solid #727272;
+        background:#fff url(Img/Fundo-TextBox.gif) repeat-x;
+    }
+
+    #pnlCotacaoRapida fieldset p button
+    {
+        float:left;
+        margin:6px 0px 0px 4px;
+
+        width: 73px;
+        height:23px;
+
+        border:none;
+        background:transparent url(Img/Botao-Buscar.gif) no-repeat;
+        cursor:pointer;
+    }
+
+    #pnlCotacaoRapida fieldset button span { display:none }
+
+
+    #pnlCotacaoRapida p.DadosPrincipais
+    {
+        height:38px;
+        /*background:aqua;*/
+    }
+    
+        #pnlCotacaoRapida p.DadosPrincipais span
+        {
+            display:block;
+            float:left;
+
+            margin:11px 0px 0px 16px;
+            padding:2px 2px 2px 4px;
+
+            font-weight:bold;
+            font-size:1.1em;
+            text-align:right;
+
+            /*background:lime;*/
+        }
+
+        #pnlCotacaoRapida p.DadosPrincipais span a
+        {
+            text-decoration:none;
+        }
+        
+        #pnlCotacaoRapida p.DadosPrincipais span a:hover
+        {
+            text-decoration:underline;
+        }
+        
+        #lblCotacoes_Dados_Ativo    { width:72px; text-align:left !important; }
+        #lblCotacoes_Dados_Ultima   { width:78px; }
+        #lblCotacoes_Dados_Variacao { width:55px; }
+
+    #pnlCotacaoRapida p.Abas
+    {
+        height:24px;
+
+        /*background:lime;*/
+        border-bottom:1px solid #c6c6c6;
+        
+    }
+    
+        #pnlCotacaoRapida p.Abas a
+        {
+            display:block;
+            float:left;
+
+            margin:4px 0px 0px 4px;
+            padding:3px 8px 0px 8px;
+
+            width:auto;
+            height:16px;
+
+            font-size:0.8em;
+            color:#4f4f4f;
+            text-decoration:none;
+            text-align:center;
+        }
+
+        #pnlCotacaoRapida p.Abas a.Selecionado
+        {
+            padding:2px 8px 1px 8px;
+
+            font-weight:bold;
+            color:#4f4f4f;
+
+            border:1px solid #c6c6c6;
+            border-bottom-color:#ececec;
+            
+            border-top-left-radius:3px;
+            border-top-right-radius:3px;
+            
+            background:#fff url(Img/Fundo-PaginaInicial-Abas.gif) repeat-x bottom left;
+        }
+
+
+    #pnlCotacaoRapida table
+    {
+        width:100%;
+        background:#ececec;
+    }
+    
+        #pnlCotacaoRapida table
+        {
+            height:171px;
+            border-bottom:1px solid #c6c6c6;
+        }
+        
+        #pnlCotacaoRapida table tbody th,
+        #pnlCotacaoRapida table tbody td
+        {
+            border-bottom:1px dotted #bababa;
+        }
+
+        #pnlCotacaoRapida table tbody th,
+        #tblConteudoSecundario_OfertasDeCompra thead tr td,
+        #tblConteudoSecundario_OfertasDeVenda  thead tr td
+        {
+            padding:3px 0px 3px 2em;
+
+            font-weight:normal;
+            font-size:0.7em;
+            color:#444;
+
+            text-align:left;
+        }
+
+        #pnlCotacaoRapida table tbody td
+        {
+            padding:2px 1em 2px 1em;
+
+            font-size:0.8em;
+            text-shadow:1px 1px #efefef;
+
+            text-align:right;
+        }
+
+        #pnlCotacaoRapida table tbody td:nth-child(1)
+        {
+            text-align:left;
+        }
+        
+        #pnlCotacaoRapida table tbody tr:nth-child(even) th,
+        #pnlCotacaoRapida table tbody tr:nth-child(even) td
+        {
+            background:#dfdfdf;
+        }
+
+        #pnlCotacaoRapida table tbody tr:last-child th,
+        #pnlCotacaoRapida table tbody tr:last-child td
+        {
+            border-bottom:none;
+        }
+
+
+#pnlBannerAnaliseGrafica
+{
+    display:block;
+
+    float:left;
+
+    width: 430px;
+    height: 68px;
+
+    background:url(Img/Imagem-Banner-MarcioNoronha.jpg) no-repeat top right;
+    border-top:  2px solid #bec4d9;
+    border-right:2px solid #c6c6c6;
+
+    cursor:pointer;
+}
+
+    #pnlBannerAnaliseGrafica span
+    {
+        position:relative;
+
+        font-size:0.9em;
+        font-weight:bold;
+        color:#293FDF;
+
+        left:84px;
+        top:45px;
+    }
+
+
+#pnlCotacoesFixas
+{
+    display:block;
+    float:left;
+
+    width: 290px;
+    height: 68px;
+
+    background:#f2f2f2;
+    border-top:2px solid #c6c6c6;
+}
+
+
+    #pnlCotacoesFixas div
+    {
+        display:block;
+        float:left;
+
+        width:  72px;
+        height: 66px;
+
+        background:url(Img/Divisoria-LinhaVerticalGradiente-Cinza.gif) no-repeat center right;
+    }
+
+        #pnlCotacoesFixas div h1
+        {
+            padding:4px 0px 2px 0px;
+
+            font-size:1.1em;
+            font-weight:normal;
+            color:#515a5f;
+
+            text-align:center;
+            text-shadow:1px 1px #fff;
+        }
+
+        #pnlCotacoesFixas div h2
+        {
+            padding:14px 0px 0px 0px;
+
+            font-size:1em;
+            font-weight:bold;
+            text-align:center;
+
+            background:url(Img/Icones-Setas-AcimaAbaixo-Coloridas-Grandes.png) no-repeat top center;
+        }
+
+        #pnlCotacoesFixas div h2.Zerado   { background-position: center -102px; color:#314989; }
+        #pnlCotacoesFixas div h2.Subindo  { background-position: center   -0px; color:#32690c; }
+        #pnlCotacoesFixas div h2.Descendo { background-position: center  -50px; color:#c13a24; }
+
+
+        #pnlCotacoesFixas div span
+        {
+            display:block;
+            width:100%;
+            padding:4px 0px 0px 0px;
+
+            text-align:center;
+            font-size:0.8em;
+        }
+
+
+#pnlTVGradual
+{
+    display:block;
+    float:left;
+
+    height:94px;
+    width:100%;
+
+    background:url(Img/Fundo-PaginaInicial-TVGradual.jpg) no-repeat;
+}
+
+    #lnkVejaProgramacaoCompleta
+    {
+        display:block;
+        float:left;
+
+        width:209px;
+        height:27px;
+
+        margin:54px 0px 0px 131px;
+
+        background:transparent url(Img/Botao-VejaProgramacaoCompleta.png) no-repeat;
+        border:none;
+        cursor:pointer;
+    }
+
+    #lnkVejaProgramacaoCompleta span { display:none; }
+
+    #pnlTVGradual div.pnlVideoEmDestaque
+    {
+        display:block;
+        float:right;
+        
+        margin:1px;
+
+        width:490px;
+        height:92px;
+    }
+
+        #pnlTVGradual div.pnlVideoEmDestaque img
+        {
+            display:block;
+            float:left;
+
+            width:100px;
+            height:75px;
+
+            margin:8px 10px 0 10px;
+        }
+        
+        #pnlTVGradual div.pnlVideoEmDestaque h4
+        {
+            display:block;
+            float:left;
+
+            width:350px;
+            height:26px;
+
+            padding:12px 0px 0px 8px;
+            font-size:1.2em;
+            font-weight:bold;
+            color:#fff;
+
+            text-shadow:0px 2px 1px #2e2f30;
+
+            overflow:hidden;
+        }
+    
+        #pnlTVGradual div.pnlVideoEmDestaque p
+        {
+            display:block;
+            float:left;
+
+            width:354px;
+            height:48px;
+
+            padding:5px 0 0 12px;
+
+            font-size:0.9em;
+            line-height:1.6em;
+        }
+
+
+            #pnlTVGradual div.pnlVideoEmDestaque p a
+            {
+                color:#fff;
+                text-decoration:none;
+            }
+            
+            #pnlTVGradual div.pnlVideoEmDestaque p a:hover
+            {
+                color:#d2d7ff;
+                text-decoration:underline;
+            }
+
+    #btnAssistaAgora
+    {
+        display:block;
+        float:right;
+
+        margin:-30px 4px 0 0;
+
+        width: 72px;
+        height:25px;
+
+        background:transparent url(Img/Botao-Assista.png) no-repeat;
+        border:none;
+        cursor:pointer;
+    }
+
+        #btnAssistaAgora span { display:none; }
+
+
+#pnlConteudoTerciario
+{
+    display:block;
+    
+    float:left;
+
+    border:none !important;
+    
+    
+    background: url(Img/Divisoria-Dupla-Cinza.gif) repeat-x top left,
+                url(Img/Divisoria-Dupla-Cinza.gif) repeat-x bottom left;
+
+    background-color:#f4f4f4;
+    
+    
+    
+}
+
+       
+    #pnlConteudoTerciario div
+    {
+        float:left;
+
+        width: 56px;
+        height:70px;
+
+        padding:12px 10px 0px 10px;
+
+        text-align:center;
+
+        background:url(Img/Divisoria-LinhaVerticalGradiente-Cinza.gif) no-repeat center right;
+    }
+
+        #pnlConteudoTerciario div h1
+        {
+            font-size:1.2em;
+            color:#656D71;
+        }
+    
+        #pnlConteudoTerciario div span
+        {
+            color:#84888A;
+            font-size:0.8em;
+        }
+    
+    #pnlConteudoTerciario .Subindo
+    {
+       color:#32690C;
+       font-size:1em;
+       background:url(Img/Icones-Setas-AcimaAbaixo-Coloridas-Grandes.png) no-repeat top center;
+       padding: 14px 0px 4px 0px;
+    }
+    
+    #pnlConteudoTerciario .Descendo
+    {
+        color:#C13A24;
+        font-size:1em;
+        background:url(Img/Icones-Setas-AcimaAbaixo-Coloridas-Grandes.png) no-repeat center -49px;
+        padding: 14px 0px 4px 0px;
+        
+    }
+    
+    #pnlConteudoTerciario .Zerado
+    {
+        color:#6180d6;
+        font-size:1em;
+        background:url(Img/Icones-Setas-AcimaAbaixo-Coloridas-Grandes.png) no-repeat center -102px;
+        padding: 14px 0px 4px 0px;
+    }
+    
+    
+    
+.ValorPositivo
+{
+    color:#4c8945 !important;
+}
+
+.ValorNegativo
+{
+    color:#ef1919 !important;
+}

@@ -1,0 +1,186 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaInterna.master.cs" Inherits="Gradual.Site.Www.PaginaInternaMaster" %>
+<%@ Register src="Resc/UserControls/MapaDoSite.ascx"       tagname="MapaDoSite"       tagprefix="ucMapa" %>
+<%@ Register src="Resc/UserControls/MenuPrincipal.ascx"    tagname="MenuPrincipal"    tagprefix="ucMenuPrincipal" %>
+<%@ Register src="Resc/UserControls/ModuloCMS.ascx"        tagname="ModuloCMS"        tagprefix="ucModuloCMS" %>
+<%@ Register src="Resc/UserControls/PainelDeBusca.ascx"    tagname="PainelDeBusca"    tagprefix="ucPainelDeBusca" %>
+<%@ Register src="Resc/UserControls/PainelDeLogin.ascx"    tagname="PainelDeLogin"    tagprefix="ucPainelDeLogin" %>
+<html>
+<head>
+        <title>Gradual Investimentos</title>
+
+        <meta name="keywords" content="investimentos, investir, home broker, wealth, management, trader, carteira, análise">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,700italic,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet" type="text/css">
+
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery-latest.min.js?v=<%=this.VersaoDoSite %>"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery-ui-1.10.js?v=<%=this.VersaoDoSite %>"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.json-2.2.js?v=<%=this.VersaoDoSite %>"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.validationEngine.js?v=<%=this.VersaoDoSite %>"></script>
+        <!--script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.validationEngine-en.js?v=<%=this.VersaoDoSite %>"></script-->
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.validationEngine-ptBR.js?v=<%=this.VersaoDoSite %>"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.maskedinput-1.2.2.js?v=<%=this.VersaoDoSite %>"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.iframe-transport.js?v=<%=this.VersaoDoSite %>"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.fileupload.js?v=<%=this.VersaoDoSite %>"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jHtmlArea-0.8.min.js?v=<%=this.VersaoDoSite %>"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.ui.datepicker-pt-BR.js?v=<%=this.VersaoDoSite %>"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.password-min.js?v=<%=this.VersaoDoSite %>"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jshashtable-2.1.js?v=<%=this.VersaoDoSite %>"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.numberformatter.js?v=<%=this.VersaoDoSite %>"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.maskMoney.js?v=<%=this.VersaoDoSite %>"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.caret.1.02.js?v=<%=this.VersaoDoSite %>"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.keyboard.min.js?v=<%=this.VersaoDoSite %>"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/unslider.min.js?v=<%=this.VersaoDoSite %>"></script>
+
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.flot.js" type="text/javascript"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.flot.pie.js" type="text/javascript"></script>
+        <%--<script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.flot.canvas.js" type="text/javascript"></script>--%>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.flot.tooltip.js?v=<%=this.VersaoDoSite %>"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.flot.selection.js"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.flot.resize.js" type="text/javascript"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.flot.time.js" type="text/javascript"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Lib/jquery.flot.orderBars.js" type="text/javascript"></script>
+        
+
+
+        <%--<script src="../Js/Lib/jquery.keyboard.min.js" type="text/javascript"></script> --%>
+        
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Site/00-Base.js?v=<%=this.VersaoDoSite %>"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Site/01-Principal.js?v=<%=this.VersaoDoSite %>"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Site/02-ModuloCMS-Base.js?v=<%=this.VersaoDoSite %>"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Site/02-ModuloCMS-ConteudoDinamico.js?v=<%=this.VersaoDoSite %>"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Site/02-ModuloCMS-Widgets.js?v=<%=this.VersaoDoSite %>"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Site/05-Carrinho.js?v=<%=this.VersaoDoSite %>"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Site/43-Cadastro.js?v=<%=this.VersaoDoSite %>"></script>
+        <%--<script src="<%= this.RaizDoSite %>/Resc/Js/Site/icheck.js"></script>
+        <script src="<%= this.RaizDoSite %>/Resc/Js/Site/jcaroul.js"></script>--%>
+        
+        <link rel="Stylesheet" type="text/css" href="<%= this.RaizDoSite %>/Resc/Skin/<%=this.SkinEmUso %>/01-Principal.css?v=<%=this.VersaoDoSite %>" />
+
+        <link rel="Stylesheet" type="text/css" href="<%= this.RaizDoSite %>/Resc/Skin/<%=this.SkinEmUso %>/02-ModuloCMS.css?v=<%=this.VersaoDoSite %>" />
+
+        <link rel="Stylesheet" type="text/css" href="<%= this.RaizDoSite %>/Resc/Skin/<%=this.SkinEmUso %>/42-PaginaInicial.css?v=<%=this.VersaoDoSite %>" />
+        <%--<link rel="Stylesheet" type="text/css" href="<%= this.RaizDoSite %>/Resc/Skin/<%=this.SkinEmUso %>/45-keyboard.css?v=<%=this.VersaoDoSite %>" />--%>
+
+        <link rel="Stylesheet" type="text/css" href="<%= this.RaizDoSite %>/Resc/Skin/<%=this.SkinEmUso %>/48-keyboard-New.css?v=<%=this.VersaoDoSite %>" />
+        <%--<link rel="Stylesheet" type="text/css" href="<%= this.RaizDoSite %>/Resc/Skin/<%=this.SkinEmUso %>/TemaJQueryUI/Gradual-JQueryUI.custom.css?v=<%=this.VersaoDoSite %>" />--%>
+
+        <% if(Request.Browser.Browser.ToLower() == "internetexplorer") { %>
+        <link rel="Stylesheet" media="screen" href="<%= this.RaizDoSite %>/Resc/Skin/<%= this.SkinEmUso %>/99-IE.css?v=<%= this.VersaoDoSite %>&ms=<%= new Random().Next(1, 9999) %>" />
+        <% } %>
+
+    <% if (this.EPaginaDoMinhaConta)
+       {
+    %>
+
+        <script language="javascript" src="<%= this.RaizDoSite %>/Resc/Js/Site/04-MinhaConta-Ordens.js?v=<%=this.VersaoDoSite %>"></script>
+        <script language="javascript" src="<%= this.RaizDoSite %>/Resc/Js/Site/03-MinhaConta.js?v=<%=this.VersaoDoSite %>"></script>
+        <script language="javascript" src="<%= this.RaizDoSite %>/Resc/Js/Lib/Raphael/raphael.js?v=<%=this.VersaoDoSite %>"></script>
+        <script language="javascript" src="<%= this.RaizDoSite %>/Resc/Js/Lib/Raphael/g.raphael-min.js?v=<%=this.VersaoDoSite %>"></script>
+        <script language="javascript" src="<%= this.RaizDoSite %>/Resc/Js/Lib/Raphael/g.pie.js?v=<%=this.VersaoDoSite %>"></script>
+
+    <% } %>
+    
+    <asp:contentplaceholder id="ExtraStylesAndScripts" runat="server" />
+
+</head>
+
+<body onload="PaginaInterna_Load()">
+    
+
+
+
+
+    <form id="form1" runat="server">
+    
+        <!-- header -->
+        <div id="header">
+            <div class="inner">
+
+            <%--<ucPainelDeLogin:PainelDeLogin id="ucPainelDeLogin1" runat="server" AparecerVisivel="true" />--%>
+
+            </div>
+        </div>
+        <!-- fim header -->
+
+        <ucMenuPrincipal:MenuPrincipal id="ucMenuPrincipal1" runat="server" />
+
+        <!-- sub-menu -->
+        <ul id="mnuWealth" runat="server" class="sub-menu clear">
+            <li><a href="<%= this.RaizDoSite %>/Atuacao/Corretora.aspx">         <img src="<%= this.RaizDoSite %>/Resc/Skin/Default/Img/btn-corretora.png" alt="Gradual Corretora" /></a></li>
+            <li><a href="<%= this.RaizDoSite %>/Atuacao/Wealth.aspx">            <img src="<%= this.RaizDoSite %>/Resc/Skin/Default/Img/btn-wealth.png" alt="Wealth Management" /></a></li>
+            <li><a href="<%= this.RaizDoSite %>/Atuacao/FinancialAdvisory.aspx"> <img src="<%= this.RaizDoSite %>/Resc/Skin/Default/Img/btn-financial.png" alt="Financial Advisory" /></a></li>
+            <li><a href="<%= this.RaizDoSite %>/Atuacao/Asset.aspx">   <img src="<%= this.RaizDoSite %>/Resc/Skin/Default/Img/btn-asset.png" alt="Asset Management" /></a></li>
+        </ul>  
+        <!-- fim sub-menu -->
+
+        <div id="pnlBreadCrumb" runat="server" class="inner">
+
+            <ul id="breadcrumb">
+                <li><a href="#">Inicial</a></li>
+                <li id="liCrumb1" runat="server"><a href="<%= this.Crumb1Link %>"><%= this.Crumb1Text %></a></li>
+                <li id="liCrumb2" runat="server"><a href="<%= this.Crumb2Link %>"><%= this.Crumb2Text %></a></li>
+                <li id="liCrumb3" runat="server"><a href="<%= this.Crumb3Link %>"><%= this.Crumb3Text %></a></li>
+            </ul>
+        </div>
+
+        <!--div id="conteudo" class=""-->
+
+        <asp:contentplaceholder ID="ContentPlaceHolder1" runat="server"></asp:contentplaceholder>
+
+        <!--/div-->
+
+    <ucModuloCMS:ModuloCMS id="ModuloCMS" runat="server" />
+
+    <input type="hidden" id="hidRaiz" value="<%= this.HostERaiz %>" />
+    <input type="hidden" id="hidIdDaPagina" value="<%= this.IdDaPagina %>" />
+    <input type="hidden" id="hidIdDaEstrutura" value="<%= this.IdDaEstrutura %>" />
+    <input type="hidden" id="hidExibindoUmItem" value="<%= this.ExibindoUmItem %>" />
+    <input type="hidden" id="hidDadosDoCarrinho" value="<%= this.DadosDoCarrinho %>" />
+    <input type="hidden" id="Token" value="" />
+    <input type="hidden" id="TokenType" value="" />
+    <input type="hidden" id="Host" value="" />
+
+    <script language='javascript'>
+
+        function Page_Load_CodeBehind()
+        {
+            <asp:literal id="litJavascriptOnLoad" runat="server"></asp:literal>
+        }
+
+    </script>
+
+    <input type="hidden" id="hidServerData" runat="server" />
+
+    <div id="pnlRelatorioDePerformance" runat="server" visible="false" onclick="return pnlRelatorioDePerformance_Click(this)"></div>
+
+	<div id="pnlMensagemContainer" style="display:none">
+        <div id="pnlMensagem">
+            <a href="#" onclick="return GradSite_RetornarMensagemAoEstadoNormal()" title="Fechar" class="Fechar"> x </a>
+
+            <p>Mensagem de Alerta porque alguma coisa aconteceu.</p>
+
+            <p>
+                <button class="botao btn-padrao btn-erica" onclick="return GradSite_RetornarMensagemAoEstadoNormal()">ok</button>
+            </p>
+        </div>
+
+        <div id="pnlMensagemAdicional" style="display:none">
+
+            <textarea readonly="readonly">Varios outros erros são possíveis</textarea>
+
+        </div>
+    </div>
+
+
+    </form>
+
+
+
+
+    
+</body>
+</html>
+

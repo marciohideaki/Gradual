@@ -1,0 +1,336 @@
+2017-12-27 12:35:07,988 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:35:07,994 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:35:07,994 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC]
+2017-12-27 12:35:07,994 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC
+2017-12-27 12:35:07,994 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.PosicaoBTC.Lib.IServicoPosicaoBTC, Gradual.OMS.PosicaoBTC.Lib
+2017-12-27 12:35:07,994 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.PosicaoBTC.Lib.IServicoPosicaoBTC, Gradual.OMS.PosicaoBTC.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:35:07,995 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:35:07,995 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:35:08,059 [5] INFO  Gradual.Site.Www.PaginaBase - Recebido PaginaDinamica.aspx?url=default.aspx?
+2017-12-27 12:35:08,093 [5] DEBUG Gradual.OMS.Library.Servicos.ServicoHost - CarregarConfig(): Carregando configuracoes para (Desenvolvimento)
+2017-12-27 12:35:08,093 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Parando Serviço: Gradual.OMS.Persistencia.ServicoPersistencia
+2017-12-27 12:35:08,094 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Parando Serviço: Gradual.OMS.Seguranca.ServicoSeguranca
+2017-12-27 12:35:08,094 [5] INFO  Gradual.OMS.Seguranca.ServicoSeguranca - Finalizando servico Seguranca
+2017-12-27 12:35:08,094 [5] INFO  Gradual.OMS.Seguranca.ServicoSeguranca - Salvando Sessoes ativas, aguarde
+2017-12-27 12:35:08,095 [5] INFO  Gradual.OMS.Seguranca.ServicoSeguranca - Salvando 0 sessoes.
+2017-12-27 12:35:08,120 [5] ERROR Gradual.OMS.Seguranca.ServicoSeguranca - SaveSessions(): Não foi possível localizar uma parte do caminho 'D:\Gradual\Source\Gradual.Site-II\Gradual.Site-II.Www\'.
+System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'D:\Gradual\Source\Gradual.Site-II\Gradual.Site-II.Www\'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   em System.IO.File.Open(String path, FileMode mode)
+   em Gradual.OMS.Seguranca.ServicoSeguranca.SaveSessions() na D:\Gradual\Source\Gradual.OMS-II\Gradual.OMS.Seguranca\Gradual.OMS.Seguranca\ServicoSeguranca.cs:linha 2264
+2017-12-27 12:35:08,123 [5] INFO  Gradual.OMS.Seguranca.ServicoSeguranca - Servico Seguranca Finalizado
+2017-12-27 12:35:08,123 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Parando Serviço: Gradual.OMS.PlanoCliente.ServicoPlanoCliente
+2017-12-27 12:35:08,123 [5] INFO  Gradual.OMS.PlanoCliente.ServicoPlanoCliente - Parando o serviço de Planos do cliente
+2017-12-27 12:35:08,123 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2017-12-27 12:35:08,123 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - WCF Base Address: System.Collections.Generic.List`1[System.String]
+2017-12-27 12:35:08,123 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - MEX Base Address: 
+2017-12-27 12:35:08,123 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia]
+2017-12-27 12:35:08,123 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia
+2017-12-27 12:35:08,123 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia
+2017-12-27 12:35:08,123 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia nao encontrada direto, usando Type.GetType()
+2017-12-27 12:35:08,123 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:35:08,123 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:35:08,123 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia é controlavel.
+2017-12-27 12:35:08,123 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Sistemas.Comum.ServicoPersistencia, Gradual.OMS.Sistemas.Comum]
+2017-12-27 12:35:08,123 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Sistemas.Comum.ServicoPersistencia, Gradual.OMS.Sistemas.Comum
+2017-12-27 12:35:08,123 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Contratos.Comum.IServicoPersistencia, Gradual.OMS.Contratos.Comum
+2017-12-27 12:35:08,123 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Contratos.Comum.IServicoPersistencia, Gradual.OMS.Contratos.Comum nao encontrada direto, usando Type.GetType()
+2017-12-27 12:35:08,124 [5] ERROR Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Contratos.Comum.IServicoPersistencia, Gradual.OMS.Contratos.Comum nao encontrada em nenhum dos assemblies.
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.PlanoCliente.ServicoPlanoCliente, Gradual.OMS.PlanoCliente]
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.PlanoCliente.ServicoPlanoCliente, Gradual.OMS.PlanoCliente
+2017-12-27 12:35:08,124 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.PlanoCliente.Lib.IServicoPlanoCliente, Gradual.OMS.PlanoCliente.Lib
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.PlanoCliente.Lib.IServicoPlanoCliente, Gradual.OMS.PlanoCliente.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.PlanoCliente.ServicoPlanoCliente, Gradual.OMS.PlanoCliente é controlavel.
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados]
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados
+2017-12-27 12:35:08,124 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos nao encontrada direto, usando Type.GetType()
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Site.DbLib.Persistencias.ServicoPersistenciaSite, Gradual.Site.DbLib]
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Site.DbLib.Persistencias.ServicoPersistenciaSite, Gradual.Site.DbLib
+2017-12-27 12:35:08,124 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.Site.DbLib.IServicoPersistenciaSite, Gradual.Site.DbLib
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Site.DbLib.IServicoPersistenciaSite, Gradual.Site.DbLib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Seguranca.ServicoSegurancaPersistencia, Gradual.OMS.Seguranca]
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Seguranca.ServicoSegurancaPersistencia, Gradual.OMS.Seguranca
+2017-12-27 12:35:08,124 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Seguranca.Lib.IServicoSegurancaPersistencia, Gradual.OMS.Seguranca.Lib
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Seguranca.Lib.IServicoSegurancaPersistencia, Gradual.OMS.Seguranca.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Seguranca.ServicoSeguranca, Gradual.OMS.Seguranca]
+2017-12-27 12:35:08,124 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Seguranca.ServicoSeguranca, Gradual.OMS.Seguranca
+2017-12-27 12:35:08,124 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Seguranca.Lib.IServicoSeguranca, Gradual.OMS.Seguranca.Lib
+2017-12-27 12:35:08,125 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Seguranca.Lib.IServicoSeguranca, Gradual.OMS.Seguranca.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:35:08,125 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:35:08,125 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:35:08,125 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.Seguranca.ServicoSeguranca, Gradual.OMS.Seguranca é controlavel.
+2017-12-27 12:35:08,125 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Servico.FichaCadastral.ServicoFichaCadastral,  Gradual.Servico.FichaCadastral]
+2017-12-27 12:35:08,125 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Servico.FichaCadastral.ServicoFichaCadastral,  Gradual.Servico.FichaCadastral
+2017-12-27 12:35:08,125 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.Servico.FichaCadastral.Lib.IServicoFichaCadastral, Gradual.Servico.FichaCadastral.Lib
+2017-12-27 12:35:08,125 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Servico.FichaCadastral.Lib.IServicoFichaCadastral, Gradual.Servico.FichaCadastral.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:35:08,128 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:35:08,128 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:35:08,128 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC]
+2017-12-27 12:35:08,128 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC
+2017-12-27 12:35:08,128 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.PosicaoBTC.Lib.IServicoPosicaoBTC, Gradual.OMS.PosicaoBTC.Lib
+2017-12-27 12:35:08,128 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.PosicaoBTC.Lib.IServicoPosicaoBTC, Gradual.OMS.PosicaoBTC.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:35:08,128 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:35:08,128 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:35:08,131 [5] DEBUG Gradual.OMS.Library.Servicos.ServicoHost - CarregarConfig(): Carregando configuracoes para (Desenvolvimento)
+2017-12-27 12:35:08,131 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Parando Serviço: Gradual.OMS.Persistencia.ServicoPersistencia
+2017-12-27 12:35:08,131 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Parando Serviço: Gradual.OMS.Seguranca.ServicoSeguranca
+2017-12-27 12:35:08,131 [5] INFO  Gradual.OMS.Seguranca.ServicoSeguranca - Finalizando servico Seguranca
+2017-12-27 12:35:08,131 [5] INFO  Gradual.OMS.Seguranca.ServicoSeguranca - Salvando Sessoes ativas, aguarde
+2017-12-27 12:35:08,131 [5] INFO  Gradual.OMS.Seguranca.ServicoSeguranca - Salvando 0 sessoes.
+2017-12-27 12:35:08,145 [5] ERROR Gradual.OMS.Seguranca.ServicoSeguranca - SaveSessions(): Não foi possível localizar uma parte do caminho 'D:\Gradual\Source\Gradual.Site-II\Gradual.Site-II.Www\'.
+System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'D:\Gradual\Source\Gradual.Site-II\Gradual.Site-II.Www\'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   em System.IO.File.Open(String path, FileMode mode)
+   em Gradual.OMS.Seguranca.ServicoSeguranca.SaveSessions() na D:\Gradual\Source\Gradual.OMS-II\Gradual.OMS.Seguranca\Gradual.OMS.Seguranca\ServicoSeguranca.cs:linha 2264
+2017-12-27 12:35:08,145 [5] INFO  Gradual.OMS.Seguranca.ServicoSeguranca - Servico Seguranca Finalizado
+2017-12-27 12:35:08,145 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Parando Serviço: Gradual.OMS.PlanoCliente.ServicoPlanoCliente
+2017-12-27 12:35:08,145 [5] INFO  Gradual.OMS.PlanoCliente.ServicoPlanoCliente - Parando o serviço de Planos do cliente
+2017-12-27 12:35:08,145 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2017-12-27 12:35:08,145 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - WCF Base Address: System.Collections.Generic.List`1[System.String]
+2017-12-27 12:35:08,145 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - MEX Base Address: 
+2017-12-27 12:35:08,145 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia]
+2017-12-27 12:35:08,145 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia
+2017-12-27 12:35:08,145 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia
+2017-12-27 12:35:08,146 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia nao encontrada direto, usando Type.GetType()
+2017-12-27 12:35:08,146 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:35:08,146 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:35:08,146 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia é controlavel.
+2017-12-27 12:35:08,146 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Sistemas.Comum.ServicoPersistencia, Gradual.OMS.Sistemas.Comum]
+2017-12-27 12:35:08,146 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Sistemas.Comum.ServicoPersistencia, Gradual.OMS.Sistemas.Comum
+2017-12-27 12:35:08,146 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Contratos.Comum.IServicoPersistencia, Gradual.OMS.Contratos.Comum
+2017-12-27 12:35:08,146 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Contratos.Comum.IServicoPersistencia, Gradual.OMS.Contratos.Comum nao encontrada direto, usando Type.GetType()
+2017-12-27 12:35:08,146 [5] ERROR Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Contratos.Comum.IServicoPersistencia, Gradual.OMS.Contratos.Comum nao encontrada em nenhum dos assemblies.
+2017-12-27 12:35:08,146 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.PlanoCliente.ServicoPlanoCliente, Gradual.OMS.PlanoCliente]
+2017-12-27 12:35:08,146 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.PlanoCliente.ServicoPlanoCliente, Gradual.OMS.PlanoCliente
+2017-12-27 12:35:08,146 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.PlanoCliente.Lib.IServicoPlanoCliente, Gradual.OMS.PlanoCliente.Lib
+2017-12-27 12:35:08,146 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.PlanoCliente.Lib.IServicoPlanoCliente, Gradual.OMS.PlanoCliente.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:35:08,146 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:35:08,146 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:35:08,146 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.PlanoCliente.ServicoPlanoCliente, Gradual.OMS.PlanoCliente é controlavel.
+2017-12-27 12:35:08,146 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados]
+2017-12-27 12:35:08,146 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados
+2017-12-27 12:35:08,146 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos
+2017-12-27 12:35:08,147 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos nao encontrada direto, usando Type.GetType()
+2017-12-27 12:35:08,147 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:35:08,147 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:35:08,147 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Site.DbLib.Persistencias.ServicoPersistenciaSite, Gradual.Site.DbLib]
+2017-12-27 12:35:08,147 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Site.DbLib.Persistencias.ServicoPersistenciaSite, Gradual.Site.DbLib
+2017-12-27 12:35:08,147 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.Site.DbLib.IServicoPersistenciaSite, Gradual.Site.DbLib
+2017-12-27 12:35:08,147 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Site.DbLib.IServicoPersistenciaSite, Gradual.Site.DbLib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:35:08,147 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:35:08,147 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:35:08,147 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Seguranca.ServicoSegurancaPersistencia, Gradual.OMS.Seguranca]
+2017-12-27 12:35:08,147 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Seguranca.ServicoSegurancaPersistencia, Gradual.OMS.Seguranca
+2017-12-27 12:35:08,147 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Seguranca.Lib.IServicoSegurancaPersistencia, Gradual.OMS.Seguranca.Lib
+2017-12-27 12:35:08,147 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Seguranca.Lib.IServicoSegurancaPersistencia, Gradual.OMS.Seguranca.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:35:08,147 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:35:08,147 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:35:08,147 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Seguranca.ServicoSeguranca, Gradual.OMS.Seguranca]
+2017-12-27 12:35:08,147 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Seguranca.ServicoSeguranca, Gradual.OMS.Seguranca
+2017-12-27 12:35:08,147 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Seguranca.Lib.IServicoSeguranca, Gradual.OMS.Seguranca.Lib
+2017-12-27 12:35:08,147 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Seguranca.Lib.IServicoSeguranca, Gradual.OMS.Seguranca.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:35:08,147 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:35:08,147 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:35:08,147 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.Seguranca.ServicoSeguranca, Gradual.OMS.Seguranca é controlavel.
+2017-12-27 12:35:08,147 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Servico.FichaCadastral.ServicoFichaCadastral,  Gradual.Servico.FichaCadastral]
+2017-12-27 12:35:08,147 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Servico.FichaCadastral.ServicoFichaCadastral,  Gradual.Servico.FichaCadastral
+2017-12-27 12:35:08,147 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.Servico.FichaCadastral.Lib.IServicoFichaCadastral, Gradual.Servico.FichaCadastral.Lib
+2017-12-27 12:35:08,147 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Servico.FichaCadastral.Lib.IServicoFichaCadastral, Gradual.Servico.FichaCadastral.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:35:08,154 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:35:08,155 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:35:08,155 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC]
+2017-12-27 12:35:08,155 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC
+2017-12-27 12:35:08,155 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.PosicaoBTC.Lib.IServicoPosicaoBTC, Gradual.OMS.PosicaoBTC.Lib
+2017-12-27 12:35:08,155 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.PosicaoBTC.Lib.IServicoPosicaoBTC, Gradual.OMS.PosicaoBTC.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:35:08,155 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:35:08,155 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:35:25,832 [5] INFO  Gradual.Site.Www.PaginaBase - Recebido PaginaDinamica.aspx?url=Investimentos/CambioSemOperacao.aspx
+2017-12-27 12:35:35,848 [5] INFO  Gradual.Site.Www.PaginaBase - 
+2017-12-27 12:37:07,248 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:37:07,255 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:37:07,255 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC]
+2017-12-27 12:37:07,255 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC
+2017-12-27 12:37:07,255 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.PosicaoBTC.Lib.IServicoPosicaoBTC, Gradual.OMS.PosicaoBTC.Lib
+2017-12-27 12:37:07,255 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.PosicaoBTC.Lib.IServicoPosicaoBTC, Gradual.OMS.PosicaoBTC.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:37:07,289 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:37:07,289 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:37:07,349 [5] INFO  Gradual.Site.Www.PaginaBase - Recebido PaginaDinamica.aspx?url=default.aspx?
+2017-12-27 12:37:07,380 [5] DEBUG Gradual.OMS.Library.Servicos.ServicoHost - CarregarConfig(): Carregando configuracoes para (Desenvolvimento)
+2017-12-27 12:37:07,380 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Parando Serviço: Gradual.OMS.Persistencia.ServicoPersistencia
+2017-12-27 12:37:07,381 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Parando Serviço: Gradual.OMS.Seguranca.ServicoSeguranca
+2017-12-27 12:37:07,381 [5] INFO  Gradual.OMS.Seguranca.ServicoSeguranca - Finalizando servico Seguranca
+2017-12-27 12:37:07,381 [5] INFO  Gradual.OMS.Seguranca.ServicoSeguranca - Salvando Sessoes ativas, aguarde
+2017-12-27 12:37:07,381 [5] INFO  Gradual.OMS.Seguranca.ServicoSeguranca - Salvando 0 sessoes.
+2017-12-27 12:37:07,409 [5] ERROR Gradual.OMS.Seguranca.ServicoSeguranca - SaveSessions(): Não foi possível localizar uma parte do caminho 'D:\Gradual\Source\Gradual.Site-II\Gradual.Site-II.Www\'.
+System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'D:\Gradual\Source\Gradual.Site-II\Gradual.Site-II.Www\'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   em System.IO.File.Open(String path, FileMode mode)
+   em Gradual.OMS.Seguranca.ServicoSeguranca.SaveSessions() na D:\Gradual\Source\Gradual.OMS-II\Gradual.OMS.Seguranca\Gradual.OMS.Seguranca\ServicoSeguranca.cs:linha 2264
+2017-12-27 12:37:07,411 [5] INFO  Gradual.OMS.Seguranca.ServicoSeguranca - Servico Seguranca Finalizado
+2017-12-27 12:37:07,411 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Parando Serviço: Gradual.OMS.PlanoCliente.ServicoPlanoCliente
+2017-12-27 12:37:07,411 [5] INFO  Gradual.OMS.PlanoCliente.ServicoPlanoCliente - Parando o serviço de Planos do cliente
+2017-12-27 12:37:07,411 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2017-12-27 12:37:07,411 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - WCF Base Address: System.Collections.Generic.List`1[System.String]
+2017-12-27 12:37:07,411 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - MEX Base Address: 
+2017-12-27 12:37:07,411 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia]
+2017-12-27 12:37:07,411 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia
+2017-12-27 12:37:07,411 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia
+2017-12-27 12:37:07,411 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia nao encontrada direto, usando Type.GetType()
+2017-12-27 12:37:07,411 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:37:07,411 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:37:07,411 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia é controlavel.
+2017-12-27 12:37:07,411 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Sistemas.Comum.ServicoPersistencia, Gradual.OMS.Sistemas.Comum]
+2017-12-27 12:37:07,411 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Sistemas.Comum.ServicoPersistencia, Gradual.OMS.Sistemas.Comum
+2017-12-27 12:37:07,411 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Contratos.Comum.IServicoPersistencia, Gradual.OMS.Contratos.Comum
+2017-12-27 12:37:07,411 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Contratos.Comum.IServicoPersistencia, Gradual.OMS.Contratos.Comum nao encontrada direto, usando Type.GetType()
+2017-12-27 12:37:07,412 [5] ERROR Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Contratos.Comum.IServicoPersistencia, Gradual.OMS.Contratos.Comum nao encontrada em nenhum dos assemblies.
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.PlanoCliente.ServicoPlanoCliente, Gradual.OMS.PlanoCliente]
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.PlanoCliente.ServicoPlanoCliente, Gradual.OMS.PlanoCliente
+2017-12-27 12:37:07,412 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.PlanoCliente.Lib.IServicoPlanoCliente, Gradual.OMS.PlanoCliente.Lib
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.PlanoCliente.Lib.IServicoPlanoCliente, Gradual.OMS.PlanoCliente.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.PlanoCliente.ServicoPlanoCliente, Gradual.OMS.PlanoCliente é controlavel.
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados]
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados
+2017-12-27 12:37:07,412 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos nao encontrada direto, usando Type.GetType()
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Site.DbLib.Persistencias.ServicoPersistenciaSite, Gradual.Site.DbLib]
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Site.DbLib.Persistencias.ServicoPersistenciaSite, Gradual.Site.DbLib
+2017-12-27 12:37:07,412 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.Site.DbLib.IServicoPersistenciaSite, Gradual.Site.DbLib
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Site.DbLib.IServicoPersistenciaSite, Gradual.Site.DbLib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Seguranca.ServicoSegurancaPersistencia, Gradual.OMS.Seguranca]
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Seguranca.ServicoSegurancaPersistencia, Gradual.OMS.Seguranca
+2017-12-27 12:37:07,412 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Seguranca.Lib.IServicoSegurancaPersistencia, Gradual.OMS.Seguranca.Lib
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Seguranca.Lib.IServicoSegurancaPersistencia, Gradual.OMS.Seguranca.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Seguranca.ServicoSeguranca, Gradual.OMS.Seguranca]
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Seguranca.ServicoSeguranca, Gradual.OMS.Seguranca
+2017-12-27 12:37:07,412 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Seguranca.Lib.IServicoSeguranca, Gradual.OMS.Seguranca.Lib
+2017-12-27 12:37:07,412 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Seguranca.Lib.IServicoSeguranca, Gradual.OMS.Seguranca.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:37:07,413 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:37:07,413 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:37:07,413 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.Seguranca.ServicoSeguranca, Gradual.OMS.Seguranca é controlavel.
+2017-12-27 12:37:07,413 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Servico.FichaCadastral.ServicoFichaCadastral,  Gradual.Servico.FichaCadastral]
+2017-12-27 12:37:07,413 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Servico.FichaCadastral.ServicoFichaCadastral,  Gradual.Servico.FichaCadastral
+2017-12-27 12:37:07,413 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.Servico.FichaCadastral.Lib.IServicoFichaCadastral, Gradual.Servico.FichaCadastral.Lib
+2017-12-27 12:37:07,413 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Servico.FichaCadastral.Lib.IServicoFichaCadastral, Gradual.Servico.FichaCadastral.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:37:07,415 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:37:07,415 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:37:07,415 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC]
+2017-12-27 12:37:07,415 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC
+2017-12-27 12:37:07,415 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.PosicaoBTC.Lib.IServicoPosicaoBTC, Gradual.OMS.PosicaoBTC.Lib
+2017-12-27 12:37:07,415 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.PosicaoBTC.Lib.IServicoPosicaoBTC, Gradual.OMS.PosicaoBTC.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:37:07,416 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:37:07,416 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:37:07,438 [5] DEBUG Gradual.OMS.Library.Servicos.ServicoHost - CarregarConfig(): Carregando configuracoes para (Desenvolvimento)
+2017-12-27 12:37:07,438 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Parando Serviço: Gradual.OMS.Persistencia.ServicoPersistencia
+2017-12-27 12:37:07,439 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Parando Serviço: Gradual.OMS.Seguranca.ServicoSeguranca
+2017-12-27 12:37:07,439 [5] INFO  Gradual.OMS.Seguranca.ServicoSeguranca - Finalizando servico Seguranca
+2017-12-27 12:37:07,439 [5] INFO  Gradual.OMS.Seguranca.ServicoSeguranca - Salvando Sessoes ativas, aguarde
+2017-12-27 12:37:07,439 [5] INFO  Gradual.OMS.Seguranca.ServicoSeguranca - Salvando 0 sessoes.
+2017-12-27 12:37:07,455 [5] ERROR Gradual.OMS.Seguranca.ServicoSeguranca - SaveSessions(): Não foi possível localizar uma parte do caminho 'D:\Gradual\Source\Gradual.Site-II\Gradual.Site-II.Www\'.
+System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'D:\Gradual\Source\Gradual.Site-II\Gradual.Site-II.Www\'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   em System.IO.File.Open(String path, FileMode mode)
+   em Gradual.OMS.Seguranca.ServicoSeguranca.SaveSessions() na D:\Gradual\Source\Gradual.OMS-II\Gradual.OMS.Seguranca\Gradual.OMS.Seguranca\ServicoSeguranca.cs:linha 2264
+2017-12-27 12:37:07,455 [5] INFO  Gradual.OMS.Seguranca.ServicoSeguranca - Servico Seguranca Finalizado
+2017-12-27 12:37:07,455 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Parando Serviço: Gradual.OMS.PlanoCliente.ServicoPlanoCliente
+2017-12-27 12:37:07,455 [5] INFO  Gradual.OMS.PlanoCliente.ServicoPlanoCliente - Parando o serviço de Planos do cliente
+2017-12-27 12:37:07,455 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - *** Todos os serviços parados ***
+2017-12-27 12:37:07,455 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - WCF Base Address: System.Collections.Generic.List`1[System.String]
+2017-12-27 12:37:07,455 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - MEX Base Address: 
+2017-12-27 12:37:07,455 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia]
+2017-12-27 12:37:07,455 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia
+2017-12-27 12:37:07,455 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia
+2017-12-27 12:37:07,455 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Persistencia.IServicoPersistencia, Gradual.OMS.Persistencia nao encontrada direto, usando Type.GetType()
+2017-12-27 12:37:07,456 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:37:07,456 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:37:07,456 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.Persistencia.ServicoPersistencia, Gradual.OMS.Persistencia é controlavel.
+2017-12-27 12:37:07,456 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Sistemas.Comum.ServicoPersistencia, Gradual.OMS.Sistemas.Comum]
+2017-12-27 12:37:07,456 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Sistemas.Comum.ServicoPersistencia, Gradual.OMS.Sistemas.Comum
+2017-12-27 12:37:07,456 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Contratos.Comum.IServicoPersistencia, Gradual.OMS.Contratos.Comum
+2017-12-27 12:37:07,456 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Contratos.Comum.IServicoPersistencia, Gradual.OMS.Contratos.Comum nao encontrada direto, usando Type.GetType()
+2017-12-27 12:37:07,456 [5] ERROR Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Contratos.Comum.IServicoPersistencia, Gradual.OMS.Contratos.Comum nao encontrada em nenhum dos assemblies.
+2017-12-27 12:37:07,456 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.PlanoCliente.ServicoPlanoCliente, Gradual.OMS.PlanoCliente]
+2017-12-27 12:37:07,456 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.PlanoCliente.ServicoPlanoCliente, Gradual.OMS.PlanoCliente
+2017-12-27 12:37:07,456 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.PlanoCliente.Lib.IServicoPlanoCliente, Gradual.OMS.PlanoCliente.Lib
+2017-12-27 12:37:07,456 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.PlanoCliente.Lib.IServicoPlanoCliente, Gradual.OMS.PlanoCliente.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:37:07,456 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:37:07,456 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:37:07,456 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.PlanoCliente.ServicoPlanoCliente, Gradual.OMS.PlanoCliente é controlavel.
+2017-12-27 12:37:07,456 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados]
+2017-12-27 12:37:07,456 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Intranet.Servicos.BancoDeDados.ServicoPersistenciaCadastro, Gradual.Intranet.Servicos.BancoDeDados
+2017-12-27 12:37:07,456 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos
+2017-12-27 12:37:07,456 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Intranet.Contratos.IServicoPersistenciaCadastro, Gradual.Intranet.Contratos nao encontrada direto, usando Type.GetType()
+2017-12-27 12:37:07,456 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:37:07,456 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:37:07,456 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Site.DbLib.Persistencias.ServicoPersistenciaSite, Gradual.Site.DbLib]
+2017-12-27 12:37:07,456 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Site.DbLib.Persistencias.ServicoPersistenciaSite, Gradual.Site.DbLib
+2017-12-27 12:37:07,456 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.Site.DbLib.IServicoPersistenciaSite, Gradual.Site.DbLib
+2017-12-27 12:37:07,456 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Site.DbLib.IServicoPersistenciaSite, Gradual.Site.DbLib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:37:07,457 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:37:07,457 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:37:07,457 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Seguranca.ServicoSegurancaPersistencia, Gradual.OMS.Seguranca]
+2017-12-27 12:37:07,457 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Seguranca.ServicoSegurancaPersistencia, Gradual.OMS.Seguranca
+2017-12-27 12:37:07,457 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Seguranca.Lib.IServicoSegurancaPersistencia, Gradual.OMS.Seguranca.Lib
+2017-12-27 12:37:07,457 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Seguranca.Lib.IServicoSegurancaPersistencia, Gradual.OMS.Seguranca.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:37:07,457 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:37:07,457 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:37:07,457 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.Seguranca.ServicoSeguranca, Gradual.OMS.Seguranca]
+2017-12-27 12:37:07,457 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.Seguranca.ServicoSeguranca, Gradual.OMS.Seguranca
+2017-12-27 12:37:07,457 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.Seguranca.Lib.IServicoSeguranca, Gradual.OMS.Seguranca.Lib
+2017-12-27 12:37:07,457 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.Seguranca.Lib.IServicoSeguranca, Gradual.OMS.Seguranca.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:37:07,457 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:37:07,457 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:37:07,457 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Servico Gradual.OMS.Seguranca.ServicoSeguranca, Gradual.OMS.Seguranca é controlavel.
+2017-12-27 12:37:07,457 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.Servico.FichaCadastral.ServicoFichaCadastral,  Gradual.Servico.FichaCadastral]
+2017-12-27 12:37:07,457 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.Servico.FichaCadastral.ServicoFichaCadastral,  Gradual.Servico.FichaCadastral
+2017-12-27 12:37:07,457 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.Servico.FichaCadastral.Lib.IServicoFichaCadastral, Gradual.Servico.FichaCadastral.Lib
+2017-12-27 12:37:07,457 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.Servico.FichaCadastral.Lib.IServicoFichaCadastral, Gradual.Servico.FichaCadastral.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:37:07,460 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:37:07,460 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:37:07,460 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC]
+2017-12-27 12:37:07,460 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC
+2017-12-27 12:37:07,460 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.PosicaoBTC.Lib.IServicoPosicaoBTC, Gradual.OMS.PosicaoBTC.Lib
+2017-12-27 12:37:07,460 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.PosicaoBTC.Lib.IServicoPosicaoBTC, Gradual.OMS.PosicaoBTC.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:37:07,460 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:37:07,460 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:37:47,450 [6] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:37:47,456 [6] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 12:37:47,456 [6] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC]
+2017-12-27 12:37:47,456 [6] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC
+2017-12-27 12:37:47,456 [6] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.PosicaoBTC.Lib.IServicoPosicaoBTC, Gradual.OMS.PosicaoBTC.Lib
+2017-12-27 12:37:47,457 [6] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.PosicaoBTC.Lib.IServicoPosicaoBTC, Gradual.OMS.PosicaoBTC.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 12:37:47,457 [6] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 12:37:47,457 [6] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 13:31:18,746 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 13:31:18,753 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    
+2017-12-27 13:31:18,753 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Registrando servico: [Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC]
+2017-12-27 13:31:18,753 [5] INFO  Gradual.OMS.Library.Servicos.ServicoHost - Ativando servico: Gradual.OMS.PosicaoBTC.ServicoPosicaoBTC, Gradual.OMS.PosicaoBTC
+2017-12-27 13:31:18,753 [5] DEBUG Gradual.OMS.Library.Servicos.Servico - Servico.Ativar(): procurando interface nos assemblies:Gradual.OMS.PosicaoBTC.Lib.IServicoPosicaoBTC, Gradual.OMS.PosicaoBTC.Lib
+2017-12-27 13:31:18,753 [5] INFO  Gradual.OMS.Library.Servicos.Servico - Interface Gradual.OMS.PosicaoBTC.Lib.IServicoPosicaoBTC, Gradual.OMS.PosicaoBTC.Lib nao encontrada direto, usando Type.GetType()
+2017-12-27 13:31:18,753 [5] INFO  Gradual.OMS.Library.Servicos.Servico - ***
+2017-12-27 13:31:18,753 [5] INFO  Gradual.OMS.Library.Servicos.Servico -    

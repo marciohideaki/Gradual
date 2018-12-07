@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.Site-II.Www", "Gradual.Site-II.Www\Gradual.Site-II.Www.csproj", "{4C1349B8-B9A9-402E-A834-ED93D704201D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gradual.Site.DbLib", "Gradual.Site.DbLib\Gradual.Site.DbLib.csproj", "{A257ADAA-81A8-466E-910C-A0821DAD2408}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gsp-srv-tfs02:8080/tfs/projetos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gradual.Site-II.Www\\Gradual.Site-II.Www.csproj
+		SccProjectName1 = Gradual.Site-II.Www
+		SccLocalPath1 = Gradual.Site-II.Www
+		SccProjectUniqueName2 = Gradual.Site.DbLib\\Gradual.Site.DbLib.csproj
+		SccProjectName2 = Gradual.Site.DbLib
+		SccLocalPath2 = Gradual.Site.DbLib
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C1349B8-B9A9-402E-A834-ED93D704201D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C1349B8-B9A9-402E-A834-ED93D704201D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C1349B8-B9A9-402E-A834-ED93D704201D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C1349B8-B9A9-402E-A834-ED93D704201D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A257ADAA-81A8-466E-910C-A0821DAD2408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A257ADAA-81A8-466E-910C-A0821DAD2408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A257ADAA-81A8-466E-910C-A0821DAD2408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A257ADAA-81A8-466E-910C-A0821DAD2408}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
